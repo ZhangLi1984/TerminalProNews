@@ -525,7 +525,7 @@ function renderDecisionContent_0304() {
       <h1 class="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
         投资决策内参 | 全局新闻深度推演
       </h1>
-      <p class="text-base font-bold text-slate-700">数据来源：财联社/选股宝/新浪财经/证券时报</p>
+      <p class="text-sm font-bold text-slate-500">报告日期：2026 年 3 月 4 日</p>
     </div>
 
     <div class="space-y-10">

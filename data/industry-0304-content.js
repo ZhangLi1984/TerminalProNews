@@ -377,9 +377,9 @@ function renderIndustryContent_0304() {
 
     <div class="space-y-3 mb-8 text-center animate-in slide-up delay-100">
       <h1 class="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
-        全市场行业汇总报告
+        行业研究报告
       </h1>
-      <p class="text-base font-bold text-slate-700">买方对冲基金视角 · 基于 250 篇卖方研报统筹分析</p>
+      <p class="text-sm font-bold text-slate-500">报告日期：2026 年 3 月 4 日</p>
     </div>
 
     <div class="space-y-10">

@@ -1,12 +1,15 @@
 // ==========================================
 // 日期配置与数据管理
+// 最后更新：2026-03-05 16:42
 // ==========================================
 
 // 可用日期列表（按时间倒序，最新的在前）
 const AVAILABLE_DATES = [
-  { date: '2026-03-05', label: '2026 年 3 月 5 日', tag: 'latest', tagLabel: '最新' },
-  { date: '2026-03-04', label: '2026 年 3 月 4 日', tag: 'history', tagLabel: '历史' }
+  { date: '2026-03-05', label: '2026年03年05日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-03-04', label: '2026年03年04日', tag: 'history', tagLabel: '历史' },
+  { date: '2026-03-03', label: '2026年03年03日', tag: 'history', tagLabel: '历史' },
 ];
+
 
 // 当前选中日期
 let currentDate = '2026-03-05';
@@ -120,3 +123,4 @@ function renderAllContent() {
     }
   }, 100);
 }
+
