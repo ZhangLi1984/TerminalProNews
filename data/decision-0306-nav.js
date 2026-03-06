@@ -7,47 +7,49 @@ const DECISION_NAV_CONFIG_0306 = [
     title: '核心摘要',
     links: [
       { id: 'sec1', label: '核心主线与全局叙事' },
-      { id: 'sec2', label: '操作方向建议' }
+      { id: 'sec2', label: '关键推演与操作方向' }
     ]
   },
   {
     title: 'S 级重大事件',
     links: [
-      { id: 'sec3', label: 'S1. 中东冲突升级' },
-      { id: 'sec4', label: 'S2. 央行 8000 亿逆回购' },
-      { id: 'sec5', label: 'S3. GPT-5.4 发布' }
+      { id: 'sec3', label: 'S1. 政府工作报告发布' },
+      { id: 'sec4', label: 'S2. 中东冲突升级' },
+      { id: 'sec5', label: 'S3. 证监会政策表态' }
     ]
   },
   {
-    title: '行业催化',
+    title: 'A 级行业催化',
     links: [
-      { id: 'sec6', label: '科技/AI/半导体' },
-      { id: 'sec7', label: '低空经济/商业航天' },
-      { id: 'sec8', label: '新能源/绿电' },
-      { id: 'sec9', label: '周期/资源品' }
+      { id: 'sec6', label: 'AI/Micro LED CPO' },
+      { id: 'sec7', label: '机器人融资热潮' },
+      { id: 'sec8', label: '创新药 BD 爆发' },
+      { id: 'sec9', label: '电力设备出海' },
+      { id: 'sec10', label: '房地产政策' }
     ]
   },
   {
-    title: '赛道追踪',
+    title: '赛道全景追踪',
     links: [
-      { id: 'sec10', label: 'AI 算力产业链' },
-      { id: 'sec11', label: '机器人/低空经济' },
-      { id: 'sec12', label: '半导体/芯片' }
+      { id: 'sec11', label: 'AI/算力产业链' },
+      { id: 'sec12', label: '机器人产业链' },
+      { id: 'sec13', label: '新能源产业链' },
+      { id: 'sec14', label: '半导体产业链' }
     ]
   },
   {
     title: '二阶传导分析',
     links: [
-      { id: 'sec13', label: '能源→化工替代链' },
-      { id: 'sec14', label: 'AI→电力设备链' },
-      { id: 'sec15', label: '地缘→军工链条' }
+      { id: 'sec15', label: 'AI→电力危机→设备出海' },
+      { id: 'sec16', label: '中东→能源通胀→货币政策' },
+      { id: 'sec17', label: '政策→资金流向→估值重塑' }
     ]
   },
   {
     title: '明日关注',
     links: [
-      { id: 'sec16', label: '重磅事件与数据' },
-      { id: 'sec17', label: '风险提示与证伪' }
+      { id: 'sec18', label: '核心事件日历' },
+      { id: 'sec19', label: '风险提示与证伪' }
     ]
   }
 ];
