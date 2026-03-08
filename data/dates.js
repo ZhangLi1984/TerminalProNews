@@ -4,14 +4,15 @@
 
 // 可用日期列表（按时间倒序，最新的在前）
 const AVAILABLE_DATES = [
-  { date: '2026-03-07', label: '2026 年 3 月 7 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-03-08', label: '2026 年 3 月 8 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-03-07', label: '2026 年 3 月 7 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-06', label: '2026 年 3 月 6 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-05', label: '2026 年 3 月 5 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-04', label: '2026 年 3 月 4 日', tag: 'history', tagLabel: '历史' }
 ];
 
 // 当前选中日期
-let currentDate = '2026-03-07';
+let currentDate = '2026-03-08';
 
 /**
  * 切换日期下拉菜单显示/隐藏
@@ -75,7 +76,26 @@ function setupDateDropdownListener() {
  */
 function renderAllContent() {
   // 渲染投资决策内参导航
-  if (currentDate === '2026-03-07') {
+  if (currentDate === '2026-03-08') {
+    if (typeof renderDecisionNav_0308 === 'function') {
+      renderDecisionNav_0308();
+    }
+    if (typeof renderIndustryNav_0308 === 'function') {
+      renderIndustryNav_0308();
+    }
+    if (typeof renderDecisionContent_0308 === 'function') {
+      const decisionContainer = document.getElementById('decision-content');
+      if (decisionContainer) {
+        decisionContainer.innerHTML = renderDecisionContent_0308();
+      }
+    }
+    if (typeof renderIndustryContent_0308 === 'function') {
+      const industryContainer = document.getElementById('industry-content');
+      if (industryContainer) {
+        industryContainer.innerHTML = renderIndustryContent_0308();
+      }
+    }
+  } else if (currentDate === '2026-03-07') {
     if (typeof renderDecisionNav_0307 === 'function') {
       renderDecisionNav_0307();
     }

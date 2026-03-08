@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-03-07',
+  currentDate: '2026-03-08',
   clockInterval: null
 };
 
@@ -123,7 +123,26 @@ function renderAllContent() {
   const date = AppState.currentDate;
   console.log(`[renderAllContent] 当前日期：${date}`);
 
-  if (date === '2026-03-07') {
+  if (date === '2026-03-08') {
+    // 渲染 3 月 8 日内容
+    console.log('[renderAllContent] 渲染 3 月 8 日内容');
+    if (typeof renderDecisionNav_0308 === 'function') {
+      renderDecisionNav_0308();
+    }
+    if (typeof renderIndustryNav_0308 === 'function') {
+      renderIndustryNav_0308();
+    }
+
+    const decisionContentEl = document.getElementById('decision-content');
+    if (decisionContentEl && typeof renderDecisionContent_0308 === 'function') {
+      decisionContentEl.innerHTML = renderDecisionContent_0308();
+    }
+
+    const industryContentEl = document.getElementById('industry-content');
+    if (industryContentEl && typeof renderIndustryContent_0308 === 'function') {
+      industryContentEl.innerHTML = renderIndustryContent_0308();
+    }
+  } else if (date === '2026-03-07') {
     // 渲染 3 月 7 日内容
     console.log('[renderAllContent] 渲染 3 月 7 日内容');
     if (typeof renderDecisionNav_0307 === 'function') {
