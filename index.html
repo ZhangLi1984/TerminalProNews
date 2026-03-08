@@ -75,6 +75,16 @@
             </svg>
             行业研究报告
           </button>
+          <button
+            id="tab-macro"
+            data-tab="macro"
+            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60"
+          >
+            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 21h18M5 21V7l8-4 8 4v14M8 21v-4h8v4"></path>
+            </svg>
+            宏观研究
+          </button>
         </nav>
       </div>
 
@@ -159,6 +169,25 @@
         </div>
       </div>
 
+      <!-- ==================== 文档三：宏观研究 ==================== -->
+      <div id="macro-doc" class="relative hidden animate-in slide-up">
+        <div class="flex items-start gap-8 xl:gap-12">
+          <!-- 左侧导航 -->
+          <aside class="sidebar-nav w-56 flex-shrink-0 hidden xl:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-y-auto pr-4 custom-scrollbar">
+            <div class="space-y-6" id="macro-nav-content">
+              <!-- 由 JS 动态生成 -->
+            </div>
+          </aside>
+
+          <!-- 右侧内容 -->
+          <div class="flex-1 min-w-0 w-full max-w-[860px] mx-auto pb-24">
+            <div id="macro-content">
+              <!-- 由 JS 动态渲染 -->
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
 
@@ -179,6 +208,10 @@
   <script src="./data/industry-0308-nav.js"></script>
   <!-- 文档二：行业汇总 - 3 月 8 日内容 -->
   <script src="./data/industry-0308-content.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 8 日导航 -->
+  <script src="./data/macro-0308-nav.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 8 日内容 -->
+  <script src="./data/macro-0308-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 7 日 ==================== -->
   <!-- 文档一：投资决策内参 - 3 月 7 日导航 -->
@@ -189,6 +222,10 @@
   <script src="./data/industry-0307-nav.js"></script>
   <!-- 文档二：行业汇总 - 3 月 7 日内容 -->
   <script src="./data/industry-0307-content.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 7 日导航 -->
+  <script src="./data/macro-0307-nav.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 7 日内容 -->
+  <script src="./data/macro-0307-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 6 日 ==================== -->
   <!-- 文档一：投资决策内参 - 3 月 6 日导航 -->

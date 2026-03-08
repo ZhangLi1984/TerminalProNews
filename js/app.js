@@ -67,25 +67,39 @@ function switchTab(tab) {
   // 更新 Tab 按钮样式
   const decisionBtn = document.getElementById('tab-decision');
   const industryBtn = document.getElementById('tab-industry');
+  const macroBtn = document.getElementById('tab-macro');
   const decisionDoc = document.getElementById('decision-doc');
   const industryDoc = document.getElementById('industry-doc');
+  const macroDoc = document.getElementById('macro-doc');
+
+  // 重置所有按钮样式
+  [decisionBtn, industryBtn, macroBtn].forEach(btn => {
+    if (btn) {
+      btn.classList.remove('bg-white', 'text-red-700', 'text-blue-700', 'text-emerald-700', 'shadow-sm', 'border', 'border-slate-200');
+      btn.classList.add('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
+    }
+  });
+
+  // 隐藏所有文档
+  decisionDoc.classList.add('hidden');
+  industryDoc.classList.add('hidden');
+  macroDoc.classList.add('hidden');
 
   if (tab === 'decision') {
     decisionBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
     decisionBtn.classList.add('bg-white', 'text-red-700', 'shadow-sm', 'border', 'border-slate-200');
-    industryBtn.classList.remove('bg-white', 'text-blue-700', 'shadow-sm', 'border', 'border-slate-200');
-    industryBtn.classList.add('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
     decisionDoc.classList.remove('hidden');
-    industryDoc.classList.add('hidden');
     setTimeout(() => updateActiveNav('sec1'), 100);
-  } else {
+  } else if (tab === 'industry') {
     industryBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
     industryBtn.classList.add('bg-white', 'text-blue-700', 'shadow-sm', 'border', 'border-slate-200');
-    decisionBtn.classList.remove('bg-white', 'text-red-700', 'shadow-sm', 'border', 'border-slate-200');
-    decisionBtn.classList.add('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
     industryDoc.classList.remove('hidden');
-    decisionDoc.classList.add('hidden');
     setTimeout(() => updateActiveNav('i_sec1'), 100);
+  } else if (tab === 'macro') {
+    macroBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
+    macroBtn.classList.add('bg-white', 'text-emerald-700', 'shadow-sm', 'border', 'border-slate-200');
+    macroDoc.classList.remove('hidden');
+    setTimeout(() => updateActiveNav('m_sec1'), 100);
   }
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -132,6 +146,9 @@ function renderAllContent() {
     if (typeof renderIndustryNav_0308 === 'function') {
       renderIndustryNav_0308();
     }
+    if (typeof renderMacroNav_0308 === 'function') {
+      renderMacroNav_0308();
+    }
 
     const decisionContentEl = document.getElementById('decision-content');
     if (decisionContentEl && typeof renderDecisionContent_0308 === 'function') {
@@ -142,6 +159,11 @@ function renderAllContent() {
     if (industryContentEl && typeof renderIndustryContent_0308 === 'function') {
       industryContentEl.innerHTML = renderIndustryContent_0308();
     }
+
+    const macroContentEl = document.getElementById('macro-content');
+    if (macroContentEl && typeof renderMacroContent_0308 === 'function') {
+      macroContentEl.innerHTML = renderMacroContent_0308();
+    }
   } else if (date === '2026-03-07') {
     // 渲染 3 月 7 日内容
     console.log('[renderAllContent] 渲染 3 月 7 日内容');
@@ -150,6 +172,9 @@ function renderAllContent() {
     }
     if (typeof renderIndustryNav_0307 === 'function') {
       renderIndustryNav_0307();
+    }
+    if (typeof renderMacroNav_0307 === 'function') {
+      renderMacroNav_0307();
     }
 
     const decisionContentEl = document.getElementById('decision-content');
@@ -161,6 +186,11 @@ function renderAllContent() {
     if (industryContentEl && typeof renderIndustryContent_0307 === 'function') {
       industryContentEl.innerHTML = renderIndustryContent_0307();
     }
+
+    const macroContentEl = document.getElementById('macro-content');
+    if (macroContentEl && typeof renderMacroContent_0307 === 'function') {
+      macroContentEl.innerHTML = renderMacroContent_0307();
+    }
   } else if (date === '2026-03-06') {
     // 渲染 3 月 6 日内容
     console.log('[renderAllContent] 渲染 3 月 6 日内容');
@@ -169,6 +199,9 @@ function renderAllContent() {
     }
     if (typeof renderIndustryNav_0306 === 'function') {
       renderIndustryNav_0306();
+    }
+    if (typeof renderMacroNav_0306 === 'function') {
+      renderMacroNav_0306();
     }
 
     const decisionContentEl = document.getElementById('decision-content');
@@ -180,6 +213,11 @@ function renderAllContent() {
     if (industryContentEl && typeof renderIndustryContent_0306 === 'function') {
       industryContentEl.innerHTML = renderIndustryContent_0306();
     }
+
+    const macroContentEl = document.getElementById('macro-content');
+    if (macroContentEl && typeof renderMacroContent_0306 === 'function') {
+      macroContentEl.innerHTML = renderMacroContent_0306();
+    }
   } else if (date === '2026-03-05') {
     // 渲染 3 月 5 日内容
     console.log('[renderAllContent] 渲染 3 月 5 日内容');
@@ -188,6 +226,9 @@ function renderAllContent() {
     }
     if (typeof renderIndustryNav_0305 === 'function') {
       renderIndustryNav_0305();
+    }
+    if (typeof renderMacroNav_0305 === 'function') {
+      renderMacroNav_0305();
     }
 
     const decisionContentEl = document.getElementById('decision-content');
@@ -199,6 +240,11 @@ function renderAllContent() {
     if (industryContentEl && typeof renderIndustryContent_0305 === 'function') {
       industryContentEl.innerHTML = renderIndustryContent_0305();
     }
+
+    const macroContentEl = document.getElementById('macro-content');
+    if (macroContentEl && typeof renderMacroContent_0305 === 'function') {
+      macroContentEl.innerHTML = renderMacroContent_0305();
+    }
   } else if (date === '2026-03-04') {
     // 渲染 3 月 4 日内容
     console.log('[renderAllContent] 渲染 3 月 4 日内容');
@@ -207,6 +253,9 @@ function renderAllContent() {
     }
     if (typeof renderIndustryNav_0304 === 'function') {
       renderIndustryNav_0304();
+    }
+    if (typeof renderMacroNav_0304 === 'function') {
+      renderMacroNav_0304();
     }
 
     const decisionContentEl = document.getElementById('decision-content');
@@ -217,6 +266,11 @@ function renderAllContent() {
     const industryContentEl = document.getElementById('industry-content');
     if (industryContentEl && typeof renderIndustryContent_0304 === 'function') {
       industryContentEl.innerHTML = renderIndustryContent_0304();
+    }
+
+    const macroContentEl = document.getElementById('macro-content');
+    if (macroContentEl && typeof renderMacroContent_0304 === 'function') {
+      macroContentEl.innerHTML = renderMacroContent_0304();
     }
   }
 
