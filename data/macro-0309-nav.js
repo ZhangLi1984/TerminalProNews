@@ -1,34 +1,35 @@
-// macro-0309-nav.js
-// 宏观研究 - 3 月 9 日导航数据
+// ==========================================
+// 宏观研究导航配置 - 2026 年 3 月 9 日
+// ==========================================
 
 const MACRO_NAV_CONFIG_0309 = [
   {
-    title: '宏观周期',
+    title: '核心宏观判断',
     links: [
-      { id: 'm_sec1', label: '核心宏观判断' },
-      { id: 'm_sec2', label: '货币政策分析' },
-      { id: 'm_sec3', label: '财政与产业政策' }
+      { id: 'm_sec1', label: '经济增长' },
+      { id: 'm_sec2', label: '通胀预期' },
+      { id: 'm_sec3', label: '周期位置' }
     ]
   },
   {
-    title: '资产配置',
+    title: '政策分析',
     links: [
-      { id: 'm_sec4', label: '配置建议' },
-      { id: 'm_sec5', label: '跨资产比较' }
+      { id: 'm_sec4', label: '货币政策' },
+      { id: 'm_sec5', label: '财政政策' }
     ]
   },
   {
-    title: '行业轮动',
+    title: '配置策略',
     links: [
-      { id: 'm_sec6', label: '六大主线' }
+      { id: 'm_sec6', label: '资产配置' },
+      { id: 'm_sec7', label: '行业轮动' }
     ]
   },
   {
-    title: '风险管理',
+    title: '风险提示',
     links: [
-      { id: 'm_sec7', label: '风险提示' },
-      { id: 'm_sec8', label: '证伪指标' },
-      { id: 'm_sec9', label: '事件日历' }
+      { id: 'm_sec8', label: '宏观风险' },
+      { id: 'm_sec9', label: '数据汇总' }
     ]
   }
 ];
@@ -37,22 +38,21 @@ function renderMacroNav_0309() {
   const container = document.getElementById('macro-nav-content');
   if (!container) return;
 
-  let html = '';
-  MACRO_NAV_CONFIG_0309.forEach(group => {
-    html += `
-      <div>
-        <h3 class="text-xs font-black text-slate-500 uppercase tracking-widest mb-3 px-3">${group.title}</h3>
-        <nav class="space-y-1">
-          ${group.links.map(link => `
-            <a href="#${link.id}" class="nav-btn flex items-center px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:bg-slate-200 transition-all duration-200" data-section="${link.id}">
-              <div class="w-1.5 h-1.5 rounded-full bg-transparent mr-3 flex-shrink-0"></div>
-              <span>${link.label}</span>
-            </a>
-          `).join('')}
-        </nav>
-      </div>
-    `;
-  });
-
-  container.innerHTML = html;
+  container.innerHTML = MACRO_NAV_CONFIG_0309.map(category => `
+    <div class="mb-6">
+      <div class="text-xs font-black text-slate-500 uppercase tracking-widest mb-3 px-3">${category.title}</div>
+      <nav class="space-y-1">
+        ${category.links.map(link => `
+          <button
+            class="nav-btn w-full text-left px-3 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 flex items-center group"
+            data-section="${link.id}"
+            onclick="updateActiveNav('${link.id}'); document.getElementById('${link.id}')?.scrollIntoView({behavior: 'smooth', block: 'start'});"
+          >
+            <div class="w-1.5 h-1.5 rounded-full mr-3 flex-shrink-0 transition-all duration-200 bg-transparent group-hover:bg-slate-400"></div>
+            <span class="text-slate-700 group-hover:text-slate-900">${link.label}</span>
+          </button>
+        `).join('')}
+      </nav>
+    </div>
+  `).join('');
 }
