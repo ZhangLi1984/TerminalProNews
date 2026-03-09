@@ -1,3 +1,8 @@
+// ==========================================
+// 券商晨报内容模块 - 2026 年 3 月 9 日
+// 基于 12 家券商晨报深度汇总
+// ==========================================
+
 function renderBrokerContent_0309() {
   return `<div class="prose prose-slate max-w-none">
 
@@ -18,7 +23,7 @@ function renderBrokerContent_0309() {
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
             <polyline points="14 2 14 8 20 8"></polyline>
           </svg>
-          <span>覆盖券商：开源证券、中银证券、华源证券、英大证券、国新证券</span>
+          <span>覆盖券商：第一创业、万联、山西、东海、国信、金元、东吴、开源、中银、英大、东兴、华源等 12 家</span>
         </div>
       </div>
     </div>
@@ -28,859 +33,464 @@ function renderBrokerContent_0309() {
 
     <!-- 市场共识 -->
     <h3 id="b_sec1" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">市场共识</h3>
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-slate-50">
-          <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">维度</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">共识判断</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">大盘走势</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">短期震荡，中期维持 A 股结构性慢牛格局</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">核心逻辑</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">国内经济韧性强，政策持续发力；外部中东地缘冲突造成短期扰动，但不改中长期向好趋势</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">沪指位置</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">重回 4100 点上方（收盘 4124.19 点，+0.38%）</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">成交额</td>
-            <td class="px-4 py-3 text-sm text-slate-700">两市成交额维持高位，约 2.4 万亿元</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <p class="text-slate-700 leading-relaxed my-4">
+      各券商普遍认为 A 股短期震荡概率较大，但中期慢牛格局不改。中东地缘冲突推升油价和避险情绪，压制新兴市场风险偏好；国内两会政策定调符合预期，GDP 目标 4.5%-5% 为调结构留出空间。
+    </p>
 
     <!-- 仓位建议 -->
     <h3 id="b_sec2" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">仓位建议</h3>
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-slate-50">
-          <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">券商</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">仓位建议</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">风格偏好</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">开源证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">积极参与</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">科技成长 + 顺周期</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">中银证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">股票>大宗>债券>货币</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">科技 + 周期资源双主线</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">华源证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">控制风险前提下布局</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">确定性主线</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">英大证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">稳健型观望，激进型参与超跌反弹</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">AI 算力、半导体、机器人</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">国新证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 font-bold">量价齐升，震荡上扬</td>
-            <td class="px-4 py-3 text-sm text-slate-700">通信、电力设备、电子</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <blockquote class="border-l-4 border-amber-500 bg-amber-50 rounded-r-xl p-4 my-4 text-slate-700">
-      <strong>平均仓位建议</strong>：中等偏积极（6-7 成），逢低布局科技主线
-    </blockquote>
+    <p class="text-slate-700 leading-relaxed my-4">
+      多数券商建议保持中等偏上仓位（<strong>6-8 成</strong>），稳健型投资者可观望等待趋势明朗，激进型投资者可参与超跌科技股反弹，聚焦 AI 算力、半导体、人形机器人等政策支持方向。
+    </p>
 
     <!-- 热门赛道 TOP5 -->
     <h3 id="b_sec3" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">热门赛道 TOP5</h3>
     <div class="overflow-x-auto my-6">
       <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-gradient-to-r from-amber-50 to-orange-50">
+        <thead class="bg-slate-50">
           <tr>
-            <th class="px-4 py-3 text-center text-sm font-bold text-slate-700 border-b border-slate-200">排名</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">行业</th>
-            <th class="px-4 py-3 text-center text-sm font-bold text-slate-700 border-b border-slate-200">推荐次数</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">主要逻辑</th>
+            <th class="border border-slate-200 px-4 py-3 text-center text-sm font-black text-slate-700">排名</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">行业</th>
+            <th class="border border-slate-200 px-4 py-3 text-center text-sm font-black text-slate-700">推荐次数</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">核心逻辑</th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-amber-600 border-b border-slate-100">1</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">AI/算力/通信</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">5 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">OpenClaw 引爆推理需求，算力租赁涨价超预期，光纤涨价确立上行周期</td>
+        <tbody class="bg-white">
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-center"><span class="bg-amber-100 text-amber-800 font-black px-2 py-1 rounded">1</span></td>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">AI/算力/云计算</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-amber-600">9 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">OpenClaw 带动算力需求激增，云厂商涨价验证需求旺盛</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">2</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">电子/半导体</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">5 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">存储高景气向上游扩散，芯片自主可控，智算集群建设大潮将至</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-center"><span class="bg-slate-100 text-slate-800 font-black px-2 py-1 rounded">2</span></td>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">半导体/集成电路</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-slate-600">8 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">自主可控政策加持，存储涨价周期持续至 2028 年</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-amber-700 border-b border-slate-100">3</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">机器人/具身智能</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">4 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">特斯拉 V3 发布前迎来布局时机，具身智能首次写入政府工作报告</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-center"><span class="bg-orange-100 text-orange-800 font-black px-2 py-1 rounded">3</span></td>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">人形机器人</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-orange-600">7 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">特斯拉 V3 即将发布，产业迈入"1-10"量产阶段</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">4</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">基础化工/有色金属</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">4 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">中东地缘形成供给冲击，铝价上行，"反内卷"加速行业景气回升</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-center"><span class="bg-orange-100 text-orange-800 font-black px-2 py-1 rounded">4</span></td>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">石油石化/能源</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-orange-600">6 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">中东冲突推升油价，霍尔木兹海峡通航受阻</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600">5</td>
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">房地产</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700">3 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700">政府工作报告着力稳定房地产市场，初婚初育家庭住房保障政策可期</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-center"><span class="bg-orange-100 text-orange-800 font-black px-2 py-1 rounded">5</span></td>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">低空经济/商业航天</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-orange-600">5 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">首次写入政府工作报告，卫星互联网建设加速</td>
           </tr>
         </tbody>
       </table>
     </div>
 
     <!-- 金股 TOP10 -->
-    <h3 id="b_sec4" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">金股 TOP10（被最多券商推荐的个股）</h3>
+    <h3 id="b_sec4" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">金股 TOP10（被多家券商同时推荐）</h3>
     <div class="overflow-x-auto my-6">
       <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-gradient-to-r from-amber-50 to-orange-50">
+        <thead class="bg-slate-50">
           <tr>
-            <th class="px-4 py-3 text-center text-sm font-bold text-slate-700 border-b border-slate-200">排名</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">股票</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">代码</th>
-            <th class="px-4 py-3 text-center text-sm font-bold text-slate-700 border-b border-slate-200">推荐次数</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">推荐券商</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">核心逻辑</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">股票</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">代码</th>
+            <th class="border border-slate-200 px-4 py-3 text-center text-sm font-black text-slate-700">推荐次数</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">推荐券商</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">核心逻辑</th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-amber-600 border-b border-slate-100">1</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">中际旭创</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">300308.SZ</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">2 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">开源、华源</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">光模块龙头，AI 算力需求激增</td>
+        <tbody class="bg-white">
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">中际旭创</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">300308</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-amber-600">3 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">东吴、中银、开源</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">光模块龙头，AI 算力核心受益</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">2</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">雅克科技</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">002409.SZ</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">2 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">中银、华源</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">半导体前驱体材料，电子化学品自主可控</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">寒武纪</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">688256</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-amber-600">3 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">中银、开源、东吴</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">国产 AI 芯片龙头</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-amber-700 border-b border-slate-100">3</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">德赛西威</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">002920.SZ</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">2 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">开源、中银</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">智能座舱 + 智驾双轮驱动，海外布局加速</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">长川科技</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">300604</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold">2 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">东吴、开源</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">半导体测试机，去日化受益</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">4</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">迈瑞医疗</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">300760.SZ</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">1 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">中银</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">医疗器械龙头，3 月金股</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">亨通光电</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">600487</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold">2 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">中银、开源</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">光纤涨价超预期，量价齐升</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">5</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">中国中免</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">601888.SH</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">1 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">中银</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">免税龙头，社服消费复苏</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">迈瑞医疗</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">300760</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold">2 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">中银、开源</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">医疗器械龙头，业绩稳健</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">6</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">保利置业集团</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">0119.HK</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">1 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">中银</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">房地产"小而美"，3 月金股</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">璞泰来</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">603659</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold">2 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">东吴、第一创业</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">负极龙头，锂电排产大幅提升</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">7</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">芯碁微装</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">688630.SH</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">1 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">中银</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">先进封装设备，3 月金股</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">贵州茅台</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">600519</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold">2 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">开源、中银</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">白酒龙头，估值修复</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">8</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">炬芯科技</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">688049.SH</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">1 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">华源</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">AI 终端芯片，端侧 AI 浪潮</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">中国太保</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">601601</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold">2 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">开源、中银</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">保险负债端高景气</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">9</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">微导纳米</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">688147.SH</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">1 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">华源</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">半导体薄膜沉积设备</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">中兴通讯</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">000063</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold">2 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">开源、中银</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">5G+ 算力基础设施</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600">10</td>
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">创科实业</td>
-            <td class="px-4 py-3 text-sm text-slate-600">00669.HK</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700">1 次</td>
-            <td class="px-4 py-3 text-sm text-slate-700">开源</td>
-            <td class="px-4 py-3 text-sm text-slate-700">海外顺周期建设需求回暖</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">拓普集团</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">601689</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold">2 次</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">华源、开源</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">机器人关节总成核心供应商</td>
           </tr>
         </tbody>
       </table>
     </div>
 
     <!-- ==================== 宏观策略汇总 ==================== -->
-    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>宏观策略汇总</h2>
+    <h2 id="b_sec5" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>宏观策略汇总</h2>
 
-    <h3 id="b_sec5" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">各券商策略对比</h3>
     <div class="overflow-x-auto my-6">
       <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
         <thead class="bg-slate-50">
           <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">券商</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">大盘判断</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">仓位建议</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">风格偏好</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">核心逻辑</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">券商</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">大盘判断</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">仓位建议</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">风格偏好</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">核心逻辑</th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">开源证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">流动性冲击缓和，后续慢牛</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">积极参与</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">科技成长 + 顺周期</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">A 股韧性足，国家队弹药充足，监管引导慢牛节奏</td>
+        <tbody class="bg-white">
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">第一创业</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">震荡蓄势</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">中等</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">科技成长</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">国内算力网投资超 7 万亿</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">中银证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">短期震荡，中期结构性慢牛</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">股票>大宗>债券>货币</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">科技 + 周期资源双主线</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">名义价格修复是年内主线，AI 产业链资本开支上行</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">万联证券</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">结构性慢牛</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">6-7 成</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">价值 + 成长</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">TV 面板涨价延续</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">华源证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">震荡走势，控制风险</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">锚定确定性主线</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">业绩改善 + 政策导向</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">外部不确定性高，布局 2026Q1 业绩改善标的</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">山西证券</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">高质量发展</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">中等偏上</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">新质生产力</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">GDP 目标 4.5-5% 为调结构留空间</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">英大证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">短期震荡，中期慢牛</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">稳健观望/激进参与</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">AI 算力、半导体、机器人</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">量能不足是隐忧，聚焦政策支持方向</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">东海证券</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">价值重估</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">7 成</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">周期 + 科技</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">中东冲突推升油价</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">国新证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 font-bold">量价齐升，震荡上扬</td>
-            <td class="px-4 py-3 text-sm text-slate-700">积极</td>
-            <td class="px-4 py-3 text-sm text-slate-700">通信、电力设备、电子</td>
-            <td class="px-4 py-3 text-sm text-slate-700">两会政策利好，市场情绪活跃</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">国信证券</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">慢牛格局</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">6-8 成</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">科技 + 周期</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">大类资产：股票&gt;大宗&gt;债券&gt;货币</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">开源证券</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">慢牛可期</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">7 成</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">科技 + 消费</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">A 股流动性冲击缓和</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">中银证券</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">结构性慢牛</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">6-7 成</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">科技 + 周期</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">科技 + 周期资源双主线</td>
           </tr>
         </tbody>
       </table>
     </div>
-
-    <!-- 宏观经济共识 -->
-    <h3 id="b_sec6" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">宏观经济共识</h3>
-    <ul class="space-y-0 my-6">
-      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>GDP 目标</strong>：2026 年增长目标 4.5%-5%（区间目标，为调结构预留空间）</span></li>
-      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>CPI 目标</strong>：2% 左右，推动价格总水平由负转正</span></li>
-      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>财政政策</strong>：赤字率 4%，超长期特别国债 1.3 万亿元</span></li>
-      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>货币政策</strong>：适度宽松，降准降息还有空间</span></li>
-      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>外部风险</strong>：中东地缘冲突持续，关注油价对通胀预期的影响</span></li>
-    </ul>
 
     <!-- ==================== 热门行业推荐榜 ==================== -->
-    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>热门行业推荐榜</h2>
+    <h2 id="b_sec6" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>热门行业推荐榜</h2>
 
-    <h3 id="b_sec7" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">被推荐次数统计</h3>
     <div class="overflow-x-auto my-6">
       <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-gradient-to-r from-amber-50 to-orange-50">
+        <thead class="bg-slate-50">
           <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">行业</th>
-            <th class="px-4 py-3 text-center text-sm font-bold text-slate-700 border-b border-slate-200">推荐次数</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">主要逻辑</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">推荐券商</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">行业</th>
+            <th class="border border-slate-200 px-4 py-3 text-center text-sm font-black text-slate-700">推荐次数</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">主要逻辑</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">推荐券商</th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">AI/算力/通信</td>
-            <td class="px-4 py-3 text-center text-sm font-black text-amber-600 border-b border-slate-100">5</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">OpenClaw 登顶 GitHub 开启端侧 AI Agent 新形态，算力租赁涨价 20%-30%，光纤涨价近 650%</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">开源、中银、华源、英大、国新</td>
+        <tbody class="bg-white">
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">AI/算力/云计算</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-amber-600">9</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">OpenClaw 带动 Token 消耗量级跃迁；云厂商涨价验证需求</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">第一创业、东吴、开源、中银、英大、东兴</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">电子/半导体</td>
-            <td class="px-4 py-3 text-center text-sm font-black text-amber-600 border-b border-slate-100">5</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">存储 DRAM 合约价单季翻倍，智算集群建设大潮将至，芯片自主可控</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">开源、中银、华源、英大、国新</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">半导体/集成电路</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-slate-600">8</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">自主可控政策加持；存储价格翻倍涨至 2028 年</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">万联、东吴、开源、中银、华源</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">机器人/具身智能</td>
-            <td class="px-4 py-3 text-center text-sm font-black text-amber-700 border-b border-slate-100">4</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">特斯拉 V3 发布前迎来最好布局时机，具身智能首次写入政府工作报告</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">开源、中银、华源、英大</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">人形机器人</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-orange-600">7</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">特斯拉 V3 即将发布；产业迈入量产阶段</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">开源、中银、英大、东兴、华源</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">基础化工</td>
-            <td class="px-4 py-3 text-center text-sm font-black text-amber-700 border-b border-slate-100">4</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">中东地缘扰动能化供应链，"反内卷"加速行业景气回升，中国化工稳定供应全球</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">开源、中银、华源</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">石油石化/能源</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-orange-600">6</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">中东冲突推升油价；霍尔木兹海峡通航受阻</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">东海、开源、中银、英大</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">有色金属</td>
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">3</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">中东地缘形成供给冲击，铝价上行，碳酸锂持续去库</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">开源、中银、华源</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">低空经济/商业航天</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-orange-600">5</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">首次写入政府工作报告；卫星互联网建设</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">山西、东吴、开源、中银、东兴</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">房地产</td>
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">3</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">着力稳定房地产市场，初婚初育家庭住房保障政策可期</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">中银、华源</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">光纤/光通信</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-orange-600">5</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">光纤涨价超 650%；AIDC 建设驱动</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">中银、开源、东吴</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">医药生物</td>
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">3</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">临床前 CRO 签单加速增长，创新药产业链景气向上</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">开源、中银</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">电力设备/新能源</td>
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">3</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">绿色燃料首次写入政府工作报告，2026 年有望成产业化拐点</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">中银、华源、国新</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">社会服务/消费</td>
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600 border-b border-slate-100">3</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">政府工作报告实施消费专项行动，文旅、赛事、康养消费潜力释放</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">中银、华源</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">非银金融</td>
-            <td class="px-4 py-3 text-center text-sm font-black text-slate-600">2</td>
-            <td class="px-4 py-3 text-sm text-slate-700">创业板 IPO 有望迎改革，个险和银保开年高增</td>
-            <td class="px-4 py-3 text-sm text-slate-600">开源</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">锂电/储能</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold">4</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">3 月排产同比增 37-50%；璞泰来业绩恢复</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">第一创业、东吴、东兴</td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <!-- ==================== 券商金股组合 ==================== -->
-    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>券商金股组合</h2>
+    <!-- ==================== 多家推荐个股 ==================== -->
+    <h2 id="b_sec7" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>被多家券商同时推荐的个股</h2>
 
-    <!-- 中银证券 3 月金股组合 -->
-    <h3 id="b_sec8" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">中银证券 3 月金股组合（12 只）</h3>
     <div class="overflow-x-auto my-6">
       <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
         <thead class="bg-slate-50">
           <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">股票代码</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">股票名称</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">所属行业</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">核心逻辑</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">股票</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">代码</th>
+            <th class="border border-slate-200 px-4 py-3 text-center text-sm font-black text-slate-700">推荐次数</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">推荐券商</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">核心逻辑</th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">0119.HK</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">保利置业集团</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">房地产</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">"小而美"房企，销售和拿地显著突破</td>
+        <tbody class="bg-white">
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">中际旭创</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">300308</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-amber-600">3</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">东吴、中银、开源</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">光模块龙头，800G 需求旺盛</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">000099.SZ</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">中信海直</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">交通运输</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">低空经济概念</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">寒武纪</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">688256</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold text-amber-600">3</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">中银、开源、东吴</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">国产 AI 芯片龙头</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">601872.SH</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">招商轮船</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">交通运输</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">航运周期向上</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">长川科技</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">300604</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold">2</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">东吴、开源</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">SoC 测试机龙头，去日化份额提升</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">600352.SH</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">浙江龙盛</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">基础化工</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">染料龙头，行业景气回升</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">亨通光电</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">600487</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold">2</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">中银、开源</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">光纤涨价超预期</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">002409.SZ</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">雅克科技</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">电子</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">半导体前驱体材料</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">绿的谐波</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">688017</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold">2</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">开源、华源</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">机器人减速器核心供应商</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">002709.SZ</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">天赐材料</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">电力设备</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">锂电池电解液龙头</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">300760.SZ</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">迈瑞医疗</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">医药生物</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">医疗器械龙头</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">605338.SH</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">巴比食品</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">食品饮料</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">早餐食品龙头</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">1579.HK</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">颐海国际</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">食品饮料</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">火锅底料龙头</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">601888.SH</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">中国中免</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">社会服务</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">免税龙头，消费复苏</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">689009.SH</td>
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">九号公司-WD</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">汽车</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">智能短交通</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-600">688630.SH</td>
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">芯碁微装</td>
-            <td class="px-4 py-3 text-sm text-slate-700">电子</td>
-            <td class="px-4 py-3 text-sm text-slate-700">先进封装设备</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">五洲新春</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm text-slate-600">603667</td>
+            <td class="border border-slate-200 px-4 py-3 text-center text-sm font-bold">2</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">开源、华源</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">丝杠 + 轴承，机器人核心零部件</td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <!-- 开源证券重点推荐 -->
-    <h3 id="b_sec9" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">开源证券重点推荐</h3>
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-slate-50">
-          <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">股票</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">代码</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">所属行业</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">核心逻辑</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">德赛西威</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">002920.SZ</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">汽车</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">全球布局加速，AI 创新推动</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">创科实业</td>
-            <td class="px-4 py-3 text-sm text-slate-600">00669.HK</td>
-            <td class="px-4 py-3 text-sm text-slate-700">机械</td>
-            <td class="px-4 py-3 text-sm text-slate-700">海外顺周期建设需求回暖</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <!-- ==================== 各券商金股组合 ==================== -->
+    <h2 id="b_sec8" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>各券商 3 月金股组合</h2>
 
-    <!-- 华源证券重点推荐 -->
-    <h3 id="b_sec10" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">华源证券重点推荐</h3>
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-slate-50">
-          <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">股票</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">代码</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">所属行业</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">核心逻辑</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">微导纳米</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">688147.SH</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">电子</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">半导体薄膜沉积技术引领者</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">壹连科技</td>
-            <td class="px-4 py-3 text-sm text-slate-600 border-b border-slate-100">301631.SZ</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">汽车</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">电连接组件，储能打开第二曲线</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">炬芯科技</td>
-            <td class="px-4 py-3 text-sm text-slate-600">688049.SH</td>
-            <td class="px-4 py-3 text-sm text-slate-700">电子</td>
-            <td class="px-4 py-3 text-sm text-slate-700">AI 终端芯片，端侧 AI 浪潮</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="grid gap-4 my-6">
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+        <h4 class="font-bold text-slate-800 mb-2">中银证券</h4>
+        <p class="text-sm text-slate-600">保利置业集团、中信海直、招商轮船、浙江龙盛、雅克科技、天赐材料、迈瑞医疗、巴比食品、颐海国际、中国中免、九号公司、芯碁微装</p>
+      </div>
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+        <h4 class="font-bold text-slate-800 mb-2">东兴证券</h4>
+        <p class="text-sm text-slate-600">宁波银行、北京利尔、兴森科技、牧原股份、中矿资源、甘源食品、华测导航、中科海讯</p>
+      </div>
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+        <h4 class="font-bold text-slate-800 mb-2">开源证券</h4>
+        <p class="text-sm text-slate-600">贵州茅台、山西汾酒、西麦食品、卫龙美味、甘源食品、中国太保、中国人寿、中国平安、华泰证券、国泰海通</p>
+      </div>
     </div>
 
     <!-- ==================== 各行业详细观点 ==================== -->
-    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>各行业详细观点</h2>
-
-    <!-- AI/算力/通信 -->
-    <h3 id="b_sec11" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">AI/算力/通信</h3>
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-slate-50">
-          <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">券商</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">核心观点</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">开源证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">OpenClaw 高热度持续，带来算力需求激增；AI 应用从 Chat 向 Agent 进化，加速商业化进程</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">中银证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">数字经济和"人工智能+"目标明确，智算集群和卫星互联网建设大潮有望到来</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">华源证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">光纤涨价趋势超预期，上行周期确立；AI 算力租赁涨价 20%-30%</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">英大证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">AI 驱动算力需求增加，光通信和光模块市场直接受益</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">国新证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700">通信板块涨幅居前，Mini LED、智能电网概念活跃</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <blockquote class="border-l-4 border-amber-500 bg-amber-50 rounded-r-xl p-4 my-4 text-slate-700">
-      <strong>共识逻辑</strong>：OpenClaw 开源 AI 助手登顶 GitHub，Token 消耗从"人机对话"升级为"机器自循环"，带动海量算力需求；海内外云厂商相继提价，验证下游需求旺盛。
-    </blockquote>
-
-    <!-- 电子/半导体 -->
-    <h3 id="b_sec12" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">电子/半导体</h3>
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-slate-50">
-          <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">券商</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">核心观点</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">开源证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">存储高景气度逐步向上游扩散，DRAM 合约价单季翻倍，缺货行情或持续至 2028 年</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">中银证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">2026 年政府工作报告聚焦新质生产力，芯片自主研发有新突破，智算集群建设大潮或至</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">华源证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">微导纳米半导体薄膜沉积技术引领，炬芯科技抓住 AI 终端浪潮</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">英大证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">半导体板块活跃，技术突破提振市场信心</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">国新证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700">电子板块涨幅居前，AI 芯片、先进封装是重点方向</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <blockquote class="border-l-4 border-amber-500 bg-amber-50 rounded-r-xl p-4 my-4 text-slate-700">
-      <strong>共识逻辑</strong>：AI 算力需求爆发带动存储、芯片、设备全产业链景气上行，国产化替代加速。
-    </blockquote>
-
-    <!-- 机器人/具身智能 -->
-    <h3 id="b_sec13" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">机器人/具身智能</h3>
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-slate-50">
-          <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">券商</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">核心观点</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">开源证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">特斯拉 V3 发布前机器人板块迎来最好布局时机，当前是配置最佳"击球区"</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">中银证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">具身智能连续两年写入政府工作报告，2026 年是产业"1-10"关键跨越期</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">华源证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">紧扣两会政策导向，聚焦具身智能等政策支持方向</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">英大证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700">人形机器人是政策支持方向，择机逢低布局</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <blockquote class="border-l-4 border-amber-500 bg-amber-50 rounded-r-xl p-4 my-4 text-slate-700">
-      <strong>共识逻辑</strong>：特斯拉 Optimus 量产进度明确，2027 年德州工厂年产能 1000 万台，当前板块深度调整后迎来布局良机。
-    </blockquote>
-
-    <!-- 基础化工/有色金属 -->
-    <h3 id="b_sec14" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">基础化工/有色金属</h3>
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-slate-50">
-          <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">券商</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">核心观点</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">开源证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">地缘冲突扰动全球能化供应链，看好中国化工稳定供应全球</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">中银证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">"反内卷"持续催化，关注供需格局持续向好子行业；化工新材料发展空间广阔</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">华源证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700">中东地缘形成供给冲击，铝价上行；碳酸锂持续去库，锂价有望延续上行</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <blockquote class="border-l-4 border-amber-500 bg-amber-50 rounded-r-xl p-4 my-4 text-slate-700">
-      <strong>共识逻辑</strong>：中东冲突导致霍尔木兹海峡航运受阻，电解铝出口受限驱动铝价上行；国内"反内卷"政策加速行业出清。
-    </blockquote>
-
-    <!-- 房地产 -->
-    <h3 id="b_sec15" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">房地产</h3>
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-slate-50">
-          <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">券商</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">核心观点</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">中银证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">政府工作报告首次提出"加强初婚初育家庭住房保障"，后续政策可期</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">华源证券</td>
-            <td class="px-4 py-3 text-sm text-slate-700">着力稳定房地产市场，因城施策控增量、去库存、优供给</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <blockquote class="border-l-4 border-amber-500 bg-amber-50 rounded-r-xl p-4 my-4 text-slate-700">
-      <strong>共识逻辑</strong>：房地产政策从风险管理转向存量结构优化，初婚初育家庭和多子女家庭住房政策是创新方向。
-    </blockquote>
-
-    <!-- ==================== 风险提示与分歧点 ==================== -->
-    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>风险提示与分歧点</h2>
-
-    <h3 id="b_sec16" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">主要分歧</h3>
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-slate-50">
-          <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">分歧点</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">多方观点</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">空方观点</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">短期市场走势</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">国新证券：量价齐升，震荡上扬</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">英大证券：量能不足是隐忧，短期震荡概率大</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">仓位建议</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">开源证券：积极参与</td>
-            <td class="px-4 py-3 text-sm text-slate-700 border-b border-slate-100">英大证券：稳健型投资者建议保持观望</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">油价影响</td>
-            <td class="px-4 py-3 text-sm text-slate-700 font-bold">中银证券：油价冲高推升通胀预期，压制降息预期</td>
-            <td class="px-4 py-3 text-sm text-slate-700">开源证券：中东局势产生脉冲式影响可能性较高</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">共同风险</h3>
-    <ul class="space-y-0 my-6">
-      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>地缘政治风险</strong>：中东冲突升级，霍尔木兹海峡封锁风险</span></li>
-      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>政策落地不及预期</strong>：财政货币政策力度、产业政策执行</span></li>
-      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>海外流动性收紧</strong>：美联储降息预期推迟，美元流动性回流</span></li>
-      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>国内经济修复节奏</strong>：消费、投资增长动力不足</span></li>
-      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>技术进展不及预期</strong>：AI 产业化、机器人量产进度</span></li>
+    <h2 id="b_sec9" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>AI/算力/云计算</h2>
+    <ul class="space-y-2 my-4">
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>第一创业：</strong>Kimi 个人订阅订单爆发式增长，1 月环比增 8280%，2 月再增 123.8%</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>东吴证券：</strong>AI 应用从 Chat 向 Agent 进化，Token 消耗量级跃迁</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>开源证券：</strong>OpenClaw 登顶 GitHub，腾讯云楼下千人排队安装</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中银证券：</strong>智算集群和卫星互联网建设大潮将至；推荐寒武纪、海光信息、中际旭创、新易盛</span></li>
     </ul>
 
-    <!-- ==================== 附录：今日市场数据 ==================== -->
-    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>附录：今日市场数据</h2>
+    <h2 id="b_sec10" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>半导体/集成电路</h2>
+    <ul class="space-y-2 my-4">
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>万联证券：</strong>TV 面板价格延续涨势，2 月 32-75 英寸上涨 1-3 美元</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>东吴证券：</strong>长川科技作为 SoC 测试机龙头受益去日化</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>开源证券：</strong>存储高景气度向上游扩散；三星 DRAM 合约价单季翻倍</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中银证券：</strong>"十五五"研发经费年均增 7% 以上；推荐北方华创、中微公司、拓荆科技</span></li>
+    </ul>
 
-    <h3 id="b_sec17" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">主要指数表现</h3>
+    <h2 id="b_sec11" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>人形机器人</h2>
+    <ul class="space-y-2 my-4">
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>开源证券：</strong>春晚后机器人板块调整，但特斯拉 V3 发布前是最佳布局时机</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中银证券：</strong>具身智能连续两年写入政府工作报告；2026 年是"1-10"关键跨越期</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>华源证券：</strong>春晚开播两小时京东机器人搜索量增 300%，订单量增 150%</span></li>
+    </ul>
+
+    <h2 id="b_sec12" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>石油石化/能源</h2>
+    <ul class="space-y-2 my-4">
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>东海证券：</strong>中东事件升级，油价大幅上涨；关注油气资源储量价值标的</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>开源证券：</strong>美以伊战事扰动全球能源化工供应链</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中银证券：</strong>油价冲击下滞胀预期抬头；周期资源品配置比例有望提升</span></li>
+    </ul>
+
+    <h2 id="b_sec13" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>低空经济/商业航天</h2>
+    <ul class="space-y-2 my-4">
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>山西证券：</strong>低空基础设施全链条推动；六大新兴支柱产业包括航空航天</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>东吴证券：</strong>卫星频轨资源争夺白热化；商业航天转变关键阶段</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>开源证券：</strong>打造航空航天新兴支柱产业；关注火箭卫星零部件及 3D 打印</span></li>
+    </ul>
+
+    <h2 id="b_sec14" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>光纤/光通信</h2>
+    <ul class="space-y-2 my-4">
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>开源证券：</strong>G.652.D 光纤价格从 18 元/公里涨至 85-120 元/公里，涨幅近 650%</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中银证券：</strong>光纤和算力租赁涨价超预期；推荐亨通光电、中天科技</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>东吴证券：</strong>AI 算力需求激增驱动光模块；推荐中际旭创、新易盛、天孚通信</span></li>
+    </ul>
+
+    <h2 id="b_sec15" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>锂电/储能</h2>
+    <ul class="space-y-2 my-4">
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>第一创业：</strong>3 月锂电全产业链排产同环比大幅攀升，同比涨幅 37-50%</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>东吴证券：</strong>璞泰来 2025 年报符合预期，目标价 39 元</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>东兴证券：</strong>比亚迪发布第二代刀片电池，10% 充至 70% 仅需 5 分钟</span></li>
+    </ul>
+
+    <!-- ==================== 风险提示与分歧 ==================== -->
+    <h2 id="b_sec16" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>风险提示与分歧点</h2>
+
+    <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">主要分歧</h3>
     <div class="overflow-x-auto my-6">
       <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
         <thead class="bg-slate-50">
           <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-slate-700 border-b border-slate-200">指数</th>
-            <th class="px-4 py-3 text-center text-sm font-bold text-slate-700 border-b border-slate-200">收盘</th>
-            <th class="px-4 py-3 text-center text-sm font-bold text-slate-700 border-b border-slate-200">涨跌%</th>
-            <th class="px-4 py-3 text-center text-sm font-bold text-slate-700 border-b border-slate-200">年初至今</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">分歧点</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">多方观点</th>
+            <th class="border border-slate-200 px-4 py-3 text-left text-sm font-black text-slate-700">空方观点</th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">上证综指</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">4124.19</td>
-            <td class="px-4 py-3 text-center text-sm font-bold text-green-600 border-b border-slate-100">+0.38%</td>
-            <td class="px-4 py-3 text-center text-sm font-bold text-green-600 border-b border-slate-100">+2.50%</td>
+        <tbody class="bg-white">
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">美联储降息时点</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">开源、第一创业：5 月新主席上任后或降息</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">东海、中银：上半年不降息，通胀担忧仍存</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">深证成指</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">14172.63</td>
-            <td class="px-4 py-3 text-center text-sm font-bold text-green-600 border-b border-slate-100">+0.59%</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-500 border-b border-slate-100">-</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">油价走势</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">东海、开源：中东冲突或致油价进一步飙升</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">中银：脉冲式影响可能性高，冲突或提前结束</td>
           </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">沪深 300</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">4660.44</td>
-            <td class="px-4 py-3 text-center text-sm font-bold text-green-600 border-b border-slate-100">+0.27%</td>
-            <td class="px-4 py-3 text-center text-sm font-bold text-red-600 border-b border-slate-100">-1.21%</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 border-b border-slate-100 font-bold">创业板指</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700 border-b border-slate-100">3229.30</td>
-            <td class="px-4 py-3 text-center text-sm font-bold text-green-600 border-b border-slate-100">+0.38%</td>
-            <td class="px-4 py-3 text-center text-sm font-bold text-red-600 border-b border-slate-100">-1.98%</td>
-          </tr>
-          <tr class="hover:bg-slate-50">
-            <td class="px-4 py-3 text-sm text-slate-900 font-bold">科创 50</td>
-            <td class="px-4 py-3 text-center text-sm text-slate-700">1414.39</td>
-            <td class="px-4 py-3 text-center text-sm font-bold text-green-600">+0.64%</td>
-            <td class="px-4 py-3 text-center text-sm font-bold text-green-600">+0.78%</td>
+          <tr>
+            <td class="border border-slate-200 px-4 py-3 text-sm font-bold">A 股节奏</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">东兴、国信：结构性慢牛，盈利修复驱动</td>
+            <td class="border border-slate-200 px-4 py-3 text-sm">金元、英大：短期震荡概率大，量能不足是隐忧</td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">行业涨跌前五</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
-      <div class="bg-green-50 rounded-xl p-4 border border-green-200">
-        <h4 class="text-sm font-black text-green-800 mb-3 flex items-center">
-          <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-            <polyline points="17 6 23 6 23 12"></polyline>
-          </svg>
-          涨幅前五
-        </h4>
-        <div class="space-y-2">
-          <div class="flex justify-between items-center py-1.5 border-b border-green-100 last:border-0">
-            <span class="text-sm text-slate-700">农林牧渔</span>
-            <span class="text-sm font-bold text-green-600">+3.71%</span>
-          </div>
-          <div class="flex justify-between items-center py-1.5 border-b border-green-100 last:border-0">
-            <span class="text-sm text-slate-700">基础化工</span>
-            <span class="text-sm font-bold text-green-600">+2.84%</span>
-          </div>
-          <div class="flex justify-between items-center py-1.5 border-b border-green-100 last:border-0">
-            <span class="text-sm text-slate-700">医药生物</span>
-            <span class="text-sm font-bold text-green-600">+2.41%</span>
-          </div>
-          <div class="flex justify-between items-center py-1.5 border-b border-green-100 last:border-0">
-            <span class="text-sm text-slate-700">建筑装饰</span>
-            <span class="text-sm font-bold text-green-600">+2.08%</span>
-          </div>
-          <div class="flex justify-between items-center py-1.5 border-b border-green-100 last:border-0">
-            <span class="text-sm text-slate-700">环保</span>
-            <span class="text-sm font-bold text-green-600">+2.04%</span>
-          </div>
-        </div>
-      </div>
-      <div class="bg-red-50 rounded-xl p-4 border border-red-200">
-        <h4 class="text-sm font-black text-red-800 mb-3 flex items-center">
-          <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline>
-            <polyline points="17 18 23 18 23 12"></polyline>
-          </svg>
-          跌幅前五
-        </h4>
-        <div class="space-y-2">
-          <div class="flex justify-between items-center py-1.5 border-b border-red-100 last:border-0">
-            <span class="text-sm text-slate-700">石油石化</span>
-            <span class="text-sm font-bold text-red-600">-2.02%</span>
-          </div>
-          <div class="flex justify-between items-center py-1.5 border-b border-red-100 last:border-0">
-            <span class="text-sm text-slate-700">有色金属</span>
-            <span class="text-sm font-bold text-red-600">-1.77%</span>
-          </div>
-          <div class="flex justify-between items-center py-1.5 border-b border-red-100 last:border-0">
-            <span class="text-sm text-slate-700">通信</span>
-            <span class="text-sm font-bold text-red-600">-1.07%</span>
-          </div>
-          <div class="flex justify-between items-center py-1.5 border-b border-red-100 last:border-0">
-            <span class="text-sm text-slate-700">煤炭</span>
-            <span class="text-sm font-bold text-red-600">-0.56%</span>
-          </div>
-          <div class="flex justify-between items-center py-1.5 border-b border-red-100 last:border-0">
-            <span class="text-sm text-slate-700">电子</span>
-            <span class="text-sm font-bold text-red-600">-0.05%</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">共同风险提示</h3>
+    <ul class="space-y-2 my-4">
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>地缘政治风险：</strong>中东冲突局势发展超预期，霍尔木兹海峡长期封锁风险</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>通胀超预期：</strong>油价上涨引发全球再通胀，美联储政策收紧</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>政策落地不及预期：</strong>国内财政货币政策执行力度不足</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>技术进展不及预期：</strong>AI、机器人等新技术商业化进度放缓</span></li>
+    </ul>
+
+    <!-- ==================== 重点财经要闻 ==================== -->
+    <h2 id="b_sec17" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>重点财经要闻汇总</h2>
+    <ul class="space-y-2 my-4">
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>证监会两项新政：</strong>深化创业板改革，增设更精准包容上市标准；优化再融资机制，扶优扶科</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>央行货币政策：</strong>实施适度宽松货币政策，灵活高效运用降准降息工具</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>发改委六张网：</strong>水网、电网、算力网、新型通信网、城市地下管网、物流网，投资超 7 万亿</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>外汇储备：</strong>连续 7 个月增长，黄金储备连续 16 个月增加</span></li>
+      <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中美关系：</strong>外交部长王毅表示 2026 年是中美关系"大年"</span></li>
+    </ul>
 
     <!-- 免责声明 -->
-    <div class="bg-slate-50 rounded-xl p-6 my-8 border border-slate-200">
-      <p class="text-sm text-slate-600 leading-relaxed">
-        <strong>免责声明</strong>：本报告基于各券商公开晨会纪要整理，仅供参考，不构成投资建议。投资有风险，入市需谨慎。
-      </p>
-      <p class="text-xs text-slate-500 mt-3">
-        生成时间：2026 年 03 月 09 日
-      </p>
+    <div class="bg-slate-100 rounded-xl p-4 my-6 text-center">
+      <p class="text-xs text-slate-500">本报告基于各券商公开晨报整理，仅供参考，不构成投资建议。市场有风险，投资需谨慎。</p>
     </div>
 
   </div>`;

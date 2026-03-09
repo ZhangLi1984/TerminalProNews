@@ -57,7 +57,7 @@ function renderMacroContent_0309() {
 
     <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 my-4 rounded-r-xl">
       <p class="font-bold text-emerald-800">核心判断</p>
-      <p class="text-sm text-emerald-700 mt-1">2026 年 GDP 增速目标设定为<span class="bg-emerald-100 px-1.5 py-0.5 rounded font-bold">4.5%-5%</span>，较去年"5% 左右"有所下调，体现更加务实克制的政策基调。经济增长从"量的扩张"转向"质的提升"，为结构优化和风险防范留出空间。2 月 PMI 数据受春节错期影响季节性回落，但高技术制造业保持扩张，需要关注中小企业经营压力。</p>
+      <p class="text-sm text-emerald-700 mt-1">2026 年 GDP 增速目标设定为<span class="bg-emerald-100 px-1.5 py-0.5 rounded font-bold">4.5%-5%</span>，较去年"5% 左右"有所下调，体现更加务实克制的政策基调。经济增长从"量的扩张"转向"质的提升"，为结构优化和风险防范留出空间。</p>
     </div>
 
     <h3 id="m_sec2" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">通胀预期</h3>
@@ -93,7 +93,7 @@ function renderMacroContent_0309() {
 
     <div class="bg-amber-50 border-l-4 border-amber-500 p-4 my-4 rounded-r-xl">
       <p class="font-bold text-amber-800">核心判断</p>
-      <p class="text-sm text-amber-700 mt-1">2 月 CPI 同比大幅上行至 1.3% 主要受春节错期效应带动，剔除季节性因素后 1-2 月平均 CPI 为 0.8%，显示物价整体延续温和回升势头。PPI 降幅收窄至 -0.9%，主要受国际原油及有色金属价格上涨提振，预计 3 月 PPI 同比将实现转正。但中东局势推动油价上行可能带来输入性通胀压力，需警惕"滞胀"风险。</p>
+      <p class="text-sm text-amber-700 mt-1">2 月 CPI 同比大幅上行至 1.3% 主要受春节错期效应带动。PPI 降幅收窄至 -0.9%，主要受国际原油及有色金属价格上涨提振，预计 3 月 PPI 同比将实现转正。但中东局势推动油价上行可能带来输入性通胀压力，需警惕"滞胀"风险。</p>
     </div>
 
     <h3 id="m_sec3" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">周期位置</h3>
@@ -103,7 +103,7 @@ function renderMacroContent_0309() {
       <p class="mb-2"><strong>增长端：</strong>国内经济温和复苏，2 月 PMI 季节性回落但未改复苏方向；美国 2 月非农就业意外减少 9.2 万人（预期 +5.9 万），就业市场出现疲软信号</p>
       <p class="mb-2"><strong>通胀端：</strong>国内通胀温和，但中东冲突推动油价暴涨（WTI 涨 35.64% 至 91.3 美元/桶），输入性通胀风险上升</p>
       <p class="mb-2"><strong>政策端：</strong>国内政策保持定力，美联储降息预期推迟至 9 月</p>
-      <p class="text-amber-400 mt-3">→ 下一阶段展望：若中东冲突在 1 个月内降温，全球宏观逻辑仍将围绕"软着陆"展开；若战事长期化（1 个月及以上），全球经济将面临滞胀风险，资产定价逻辑将深刻变化</p>
+      <p class="text-amber-400 mt-3">→ 下一阶段展望：若中东冲突在 1 个月内降温，全球宏观逻辑仍将围绕"软着陆"展开；若战事长期化，全球经济将面临滞胀风险，资产定价逻辑将深刻变化</p>
     </div>
 
     <!-- 货币政策 -->
@@ -184,11 +184,6 @@ function renderMacroContent_0309() {
       </table>
     </div>
 
-    <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 my-4">
-      <p class="font-bold text-slate-800">核心逻辑</p>
-      <p class="text-sm text-slate-700 mt-1">国内流动性环境整体宽松，政策大幅加码稳增长的风险已经明显下降。但中东冲突若长期化带来输入性通胀，可能制约货币宽松空间。</p>
-    </div>
-
     <!-- 财政政策 -->
     <h2 id="m_sec5" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
       <span class="w-2 h-8 bg-emerald-600 rounded-full mr-3"></span>
@@ -228,16 +223,6 @@ function renderMacroContent_0309() {
             <td class="px-6 py-4 text-sm text-emerald-700 font-bold">继续支持"两重""两新"</td>
           </tr>
           <tr>
-            <td class="px-6 py-4 text-sm font-bold text-slate-900">特别国债</td>
-            <td class="px-6 py-4 text-sm text-emerald-700 font-bold">0.3 万亿</td>
-            <td class="px-6 py-4 text-sm text-slate-700">新增</td>
-          </tr>
-          <tr>
-            <td class="px-6 py-4 text-sm font-bold text-slate-900">广义赤字率</td>
-            <td class="px-6 py-4 text-sm text-emerald-700 font-bold">约 8.1%</td>
-            <td class="px-6 py-4 text-sm text-slate-700">略低于 2025 年的 8.5%</td>
-          </tr>
-          <tr>
             <td class="px-6 py-4 text-sm font-bold text-slate-900">一般公共预算支出</td>
             <td class="px-6 py-4 text-sm text-emerald-700 font-bold">30 万亿</td>
             <td class="px-6 py-4 text-sm text-emerald-700 font-bold">首次突破 30 万亿</td>
@@ -246,32 +231,17 @@ function renderMacroContent_0309() {
       </table>
     </div>
 
-    <div class="bg-emerald-50 border-l-4 border-emerald-500 p-4 my-4 rounded-r-xl">
-      <p class="font-bold text-emerald-800 mb-2">财政四大特点</p>
-      <ul class="text-sm text-emerald-700 space-y-1">
-        <li><strong>1. 力度创新高：</strong>赤字规模、新增债务规模和支出规模均创新高</li>
-        <li><strong>2. 结构优化：</strong>支出结构向提振消费、投资于人、保障民生倾斜</li>
-        <li><strong>3. 化债优先：</strong>8000 亿专项债用于置换隐性债务</li>
-        <li><strong>4. 财政金融协同：</strong>设立 1000 亿元财政金融协同促内需专项资金</li>
-      </ul>
-    </div>
-
     <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">产业方向：<span class="text-emerald-600">新质生产力为核心</span></h3>
 
     <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 my-4">
       <p class="font-bold text-slate-800 mb-2">重点支持领域</p>
       <ul class="text-sm text-slate-700 space-y-2">
-        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-1.5 mr-2 flex-shrink-0"></span><strong>"人工智能 + 制造"：</strong>《"人工智能 + 制造"专项行动实施意见》明确系统化推进路径</li>
+        <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-1.5 mr-2 flex-shrink-0"></span><strong>"人工智能 + 制造"：</strong>专项行动实施意见明确系统化推进路径</li>
         <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-1.5 mr-2 flex-shrink-0"></span><strong>国产算力与半导体：</strong>自主可控、科技自立自强</li>
         <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-1.5 mr-2 flex-shrink-0"></span><strong>国防军工：</strong>地缘冲突背景下国防预算有望增加</li>
         <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-1.5 mr-2 flex-shrink-0"></span><strong>能源安全：</strong>石油石化、煤炭、电力设备</li>
         <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-1.5 mr-2 flex-shrink-0"></span><strong>商业航天与低空经济：</strong>新质生产力重要方向</li>
       </ul>
-    </div>
-
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-4 rounded-r-xl">
-      <p class="font-bold text-blue-800">政府投资基金</p>
-      <p class="text-sm text-blue-700 mt-1">首次在国家层面对政府投资基金布局做出系统规范，明确"投早、投小、投硬科技、投长期"导向。</p>
     </div>
 
     <!-- 资产配置建议 -->
@@ -296,84 +266,35 @@ function renderMacroContent_0309() {
               <span class="w-2 h-2 rounded-full bg-emerald-500 mr-2"></span>股票
             </td>
             <td class="px-6 py-4 text-sm"><span class="bg-emerald-100 text-emerald-800 font-black px-2.5 py-1 rounded-md text-xs">标配</span></td>
-            <td class="px-6 py-4 text-xs text-slate-700 space-y-1">
-              <p>A 股相对海外股市有安全溢价，政策扶持科技成长；但中东冲突带来不确定性，短期维持震荡</p>
-            </td>
-            <td class="px-6 py-4 text-xs text-slate-700 space-y-1">
-              <p>中东冲突长期化</p>
-              <p>滞胀风险</p>
-              <p>企业盈利不及预期</p>
-            </td>
+            <td class="px-6 py-4 text-xs text-slate-700">A 股相对海外股市有安全溢价，政策扶持科技成长</td>
+            <td class="px-6 py-4 text-xs text-slate-700">中东冲突长期化、滞胀风险</td>
           </tr>
           <tr>
             <td class="px-6 py-4 text-sm font-bold text-slate-900 flex items-center">
               <span class="w-2 h-2 rounded-full bg-blue-500 mr-2"></span>债券
             </td>
             <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 font-black px-2.5 py-1 rounded-md text-xs">超配</span></td>
-            <td class="px-6 py-4 text-xs text-slate-700 space-y-1">
-              <p>国内流动性宽松，政策大幅加码风险下降，债市震荡略偏强；10 年国债收益率 1.78% 处于低位</p>
-            </td>
-            <td class="px-6 py-4 text-xs text-slate-700 space-y-1">
-              <p>输入性通胀超预期</p>
-              <p>战争持续时间长</p>
-            </td>
+            <td class="px-6 py-4 text-xs text-slate-700">国内流动性宽松，10 年国债收益率 1.78% 处于低位</td>
+            <td class="px-6 py-4 text-xs text-slate-700">输入性通胀超预期</td>
           </tr>
           <tr>
             <td class="px-6 py-4 text-sm font-bold text-slate-900 flex items-center">
               <span class="w-2 h-2 rounded-full bg-amber-500 mr-2"></span>商品
             </td>
             <td class="px-6 py-4 text-sm"><span class="bg-amber-100 text-amber-800 font-black px-2.5 py-1 rounded-md text-xs">超配（原油/黄金）</span></td>
-            <td class="px-6 py-4 text-xs text-slate-700 space-y-1">
-              <p>中东冲突推动油价上行（WTI 目标 100-103 美元），黄金作为避险和抗通胀工具维持高位（5000-5500 美元/盎司）</p>
-            </td>
-            <td class="px-6 py-4 text-xs text-slate-700 space-y-1">
-              <p>冲突快速降温</p>
-              <p>战略储备释放</p>
-            </td>
+            <td class="px-6 py-4 text-xs text-slate-700">中东冲突推动油价上行（WTI 目标 100-103 美元）</td>
+            <td class="px-6 py-4 text-xs text-slate-700">冲突快速降温</td>
           </tr>
           <tr>
             <td class="px-6 py-4 text-sm font-bold text-slate-900 flex items-center">
               <span class="w-2 h-2 rounded-full bg-slate-400 mr-2"></span>现金
             </td>
             <td class="px-6 py-4 text-sm"><span class="bg-slate-100 text-slate-600 font-black px-2.5 py-1 rounded-md text-xs">低配</span></td>
-            <td class="px-6 py-4 text-xs text-slate-700 space-y-1">
-              <p>宽松环境下现金收益较低，但保留一定流动性应对市场波动</p>
-            </td>
-            <td class="px-6 py-4 text-xs text-slate-700 space-y-1">
-              <p>流动性冲击</p>
-              <p>市场大幅调整</p>
-            </td>
+            <td class="px-6 py-4 text-xs text-slate-700">宽松环境下现金收益较低</td>
+            <td class="px-6 py-4 text-xs text-slate-700">流动性冲击</td>
           </tr>
         </tbody>
       </table>
-    </div>
-
-    <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">细分资产观点</h3>
-
-    <div class="grid gap-4 my-6">
-      <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-4 rounded-r-xl">
-        <h4 class="font-black text-emerald-800 mb-2">🇨🇳 A 股</h4>
-        <p class="text-xs text-emerald-700 mb-2">本周沪深 300 下跌 1.07%，相对抗跌</p>
-        <p class="text-sm text-slate-700">建议重点布局两大方向：<strong>1. "HALO"交易</strong>（重资产、低淘汰）：有色金属、电力设备、石油石化、煤炭；<strong>2. 自主可控科技</strong>：国产算力、人工智能、储能、商业航天、国防军工</p>
-      </div>
-
-      <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-4 rounded-r-xl">
-        <h4 class="font-black text-blue-800 mb-2">🇺🇸 美债</h4>
-        <p class="text-xs text-blue-700 mb-2">10 年期美债收益率上行 18bp 至 4.15%，通胀担忧加剧</p>
-        <p class="text-sm text-slate-700">若战争持续，收益率易上难下</p>
-      </div>
-
-      <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
-        <h4 class="font-black text-amber-800 mb-2">🛢️ 原油</h4>
-        <p class="text-xs text-amber-700 mb-2">霍尔木兹海峡"事实封锁"状态下，基准情景 WTI 维持 91-100 美元</p>
-        <p class="text-sm text-slate-700">若冲突升级，可能上行至 118-148 美元</p>
-      </div>
-
-      <div class="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-500 p-4 rounded-r-xl">
-        <h4 class="font-black text-yellow-800 mb-2">🏆 黄金</h4>
-        <p class="text-xs text-yellow-700 mb-2">短期受美联储降息预期推迟压制</p>
-        <p class="text-sm text-slate-700">但央行购金和避险需求支撑金价维持高位</p>
-      </div>
     </div>
 
     <!-- 行业轮动 -->
@@ -386,46 +307,25 @@ function renderMacroContent_0309() {
       <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
         <h4 class="font-black text-amber-800 mb-2">1. 石油石化/能源</h4>
         <p class="text-xs text-amber-700 mb-2"><strong>宏观驱动：</strong>中东冲突→霍尔木兹海峡受阻→原油供应缺口 200-400 万桶/日→油价上涨 35%+</p>
-        <ul class="text-sm text-slate-700 space-y-1">
-          <li><strong>传导逻辑：</strong>油价上涨直接利好上游开采、炼化企业盈利</li>
-          <li><strong>重点标的：</strong>三桶油、油服工程、民营炼化</li>
-        </ul>
+        <p class="text-sm text-slate-700"><strong>重点标的：</strong>三桶油、油服工程、民营炼化</p>
       </div>
 
       <div class="bg-gradient-to-r from-slate-50 to-gray-50 border-l-4 border-slate-500 p-4 rounded-r-xl">
         <h4 class="font-black text-slate-800 mb-2">2. 国防军工</h4>
-        <p class="text-xs text-slate-700 mb-2"><strong>宏观驱动：</strong>地缘冲突常态化→各国增加国防预算→军工订单预期提升</p>
-        <ul class="text-sm text-slate-700 space-y-1">
-          <li><strong>传导逻辑：</strong>冲突持续 + 商业航天/低空经济政策支持</li>
-          <li><strong>重点标的：</strong>航空装备、导弹产业链、军工电子</li>
-        </ul>
+        <p class="text-xs text-slate-700 mb-2"><strong>宏观驱动：</strong>地缘冲突常态化→各国增加国防预算</p>
+        <p class="text-sm text-slate-700"><strong>重点标的：</strong>航空装备、导弹产业链、军工电子</p>
       </div>
 
       <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-4 rounded-r-xl">
         <h4 class="font-black text-emerald-800 mb-2">3. 有色金属（铜/铝/黄金）</h4>
-        <p class="text-xs text-emerald-700 mb-2"><strong>宏观驱动：</strong>油价上涨推升通胀+AI 发展增加金属需求 + 避险需求</p>
-        <ul class="text-sm text-slate-700 space-y-1">
-          <li><strong>传导逻辑：</strong>"HALO"交易逻辑强化，实物资产重估</li>
-          <li><strong>重点标的：</strong>铜业、铝业、黄金开采</li>
-        </ul>
+        <p class="text-xs text-emerald-700 mb-2"><strong>宏观驱动：</strong>油价上涨推升通胀+AI 发展增加金属需求</p>
+        <p class="text-sm text-slate-700"><strong>重点标的：</strong>铜业、铝业、黄金开采</p>
       </div>
 
       <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-4 rounded-r-xl">
         <h4 class="font-black text-blue-800 mb-2">4. 人工智能 + 制造</h4>
-        <p class="text-xs text-blue-700 mb-2"><strong>宏观驱动：</strong>"十五五"开局之年政策扶持 + 政府投资基金支持</p>
-        <ul class="text-sm text-slate-700 space-y-1">
-          <li><strong>传导逻辑：</strong>《"人工智能 + 制造"专项行动实施意见》推动规模化落地</li>
-          <li><strong>重点标的：</strong>工业软件、智能制造、工业机器人</li>
-        </ul>
-      </div>
-
-      <div class="bg-gradient-to-r from-green-50 to-lime-50 border-l-4 border-green-500 p-4 rounded-r-xl">
-        <h4 class="font-black text-green-800 mb-2">5. 农业/粮食安全</h4>
-        <p class="text-xs text-green-700 mb-2"><strong>宏观驱动：</strong>地缘冲突 + 油价上涨推升化肥/农机成本→农产品价格上行</p>
-        <ul class="text-sm text-slate-700 space-y-1">
-          <li><strong>传导逻辑：</strong>粮食安全战略地位提升</li>
-          <li><strong>重点标的：</strong>种业、化肥、农机</li>
-        </ul>
+        <p class="text-xs text-blue-700 mb-2"><strong>宏观驱动：</strong>"十五五"开局之年政策扶持</p>
+        <p class="text-sm text-slate-700"><strong>重点标的：</strong>工业软件、智能制造、工业机器人</p>
       </div>
     </div>
 
@@ -455,43 +355,12 @@ function renderMacroContent_0309() {
           <tr>
             <td class="px-6 py-4 text-sm font-bold text-slate-900">美联储政策超预期收紧</td>
             <td class="px-6 py-4 text-sm text-slate-700">通胀反弹迫使加息</td>
-            <td class="px-6 py-4 text-sm text-red-700">美债收益率上行→全球流动性收紧→新兴市场资本外流</td>
+            <td class="px-6 py-4 text-sm text-red-700">美债收益率上行→全球流动性收紧</td>
           </tr>
           <tr>
             <td class="px-6 py-4 text-sm font-bold text-slate-900">美国衰退风险</td>
-            <td class="px-6 py-4 text-sm text-slate-700">2 月非农意外走弱，消费放缓</td>
+            <td class="px-6 py-4 text-sm text-slate-700">2 月非农意外走弱</td>
             <td class="px-6 py-4 text-sm text-red-700">外需下滑→中国出口承压</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">内部风险</h3>
-
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-amber-50">
-          <tr>
-            <th class="border-b border-amber-200 px-6 py-3 text-left text-xs font-black text-amber-800 uppercase tracking-wider">风险类型</th>
-            <th class="border-b border-amber-200 px-6 py-3 text-left text-xs font-black text-amber-800 uppercase tracking-wider">具体内容</th>
-            <th class="border-b border-amber-200 px-6 py-3 text-left text-xs font-black text-amber-800 uppercase tracking-wider">影响路径</th>
-          </tr>
-        </thead>
-        <tbody class="bg-white divide-y divide-slate-100">
-          <tr>
-            <td class="px-6 py-4 text-sm font-bold text-slate-900">房地产下行</td>
-            <td class="px-6 py-4 text-sm text-slate-700">销售/投资仍在走弱</td>
-            <td class="px-6 py-4 text-sm text-amber-700">拖累投资、影响居民财富和消费信心</td>
-          </tr>
-          <tr>
-            <td class="px-6 py-4 text-sm font-bold text-slate-900">通缩压力</td>
-            <td class="px-6 py-4 text-sm text-slate-700">CPI/PPI 仍处低位</td>
-            <td class="px-6 py-4 text-sm text-amber-700">企业盈利承压、实际利率被动上行</td>
-          </tr>
-          <tr>
-            <td class="px-6 py-4 text-sm font-bold text-slate-900">地方政府债务</td>
-            <td class="px-6 py-4 text-sm text-slate-700">化债压力仍大</td>
-            <td class="px-6 py-4 text-sm text-amber-700">制约基建投资空间</td>
           </tr>
         </tbody>
       </table>
@@ -503,8 +372,8 @@ function renderMacroContent_0309() {
       <p class="text-sm text-red-900 font-bold mb-3">若以下数据恶化，则需重新评估宏观逻辑：</p>
       <ol class="space-y-2 text-sm text-red-800">
         <li class="flex items-start"><span class="w-5 h-5 rounded-full bg-red-500 text-white text-xs flex items-center justify-center mr-2 flex-shrink-0">1</span><span>中东冲突降温信号：霍尔木兹海峡航运恢复、油价快速回落至 75 美元以下</span></li>
-        <li class="flex items-start"><span class="w-5 h-5 rounded-full bg-red-500 text-white text-xs flex items-center justify-center mr-2 flex-shrink-0">2</span><span>美国通胀超预期：CPI 连续 2 个月环比超 0.5%、核心 PCE 反弹</span></li>
-        <li class="flex items-start"><span class="w-5 h-5 rounded-full bg-red-500 text-white text-xs flex items-center justify-center mr-2 flex-shrink-0">3</span><span>国内信用收缩：社融增速跌破 8%、企业中长期贷款连续负增长</span></li>
+        <li class="flex items-start"><span class="w-5 h-5 rounded-full bg-red-500 text-white text-xs flex items-center justify-center mr-2 flex-shrink-0">2</span><span>美国通胀超预期：CPI 连续 2 个月环比超 0.5%</span></li>
+        <li class="flex items-start"><span class="w-5 h-5 rounded-full bg-red-500 text-white text-xs flex items-center justify-center mr-2 flex-shrink-0">3</span><span>国内信用收缩：社融增速跌破 8%</span></li>
         <li class="flex items-start"><span class="w-5 h-5 rounded-full bg-red-500 text-white text-xs flex items-center justify-center mr-2 flex-shrink-0">4</span><span>房地产加速下行：30 城销售面积同比跌幅扩大至 -30% 以下</span></li>
       </ol>
     </div>
@@ -522,45 +391,28 @@ function renderMacroContent_0309() {
             <th class="border-b border-emerald-200 px-6 py-3 text-left text-xs font-black text-emerald-800 uppercase tracking-wider">日期</th>
             <th class="border-b border-emerald-200 px-6 py-3 text-left text-xs font-black text-emerald-800 uppercase tracking-wider">国家</th>
             <th class="border-b border-emerald-200 px-6 py-3 text-left text-xs font-black text-emerald-800 uppercase tracking-wider">数据/事件</th>
-            <th class="border-b border-emerald-200 px-6 py-3 text-left text-xs font-black text-emerald-800 uppercase tracking-wider">预期</th>
           </tr>
         </thead>
         <tbody class="bg-white divide-y divide-slate-100">
           <tr>
             <td class="px-6 py-4 text-sm font-bold text-slate-900">3 月 10 日</td>
             <td class="px-6 py-4 text-sm text-slate-700">中国</td>
-            <td class="px-6 py-4 text-sm text-slate-700">2 月 CPI/PPI</td>
-            <td class="px-6 py-4 text-sm text-emerald-700 font-bold">已公布</td>
+            <td class="px-6 py-4 text-sm text-slate-700">2 月 CPI/PPI（已公布）</td>
           </tr>
           <tr>
             <td class="px-6 py-4 text-sm font-bold text-slate-900">3 月 11 日</td>
             <td class="px-6 py-4 text-sm text-slate-700">美国</td>
             <td class="px-6 py-4 text-sm text-slate-700">2 月 CPI</td>
-            <td class="px-6 py-4 text-sm text-slate-700">预期 0.3% 环比</td>
-          </tr>
-          <tr>
-            <td class="px-6 py-4 text-sm font-bold text-slate-900">3 月 12 日</td>
-            <td class="px-6 py-4 text-sm text-slate-700">美国</td>
-            <td class="px-6 py-4 text-sm text-slate-700">2 月核心 PPI</td>
-            <td class="px-6 py-4 text-sm text-slate-700">-</td>
           </tr>
           <tr>
             <td class="px-6 py-4 text-sm font-bold text-slate-900">3 月 13 日</td>
             <td class="px-6 py-4 text-sm text-slate-700">中国</td>
             <td class="px-6 py-4 text-sm text-slate-700">1-2 月工业增加值、社零、固投</td>
-            <td class="px-6 py-4 text-sm text-slate-700">-</td>
           </tr>
           <tr>
             <td class="px-6 py-4 text-sm font-bold text-slate-900">3 月 13 日</td>
             <td class="px-6 py-4 text-sm text-slate-700">美国</td>
             <td class="px-6 py-4 text-sm text-slate-700">密歇根大学消费者信心</td>
-            <td class="px-6 py-4 text-sm text-slate-700">-</td>
-          </tr>
-          <tr>
-            <td class="px-6 py-4 text-sm font-bold text-slate-900">3 月 14 日</td>
-            <td class="px-6 py-4 text-sm text-slate-700">欧元区</td>
-            <td class="px-6 py-4 text-sm text-slate-700">2 月调和 CPI</td>
-            <td class="px-6 py-4 text-sm text-slate-700">-</td>
           </tr>
         </tbody>
       </table>

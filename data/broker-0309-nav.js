@@ -1,3 +1,7 @@
+// ==========================================
+// 券商晨报导航配置 - 2026 年 3 月 9 日
+// ==========================================
+
 const BROKER_NAV_CONFIG_0309 = [
   {
     title: '核心摘要',
@@ -36,16 +40,14 @@ const BROKER_NAV_CONFIG_0309 = [
       { id: 'b_sec12', label: '石油石化/能源' },
       { id: 'b_sec13', label: '低空经济/商业航天' },
       { id: 'b_sec14', label: '光纤/光通信' },
-      { id: 'b_sec15', label: '锂电/储能' },
-      { id: 'b_sec16', label: '医药生物/CXO' },
-      { id: 'b_sec17', label: '食品饮料/消费' }
+      { id: 'b_sec15', label: '锂电/储能' }
     ]
   },
   {
     title: '风险与要闻',
     links: [
-      { id: 'b_sec18', label: '风险提示与分歧' },
-      { id: 'b_sec19', label: '重点财经要闻' }
+      { id: 'b_sec16', label: '风险提示与分歧' },
+      { id: 'b_sec17', label: '重点财经要闻' }
     ]
   }
 ];

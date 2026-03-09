@@ -5,48 +5,51 @@
 
 const INDUSTRY_NAV_CONFIG_0309 = [
   {
-    title: '核心赛道',
+    title: '核心高胜率赛道',
     links: [
-      { id: 'i_sec1', label: 'AI 算力基础设施' },
-      { id: 'i_sec2', label: '半导体存储芯片' },
+      { id: 'i_sec1', label: 'AI 算力产业链' },
+      { id: 'i_sec2', label: '半导体 (存储 + 设备)' },
       { id: 'i_sec3', label: '人形机器人' }
     ]
   },
   {
-    title: '医药出海',
+    title: '周期资源链',
     links: [
-      { id: 'i_sec4', label: '创新药 License-out' }
+      { id: 'i_sec4', label: '石油/油运' },
+      { id: 'i_sec5', label: '电解铝' },
+      { id: 'i_sec6', label: '燃气轮机' },
+      { id: 'i_sec7', label: '煤炭' }
     ]
   },
   {
-    title: '周期资源',
+    title: '新能源/新材料',
     links: [
-      { id: 'i_sec5', label: '燃气轮机出海' },
-      { id: 'i_sec6', label: '油气/油运/化工' },
-      { id: 'i_sec7', label: '煤炭开采' },
-      { id: 'i_sec8', label: '工程机械' }
-    ]
-  },
-  {
-    title: '新能源链',
-    links: [
-      { id: 'i_sec9', label: '储能/锂电' },
-      { id: 'i_sec10', label: '光纤/电子布' }
+      { id: 'i_sec8', label: '锂电上游' },
+      { id: 'i_sec9', label: '制冷剂' },
+      { id: 'i_sec10', label: '玻纤' }
     ]
   },
   {
     title: '困境反转',
     links: [
       { id: 'i_sec11', label: '生猪养殖' },
-      { id: 'i_sec12', label: '券商并购' }
+      { id: 'i_sec12', label: '房地产' },
+      { id: 'i_sec13', label: '证券' }
+    ]
+  },
+  {
+    title: '高端制造',
+    links: [
+      { id: 'i_sec14', label: '工程机械' },
+      { id: 'i_sec15', label: '电网设备' }
     ]
   },
   {
     title: '数据监测',
     links: [
-      { id: 'i_sec13', label: '大宗商品监测表' },
-      { id: 'i_sec14', label: '产业链估值表' },
-      { id: 'i_sec15', label: '策略建议' }
+      { id: 'i_sec16', label: '大宗商品监测表' },
+      { id: 'i_sec17', label: '产业链估值表' },
+      { id: 'i_sec18', label: '策略建议' }
     ]
   }
 ];

@@ -1,14 +1,14 @@
 // ==========================================
-// 行业研究报告内容模块 - 2026 年 3 月 8 日
-// （深度融合行研总监 + CIO 内参）
+// 行业研究报告内容模块 - 2026 年 3 月 9 日
+// （深度融合行研总监+CIO 内参）
 // ==========================================
 
 function renderIndustryContent_0309() {
   return `<div class="prose prose-slate max-w-none">
 
-    <!-- ==================== AI 算力基础设施 ==================== -->
+    <!-- ==================== AI 算力产业链 ==================== -->
     <section id="i_sec1" class="scroll-mt-24">
-      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>AI 算力基础设施</h2>
+      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>AI 算力产业链</h2>
 
       <blockquote class="border-l-4 border-blue-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
         <strong>核心逻辑：</strong>智能体 (Agent) 商业化落地引爆算力需求，从"技术叙事"进入"付费验证"阶段
@@ -16,25 +16,27 @@ function renderIndustryContent_0309() {
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">📊 硬核数据支撑</h3>
       <ul class="space-y-2 my-4">
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>Anthropic run-rate 从 2025 年末 90 亿美元飙升至 190 亿美元，<strong>6 个月翻倍</strong>验证企业付费意愿</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>英伟达数据中心业务占比超 90%，营收 681 亿美元 (+73%)，<strong>单季环比增速未放缓</strong></span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>AI Agent 数量预计 2026 年达 22 亿，阶跃星辰 Step3.5Flash 调用量跻身全球前列</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>OpenAI 完成 1100 亿美元融资，获亚马逊、英伟达、软银投资</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>AMD 与 Meta 达成 600 亿美元 AI 芯片协议</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>字节跳动获 500MW 数据中心订单，2026 年 AI 资本开支计划 1600 亿元（半数用于芯片采购）</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>豆包大模型日均 Token 调用量超 50 万亿，半年增长 200%，同比增 10 倍</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>光纤价格暴涨：</strong>G.652.D 从 18 元/公里涨至 85-120 元/公里（涨幅 650%），G.657.A2 涨至 210-230 元/公里（涨幅 557%）</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>GPU 租赁涨价：</strong>H200 月租 6.0-6.6 万元（涨幅 25-30%），H100 月租 5.5-6.0 万元（涨幅 15-20%）</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>中芯国际 2025 年产能利用率稳步回升，先进制程扩产突破性进展</span></li>
       </ul>
 
       <div class="bg-red-50 border-l-4 border-red-500 p-4 my-4 rounded-r-xl">
         <h4 class="text-red-800 font-bold mb-2 flex items-center">🧠 CIO 深度洞察</h4>
-        <p class="text-red-900 text-sm mb-2"><strong>第一性原理：</strong>智能体从"玩具"变为"工具链"，API tokens 消耗量呈指数级增长。企业侧 AI 支出 2025 年增长 3.2 倍，<strong>付费转化是真实需求而非泡沫</strong>。</p>
-        <p class="text-red-900 text-sm"><strong>证伪/跟踪指标：</strong>若 Anthropic/OpenAI 月度 run-rate 增速降至&lt;10%，或大客户续费率下滑需警惕；关键跟踪云厂商资本开支指引、国产 GPU 实际出货量（寒武纪季度订单）。</p>
+        <p class="text-red-900 text-sm mb-2"><strong>第一性原理：</strong>需求端真实爆发——英伟达 2026Q1 指引 780 亿美元，AI 算力不是伪命题，是实打实的营收兑现。供给端国产替代进入深水区——刻蚀、清洗等关键环节突破，55% 国产化率意味着从"能用"到"好用"的质变。</p>
+        <p class="text-red-900 text-sm mb-2"><strong>预期差：</strong>市场盯着 GPU，但算力集群的真正瓶颈是"电"和"热"。单 GPU 功耗从 300W 提升至 1000W+，液冷渗透率从 10% 向 50%+ 跃迁，温控设备价值量占比从 3% 提升至 8%+。</p>
+        <p class="text-red-900 text-sm"><strong>证伪/跟踪指标：</strong>若 DRAM 现货价连续 2 周下跌，或手机/PC 出货不及预期需警惕；关键跟踪长江存储/长鑫扩产进度、美光财报指引、头部 CSP（字节/阿里/腾讯）季度资本开支指引。</p>
       </div>
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">🎯 重点推荐标的</h3>
       <ul class="space-y-2 my-4">
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>寒武纪：</strong>国产算力唯一纯正标的，政策强制替代催化剂持续</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>寒武纪/海光信息：</strong>国产算力唯一纯正标的，政策强制替代催化剂持续</span></li>
         <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中际旭创/新易盛：</strong>800G 光模块全球份额提升，英伟达供应链核心受益</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>亨通光电/中天科技：</strong>光纤涨价 650% 直接受益，AIDC 建设驱动</span></li>
         <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>英维克：</strong>液冷渗透率从 10% 向 40% 跃迁，单价值量提升 3 倍</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>海光信息、天孚通信、深南电路、沪电股份</strong></span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>润泽科技/光环新网：</strong>AIDC 机房供需紧张</span></li>
       </ul>
     </section>
 
@@ -48,16 +50,17 @@ function renderIndustryContent_0309() {
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">📊 硬核数据支撑</h3>
       <ul class="space-y-2 my-4">
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>全球半导体销售额 789 亿美元 (+37.1% YoY)，涨价从存储蔓延至功率、模拟全领域</span></li>
         <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>DRAM 价格自 2025 年 6 月持续上涨，存储模组涨幅 0%-11.11%</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>关键设备国产化率 55%，<strong>较 2023 年提升 20pct</strong></span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>半导体 PE 处于历史 5 年 97.85% 分位数，<strong>估值已定价高预期</strong></span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>SK 海力士追加 150 亿美元投资，三巨头产能竞赛<strong>反向验证需求真实</strong></span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>关键设备国产化率 55%，较 2023 年提升 20pct</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>半导体 PE 处于历史 5 年 97.85% 分位数，估值已定价高预期</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>SK 海力士追加 150 亿美元投资，三巨头产能竞赛反向验证需求真实</span></li>
       </ul>
 
       <div class="bg-red-50 border-l-4 border-red-500 p-4 my-4 rounded-r-xl">
         <h4 class="text-red-800 font-bold mb-2 flex items-center">🧠 CIO 深度洞察</h4>
-        <p class="text-red-900 text-sm mb-2"><strong>核心驱动力：</strong>AI 服务器 HBM 需求爆发，存储从周期品变为"成长周期共振"。</p>
-        <p class="text-red-900 text-sm"><strong>证伪/跟踪指标：</strong>若 DRAM 现货价连续 2 周下跌，或手机/PC 出货不及预期需警惕；关键跟踪长江存储/长鑫扩产进度、美光财报指引。</p>
+        <p class="text-red-900 text-sm mb-2"><strong>核心驱动力：</strong>AI 服务器 HBM 需求爆发，存储从周期品变为"成长周期共振"。政策端"人工智能+"写入政府工作报告，数字经济占 GDP 比重目标 12.5%，顶层设计的确定性极高。</p>
+        <p class="text-red-900 text-sm"><strong>证伪/跟踪指标：</strong>若半导体销售额增速跌破 20% 需警惕估值杀跌；国产设备订单增速放缓是首要预警信号；关键跟踪长江存储/长鑫扩产进度、美光财报指引。</p>
       </div>
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">🎯 重点推荐标的</h3>
@@ -78,64 +81,92 @@ function renderIndustryContent_0309() {
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">📊 硬核数据支撑</h3>
       <ul class="space-y-2 my-4">
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>宇树科技 2025 年出货 5500 台，2026 年目标 1-2 万台（<strong>3 倍增长</strong>）</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>智平方获超 10 亿元融资，荣耀跨界入局消费端</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>特斯拉 2026Q1 推出第三代 Optimus</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>马年春晚开播两小时，京东机器人搜索量环比增长超 300%，订单量增长 150%</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>首个国家级人形机器人标准发布</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>我国首个国家级《人形机器人与具身智能标准体系（2026 版）》发布</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>宇树科技 2025 年出货 5500 台，2026 年目标 1-2 万台（3 倍增长）</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>自变量机器人获数亿元融资，为 2026 具身智能融资企业估值第一</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>绿的谐波 2025 年净利润同比 +122.40%，具身智能业务大幅增长</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>宝马欧洲工厂启动人形机器人试点，Figure 02 十个月生产 3 万辆宝马 X3</span></li>
       </ul>
 
       <div class="bg-red-50 border-l-4 border-red-500 p-4 my-4 rounded-r-xl">
         <h4 class="text-red-800 font-bold mb-2 flex items-center">🧠 CIO 深度洞察</h4>
-        <p class="text-red-900 text-sm mb-2"><strong>核心驱动力：</strong>硬件端关节扭矩密度提升 + 灵巧手亚毫米级精度；软件端端到端大模型 + 集群协同，<strong>从"展示品"变为"生产力工具"</strong>。</p>
-        <p class="text-red-900 text-sm"><strong>证伪/跟踪指标：</strong>若小鹏/特斯拉量产延期，或 B 端订单取消率&gt;30% 需警惕；关键跟踪核心零部件（谐波减速器、空心杯电机）月度出货。</p>
+        <p class="text-red-900 text-sm mb-2"><strong>核心驱动力：</strong>硬件端关节扭矩密度提升 + 灵巧手亚毫米级精度；软件端端到端大模型 + 集群协同，从"展示品"变为"生产力工具"。</p>
+        <p class="text-red-900 text-sm"><strong>证伪/跟踪指标：</strong>若小鹏/特斯拉量产延期，或 B 端订单取消率&gt;30% 需警惕；关键跟踪核心零部件（谐波减速器、空心杯电机）月度出货、2026 年实际出货量是否达预期。</p>
       </div>
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">🎯 重点推荐标的</h3>
       <ul class="space-y-2 my-4">
         <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>绿的谐波：</strong>谐波减速器国产份额 60%，单机价值量 3-5 万元</span></li>
         <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>鸣志电器：</strong>空心杯电机壁垒最高，人形机器人单机用量 14 个</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>拓普集团：</strong>执行器总成供应商，特斯拉产业链核心</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>长盈精密、双环传动、小鹏汽车、优必选</strong></span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>拓普集团/三花智控：</strong>执行器总成供应商，特斯拉产业链核心</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>双环传动/中大力德：</strong>RV 减速器国产替代</span></li>
       </ul>
     </section>
 
-    <!-- ==================== 油气链/油服设备 ==================== -->
+    <!-- ==================== 石油/油运 ==================== -->
     <section id="i_sec4" class="scroll-mt-24">
-      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>油气链/油服设备</h2>
+      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>石油/油运</h2>
 
       <blockquote class="border-l-4 border-amber-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
-        <strong>核心逻辑：</strong>地缘冲突重塑全球能源安全格局，资本开支周期向上
+        <strong>核心逻辑：</strong>地缘冲突从风险溢价转入实质供给冲击
       </blockquote>
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">📊 硬核数据支撑</h3>
       <ul class="space-y-2 my-4">
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>霍尔木兹海峡封锁影响全球 38% 原油贸易、20%LNG 贸易</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>卡塔尔拉斯拉凡 LNG 处理厂停产（占全球 LNG 贸易 20%）</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>欧洲 TTF 天然气价格 3 月 3 日达 60.67 欧元/兆瓦时，环比暴涨 84.80%</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>布伦特原油价格回升至 90 美元/桶以上，亚洲 JKM 基准价暴涨 45%</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>Brent/WTI 周均价 83.7/78.5 美元/桶，周涨 12.5/12.6 美元</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>油运指数 BDTI 收于 2868.4 点，环比 +51.4%，同比 +225.4%</strong></span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>TD3C 航线运价达 48.6 万美金/船（3 月第一周均在 40 万美金以上）</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>霍尔木兹海峡每日仅极少数船舶通航，船东喊高价 + 通航成本急剧提升</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>中国海油周涨 12.9%，中国石油周涨 13.3%，石化油服周涨 14.3%</span></li>
       </ul>
 
       <div class="bg-red-50 border-l-4 border-red-500 p-4 my-4 rounded-r-xl">
         <h4 class="text-red-800 font-bold mb-2 flex items-center">🧠 CIO 深度洞察</h4>
+        <p class="text-red-900 text-sm mb-2"><strong>二阶传导推演：</strong>市场只停留在"油价涨→油企受益"的第一层逻辑，但<strong>欧洲化工产能退出→中国化工份额提升</strong>的二阶逻辑被忽视。欧洲化工企业能源成本飙升，2022-2025 年已关闭 3700 万吨产能（占总产能 9%），全球化工供给收缩。</p>
         <p class="text-red-900 text-sm"><strong>证伪/跟踪指标：</strong>紧盯海峡通航恢复情况、卡塔尔工厂复产进度、美国 SPR 释放节奏。若中东局势缓和，油价可能快速回调。</p>
       </div>
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">🎯 重点推荐标的</h3>
       <ul class="space-y-2 my-4">
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>杰瑞股份：</strong>天然气处理设备与 EPC 龙头，中东订单爆发式增长</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>纽威股份：</strong>全球油气阀门龙头，产品海陆采储运全覆盖</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>迪威尔：</strong>深海采油专用件领先供应商，多向模锻技术落地</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中海油服</strong></span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中远海能：</strong>油运运价暴涨最直接受益</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>招商南油：</strong>成品油运价弹性大</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中国海油：</strong>油价上涨 + 产量增长双击</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中国石油/中海油服：</strong>上游勘探受益油价上涨</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>万华化学：</strong>MDI 全球龙头，欧洲产能退出最大受益者</span></li>
+      </ul>
+    </section>
+
+    <!-- ==================== 电解铝 ==================== -->
+    <section id="i_sec5" class="scroll-mt-24">
+      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>电解铝</h2>
+
+      <blockquote class="border-l-4 border-amber-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
+        <strong>核心逻辑：</strong>中东供给冲击 + 国内产能天花板
+      </blockquote>
+
+      <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">📊 硬核数据支撑</h3>
+      <ul class="space-y-2 my-4">
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>LME 铝价 +9.22% 至 3431 美元/吨，创 2022 年以来新高</strong></span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>沪铝 +3.69% 至 2.47 万元/吨</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>国内氧化铝运行产能 8508 万吨/年，开工率 77.12%</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>铝棒库存 39.8 万吨，运行于 40 万吨附近</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>下游线缆企业开工率 60.90%，预计下周增至 66.1%</span></li>
+      </ul>
+
+      <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">🎯 重点推荐标的</h3>
+      <ul class="space-y-2 my-4">
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中国铝业：</strong>铝价上涨弹性最大</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>神火股份：</strong>低成本产能受益</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>天山铝业：</strong>新疆低成本优势</span></li>
       </ul>
     </section>
 
     <!-- ==================== 燃气轮机 ==================== -->
-    <section id="i_sec5" class="scroll-mt-24">
-      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>燃气轮机产业链</h2>
+    <section id="i_sec6" class="scroll-mt-24">
+      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>燃气轮机</h2>
 
       <blockquote class="border-l-4 border-blue-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
-        <strong>核心逻辑：</strong>北美电力缺口 +AI 数据中心自建电源，国产替代 0-1 出海
+        <strong>核心逻辑：</strong>北美电力缺口+AI 数据中心自建电源，国产替代 0-1 出海
       </blockquote>
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">📊 硬核数据支撑</h3>
@@ -148,7 +179,7 @@ function renderIndustryContent_0309() {
       <div class="bg-red-50 border-l-4 border-red-500 p-4 my-4 rounded-r-xl">
         <h4 class="text-red-800 font-bold mb-2 flex items-center">🧠 CIO 深度洞察</h4>
         <p class="text-red-900 text-sm mb-2"><strong>二阶传导推演：</strong>市场追逐 AI 芯片、光模块（拥挤度极高）→ 数据中心"电比芯片更稀缺"，燃气轮机成为首选供电方案 → 全球燃机订单 2025 年预计 90GW+，海外产能排至 2029-2030 年，<strong>产品价格涨幅超 30%</strong>。</p>
-        <p class="text-red-900 text-sm"><strong>预期差：</strong>燃气轮机交付周期 3-4 年，<strong>订单可见度远超半导体</strong>，关注度低，预期差大。</p>
+        <p class="text-red-900 text-sm"><strong>预期差：</strong>燃气轮机交付周期 3-4 年，订单可见度远超半导体，关注度低，预期差大。</p>
       </div>
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">🎯 重点推荐标的</h3>
@@ -160,8 +191,8 @@ function renderIndustryContent_0309() {
     </section>
 
     <!-- ==================== 煤炭 ==================== -->
-    <section id="i_sec6" class="scroll-mt-24">
-      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>煤炭</h2>
+    <section id="i_sec7" class="scroll-mt-24">
+      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-slate-600 rounded-full mr-3"></span>煤炭</h2>
 
       <blockquote class="border-l-4 border-slate-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
         <strong>核心逻辑：</strong>反内卷 + 红利双重逻辑，周期属性弱化，红利属性强化
@@ -176,7 +207,7 @@ function renderIndustryContent_0309() {
 
       <div class="bg-red-50 border-l-4 border-red-500 p-4 my-4 rounded-r-xl">
         <h4 class="text-red-800 font-bold mb-2 flex items-center">🧠 CIO 深度洞察</h4>
-        <p class="text-red-900 text-sm"><strong>预期差：</strong>市场分歧较大，担忧可再生能源替代和需求下行，但煤炭周期属性弱化，红利属性强化，成为市场资金优先配置资产。</p>
+        <p class="text-red-900 text-sm"><strong>预期差：</strong>市场分歧较大，担忧可再生能源替代和需求下行，但煤炭周期属性弱化，红利属性强化，成为市场资金优先配置资产。保险资金增配资源股逻辑仍在，红利资产吸引力未减。</p>
       </div>
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">🎯 重点推荐标的</h3>
@@ -186,30 +217,9 @@ function renderIndustryContent_0309() {
       </ul>
     </section>
 
-    <!-- ==================== 工程机械 ==================== -->
-    <section id="i_sec7" class="scroll-mt-24">
-      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>工程机械</h2>
-
-      <blockquote class="border-l-4 border-blue-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
-        <strong>核心逻辑：</strong>出口周期正式开启，业绩估值双击
-      </blockquote>
-
-      <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">📊 硬核数据支撑</h3>
-      <ul class="space-y-2 my-4">
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>2026 年 2 月挖掘机出口 10471 台，同比增长 37.2%</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>1-2 月累计出口 20456 台，同比增长 38.8%，大超市场预期</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>出口市场占板块利润 80% 以上，欧美复苏 + 非洲印尼依然强势</span></li>
-      </ul>
-
-      <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">🎯 重点推荐标的</h3>
-      <ul class="space-y-2 my-4">
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>三一重工、徐工机械、中联重科、恒立液压、柳工</strong></span></li>
-      </ul>
-    </section>
-
     <!-- ==================== 锂电上游 ==================== -->
     <section id="i_sec8" class="scroll-mt-24">
-      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>锂电上游</h2>
+      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-green-600 rounded-full mr-3"></span>锂电上游</h2>
 
       <blockquote class="border-l-4 border-green-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
         <strong>核心逻辑：</strong>津巴布韦锂矿出口禁令 + 印尼镍减产，供给侧突发收缩
@@ -233,7 +243,6 @@ function renderIndustryContent_0309() {
       <ul class="space-y-2 my-4">
         <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>盐湖股份、华友钴业、大中矿业、厦钨新能、璞泰来</strong></span></li>
         <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>宁德时代：</strong>全球份额 37%，锂价企稳后毛利率弹性最大</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>德赛西威、银轮股份</strong></span></li>
       </ul>
     </section>
 
@@ -258,9 +267,37 @@ function renderIndustryContent_0309() {
       </ul>
     </section>
 
-    <!-- ==================== 生猪养殖 ==================== -->
+    <!-- ==================== 玻纤 ==================== -->
     <section id="i_sec10" class="scroll-mt-24">
-      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>生猪养殖</h2>
+      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-purple-600 rounded-full mr-3"></span>玻纤</h2>
+
+      <blockquote class="border-l-4 border-purple-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
+        <strong>核心逻辑：</strong>涨价周期加速，欧洲天然气危机带来出口替代机会
+      </blockquote>
+
+      <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">📊 硬核数据支撑</h3>
+      <ul class="space-y-2 my-4">
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>2025 年 10 月至 2026 年 2 月，普通电子布已历四次涨价，涨幅周期由季度缩短至月度</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>玻纤 7628 电子布报价 5.3 元/米，较 2025 年 9 月 +27%，<strong>提价能力已验证</strong></span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>欧洲天然气价格 +40%，欧洲玻纤产能仅 100 万吨，需求 250 万吨，<strong>缺口 60% 依赖进口</strong></span></li>
+      </ul>
+
+      <div class="bg-red-50 border-l-4 border-red-500 p-4 my-4 rounded-r-xl">
+        <h4 class="text-red-800 font-bold mb-2 flex items-center">🧠 CIO 深度洞察</h4>
+        <p class="text-red-900 text-sm mb-2"><strong>二阶传导推演：</strong>欧洲天然气成本曲线大幅上移 → 欧洲高能耗化工品（玻纤、MDI、纯碱）成本曲线大幅上移 → 国内化工企业凭借低成本优势，<strong>出口份额快速提升 + 定价权增强</strong>。</p>
+        <p class="text-red-900 text-sm"><strong>预期差：</strong>市场关注度较低，认为需求疲软，但 2026 年玻纤行业将呈现供需紧俏、价格持续上涨、高端需求爆发特征。</p>
+      </div>
+
+      <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">🎯 重点推荐标的</h3>
+      <ul class="space-y-2 my-4">
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中国巨石：</strong>全球产能第一，吨利弹性最大</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中材科技：</strong>玻纤 + 风电叶片双受益，估值仅 12xPE</span></li>
+      </ul>
+    </section>
+
+    <!-- ==================== 生猪养殖 ==================== -->
+    <section id="i_sec11" class="scroll-mt-24">
+      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-purple-600 rounded-full mr-3"></span>生猪养殖</h2>
 
       <blockquote class="border-l-4 border-purple-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
         <strong>核心逻辑：</strong>产能去化加速，2026Q2 或是周期拐点
@@ -268,15 +305,15 @@ function renderIndustryContent_0309() {
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">📊 硬核数据支撑</h3>
       <ul class="space-y-2 my-4">
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>自繁自养利润 -159.65 元/头，<strong>亏损幅度接近 2021 年底部</strong></span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>河南生猪均价 10.93 元/公斤，环比 -12.07%，<strong>跌幅加速是见底前兆</strong></span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>中央一号文件强调产能综合调控，农业农村部提出对头部企业实行年度生产备案管理</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>2026 年或现 2021 年以来第三次明显产能去化</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>商品猪价格 10.32 元/公斤，周环比 -4.71%</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>自繁自养利润 -237.98 元/头，外购仔猪 -58.89 元/头</strong></span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>生猪出栏均重 128.15 公斤/头，较历史同期偏高，行业出栏积极</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>政策端主动去产能持续推进，亏损加深加速去化速率</span></li>
       </ul>
 
       <div class="bg-red-50 border-l-4 border-red-500 p-4 my-4 rounded-r-xl">
         <h4 class="text-red-800 font-bold mb-2 flex items-center">🧠 CIO 深度洞察</h4>
-        <p class="text-red-900 text-sm mb-2"><strong>独立推演（预期差）：</strong>市场普遍认为"猪周期尚未见底"，但数据已显示<strong>加速去化信号</strong>。当前处于周期底部特征明显，产能去化加速将推动猪价提前止跌回升。</p>
+        <p class="text-red-900 text-sm mb-2"><strong>独立推演（预期差）：</strong>市场普遍认为"猪周期尚未见底"，但数据已显示<strong>加速去化信号</strong>。当前处于周期底部区域，明年猪价上涨概率高。</p>
         <p class="text-red-900 text-sm mb-2"><strong>核心拐点/催化剂：</strong></p>
         <ul class="text-red-900 text-sm space-y-1">
           <li>• 能繁母猪存栏：若连续 3 月环比 -3% 以上，确认产能出清</li>
@@ -287,16 +324,15 @@ function renderIndustryContent_0309() {
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">🎯 重点推荐标的</h3>
       <ul class="space-y-2 my-4">
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>牧原股份：</strong>低成本龙头，超额利润释放能力强</span></li>
         <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>温氏股份：</strong>成本行业最低 (14 元/kg)，安全边际最高</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>神农集团：</strong>弹性最大，完全成本 13.5 元/kg</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>巨星农牧：</strong>出栏增速 50%+，α属性最强</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>牧原股份、德康农牧</strong></span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>巨星农牧：</strong>成长弹性大</span></li>
       </ul>
     </section>
 
     <!-- ==================== 房地产 ==================== -->
-    <section id="i_sec11" class="scroll-mt-24">
-      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>房地产</h2>
+    <section id="i_sec12" class="scroll-mt-24">
+      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-purple-600 rounded-full mr-3"></span>房地产</h2>
 
       <blockquote class="border-l-4 border-purple-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
         <strong>核心逻辑：</strong>租金回报率 vs 国债收益率，配置价值悄然显现
@@ -307,7 +343,6 @@ function renderIndustryContent_0309() {
         <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>核心城市租金回报率 1.6-2.0%，十年期国债收益率约 2.3%，<strong>差距快速收敛</strong></span></li>
         <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>供给侧出清显著：新开工回撤 74.1% vs 销售回撤 50.9%，<strong>供小于求</strong></span></li>
         <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>百城二手房挂牌量 238.15 万套，环比 -5.62%，<strong>库存拐点已现</strong></span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>26 年春节期间 55 城新房日均成交较 25/24/23 年春节分别下降 30%/23%/64%，二手房分别增长 84%/63%/343%</span></li>
       </ul>
 
       <div class="bg-red-50 border-l-4 border-red-500 p-4 my-4 rounded-r-xl">
@@ -330,11 +365,11 @@ function renderIndustryContent_0309() {
     </section>
 
     <!-- ==================== 证券 ==================== -->
-    <section id="i_sec12" class="scroll-mt-24">
-      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>证券</h2>
+    <section id="i_sec13" class="scroll-mt-24">
+      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-purple-600 rounded-full mr-3"></span>证券</h2>
 
       <blockquote class="border-l-4 border-purple-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
-        <strong>核心逻辑：</strong>估值底部 + 资本市场改革，被忽视的 β机会
+        <strong>核心逻辑：</strong>估值底部 + 资本市场改革，被忽视的 β 机会
       </blockquote>
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">📊 硬核数据支撑</h3>
@@ -346,11 +381,11 @@ function renderIndustryContent_0309() {
 
       <div class="bg-red-50 border-l-4 border-red-500 p-4 my-4 rounded-r-xl">
         <h4 class="text-red-800 font-bold mb-2 flex items-center">🧠 CIO 深度洞察</h4>
-        <p class="text-red-900 text-sm mb-2"><strong>独立推演（预期差）：</strong>市场情绪极度悲观，但<strong>2026 年资本市场改革</strong>有望带来 β弹性。</p>
+        <p class="text-red-900 text-sm mb-2"><strong>独立推演（预期差）：</strong>市场情绪极度悲观，但<strong>2026 年资本市场改革</strong>有望带来 β 弹性。</p>
         <p class="text-red-900 text-sm mb-2"><strong>核心拐点/催化剂：</strong></p>
         <ul class="text-red-900 text-sm space-y-1">
           <li>• 政策催化：若 T+0、降印花税等交易制度改革落地</li>
-          <li>• 市场催化：若沪深 300 放量突破关键点位，券商 β弹性最大</li>
+          <li>• 市场催化：若沪深 300 放量突破关键点位，券商 β 弹性最大</li>
           <li>• 并购重组：行业集中度提升，头部券商并购预期</li>
         </ul>
       </div>
@@ -363,37 +398,51 @@ function renderIndustryContent_0309() {
       </ul>
     </section>
 
-    <!-- ==================== 玻纤 ==================== -->
-    <section id="i_sec13" class="scroll-mt-24">
-      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>玻纤</h2>
+    <!-- ==================== 工程机械 ==================== -->
+    <section id="i_sec14" class="scroll-mt-24">
+      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>工程机械</h2>
 
-      <blockquote class="border-l-4 border-purple-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
-        <strong>核心逻辑：</strong>涨价周期加速，欧洲天然气危机带来出口替代机会
+      <blockquote class="border-l-4 border-blue-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
+        <strong>核心逻辑：</strong>出口周期正式开启，业绩估值双击
       </blockquote>
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">📊 硬核数据支撑</h3>
       <ul class="space-y-2 my-4">
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>2025 年 10 月至 2026 年 2 月，普通电子布已历四次涨价，涨幅周期由季度缩短至月度</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>玻纤 7628 电子布报价 5.3 元/米，较 2025 年 9 月 +27%，<strong>提价能力已验证</strong></span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>欧洲天然气价格 +40%，欧洲玻纤产能仅 100 万吨，需求 250 万吨，<strong>缺口 60% 依赖进口</strong></span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>铂金涨价带来成本上升传导，天然气价格上涨支撑国内玻纤价格提升</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>2026 年 2 月挖掘机出口 10471 台，同比增长 37.2%</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>1-2 月累计出口 20456 台，同比增长 38.8%，<strong>大超市场预期</strong></span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>出口市场占板块利润 80% 以上，欧美复苏 + 非洲印尼依然强势</span></li>
       </ul>
-
-      <div class="bg-red-50 border-l-4 border-red-500 p-4 my-4 rounded-r-xl">
-        <h4 class="text-red-800 font-bold mb-2 flex items-center">🧠 CIO 深度洞察</h4>
-        <p class="text-red-900 text-sm mb-2"><strong>二阶传导推演：</strong>欧洲天然气成本曲线大幅上移 → 欧洲高能耗化工品（玻纤、MDI、纯碱）成本曲线大幅上移 → 国内化工企业凭借低成本优势，<strong>出口份额快速提升 + 定价权增强</strong>。</p>
-        <p class="text-red-900 text-sm"><strong>预期差：</strong>市场关注度较低，认为需求疲软，但 2026 年玻纤行业将呈现供需紧俏、价格持续上涨、高端需求爆发特征。</p>
-      </div>
 
       <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">🎯 重点推荐标的</h3>
       <ul class="space-y-2 my-4">
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中国巨石：</strong>全球产能第一，吨利弹性最大</span></li>
-        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中材科技：</strong>玻纤 + 风电叶片双受益，估值仅 12xPE</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>三一重工、徐工机械、中联重科、恒立液压、柳工</strong></span></li>
+      </ul>
+    </section>
+
+    <!-- ==================== 电网设备 ==================== -->
+    <section id="i_sec15" class="scroll-mt-24">
+      <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>电网设备</h2>
+
+      <blockquote class="border-l-4 border-blue-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
+        <strong>核心逻辑：</strong>北美特高压规划超预期，电网设备登上 HALO 舞台
+      </blockquote>
+
+      <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">📊 硬核数据支撑</h3>
+      <ul class="space-y-2 my-4">
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>CSP 自主供电协议落地，北美电网投资加速</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>两会降碳目标引领，国内电网投资维持高位</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>缺电背景下电力设备高景气延续</span></li>
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>电网设备登上 HALO 舞台，景气度从国内向全球外溢</span></li>
+      </ul>
+
+      <h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">🎯 重点推荐标的</h3>
+      <ul class="space-y-2 my-4">
+        <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>特变电工、许继电气、国电南瑞</strong></span></li>
       </ul>
     </section>
 
     <!-- ==================== 大宗商品监测表 ==================== -->
-    <section id="i_sec14" class="scroll-mt-24">
+    <section id="i_sec16" class="scroll-mt-24">
       <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-slate-600 rounded-full mr-3"></span>大宗商品与周期资源监测表</h2>
 
       <div class="overflow-x-auto my-6">
@@ -408,46 +457,46 @@ function renderIndustryContent_0309() {
           </thead>
           <tbody>
             <tr class="hover:bg-slate-50">
-              <td class="py-3 px-4 border-b border-slate-100">布伦特原油</td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="text-red-600 font-bold">90+ 美元/桶 ↑</span></td>
+              <td class="py-3 px-4 border-b border-slate-100">Brent 原油</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="text-red-600 font-bold">83.7 美元/桶 ↑</span></td>
               <td class="py-3 px-4 border-b border-slate-100">地缘溢价</td>
-              <td class="py-3 px-4 border-b border-slate-100">杰瑞股份、中海油服</td>
+              <td class="py-3 px-4 border-b border-slate-100">中国海油、中远海能</td>
             </tr>
             <tr class="hover:bg-slate-50">
-              <td class="py-3 px-4 border-b border-slate-100">欧洲 TTF 天然气</td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="text-red-600 font-bold">60.67 欧元/MWh ↑↑</span></td>
-              <td class="py-3 px-4 border-b border-slate-100">极度紧张</td>
-              <td class="py-3 px-4 border-b border-slate-100">九丰能源、新奥股份</td>
+              <td class="py-3 px-4 border-b border-slate-100">WTI 原油</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="text-red-600 font-bold">78.5 美元/桶 ↑</span></td>
+              <td class="py-3 px-4 border-b border-slate-100">地缘溢价</td>
+              <td class="py-3 px-4 border-b border-slate-100">中国石油、石化油服</td>
             </tr>
             <tr class="hover:bg-slate-50">
-              <td class="py-3 px-4 border-b border-slate-100">工业级碳酸锂</td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="text-green-600 font-bold">17.00 万元/吨 ↑</span></td>
-              <td class="py-3 px-4 border-b border-slate-100">底部反转</td>
-              <td class="py-3 px-4 border-b border-slate-100">盐湖股份、华友钴业</td>
+              <td class="py-3 px-4 border-b border-slate-100">LME 铝</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="text-red-600 font-bold">3431 美元/吨 ↑↑</span></td>
+              <td class="py-3 px-4 border-b border-slate-100">供给冲击</td>
+              <td class="py-3 px-4 border-b border-slate-100">中国铝业、神火股份</td>
             </tr>
             <tr class="hover:bg-slate-50">
-              <td class="py-3 px-4 border-b border-slate-100">动力煤现货</td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="text-slate-600 font-bold">750-800 元/吨 →</span></td>
+              <td class="py-3 px-4 border-b border-slate-100">动力煤（港口）</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="text-slate-600 font-bold">743 元/吨 →</span></td>
               <td class="py-3 px-4 border-b border-slate-100">区间波动</td>
-              <td class="py-3 px-4 border-b border-slate-100">中国神华、陕西煤业</td>
+              <td class="py-3 px-4 border-b border-slate-100">中国神华、昊华能源</td>
             </tr>
             <tr class="hover:bg-slate-50">
-              <td class="py-3 px-4 border-b border-slate-100">玻纤电子布</td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="text-green-600 font-bold">连续 4 次涨价 ↑</span></td>
-              <td class="py-3 px-4 border-b border-slate-100">景气上行</td>
-              <td class="py-3 px-4 border-b border-slate-100">中国巨石</td>
+              <td class="py-3 px-4 border-b border-slate-100">碳酸锂</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="text-green-600 font-bold">15.98 万元/吨 ↑</span></td>
+              <td class="py-3 px-4 border-b border-slate-100">底部反转</td>
+              <td class="py-3 px-4 border-b border-slate-100">天齐锂业、赣锋锂业</td>
             </tr>
             <tr class="hover:bg-slate-50">
-              <td class="py-3 px-4 border-b border-slate-100">生猪外三元</td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="text-red-600 font-bold">10.67 元/kg ↓</span></td>
+              <td class="py-3 px-4 border-b border-slate-100">生猪</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="text-red-600 font-bold">10.32 元/kg ↓</span></td>
               <td class="py-3 px-4 border-b border-slate-100">产能去化</td>
               <td class="py-3 px-4 border-b border-slate-100">牧原股份、温氏股份</td>
             </tr>
             <tr class="hover:bg-slate-50">
-              <td class="py-3 px-4 border-b border-slate-100">UCO 废油脂</td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="text-slate-600 font-bold">7400 元/吨 →</span></td>
-              <td class="py-3 px-4 border-b border-slate-100">SAF 拉动前夜</td>
-              <td class="py-3 px-4 border-b border-slate-100">山高环能、朗坤科技</td>
+              <td class="py-3 px-4 border-b border-slate-100">光纤 G.652.D</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="text-red-600 font-bold">85-120 元/公里 ↑↑↑</span></td>
+              <td class="py-3 px-4 border-b border-slate-100">供不应求</td>
+              <td class="py-3 px-4 border-b border-slate-100">亨通光电、中天科技</td>
             </tr>
           </tbody>
         </table>
@@ -455,7 +504,7 @@ function renderIndustryContent_0309() {
     </section>
 
     <!-- ==================== 产业链估值表 ==================== -->
-    <section id="i_sec15" class="scroll-mt-24">
+    <section id="i_sec17" class="scroll-mt-24">
       <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-slate-600 rounded-full mr-3"></span>产业链周期与估值监测表</h2>
 
       <div class="overflow-x-auto my-6">
@@ -470,40 +519,46 @@ function renderIndustryContent_0309() {
           </thead>
           <tbody>
             <tr class="hover:bg-slate-50">
-              <td class="py-3 px-4 border-b border-slate-100">AI 算力芯片</td>
-              <td class="py-3 px-4 border-b border-slate-100">Anthropic run-rate 翻倍</td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">高速增长期</span></td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-red-100 text-red-700 rounded text-xs font-bold">高位，高拥挤</span></td>
+              <td class="py-3 px-4 border-b border-slate-100">AI 算力 - 光模块</td>
+              <td class="py-3 px-4 border-b border-slate-100">800G 需求爆发，1.6T 启动</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">景气上行早期</span></td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-xs font-bold">中高位，拥挤度中高</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="py-3 px-4 border-b border-slate-100">AI 算力 - 光纤光缆</td>
+              <td class="py-3 px-4 border-b border-slate-100">价格暴涨 650%，量价齐升</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">景气爆发期</span></td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">低位，拥挤度低</span></td>
             </tr>
             <tr class="hover:bg-slate-50">
               <td class="py-3 px-4 border-b border-slate-100">人形机器人</td>
-              <td class="py-3 px-4 border-b border-slate-100">宇树目标出货 1-2 万台</td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-bold">量产前夕</span></td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-red-100 text-red-700 rounded text-xs font-bold">高位，高拥挤</span></td>
+              <td class="py-3 px-4 border-b border-slate-100">国家标准发布，宝马试点</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-bold">产业化元年</span></td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-red-100 text-red-700 rounded text-xs font-bold">高位，拥挤度高</span></td>
             </tr>
             <tr class="hover:bg-slate-50">
-              <td class="py-3 px-4 border-b border-slate-100">燃气轮机</td>
-              <td class="py-3 px-4 border-b border-slate-100">订单排至 2029-2030 年</td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-bold">需求爆发初期</span></td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">低位，低拥挤</span></td>
+              <td class="py-3 px-4 border-b border-slate-100">石油开采</td>
+              <td class="py-3 px-4 border-b border-slate-100">油价周涨 15%，地缘驱动</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">景气上行期</span></td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">中低位</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="py-3 px-4 border-b border-slate-100">油运</td>
+              <td class="py-3 px-4 border-b border-slate-100">BDTI 涨 51% 至 2868 点</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">超级周期</span></td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">低位，拥挤度低</span></td>
             </tr>
             <tr class="hover:bg-slate-50">
               <td class="py-3 px-4 border-b border-slate-100">生猪养殖</td>
-              <td class="py-3 px-4 border-b border-slate-100">自繁自养利润 -159 元/头</td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-bold">去化末期</span></td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">低位，低拥挤</span></td>
+              <td class="py-3 px-4 border-b border-slate-100">价格跌破成本，亏损加速</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-bold">周期底部区域</span></td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">低位</span></td>
             </tr>
             <tr class="hover:bg-slate-50">
-              <td class="py-3 px-4 border-b border-slate-100">锂电上游</td>
-              <td class="py-3 px-4 border-b border-slate-100">锂矿出口禁令，价格反弹</td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">底部反转期</span></td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">低位，低拥挤</span></td>
-            </tr>
-            <tr class="hover:bg-slate-50">
-              <td class="py-3 px-4 border-b border-slate-100">房地产</td>
-              <td class="py-3 px-4 border-b border-slate-100">挂牌量 -5.62%</td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs font-bold">筑底期</span></td>
-              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">低位，低拥挤</span></td>
+              <td class="py-3 px-4 border-b border-slate-100">券商</td>
+              <td class="py-3 px-4 border-b border-slate-100">政策红利 + 估值低位</td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-bold">底部修复期</span></td>
+              <td class="py-3 px-4 border-b border-slate-100"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">低位，拥挤度低</span></td>
             </tr>
           </tbody>
         </table>
@@ -511,23 +566,23 @@ function renderIndustryContent_0309() {
     </section>
 
     <!-- ==================== 策略建议 ==================== -->
-    <section id="i_sec16" class="scroll-mt-24">
+    <section id="i_sec18" class="scroll-mt-24">
       <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-slate-600 rounded-full mr-3"></span>本周策略建议</h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
         <div class="bg-green-50 border-l-4 border-green-500 p-5 rounded-r-xl">
           <h4 class="text-green-800 font-bold mb-3 flex items-center text-lg">📈 进攻方向（60% 仓位）</h4>
           <ul class="space-y-2 text-green-900">
-            <li class="flex items-start"><span class="w-2 h-2 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>AI 算力（25%）：</strong>寒武纪、中际旭创、英维克 — 产业趋势最确定</span></li>
+            <li class="flex items-start"><span class="w-2 h-2 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>AI 算力（25%）：</strong>寒武纪、中际旭创、亨通光电 — 产业趋势最确定</span></li>
             <li class="flex items-start"><span class="w-2 h-2 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>半导体设备（20%）：</strong>北方华创、中微公司 — 国产替代 + 周期上行</span></li>
-            <li class="flex items-start"><span class="w-2 h-2 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>燃气轮机（15%）：</strong>东方电气、上海电气 — 二阶暗线，预期差最大</span></li>
+            <li class="flex items-start"><span class="w-2 h-2 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>石油/油运（15%）：</strong>中国海油、中远海能 — 地缘冲突驱动</span></li>
           </ul>
         </div>
 
         <div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-xl">
           <h4 class="text-blue-800 font-bold mb-3 flex items-center text-lg">🛡️ 防守方向（30% 仓位）</h4>
           <ul class="space-y-2 text-blue-900">
-            <li class="flex items-start"><span class="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>生猪养殖（15%）：</strong>温氏股份、神农集团 — 周期底部左侧布局</span></li>
+            <li class="flex items-start"><span class="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>生猪养殖（15%）：</strong>牧原股份、温氏股份 — 周期底部左侧布局</span></li>
             <li class="flex items-start"><span class="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>高股息资源（15%）：</strong>中国神华、陕西煤业 — 现金牛 + 价格上行</span></li>
           </ul>
         </div>
