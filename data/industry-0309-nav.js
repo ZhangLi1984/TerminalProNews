@@ -1,5 +1,6 @@
 // ==========================================
 // 行业研究报告导航模块 - 2026 年 3 月 9 日
+// （深度融合行研总监+CIO 内参）
 // ==========================================
 
 const INDUSTRY_NAV_CONFIG_0309 = [
@@ -7,41 +8,45 @@ const INDUSTRY_NAV_CONFIG_0309 = [
     title: '核心赛道',
     links: [
       { id: 'i_sec1', label: 'AI 算力基础设施' },
-      { id: 'i_sec2', label: '半导体 (存储 + 设备)' },
+      { id: 'i_sec2', label: '半导体存储芯片' },
       { id: 'i_sec3', label: '人形机器人' }
+    ]
+  },
+  {
+    title: '医药出海',
+    links: [
+      { id: 'i_sec4', label: '创新药 License-out' }
     ]
   },
   {
     title: '周期资源',
     links: [
-      { id: 'i_sec4', label: '油气链/油服设备' },
-      { id: 'i_sec5', label: '燃气轮机' },
-      { id: 'i_sec6', label: '煤炭' },
-      { id: 'i_sec7', label: '工程机械' }
+      { id: 'i_sec5', label: '燃气轮机出海' },
+      { id: 'i_sec6', label: '油气/油运/化工' },
+      { id: 'i_sec7', label: '煤炭开采' },
+      { id: 'i_sec8', label: '工程机械' }
     ]
   },
   {
     title: '新能源链',
     links: [
-      { id: 'i_sec8', label: '锂电上游' },
-      { id: 'i_sec9', label: '制冷剂' }
+      { id: 'i_sec9', label: '储能/锂电' },
+      { id: 'i_sec10', label: '光纤/电子布' }
     ]
   },
   {
     title: '困境反转',
     links: [
-      { id: 'i_sec10', label: '生猪养殖' },
-      { id: 'i_sec11', label: '房地产' },
-      { id: 'i_sec12', label: '证券' },
-      { id: 'i_sec13', label: '玻纤' }
+      { id: 'i_sec11', label: '生猪养殖' },
+      { id: 'i_sec12', label: '券商并购' }
     ]
   },
   {
     title: '数据监测',
     links: [
-      { id: 'i_sec14', label: '大宗商品监测表' },
-      { id: 'i_sec15', label: '产业链估值表' },
-      { id: 'i_sec16', label: '策略建议' }
+      { id: 'i_sec13', label: '大宗商品监测表' },
+      { id: 'i_sec14', label: '产业链估值表' },
+      { id: 'i_sec15', label: '策略建议' }
     ]
   }
 ];

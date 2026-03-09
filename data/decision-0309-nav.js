@@ -14,18 +14,18 @@ const DECISION_NAV_CONFIG_0309 = [
   {
     title: '重大事件',
     links: [
-      { id: 'sec4', label: '中东战事升级' },
-      { id: 'sec5', label: '两会政策定调' },
-      { id: 'sec6', label: '美国滞胀交易' }
+      { id: 'sec4', label: '中东危机引爆油价' },
+      { id: 'sec5', label: '亚太黑色星期一' },
+      { id: 'sec6', label: '半导体高景气确认' }
     ]
   },
   {
     title: '行业催化',
     links: [
       { id: 'sec7', label: '科技/AI/半导体' },
-      { id: 'sec8', label: '新能源/汽车' },
-      { id: 'sec9', label: '政策宏观' },
-      { id: 'sec10', label: '资源/周期' }
+      { id: 'sec8', label: '新能源/储能' },
+      { id: 'sec9', label: '政策/宏观' },
+      { id: 'sec10', label: '并购重组' }
     ]
   },
   {
@@ -34,7 +34,7 @@ const DECISION_NAV_CONFIG_0309 = [
       { id: 'sec11', label: 'AI/机器人' },
       { id: 'sec12', label: '新能源' },
       { id: 'sec13', label: '半导体' },
-      { id: 'sec14', label: '商业航天' }
+      { id: 'sec14', label: '油气/煤炭' }
     ]
   },
   {
