@@ -99,6 +99,19 @@
             </svg>
             券商晨报
           </button>
+          <button
+            id="tab-stock"
+            data-tab="stock"
+            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60"
+          >
+            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+            个股研报
+            <span class="ml-2 px-1.5 py-0.5 text-[9px] font-black bg-red-600 text-white rounded-md">S/A/B/C</span>
+          </button>
         </nav>
       </div>
 
@@ -221,6 +234,25 @@
         </div>
       </div>
 
+      <!-- ==================== 文档五：个股研报 ==================== -->
+      <div id="stock-doc" class="relative hidden animate-in slide-up">
+        <div class="flex items-start gap-8 xl:gap-12">
+          <!-- 左侧导航 -->
+          <aside class="sidebar-nav w-56 flex-shrink-0 hidden xl:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-y-auto pr-4 custom-scrollbar">
+            <div class="space-y-6" id="stock-nav-content">
+              <!-- 由 JS 动态生成 -->
+            </div>
+          </aside>
+
+          <!-- 右侧内容 -->
+          <div class="flex-1 min-w-0 w-full max-w-[860px] mx-auto pb-24">
+            <div id="stock-content">
+              <!-- 由 JS 动态渲染 -->
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
 
@@ -249,6 +281,10 @@
   <script src="./data/broker-0309-nav.js"></script>
   <!-- 文档四：券商晨报 - 3 月 9 日内容 -->
   <script src="./data/broker-0309-content.js"></script>
+  <!-- 文档五：个股研报 - 3 月 9 日导航 -->
+  <script src="./data/stock-0309-nav.js"></script>
+  <!-- 文档五：个股研报 - 3 月 9 日内容 -->
+  <script src="./data/stock-0309-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 8 日 ==================== -->
   <!-- 文档一：投资决策内参 - 3 月 8 日导航 -->
@@ -267,6 +303,10 @@
   <script src="./data/broker-0308-nav.js"></script>
   <!-- 文档四：券商晨报 - 3 月 8 日内容 -->
   <script src="./data/broker-0308-content.js"></script>
+  <!-- 文档五：个股研报 - 3 月 8 日导航 -->
+  <script src="./data/stock-0308-nav.js"></script>
+  <!-- 文档五：个股研报 - 3 月 8 日内容 -->
+  <script src="./data/stock-0308-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 7 日 ==================== -->
   <!-- 文档一：投资决策内参 - 3 月 7 日导航 -->
@@ -285,6 +325,10 @@
   <script src="./data/broker-0307-nav.js"></script>
   <!-- 文档四：券商晨报 - 3 月 7 日内容 -->
   <script src="./data/broker-0307-content.js"></script>
+  <!-- 文档五：个股研报 - 3 月 7 日导航 -->
+  <script src="./data/stock-0307-nav.js"></script>
+  <!-- 文档五：个股研报 - 3 月 7 日内容 -->
+  <script src="./data/stock-0307-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 6 日 ==================== -->
   <!-- 文档一：投资决策内参 - 3 月 6 日导航 -->

@@ -69,15 +69,17 @@ function switchTab(tab) {
   const industryBtn = document.getElementById('tab-industry');
   const macroBtn = document.getElementById('tab-macro');
   const brokerBtn = document.getElementById('tab-broker');
+  const stockBtn = document.getElementById('tab-stock');
   const decisionDoc = document.getElementById('decision-doc');
   const industryDoc = document.getElementById('industry-doc');
   const macroDoc = document.getElementById('macro-doc');
   const brokerDoc = document.getElementById('broker-doc');
+  const stockDoc = document.getElementById('stock-doc');
 
   // 重置所有按钮样式
-  [decisionBtn, industryBtn, macroBtn, brokerBtn].forEach(btn => {
+  [decisionBtn, industryBtn, macroBtn, brokerBtn, stockBtn].forEach(btn => {
     if (btn) {
-      btn.classList.remove('bg-white', 'text-red-700', 'text-blue-700', 'text-emerald-700', 'text-amber-700', 'shadow-sm', 'border', 'border-slate-200');
+      btn.classList.remove('bg-white', 'text-red-700', 'text-blue-700', 'text-emerald-700', 'text-amber-700', 'text-purple-700', 'shadow-sm', 'border', 'border-slate-200');
       btn.classList.add('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
     }
   });
@@ -87,6 +89,7 @@ function switchTab(tab) {
   industryDoc.classList.add('hidden');
   macroDoc.classList.add('hidden');
   brokerDoc.classList.add('hidden');
+  stockDoc.classList.add('hidden');
 
   if (tab === 'decision') {
     decisionBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
@@ -108,6 +111,11 @@ function switchTab(tab) {
     brokerBtn.classList.add('bg-white', 'text-amber-700', 'shadow-sm', 'border', 'border-slate-200');
     brokerDoc.classList.remove('hidden');
     setTimeout(() => updateActiveNav('b_sec1'), 100);
+  } else if (tab === 'stock') {
+    stockBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
+    stockBtn.classList.add('bg-white', 'text-purple-700', 'shadow-sm', 'border', 'border-slate-200');
+    stockDoc.classList.remove('hidden');
+    setTimeout(() => updateActiveNav('s_sec1'), 100);
   }
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -180,6 +188,14 @@ function renderAllContent() {
     if (brokerContentEl && typeof renderBrokerContent_0309 === 'function') {
       brokerContentEl.innerHTML = renderBrokerContent_0309();
     }
+
+    const stockContentEl = document.getElementById('stock-content');
+    if (stockContentEl && typeof renderStockNav_0309 === 'function') {
+      renderStockNav_0309();
+    }
+    if (stockContentEl && typeof renderStockContent_0309 === 'function') {
+      stockContentEl.innerHTML = renderStockContent_0309();
+    }
   } else if (date === '2026-03-08') {
     // 渲染 3 月 8 日内容
     console.log('[renderAllContent] 渲染 3 月 8 日内容');
@@ -215,6 +231,14 @@ function renderAllContent() {
     if (brokerContentEl && typeof renderBrokerContent_0308 === 'function') {
       brokerContentEl.innerHTML = renderBrokerContent_0308();
     }
+
+    const stockContentEl = document.getElementById('stock-content');
+    if (stockContentEl && typeof renderStockNav_0308 === 'function') {
+      renderStockNav_0308();
+    }
+    if (stockContentEl && typeof renderStockContent_0308 === 'function') {
+      stockContentEl.innerHTML = renderStockContent_0308();
+    }
   } else if (date === '2026-03-07') {
     // 渲染 3 月 7 日内容
     console.log('[renderAllContent] 渲染 3 月 7 日内容');
@@ -249,6 +273,14 @@ function renderAllContent() {
     const brokerContentEl = document.getElementById('broker-content');
     if (brokerContentEl && typeof renderBrokerContent_0307 === 'function') {
       brokerContentEl.innerHTML = renderBrokerContent_0307();
+    }
+
+    const stockContentEl = document.getElementById('stock-content');
+    if (stockContentEl && typeof renderStockNav_0307 === 'function') {
+      renderStockNav_0307();
+    }
+    if (stockContentEl && typeof renderStockContent_0307 === 'function') {
+      stockContentEl.innerHTML = renderStockContent_0307();
     }
   } else if (date === '2026-03-06') {
     // 渲染 3 月 6 日内容
