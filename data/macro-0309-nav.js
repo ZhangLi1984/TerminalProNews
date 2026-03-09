@@ -29,7 +29,7 @@ const MACRO_NAV_CONFIG_0309 = [
     title: '风险提示',
     links: [
       { id: 'm_sec8', label: '宏观风险' },
-      { id: 'm_sec9', label: '数据汇总' }
+      { id: 'm_sec9', label: '宏观日历' }
     ]
   }
 ];
