@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-03-09',
+  currentDate: '2026-03-10',
   clockInterval: null
 };
 
@@ -153,7 +153,50 @@ function renderAllContent() {
   const date = AppState.currentDate;
   console.log(`[renderAllContent] 当前日期：${date}`);
 
-  if (date === '2026-03-09') {
+  if (date === '2026-03-10') {
+    // 渲染 3 月 10 日内容
+    console.log('[renderAllContent] 渲染 3 月 10 日内容');
+    if (typeof renderDecisionNav_0310 === 'function') {
+      renderDecisionNav_0310();
+    }
+    if (typeof renderIndustryNav_0310 === 'function') {
+      renderIndustryNav_0310();
+    }
+    if (typeof renderMacroNav_0310 === 'function') {
+      renderMacroNav_0310();
+    }
+    if (typeof renderBrokerNav_0310 === 'function') {
+      renderBrokerNav_0310();
+    }
+    if (typeof renderStockNav_0310 === 'function') {
+      renderStockNav_0310();
+    }
+
+    const decisionContentEl = document.getElementById('decision-content');
+    if (decisionContentEl && typeof renderDecisionContent_0310 === 'function') {
+      decisionContentEl.innerHTML = renderDecisionContent_0310();
+    }
+
+    const industryContentEl = document.getElementById('industry-content');
+    if (industryContentEl && typeof renderIndustryContent_0310 === 'function') {
+      industryContentEl.innerHTML = renderIndustryContent_0310();
+    }
+
+    const macroContentEl = document.getElementById('macro-content');
+    if (macroContentEl && typeof renderMacroContent_0310 === 'function') {
+      macroContentEl.innerHTML = renderMacroContent_0310();
+    }
+
+    const brokerContentEl = document.getElementById('broker-content');
+    if (brokerContentEl && typeof renderBrokerContent_0310 === 'function') {
+      brokerContentEl.innerHTML = renderBrokerContent_0310();
+    }
+
+    const stockContentEl = document.getElementById('stock-content');
+    if (stockContentEl && typeof renderStockContent_0310 === 'function') {
+      stockContentEl.innerHTML = renderStockContent_0310();
+    }
+  } else if (date === '2026-03-09') {
     // 渲染 3 月 9 日内容
     console.log('[renderAllContent] 渲染 3 月 9 日内容');
     if (typeof renderDecisionNav_0309 === 'function') {
@@ -167,6 +210,9 @@ function renderAllContent() {
     }
     if (typeof renderBrokerNav_0309 === 'function') {
       renderBrokerNav_0309();
+    }
+    if (typeof renderStockNav_0309 === 'function') {
+      renderStockNav_0309();
     }
 
     const decisionContentEl = document.getElementById('decision-content');
@@ -190,9 +236,6 @@ function renderAllContent() {
     }
 
     const stockContentEl = document.getElementById('stock-content');
-    if (stockContentEl && typeof renderStockNav_0309 === 'function') {
-      renderStockNav_0309();
-    }
     if (stockContentEl && typeof renderStockContent_0309 === 'function') {
       stockContentEl.innerHTML = renderStockContent_0309();
     }
@@ -210,6 +253,9 @@ function renderAllContent() {
     }
     if (typeof renderBrokerNav_0308 === 'function') {
       renderBrokerNav_0308();
+    }
+    if (typeof renderStockNav_0308 === 'function') {
+      renderStockNav_0308();
     }
 
     const decisionContentEl = document.getElementById('decision-content');
@@ -233,9 +279,6 @@ function renderAllContent() {
     }
 
     const stockContentEl = document.getElementById('stock-content');
-    if (stockContentEl && typeof renderStockNav_0308 === 'function') {
-      renderStockNav_0308();
-    }
     if (stockContentEl && typeof renderStockContent_0308 === 'function') {
       stockContentEl.innerHTML = renderStockContent_0308();
     }
@@ -253,6 +296,9 @@ function renderAllContent() {
     }
     if (typeof renderBrokerNav_0307 === 'function') {
       renderBrokerNav_0307();
+    }
+    if (typeof renderStockNav_0307 === 'function') {
+      renderStockNav_0307();
     }
 
     const decisionContentEl = document.getElementById('decision-content');
@@ -276,9 +322,6 @@ function renderAllContent() {
     }
 
     const stockContentEl = document.getElementById('stock-content');
-    if (stockContentEl && typeof renderStockNav_0307 === 'function') {
-      renderStockNav_0307();
-    }
     if (stockContentEl && typeof renderStockContent_0307 === 'function') {
       stockContentEl.innerHTML = renderStockContent_0307();
     }

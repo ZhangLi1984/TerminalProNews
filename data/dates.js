@@ -4,7 +4,8 @@
 
 // 可用日期列表（按时间倒序，最新的在前）
 const AVAILABLE_DATES = [
-  { date: '2026-03-09', label: '2026 年 3 月 9 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-03-10', label: '2026 年 3 月 10 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-03-09', label: '2026 年 3 月 9 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-08', label: '2026 年 3 月 8 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-07', label: '2026 年 3 月 7 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-06', label: '2026 年 3 月 6 日', tag: 'history', tagLabel: '历史' },
@@ -13,7 +14,7 @@ const AVAILABLE_DATES = [
 ];
 
 // 当前选中日期
-let currentDate = '2026-03-09';
+let currentDate = '2026-03-10';
 
 /**
  * 切换日期下拉菜单显示/隐藏
@@ -77,7 +78,53 @@ function setupDateDropdownListener() {
  */
 function renderAllContent() {
   // 渲染投资决策内参导航
-  if (currentDate === '2026-03-09') {
+  if (currentDate === '2026-03-10') {
+    if (typeof renderDecisionNav_0310 === 'function') {
+      renderDecisionNav_0310();
+    }
+    if (typeof renderIndustryNav_0310 === 'function') {
+      renderIndustryNav_0310();
+    }
+    if (typeof renderMacroNav_0310 === 'function') {
+      renderMacroNav_0310();
+    }
+    if (typeof renderBrokerNav_0310 === 'function') {
+      renderBrokerNav_0310();
+    }
+    if (typeof renderStockNav_0310 === 'function') {
+      renderStockNav_0310();
+    }
+    if (typeof renderDecisionContent_0310 === 'function') {
+      const decisionContainer = document.getElementById('decision-content');
+      if (decisionContainer) {
+        decisionContainer.innerHTML = renderDecisionContent_0310();
+      }
+    }
+    if (typeof renderIndustryContent_0310 === 'function') {
+      const industryContainer = document.getElementById('industry-content');
+      if (industryContainer) {
+        industryContainer.innerHTML = renderIndustryContent_0310();
+      }
+    }
+    if (typeof renderMacroContent_0310 === 'function') {
+      const macroContainer = document.getElementById('macro-content');
+      if (macroContainer) {
+        macroContainer.innerHTML = renderMacroContent_0310();
+      }
+    }
+    if (typeof renderBrokerContent_0310 === 'function') {
+      const brokerContainer = document.getElementById('broker-content');
+      if (brokerContainer) {
+        brokerContainer.innerHTML = renderBrokerContent_0310();
+      }
+    }
+    if (typeof renderStockContent_0310 === 'function') {
+      const stockContainer = document.getElementById('stock-content');
+      if (stockContainer) {
+        stockContainer.innerHTML = renderStockContent_0310();
+      }
+    }
+  } else if (currentDate === '2026-03-09') {
     if (typeof renderDecisionNav_0309 === 'function') {
       renderDecisionNav_0309();
     }
@@ -89,6 +136,9 @@ function renderAllContent() {
     }
     if (typeof renderBrokerNav_0309 === 'function') {
       renderBrokerNav_0309();
+    }
+    if (typeof renderStockNav_0309 === 'function') {
+      renderStockNav_0309();
     }
     if (typeof renderDecisionContent_0309 === 'function') {
       const decisionContainer = document.getElementById('decision-content');
@@ -114,6 +164,12 @@ function renderAllContent() {
         brokerContainer.innerHTML = renderBrokerContent_0309();
       }
     }
+    if (typeof renderStockContent_0309 === 'function') {
+      const stockContainer = document.getElementById('stock-content');
+      if (stockContainer) {
+        stockContainer.innerHTML = renderStockContent_0309();
+      }
+    }
   } else if (currentDate === '2026-03-08') {
     if (typeof renderDecisionNav_0308 === 'function') {
       renderDecisionNav_0308();
@@ -126,6 +182,9 @@ function renderAllContent() {
     }
     if (typeof renderBrokerNav_0308 === 'function') {
       renderBrokerNav_0308();
+    }
+    if (typeof renderStockNav_0308 === 'function') {
+      renderStockNav_0308();
     }
     if (typeof renderDecisionContent_0308 === 'function') {
       const decisionContainer = document.getElementById('decision-content');
@@ -151,6 +210,12 @@ function renderAllContent() {
         brokerContainer.innerHTML = renderBrokerContent_0308();
       }
     }
+    if (typeof renderStockContent_0308 === 'function') {
+      const stockContainer = document.getElementById('stock-content');
+      if (stockContainer) {
+        stockContainer.innerHTML = renderStockContent_0308();
+      }
+    }
   } else if (currentDate === '2026-03-07') {
     if (typeof renderDecisionNav_0307 === 'function') {
       renderDecisionNav_0307();
@@ -163,6 +228,9 @@ function renderAllContent() {
     }
     if (typeof renderBrokerNav_0307 === 'function') {
       renderBrokerNav_0307();
+    }
+    if (typeof renderStockNav_0307 === 'function') {
+      renderStockNav_0307();
     }
     if (typeof renderDecisionContent_0307 === 'function') {
       const decisionContainer = document.getElementById('decision-content');
@@ -186,6 +254,12 @@ function renderAllContent() {
       const brokerContainer = document.getElementById('broker-content');
       if (brokerContainer) {
         brokerContainer.innerHTML = renderBrokerContent_0307();
+      }
+    }
+    if (typeof renderStockContent_0307 === 'function') {
+      const stockContainer = document.getElementById('stock-content');
+      if (stockContainer) {
+        stockContainer.innerHTML = renderStockContent_0307();
       }
     }
   } else if (currentDate === '2026-03-06') {
