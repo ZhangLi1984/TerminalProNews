@@ -12,191 +12,309 @@ function renderStockContent_0310() {
 
     <div class="bg-gradient-to-br from-slate-50 to-purple-50 border-l-4 border-purple-500 rounded-r-xl p-5 my-6">
       <p class="text-slate-800 leading-relaxed mb-4">
-        今日共分析 <span class="font-bold text-purple-700">3 份</span>个股研报，整体情绪<span class="font-bold text-purple-700">积极偏多</span>，全部给予 <span class="font-bold text-purple-700">A 级评级</span>。
+        今日共分析 <span class="font-bold text-purple-700">100 篇</span>个股研报，整体情绪<span class="font-bold text-purple-700">偏积极</span>。资金主要流向<span class="font-bold text-purple-700">半导体设备、AI 算力链、新能源、北交所专精特新</span>等赛道。
       </p>
       <p class="text-slate-800 leading-relaxed mb-4">
-        资金主攻方向集中在<span class="font-bold text-purple-700">储能产业链</span>（海博思创、宁德时代）与<span class="font-bold text-purple-700">有色金属检测</span>（北矿检测）两大赛道。三份研报均为"买入"评级，其中北矿检测为首次覆盖，海博思创与宁德时代为维持评级并上修盈利预测。
+        <span class="font-bold text-purple-700">S 级标的 2 家</span>（澜起科技、鹏鼎控股），<span class="font-bold text-purple-700">A 级标的 7 家</span>（瑞芯微、德龙激光、开发科技、国力电子、富士达、长虹能源、铁大科技），B 级标的 75 家，C 级标的 15 家。
       </p>
       <p class="text-slate-800 leading-relaxed">
-        整体来看，今日研报呈现<span class="font-bold text-purple-700">"基本面扎实 + 成长逻辑清晰"</span>的特征，无 S 级标的主要因盈利预测上调幅度未达 20% 阈值或报告类型非首次覆盖/金股。
+        <span class="font-bold text-purple-700">半导体设备与 AI PCB</span>成为今日研报最核心关注方向，多只标的获得"买入"评级上调。
       </p>
     </div>
 
     <!-- ==================== S 级标的 ==================== -->
     <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-purple-600 rounded-full mr-3"></span>S 级标的深度剖析（核心仓位推荐）</h2>
 
-    <h3 id="sec2" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">今日无 S 级标的</h3>
+    <!-- 澜起科技 -->
+    <h3 id="sec2" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">澜起科技 (688008.SH) - 群益证券</h3>
 
-    <blockquote class="border-l-4 border-slate-300 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-600">
-      <p class="text-sm">
-        <strong>注</strong>：S 级要求：总分&gt;8.5 分，且需同时满足标题超预期 + 首次覆盖/金股 + 盈利预测上调&gt;20% + 基本面优秀。今日无标的满足上述全部条件。
-      </p>
-    </blockquote>
+    <div class="bg-gradient-to-r from-purple-50 to-red-50 border-l-4 border-purple-600 p-5 my-5 rounded-r-xl">
+      <h4 class="text-purple-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🏆</span>S 级·澜起科技
+        <span class="ml-auto text-sm font-bold bg-purple-600 text-white px-3 py-1 rounded-full">9.2 分</span>
+      </h4>
+
+      <div class="grid grid-cols-5 gap-3 mb-4 text-sm">
+        <div class="bg-white/60 rounded-lg p-2 text-center">
+          <div class="text-purple-600 font-bold">标题定调</div>
+          <div class="text-purple-900 font-black">1.8 分</div>
+        </div>
+        <div class="bg-white/60 rounded-lg p-2 text-center">
+          <div class="text-purple-600 font-bold">覆盖类型</div>
+          <div class="text-purple-900 font-black">1.5 分</div>
+        </div>
+        <div class="bg-white/60 rounded-lg p-2 text-center">
+          <div class="text-purple-600 font-bold">盈利预测</div>
+          <div class="text-purple-900 font-black">2.0 分</div>
+        </div>
+        <div class="bg-white/60 rounded-lg p-2 text-center">
+          <div class="text-purple-600 font-bold">基本面</div>
+          <div class="text-purple-900 font-black">2.0 分</div>
+        </div>
+        <div class="bg-white/60 rounded-lg p-2 text-center">
+          <div class="text-purple-600 font-bold">市场资金</div>
+          <div class="text-purple-900 font-black">1.9 分</div>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-purple-900 text-sm">
+        <p><strong class="text-purple-700">核心投资逻辑：</strong></p>
+        <ul class="list-none space-y-2 ml-4">
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>CXL 芯片全球龙头地位：</strong>谷歌 TPU v8 可能采用基于光互联的外部 DRAM 内存池架构替代 HBM，CXL 互联芯片需求将爆发。预计 2030 年 CXL 市场规模达 17 亿美元，2025-2030 年 CAGR 超 170%</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>2025 年业绩高增验证：</strong>营收 54.56 亿元 (+49.94%)，归母净利润 22.36 亿元 (+58.4%)，扣非净利润 20.22 亿元 (+61.95%)</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>互连类芯片产品线强劲：</strong>销售收入 51.39 亿元 (+53.43%)，毛利率 65.57% (+2.91pct)</span></li>
+        </ul>
+
+        <p><strong class="text-purple-700">预期差与催化剂：</strong></p>
+        <ul class="list-none space-y-2 ml-4">
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5 mr-2 flex-shrink-0"></span><span>市场低估了 AI 对内存接口芯片的需求弹性，国内阿里、腾讯、字节等互联网大厂算力军备竞赛将持续三年</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5 mr-2 flex-shrink-0"></span><span>催化剂：CXL 芯片量产交付、国内存储厂商扩产、AI 服务器采购放量</span></li>
+        </ul>
+      </div>
+
+      <div class="mt-4 bg-green-50 border border-green-200 rounded-lg p-3 flex items-center justify-between">
+        <span class="text-sm text-green-800"><strong>目标价：</strong>185 元（对应 2028 年 PE 38 倍）</span>
+      </div>
+
+      <div class="mt-4 bg-red-50 border border-red-200 rounded-lg p-3">
+        <p class="text-xs text-red-700"><strong>潜在风险：</strong>内存市场需求不及预期、技术迭代风险</p>
+      </div>
+    </div>
+
+    <!-- 鹏鼎控股 -->
+    <h3 id="sec3" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">鹏鼎控股 (002938.SZ) - 国金证券</h3>
+
+    <div class="bg-gradient-to-r from-purple-50 to-red-50 border-l-4 border-purple-600 p-5 my-5 rounded-r-xl">
+      <h4 class="text-purple-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🏆</span>S 级·鹏鼎控股
+        <span class="ml-auto text-sm font-bold bg-purple-600 text-white px-3 py-1 rounded-full">9.0 分</span>
+      </h4>
+
+      <div class="grid grid-cols-5 gap-3 mb-4 text-sm">
+        <div class="bg-white/60 rounded-lg p-2 text-center">
+          <div class="text-purple-600 font-bold">标题定调</div>
+          <div class="text-purple-900 font-black">1.7 分</div>
+        </div>
+        <div class="bg-white/60 rounded-lg p-2 text-center">
+          <div class="text-purple-600 font-bold">覆盖类型</div>
+          <div class="text-purple-900 font-black">1.8 分</div>
+        </div>
+        <div class="bg-white/60 rounded-lg p-2 text-center">
+          <div class="text-purple-600 font-bold">盈利预测</div>
+          <div class="text-purple-900 font-black">2.0 分</div>
+        </div>
+        <div class="bg-white/60 rounded-lg p-2 text-center">
+          <div class="text-purple-600 font-bold">基本面</div>
+          <div class="text-purple-900 font-black">2.0 分</div>
+        </div>
+        <div class="bg-white/60 rounded-lg p-2 text-center">
+          <div class="text-purple-600 font-bold">市场资金</div>
+          <div class="text-purple-900 font-black">1.5 分</div>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-purple-900 text-sm">
+        <p><strong class="text-purple-700">核心投资逻辑：</strong></p>
+        <ul class="list-none space-y-2 ml-4">
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>全球 PCB 龙头卡位 AI 赛道：</strong>HDI 技术积累深厚，淮安三园区一期可量产 6 阶以上 HDI 及 SLP 产品</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>背靠鸿海集团客户资源：</strong>深度接触全球 AI 项目核心终端客户</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>扩产决心明确：</strong>2025 年前三季度资本开支同比 +149%，超前三 年单年水平</span></li>
+        </ul>
+
+        <p><strong class="text-purple-700">预期差与催化剂：</strong></p>
+        <ul class="list-none space-y-2 ml-4">
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5 mr-2 flex-shrink-0"></span><span>市场认为公司过度依赖苹果消费电子，低估了 AI 服务器/汽车 PCB 的增量空间</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5 mr-2 flex-shrink-0"></span><span>汽车/服务器业务 25H1 营收增速达 87%</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5 mr-2 flex-shrink-0"></span><span>催化剂：苹果折叠屏 iPhone 2026 年推出、AI 眼镜爆发（预计 2026 年全球销量 1600 万台）</span></li>
+        </ul>
+      </div>
+
+      <div class="mt-4 bg-green-50 border border-green-200 rounded-lg p-3 flex items-center justify-between">
+        <span class="text-sm text-green-800"><strong>目标价：</strong>72.46 元（目标市值 1680 亿元）</span>
+        <span class="text-sm text-green-800"><strong>盈利预测：</strong>2025-2027 年归母 38/56/86 亿元，PE 32/22/14 倍</span>
+      </div>
+
+      <div class="mt-4 bg-red-50 border border-red-200 rounded-lg p-3">
+        <p class="text-xs text-red-700"><strong>潜在风险：</strong>AI 需求不及预期、大客户依赖（苹果占 82%）、汇率波动</p>
+      </div>
+    </div>
 
     <!-- ==================== A 级标的 ==================== -->
     <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-purple-600 rounded-full mr-3"></span>A 级标的重点叙述（主要仓位推荐）</h2>
 
-    <!-- 北矿检测 -->
-    <h3 id="sec3" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">北矿检测 (920160) - 华源证券</h3>
+    <!-- 瑞芯微 -->
+    <h3 id="sec4" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">瑞芯微 (603893.SH) - 中邮证券</h3>
 
     <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
       <h4 class="text-blue-800 font-black mb-3 flex items-center">
-        <span class="text-xl mr-2">🎯</span>A 级·北矿检测
+        <span class="text-xl mr-2">🎯</span>A 级·瑞芯微
+        <span class="ml-auto text-sm font-bold bg-blue-600 text-white px-3 py-1 rounded-full">8.2 分</span>
+      </h4>
+
+      <div class="space-y-3 text-blue-900 text-sm">
+        <p><strong class="text-blue-700">核心看点：</strong></p>
+        <ul class="list-none space-y-2 ml-4">
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>AIoT 从"万物互联"迈向"万物智联"，端边云协同架构成熟</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>RK3588、RK3576、RV11 系列 AIoT 算力平台快速增长</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>全球首颗 3D 架构端侧算力协处理器 RK182X 已导入十几个行业</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>2025 年预计营收 43.87-44.27 亿元，净利润 10.23-11.03 亿元 (+72%~85%)</span></li>
+        </ul>
+      </div>
+
+      <div class="mt-4 bg-green-50 border border-green-200 rounded-lg p-3 flex items-center justify-between">
+        <span class="text-sm text-green-800"><strong>评级：</strong>上调至"买入"</span>
+        <span class="text-sm text-green-800"><strong>估值：</strong>2026 年 PE 50 倍</span>
+      </div>
+    </div>
+
+    <!-- 德龙激光 -->
+    <h3 id="sec5" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">德龙激光 (688170.SH) - 爱建证券</h3>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
+      <h4 class="text-blue-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🎯</span>A 级·德龙激光
         <span class="ml-auto text-sm font-bold bg-blue-600 text-white px-3 py-1 rounded-full">8.0 分</span>
       </h4>
 
-      <div class="grid grid-cols-5 gap-3 mb-4 text-sm">
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">标题定调</div>
-          <div class="text-blue-900 font-black">1.5 分</div>
-        </div>
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">覆盖类型</div>
-          <div class="text-blue-900 font-black">2.0 分</div>
-        </div>
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">盈利预测</div>
-          <div class="text-blue-900 font-black">1.5 分</div>
-        </div>
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">基本面</div>
-          <div class="text-blue-900 font-black">2.0 分</div>
-        </div>
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">市场资金</div>
-          <div class="text-blue-900 font-black">1.0 分</div>
-        </div>
-      </div>
-
-      <div class="space-y-3 text-blue-900 text-sm">
-        <p><strong class="text-blue-700">核心投资逻辑：</strong>从第一性原理出发，北矿检测的商业本质是<span class="font-bold">"有色金属产业链的质量守门人"</span>。在有色金属价格高位运行的背景下，产业链各环节对精准计量与质量控制的支付意愿显著提升。</p>
-
-        <p><strong class="text-blue-700">三大竞争壁垒：</strong></p>
-        <ul class="list-none space-y-1 ml-4">
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>权威资质壁垒：</strong>伦敦金属交易所（LME）指定采样与化验机构之一，公信力获国际认可</span></li>
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>技术标准主导权：</strong>主导或参与 7 项国际标准、83 项国家标准、238 项行业标准</span></li>
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>高盈利商业模式：</strong>2024 年毛利率 61.43%、净利率 37.25%，显著领先同行</span></li>
-        </ul>
-
-        <p><strong class="text-blue-700">"检测服务 + 高端仪器"双轮驱动：</strong>自研在线分析仪已成功应用于磷矿、锂矿选矿市场，募投项目达产后将新增年检测服务 2.40 万批次、年产先进检测仪器 34 台。</p>
-      </div>
-
-      <div class="mt-4 bg-blue-100/50 rounded-lg p-4">
-        <p class="text-sm text-blue-800 mb-2"><strong>预期差与催化剂：</strong></p>
-        <ul class="list-none space-y-1 text-sm text-blue-900 ml-4">
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>碳酸锂期货交割检验业务放量（2025 年 1-5 月交割量同比 +92.92%）</span></li>
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>仪器业务在新客户导入后加速放量（2025-2027 年营收同比 +15%/25%/25%）</span></li>
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>募投项目投产后产能释放</span></li>
-        </ul>
-      </div>
-
-      <div class="mt-4 bg-red-50 border border-red-200 rounded-lg p-3">
-        <p class="text-xs text-red-700"><strong>潜在风险：</strong>主营业务单一风险；仪器业务不及预期；品牌公信力风险</p>
-      </div>
-    </div>
-
-    <!-- 海博思创 -->
-    <h3 id="sec4" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">海博思创 (688411) - 东吴证券</h3>
-
-    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-blue-800 font-black mb-3 flex items-center">
-        <span class="text-xl mr-2">🎯</span>A 级·海博思创
-        <span class="ml-auto text-sm font-bold bg-blue-600 text-white px-3 py-1 rounded-full">7.0 分</span>
-      </h4>
-
-      <div class="grid grid-cols-5 gap-3 mb-4 text-sm">
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">标题定调</div>
-          <div class="text-blue-900 font-black">1.5 分</div>
-        </div>
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">覆盖类型</div>
-          <div class="text-blue-900 font-black">1.5 分</div>
-        </div>
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">盈利预测</div>
-          <div class="text-blue-900 font-black">1.0 分</div>
-        </div>
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">基本面</div>
-          <div class="text-blue-900 font-black">1.5 分</div>
-        </div>
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">市场资金</div>
-          <div class="text-blue-900 font-black">1.5 分</div>
-        </div>
-      </div>
-
       <div class="space-y-3 text-blue-900 text-sm">
         <p><strong class="text-blue-700">核心看点：</strong></p>
         <ul class="list-none space-y-2 ml-4">
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>国内独储爆发 + 海外拓展双轮驱动：</strong>2025 年全国储能招标量 303.8GWh（同比 +76%）；海外 2025-2027 年出货规划 2/10/20GWh，北美毛利率 35%+、欧洲 30%</span></li>
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>商业模式转型：</strong>从"卖设备"到"卖收益"，通过"轻资产占节点 + 融资租赁导入资金 + 设备与运维绑定"实现稳定盈利，运维毛利率可达 60% 以上</span></li>
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>供应链锁定：</strong>与宁德签订 3 年 200GWh 电芯供应长单，与亿纬签订 2025-2027 年 50GWh 长协</span></li>
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>AI 赋能：</strong>"海博云"平台实现全生命周期管理，预测性维护和交易策略优化形成数据壁垒</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>存储芯片隐切设备获国内头部厂商首个国产量产订单</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>固态电池激光制痕绝缘设备进入多家客户供应链</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>钙钛矿电池整段设备已获多家头部厂商订单</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>2025-2027 年归母净利润 0.25/1.40/2.55 亿元</span></li>
         </ul>
       </div>
 
       <div class="mt-4 bg-green-50 border border-green-200 rounded-lg p-3 flex items-center justify-between">
-        <span class="text-sm text-green-800"><strong>目标价：</strong>353 元</span>
-        <span class="text-sm text-green-800"><strong>现价：</strong>229.4 元</span>
-        <span class="text-lg font-black text-green-700">↑ 48.7%</span>
+        <span class="text-sm text-green-800"><strong>评级：</strong>"买入"</span>
+        <span class="text-sm text-green-800"><strong>估值：</strong>2026 年 PE 38 倍</span>
       </div>
     </div>
 
-    <!-- 宁德时代 -->
-    <h3 id="sec5" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">宁德时代 (300750) - 东吴证券</h3>
+    <!-- 开发科技 -->
+    <h3 id="sec6" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">开发科技 (920029.BJ) - 华源证券</h3>
 
     <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
       <h4 class="text-blue-800 font-black mb-3 flex items-center">
-        <span class="text-xl mr-2">🎯</span>A 级·宁德时代
-        <span class="ml-auto text-sm font-bold bg-blue-600 text-white px-3 py-1 rounded-full">7.0 分</span>
+        <span class="text-xl mr-2">🎯</span>A 级·开发科技
+        <span class="ml-auto text-sm font-bold bg-blue-600 text-white px-3 py-1 rounded-full">7.8 分</span>
       </h4>
-
-      <div class="grid grid-cols-5 gap-3 mb-4 text-sm">
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">标题定调</div>
-          <div class="text-blue-900 font-black">2.0 分</div>
-        </div>
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">覆盖类型</div>
-          <div class="text-blue-900 font-black">1.0 分</div>
-        </div>
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">盈利预测</div>
-          <div class="text-blue-900 font-black">0.5 分</div>
-        </div>
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">基本面</div>
-          <div class="text-blue-900 font-black">2.0 分</div>
-        </div>
-        <div class="bg-white/60 rounded-lg p-2 text-center">
-          <div class="text-blue-600 font-bold">市场资金</div>
-          <div class="text-blue-900 font-black">1.5 分</div>
-        </div>
-      </div>
 
       <div class="space-y-3 text-blue-900 text-sm">
         <p><strong class="text-blue-700">核心看点：</strong></p>
         <ul class="list-none space-y-2 ml-4">
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>Q4 业绩超预期：</strong>25Q4 营收 1406 亿元（同环比 +36.6%/+35%），归母净利 232 亿元（同环比 +57%/+25%），毛利率 28.2%（同环比 +13.2/2.4pct）</span></li>
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>出货量高增：</strong>25 年锂电出货 661GWh（+39%），预计 26 年出货 900-1000GWh（+40%+），产能利用率 97%，在建产能 321GWh</span></li>
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>动力 + 储能双引擎：</strong>动力出货 541GWh（+42%），市占率 39.2%（+1.2pct）；储能出货 121GWh（+30%），26 年有望翻番至 250GWh</span></li>
-          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span><strong>现金流强劲：</strong>经营性净现金流 1332 亿元（+37%），Q4 单季 526 亿元（+78%）</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>2025 年归母净利润预计 7.07 亿元 (+20%)</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>欧洲核心市场 + 新兴市场共同增长，国内收入 +132.86%</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>巴西建厂开拓全球化新增量</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>PE 仅 17 倍，估值优势明显</span></li>
         </ul>
       </div>
 
       <div class="mt-4 bg-green-50 border border-green-200 rounded-lg p-3 flex items-center justify-between">
-        <span class="text-sm text-green-800"><strong>目标价：</strong>618 元</span>
-        <span class="text-sm text-green-800"><strong>现价：</strong>357.50 元</span>
-        <span class="text-lg font-black text-green-700">↑ 72.9%</span>
+        <span class="text-sm text-green-800"><strong>评级：</strong>"买入"</span>
+      </div>
+    </div>
+
+    <!-- 国力电子 -->
+    <h3 id="sec7" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">国力电子 (688103.SH) - 东兴证券</h3>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
+      <h4 class="text-blue-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🎯</span>A 级·国力电子
+        <span class="ml-auto text-sm font-bold bg-blue-600 text-white px-3 py-1 rounded-full">7.6 分</span>
+      </h4>
+
+      <div class="space-y-3 text-blue-900 text-sm">
+        <p><strong class="text-blue-700">核心看点：</strong></p>
+        <ul class="list-none space-y-2 ml-4">
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>2025 年营收 13.23 亿元 (+66.98%)，归母净利润 7061 万元 (+133.51%)</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>新能源汽车、防务、半导体设备、可控核聚变多领域驱动</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>2026 年 EPS 预计 1.98 元</span></li>
+        </ul>
+      </div>
+
+      <div class="mt-4 bg-green-50 border border-green-200 rounded-lg p-3 flex items-center justify-between">
+        <span class="text-sm text-green-800"><strong>评级：</strong>"推荐"</span>
+      </div>
+    </div>
+
+    <!-- 富士达 -->
+    <h3 id="sec8" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">富士达 (920640.BJ) - 华源证券</h3>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
+      <h4 class="text-blue-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🎯</span>A 级·富士达
+        <span class="ml-auto text-sm font-bold bg-blue-600 text-white px-3 py-1 rounded-full">7.5 分</span>
+      </h4>
+
+      <div class="space-y-3 text-blue-900 text-sm">
+        <p><strong class="text-blue-700">核心看点：</strong></p>
+        <ul class="list-none space-y-2 ml-4">
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>2025 年归母净利润预计 7773 万元 (+52%)</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>防务领域恢复性增长，商业航天 G60 千帆星座核心配套</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>量子领域低温超导射频缆已小批量供货</span></li>
+        </ul>
+      </div>
+
+      <div class="mt-4 bg-green-50 border border-green-200 rounded-lg p-3 flex items-center justify-between">
+        <span class="text-sm text-green-800"><strong>评级：</strong>"增持"</span>
+        <span class="text-sm text-green-800"><strong>估值：</strong>PE 104 倍</span>
+      </div>
+    </div>
+
+    <!-- 长虹能源 -->
+    <h3 id="sec9" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">长虹能源 (920239.BJ) - 华源证券</h3>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
+      <h4 class="text-blue-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🎯</span>A 级·长虹能源
+        <span class="ml-auto text-sm font-bold bg-blue-600 text-white px-3 py-1 rounded-full">7.3 分</span>
+      </h4>
+
+      <div class="space-y-3 text-blue-900 text-sm">
+        <p><strong class="text-blue-700">核心看点：</strong></p>
+        <ul class="list-none space-y-2 ml-4">
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>2025 年归母净利润预计 2.49 亿元 (+26%)</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>21700 系列高倍率锂电池成为盈利核心</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>泰国基地 + 湖南产线全球产能布局</span></li>
+        </ul>
+      </div>
+
+      <div class="mt-4 bg-green-50 border border-green-200 rounded-lg p-3 flex items-center justify-between">
+        <span class="text-sm text-green-800"><strong>评级：</strong>"增持"</span>
+        <span class="text-sm text-green-800"><strong>估值：</strong>PE 23 倍</span>
+      </div>
+    </div>
+
+    <!-- 铁大科技 -->
+    <h3 id="sec10" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">铁大科技 (920541.BJ) - 华源证券</h3>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
+      <h4 class="text-blue-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🎯</span>A 级·铁大科技
+        <span class="ml-auto text-sm font-bold bg-blue-600 text-white px-3 py-1 rounded-full">7.2 分</span>
+      </h4>
+
+      <div class="space-y-3 text-blue-900 text-sm">
+        <p><strong class="text-blue-700">核心看点：</strong></p>
+        <ul class="list-none space-y-2 ml-4">
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>2025 年归母净利润预计 7102 万元 (+25%)</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>轨道交通监测监控在手订单充足</span></li>
+          <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 mr-2 flex-shrink-0"></span><span>马来西亚古晋智能交通信号机项目通过验收</span></li>
+        </ul>
+      </div>
+
+      <div class="mt-4 bg-green-50 border border-green-200 rounded-lg p-3 flex items-center justify-between">
+        <span class="text-sm text-green-800"><strong>评级：</strong>"增持"</span>
+        <span class="text-sm text-green-800"><strong>估值：</strong>PE 26 倍</span>
       </div>
     </div>
 
     <!-- ==================== 评级汇总表 ==================== -->
     <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-purple-600 rounded-full mr-3"></span>完整评级汇总表</h2>
 
-    <h3 id="sec6" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">评级汇总</h3>
+    <h3 id="sec11" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">评级汇总</h3>
 
     <div class="overflow-x-auto my-6">
       <table class="min-w-full border-collapse rounded-xl overflow-hidden shadow-lg">
@@ -212,32 +330,88 @@ function renderStockContent_0310() {
           </tr>
         </thead>
         <tbody class="bg-white divide-y divide-slate-100">
-          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
-            <td class="px-4 py-3 font-bold text-blue-900 text-center">1</td>
-            <td class="px-4 py-3 font-bold text-blue-900">北矿检测</td>
-            <td class="px-4 py-3 text-center text-slate-600">920160</td>
-            <td class="px-4 py-3 text-slate-700">华源证券</td>
-            <td class="px-4 py-3 text-center"><span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-bold rounded">A</span></td>
-            <td class="px-4 py-3 text-center font-bold text-blue-700">8.0</td>
-            <td class="px-4 py-3 text-slate-600 text-sm">有色金属检测龙头，首次覆盖，"检测 + 仪器"双轮驱动，ROE 18% 资产负债率仅 11%</td>
+          <!-- S 级标的 -->
+          <tr class="bg-purple-50 hover:bg-purple-100 transition-colors">
+            <td class="px-4 py-3 font-bold text-purple-900 text-center">1</td>
+            <td class="px-4 py-3 font-bold text-purple-900">澜起科技</td>
+            <td class="px-4 py-3 text-center text-slate-600">688008.SH</td>
+            <td class="px-4 py-3 text-slate-700">群益证券</td>
+            <td class="px-4 py-3 text-center"><span class="inline-block px-2 py-1 bg-purple-600 text-white text-xs font-bold rounded">S</span></td>
+            <td class="px-4 py-3 text-center font-bold text-purple-700">9.2</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">CXL 芯片全球龙头，AI 驱动内存池化需求爆发</td>
           </tr>
-          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
-            <td class="px-4 py-3 font-bold text-blue-900 text-center">2</td>
-            <td class="px-4 py-3 font-bold text-blue-900">海博思创</td>
-            <td class="px-4 py-3 text-center text-slate-600">688411</td>
-            <td class="px-4 py-3 text-slate-700">东吴证券</td>
-            <td class="px-4 py-3 text-center"><span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-bold rounded">A</span></td>
-            <td class="px-4 py-3 text-center font-bold text-blue-700">7.0</td>
-            <td class="px-4 py-3 text-slate-600 text-sm">储能系统集成龙头，国内独储 + 海外双轮驱动，商业模式从"卖设备"转型"卖收益"</td>
+          <tr class="bg-purple-50 hover:bg-purple-100 transition-colors">
+            <td class="px-4 py-3 font-bold text-purple-900 text-center">2</td>
+            <td class="px-4 py-3 font-bold text-purple-900">鹏鼎控股</td>
+            <td class="px-4 py-3 text-center text-slate-600">002938.SZ</td>
+            <td class="px-4 py-3 text-slate-700">国金证券</td>
+            <td class="px-4 py-3 text-center"><span class="inline-block px-2 py-1 bg-purple-600 text-white text-xs font-bold rounded">S</span></td>
+            <td class="px-4 py-3 text-center font-bold text-purple-700">9.0</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">全球 PCB 龙头，HDI 技术卡位 AI 服务器赛道</td>
           </tr>
+          <!-- A 级标的 -->
           <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
             <td class="px-4 py-3 font-bold text-blue-900 text-center">3</td>
-            <td class="px-4 py-3 font-bold text-blue-900">宁德时代</td>
-            <td class="px-4 py-3 text-center text-slate-600">300750</td>
-            <td class="px-4 py-3 text-slate-700">东吴证券</td>
+            <td class="px-4 py-3 font-bold text-blue-900">瑞芯微</td>
+            <td class="px-4 py-3 text-center text-slate-600">603893.SH</td>
+            <td class="px-4 py-3 text-slate-700">中邮证券</td>
             <td class="px-4 py-3 text-center"><span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-bold rounded">A</span></td>
-            <td class="px-4 py-3 text-center font-bold text-blue-700">7.0</td>
-            <td class="px-4 py-3 text-slate-600 text-sm">Q4 业绩超预期，全球动力电龙头市占率 39%，26 年出货有望 +40%，经营现金流 1332 亿</td>
+            <td class="px-4 py-3 text-center font-bold text-blue-700">8.2</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">AIoT 算力平台快速增长，端侧 AI 协处理器落地</td>
+          </tr>
+          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
+            <td class="px-4 py-3 font-bold text-blue-900 text-center">4</td>
+            <td class="px-4 py-3 font-bold text-blue-900">德龙激光</td>
+            <td class="px-4 py-3 text-center text-slate-600">688170.SH</td>
+            <td class="px-4 py-3 text-slate-700">爱建证券</td>
+            <td class="px-4 py-3 text-center"><span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-bold rounded">A</span></td>
+            <td class="px-4 py-3 text-center font-bold text-blue-700">8.0</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">存储芯片隐切 + 固态电池 + 钙钛矿三赛道共振</td>
+          </tr>
+          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
+            <td class="px-4 py-3 font-bold text-blue-900 text-center">5</td>
+            <td class="px-4 py-3 font-bold text-blue-900">开发科技</td>
+            <td class="px-4 py-3 text-center text-slate-600">920029.BJ</td>
+            <td class="px-4 py-3 text-slate-700">华源证券</td>
+            <td class="px-4 py-3 text-center"><span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-bold rounded">A</span></td>
+            <td class="px-4 py-3 text-center font-bold text-blue-700">7.8</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">智能电表全球龙头，巴西建厂开拓新增量</td>
+          </tr>
+          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
+            <td class="px-4 py-3 font-bold text-blue-900 text-center">6</td>
+            <td class="px-4 py-3 font-bold text-blue-900">国力电子</td>
+            <td class="px-4 py-3 text-center text-slate-600">688103.SH</td>
+            <td class="px-4 py-3 text-slate-700">东兴证券</td>
+            <td class="px-4 py-3 text-center"><span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-bold rounded">A</span></td>
+            <td class="px-4 py-3 text-center font-bold text-blue-700">7.6</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">电子真空器件龙头，新能源 + 半导体双驱动</td>
+          </tr>
+          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
+            <td class="px-4 py-3 font-bold text-blue-900 text-center">7</td>
+            <td class="px-4 py-3 font-bold text-blue-900">富士达</td>
+            <td class="px-4 py-3 text-center text-slate-600">920640.BJ</td>
+            <td class="px-4 py-3 text-slate-700">华源证券</td>
+            <td class="px-4 py-3 text-center"><span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-bold rounded">A</span></td>
+            <td class="px-4 py-3 text-center font-bold text-blue-700">7.5</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">商业航天 + 量子科技双轮驱动</td>
+          </tr>
+          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
+            <td class="px-4 py-3 font-bold text-blue-900 text-center">8</td>
+            <td class="px-4 py-3 font-bold text-blue-900">长虹能源</td>
+            <td class="px-4 py-3 text-center text-slate-600">920239.BJ</td>
+            <td class="px-4 py-3 text-slate-700">华源证券</td>
+            <td class="px-4 py-3 text-center"><span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-bold rounded">A</span></td>
+            <td class="px-4 py-3 text-center font-bold text-blue-700">7.3</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">高倍率锂电池核心供应商，产能释放</td>
+          </tr>
+          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
+            <td class="px-4 py-3 font-bold text-blue-900 text-center">9</td>
+            <td class="px-4 py-3 font-bold text-blue-900">铁大科技</td>
+            <td class="px-4 py-3 text-center text-slate-600">920541.BJ</td>
+            <td class="px-4 py-3 text-slate-700">华源证券</td>
+            <td class="px-4 py-3 text-center"><span class="inline-block px-2 py-1 bg-blue-600 text-white text-xs font-bold rounded">A</span></td>
+            <td class="px-4 py-3 text-center font-bold text-blue-700">7.2</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">轨交信号龙头，海外智能交通突破</td>
           </tr>
         </tbody>
       </table>
@@ -266,7 +440,7 @@ function renderStockContent_0310() {
     </div>
 
     <div class="text-center text-slate-500 text-sm mt-10 pt-6 border-t border-slate-200">
-      <p>报告生成时间：2026-03-10 | 分析标的数量：3 只 | S 级：0 只 | A 级：3 只 | B 级：0 只 | C 级：0 只</p>
+      <p>报告生成时间：2026-03-10 | 分析标的数量：9 只 | S 级：2 只 | A 级：7 只 | B 级：75 只 | C 级：15 只</p>
     </div>
 
   </div>`;
