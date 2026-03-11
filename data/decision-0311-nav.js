@@ -6,28 +6,28 @@ const DECISION_NAV_CONFIG_0311 = [
   {
     title: '核心摘要',
     links: [
-      { id: 'sec1', label: '核心主线与关键推演' },
+      { id: 'sec1', label: '核心主线与全局叙事' },
       { id: 'sec2', label: '操作方向建议' }
     ]
   },
   {
     title: '重大事件推演',
     links: [
-      { id: 'sec3', label: '美伊冲突缓和信号' },
-      { id: 'sec4', label: 'OpenClaw 智能体浪潮' },
-      { id: 'sec5', label: '存储芯片涨价周期' }
+      { id: 'sec3', label: '黄仁勋定义 AI 五层蛋糕' },
+      { id: 'sec4', label: 'OpenClaw 智能体爆火' },
+      { id: 'sec5', label: '美伊冲突反复' }
     ]
   },
   {
     title: '行业催化追踪',
     links: [
-      { id: 'sec6', label: '科技/AI/半导体' },
-      { id: 'sec7', label: '新能源/电力' },
-      { id: 'sec8', label: '政策宏观' }
+      { id: 'sec6', label: 'AI/算力/半导体' },
+      { id: 'sec7', label: '新能源/储能' },
+      { id: 'sec8', label: '政策/宏观' }
     ]
   },
   {
-    title: '热点赛道与传导',
+    title: '热点与传导',
     links: [
       { id: 'sec9', label: '热点赛道追踪' },
       { id: 'sec10', label: '跨赛道传导分析' }
@@ -36,7 +36,7 @@ const DECISION_NAV_CONFIG_0311 = [
   {
     title: '明日关注与风险',
     links: [
-      { id: 'sec11', label: '明日重点事件' },
+      { id: 'sec11', label: '事件日历' },
       { id: 'sec12', label: '风险提示与证伪' }
     ]
   }

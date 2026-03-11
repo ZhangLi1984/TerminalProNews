@@ -1,46 +1,43 @@
 // ==========================================
-// 行业研究报告导航 - 2026 年 3 月 11 日
+// 行业研究导航 - 2026 年 3 月 11 日
 // ==========================================
 
 const INDUSTRY_NAV_CONFIG_0311 = [
   {
     title: '核心高胜率赛道',
     links: [
-      { id: 'i_sec1', label: 'AI 算力与半导体产业链' },
-      { id: 'i_sec2', label: '铝产业链' },
-      { id: 'i_sec3', label: '生物燃料与油脂化工' }
+      { id: 'sec1', label: 'AI 算力与半导体' },
+      { id: 'sec2', label: '铝产业链' },
+      { id: 'sec3', label: '生物燃料与油脂化工' }
     ]
   },
   {
-    title: '跨赛道暗线博弈',
+    title: 'CIO 深度洞察',
     links: [
-      { id: 'i_sec4', label: '霍尔木兹海峡→硫磺→镍' },
-      { id: 'i_sec5', label: 'AI 能耗→算电协同' },
-      { id: 'i_sec6', label: '生猪产能去化加速' },
-      { id: 'i_sec7', label: '比亚迪闪充→储能爆发' }
+      { id: 'sec4', label: '半导体涨价周期' },
+      { id: 'sec5', label: '医药生物创新药' },
+      { id: 'sec6', label: '低空经济' }
     ]
   },
   {
-    title: '预期差与困境反转',
+    title: '跨赛道暗线',
     links: [
-      { id: 'i_sec8', label: '生猪养殖' },
-      { id: 'i_sec9', label: 'CXO 行业' },
-      { id: 'i_sec10', label: '房地产' }
+      { id: 'sec7', label: '油运龙头持续获益' },
+      { id: 'sec8', label: '绿电运营商重估' }
     ]
   },
   {
-    title: '高确定性与底仓资产',
+    title: '预期差与反转',
     links: [
-      { id: 'i_sec11', label: '电网设备' },
-      { id: 'i_sec12', label: '黄金' },
-      { id: 'i_sec13', label: '煤炭' }
+      { id: 'sec9', label: '生猪养殖周期反转' },
+      { id: 'sec10', label: '券商估值修复' }
     ]
   },
   {
-    title: '数据监测表',
+    title: '数据监测',
     links: [
-      { id: 'i_sec14', label: '大宗商品量价监测' },
-      { id: 'i_sec15', label: '产业链周期与估值' }
+      { id: 'sec11', label: '大宗商品监测表' },
+      { id: 'sec12', label: '产业链周期估值表' }
     ]
   }
 ];
