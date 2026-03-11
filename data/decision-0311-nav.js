@@ -11,34 +11,45 @@ const DECISION_NAV_CONFIG_0311 = [
     ]
   },
   {
-    title: '重大事件推演',
+    title: '重大新闻详解',
     links: [
-      { id: 'sec3', label: 'IEA 释放石油储备' },
-      { id: 'sec4', label: '黄仁勋 AI 五层架构' },
-      { id: 'sec5', label: '科创板退层企业' }
+      { id: 'sec3', label: '中东地缘冲突升级' },
+      { id: 'sec4', label: 'AI 智能体狂潮与监管' },
+      { id: 'sec5', label: '储能政策催化' }
     ]
   },
   {
-    title: '行业催化追踪',
+    title: '重要新闻分类',
     links: [
-      { id: 'sec6', label: 'AI/算力/半导体' },
-      { id: 'sec7', label: '新能源/储能' },
-      { id: 'sec8', label: '化工/周期品' },
-      { id: 'sec9', label: '宏观/政策' }
+      { id: 'sec6', label: '政策宏观' },
+      { id: 'sec7', label: '产业动态' },
+      { id: 'sec8', label: '公司事件' }
     ]
   },
   {
-    title: '热点与传导',
+    title: '热点赛道追踪',
     links: [
-      { id: 'sec10', label: '热点赛道追踪' },
-      { id: 'sec11', label: '跨赛道传导分析' }
+      { id: 'sec9', label: 'AI/算力/半导体' },
+      { id: 'sec10', label: '储能/新能源' },
+      { id: 'sec11', label: '机器人' },
+      { id: 'sec12', label: '油气/资源' }
+    ]
+  },
+  {
+    title: '跨赛道传导',
+    links: [
+      { id: 'sec13', label: 'AI→电力→储能/核电' },
+      { id: 'sec14', label: '中东→化肥→农业' },
+      { id: 'sec15', label: 'AI 监管→网络安全' },
+      { id: 'sec16', label: '电动车→机床订单' }
     ]
   },
   {
     title: '明日关注与风险',
     links: [
-      { id: 'sec12', label: '事件日历' },
-      { id: 'sec13', label: '风险提示与证伪' }
+      { id: 'sec17', label: '事件日历' },
+      { id: 'sec18', label: '风险提示' },
+      { id: 'sec19', label: '核心标的池' }
     ]
   }
 ];
