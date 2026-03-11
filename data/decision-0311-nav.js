@@ -13,9 +13,9 @@ const DECISION_NAV_CONFIG_0311 = [
   {
     title: '重大事件推演',
     links: [
-      { id: 'sec3', label: '黄仁勋定义 AI 五层蛋糕' },
-      { id: 'sec4', label: 'OpenClaw 智能体爆火' },
-      { id: 'sec5', label: '美伊冲突反复' }
+      { id: 'sec3', label: 'IEA 释放石油储备' },
+      { id: 'sec4', label: '黄仁勋 AI 五层架构' },
+      { id: 'sec5', label: '科创板退层企业' }
     ]
   },
   {
@@ -23,21 +23,22 @@ const DECISION_NAV_CONFIG_0311 = [
     links: [
       { id: 'sec6', label: 'AI/算力/半导体' },
       { id: 'sec7', label: '新能源/储能' },
-      { id: 'sec8', label: '政策/宏观' }
+      { id: 'sec8', label: '化工/周期品' },
+      { id: 'sec9', label: '宏观/政策' }
     ]
   },
   {
     title: '热点与传导',
     links: [
-      { id: 'sec9', label: '热点赛道追踪' },
-      { id: 'sec10', label: '跨赛道传导分析' }
+      { id: 'sec10', label: '热点赛道追踪' },
+      { id: 'sec11', label: '跨赛道传导分析' }
     ]
   },
   {
     title: '明日关注与风险',
     links: [
-      { id: 'sec11', label: '事件日历' },
-      { id: 'sec12', label: '风险提示与证伪' }
+      { id: 'sec12', label: '事件日历' },
+      { id: 'sec13', label: '风险提示与证伪' }
     ]
   }
 ];

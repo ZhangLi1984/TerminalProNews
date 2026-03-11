@@ -6,38 +6,38 @@ const INDUSTRY_NAV_CONFIG_0311 = [
   {
     title: '核心高胜率赛道',
     links: [
-      { id: 'sec1', label: 'AI 算力与半导体' },
-      { id: 'sec2', label: '铝产业链' },
-      { id: 'sec3', label: '生物燃料与油脂化工' }
+      { id: 'i_sec1', label: 'AI 算力与半导体' },
+      { id: 'i_sec2', label: '铝产业链' },
+      { id: 'i_sec3', label: '生物燃料与油脂化工' }
     ]
   },
   {
     title: 'CIO 深度洞察',
     links: [
-      { id: 'sec4', label: '半导体涨价周期' },
-      { id: 'sec5', label: '医药生物创新药' },
-      { id: 'sec6', label: '低空经济' }
+      { id: 'i_sec4', label: '半导体涨价周期' },
+      { id: 'i_sec5', label: '医药生物/创新药' },
+      { id: 'i_sec6', label: '低空经济' }
     ]
   },
   {
     title: '跨赛道暗线',
     links: [
-      { id: 'sec7', label: '油运龙头持续获益' },
-      { id: 'sec8', label: '绿电运营商重估' }
+      { id: 'i_sec7', label: '油运龙头持续获益' },
+      { id: 'i_sec8', label: '绿电运营商重估' }
     ]
   },
   {
     title: '预期差与反转',
     links: [
-      { id: 'sec9', label: '生猪养殖周期反转' },
-      { id: 'sec10', label: '券商估值修复' }
+      { id: 'i_sec9', label: '生猪养殖周期反转' },
+      { id: 'i_sec10', label: '券商估值修复' }
     ]
   },
   {
     title: '数据监测',
     links: [
-      { id: 'sec11', label: '大宗商品监测表' },
-      { id: 'sec12', label: '产业链周期估值表' }
+      { id: 'i_sec11', label: '大宗商品监测表' },
+      { id: 'i_sec12', label: '产业链周期估值表' }
     ]
   }
 ];
