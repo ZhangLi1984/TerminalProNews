@@ -11,45 +11,43 @@ const DECISION_NAV_CONFIG_0311 = [
     ]
   },
   {
-    title: '重大新闻详解',
+    title: '重大事件详解',
     links: [
-      { id: 'sec3', label: '中东地缘冲突升级' },
-      { id: 'sec4', label: 'AI 智能体狂潮与监管' },
-      { id: 'sec5', label: '储能政策催化' }
+      { id: 'sec3', label: '中东冲突升级·能源重构' },
+      { id: 'sec4', label: 'AI 智能体商业化元年' },
+      { id: 'sec5', label: '宁德时代突破 400 元' }
     ]
   },
   {
     title: '重要新闻分类',
     links: [
-      { id: 'sec6', label: '政策宏观' },
-      { id: 'sec7', label: '产业动态' },
-      { id: 'sec8', label: '公司事件' }
+      { id: 'sec6', label: '科技/AI/半导体' },
+      { id: 'sec7', label: '新能源/化工' },
+      { id: 'sec8', label: '政策/宏观' },
+      { id: 'sec9', label: '大金融/基金' }
     ]
   },
   {
     title: '热点赛道追踪',
     links: [
-      { id: 'sec9', label: 'AI/算力/半导体' },
-      { id: 'sec10', label: '储能/新能源' },
-      { id: 'sec11', label: '机器人' },
-      { id: 'sec12', label: '油气/资源' }
+      { id: 'sec10', label: 'AI/机器人赛道' },
+      { id: 'sec11', label: '新能源赛道' },
+      { id: 'sec12', label: '半导体赛道' }
     ]
   },
   {
-    title: '跨赛道传导',
+    title: '跨赛道传导分析',
     links: [
-      { id: 'sec13', label: 'AI→电力→储能/核电' },
-      { id: 'sec14', label: '中东→化肥→农业' },
-      { id: 'sec15', label: 'AI 监管→网络安全' },
-      { id: 'sec16', label: '电动车→机床订单' }
+      { id: 'sec13', label: '油价上涨蝴蝶效应' },
+      { id: 'sec14', label: 'AI Agent 商业化冲击' },
+      { id: 'sec15', label: '新能源政策驱动' }
     ]
   },
   {
     title: '明日关注与风险',
     links: [
-      { id: 'sec17', label: '事件日历' },
-      { id: 'sec18', label: '风险提示' },
-      { id: 'sec19', label: '核心标的池' }
+      { id: 'sec16', label: '宏观数据/事件' },
+      { id: 'sec17', label: '风险提示与证伪' }
     ]
   }
 ];
