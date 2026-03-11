@@ -4,7 +4,8 @@
 
 // 可用日期列表（按时间倒序，最新的在前）
 const AVAILABLE_DATES = [
-  { date: '2026-03-10', label: '2026 年 3 月 10 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-03-11', label: '2026 年 3 月 11 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-03-10', label: '2026 年 3 月 10 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-09', label: '2026 年 3 月 9 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-08', label: '2026 年 3 月 8 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-07', label: '2026 年 3 月 7 日', tag: 'history', tagLabel: '历史' },
@@ -14,7 +15,7 @@ const AVAILABLE_DATES = [
 ];
 
 // 当前选中日期
-let currentDate = '2026-03-10';
+let currentDate = '2026-03-11';
 
 /**
  * 切换日期下拉菜单显示/隐藏
@@ -78,7 +79,53 @@ function setupDateDropdownListener() {
  */
 function renderAllContent() {
   // 渲染投资决策内参导航
-  if (currentDate === '2026-03-10') {
+  if (currentDate === '2026-03-11') {
+    if (typeof renderDecisionNav_0311 === 'function') {
+      renderDecisionNav_0311();
+    }
+    if (typeof renderIndustryNav_0311 === 'function') {
+      renderIndustryNav_0311();
+    }
+    if (typeof renderMacroNav_0311 === 'function') {
+      renderMacroNav_0311();
+    }
+    if (typeof renderBrokerNav_0311 === 'function') {
+      renderBrokerNav_0311();
+    }
+    if (typeof renderStockNav_0311 === 'function') {
+      renderStockNav_0311();
+    }
+    if (typeof renderDecisionContent_0311 === 'function') {
+      const decisionContainer = document.getElementById('decision-content');
+      if (decisionContainer) {
+        decisionContainer.innerHTML = renderDecisionContent_0311();
+      }
+    }
+    if (typeof renderIndustryContent_0311 === 'function') {
+      const industryContainer = document.getElementById('industry-content');
+      if (industryContainer) {
+        industryContainer.innerHTML = renderIndustryContent_0311();
+      }
+    }
+    if (typeof renderMacroContent_0311 === 'function') {
+      const macroContainer = document.getElementById('macro-content');
+      if (macroContainer) {
+        macroContainer.innerHTML = renderMacroContent_0311();
+      }
+    }
+    if (typeof renderBrokerContent_0311 === 'function') {
+      const brokerContainer = document.getElementById('broker-content');
+      if (brokerContainer) {
+        brokerContainer.innerHTML = renderBrokerContent_0311();
+      }
+    }
+    if (typeof renderStockContent_0311 === 'function') {
+      const stockContainer = document.getElementById('stock-content');
+      if (stockContainer) {
+        stockContainer.innerHTML = renderStockContent_0311();
+      }
+    }
+  } else if (currentDate === '2026-03-10') {
     if (typeof renderDecisionNav_0310 === 'function') {
       renderDecisionNav_0310();
     }

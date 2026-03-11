@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-03-10',
+  currentDate: '2026-03-11',
   clockInterval: null
 };
 
@@ -153,7 +153,50 @@ function renderAllContent() {
   const date = AppState.currentDate;
   console.log(`[renderAllContent] 当前日期：${date}`);
 
-  if (date === '2026-03-10') {
+  if (date === '2026-03-11') {
+    // 渲染 3 月 11 日内容
+    console.log('[renderAllContent] 渲染 3 月 11 日内容');
+    if (typeof renderDecisionNav_0311 === 'function') {
+      renderDecisionNav_0311();
+    }
+    if (typeof renderIndustryNav_0311 === 'function') {
+      renderIndustryNav_0311();
+    }
+    if (typeof renderMacroNav_0311 === 'function') {
+      renderMacroNav_0311();
+    }
+    if (typeof renderBrokerNav_0311 === 'function') {
+      renderBrokerNav_0311();
+    }
+    if (typeof renderStockNav_0311 === 'function') {
+      renderStockNav_0311();
+    }
+
+    const decisionContentEl = document.getElementById('decision-content');
+    if (decisionContentEl && typeof renderDecisionContent_0311 === 'function') {
+      decisionContentEl.innerHTML = renderDecisionContent_0311();
+    }
+
+    const industryContentEl = document.getElementById('industry-content');
+    if (industryContentEl && typeof renderIndustryContent_0311 === 'function') {
+      industryContentEl.innerHTML = renderIndustryContent_0311();
+    }
+
+    const macroContentEl = document.getElementById('macro-content');
+    if (macroContentEl && typeof renderMacroContent_0311 === 'function') {
+      macroContentEl.innerHTML = renderMacroContent_0311();
+    }
+
+    const brokerContentEl = document.getElementById('broker-content');
+    if (brokerContentEl && typeof renderBrokerContent_0311 === 'function') {
+      brokerContentEl.innerHTML = renderBrokerContent_0311();
+    }
+
+    const stockContentEl = document.getElementById('stock-content');
+    if (stockContentEl && typeof renderStockContent_0311 === 'function') {
+      stockContentEl.innerHTML = renderStockContent_0311();
+    }
+  } else if (date === '2026-03-10') {
     // 渲染 3 月 10 日内容
     console.log('[renderAllContent] 渲染 3 月 10 日内容');
     if (typeof renderDecisionNav_0310 === 'function') {
