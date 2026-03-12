@@ -1,3 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智研金融 Terminal Pro - 行业研报平台</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Tailwind 配置 -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif']
+          },
+          animation: {
+            'fade-in': 'fade-in 300ms ease-out',
+            'slide-up': 'slide-up 400ms ease-out',
+            'slide-left': 'slide-left 300ms ease-out'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100 text-slate-900 font-sans antialiased">
+
+  <!-- ==================== 顶部导航 ==================== -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/80 shadow-sm">
+    <div class="max-w-[1300px] mx-auto px-6 h-16 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-8">
+        <div class="flex items-center space-x-3 cursor-pointer">
+          <div class="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center shadow-md">
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </div>
+          <div>
+            <span class="text-xl font-black tracking-tight text-slate-900">智研金融</span>
+            <div class="text-[10px] text-slate-700 font-bold leading-none tracking-widest uppercase mt-0.5">Terminal Pro</div>
+          </div>
+        </div>
+
+        <!-- Tab 导航 -->
+        <nav class="flex items-center space-x-1 bg-slate-100/80 p-1 rounded-xl border border-slate-200/60">
+          <button
+            id="tab-decision"
+            data-tab="decision"
+            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 bg-white text-red-700 shadow-sm border border-slate-200"
+          >
+            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+            投资决策内参
+          </button>
+          <button
+            id="tab-industry"
+            data-tab="industry"
+            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60"
+          >
+            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            行业研究报告
+          </button>
+          <button
+            id="tab-macro"
+            data-tab="macro"
+            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60"
+          >
+            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 21h18M5 21V7l8-4 8 4v14M8 21v-4h8v4"></path>
+            </svg>
+            宏观研究
+          </button>
+          <button
+            id="tab-broker"
+            data-tab="broker"
+            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60"
+          >
+            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            券商晨报
+          </button>
+          <button
+            id="tab-stock"
+            data-tab="stock"
+            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60"
+          >
+            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+            个股研报
+            <span class="ml-2 px-1.5 py-0.5 text-[9px] font-black bg-red-600 text-white rounded-md">S/A/B/C</span>
+          </button>
+        </nav>
+      </div>
+
+      <!-- 右侧：时间 + 日期选择 -->
+      <div class="flex items-center space-x-4">
+        <!-- 日期选择器 -->
+        <div class="relative">
+          <button id="date-selector-btn" onclick="toggleDateDropdown()"
+            class="flex items-center space-x-2 text-sm font-bold bg-white px-3 py-1.5 rounded-lg border border-slate-300 shadow-sm hover:bg-slate-50 transition-colors">
+            <svg class="w-3.5 h-3.5 text-slate-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+            </svg>
+            <span id="current-date-display">2026-03-12</span>
+            <svg class="w-3 h-3 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <!-- 日期下拉菜单 -->
+          <div id="date-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-slate-200 py-2 z-50">
+            <div class="px-3 py-2 border-b border-slate-100">
+              <div class="text-xs font-black text-slate-500 uppercase tracking-widest">选择日期</div>
+            </div>
+            <div id="date-list" class="py-1">
+              <!-- 由 JS 动态生成 -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 时钟显示 -->
+        <div class="flex items-center text-slate-800 text-sm font-mono font-bold bg-white px-3 py-1.5 rounded-lg border border-slate-300 shadow-sm">
+          <svg class="w-3.5 h-3.5 mr-2 text-slate-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span id="clock-display">--:--:--</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 主体内容 ==================== -->
+  <main class="max-w-[1300px] mx-auto px-6 py-6">
+    <div id="main-content" class="w-full">
+
+      <!-- ==================== 文档一：投资决策内参 ==================== -->
+      <div id="decision-doc" class="relative animate-in slide-up">
+        <div class="flex items-start gap-8 xl:gap-12">
+          <!-- 左侧导航 -->
+          <aside class="sidebar-nav w-56 flex-shrink-0 hidden xl:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-y-auto pr-4 custom-scrollbar">
+            <div class="space-y-6" id="decision-nav-content">
+              <!-- 由 JS 动态生成 -->
+            </div>
+          </aside>
+
+          <!-- 右侧内容 -->
+          <div class="flex-1 min-w-0 w-full max-w-[860px] mx-auto pb-24">
+            <div id="decision-content">
+              <!-- 由 JS 动态渲染 -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== 文档二：行业汇总 ==================== -->
+      <div id="industry-doc" class="relative hidden animate-in slide-up">
+        <div class="flex items-start gap-8 xl:gap-12">
+          <!-- 左侧导航 -->
+          <aside class="sidebar-nav w-56 flex-shrink-0 hidden xl:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-y-auto pr-4 custom-scrollbar">
+            <div class="space-y-6" id="industry-nav-content">
+              <!-- 由 JS 动态生成 -->
+            </div>
+          </aside>
+
+          <!-- 右侧内容 -->
+          <div class="flex-1 min-w-0 w-full max-w-[860px] mx-auto pb-24">
+            <div id="industry-content">
+              <!-- 由 JS 动态渲染 -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== 文档三：宏观研究 ==================== -->
+      <div id="macro-doc" class="relative hidden animate-in slide-up">
+        <div class="flex items-start gap-8 xl:gap-12">
+          <!-- 左侧导航 -->
+          <aside class="sidebar-nav w-56 flex-shrink-0 hidden xl:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-y-auto pr-4 custom-scrollbar">
+            <div class="space-y-6" id="macro-nav-content">
+              <!-- 由 JS 动态生成 -->
+            </div>
+          </aside>
+
+          <!-- 右侧内容 -->
+          <div class="flex-1 min-w-0 w-full max-w-[860px] mx-auto pb-24">
+            <div id="macro-content">
+              <!-- 由 JS 动态渲染 -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== 文档四：券商晨报 ==================== -->
+      <div id="broker-doc" class="relative hidden animate-in slide-up">
+        <div class="flex items-start gap-8 xl:gap-12">
+          <!-- 左侧导航 -->
+          <aside class="sidebar-nav w-56 flex-shrink-0 hidden xl:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-y-auto pr-4 custom-scrollbar">
+            <div class="space-y-6" id="broker-nav-content">
+              <!-- 由 JS 动态生成 -->
+            </div>
+          </aside>
+
+          <!-- 右侧内容 -->
+          <div class="flex-1 min-w-0 w-full max-w-[860px] mx-auto pb-24">
+            <div id="broker-content">
+              <!-- 由 JS 动态渲染 -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== 文档五：个股研报 ==================== -->
+      <div id="stock-doc" class="relative hidden animate-in slide-up">
+        <div class="flex items-start gap-8 xl:gap-12">
+          <!-- 左侧导航 -->
+          <aside class="sidebar-nav w-56 flex-shrink-0 hidden xl:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-y-auto pr-4 custom-scrollbar">
+            <div class="space-y-6" id="stock-nav-content">
+              <!-- 由 JS 动态生成 -->
+            </div>
+          </aside>
+
+          <!-- 右侧内容 -->
+          <div class="flex-1 min-w-0 w-full max-w-[860px] mx-auto pb-24">
+            <div id="stock-content">
+              <!-- 由 JS 动态渲染 -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==================== 脚本加载 ==================== -->
+  <!-- 工具函数 -->
+  <script src="./js/utils.js"></script>
+  <!-- 组件库 -->
+  <script src="./js/components.js"></script>
+  <!-- 日期数据管理 -->
+  <script src="./data/dates.js"></script>
+
   <!-- ==================== 数据模块：3 月 12 日（最新） ==================== -->
   <!-- 文档一：投资决策内参 - 3 月 12 日导航 -->
   <script src="./data/decision-0312-nav.js"></script>
@@ -43,3 +309,160 @@
   <script src="./data/stock-0311-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 10 日 ==================== -->
+  <!-- 文档一：投资决策内参 - 3 月 10 日导航 -->
+  <script src="./data/decision-0310-nav.js"></script>
+  <!-- 文档一：投资决策内参 - 3 月 10 日内容 -->
+  <script src="./data/decision-0310-content.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 10 日导航 -->
+  <script src="./data/industry-0310-nav.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 10 日内容 -->
+  <script src="./data/industry-0310-content.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 10 日导航 -->
+  <script src="./data/macro-0310-nav.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 10 日内容 -->
+  <script src="./data/macro-0310-content.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 10 日导航 -->
+  <script src="./data/broker-0310-nav.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 10 日内容 -->
+  <script src="./data/broker-0310-content.js"></script>
+  <!-- 文档五：个股研报 - 3 月 10 日导航 -->
+  <script src="./data/stock-0310-nav.js"></script>
+  <!-- 文档五：个股研报 - 3 月 10 日内容 -->
+  <script src="./data/stock-0310-content.js"></script>
+
+  <!-- ==================== 数据模块：3 月 9 日 ==================== -->
+  <!-- 文档一：投资决策内参 - 3 月 9 日导航 -->
+  <script src="./data/decision-0309-nav.js"></script>
+  <!-- 文档一：投资决策内参 - 3 月 9 日内容 -->
+  <script src="./data/decision-0309-content.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 9 日导航 -->
+  <script src="./data/industry-0309-nav.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 9 日内容 -->
+  <script src="./data/industry-0309-content.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 9 日导航 -->
+  <script src="./data/macro-0309-nav.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 9 日内容 -->
+  <script src="./data/macro-0309-content.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 9 日导航 -->
+  <script src="./data/broker-0309-nav.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 9 日内容 -->
+  <script src="./data/broker-0309-content.js"></script>
+  <!-- 文档五：个股研报 - 3 月 9 日导航 -->
+  <script src="./data/stock-0309-nav.js"></script>
+  <!-- 文档五：个股研报 - 3 月 9 日内容 -->
+  <script src="./data/stock-0309-content.js"></script>
+
+  <!-- ==================== 数据模块：3 月 8 日 ==================== -->
+  <!-- 文档一：投资决策内参 - 3 月 8 日导航 -->
+  <script src="./data/decision-0308-nav.js"></script>
+  <!-- 文档一：投资决策内参 - 3 月 8 日内容 -->
+  <script src="./data/decision-0308-content.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 8 日导航 -->
+  <script src="./data/industry-0308-nav.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 8 日内容 -->
+  <script src="./data/industry-0308-content.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 8 日导航 -->
+  <script src="./data/macro-0308-nav.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 8 日内容 -->
+  <script src="./data/macro-0308-content.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 8 日导航 -->
+  <script src="./data/broker-0308-nav.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 8 日内容 -->
+  <script src="./data/broker-0308-content.js"></script>
+  <!-- 文档五：个股研报 - 3 月 8 日导航 -->
+  <script src="./data/stock-0308-nav.js"></script>
+  <!-- 文档五：个股研报 - 3 月 8 日内容 -->
+  <script src="./data/stock-0308-content.js"></script>
+
+  <!-- ==================== 数据模块：3 月 7 日 ==================== -->
+  <!-- 文档一：投资决策内参 - 3 月 7 日导航 -->
+  <script src="./data/decision-0307-nav.js"></script>
+  <!-- 文档一：投资决策内参 - 3 月 7 日内容 -->
+  <script src="./data/decision-0307-content.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 7 日导航 -->
+  <script src="./data/industry-0307-nav.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 7 日内容 -->
+  <script src="./data/industry-0307-content.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 7 日导航 -->
+  <script src="./data/macro-0307-nav.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 7 日内容 -->
+  <script src="./data/macro-0307-content.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 7 日导航 -->
+  <script src="./data/broker-0307-nav.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 7 日内容 -->
+  <script src="./data/broker-0307-content.js"></script>
+  <!-- 文档五：个股研报 - 3 月 7 日导航 -->
+  <script src="./data/stock-0307-nav.js"></script>
+  <!-- 文档五：个股研报 - 3 月 7 日内容 -->
+  <script src="./data/stock-0307-content.js"></script>
+
+  <!-- ==================== 数据模块：3 月 6 日 ==================== -->
+  <!-- 文档一：投资决策内参 - 3 月 6 日导航 -->
+  <script src="./data/decision-0306-nav.js"></script>
+  <!-- 文档一：投资决策内参 - 3 月 6 日内容 -->
+  <script src="./data/decision-0306-content.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 6 日导航 -->
+  <script src="./data/industry-0306-nav.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 6 日内容 -->
+  <script src="./data/industry-0306-content.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 6 日导航 -->
+  <script src="./data/macro-0306-nav.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 6 日内容 -->
+  <script src="./data/macro-0306-content.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 6 日导航 -->
+  <script src="./data/broker-0306-nav.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 6 日内容 -->
+  <script src="./data/broker-0306-content.js"></script>
+  <!-- 文档五：个股研报 - 3 月 6 日导航 -->
+  <script src="./data/stock-0306-nav.js"></script>
+  <!-- 文档五：个股研报 - 3 月 6 日内容 -->
+  <script src="./data/stock-0306-content.js"></script>
+
+  <!-- ==================== 数据模块：3 月 5 日 ==================== -->
+  <!-- 文档一：投资决策内参 - 3 月 5 日导航 -->
+  <script src="./data/decision-0305-nav.js"></script>
+  <!-- 文档一：投资决策内参 - 3 月 5 日内容 -->
+  <script src="./data/decision-0305-content.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 5 日导航 -->
+  <script src="./data/industry-0305-nav.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 5 日内容 -->
+  <script src="./data/industry-0305-content.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 5 日导航 -->
+  <script src="./data/macro-0305-nav.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 5 日内容 -->
+  <script src="./data/macro-0305-content.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 5 日导航 -->
+  <script src="./data/broker-0305-nav.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 5 日内容 -->
+  <script src="./data/broker-0305-content.js"></script>
+  <!-- 文档五：个股研报 - 3 月 5 日导航 -->
+  <script src="./data/stock-0305-nav.js"></script>
+  <!-- 文档五：个股研报 - 3 月 5 日内容 -->
+  <script src="./data/stock-0305-content.js"></script>
+
+  <!-- ==================== 数据模块：3 月 4 日 ==================== -->
+  <!-- 文档一：投资决策内参 - 3 月 4 日导航 -->
+  <script src="./data/decision-0304-nav.js"></script>
+  <!-- 文档一：投资决策内参 - 3 月 4 日内容 -->
+  <script src="./data/decision-0304-content.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 4 日导航 -->
+  <script src="./data/industry-0304-nav.js"></script>
+  <!-- 文档二：行业汇总 - 3 月 4 日内容 -->
+  <script src="./data/industry-0304-content.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 4 日导航 -->
+  <script src="./data/macro-0304-nav.js"></script>
+  <!-- 文档三：宏观研究 - 3 月 4 日内容 -->
+  <script src="./data/macro-0304-content.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 4 日导航 -->
+  <script src="./data/broker-0304-nav.js"></script>
+  <!-- 文档四：券商晨报 - 3 月 4 日内容 -->
+  <script src="./data/broker-0304-content.js"></script>
+  <!-- 文档五：个股研报 - 3 月 4 日导航 -->
+  <script src="./data/stock-0304-nav.js"></script>
+  <!-- 文档五：个股研报 - 3 月 4 日内容 -->
+  <script src="./data/stock-0304-content.js"></script>
+
+  <!-- 主应用 -->
+  <script src="./js/app.js"></script>
+</body>
+</html>
