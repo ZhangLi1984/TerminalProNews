@@ -96,6 +96,9 @@ function renderAllContent() {
     if (typeof renderStockNav_0312 === 'function') {
       renderStockNav_0312();
     }
+    if (typeof renderJisiluNav_0312 === 'function') {
+      renderJisiluNav_0312();
+    }
     if (typeof renderDecisionContent_0312 === 'function') {
       const decisionContainer = document.getElementById('decision-content');
       if (decisionContainer) {
@@ -124,6 +127,12 @@ function renderAllContent() {
       const stockContainer = document.getElementById('stock-content');
       if (stockContainer) {
         stockContainer.innerHTML = renderStockContent_0312();
+      }
+    }
+    if (typeof renderJisiluContent_0312 === 'function') {
+      const jisiluContainer = document.getElementById('jisilu-content');
+      if (jisiluContainer) {
+        jisiluContainer.innerHTML = renderJisiluContent_0312();
       }
     }
   } else if (currentDate === '2026-03-11') {

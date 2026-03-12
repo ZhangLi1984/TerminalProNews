@@ -70,16 +70,18 @@ function switchTab(tab) {
   const macroBtn = document.getElementById('tab-macro');
   const brokerBtn = document.getElementById('tab-broker');
   const stockBtn = document.getElementById('tab-stock');
+  const jisiluBtn = document.getElementById('tab-jisilu');
   const decisionDoc = document.getElementById('decision-doc');
   const industryDoc = document.getElementById('industry-doc');
   const macroDoc = document.getElementById('macro-doc');
   const brokerDoc = document.getElementById('broker-doc');
   const stockDoc = document.getElementById('stock-doc');
+  const jisiluDoc = document.getElementById('jisilu-doc');
 
   // 重置所有按钮样式
-  [decisionBtn, industryBtn, macroBtn, brokerBtn, stockBtn].forEach(btn => {
+  [decisionBtn, industryBtn, macroBtn, brokerBtn, stockBtn, jisiluBtn].forEach(btn => {
     if (btn) {
-      btn.classList.remove('bg-white', 'text-red-700', 'text-blue-700', 'text-emerald-700', 'text-amber-700', 'text-purple-700', 'shadow-sm', 'border', 'border-slate-200');
+      btn.classList.remove('bg-white', 'text-red-700', 'text-blue-700', 'text-emerald-700', 'text-amber-700', 'text-purple-700', 'text-teal-700', 'shadow-sm', 'border', 'border-slate-200');
       btn.classList.add('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
     }
   });
@@ -90,6 +92,7 @@ function switchTab(tab) {
   macroDoc.classList.add('hidden');
   brokerDoc.classList.add('hidden');
   stockDoc.classList.add('hidden');
+  if (jisiluDoc) jisiluDoc.classList.add('hidden');
 
   if (tab === 'decision') {
     decisionBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
@@ -116,6 +119,13 @@ function switchTab(tab) {
     stockBtn.classList.add('bg-white', 'text-purple-700', 'shadow-sm', 'border', 'border-slate-200');
     stockDoc.classList.remove('hidden');
     setTimeout(() => updateActiveNav('s_sec1'), 100);
+  } else if (tab === 'jisilu') {
+    if (jisiluBtn) {
+      jisiluBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
+      jisiluBtn.classList.add('bg-white', 'text-teal-700', 'shadow-sm', 'border', 'border-slate-200');
+    }
+    if (jisiluDoc) jisiluDoc.classList.remove('hidden');
+    setTimeout(() => updateActiveNav('j_sec1'), 100);
   }
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -171,6 +181,9 @@ function renderAllContent() {
     if (typeof renderStockNav_0312 === 'function') {
       renderStockNav_0312();
     }
+    if (typeof renderJisiluNav_0312 === 'function') {
+      renderJisiluNav_0312();
+    }
 
     const decisionContentEl = document.getElementById('decision-content');
     if (decisionContentEl && typeof renderDecisionContent_0312 === 'function') {
@@ -195,6 +208,11 @@ function renderAllContent() {
     const stockContentEl = document.getElementById('stock-content');
     if (stockContentEl && typeof renderStockContent_0312 === 'function') {
       stockContentEl.innerHTML = renderStockContent_0312();
+    }
+
+    const jisiluContentEl = document.getElementById('jisilu-content');
+    if (jisiluContentEl && typeof renderJisiluContent_0312 === 'function') {
+      jisiluContentEl.innerHTML = renderJisiluContent_0312();
     }
   } else if (date === '2026-03-11') {
     // 渲染 3 月 11 日内容
