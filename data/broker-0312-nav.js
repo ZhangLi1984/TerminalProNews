@@ -4,34 +4,43 @@
 
 const BROKER_NAV_CONFIG_0312 = [
   {
-    title: '晨报精华',
+    title: '核心摘要',
     links: [
-      { id: 'b_sec1', label: '核心观点汇总' },
-      { id: 'b_sec2', label: '机构策略' }
+      { id: 'b_sec1', label: '市场共识' },
+      { id: 'b_sec2', label: '仓位建议' },
+      { id: 'b_sec3', label: '热门赛道 TOP5' },
+      { id: 'b_sec4', label: '金股 TOP10' }
+    ]
+  },
+  {
+    title: '宏观策略',
+    links: [
+      { id: 'b_sec5', label: '券商策略汇总' },
+      { id: 'b_sec6', label: '宏观共识判断' }
     ]
   },
   {
     title: '行业聚焦',
     links: [
-      { id: 'b_sec3', label: '医药生物' },
-      { id: 'b_sec4', label: '半导体' },
-      { id: 'b_sec5', label: '低空经济' },
-      { id: 'b_sec6', label: '量子计算' }
+      { id: 'b_sec7', label: '热门行业排行' },
+      { id: 'b_sec8', label: 'AI/算力' },
+      { id: 'b_sec9', label: '半导体' },
+      { id: 'b_sec10', label: '医药生物' },
+      { id: 'b_sec11', label: '电力设备/电网' },
+      { id: 'b_sec12', label: '商业航天/军工' }
     ]
   },
   {
-    title: '主题投资',
+    title: '金股组合',
     links: [
-      { id: 'b_sec7', label: 'AI 算力' },
-      { id: 'b_sec8', label: '国防军工' },
-      { id: 'b_sec9', label: '新能源' }
+      { id: 'b_sec13', label: '券商金股汇总' }
     ]
   },
   {
-    title: '风险提示',
+    title: '投资策略',
     links: [
-      { id: 'b_sec10', label: '宏观风险' },
-      { id: 'b_sec11', label: '交易层面风险' }
+      { id: 'b_sec14', label: '哑铃型配置' },
+      { id: 'b_sec15', label: '风险提示' }
     ]
   }
 ];
