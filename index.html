@@ -71,7 +71,7 @@
             <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="12" r="10"></circle>
               <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
             </svg>
             行业研究报告
           </button>
@@ -110,7 +110,6 @@
               <line x1="12" y1="22.08" x2="12" y2="12"></line>
             </svg>
             个股研报
-            <span class="ml-2 px-1.5 py-0.5 text-[9px] font-black bg-red-600 text-white rounded-md">S/A/B/C</span>
           </button>
           <button
             id="tab-jisilu"
@@ -124,7 +123,16 @@
               <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
             集思录
-            <span class="ml-2 px-1.5 py-0.5 text-[9px] font-black bg-teal-600 text-white rounded-md">热议</span>
+          </button>
+          <button
+            id="tab-futures"
+            data-tab="futures"
+            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60"
+          >
+            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+            期货市场
           </button>
         </nav>
       </div>
@@ -140,7 +148,7 @@
               <line x1="16" y1="2" x2="16" y2="6"></line>
               <line x1="8" y1="2" x2="8" y2="6"></line>
             </svg>
-            <span id="current-date-display">2026-03-12</span>
+            <span id="current-date-display">2026-03-13</span>
             <svg class="w-3 h-3 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
@@ -286,6 +294,25 @@
         </div>
       </div>
 
+      <!-- ==================== 文档七：期货市场 ==================== -->
+      <div id="futures-doc" class="relative hidden animate-in slide-up">
+        <div class="flex items-start gap-8 xl:gap-12">
+          <!-- 左侧导航 -->
+          <aside class="sidebar-nav w-56 flex-shrink-0 hidden xl:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-y-auto pr-4 custom-scrollbar">
+            <div class="space-y-6" id="futures-nav-content">
+              <!-- 由 JS 动态生成 -->
+            </div>
+          </aside>
+
+          <!-- 右侧内容 -->
+          <div class="flex-1 min-w-0 w-full max-w-[860px] mx-auto pb-24">
+            <div id="futures-content">
+              <!-- 由 JS 动态渲染 -->
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
 
@@ -297,207 +324,109 @@
   <!-- 日期数据管理 -->
   <script src="./data/dates.js"></script>
 
-  <!-- ==================== 数据模块：3 月 12 日（最新） ==================== -->
-  <!-- 文档一：投资决策内参 - 3 月 12 日导航 -->
+  <!-- ==================== 数据模块：3 月 13 日（最新） ==================== -->
+  <script src="./data/decision-0313-nav.js"></script>
+  <script src="./data/decision-0313-content.js"></script>
+  <script src="./data/industry-0313-nav.js"></script>
+  <script src="./data/industry-0313-content.js"></script>
+
+  <!-- ==================== 数据模块：3 月 12 日 ==================== -->
   <script src="./data/decision-0312-nav.js"></script>
-  <!-- 文档一：投资决策内参 - 3 月 12 日内容 -->
   <script src="./data/decision-0312-content.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 12 日导航 -->
   <script src="./data/industry-0312-nav.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 12 日内容 -->
   <script src="./data/industry-0312-content.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 12 日导航 -->
   <script src="./data/macro-0312-nav.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 12 日内容 -->
   <script src="./data/macro-0312-content.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 12 日导航 -->
   <script src="./data/broker-0312-nav.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 12 日内容 -->
   <script src="./data/broker-0312-content.js"></script>
-  <!-- 文档五：个股研报 - 3 月 12 日导航 -->
   <script src="./data/stock-0312-nav.js"></script>
-  <!-- 文档五：个股研报 - 3 月 12 日内容 -->
   <script src="./data/stock-0312-content.js"></script>
-  <!-- 文档六：集思录 - 3 月 12 日导航 -->
   <script src="./data/jisilu-0312-nav.js"></script>
-  <!-- 文档六：集思录 - 3 月 12 日内容 -->
   <script src="./data/jisilu-0312-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 11 日 ==================== -->
-  <!-- 文档一：投资决策内参 - 3 月 11 日导航 -->
   <script src="./data/decision-0311-nav.js"></script>
-  <!-- 文档一：投资决策内参 - 3 月 11 日内容 -->
   <script src="./data/decision-0311-content.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 11 日导航 -->
   <script src="./data/industry-0311-nav.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 11 日内容 -->
   <script src="./data/industry-0311-content.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 11 日导航 -->
   <script src="./data/macro-0311-nav.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 11 日内容 -->
   <script src="./data/macro-0311-content.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 11 日导航 -->
   <script src="./data/broker-0311-nav.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 11 日内容 -->
   <script src="./data/broker-0311-content.js"></script>
-  <!-- 文档五：个股研报 - 3 月 11 日导航 -->
   <script src="./data/stock-0311-nav.js"></script>
-  <!-- 文档五：个股研报 - 3 月 11 日内容 -->
   <script src="./data/stock-0311-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 10 日 ==================== -->
-  <!-- 文档一：投资决策内参 - 3 月 10 日导航 -->
   <script src="./data/decision-0310-nav.js"></script>
-  <!-- 文档一：投资决策内参 - 3 月 10 日内容 -->
   <script src="./data/decision-0310-content.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 10 日导航 -->
   <script src="./data/industry-0310-nav.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 10 日内容 -->
   <script src="./data/industry-0310-content.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 10 日导航 -->
   <script src="./data/macro-0310-nav.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 10 日内容 -->
   <script src="./data/macro-0310-content.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 10 日导航 -->
   <script src="./data/broker-0310-nav.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 10 日内容 -->
   <script src="./data/broker-0310-content.js"></script>
-  <!-- 文档五：个股研报 - 3 月 10 日导航 -->
   <script src="./data/stock-0310-nav.js"></script>
-  <!-- 文档五：个股研报 - 3 月 10 日内容 -->
   <script src="./data/stock-0310-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 9 日 ==================== -->
-  <!-- 文档一：投资决策内参 - 3 月 9 日导航 -->
   <script src="./data/decision-0309-nav.js"></script>
-  <!-- 文档一：投资决策内参 - 3 月 9 日内容 -->
   <script src="./data/decision-0309-content.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 9 日导航 -->
   <script src="./data/industry-0309-nav.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 9 日内容 -->
   <script src="./data/industry-0309-content.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 9 日导航 -->
   <script src="./data/macro-0309-nav.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 9 日内容 -->
   <script src="./data/macro-0309-content.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 9 日导航 -->
   <script src="./data/broker-0309-nav.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 9 日内容 -->
   <script src="./data/broker-0309-content.js"></script>
-  <!-- 文档五：个股研报 - 3 月 9 日导航 -->
   <script src="./data/stock-0309-nav.js"></script>
-  <!-- 文档五：个股研报 - 3 月 9 日内容 -->
   <script src="./data/stock-0309-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 8 日 ==================== -->
-  <!-- 文档一：投资决策内参 - 3 月 8 日导航 -->
   <script src="./data/decision-0308-nav.js"></script>
-  <!-- 文档一：投资决策内参 - 3 月 8 日内容 -->
   <script src="./data/decision-0308-content.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 8 日导航 -->
   <script src="./data/industry-0308-nav.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 8 日内容 -->
   <script src="./data/industry-0308-content.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 8 日导航 -->
   <script src="./data/macro-0308-nav.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 8 日内容 -->
   <script src="./data/macro-0308-content.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 8 日导航 -->
   <script src="./data/broker-0308-nav.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 8 日内容 -->
   <script src="./data/broker-0308-content.js"></script>
-  <!-- 文档五：个股研报 - 3 月 8 日导航 -->
   <script src="./data/stock-0308-nav.js"></script>
-  <!-- 文档五：个股研报 - 3 月 8 日内容 -->
   <script src="./data/stock-0308-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 7 日 ==================== -->
-  <!-- 文档一：投资决策内参 - 3 月 7 日导航 -->
   <script src="./data/decision-0307-nav.js"></script>
-  <!-- 文档一：投资决策内参 - 3 月 7 日内容 -->
   <script src="./data/decision-0307-content.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 7 日导航 -->
   <script src="./data/industry-0307-nav.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 7 日内容 -->
   <script src="./data/industry-0307-content.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 7 日导航 -->
   <script src="./data/macro-0307-nav.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 7 日内容 -->
   <script src="./data/macro-0307-content.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 7 日导航 -->
   <script src="./data/broker-0307-nav.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 7 日内容 -->
   <script src="./data/broker-0307-content.js"></script>
-  <!-- 文档五：个股研报 - 3 月 7 日导航 -->
   <script src="./data/stock-0307-nav.js"></script>
-  <!-- 文档五：个股研报 - 3 月 7 日内容 -->
   <script src="./data/stock-0307-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 6 日 ==================== -->
-  <!-- 文档一：投资决策内参 - 3 月 6 日导航 -->
   <script src="./data/decision-0306-nav.js"></script>
-  <!-- 文档一：投资决策内参 - 3 月 6 日内容 -->
   <script src="./data/decision-0306-content.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 6 日导航 -->
   <script src="./data/industry-0306-nav.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 6 日内容 -->
   <script src="./data/industry-0306-content.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 6 日导航 -->
   <script src="./data/macro-0306-nav.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 6 日内容 -->
   <script src="./data/macro-0306-content.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 6 日导航 -->
-  <script src="./data/broker-0306-nav.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 6 日内容 -->
-  <script src="./data/broker-0306-content.js"></script>
-  <!-- 文档五：个股研报 - 3 月 6 日导航 -->
-  <script src="./data/stock-0306-nav.js"></script>
-  <!-- 文档五：个股研报 - 3 月 6 日内容 -->
-  <script src="./data/stock-0306-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 5 日 ==================== -->
-  <!-- 文档一：投资决策内参 - 3 月 5 日导航 -->
   <script src="./data/decision-0305-nav.js"></script>
-  <!-- 文档一：投资决策内参 - 3 月 5 日内容 -->
   <script src="./data/decision-0305-content.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 5 日导航 -->
   <script src="./data/industry-0305-nav.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 5 日内容 -->
   <script src="./data/industry-0305-content.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 5 日导航 -->
   <script src="./data/macro-0305-nav.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 5 日内容 -->
   <script src="./data/macro-0305-content.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 5 日导航 -->
-  <script src="./data/broker-0305-nav.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 5 日内容 -->
-  <script src="./data/broker-0305-content.js"></script>
-  <!-- 文档五：个股研报 - 3 月 5 日导航 -->
-  <script src="./data/stock-0305-nav.js"></script>
-  <!-- 文档五：个股研报 - 3 月 5 日内容 -->
-  <script src="./data/stock-0305-content.js"></script>
 
   <!-- ==================== 数据模块：3 月 4 日 ==================== -->
-  <!-- 文档一：投资决策内参 - 3 月 4 日导航 -->
   <script src="./data/decision-0304-nav.js"></script>
-  <!-- 文档一：投资决策内参 - 3 月 4 日内容 -->
   <script src="./data/decision-0304-content.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 4 日导航 -->
   <script src="./data/industry-0304-nav.js"></script>
-  <!-- 文档二：行业汇总 - 3 月 4 日内容 -->
   <script src="./data/industry-0304-content.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 4 日导航 -->
   <script src="./data/macro-0304-nav.js"></script>
-  <!-- 文档三：宏观研究 - 3 月 4 日内容 -->
   <script src="./data/macro-0304-content.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 4 日导航 -->
-  <script src="./data/broker-0304-nav.js"></script>
-  <!-- 文档四：券商晨报 - 3 月 4 日内容 -->
-  <script src="./data/broker-0304-content.js"></script>
-  <!-- 文档五：个股研报 - 3 月 4 日导航 -->
-  <script src="./data/stock-0304-nav.js"></script>
-  <!-- 文档五：个股研报 - 3 月 4 日内容 -->
-  <script src="./data/stock-0304-content.js"></script>
 
   <!-- 主应用 -->
   <script src="./js/app.js"></script>
