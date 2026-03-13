@@ -1,9 +1,42 @@
 // 券商晨报导航配置 - 2026-03-13
 const BROKER_NAV_CONFIG_0313 = [
   {
-    title: '今日晨报',
+    title: '核心摘要',
     links: [
-      { id: 'b_sec1', label: '📋 晨报汇总' }
+      { id: 'b_sec1', label: '市场共识' },
+      { id: 'b_sec2', label: '热门赛道 TOP5' },
+      { id: 'b_sec3', label: '金股 TOP10' }
+    ]
+  },
+  {
+    title: '策略观点',
+    links: [
+      { id: 'b_sec4', label: '宏观策略汇总' },
+      { id: 'b_sec5', label: '热门行业推荐' }
+    ]
+  },
+  {
+    title: '金股组合',
+    links: [
+      { id: 'b_sec6', label: '券商金股组合' }
+    ]
+  },
+  {
+    title: '行业观点',
+    links: [
+      { id: 'b_sec7', label: 'AI 算力/光通信' },
+      { id: 'b_sec8', label: '化工/农化' },
+      { id: 'b_sec9', label: '电力/公用事业' },
+      { id: 'b_sec10', label: '医药生物' },
+      { id: 'b_sec11', label: '智能驾驶' },
+      { id: 'b_sec12', label: '煤炭/油气' }
+    ]
+  },
+  {
+    title: '风险与关注',
+    links: [
+      { id: 'b_sec13', label: '风险提示与分歧' },
+      { id: 'b_sec14', label: '今日重点关注' }
     ]
   }
 ];
