@@ -34,7 +34,7 @@ function renderJisiluContent_0312() {
   <!-- 热门话题1：可转债强赎博弈 -->
   <h2 id="j_sec1" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
     <span class="w-2 h-8 bg-teal-600 rounded-full mr-3"></span>
-    🔥 热门话题 TOP 5
+    🔥 热门话题 TOP 10
   </h2>
 
   <!-- 话题1详情卡片 -->
