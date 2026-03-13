@@ -19,12 +19,146 @@ const AVAILABLE_DATES = [
 // 当前选中日期（2026-03-13 最新）
 let currentDate = '2026-03-13';
 
+// 当前搜索关键词
+let dateSearchKeyword = '';
+
 /**
  * 切换日期下拉菜单显示/隐藏
  */
 function toggleDateDropdown() {
   const dropdown = document.getElementById('date-dropdown');
+  const isHidden = dropdown.classList.contains('hidden');
   dropdown.classList.toggle('hidden');
+
+  // 打开时聚焦搜索框
+  if (isHidden) {
+    setTimeout(() => {
+      const searchInput = document.getElementById('date-search-input');
+      if (searchInput) {
+        searchInput.focus();
+      }
+    }, 100);
+  }
+}
+
+/**
+ * 模糊匹配日期
+ * @param {string} keyword - 搜索关键词
+ * @param {object} item - 日期项
+ * @returns {boolean} 是否匹配
+ */
+function matchDate(keyword, item) {
+  if (!keyword) return true;
+
+  const kw = keyword.toLowerCase().trim();
+
+  // 支持多种搜索格式：
+  // 1. 完整日期: 2026-03-13, 20260313
+  // 2. 月日: 0313, 3月13, 3月13日, 03-13
+  // 3. 日: 13, 13日
+  // 4. 月份: 3月, 03
+
+  const patterns = [
+    item.date,                    // 2026-03-13
+    item.date.replace(/-/g, ''),  // 20260313
+    item.date.slice(5),           // 03-13
+    item.date.slice(5).replace('-', ''), // 0313
+    item.label,                   // 2026 年 3 月 13 日
+    item.label.replace(/[ 年月]/g, ''),  // 2026313日
+    // 灵活匹配
+    item.date.slice(8),           // 13
+    item.date.slice(5, 7),        // 03
+    item.label.replace(/.*(\d+)月.*/, '$1'), // 提取月份
+    item.label.replace(/.*(\d+)日/, '$1'),   // 提取日期
+  ];
+
+  return patterns.some(p => p.toLowerCase().includes(kw));
+}
+
+/**
+ * 过滤日期列表
+ * @param {string} keyword - 搜索关键词
+ */
+function filterDateList(keyword) {
+  dateSearchKeyword = keyword;
+
+  const dateList = document.getElementById('date-list');
+  const noResults = document.getElementById('date-no-results');
+  const clearBtn = document.getElementById('date-search-clear');
+
+  if (!dateList) return;
+
+  // 显示/隐藏清除按钮
+  if (clearBtn) {
+    if (keyword && keyword.trim()) {
+      clearBtn.classList.remove('hidden');
+      clearBtn.classList.add('flex');
+    } else {
+      clearBtn.classList.add('hidden');
+      clearBtn.classList.remove('flex');
+    }
+  }
+
+  // 过滤匹配的日期
+  const matchedDates = AVAILABLE_DATES.filter(item => matchDate(keyword, item));
+
+  if (matchedDates.length === 0) {
+    dateList.classList.add('hidden');
+    noResults.classList.remove('hidden');
+  } else {
+    dateList.classList.remove('hidden');
+    noResults.classList.add('hidden');
+
+    dateList.innerHTML = matchedDates.map(item => `
+      <div class="date-item ${item.date === currentDate ? 'active' : ''}"
+           onclick="selectDate('${item.date}')">
+        <span class="date-label">${highlightMatch(item.label, keyword)}</span>
+        <span class="date-tag ${item.tag}">${item.tagLabel}</span>
+      </div>
+    `).join('');
+  }
+}
+
+/**
+ * 高亮匹配文字
+ * @param {string} text - 原文
+ * @param {string} keyword - 关键词
+ * @returns {string} 高亮后的 HTML
+ */
+function highlightMatch(text, keyword) {
+  if (!keyword || !keyword.trim()) return text;
+
+  const kw = keyword.trim();
+  const regex = new RegExp(`(${escapeRegex(kw)})`, 'gi');
+  return text.replace(regex, '<mark class="bg-yellow-200 text-inherit rounded px-0.5">$1</mark>');
+}
+
+/**
+ * 转义正则特殊字符
+ */
+function escapeRegex(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/**
+ * 清除搜索
+ */
+function clearDateSearch() {
+  const searchInput = document.getElementById('date-search-input');
+  const clearBtn = document.getElementById('date-search-clear');
+
+  if (searchInput) {
+    searchInput.value = '';
+    searchInput.focus();
+  }
+
+  if (clearBtn) {
+    clearBtn.classList.add('hidden');
+    clearBtn.classList.remove('flex');
+  }
+
+  dateSearchKeyword = '';
+  renderDateList();
 }
 
 /**
@@ -32,7 +166,19 @@ function toggleDateDropdown() {
  */
 function renderDateList() {
   const dateList = document.getElementById('date-list');
+  const noResults = document.getElementById('date-no-results');
+
   if (!dateList) return;
+
+  // 如果有搜索关键词，使用过滤函数
+  if (dateSearchKeyword) {
+    filterDateList(dateSearchKeyword);
+    return;
+  }
+
+  // 显示全部日期
+  noResults.classList.add('hidden');
+  dateList.classList.remove('hidden');
 
   dateList.innerHTML = AVAILABLE_DATES.map(item => `
     <div class="date-item ${item.date === currentDate ? 'active' : ''}"
@@ -61,6 +207,9 @@ function selectDate(date) {
     renderAllContent();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  // 清除搜索状态
+  clearDateSearch();
 }
 
 /**
@@ -70,8 +219,23 @@ function setupDateDropdownListener() {
   document.addEventListener('click', (e) => {
     const dropdown = document.getElementById('date-dropdown');
     const btn = document.getElementById('date-selector-btn');
+
+    // 检查是否点击了下拉菜单内部或按钮
     if (dropdown && !dropdown.contains(e.target) && !btn.contains(e.target)) {
       dropdown.classList.add('hidden');
+      // 关闭时清除搜索
+      clearDateSearch();
+    }
+  });
+
+  // 键盘事件：ESC 关闭下拉菜单
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const dropdown = document.getElementById('date-dropdown');
+      if (dropdown && !dropdown.classList.contains('hidden')) {
+        dropdown.classList.add('hidden');
+        clearDateSearch();
+      }
     }
   });
 }
