@@ -32,146 +32,126 @@
 <body class="bg-gradient-to-br from-slate-50 to-slate-100 text-slate-900 font-sans antialiased">
 
   <!-- ==================== 顶部导航 ==================== -->
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/80 shadow-sm">
-    <div class="max-w-[1300px] mx-auto px-6 h-16 flex items-center justify-between">
-      <!-- Logo -->
-      <div class="flex items-center space-x-8">
-        <div class="flex items-center space-x-3 cursor-pointer">
-          <div class="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center shadow-md">
-            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200/80 shadow-sm">
+    <div class="max-w-[1400px] mx-auto px-4">
+      <!-- 第一行：Logo + 右侧工具栏 -->
+      <div class="h-14 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center space-x-3 cursor-pointer group">
+          <div class="w-8 h-8 bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+            <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <line x1="18" y1="20" x2="18" y2="10"></line>
               <line x1="12" y1="20" x2="12" y2="4"></line>
               <line x1="6" y1="20" x2="6" y2="14"></line>
             </svg>
           </div>
-          <div>
-            <span class="text-xl font-black tracking-tight text-slate-900">智研金融</span>
-            <div class="text-[10px] text-slate-700 font-bold leading-none tracking-widest uppercase mt-0.5">Terminal Pro</div>
+          <div class="flex items-baseline gap-1.5">
+            <span class="text-lg font-black tracking-tight text-slate-900">智研金融</span>
+            <span class="text-[10px] text-slate-500 font-bold tracking-wider uppercase">Terminal Pro</span>
           </div>
         </div>
 
-        <!-- Tab 导航 -->
-        <nav class="flex items-center space-x-1 bg-slate-100/80 p-1 rounded-xl border border-slate-200/60">
+        <!-- 右侧：时间 + 日期选择 -->
+        <div class="flex items-center space-x-3">
+          <!-- 日期选择器 -->
+          <div class="relative">
+            <button id="date-selector-btn" onclick="toggleDateDropdown()"
+              class="flex items-center space-x-1.5 text-sm font-semibold bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200 hover:bg-slate-100 hover:border-slate-300 transition-all">
+              <svg class="w-3.5 h-3.5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+              </svg>
+              <span id="current-date-display" class="text-slate-700">2026-03-13</span>
+              <svg class="w-3 h-3 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <!-- 日期下拉菜单 -->
+            <div id="date-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-slate-200 py-2 z-50">
+              <div class="px-3 py-2 border-b border-slate-100">
+                <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">选择日期</div>
+              </div>
+              <div id="date-list" class="py-1 max-h-64 overflow-y-auto">
+                <!-- 由 JS 动态生成 -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 时钟显示 -->
+          <div class="flex items-center text-slate-600 text-sm font-mono font-semibold bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">
+            <svg class="w-3.5 h-3.5 mr-1.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span id="clock-display">--:--:--</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第二行：Tab 导航 -->
+      <div class="h-11 flex items-center border-t border-slate-100/80 -mx-4 px-4">
+        <nav class="flex items-center gap-1 w-full overflow-x-auto scrollbar-hide">
+          <!-- 核心模块：投资决策内参（突出显示） -->
           <button
             id="tab-decision"
             data-tab="decision"
-            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 bg-white text-red-700 shadow-sm border border-slate-200"
+            class="tab-btn flex items-center px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 bg-red-600 text-white shadow-sm hover:bg-red-700"
           >
-            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"></circle>
-              <circle cx="12" cy="12" r="2"></circle>
-            </svg>
+            <span class="w-1.5 h-1.5 bg-white rounded-full mr-2 animate-pulse"></span>
             投资决策内参
           </button>
+
+          <div class="w-px h-5 bg-slate-200 mx-1"></div>
+
+          <!-- 研究模块组 -->
           <button
             id="tab-industry"
             data-tab="industry"
-            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60"
+            class="tab-btn flex items-center px-3.5 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-900 hover:bg-slate-100"
           >
-            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-            行业研究报告
+            行业研究
           </button>
           <button
             id="tab-macro"
             data-tab="macro"
-            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60"
+            class="tab-btn flex items-center px-3.5 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-900 hover:bg-slate-100"
           >
-            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M3 21h18M5 21V7l8-4 8 4v14M8 21v-4h8v4"></path>
-            </svg>
             宏观研究
-          </button>
-          <button
-            id="tab-broker"
-            data-tab="broker"
-            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60"
-          >
-            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-              <polyline points="14 2 14 8 20 8"></polyline>
-              <line x1="16" y1="13" x2="8" y2="13"></line>
-              <line x1="16" y1="17" x2="8" y2="17"></line>
-              <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>
-            券商晨报
           </button>
           <button
             id="tab-stock"
             data-tab="stock"
-            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60"
+            class="tab-btn flex items-center px-3.5 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-900 hover:bg-slate-100"
           >
-            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-              <line x1="12" y1="22.08" x2="12" y2="12"></line>
-            </svg>
             个股研报
+          </button>
+
+          <div class="w-px h-5 bg-slate-200 mx-1"></div>
+
+          <!-- 资讯模块组 -->
+          <button
+            id="tab-broker"
+            data-tab="broker"
+            class="tab-btn flex items-center px-3.5 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+          >
+            券商晨报
           </button>
           <button
             id="tab-jisilu"
             data-tab="jisilu"
-            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60"
+            class="tab-btn flex items-center px-3.5 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-900 hover:bg-slate-100"
           >
-            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
             集思录
           </button>
           <button
             id="tab-futures"
             data-tab="futures"
-            class="tab-btn flex items-center px-5 py-2 rounded-lg text-sm font-black transition-all duration-200 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60"
+            class="tab-btn flex items-center px-3.5 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-900 hover:bg-slate-100"
           >
-            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-            </svg>
             期货市场
           </button>
         </nav>
-      </div>
-
-      <!-- 右侧：时间 + 日期选择 -->
-      <div class="flex items-center space-x-4">
-        <!-- 日期选择器 -->
-        <div class="relative">
-          <button id="date-selector-btn" onclick="toggleDateDropdown()"
-            class="flex items-center space-x-2 text-sm font-bold bg-white px-3 py-1.5 rounded-lg border border-slate-300 shadow-sm hover:bg-slate-50 transition-colors">
-            <svg class="w-3.5 h-3.5 text-slate-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-              <line x1="16" y1="2" x2="16" y2="6"></line>
-              <line x1="8" y1="2" x2="8" y2="6"></line>
-            </svg>
-            <span id="current-date-display">2026-03-13</span>
-            <svg class="w-3 h-3 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <!-- 日期下拉菜单 -->
-          <div id="date-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-slate-200 py-2 z-50">
-            <div class="px-3 py-2 border-b border-slate-100">
-              <div class="text-xs font-black text-slate-500 uppercase tracking-widest">选择日期</div>
-            </div>
-            <div id="date-list" class="py-1">
-              <!-- 由 JS 动态生成 -->
-            </div>
-          </div>
-        </div>
-
-        <!-- 时钟显示 -->
-        <div class="flex items-center text-slate-800 text-sm font-mono font-bold bg-white px-3 py-1.5 rounded-lg border border-slate-300 shadow-sm">
-          <svg class="w-3.5 h-3.5 mr-2 text-slate-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 16 14"></polyline>
-          </svg>
-          <span id="clock-display">--:--:--</span>
-        </div>
       </div>
     </div>
   </header>

@@ -2,6 +2,16 @@
    智研金融 Terminal Pro - 全局样式
    ======================================== */
 
+/* 隐藏滚动条（用于横向滚动的导航栏） */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* 自定义滚动条 */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;

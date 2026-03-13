@@ -80,11 +80,14 @@ function switchTab(tab) {
   const jisiluDoc = document.getElementById('jisilu-doc');
   const futuresDoc = document.getElementById('futures-doc');
 
-  // 重置所有按钮样式
+  // 重置所有按钮样式 - 新设计风格
   [decisionBtn, industryBtn, macroBtn, brokerBtn, stockBtn, jisiluBtn, futuresBtn].forEach(btn => {
     if (btn) {
-      btn.classList.remove('bg-white', 'text-red-700', 'text-blue-700', 'text-emerald-700', 'text-amber-700', 'text-purple-700', 'text-teal-700', 'text-orange-700', 'shadow-sm', 'border', 'border-slate-200');
-      btn.classList.add('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
+      // 移除激活状态样式
+      btn.classList.remove('bg-red-600', 'text-white', 'shadow-sm', 'hover:bg-red-700');
+      btn.classList.remove('bg-slate-200', 'text-slate-900');
+      // 添加默认样式
+      btn.classList.add('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
     }
   });
 
@@ -98,41 +101,41 @@ function switchTab(tab) {
   if (futuresDoc) futuresDoc.classList.add('hidden');
 
   if (tab === 'decision') {
-    decisionBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
-    decisionBtn.classList.add('bg-white', 'text-red-700', 'shadow-sm', 'border', 'border-slate-200');
+    decisionBtn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
+    decisionBtn.classList.add('bg-red-600', 'text-white', 'shadow-sm', 'hover:bg-red-700');
     decisionDoc.classList.remove('hidden');
     setTimeout(() => updateActiveNav('sec1'), 100);
   } else if (tab === 'industry') {
-    industryBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
-    industryBtn.classList.add('bg-white', 'text-blue-700', 'shadow-sm', 'border', 'border-slate-200');
+    industryBtn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
+    industryBtn.classList.add('bg-slate-200', 'text-slate-900');
     industryDoc.classList.remove('hidden');
     setTimeout(() => updateActiveNav('i_sec1'), 100);
   } else if (tab === 'macro') {
-    macroBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
-    macroBtn.classList.add('bg-white', 'text-emerald-700', 'shadow-sm', 'border', 'border-slate-200');
+    macroBtn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
+    macroBtn.classList.add('bg-slate-200', 'text-slate-900');
     macroDoc.classList.remove('hidden');
     setTimeout(() => updateActiveNav('m_sec1'), 100);
   } else if (tab === 'broker') {
-    brokerBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
-    brokerBtn.classList.add('bg-white', 'text-amber-700', 'shadow-sm', 'border', 'border-slate-200');
+    brokerBtn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
+    brokerBtn.classList.add('bg-slate-200', 'text-slate-900');
     brokerDoc.classList.remove('hidden');
     setTimeout(() => updateActiveNav('b_sec1'), 100);
   } else if (tab === 'stock') {
-    stockBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
-    stockBtn.classList.add('bg-white', 'text-purple-700', 'shadow-sm', 'border', 'border-slate-200');
+    stockBtn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
+    stockBtn.classList.add('bg-slate-200', 'text-slate-900');
     stockDoc.classList.remove('hidden');
     setTimeout(() => updateActiveNav('s_sec1'), 100);
   } else if (tab === 'jisilu') {
     if (jisiluBtn) {
-      jisiluBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
-      jisiluBtn.classList.add('bg-white', 'text-teal-700', 'shadow-sm', 'border', 'border-slate-200');
+      jisiluBtn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
+      jisiluBtn.classList.add('bg-slate-200', 'text-slate-900');
     }
     if (jisiluDoc) jisiluDoc.classList.remove('hidden');
     setTimeout(() => updateActiveNav('j_sec1'), 100);
   } else if (tab === 'futures') {
     if (futuresBtn) {
-      futuresBtn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-200/60');
-      futuresBtn.classList.add('bg-white', 'text-orange-700', 'shadow-sm', 'border', 'border-slate-200');
+      futuresBtn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
+      futuresBtn.classList.add('bg-slate-200', 'text-slate-900');
     }
     if (futuresDoc) futuresDoc.classList.remove('hidden');
     setTimeout(() => updateActiveNav('f_sec1'), 100);
