@@ -4,34 +4,40 @@
 
 const MACRO_NAV_CONFIG_0316 = [
   {
-    title: '宏观概览',
+    title: '周期定位',
     links: [
-      { id: 'm_sec1', label: '核心主线与全局叙事' },
-      { id: 'm_sec2', label: '关键推演与操作方向' }
+      { id: 'm_sec1', label: '核心宏观判断' },
+      { id: 'm_sec2', label: '经济增长' },
+      { id: 'm_sec3', label: '通胀预期' },
+      { id: 'm_sec4', label: '周期位置' }
     ]
   },
   {
-    title: '重大事件',
+    title: '政策分析',
     links: [
-      { id: 'm_sec3', label: '美伊冲突与油价' },
-      { id: 'm_sec4', label: '315 晚会曝光' },
-      { id: 'm_sec5', label: '十五五规划' }
+      { id: 'm_sec5', label: '货币政策' },
+      { id: 'm_sec6', label: '财政政策' },
+      { id: 'm_sec7', label: '产业政策' }
     ]
   },
   {
-    title: '政策宏观',
+    title: '资产配置',
     links: [
-      { id: 'm_sec6', label: '央行逆回购' },
-      { id: 'm_sec7', label: '社融数据' },
-      { id: 'm_sec8', label: '监管动态' }
+      { id: 'm_sec8', label: '大类资产配置' },
+      { id: 'm_sec9', label: '权益市场策略' }
     ]
   },
   {
-    title: '跨赛道传导',
+    title: '行业轮动',
     links: [
-      { id: 'm_sec9', label: '地缘→能源→化工' },
-      { id: 'm_sec10', label: 'AI 安全→合规红利' },
-      { id: 'm_sec11', label: 'HALO 策略' }
+      { id: 'm_sec10', label: '受益行业分析' }
+    ]
+  },
+  {
+    title: '风险提示',
+    links: [
+      { id: 'm_sec11', label: '宏观风险' },
+      { id: 'm_sec12', label: '证伪指标' }
     ]
   }
 ];
