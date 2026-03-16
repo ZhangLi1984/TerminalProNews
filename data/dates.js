@@ -4,7 +4,8 @@
 
 // 可用日期列表（按时间倒序，最新的在前）
 const AVAILABLE_DATES = [
-  { date: '2026-03-13', label: '2026 年 3 月 13 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-03-16', label: '2026 年 3 月 16 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-03-13', label: '2026 年 3 月 13 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-12', label: '2026 年 3 月 12 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-11', label: '2026 年 3 月 11 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-10', label: '2026 年 3 月 10 日', tag: 'history', tagLabel: '历史' },
@@ -16,8 +17,8 @@ const AVAILABLE_DATES = [
   { date: '2026-03-04', label: '2026 年 3 月 4 日', tag: 'history', tagLabel: '历史' }
 ];
 
-// 当前选中日期（2026-03-13 最新）
-let currentDate = '2026-03-13';
+// 当前选中日期（2026-03-16 最新）
+let currentDate = '2026-03-16';
 
 // 当前搜索关键词
 let dateSearchKeyword = '';
@@ -53,23 +54,23 @@ function matchDate(keyword, item) {
   const kw = keyword.toLowerCase().trim();
 
   // 支持多种搜索格式：
-  // 1. 完整日期: 2026-03-13, 20260313
-  // 2. 月日: 0313, 3月13, 3月13日, 03-13
-  // 3. 日: 13, 13日
-  // 4. 月份: 3月, 03
+  // 1. 完整日期：2026-03-16, 20260316
+  // 2. 月日：0316, 3 月 16, 3 月 16 日，03-16
+  // 3. 日：16, 16 日
+  // 4. 月份：3 月，03
 
   const patterns = [
-    item.date,                    // 2026-03-13
-    item.date.replace(/-/g, ''),  // 20260313
-    item.date.slice(5),           // 03-13
-    item.date.slice(5).replace('-', ''), // 0313
-    item.label,                   // 2026 年 3 月 13 日
-    item.label.replace(/[ 年月]/g, ''),  // 2026313日
+    item.date,                    // 2026-03-16
+    item.date.replace(/-/g, ''),  // 20260316
+    item.date.slice(5),           // 03-16
+    item.date.slice(5).replace('-', ''), // 0316
+    item.label,                   // 2026 年 3 月 16 日
+    item.label.replace(/[ 年月]/g, ''),  // 2026316 日
     // 灵活匹配
-    item.date.slice(8),           // 13
+    item.date.slice(8),           // 16
     item.date.slice(5, 7),        // 03
     item.label.replace(/.*(\d+)月.*/, '$1'), // 提取月份
-    item.label.replace(/.*(\d+)日/, '$1'),   // 提取日期
+    item.label.replace(/.*(\d+) 日/, '$1'),   // 提取日期
   ];
 
   return patterns.some(p => p.toLowerCase().includes(kw));
@@ -245,7 +246,71 @@ function setupDateDropdownListener() {
  */
 function renderAllContent() {
   // 渲染投资决策内参导航
-  if (currentDate === '2026-03-13') {
+  if (currentDate === '2026-03-16') {
+    if (typeof renderDecisionNav_0316 === 'function') {
+      renderDecisionNav_0316();
+    }
+    if (typeof renderIndustryNav_0316 === 'function') {
+      renderIndustryNav_0316();
+    }
+    if (typeof renderMacroNav_0316 === 'function') {
+      renderMacroNav_0316();
+    }
+    if (typeof renderBrokerNav_0316 === 'function') {
+      renderBrokerNav_0316();
+    }
+    if (typeof renderStockNav_0316 === 'function') {
+      renderStockNav_0316();
+    }
+    if (typeof renderJisiluNav_0316 === 'function') {
+      renderJisiluNav_0316();
+    }
+    if (typeof renderFuturesNav_0316 === 'function') {
+      renderFuturesNav_0316();
+    }
+    if (typeof renderDecisionContent_0316 === 'function') {
+      const decisionContainer = document.getElementById('decision-content');
+      if (decisionContainer) {
+        decisionContainer.innerHTML = renderDecisionContent_0316();
+      }
+    }
+    if (typeof renderIndustryContent_0316 === 'function') {
+      const industryContainer = document.getElementById('industry-content');
+      if (industryContainer) {
+        industryContainer.innerHTML = renderIndustryContent_0316();
+      }
+    }
+    if (typeof renderMacroContent_0316 === 'function') {
+      const macroContainer = document.getElementById('macro-content');
+      if (macroContainer) {
+        macroContainer.innerHTML = renderMacroContent_0316();
+      }
+    }
+    if (typeof renderBrokerContent_0316 === 'function') {
+      const brokerContainer = document.getElementById('broker-content');
+      if (brokerContainer) {
+        brokerContainer.innerHTML = renderBrokerContent_0316();
+      }
+    }
+    if (typeof renderStockContent_0316 === 'function') {
+      const stockContainer = document.getElementById('stock-content');
+      if (stockContainer) {
+        stockContainer.innerHTML = renderStockContent_0316();
+      }
+    }
+    if (typeof renderJisiluContent_0316 === 'function') {
+      const jisiluContainer = document.getElementById('jisilu-content');
+      if (jisiluContainer) {
+        jisiluContainer.innerHTML = renderJisiluContent_0316();
+      }
+    }
+    if (typeof renderFuturesContent_0316 === 'function') {
+      const futuresContainer = document.getElementById('futures-content');
+      if (futuresContainer) {
+        futuresContainer.innerHTML = renderFuturesContent_0316();
+      }
+    }
+  } else if (currentDate === '2026-03-13') {
     if (typeof renderDecisionNav_0313 === 'function') {
       renderDecisionNav_0313();
     }
@@ -263,6 +328,9 @@ function renderAllContent() {
     }
     if (typeof renderJisiluNav_0313 === 'function') {
       renderJisiluNav_0313();
+    }
+    if (typeof renderFuturesNav_0313 === 'function') {
+      renderFuturesNav_0313();
     }
     if (typeof renderDecisionContent_0313 === 'function') {
       const decisionContainer = document.getElementById('decision-content');
@@ -300,6 +368,12 @@ function renderAllContent() {
         jisiluContainer.innerHTML = renderJisiluContent_0313();
       }
     }
+    if (typeof renderFuturesContent_0313 === 'function') {
+      const futuresContainer = document.getElementById('futures-content');
+      if (futuresContainer) {
+        futuresContainer.innerHTML = renderFuturesContent_0313();
+      }
+    }
   } else if (currentDate === '2026-03-12') {
     if (typeof renderDecisionNav_0312 === 'function') {
       renderDecisionNav_0312();
@@ -318,6 +392,9 @@ function renderAllContent() {
     }
     if (typeof renderJisiluNav_0312 === 'function') {
       renderJisiluNav_0312();
+    }
+    if (typeof renderFuturesNav_0312 === 'function') {
+      renderFuturesNav_0312();
     }
     if (typeof renderDecisionContent_0312 === 'function') {
       const decisionContainer = document.getElementById('decision-content');
@@ -353,6 +430,12 @@ function renderAllContent() {
       const jisiluContainer = document.getElementById('jisilu-content');
       if (jisiluContainer) {
         jisiluContainer.innerHTML = renderJisiluContent_0312();
+      }
+    }
+    if (typeof renderFuturesContent_0312 === 'function') {
+      const futuresContainer = document.getElementById('futures-content');
+      if (futuresContainer) {
+        futuresContainer.innerHTML = renderFuturesContent_0312();
       }
     }
   } else if (currentDate === '2026-03-11') {
