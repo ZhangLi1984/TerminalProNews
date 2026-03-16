@@ -6,7 +6,37 @@ const BROKER_NAV_CONFIG_0316 = [
   {
     title: '晨报摘要',
     links: [
-      { id: 'b_sec1', label: '核心观点' }
+      { id: 'b_sec1', label: '核心观点' },
+      { id: 'b_sec2', label: '仓位建议' },
+      { id: 'b_sec3', label: '热门赛道' },
+      { id: 'b_sec4', label: '金股 TOP10' }
+    ]
+  },
+  {
+    title: '宏观策略',
+    links: [
+      { id: 'b_sec5', label: '券商策略汇总' }
+    ]
+  },
+  {
+    title: '行业配置',
+    links: [
+      { id: 'b_sec6', label: '行业推荐榜' },
+      { id: 'b_sec7', label: '重点行业观点' }
+    ]
+  },
+  {
+    title: '金股组合',
+    links: [
+      { id: 'b_sec8', label: '多券商推荐个股' },
+      { id: 'b_sec9', label: '其他重点个股' }
+    ]
+  },
+  {
+    title: '策略建议',
+    links: [
+      { id: 'b_sec10', label: '投资策略' },
+      { id: 'b_sec11', label: '风险提示' }
     ]
   }
 ];
