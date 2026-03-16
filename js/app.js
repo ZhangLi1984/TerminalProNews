@@ -172,6 +172,9 @@ function switchDate(date) {
 /**
  * 渲染所有内容（根据当前日期）
  */
+function renderAllContent() {
+  const date = AppState.currentDate;
+
   if (date === '2026-03-16') {
     // 渲染 3 月 16 日内容
     console.log('[renderAllContent] 渲染 3 月 16 日内容');
@@ -204,7 +207,6 @@ function switchDate(date) {
     const futuresContentEl = document.getElementById('futures-content');
     if (futuresContentEl && typeof renderFuturesContent_0316 === 'function') futuresContentEl.innerHTML = renderFuturesContent_0316();
   } else if (date === '2026-03-13') {
-  if (date === '2026-03-13') {
     // 渲染 3 月 13 日内容
     console.log('[renderAllContent] 渲染 3 月 13 日内容');
     if (typeof renderDecisionNav_0313 === 'function') {
