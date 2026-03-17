@@ -1,5 +1,5 @@
 // ==========================================
-// 智研金融 Terminal Pro - 主应用入口
+// 智研金融 Terminal Pro - 应用入口
 // ==========================================
 
 /**
@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-03-16',
+  currentDate: '2026-03-17',
   clockInterval: null
 };
 
@@ -33,7 +33,7 @@ function updateActiveNav(sectionId) {
   // 清除所有导航按钮的高亮
   document.querySelectorAll('.nav-btn').forEach(btn => {
     btn.classList.remove('bg-slate-900', 'text-white', 'shadow-md');
-    btn.classList.add('text-slate-700', 'hover:bg-slate-200');
+    btn.classList.add('text-slate-700', 'hover:bg-slate-100');
 
     const dot = btn.querySelector('div');
     if (dot) {
@@ -45,7 +45,7 @@ function updateActiveNav(sectionId) {
   // 高亮当前导航按钮
   const activeBtn = document.querySelector(`.nav-btn[data-section="${sectionId}"]`);
   if (activeBtn) {
-    activeBtn.classList.remove('text-slate-700', 'hover:bg-slate-200');
+    activeBtn.classList.remove('text-slate-700', 'hover:bg-slate-100');
     activeBtn.classList.add('bg-slate-900', 'text-white', 'shadow-md');
 
     const dot = activeBtn.querySelector('div');
@@ -175,7 +175,38 @@ function switchDate(date) {
 function renderAllContent() {
   const date = AppState.currentDate;
 
-  if (date === '2026-03-16') {
+  if (date === '2026-03-17') {
+    // 渲染 3 月 17 日内容
+    console.log('[renderAllContent] 渲染 3 月 17 日内容');
+    if (typeof renderDecisionNav_0317 === 'function') renderDecisionNav_0317();
+    if (typeof renderIndustryNav_0317 === 'function') renderIndustryNav_0317();
+    if (typeof renderMacroNav_0317 === 'function') renderMacroNav_0317();
+    if (typeof renderBrokerNav_0317 === 'function') renderBrokerNav_0317();
+    if (typeof renderStockNav_0317 === 'function') renderStockNav_0317();
+    if (typeof renderJisiluNav_0317 === 'function') renderJisiluNav_0317();
+    if (typeof renderFuturesNav_0317 === 'function') renderFuturesNav_0317();
+
+    const decisionContentEl = document.getElementById('decision-content');
+    if (decisionContentEl && typeof renderDecisionContent_0317 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0317();
+
+    const industryContentEl = document.getElementById('industry-content');
+    if (industryContentEl && typeof renderIndustryContent_0317 === 'function') industryContentEl.innerHTML = renderIndustryContent_0317();
+
+    const macroContentEl = document.getElementById('macro-content');
+    if (macroContentEl && typeof renderMacroContent_0317 === 'function') macroContentEl.innerHTML = renderMacroContent_0317();
+
+    const brokerContentEl = document.getElementById('broker-content');
+    if (brokerContentEl && typeof renderBrokerContent_0317 === 'function') brokerContentEl.innerHTML = renderBrokerContent_0317();
+
+    const stockContentEl = document.getElementById('stock-content');
+    if (stockContentEl && typeof renderStockContent_0317 === 'function') stockContentEl.innerHTML = renderStockContent_0317();
+
+    const jisiluContentEl = document.getElementById('jisilu-content');
+    if (jisiluContentEl && typeof renderJisiluContent_0317 === 'function') jisiluContentEl.innerHTML = renderJisiluContent_0317();
+
+    const futuresContentEl = document.getElementById('futures-content');
+    if (futuresContentEl && typeof renderFuturesContent_0317 === 'function') futuresContentEl.innerHTML = renderFuturesContent_0317();
+  } else if (date === '2026-03-16') {
     // 渲染 3 月 16 日内容
     console.log('[renderAllContent] 渲染 3 月 16 日内容');
     if (typeof renderDecisionNav_0316 === 'function') renderDecisionNav_0316();
