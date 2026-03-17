@@ -4,24 +4,30 @@
 
 const STOCK_NAV_CONFIG_0317 = [
   {
-    title: '重点标的',
+    title: '核心摘要',
     links: [
-      { id: 'sec1', label: 'S 级标的' },
-      { id: 'sec2', label: 'A 级标的' }
+      { id: 'sec1', label: '核心摘要' }
+    ]
+  },
+  {
+    title: 'A 级标的',
+    links: [
+      { id: 'sec2', label: '滨江集团' },
+      { id: 'sec3', label: '智家' },
+      { id: 'sec4', label: '崇德科技' },
+      { id: 'sec5', label: '宁德时代' },
+      { id: 'sec6', label: '同力股份' },
+      { id: 'sec7', label: '中触媒' },
+      { id: 'sec8', label: '迈普医学' },
+      { id: 'sec9', label: '彤程新材' },
+      { id: 'sec10', label: '安孚科技' }
     ]
   },
   {
     title: '评级汇总',
     links: [
-      { id: 'sec3', label: '机构评级表' },
-      { id: 'sec4', label: '资金流向' }
-    ]
-  },
-  {
-    title: '推荐组合',
-    links: [
-      { id: 'sec5', label: '月度金股' },
-      { id: 'sec6', label: '核心组合' }
+      { id: 'sec11', label: '完整评级表' },
+      { id: 'sec12', label: '评级说明' }
     ]
   }
 ];
