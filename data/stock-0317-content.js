@@ -53,7 +53,7 @@ function renderStockContent_0317() {
         <span class="text-lg mr-2">⚠️</span>今日无 S 级标的
       </h4>
       <p class="text-amber-900 text-sm">
-        S 级标准：需同时满足标题超预期 + 首次覆盖/金股 + 盈利预测大幅上调>20% + 基本面优秀（ROE>15%）+ 市场资金共振
+        S 级标准：需同时满足标题超预期 + 首次覆盖/金股 + 盈利预测大幅上调&gt;20% + 基本面优秀（ROE&gt;15%）+ 市场资金共振
       </p>
     </div>
 
@@ -135,7 +135,7 @@ function renderStockContent_0317() {
       <div class="space-y-3 text-blue-900">
         <p><strong>评级机构：</strong>山西证券 | <strong>得分：</strong>7.0 分</p>
         <p><strong>核心看点：</strong>尾气催化需求增长，2025 年归母 +45.55% 至 2.12 亿创新高。深度绑定 BASF。</p>
-        <p><strong>财务指标：</strong>预计 2025-2027 年归母 2.1/2.7/3.3 亿，PE 25/20/17 倍。首次覆盖买入-B。</p>
+        <p><strong>财务指标：</strong>预计 2025-2027 年归母 2.1/2.7/3.3 亿，PE 25/20/17 倍。首次覆盖买入 -B。</p>
       </div>
     </div>
 
@@ -198,7 +198,6 @@ function renderStockContent_0317() {
           </tr>
         </thead>
         <tbody class="bg-white divide-y divide-slate-100">
-          <!-- A 级行 -->
           <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
             <td class="px-4 py-3 font-bold text-blue-900">滨江集团</td>
             <td class="px-4 py-3 text-blue-700">002244</td>
@@ -271,7 +270,6 @@ function renderStockContent_0317() {
             <td class="px-4 py-3 text-center"><span class="text-blue-800 font-bold">7.0</span></td>
             <td class="px-4 py-3 text-sm text-blue-900">南孚电池经营稳定，持股提至 46%</td>
           </tr>
-          <!-- B 级行 -->
           <tr class="bg-slate-50 hover:bg-slate-100 transition-colors">
             <td class="px-4 py-3 font-bold text-slate-700">民爆光电</td>
             <td class="px-4 py-3 text-slate-500">220022</td>
@@ -488,7 +486,6 @@ function renderStockContent_0317() {
             <td class="px-4 py-3 text-center"><span class="text-slate-700 font-bold">5.0</span></td>
             <td class="px-4 py-3 text-sm text-slate-600">scaleFabric400 网卡基于 PCIe5.0</td>
           </tr>
-          <!-- C 级行 -->
           <tr class="bg-red-50 hover:bg-red-100 transition-colors">
             <td class="px-4 py-3 font-bold text-red-700">可孚医疗</td>
             <td class="px-4 py-3 text-red-500">301087</td>

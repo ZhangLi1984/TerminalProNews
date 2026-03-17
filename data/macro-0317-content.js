@@ -331,7 +331,7 @@ function renderMacroContent_0317() {
 
     <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 p-5 my-5 rounded-r-xl">
       <h4 class="text-red-800 font-black mb-3 flex items-center text-2xl">
-        <span class="text-3xl mr-3">📈</span>股票 &gt; 商品 &gt; 债券 &gt; 现金
+        <span class="text-3xl mr-3">📈</span>股票 > 商品 > 债券 > 现金
       </h4>
     </div>
 

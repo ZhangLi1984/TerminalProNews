@@ -1,7 +1,3 @@
-// ==========================================
-// 投资决策内参导航模块 - 2026-03-17
-// ==========================================
-
 const DECISION_NAV_CONFIG_0317 = [
   {
     title: '核心摘要',
@@ -16,11 +12,11 @@ const DECISION_NAV_CONFIG_0317 = [
     links: [
       { id: 'sec4', label: '英伟达 GTC 大会' },
       { id: 'sec5', label: '霍尔木兹海峡封锁' },
-      { id: 'sec6', label: '氢能试点政策' }
+      { id: 'sec6', label: '氢能政策落地' }
     ]
   },
   {
-    title: '新闻分类',
+    title: '政策解读',
     links: [
       { id: 'sec7', label: '政策宏观' },
       { id: 'sec8', label: '产业动态' }
@@ -36,11 +32,11 @@ const DECISION_NAV_CONFIG_0317 = [
     ]
   },
   {
-    title: '传导分析',
+    title: '跨赛道传导',
     links: [
-      { id: 'sec13', label: '算电协同' },
-      { id: 'sec14', label: '航运替代' },
-      { id: 'sec15', label: '存储涨价链' }
+      { id: 'sec13', label: 'AI→电力' },
+      { id: 'sec14', label: '地缘→航运' },
+      { id: 'sec15', label: '存储→消费电子' }
     ]
   },
   {
@@ -65,16 +61,13 @@ function renderDecisionNav_0317() {
   if (!container) return;
 
   container.innerHTML = DECISION_NAV_CONFIG_0317.map(section => `
-    <div class="nav-section">
-      <h3 class="text-xs font-black text-slate-500 uppercase tracking-wider mb-3 px-3">${section.title}</h3>
-      <div class="space-y-1">
+    <div class="mb-8">
+      <h3 class="text-lg font-bold text-slate-800 mb-3 pb-2 border-b-2 border-red-500">${section.title}</h3>
+      <div class="space-y-2">
         ${section.links.map(link => `
-          <button onclick="scrollToSection('decision', '${link.id}')"
-            class="nav-btn w-full text-left px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 transition-all flex items-center group"
-            data-section="${link.id}">
-            <div class="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-red-400 transition-colors mr-2.5"></div>
+          <a href="#${link.id}" class="block px-4 py-2.5 bg-slate-50 hover:bg-red-50 text-slate-700 hover:text-red-700 rounded-lg transition-all duration-200 border border-slate-200 hover:border-red-300 text-sm">
             ${link.label}
-          </button>
+          </a>
         `).join('')}
       </div>
     </div>

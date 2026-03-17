@@ -1,7 +1,3 @@
-// ==========================================
-// 投资决策内参内容模块 - 2026-03-17
-// ==========================================
-
 function renderDecisionContent_0317() {
   return `<div class="prose prose-slate max-w-none">
 
