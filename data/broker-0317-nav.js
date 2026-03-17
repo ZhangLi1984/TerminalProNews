@@ -4,24 +4,51 @@
 
 const BROKER_NAV_CONFIG_0317 = [
   {
-    title: '晨报摘要',
+    title: '核心摘要',
     links: [
-      { id: 'sec1', label: '核心观点' },
-      { id: 'sec2', label: '重点推荐' }
+      { id: 'b_sec1', label: '市场共识' },
+      { id: 'b_sec2', label: '仓位建议' },
+      { id: 'b_sec3', label: '热门赛道 TOP5' },
+      { id: 'b_sec4', label: '金股 TOP10' }
     ]
   },
   {
-    title: '机构观点',
+    title: '宏观策略',
     links: [
-      { id: 'sec3', label: '策略研判' },
-      { id: 'sec4', label: '行业配置' }
+      { id: 'b_sec5', label: '券商策略汇总' }
     ]
   },
   {
-    title: '个股评级',
+    title: '行业排名',
     links: [
-      { id: 'sec5', label: '首次覆盖' },
-      { id: 'sec6', label: '评级上调' }
+      { id: 'b_sec6', label: '行业推荐榜' }
+    ]
+  },
+  {
+    title: '金股组合',
+    links: [
+      { id: 'b_sec7', label: '多家推荐个股' },
+      { id: 'b_sec8', label: '中银证券金股' },
+      { id: 'b_sec9', label: '东兴证券金股' }
+    ]
+  },
+  {
+    title: '详细观点',
+    links: [
+      { id: 'b_sec10', label: 'AI/算力' },
+      { id: 'b_sec11', label: '半导体' },
+      { id: 'b_sec12', label: '通信设备' },
+      { id: 'b_sec13', label: '新能源' },
+      { id: 'b_sec14', label: '煤炭/高股息' },
+      { id: 'b_sec15', label: '消费/医药' }
+    ]
+  },
+  {
+    title: '投资策略',
+    links: [
+      { id: 'b_sec16', label: '配置建议' },
+      { id: 'b_sec17', label: '重点关注' },
+      { id: 'b_sec18', label: '风险提示' }
     ]
   }
 ];
