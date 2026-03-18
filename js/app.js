@@ -179,6 +179,37 @@ function renderAllContent() {
     // 渲染 3 月 18 日内容
     console.log('[renderAllContent] 渲染 3 月 18 日内容');
     if (typeof renderDecisionNav_0318 === 'function') renderDecisionNav_0318();
+    if (typeof renderIndustryNav_0318 === 'function') renderIndustryNav_0318();
+    if (typeof renderMacroNav_0318 === 'function') renderMacroNav_0318();
+    if (typeof renderBrokerNav_0318 === 'function') renderBrokerNav_0318();
+    if (typeof renderStockNav_0318 === 'function') renderStockNav_0318();
+    if (typeof renderJisiluNav_0318 === 'function') renderJisiluNav_0318();
+    if (typeof renderFuturesNav_0318 === 'function') renderFuturesNav_0318();
+
+    const decisionContentEl = document.getElementById('decision-content');
+    if (decisionContentEl && typeof renderDecisionContent_0318 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0318();
+
+    const industryContentEl = document.getElementById('industry-content');
+    if (industryContentEl && typeof renderIndustryContent_0318 === 'function') industryContentEl.innerHTML = renderIndustryContent_0318();
+
+    const macroContentEl = document.getElementById('macro-content');
+    if (macroContentEl && typeof renderMacroContent_0318 === 'function') macroContentEl.innerHTML = renderMacroContent_0318();
+
+    const brokerContentEl = document.getElementById('broker-content');
+    if (brokerContentEl && typeof renderBrokerContent_0318 === 'function') brokerContentEl.innerHTML = renderBrokerContent_0318();
+
+    const stockContentEl = document.getElementById('stock-content');
+    if (stockContentEl && typeof renderStockContent_0318 === 'function') stockContentEl.innerHTML = renderStockContent_0318();
+
+    const jisiluContentEl = document.getElementById('jisilu-content');
+    if (jisiluContentEl && typeof renderJisiluContent_0318 === 'function') jisiluContentEl.innerHTML = renderJisiluContent_0318();
+
+    const futuresContentEl = document.getElementById('futures-content');
+    if (futuresContentEl && typeof renderFuturesContent_0318 === 'function') futuresContentEl.innerHTML = renderFuturesContent_0318();
+  }// 替换标记
+    // 渲染 3 月 18 日内容
+    console.log('[renderAllContent] 渲染 3 月 18 日内容');
+    if (typeof renderDecisionNav_0318 === 'function') renderDecisionNav_0318();
 
     const decisionContentEl = document.getElementById('decision-content');
     if (decisionContentEl && typeof renderDecisionContent_0318 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0318();
