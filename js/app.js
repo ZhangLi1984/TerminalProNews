@@ -206,13 +206,6 @@ function renderAllContent() {
 
     const futuresContentEl = document.getElementById('futures-content');
     if (futuresContentEl && typeof renderFuturesContent_0318 === 'function') futuresContentEl.innerHTML = renderFuturesContent_0318();
-  }// 替换标记
-    // 渲染 3 月 18 日内容
-    console.log('[renderAllContent] 渲染 3 月 18 日内容');
-    if (typeof renderDecisionNav_0318 === 'function') renderDecisionNav_0318();
-
-    const decisionContentEl = document.getElementById('decision-content');
-    if (decisionContentEl && typeof renderDecisionContent_0318 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0318();
   } else if (date === '2026-03-17') {
     // 渲染 3 月 17 日内容
     console.log('[renderAllContent] 渲染 3 月 17 日内容');
@@ -278,274 +271,146 @@ function renderAllContent() {
   } else if (date === '2026-03-13') {
     // 渲染 3 月 13 日内容
     console.log('[renderAllContent] 渲染 3 月 13 日内容');
-    if (typeof renderDecisionNav_0313 === 'function') {
-      renderDecisionNav_0313();
-    }
-    if (typeof renderIndustryNav_0313 === 'function') {
-      renderIndustryNav_0313();
-    }
-    if (typeof renderMacroNav_0313 === 'function') {
-      renderMacroNav_0313();
-    }
-    if (typeof renderBrokerNav_0313 === 'function') {
-      renderBrokerNav_0313();
-    }
-    if (typeof renderStockNav_0313 === 'function') {
-      renderStockNav_0313();
-    }
-    if (typeof renderJisiluNav_0313 === 'function') {
-      renderJisiluNav_0313();
-    }
-    if (typeof renderFuturesNav_0313 === 'function') {
-      renderFuturesNav_0313();
-    }
+    if (typeof renderDecisionNav_0313 === 'function') renderDecisionNav_0313();
+    if (typeof renderIndustryNav_0313 === 'function') renderIndustryNav_0313();
+    if (typeof renderMacroNav_0313 === 'function') renderMacroNav_0313();
+    if (typeof renderBrokerNav_0313 === 'function') renderBrokerNav_0313();
+    if (typeof renderStockNav_0313 === 'function') renderStockNav_0313();
+    if (typeof renderJisiluNav_0313 === 'function') renderJisiluNav_0313();
+    if (typeof renderFuturesNav_0313 === 'function') renderFuturesNav_0313();
 
     const decisionContentEl = document.getElementById('decision-content');
-    if (decisionContentEl && typeof renderDecisionContent_0313 === 'function') {
-      decisionContentEl.innerHTML = renderDecisionContent_0313();
-    }
+    if (decisionContentEl && typeof renderDecisionContent_0313 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0313();
 
     const industryContentEl = document.getElementById('industry-content');
-    if (industryContentEl && typeof renderIndustryContent_0313 === 'function') {
-      industryContentEl.innerHTML = renderIndustryContent_0313();
-    }
+    if (industryContentEl && typeof renderIndustryContent_0313 === 'function') industryContentEl.innerHTML = renderIndustryContent_0313();
 
     const macroContentEl = document.getElementById('macro-content');
-    if (macroContentEl && typeof renderMacroContent_0313 === 'function') {
-      macroContentEl.innerHTML = renderMacroContent_0313();
-    }
+    if (macroContentEl && typeof renderMacroContent_0313 === 'function') macroContentEl.innerHTML = renderMacroContent_0313();
 
     const brokerContentEl = document.getElementById('broker-content');
-    if (brokerContentEl && typeof renderBrokerContent_0313 === 'function') {
-      brokerContentEl.innerHTML = renderBrokerContent_0313();
-    }
+    if (brokerContentEl && typeof renderBrokerContent_0313 === 'function') brokerContentEl.innerHTML = renderBrokerContent_0313();
 
     const stockContentEl = document.getElementById('stock-content');
-    if (stockContentEl && typeof renderStockContent_0313 === 'function') {
-      stockContentEl.innerHTML = renderStockContent_0313();
-    }
+    if (stockContentEl && typeof renderStockContent_0313 === 'function') stockContentEl.innerHTML = renderStockContent_0313();
 
     const jisiluContentEl = document.getElementById('jisilu-content');
-    if (jisiluContentEl && typeof renderJisiluContent_0313 === 'function') {
-      jisiluContentEl.innerHTML = renderJisiluContent_0313();
-    }
+    if (jisiluContentEl && typeof renderJisiluContent_0313 === 'function') jisiluContentEl.innerHTML = renderJisiluContent_0313();
 
     const futuresContentEl = document.getElementById('futures-content');
-    if (futuresContentEl && typeof renderFuturesContent_0313 === 'function') {
-      futuresContentEl.innerHTML = renderFuturesContent_0313();
-    }
+    if (futuresContentEl && typeof renderFuturesContent_0313 === 'function') futuresContentEl.innerHTML = renderFuturesContent_0313();
   } else if (date === '2026-03-12') {
     // 渲染 3 月 12 日内容
     console.log('[renderAllContent] 渲染 3 月 12 日内容');
-    if (typeof renderDecisionNav_0312 === 'function') {
-      renderDecisionNav_0312();
-    }
-    if (typeof renderIndustryNav_0312 === 'function') {
-      renderIndustryNav_0312();
-    }
-    if (typeof renderMacroNav_0312 === 'function') {
-      renderMacroNav_0312();
-    }
-    if (typeof renderBrokerNav_0312 === 'function') {
-      renderBrokerNav_0312();
-    }
-    if (typeof renderStockNav_0312 === 'function') {
-      renderStockNav_0312();
-    }
-    if (typeof renderJisiluNav_0312 === 'function') {
-      renderJisiluNav_0312();
-    }
-    if (typeof renderFuturesNav_0312 === 'function') {
-      renderFuturesNav_0312();
-    }
+    if (typeof renderDecisionNav_0312 === 'function') renderDecisionNav_0312();
+    if (typeof renderIndustryNav_0312 === 'function') renderIndustryNav_0312();
+    if (typeof renderMacroNav_0312 === 'function') renderMacroNav_0312();
+    if (typeof renderBrokerNav_0312 === 'function') renderBrokerNav_0312();
+    if (typeof renderStockNav_0312 === 'function') renderStockNav_0312();
+    if (typeof renderJisiluNav_0312 === 'function') renderJisiluNav_0312();
+    if (typeof renderFuturesNav_0312 === 'function') renderFuturesNav_0312();
 
     const decisionContentEl = document.getElementById('decision-content');
-    if (decisionContentEl && typeof renderDecisionContent_0312 === 'function') {
-      decisionContentEl.innerHTML = renderDecisionContent_0312();
-    }
+    if (decisionContentEl && typeof renderDecisionContent_0312 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0312();
 
     const industryContentEl = document.getElementById('industry-content');
-    if (industryContentEl && typeof renderIndustryContent_0312 === 'function') {
-      industryContentEl.innerHTML = renderIndustryContent_0312();
-    }
+    if (industryContentEl && typeof renderIndustryContent_0312 === 'function') industryContentEl.innerHTML = renderIndustryContent_0312();
 
     const macroContentEl = document.getElementById('macro-content');
-    if (macroContentEl && typeof renderMacroContent_0312 === 'function') {
-      macroContentEl.innerHTML = renderMacroContent_0312();
-    }
+    if (macroContentEl && typeof renderMacroContent_0312 === 'function') macroContentEl.innerHTML = renderMacroContent_0312();
 
     const brokerContentEl = document.getElementById('broker-content');
-    if (brokerContentEl && typeof renderBrokerContent_0312 === 'function') {
-      brokerContentEl.innerHTML = renderBrokerContent_0312();
-    }
+    if (brokerContentEl && typeof renderBrokerContent_0312 === 'function') brokerContentEl.innerHTML = renderBrokerContent_0312();
 
     const stockContentEl = document.getElementById('stock-content');
-    if (stockContentEl && typeof renderStockContent_0312 === 'function') {
-      stockContentEl.innerHTML = renderStockContent_0312();
-    }
+    if (stockContentEl && typeof renderStockContent_0312 === 'function') stockContentEl.innerHTML = renderStockContent_0312();
 
     const jisiluContentEl = document.getElementById('jisilu-content');
-    if (jisiluContentEl && typeof renderJisiluContent_0312 === 'function') {
-      jisiluContentEl.innerHTML = renderJisiluContent_0312();
-    }
+    if (jisiluContentEl && typeof renderJisiluContent_0312 === 'function') jisiluContentEl.innerHTML = renderJisiluContent_0312();
 
     const futuresContentEl = document.getElementById('futures-content');
-    if (futuresContentEl && typeof renderFuturesContent_0312 === 'function') {
-      futuresContentEl.innerHTML = renderFuturesContent_0312();
-    }
+    if (futuresContentEl && typeof renderFuturesContent_0312 === 'function') futuresContentEl.innerHTML = renderFuturesContent_0312();
   } else if (date === '2026-03-11') {
     // 渲染 3 月 11 日内容
     console.log('[renderAllContent] 渲染 3 月 11 日内容');
-    if (typeof renderDecisionNav_0311 === 'function') {
-      renderDecisionNav_0311();
-    }
-    if (typeof renderIndustryNav_0311 === 'function') {
-      renderIndustryNav_0311();
-    }
-    if (typeof renderMacroNav_0311 === 'function') {
-      renderMacroNav_0311();
-    }
-    if (typeof renderBrokerNav_0311 === 'function') {
-      renderBrokerNav_0311();
-    }
-    if (typeof renderStockNav_0311 === 'function') {
-      renderStockNav_0311();
-    }
+    if (typeof renderDecisionNav_0311 === 'function') renderDecisionNav_0311();
+    if (typeof renderIndustryNav_0311 === 'function') renderIndustryNav_0311();
+    if (typeof renderMacroNav_0311 === 'function') renderMacroNav_0311();
+    if (typeof renderBrokerNav_0311 === 'function') renderBrokerNav_0311();
+    if (typeof renderStockNav_0311 === 'function') renderStockNav_0311();
 
     const decisionContentEl = document.getElementById('decision-content');
-    if (decisionContentEl && typeof renderDecisionContent_0311 === 'function') {
-      decisionContentEl.innerHTML = renderDecisionContent_0311();
-    }
+    if (decisionContentEl && typeof renderDecisionContent_0311 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0311();
 
     const industryContentEl = document.getElementById('industry-content');
-    if (industryContentEl && typeof renderIndustryContent_0311 === 'function') {
-      industryContentEl.innerHTML = renderIndustryContent_0311();
-    }
+    if (industryContentEl && typeof renderIndustryContent_0311 === 'function') industryContentEl.innerHTML = renderIndustryContent_0311();
 
     const macroContentEl = document.getElementById('macro-content');
-    if (macroContentEl && typeof renderMacroContent_0311 === 'function') {
-      macroContentEl.innerHTML = renderMacroContent_0311();
-    }
+    if (macroContentEl && typeof renderMacroContent_0311 === 'function') macroContentEl.innerHTML = renderMacroContent_0311();
 
     const brokerContentEl = document.getElementById('broker-content');
-    if (brokerContentEl && typeof renderBrokerContent_0311 === 'function') {
-      brokerContentEl.innerHTML = renderBrokerContent_0311();
-    }
+    if (brokerContentEl && typeof renderBrokerContent_0311 === 'function') brokerContentEl.innerHTML = renderBrokerContent_0311();
 
     const stockContentEl = document.getElementById('stock-content');
-    if (stockContentEl && typeof renderStockContent_0311 === 'function') {
-      stockContentEl.innerHTML = renderStockContent_0311();
-    }
+    if (stockContentEl && typeof renderStockContent_0311 === 'function') stockContentEl.innerHTML = renderStockContent_0311();
 
-    if (typeof renderFuturesNav_0311 === 'function') {
-      renderFuturesNav_0311();
-    }
+    if (typeof renderFuturesNav_0311 === 'function') renderFuturesNav_0311();
     const futuresContentEl_0311 = document.getElementById('futures-content');
-    if (futuresContentEl_0311 && typeof renderFuturesContent_0311 === 'function') {
-      futuresContentEl_0311.innerHTML = renderFuturesContent_0311();
-    }
+    if (futuresContentEl_0311 && typeof renderFuturesContent_0311 === 'function') futuresContentEl_0311.innerHTML = renderFuturesContent_0311();
   } else if (date === '2026-03-10') {
     // 渲染 3 月 10 日内容
     console.log('[renderAllContent] 渲染 3 月 10 日内容');
-    if (typeof renderDecisionNav_0310 === 'function') {
-      renderDecisionNav_0310();
-    }
-    if (typeof renderIndustryNav_0310 === 'function') {
-      renderIndustryNav_0310();
-    }
-    if (typeof renderMacroNav_0310 === 'function') {
-      renderMacroNav_0310();
-    }
-    if (typeof renderBrokerNav_0310 === 'function') {
-      renderBrokerNav_0310();
-    }
-    if (typeof renderStockNav_0310 === 'function') {
-      renderStockNav_0310();
-    }
+    if (typeof renderDecisionNav_0310 === 'function') renderDecisionNav_0310();
+    if (typeof renderIndustryNav_0310 === 'function') renderIndustryNav_0310();
+    if (typeof renderMacroNav_0310 === 'function') renderMacroNav_0310();
+    if (typeof renderBrokerNav_0310 === 'function') renderBrokerNav_0310();
+    if (typeof renderStockNav_0310 === 'function') renderStockNav_0310();
 
     const decisionContentEl = document.getElementById('decision-content');
-    if (decisionContentEl && typeof renderDecisionContent_0310 === 'function') {
-      decisionContentEl.innerHTML = renderDecisionContent_0310();
-    }
+    if (decisionContentEl && typeof renderDecisionContent_0310 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0310();
 
     const industryContentEl = document.getElementById('industry-content');
-    if (industryContentEl && typeof renderIndustryContent_0310 === 'function') {
-      industryContentEl.innerHTML = renderIndustryContent_0310();
-    }
+    if (industryContentEl && typeof renderIndustryContent_0310 === 'function') industryContentEl.innerHTML = renderIndustryContent_0310();
 
     const macroContentEl = document.getElementById('macro-content');
-    if (macroContentEl && typeof renderMacroContent_0310 === 'function') {
-      macroContentEl.innerHTML = renderMacroContent_0310();
-    }
+    if (macroContentEl && typeof renderMacroContent_0310 === 'function') macroContentEl.innerHTML = renderMacroContent_0310();
 
     const brokerContentEl = document.getElementById('broker-content');
-    if (brokerContentEl && typeof renderBrokerContent_0310 === 'function') {
-      brokerContentEl.innerHTML = renderBrokerContent_0310();
-    }
+    if (brokerContentEl && typeof renderBrokerContent_0310 === 'function') brokerContentEl.innerHTML = renderBrokerContent_0310();
 
     const stockContentEl = document.getElementById('stock-content');
-    if (stockContentEl && typeof renderStockContent_0310 === 'function') {
-      stockContentEl.innerHTML = renderStockContent_0310();
-    }
+    if (stockContentEl && typeof renderStockContent_0310 === 'function') stockContentEl.innerHTML = renderStockContent_0310();
 
-    if (typeof renderFuturesNav_0310 === 'function') {
-      renderFuturesNav_0310();
-    }
+    if (typeof renderFuturesNav_0310 === 'function') renderFuturesNav_0310();
     const futuresContentEl_0310 = document.getElementById('futures-content');
-    if (futuresContentEl_0310 && typeof renderFuturesContent_0310 === 'function') {
-      futuresContentEl_0310.innerHTML = renderFuturesContent_0310();
-    }
+    if (futuresContentEl_0310 && typeof renderFuturesContent_0310 === 'function') futuresContentEl_0310.innerHTML = renderFuturesContent_0310();
   } else if (date === '2026-03-09') {
     // 渲染 3 月 9 日内容
     console.log('[renderAllContent] 渲染 3 月 9 日内容');
-    if (typeof renderDecisionNav_0309 === 'function') {
-      renderDecisionNav_0309();
-    }
-    if (typeof renderIndustryNav_0309 === 'function') {
-      renderIndustryNav_0309();
-    }
-    if (typeof renderMacroNav_0309 === 'function') {
-      renderMacroNav_0309();
-    }
-    if (typeof renderBrokerNav_0309 === 'function') {
-      renderBrokerNav_0309();
-    }
-    if (typeof renderStockNav_0309 === 'function') {
-      renderStockNav_0309();
-    }
+    if (typeof renderDecisionNav_0309 === 'function') renderDecisionNav_0309();
+    if (typeof renderIndustryNav_0309 === 'function') renderIndustryNav_0309();
+    if (typeof renderMacroNav_0309 === 'function') renderMacroNav_0309();
+    if (typeof renderBrokerNav_0309 === 'function') renderBrokerNav_0309();
+    if (typeof renderStockNav_0309 === 'function') renderStockNav_0309();
 
     const decisionContentEl = document.getElementById('decision-content');
-    if (decisionContentEl && typeof renderDecisionContent_0309 === 'function') {
-      decisionContentEl.innerHTML = renderDecisionContent_0309();
-    }
+    if (decisionContentEl && typeof renderDecisionContent_0309 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0309();
 
     const industryContentEl = document.getElementById('industry-content');
-    if (industryContentEl && typeof renderIndustryContent_0309 === 'function') {
-      industryContentEl.innerHTML = renderIndustryContent_0309();
-    }
+    if (industryContentEl && typeof renderIndustryContent_0309 === 'function') industryContentEl.innerHTML = renderIndustryContent_0309();
 
     const macroContentEl = document.getElementById('macro-content');
-    if (macroContentEl && typeof renderMacroContent_0309 === 'function') {
-      macroContentEl.innerHTML = renderMacroContent_0309();
-    }
+    if (macroContentEl && typeof renderMacroContent_0309 === 'function') macroContentEl.innerHTML = renderMacroContent_0309();
 
     const brokerContentEl = document.getElementById('broker-content');
-    if (brokerContentEl && typeof renderBrokerContent_0309 === 'function') {
-      brokerContentEl.innerHTML = renderBrokerContent_0309();
-    }
+    if (brokerContentEl && typeof renderBrokerContent_0309 === 'function') brokerContentEl.innerHTML = renderBrokerContent_0309();
 
     const stockContentEl = document.getElementById('stock-content');
-    if (stockContentEl && typeof renderStockContent_0309 === 'function') {
-      stockContentEl.innerHTML = renderStockContent_0309();
-    }
+    if (stockContentEl && typeof renderStockContent_0309 === 'function') stockContentEl.innerHTML = renderStockContent_0309();
 
-    if (typeof renderFuturesNav_0309 === 'function') {
-      renderFuturesNav_0309();
-    }
+    if (typeof renderFuturesNav_0309 === 'function') renderFuturesNav_0309();
     const futuresContentEl_0309 = document.getElementById('futures-content');
-    if (futuresContentEl_0309 && typeof renderFuturesContent_0309 === 'function') {
-      futuresContentEl_0309.innerHTML = renderFuturesContent_0309();
-    }
+    if (futuresContentEl_0309 && typeof renderFuturesContent_0309 === 'function') futuresContentEl_0309.innerHTML = renderFuturesContent_0309();
   } else if (date === '2026-03-08') {
     if (typeof renderDecisionNav_0308 === 'function') renderDecisionNav_0308();
     if (typeof renderIndustryNav_0308 === 'function') renderIndustryNav_0308();
