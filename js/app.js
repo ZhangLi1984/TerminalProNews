@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-03-18',
+  currentDate: '2026-03-19',
   clockInterval: null
 };
 
@@ -175,7 +175,14 @@ function switchDate(date) {
 function renderAllContent() {
   const date = AppState.currentDate;
 
-  if (date === '2026-03-18') {
+  if (date === '2026-03-19') {
+    // 渲染 3 月 19 日内容
+    console.log('[renderAllContent] 渲染 3 月 19 日内容');
+    if (typeof renderMacroNav_0319 === 'function') renderMacroNav_0319();
+
+    const macroContentEl = document.getElementById('macro-content');
+    if (macroContentEl && typeof renderMacroContent_0319 === 'function') macroContentEl.innerHTML = renderMacroContent_0319();
+  } else if (date === '2026-03-18') {
     // 渲染 3 月 18 日内容
     console.log('[renderAllContent] 渲染 3 月 18 日内容');
     if (typeof renderDecisionNav_0318 === 'function') renderDecisionNav_0318();
