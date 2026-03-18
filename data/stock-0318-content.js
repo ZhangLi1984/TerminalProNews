@@ -260,7 +260,6 @@ function renderStockContent_0318() {
       </div>
     </div>
 
-`
     <!-- ==================== A 级标的 ==================== -->
     <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
       <span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>🎯 A 级标的重点叙述（主要仓位推荐）
@@ -466,7 +465,6 @@ function renderStockContent_0318() {
       </div>
     </div>
 
-
     <!-- ==================== 评级汇总表 ==================== -->
     <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
       <span class="w-2 h-8 bg-slate-600 rounded-full mr-3"></span>📋 完整评级汇总表
@@ -616,6 +614,46 @@ function renderStockContent_0318() {
             <td class="px-4 py-3 text-center"><span class="px-2 py-1 bg-slate-500 text-white rounded text-xs font-bold">B</span></td>
             <td class="px-4 py-3 text-center font-bold text-slate-700">6.5</td>
             <td class="px-4 py-3 text-slate-600 text-sm">受托管理东海索道，投建温泉综合体</td>
+          </tr>
+          <tr class="bg-slate-50 hover:bg-slate-100 transition-colors">
+            <td class="px-4 py-3 font-bold text-slate-700">渤海租赁</td>
+            <td class="px-4 py-3 text-slate-600">000415.SZ</td>
+            <td class="px-4 py-3 text-slate-600">国金证券</td>
+            <td class="px-4 py-3 text-center"><span class="px-2 py-1 bg-slate-500 text-white rounded text-xs font-bold">B</span></td>
+            <td class="px-4 py-3 text-center font-bold text-slate-700">6.5</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">全球飞机租赁龙头，行业供不应求推高租金</td>
+          </tr>
+          <tr class="bg-slate-50 hover:bg-slate-100 transition-colors">
+            <td class="px-4 py-3 font-bold text-slate-700">中国平安</td>
+            <td class="px-4 py-3 text-slate-600">601318.SH</td>
+            <td class="px-4 py-3 text-slate-600">国金证券</td>
+            <td class="px-4 py-3 text-center"><span class="px-2 py-1 bg-slate-500 text-white rounded text-xs font-bold">B</span></td>
+            <td class="px-4 py-3 text-center font-bold text-slate-700">6.5</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">负债扩表资产修复，低配红利重估</td>
+          </tr>
+          <tr class="bg-slate-50 hover:bg-slate-100 transition-colors">
+            <td class="px-4 py-3 font-bold text-slate-700">重庆啤酒</td>
+            <td class="px-4 py-3 text-slate-600">600132.SH</td>
+            <td class="px-4 py-3 text-slate-600">东吴证券</td>
+            <td class="px-4 py-3 text-center"><span class="px-2 py-1 bg-slate-500 text-white rounded text-xs font-bold">B</span></td>
+            <td class="px-4 py-3 text-center font-bold text-slate-700">6.3</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">乌苏乐堡稳健增长，维持高分红政策</td>
+          </tr>
+          <tr class="bg-slate-50 hover:bg-slate-100 transition-colors">
+            <td class="px-4 py-3 font-bold text-slate-700">宁德时代</td>
+            <td class="px-4 py-3 text-slate-600">300750.SZ</td>
+            <td class="px-4 py-3 text-slate-600">西南证券</td>
+            <td class="px-4 py-3 text-center"><span class="px-2 py-1 bg-slate-500 text-white rounded text-xs font-bold">B</span></td>
+            <td class="px-4 py-3 text-center font-bold text-slate-700">6.3</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">出货高增长，增长模式从产品到服务演进</td>
+          </tr>
+          <tr class="bg-slate-50 hover:bg-slate-100 transition-colors">
+            <td class="px-4 py-3 font-bold text-slate-700">比亚迪</td>
+            <td class="px-4 py-3 text-slate-600">002594.SZ</td>
+            <td class="px-4 py-3 text-slate-600">东吴证券</td>
+            <td class="px-4 py-3 text-center"><span class="px-2 py-1 bg-slate-500 text-white rounded text-xs font-bold">B</span></td>
+            <td class="px-4 py-3 text-center font-bold text-slate-700">6.3</td>
+            <td class="px-4 py-3 text-slate-600 text-sm">发布第二代刀片电池及闪充技术</td>
           </tr>
         </tbody>
       </table>
