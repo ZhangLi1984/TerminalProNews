@@ -4,9 +4,34 @@
 
 const FUTURES_NAV_CONFIG_0319 = [
   {
-    title: '期货市场',
+    title: '市场综述',
     links: [
-      { id: 'f_sec1', label: '暂无更新' }
+      { id: 'f_sec1', label: '整体表现与板块分布' }
+    ]
+  },
+  {
+    title: '重点品种',
+    links: [
+      { id: 'f_sec2', label: '原油/燃料油/甲醇' },
+      { id: 'f_sec3', label: '贵金属（黄金/白银）' },
+      { id: 'f_sec4', label: '有色金属（铜/铝/锌/锡）' },
+      { id: 'f_sec5', label: '黑色建材（螺纹/玻璃/铁矿）' },
+      { id: 'f_sec6', label: '农产品（豆粕/油脂/生猪）' },
+      { id: 'f_sec7', label: '新能源材料（碳酸锂/工业硅）' }
+    ]
+  },
+  {
+    title: '交易机会',
+    links: [
+      { id: 'f_sec8', label: '做多机会推荐' },
+      { id: 'f_sec9', label: '做空机会推荐' },
+      { id: 'f_sec10', label: '套利策略' }
+    ]
+  },
+  {
+    title: '风险提示',
+    links: [
+      { id: 'f_sec11', label: '核心风险与仓位管理' }
     ]
   }
 ];

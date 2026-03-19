@@ -4,9 +4,47 @@
 
 const INDUSTRY_NAV_CONFIG_0319 = [
   {
-    title: '核心摘要',
+    title: '高胜率赛道',
     links: [
-      { id: 'i_sec1', label: '行业综述' }
+      { id: 'i_sec1', label: '半导体/存储芯片' },
+      { id: 'i_sec2', label: '储能/锂电' },
+      { id: 'i_sec3', label: '维生素/化工' },
+      { id: 'i_sec4', label: 'AI算力产业链' },
+      { id: 'i_sec5', label: '人形机器人' },
+      { id: 'i_sec6', label: '脑机接口' },
+      { id: 'i_sec7', label: '游戏/传媒' }
+    ]
+  },
+  {
+    title: '跨赛道暗线',
+    links: [
+      { id: 'i_sec8', label: 'AI工厂电力需求' },
+      { id: 'i_sec9', label: '玻璃基板革命' },
+      { id: 'i_sec10', label: '煤化工盈利修复' },
+      { id: 'i_sec11', label: '核能复兴' }
+    ]
+  },
+  {
+    title: '预期差反转',
+    links: [
+      { id: 'i_sec12', label: '生猪养殖' },
+      { id: 'i_sec13', label: '半导体模拟芯片' },
+      { id: 'i_sec14', label: '券商板块' },
+      { id: 'i_sec15', label: '原料药' }
+    ]
+  },
+  {
+    title: '底仓资产',
+    links: [
+      { id: 'i_sec16', label: '核电/黄金/保险/银行' }
+    ]
+  },
+  {
+    title: '数据监测',
+    links: [
+      { id: 'i_sec17', label: '大宗商品量价表' },
+      { id: 'i_sec18', label: '产业链估值监测' },
+      { id: 'i_sec19', label: 'CIO策略建议' }
     ]
   }
 ];
