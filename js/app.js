@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-03-19',
+  currentDate: '2026-03-20',
   clockInterval: null
 };
 
