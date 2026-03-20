@@ -175,7 +175,38 @@ function switchDate(date) {
 function renderAllContent() {
   const date = AppState.currentDate;
 
-  if (date === '2026-03-19') {
+  if (date === '2026-03-20') {
+    // 渲染 3 月 20 日内容
+    console.log('[renderAllContent] 渲染 3 月 20 日内容');
+    if (typeof renderDecisionNav_0320 === 'function') renderDecisionNav_0320();
+    if (typeof renderIndustryNav_0320 === 'function') renderIndustryNav_0320();
+    if (typeof renderMacroNav_0320 === 'function') renderMacroNav_0320();
+    if (typeof renderBrokerNav_0320 === 'function') renderBrokerNav_0320();
+    if (typeof renderStockNav_0320 === 'function') renderStockNav_0320();
+    if (typeof renderJisiluNav_0320 === 'function') renderJisiluNav_0320();
+    if (typeof renderFuturesNav_0320 === 'function') renderFuturesNav_0320();
+
+    const decisionContentEl = document.getElementById('decision-content');
+    if (decisionContentEl && typeof renderDecisionContent_0320 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0320();
+
+    const industryContentEl = document.getElementById('industry-content');
+    if (industryContentEl && typeof renderIndustryContent_0320 === 'function') industryContentEl.innerHTML = renderIndustryContent_0320();
+
+    const macroContentEl = document.getElementById('macro-content');
+    if (macroContentEl && typeof renderMacroContent_0320 === 'function') macroContentEl.innerHTML = renderMacroContent_0320();
+
+    const brokerContentEl = document.getElementById('broker-content');
+    if (brokerContentEl && typeof renderBrokerContent_0320 === 'function') brokerContentEl.innerHTML = renderBrokerContent_0320();
+
+    const stockContentEl = document.getElementById('stock-content');
+    if (stockContentEl && typeof renderStockContent_0320 === 'function') stockContentEl.innerHTML = renderStockContent_0320();
+
+    const jisiluContentEl = document.getElementById('jisilu-content');
+    if (jisiluContentEl && typeof renderJisiluContent_0320 === 'function') jisiluContentEl.innerHTML = renderJisiluContent_0320();
+
+    const futuresContentEl = document.getElementById('futures-content');
+    if (futuresContentEl && typeof renderFuturesContent_0320 === 'function') futuresContentEl.innerHTML = renderFuturesContent_0320();
+  } else if (date === '2026-03-19') {
     // 渲染 3 月 19 日内容
     console.log('[renderAllContent] 渲染 3 月 19 日内容');
     if (typeof renderDecisionNav_0319 === 'function') renderDecisionNav_0319();
