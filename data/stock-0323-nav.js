@@ -6,33 +6,25 @@ const STOCK_NAV_CONFIG_0323 = [
   {
     title: '核心摘要',
     links: [
-      { id: 'sec1', label: '今日概览' }
+      { id: 's_sec1', label: '今日概览' }
     ]
   },
   {
     title: 'A 级标的',
     links: [
-      { id: 'sec2', label: '藏格矿业 (8.5 分)' },
-      { id: 'sec3', label: '工业富联 (8.5 分)' },
-      { id: 'sec4', label: '万辰集团 (8.0 分)' },
-      { id: 'sec5', label: '海通发展 (8.0 分)' },
-      { id: 'sec6', label: '香农芯创 (8.0 分)' },
-      { id: 'sec7', label: '比亚迪 (8.0 分)' },
-      { id: 'sec8', label: '亚虹医药 (7.5 分)' },
-      { id: 'sec9', label: '中材科技 (7.5 分)' },
-      { id: 'sec10', label: '航天电器 (7.5 分)' },
-      { id: 'sec11', label: '中国汽研 (7.5 分)' },
-      { id: 'sec12', label: '湘财股份 (7.0 分)' },
-      { id: 'sec13', label: '中国巨石 (7.0 分)' },
-      { id: 'sec14', label: '璞泰来 (7.0 分)' }
+      { id: 's_sec2', label: '藏格矿业 (8.5 分)' },
+      { id: 's_sec3', label: '工业富联 (8.5 分)' },
+      { id: 's_sec4', label: '万辰集团 (8.0 分)' },
+      { id: 's_sec5', label: '海通发展 (8.0 分)' },
+      { id: 's_sec6', label: '香农芯创 (8.0 分)' },
+      { id: 's_sec7', label: '比亚迪 (8.0 分)' }
     ]
   },
   {
     title: '评级汇总',
     links: [
-      { id: 'sec15', label: '完整评级表' },
-      { id: 'sec16', label: '评级分布' },
-      { id: 'sec17', label: '重点赛道' }
+      { id: 's_sec8', label: '完整评级表' },
+      { id: 's_sec9', label: '重点赛道' }
     ]
   }
 ];

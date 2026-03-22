@@ -55,11 +55,9 @@ function renderMacroNav_0323() {
     </div>
   `).join('');
 
-  // 默认高亮第一个
   setTimeout(() => updateActiveNav('m_sec1'), 100);
 }
 
-// 滚动到指定章节
 function scrollToMacroSection(sectionId) {
   const section = document.getElementById(sectionId);
   if (section) {
