@@ -1,510 +1,479 @@
 // ==========================================
 // 投资决策内参内容渲染 - 2026 年 3 月 26 日
+// 来源：新闻内参_投资决策版.md
 // ==========================================
 
 function renderDecisionContent_0326() {
   return `<div class="prose prose-slate max-w-none">
 
-    <!-- 执行摘要 -->
+    <!-- 核心摘要 -->
     <h2 id="sec1" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
-      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>执行摘要
+      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>核心摘要与全局叙事
     </h2>
 
     <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 p-6 my-6 rounded-r-xl">
       <h3 class="text-red-800 font-bold mb-3 flex items-center">
-        <span class="text-xl mr-2">🎯</span>核心判断
+        <span class="text-xl mr-2">🎯</span>核心主线：地缘冲突 + 算力耗电双轮驱动
       </h3>
-      <p class="text-red-900 leading-relaxed">
-        国内经济开年"开门红"基础牢固，工业生产和固定资产投资回暖显著，但消费修复仍偏弱。
-        海外方面，中东地缘冲突持续发酵推升油价，美联储降息预期延后，全球"滞胀"风险升温。
-        PPI 预计 3-4 月同比转正，全年通胀上行幅度或超预期。
-      </p>
-    </div>
-
-    <div class="bg-slate-900 text-white p-6 my-6 rounded-xl">
-      <h4 class="font-bold mb-4 flex items-center">
-        <span class="mr-2">📊</span>资产配置建议
-      </h4>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="text-center">
-          <div class="text-3xl font-black text-green-400">超配</div>
-          <div class="text-sm text-slate-300 mt-1">股票</div>
-          <div class="text-xs text-slate-400 mt-1">新质生产力 + 出口链</div>
-        </div>
-        <div class="text-center">
-          <div class="text-3xl font-black text-yellow-400">中性</div>
-          <div class="text-sm text-slate-300 mt-1">债券</div>
-          <div class="text-xs text-slate-400 mt-1">谨慎偏多</div>
-        </div>
-        <div class="text-center">
-          <div class="text-3xl font-black text-orange-400">超配</div>
-          <div class="text-sm text-slate-300 mt-1">商品</div>
-          <div class="text-xs text-slate-400 mt-1">原油/黄金</div>
-        </div>
-        <div class="text-center">
-          <div class="text-3xl font-black text-slate-400">低配</div>
-          <div class="text-sm text-slate-300 mt-1">现金</div>
-          <div class="text-xs text-slate-400 mt-1">拖累收益</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 核心经济指标 -->
-    <h2 id="sec2" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
-      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>核心经济指标
-    </h2>
-
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse rounded-xl overflow-hidden shadow-lg">
-        <thead class="bg-slate-900 text-white">
-          <tr>
-            <th class="px-4 py-3 text-left">指标</th>
-            <th class="px-4 py-3 text-left">最新值</th>
-            <th class="px-4 py-3 text-center">同比变化</th>
-            <th class="px-4 py-3 text-left">趋势判断</th>
-          </tr>
-        </thead>
-        <tbody class="bg-white divide-y divide-slate-100">
-          <tr class="bg-green-50">
-            <td class="px-4 py-3 font-bold text-slate-900">GDP(2025 全年)</td>
-            <td class="px-4 py-3">140.19 万亿</td>
-            <td class="px-4 py-3 text-center text-green-600 font-bold">+5.0%</td>
-            <td class="px-4 py-3 text-slate-700">目标圆满实现</td>
-          </tr>
-          <tr>
-            <td class="px-4 py-3 font-bold text-slate-900">工业增加值 (1-2 月)</td>
-            <td class="px-4 py-3">-</td>
-            <td class="px-4 py-3 text-center text-green-600 font-bold">+6.3%</td>
-            <td class="px-4 py-3 text-slate-700">提速，高于去年全年</td>
-          </tr>
-          <tr>
-            <td class="px-4 py-3 font-bold text-slate-900">固定资产投资 (1-2 月)</td>
-            <td class="px-4 py-3">5.27 万亿</td>
-            <td class="px-4 py-3 text-center text-green-600 font-bold">+1.8%</td>
-            <td class="px-4 py-3 text-slate-700">由负转正，基建拉动</td>
-          </tr>
-          <tr class="bg-yellow-50">
-            <td class="px-4 py-3 font-bold text-slate-900">社零 (1-2 月)</td>
-            <td class="px-4 py-3">8.61 万亿</td>
-            <td class="px-4 py-3 text-center text-yellow-600 font-bold">+2.8%</td>
-            <td class="px-4 py-3 text-slate-700">弱修复，服务消费优</td>
-          </tr>
-          <tr class="bg-green-50">
-            <td class="px-4 py-3 font-bold text-slate-900">出口 (2 月)</td>
-            <td class="px-4 py-3">2999 亿美元</td>
-            <td class="px-4 py-3 text-center text-green-600 font-bold">+39.6%</td>
-            <td class="px-4 py-3 text-slate-700">超预期，AI 产业链驱动</td>
-          </tr>
-          <tr>
-            <td class="px-4 py-3 font-bold text-slate-900">CPI(2 月)</td>
-            <td class="px-4 py-3">101.3</td>
-            <td class="px-4 py-3 text-center text-green-600 font-bold">+1.3%</td>
-            <td class="px-4 py-3 text-slate-700">温和回升</td>
-          </tr>
-          <tr class="bg-green-50">
-            <td class="px-4 py-3 font-bold text-slate-900">PPI(2 月)</td>
-            <td class="px-4 py-3">99.1</td>
-            <td class="px-4 py-3 text-center text-slate-600">-0.9%</td>
-            <td class="px-4 py-3 text-slate-700 font-bold">预计 3 月转正</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- PPI 转正逻辑 -->
-    <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-amber-800 font-bold mb-3 flex items-center">
-        <span class="text-xl mr-2">📈</span>PPI 转正核心逻辑
-      </h4>
-      <ul class="space-y-2 text-amber-900">
+      <ul class="space-y-2 text-red-900">
         <li class="flex items-start">
-          <span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span>
-          <span>中东地缘冲突推升原油价格（WTI 一度突破 98 美元/桶）</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>美伊地缘冲突升级：</strong>伊朗控制霍尔木兹海峡通行权，WTI 原油突破 92 美元/桶，全球能源供应链重构加速</span>
         </li>
         <li class="flex items-start">
-          <span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span>
-          <span>3 月 PPI 环比预计达 0.6%，同比有望转正至 0.1%</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>电力板块暴涨：</strong>华电辽能 9 连板，电力股掀涨停潮，逻辑是 AI 算力耗电 + 能源安全双重催化</span>
         </li>
         <li class="flex items-start">
-          <span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span>
-          <span>情景测算：若油价中枢 120 美元，全年 PPI 同比或达 3.4%；若 160 美元，或达 5.0%</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>AI 算力链延续强势：</strong>源杰科技涨超 5% 续创历史新高（总市值破 1000 亿），CPO、光模块景气度持续验证</span>
         </li>
       </ul>
     </div>
 
-    <!-- 经济增长 -->
-    <h2 id="sec3" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
-      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>经济增长分析
-    </h2>
+    <!-- 关键推演 -->
+    <div class="bg-slate-900 text-white p-6 my-6 rounded-xl">
+      <h4 class="font-bold mb-4 flex items-center">
+        <span class="mr-2">🧠</span>关键跨市场传导逻辑
+      </h4>
+      <div class="space-y-4">
+        <div class="bg-white/10 rounded-lg p-4">
+          <div class="text-sm text-slate-300 mb-2 font-semibold">传导链 1：地缘冲突→能源价格→化工/运输成本</div>
+          <div class="text-xs text-slate-400">伊朗控制海峡 → 原油供给收缩 → WTI 突破 92 美元 → 化工品涨价（巴斯夫第 5 份涨价公告）→ 利好煤化工、新能源替代</div>
+        </div>
+        <div class="bg-white/10 rounded-lg p-4">
+          <div class="text-sm text-slate-300 mb-2 font-semibold">传导链 2：AI 爆发→算力需求→电力消耗</div>
+          <div class="text-xs text-slate-400">Token 调用量日均 140 万亿 → 数据中心耗电激增 → 电力供需紧张 → 绿电、储能、电网设备需求爆发</div>
+        </div>
+      </div>
+    </div>
 
-    <blockquote class="border-l-4 border-red-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
-      <strong>核心判断：</strong>Q1"开门红"基础牢固，基建投资带动显著，消费弱修复但服务消费表现较好。
-      全年 GDP 增速预计 4.5%-5%，名义 GDP 修复加速。
-    </blockquote>
+    <!-- 操作方向 -->
+    <h2 id="sec2" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
+      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>操作方向建议
+    </h2>
 
     <div class="grid md:grid-cols-3 gap-4 my-6">
       <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
         <h4 class="font-bold text-blue-800 mb-2 flex items-center">
-          <span class="mr-2">🏗️</span>投资端
+          <span class="mr-2">📊</span>整体仓位
         </h4>
-        <p class="text-sm text-blue-900">固定资产投资由负转正至 +1.8%，基建拉动显著，财政前置发力效果显现</p>
-      </div>
-      <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-        <h4 class="font-bold text-yellow-800 mb-2 flex items-center">
-          <span class="mr-2">🛍️</span>消费端
-        </h4>
-        <p class="text-sm text-yellow-900">社零 +2.8% 弱修复，服务消费优于商品消费，以旧换新政策效果待观察</p>
+        <p class="text-sm text-blue-900">建议维持<strong>6-7 成仓位</strong>，回避纯题材炒作，聚焦业绩确定性</p>
       </div>
       <div class="bg-green-50 border border-green-200 rounded-xl p-4">
         <h4 class="font-bold text-green-800 mb-2 flex items-center">
-          <span class="mr-2">📦</span>出口端
+          <span class="mr-2">⚔️</span>进攻方向
         </h4>
-        <p class="text-sm text-green-900">出口 +39.6% 超预期，AI 产业链驱动集成电路出口 1-2 月大增 72.6%</p>
+        <p class="text-sm text-green-900">电力（绿电 + 电网设备）、AI 算力链（光模块 + 光芯片）、人形机器人核心零部件</p>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+        <h4 class="font-bold text-amber-800 mb-2 flex items-center">
+          <span class="mr-2">🛡️</span>防守方向
+        </h4>
+        <p class="text-sm text-amber-900">社保基金新进重仓股（宏桥控股、科伦药业等）、高股息资源股</p>
       </div>
     </div>
 
-    <!-- 通胀与流动性 -->
+    <!-- 重大事件 1 -->
+    <h2 id="sec3" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
+      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>事件 1：美伊冲突升级
+    </h2>
+
+    <div class="bg-gradient-to-r from-orange-50 to-amber-50 border-l-4 border-orange-500 p-5 my-5 rounded-r-xl">
+      <h4 class="text-orange-800 font-bold mb-3 flex items-center">
+        <span class="text-xl mr-2">⚠️</span>伊朗控制霍尔木兹海峡通行权
+      </h4>
+      <p class="text-orange-900 mb-3">
+        伊朗军方宣布霍尔木兹海峡局势"不会回到从前"，通行许可由伊朗全权裁定，同时威胁在曼德海峡开辟新战线。
+      </p>
+      <div class="bg-white/60 rounded-lg p-3">
+        <div class="text-sm font-bold text-orange-800 mb-2">信号判断：超预期</div>
+        <ul class="space-y-1 text-orange-900 text-sm">
+          <li>• 市场此前预期冲突短期缓和，但伊朗强硬表态显示局势可能长期化</li>
+          <li>• 原油价格从暴跌 6% 到反弹至 92 美元，显示市场对供给中断的担忧重燃</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="my-6">
+      <h4 class="font-bold text-slate-800 mb-3">传导逻辑树</h4>
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 font-mono text-sm overflow-x-auto">
+        <pre class="whitespace-pre-wrap text-slate-700">伊朗控制海峡通行权
+    ↓
+原油供给收缩预期 → WTI 油价维持 90 美元+高位
+    ↓                    ↓
+化工品成本推动涨价      航运价格飙升
+    ↓                    ↓
+煤化工/盐化工受益        中远海特等运输股受益
+    ↓
+新能源车性价比提升 → 加速渗透</pre>
+      </div>
+    </div>
+
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 my-4">
+      <h4 class="font-bold text-blue-800 mb-2">映射标的</h4>
+      <ul class="space-y-1 text-blue-900 text-sm">
+        <li><strong>直接受益：</strong>中远海特（+5.6%）、中远海发（+2.17%）</li>
+        <li><strong>替代能源：</strong>华鲁恒升、华谊集团（煤化工）</li>
+        <li><strong>避险资产：</strong>黄金股（但需注意金价短线高波动）</li>
+      </ul>
+    </div>
+
+    <!-- 重大事件 2 -->
     <h2 id="sec4" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
-      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>通胀与流动性
+      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>事件 2：电力板块涨停潮
     </h2>
 
-    <div class="my-6">
-      <h3 class="text-lg font-bold text-slate-800 mb-3">金融与流动性指标</h3>
-      <div class="overflow-x-auto">
-        <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-          <thead class="bg-slate-100">
-            <tr>
-              <th class="px-4 py-3 text-left text-sm font-bold text-slate-700">指标</th>
-              <th class="px-4 py-3 text-left text-sm font-bold text-slate-700">最新值</th>
-              <th class="px-4 py-3 text-center text-sm font-bold text-slate-700">同比变化</th>
-              <th class="px-4 py-3 text-left text-sm font-bold text-slate-700">趋势</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-slate-100">
-            <tr>
-              <td class="px-4 py-3 text-sm font-medium">M2(2 月)</td>
-              <td class="px-4 py-3 text-sm">-</td>
-              <td class="px-4 py-3 text-sm text-center text-green-600 font-bold">+9.0%</td>
-              <td class="px-4 py-3 text-sm text-slate-600">流动性合理充裕</td>
-            </tr>
-            <tr class="bg-green-50">
-              <td class="px-4 py-3 text-sm font-medium">M1(2 月)</td>
-              <td class="px-4 py-3 text-sm">-</td>
-              <td class="px-4 py-3 text-sm text-center text-green-600 font-bold">+5.9%</td>
-              <td class="px-4 py-3 text-sm text-slate-600">资金活化提升</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 text-sm font-medium">M2-M1 剪刀差</td>
-              <td class="px-4 py-3 text-sm">3.1%</td>
-              <td class="px-4 py-3 text-sm text-center text-green-600 font-bold">收窄 1.6pct</td>
-              <td class="px-4 py-3 text-sm text-slate-600">企业资金活化改善</td>
-            </tr>
-            <tr class="bg-green-50">
-              <td class="px-4 py-3 text-sm font-medium">新增社融 (1-2 月)</td>
-              <td class="px-4 py-3 text-sm">9.6 万亿</td>
-              <td class="px-4 py-3 text-sm text-center text-green-600 font-bold">+3123 亿</td>
-              <td class="px-4 py-3 text-sm text-slate-600">高于近五年同期</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-3 text-sm font-medium">新增贷款 (1-2 月)</td>
-              <td class="px-4 py-3 text-sm">5.61 万亿</td>
-              <td class="px-4 py-3 text-sm text-center text-red-600 font-bold">-5300 亿</td>
-              <td class="px-4 py-3 text-sm text-slate-600">信贷开门红不显著</td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 p-5 my-5 rounded-r-xl">
+      <h4 class="text-green-800 font-bold mb-3 flex items-center">
+        <span class="text-xl mr-2">⚡</span>华电辽能 9 连板，电力股掀涨停潮
+      </h4>
+      <p class="text-green-900 mb-3">
+        电力板块震荡回升，华电辽能 9 连板，广西能源、京运通、赣能股份、深南电 A 等多股涨停。
+        背后逻辑是 AI 算力耗电 + 能源安全双重催化。
+      </p>
+      <div class="bg-white/60 rounded-lg p-3">
+        <div class="text-sm font-bold text-green-800 mb-2">信号判断：符合预期但强度超预期</div>
+        <ul class="space-y-1 text-green-900 text-sm">
+          <li>• 此前市场已交易"AI 耗电"逻辑，但板块连续走强显示资金认可度提升</li>
+          <li>• 需要警惕短期涨幅过大后的分化风险</li>
+        </ul>
       </div>
     </div>
 
-    <!-- 机构观点 -->
+    <div class="my-6">
+      <h4 class="font-bold text-slate-800 mb-3">传导逻辑树</h4>
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 font-mono text-sm overflow-x-auto">
+        <pre class="whitespace-pre-wrap text-slate-700">AI Token 调用量日均 140 万亿
+    ↓
+数据中心用电需求激增 → 2026 年数据中心用电占比或超 15%
+    ↓
+电力供需趋紧 → 电价上行预期
+    ↓
+绿电运营商 + 电网设备商受益
+    ↓
+延伸至储能、虚拟电厂</pre>
+      </div>
+    </div>
+
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 my-4">
+      <h4 class="font-bold text-blue-800 mb-2">映射标的</h4>
+      <ul class="space-y-1 text-blue-900 text-sm">
+        <li><strong>龙头：</strong>华电辽能（9 连板，注意风险）、长江电力</li>
+        <li><strong>弹性标的：</strong>广西能源、赣能股份、深南电 A</li>
+        <li><strong>设备端：</strong>国电南瑞、许继电气</li>
+      </ul>
+    </div>
+
+    <!-- 重大事件 3 -->
     <h2 id="sec5" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
-      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>机构观点汇总
+      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>事件 3：公募基金规模新高
     </h2>
-
-    <div class="my-6">
-      <h3 class="text-lg font-bold text-slate-800 mb-3">经济增长预期</h3>
-      <div class="space-y-3">
-        <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
-          <div class="flex items-center justify-between mb-1">
-            <span class="font-bold text-slate-800">中诚信国际</span>
-            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">Q1 约 4.9%</span>
-          </div>
-          <p class="text-sm text-slate-600">基建投资带动，消费弱修复，全年 V 型走势</p>
-        </div>
-        <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
-          <div class="flex items-center justify-between mb-1">
-            <span class="font-bold text-slate-800">上海证券</span>
-            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">4.5%-5%</span>
-          </div>
-          <p class="text-sm text-slate-600">十五五开局，调结构为主</p>
-        </div>
-        <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
-          <div class="flex items-center justify-between mb-1">
-            <span class="font-bold text-slate-800">国信证券</span>
-            <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">名义 GDP 显著高于去年</span>
-          </div>
-          <p class="text-sm text-slate-600">PPI 转正加速平减指数修复</p>
-        </div>
-      </div>
-    </div>
 
     <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
       <h4 class="text-blue-800 font-bold mb-3 flex items-center">
-        <span class="text-xl mr-2">🏦</span>货币政策一致预期
+        <span class="text-xl mr-2">📈</span>公募基金总规模 38.61 万亿，连续 11 个月创新高
       </h4>
-      <p class="text-blue-900">
-        货币政策延续"稳健偏松"，但受海外利率高企和输入性通胀制约，降息空间有限，
-        更多依赖降准和结构性工具。财政政策前置发力，1-2 月支出完成度 15.6% 为 2019 年来同期最高。
+      <p class="text-blue-900 mb-3">
+        截至 2026 年 2 月底，公募基金资产净值合计 38.61 万亿元，较 1 月末环比增长 2.22%，
+        货币基金单月"吸金"超 5700 亿元。
       </p>
+      <div class="bg-white/60 rounded-lg p-3">
+        <div class="text-sm font-bold text-blue-800 mb-2">信号判断：符合预期</div>
+        <ul class="space-y-1 text-blue-900 text-sm">
+          <li>• 居民资产从房地产、理财向基金转移的趋势延续</li>
+          <li>• 但货币基金大幅增长显示风险偏好仍偏低</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- 大类资产配置 -->
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 my-4">
+      <h4 class="font-bold text-blue-800 mb-2">映射标的</h4>
+      <ul class="space-y-1 text-blue-900 text-sm">
+        <li><strong>券商：</strong>受益于财富管理业务（湘财股份净利润 +325%）</li>
+        <li><strong>高股息资产：</strong>招商蛇口、南山铝业（社保重仓）</li>
+      </ul>
+    </div>
+
+    <!-- 行业催化 -->
     <h2 id="sec6" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
-      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>大类资产配置建议
+      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>AI/算力/半导体催化
     </h2>
 
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse rounded-xl overflow-hidden shadow-lg">
-        <thead class="bg-slate-900 text-white">
-          <tr>
-            <th class="px-4 py-3 text-left">资产类别</th>
-            <th class="px-4 py-3 text-center">配置建议</th>
-            <th class="px-4 py-3 text-left">核心逻辑</th>
-            <th class="px-4 py-3 text-left">风险因素</th>
-          </tr>
-        </thead>
-        <tbody class="bg-white divide-y divide-slate-100">
-          <tr class="bg-green-50 hover:bg-green-100 transition-colors">
-            <td class="px-4 py-4 font-bold text-green-900">股票</td>
-            <td class="px-4 py-4 text-center">
-              <span class="inline-block px-3 py-1 bg-green-600 text-white rounded-full text-sm font-bold">超配</span>
-            </td>
-            <td class="px-4 py-4 text-slate-700 text-sm">名义 GDP 修复利好企业盈利；新质生产力政策红利；出口链景气度高位</td>
-            <td class="px-4 py-4 text-slate-600 text-sm">海外衰退风险；地缘冲突升级</td>
-          </tr>
-          <tr>
-            <td class="px-4 py-4 font-bold text-slate-900">债券</td>
-            <td class="px-4 py-4 text-center">
-              <span class="inline-block px-3 py-1 bg-yellow-500 text-white rounded-full text-sm font-bold">中性</span>
-            </td>
-            <td class="px-4 py-4 text-slate-700 text-sm">资金面合理充裕提供支撑；但 PPI 转正 + 财政发力制约利率下行</td>
-            <td class="px-4 py-4 text-slate-600 text-sm">通胀超预期；供给放量</td>
-          </tr>
-          <tr class="bg-orange-50 hover:bg-orange-100 transition-colors">
-            <td class="px-4 py-4 font-bold text-orange-900">商品</td>
-            <td class="px-4 py-4 text-center">
-              <span class="inline-block px-3 py-1 bg-orange-600 text-white rounded-full text-sm font-bold">超配</span>
-            </td>
-            <td class="px-4 py-4 text-slate-700 text-sm">原油：地缘冲突支撑油价；黄金：避险 + 央行购金；铜：AI 驱动需求</td>
-            <td class="px-4 py-4 text-slate-600 text-sm">冲突缓和；需求不及预期</td>
-          </tr>
-          <tr class="bg-slate-100">
-            <td class="px-4 py-4 font-bold text-slate-700">现金</td>
-            <td class="px-4 py-4 text-center">
-              <span class="inline-block px-3 py-1 bg-slate-500 text-white rounded-full text-sm font-bold">低配</span>
-            </td>
-            <td class="px-4 py-4 text-slate-700 text-sm">资产荒延续，现金拖累组合收益</td>
-            <td class="px-4 py-4 text-slate-600 text-sm">市场大幅波动时的避险需求</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- 行业轮动 -->
-    <h2 id="sec7" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
-      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>行业轮动与宏观映射
-    </h2>
-
-    <div class="space-y-5 my-6">
+    <div class="space-y-4 my-6">
       <div class="bg-gradient-to-r from-purple-50 to-blue-50 border-l-4 border-purple-500 p-5 rounded-r-xl">
         <h4 class="text-purple-800 font-bold mb-2 flex items-center">
-          <span class="text-xl mr-2">💻</span>AI 算力与半导体
+          <span class="text-xl mr-2">🚀</span>源杰科技涨超 5% 续创历史新高
         </h4>
         <p class="text-purple-900 text-sm mb-2">
-          <strong>宏观驱动：</strong>全球 AI 投资热潮→集成电路出口 1-2 月 +72.6%→企业盈利改善
+          总市值突破 1000 亿，年初以来累计涨幅超 85%。
         </p>
-        <p class="text-purple-700 text-sm">
-          <strong>重点标的：</strong>中芯国际、北方华创、海光信息、寒武纪
+        <p class="text-purple-700 text-sm"><strong>逻辑：</strong>CPO 景气度持续，800G 光模块需求高速增长</p>
+        <p class="text-purple-600 text-sm"><strong>风险：</strong>短期涨幅过大，注意回调风险</p>
+      </div>
+
+      <div class="bg-gradient-to-r from-cyan-50 to-blue-50 border-l-4 border-cyan-500 p-5 rounded-r-xl">
+        <h4 class="text-cyan-800 font-bold mb-2 flex items-center">
+          <span class="text-xl mr-2">💻</span>国家超算互联网启动词元赠送活动
+        </h4>
+        <p class="text-cyan-900 text-sm">
+          单用户免费额度升至 3000 万。<strong>逻辑：</strong>降低 AI 使用门槛，推动应用普及。
+          <strong>映射：</strong>云服务商、算力运营商
         </p>
       </div>
 
-      <div class="bg-gradient-to-r from-orange-50 to-amber-50 border-l-4 border-orange-500 p-5 rounded-r-xl">
-        <h4 class="text-orange-800 font-bold mb-2 flex items-center">
-          <span class="text-xl mr-2">🛢️</span>石油石化与油气开采
+      <div class="bg-gradient-to-r from-slate-50 to-gray-50 border-l-4 border-slate-500 p-5 rounded-r-xl">
+        <h4 class="text-slate-800 font-bold mb-2 flex items-center">
+          <span class="text-xl mr-2">📉</span>谷歌推出压缩算法 TurboQuant
         </h4>
-        <p class="text-orange-900 text-sm mb-2">
-          <strong>宏观驱动：</strong>中东地缘冲突→原油价格上行→PPI 转正加速→上游盈利扩张
+        <p class="text-slate-900 text-sm">
+          内存占用降 6 倍。<strong>逻辑：</strong>长期利好 AI 推理成本下降，短期利空存储板块。
         </p>
-        <p class="text-orange-700 text-sm">
-          <strong>重点标的：</strong>中国海油、中国石油、中海油服
+        <p class="text-slate-600 text-sm"><strong>风险：</strong>存储芯片股（三星电子 -4.7%、SK 海力士 -6.2%）</p>
+      </div>
+    </div>
+
+    <!-- 人形机器人 -->
+    <h2 id="sec7" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
+      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>人形机器人催化
+    </h2>
+
+    <div class="bg-gradient-to-r from-orange-50 to-amber-50 border-l-4 border-orange-500 p-5 my-5 rounded-r-xl">
+      <h4 class="text-orange-800 font-bold mb-3 flex items-center">
+        <span class="text-xl mr-2">🤖</span>产业化进程加速
+      </h4>
+      <ul class="space-y-2 text-orange-900">
+        <li class="flex items-start">
+          <span class="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>特斯拉 Optimus 3 夏季启动生产</strong>，马斯克称 2027 年大规模量产</span>
+        </li>
+        <li class="flex items-start">
+          <span class="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>宇树科技科创板 IPO 获受理</strong>，拟募资 42 亿，冲刺"A 股人形机器人第一股"</span>
+        </li>
+        <li class="flex items-start">
+          <span class="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 mr-3 flex-shrink-0"></span>
+          <span><strong>机构关注：</strong>胜宏科技（获融资客抢筹超 11 亿）、海天瑞声、沃尔德</span>
+        </li>
+      </ul>
+      <p class="text-orange-700 text-sm mt-3"><strong>映射：</strong>核心零部件（减速器、伺服电机、传感器）</p>
+    </div>
+
+    <!-- 医药消费 -->
+    <h2 id="sec8" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
+      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>医药与消费催化
+    </h2>
+
+    <div class="space-y-4 my-6">
+      <div class="bg-gradient-to-r from-pink-50 to-red-50 border-l-4 border-pink-500 p-5 rounded-r-xl">
+        <h4 class="text-pink-800 font-bold mb-2 flex items-center">
+          <span class="text-xl mr-2">💊</span>科伦药业陷"假药"风波
+        </h4>
+        <p class="text-pink-900 text-sm">
+          但社保基金 416 组合新进重仓 4.09 亿元。<strong>逻辑：</strong>需区分短期舆情与长期价值。
+          <strong>风险：</strong>等待事件明朗。
+        </p>
+      </div>
+
+      <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 p-5 rounded-r-xl">
+        <h4 class="text-green-800 font-bold mb-2 flex items-center">
+          <span class="text-xl mr-2">🔬</span>创新药出海：康诺亚 NewCo 被吉利德收购
+        </h4>
+        <p class="text-green-900 text-sm">
+          最高变现 3.2 亿美元。<strong>逻辑：</strong>中国创新药资产获外资认可。
+          <strong>映射：</strong>百济神州、信达生物
+        </p>
+      </div>
+
+      <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 rounded-r-xl">
+        <h4 class="text-amber-800 font-bold mb-2 flex items-center">
+          <span class="text-xl mr-2">🧸</span>泡泡玛特 2025 年营收暴增 184.7%，但股价跌超 22%
+        </h4>
+        <p class="text-amber-900 text-sm">
+          <strong>逻辑：</strong>利好出尽，估值过高。<strong>风险：</strong>潮玩 IP 生命周期
         </p>
       </div>
 
       <div class="bg-gradient-to-r from-blue-50 to-cyan-50 border-l-4 border-blue-500 p-5 rounded-r-xl">
         <h4 class="text-blue-800 font-bold mb-2 flex items-center">
-          <span class="text-xl mr-2">🏗️</span>基建与工程机械
+          <span class="text-xl mr-2">🍶</span>舍得酒业回暖
         </h4>
-        <p class="text-blue-900 text-sm mb-2">
-          <strong>宏观驱动：</strong>财政前置发力→基建投资双位数增长→设备需求释放
-        </p>
-        <p class="text-blue-700 text-sm">
-          <strong>重点标的：</strong>三一重工、徐工机械、中国交建、中国建筑
-        </p>
-      </div>
-
-      <div class="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-500 p-5 rounded-r-xl">
-        <h4 class="text-red-800 font-bold mb-2 flex items-center">
-          <span class="text-xl mr-2">✈️</span>军工与航空航天
-        </h4>
-        <p class="text-red-900 text-sm mb-2">
-          <strong>宏观驱动：</strong>地缘风险升温 + 十五五规划→国防预算增长 + 商业航天政策红利
-        </p>
-        <p class="text-red-700 text-sm">
-          <strong>重点标的：</strong>中航沈飞、航发动力、中国卫星
-        </p>
-      </div>
-
-      <div class="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-500 p-5 rounded-r-xl">
-        <h4 class="text-yellow-800 font-bold mb-2 flex items-center">
-          <span class="text-xl mr-2">🥇</span>黄金与贵金属
-        </h4>
-        <p class="text-yellow-900 text-sm mb-2">
-          <strong>宏观驱动：</strong>全球滞胀风险 + 央行持续购金 + 地缘避险→金价中枢上移
-        </p>
-        <p class="text-yellow-700 text-sm">
-          <strong>重点标的：</strong>山东黄金、中金黄金、银泰黄金
+        <p class="text-blue-900 text-sm">
+          库存开始回归良性水平。<strong>逻辑：</strong>白酒去库存周期接近尾声。
+          <strong>映射：</strong>高端白酒龙头
         </p>
       </div>
     </div>
 
-    <!-- 主题投资 -->
-    <h2 id="sec8" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
-      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>主题投资主线
+    <!-- 跨赛道传导分析 -->
+    <h2 id="sec9" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
+      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>跨赛道传导分析（二阶思维）
     </h2>
 
-    <div class="bg-gradient-to-r from-indigo-50 to-purple-50 border-l-4 border-indigo-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-indigo-800 font-bold mb-4 flex items-center">
-        <span class="text-xl mr-2">📋</span>"十五五"规划核心赛道
-      </h4>
-      <div class="grid md:grid-cols-2 gap-4">
-        <div class="bg-white/60 rounded-lg p-3">
-          <h5 class="font-bold text-indigo-900 mb-1">1. 科技自立自强</h5>
-          <p class="text-sm text-indigo-700">集成电路、工业母机、基础软件、先进材料</p>
-        </div>
-        <div class="bg-white/60 rounded-lg p-3">
-          <h5 class="font-bold text-indigo-900 mb-1">2. 新质生产力</h5>
-          <p class="text-sm text-indigo-700">量子计算、脑机接口、人形机器人、6G、可控核聚变</p>
-        </div>
-        <div class="bg-white/60 rounded-lg p-3">
-          <h5 class="font-bold text-indigo-900 mb-1">3. 绿色低碳</h5>
-          <p class="text-sm text-indigo-700">风电光伏、新型储能、氢能、CCUS</p>
-        </div>
-        <div class="bg-white/60 rounded-lg p-3">
-          <h5 class="font-bold text-indigo-900 mb-1">4. 扩大内需</h5>
-          <p class="text-sm text-indigo-700">智能家居、银发经济、文旅消费</p>
+    <div class="space-y-5 my-6">
+      <div class="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 p-5 rounded-r-xl">
+        <h4 class="text-orange-800 font-bold mb-3 flex items-center">
+          <span class="text-xl mr-2">🔗</span>传导链 1：地缘冲突的次生影响
+        </h4>
+        <div class="bg-white/60 rounded-lg p-4 font-mono text-sm overflow-x-auto">
+          <pre class="whitespace-pre-wrap text-orange-900">美伊冲突
+  → 原油涨价 → 化工成本上升 → 涂料、塑料企业涨价（超 20 家涂料企业官宣涨价）
+  → 航运价格飙升 → 出口企业成本上升 → 跨境电商利润承压
+  → 欧洲能源危机 → 太阳能板需求激增（英国能源巨头称销量增 50%）
+  → 中东资金外流 → 香港楼市、股市受益（"中东的钱都躲到香港了"）</pre>
         </div>
       </div>
+
+      <div class="bg-gradient-to-r from-purple-50 to-blue-50 border-l-4 border-purple-500 p-5 rounded-r-xl">
+        <h4 class="text-purple-800 font-bold mb-3 flex items-center">
+          <span class="text-xl mr-2">🔗</span>传导链 2：AI 爆发的连锁反应
+        </h4>
+        <div class="bg-white/60 rounded-lg p-4 font-mono text-sm overflow-x-auto">
+          <pre class="whitespace-pre-wrap text-purple-900">AI 算力需求
+  → 数据中心耗电 → 电力紧张 → 绿电、储能需求
+  → 光模块需求 → 光芯片紧缺 → 源杰科技等涨价
+  → 服务器 PCB 需求 → 沪电股份、胜宏科技订单饱满
+  → 散热需求 → 液冷技术（英维克、高澜股份）</pre>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-r from-cyan-50 to-blue-50 border-l-4 border-cyan-500 p-5 rounded-r-xl">
+        <h4 class="text-cyan-800 font-bold mb-3 flex items-center">
+          <span class="text-xl mr-2">🔗</span>传导链 3：人口老龄化的长期趋势
+        </h4>
+        <div class="bg-white/60 rounded-lg p-4 font-mono text-sm overflow-x-auto">
+          <pre class="whitespace-pre-wrap text-cyan-900">老龄化加速
+  → 长期护理保险制度 → 商业保险补充需求
+  → 养老服务需求 → 养老地产、医疗器械
+  → 劳动力短缺 → 人形机器人替代加速</pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- 明日关注 -->
+    <h2 id="sec10" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
+      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>明日关注
+    </h2>
+
+    <div class="overflow-x-auto my-6">
+      <table class="min-w-full border-collapse rounded-xl overflow-hidden shadow-lg">
+        <thead class="bg-slate-900 text-white">
+          <tr>
+            <th class="px-4 py-3 text-left">类别</th>
+            <th class="px-4 py-3 text-left">事件</th>
+            <th class="px-4 py-3 text-left">时间</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-slate-100">
+          <tr class="bg-blue-50">
+            <td class="px-4 py-3 font-bold text-blue-900">宏观数据</td>
+            <td class="px-4 py-3 text-slate-700">美国 3 月 21 日当周初请失业金人数</td>
+            <td class="px-4 py-3 text-slate-600">20:30</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-bold text-slate-900">宏观数据</td>
+            <td class="px-4 py-3 text-slate-700">美国 3 月 20 日当周 EIA 天然气库存</td>
+            <td class="px-4 py-3 text-slate-600">22:30</td>
+          </tr>
+          <tr class="bg-green-50">
+            <td class="px-4 py-3 font-bold text-green-900">国内事件</td>
+            <td class="px-4 py-3 text-slate-700">国新办：长期护理保险制度发布会</td>
+            <td class="px-4 py-3 text-slate-600">10:00</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-bold text-slate-900">国内事件</td>
+            <td class="px-4 py-3 text-slate-700">商务部新闻发布会</td>
+            <td class="px-4 py-3 text-slate-600">15:00</td>
+          </tr>
+          <tr class="bg-purple-50">
+            <td class="px-4 py-3 font-bold text-purple-900">公司事件</td>
+            <td class="px-4 py-3 text-slate-700">智己 LS8 开启预售，首搭通义千问大模型</td>
+            <td class="px-4 py-3 text-slate-600">-</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-bold text-slate-900">公司事件</td>
+            <td class="px-4 py-3 text-slate-700">祥和转债上市</td>
+            <td class="px-4 py-3 text-slate-600">-</td>
+          </tr>
+          <tr class="bg-yellow-50">
+            <td class="px-4 py-3 font-bold text-yellow-900">财报披露</td>
+            <td class="px-4 py-3 text-slate-700">沪电股份、中复神鹰、金力永磁等年报</td>
+            <td class="px-4 py-3 text-slate-600">-</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <!-- 风险提示 -->
-    <h2 id="sec9" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
-      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>外部风险
+    <h2 id="sec11" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
+      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>风险提示与证伪区
     </h2>
 
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-red-50">
-          <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-red-800">风险类型</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-red-800">风险描述</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-red-800">监测指标</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-slate-100">
-          <tr>
-            <td class="px-4 py-3 text-sm font-medium">美联储政策</td>
-            <td class="px-4 py-3 text-sm text-slate-700">加息预期升温，全球流动性收紧</td>
-            <td class="px-4 py-3 text-sm text-slate-600">联邦基金利率、美债收益率</td>
-          </tr>
-          <tr class="bg-orange-50">
-            <td class="px-4 py-3 text-sm font-medium">地缘政治</td>
-            <td class="px-4 py-3 text-sm text-slate-700">中东冲突升级，霍尔木兹海峡封锁</td>
-            <td class="px-4 py-3 text-sm text-slate-600">布油价格、航运指数</td>
-          </tr>
-          <tr>
-            <td class="px-4 py-3 text-sm font-medium">贸易摩擦</td>
-            <td class="px-4 py-3 text-sm text-slate-700">美国 301 调查，关税政策变化</td>
-            <td class="px-4 py-3 text-sm text-slate-600">出口订单、汇率波动</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <div class="space-y-4 my-6">
+      <div class="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-500 p-5 rounded-r-xl">
+        <h4 class="text-red-800 font-bold mb-3 flex items-center">
+          <span class="text-xl mr-2">⚠️</span>逻辑证伪
+        </h4>
+        <ul class="space-y-2 text-red-900">
+          <li class="flex items-start">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>AI 算力炒作过热：</strong>罗博特科高位放量 20CM 跌停，警示题材炒作风险</span>
+          </li>
+          <li class="flex items-start">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>存储芯片利空：</strong>谷歌压缩算法可能降低存储需求，三星、海力士股价大跌</span>
+          </li>
+          <li class="flex items-start">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>泡泡玛特"见光死"：</strong>营收暴增 184.7% 但股价跌 22%，警惕利好出尽</span>
+          </li>
+        </ul>
+      </div>
 
-    <!-- 内部风险 -->
-    <h2 id="sec10" class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
-      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>内部风险与证伪指标
-    </h2>
+      <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 rounded-r-xl">
+        <h4 class="text-amber-800 font-bold mb-3 flex items-center">
+          <span class="text-xl mr-2">⚠️</span>传闻预警
+        </h4>
+        <ul class="space-y-2 text-amber-900">
+          <li class="flex items-start">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>美伊谈判"小作文"：</strong>白宫称谈判仍在继续，但伊朗否认进行谈判，警惕局势反复</span>
+          </li>
+          <li class="flex items-start">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>油价 200 美元传闻：</strong>白宫否认评估油价 200 美元情景，但市场担忧未消</span>
+          </li>
+          <li class="flex items-start">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>科伦药业"假药"风波：</strong>需等待官方调查结果，短期回避</span>
+          </li>
+        </ul>
+      </div>
 
-    <div class="overflow-x-auto my-6">
-      <table class="min-w-full border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <thead class="bg-yellow-50">
-          <tr>
-            <th class="px-4 py-3 text-left text-sm font-bold text-yellow-800">风险类型</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-yellow-800">风险描述</th>
-            <th class="px-4 py-3 text-left text-sm font-bold text-yellow-800">监测指标</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-slate-100">
-          <tr>
-            <td class="px-4 py-3 text-sm font-medium">房地产</td>
-            <td class="px-4 py-3 text-sm text-slate-700">销售回暖不及预期，拖累投资</td>
-            <td class="px-4 py-3 text-sm text-slate-600">30 城成交、房价指数</td>
-          </tr>
-          <tr class="bg-yellow-50">
-            <td class="px-4 py-3 text-sm font-medium">地方债</td>
-            <td class="px-4 py-3 text-sm text-slate-700">付息压力上升，制约财政空间</td>
-            <td class="px-4 py-3 text-sm text-slate-600">专项债发行、城投利差</td>
-          </tr>
-          <tr>
-            <td class="px-4 py-3 text-sm font-medium">通缩压力</td>
-            <td class="px-4 py-3 text-sm text-slate-700">核心 CPI 持续低位，实际利率偏高</td>
-            <td class="px-4 py-3 text-sm text-slate-600">核心 CPI、PPI-CPI 剪刀差</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-red-800 font-bold mb-3 flex items-center">
-        <span class="text-xl mr-2">⚠️</span>证伪指标（若恶化需重新评估）
-      </h4>
-      <ul class="space-y-2 text-red-900 text-sm">
-        <li class="flex items-start">
-          <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 mr-3 flex-shrink-0"></span>
-          <span><strong>PPI 连续 3 个月环比低于 0.1%</strong> → 通胀修复逻辑证伪</span>
-        </li>
-        <li class="flex items-start">
-          <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 mr-3 flex-shrink-0"></span>
-          <span><strong>社融增速跌破 7%</strong> → 信用扩张逻辑证伪</span>
-        </li>
-        <li class="flex items-start">
-          <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 mr-3 flex-shrink-0"></span>
-          <span><strong>出口同比转负</strong> → 外需韧性逻辑证伪</span>
-        </li>
-        <li class="flex items-start">
-          <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 mr-3 flex-shrink-0"></span>
-          <span><strong>一线城市房价环比连续下跌</strong> → 地产企稳逻辑证伪</span>
-        </li>
-        <li class="flex items-start">
-          <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 mr-3 flex-shrink-0"></span>
-          <span><strong>美联储年内加息</strong> → 全球流动性逻辑证伪</span>
-        </li>
-      </ul>
+      <div class="bg-gradient-to-r from-slate-50 to-gray-50 border-l-4 border-slate-500 p-5 rounded-r-xl">
+        <h4 class="text-slate-800 font-bold mb-3 flex items-center">
+          <span class="text-xl mr-2">⚠️</span>个股风险
+        </h4>
+        <ul class="space-y-2 text-slate-900">
+          <li class="flex items-start">
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-500 mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>6 天 4 板人气股提示风险：</strong>2025 年预亏 1.45-1.85 亿元</span>
+          </li>
+          <li class="flex items-start">
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-500 mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>华电辽能 9 连板：</strong>短期涨幅过大，注意回调风险</span>
+          </li>
+          <li class="flex items-start">
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-500 mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>源杰科技：</strong>市值破 1000 亿，估值处于历史高位</span>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="text-center text-slate-400 text-sm mt-10 pt-6 border-t border-slate-200">
-      <p>报告生成时间：2026-03-26 | 数据来源：国家统计局、中国人民银行、Wind</p>
-      <p class="mt-1">免责声明：本报告基于公开信息整理，仅供参考，不构成投资建议</p>
+      <p>报告生成时间：2026-03-26 12:00 | 分析师：首席策略研究团队</p>
+      <p class="mt-1">免责声明：本报告基于公开信息整理，不构成投资建议。市场有风险，投资需谨慎。</p>
     </div>
 
   </div>`;
