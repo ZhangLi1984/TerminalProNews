@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-03-26',
+  currentDate: '2026-03-27',
   clockInterval: null
 };
 
@@ -174,6 +174,39 @@ function switchDate(date) {
  */
 function renderAllContent() {
   const date = AppState.currentDate;
+
+  if (date === '2026-03-27') {
+    // 渲染 3 月 27 日内容
+    console.log('[renderAllContent] 渲染 3 月 27 日内容');
+    if (typeof renderDecisionNav_0327 === 'function') renderDecisionNav_0327();
+    if (typeof renderIndustryNav_0327 === 'function') renderIndustryNav_0327();
+    if (typeof renderMacroNav_0327 === 'function') renderMacroNav_0327();
+    if (typeof renderBrokerNav_0327 === 'function') renderBrokerNav_0327();
+    if (typeof renderStockNav_0327 === 'function') renderStockNav_0327();
+    if (typeof renderJisiluNav_0327 === 'function') renderJisiluNav_0327();
+    if (typeof renderFuturesNav_0327 === 'function') renderFuturesNav_0327();
+
+    const decisionContentEl = document.getElementById('decision-content');
+    if (decisionContentEl && typeof renderDecisionContent_0327 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0327();
+
+    const industryContentEl = document.getElementById('industry-content');
+    if (industryContentEl && typeof renderIndustryContent_0327 === 'function') industryContentEl.innerHTML = renderIndustryContent_0327();
+
+    const macroContentEl = document.getElementById('macro-content');
+    if (macroContentEl && typeof renderMacroContent_0327 === 'function') macroContentEl.innerHTML = renderMacroContent_0327();
+
+    const brokerContentEl = document.getElementById('broker-content');
+    if (brokerContentEl && typeof renderBrokerContent_0327 === 'function') brokerContentEl.innerHTML = renderBrokerContent_0327();
+
+    const stockContentEl = document.getElementById('stock-content');
+    if (stockContentEl && typeof renderStockContent_0327 === 'function') stockContentEl.innerHTML = renderStockContent_0327();
+
+    const jisiluContentEl = document.getElementById('jisilu-content');
+    if (jisiluContentEl && typeof renderJisiluContent_0327 === 'function') jisiluContentEl.innerHTML = renderJisiluContent_0327();
+
+    const futuresContentEl = document.getElementById('futures-content');
+    if (futuresContentEl && typeof renderFuturesContent_0327 === 'function') futuresContentEl.innerHTML = renderFuturesContent_0327();
+  } else
 
   if (date === '2026-03-26') {
     // 渲染 3 月 26 日内容
