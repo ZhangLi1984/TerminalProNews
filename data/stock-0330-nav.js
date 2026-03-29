@@ -4,9 +4,43 @@
 
 const STOCK_NAV_CONFIG_0330 = [
   {
-    title: '数据待更新',
+    title: '核心摘要',
     links: [
-      { id: 's_sec1', label: '敬请期待' }
+      { id: 's_sec1', label: '今日研报概览' }
+    ]
+  },
+  {
+    title: 'S级标的',
+    links: [
+      { id: 's_sec2', label: '鼎泰高科 (9.2分)' },
+      { id: 's_sec3', label: '龙佰集团 (8.8分)' },
+      { id: 's_sec4', label: '宁波银行 (8.6分)' }
+    ]
+  },
+  {
+    title: 'A级标的',
+    links: [
+      { id: 's_sec5', label: '中国海油 (8.2分)' },
+      { id: 's_sec6', label: '中国平安 (7.9分)' },
+      { id: 's_sec7', label: '中国太保 (7.8分)' },
+      { id: 's_sec8', label: '中信证券 (7.7分)' },
+      { id: 's_sec9', label: '赤峰黄金 (7.6分)' },
+      { id: 's_sec10', label: '东方电缆 (7.5分)' },
+      { id: 's_sec11', label: '比亚迪 (7.4分)' },
+      { id: 's_sec12', label: '金山办公 (7.3分)' },
+      { id: 's_sec13', label: '海南矿业 (7.2分)' }
+    ]
+  },
+  {
+    title: '评级汇总',
+    links: [
+      { id: 's_sec14', label: '完整评级表 (100只)' }
+    ]
+  },
+  {
+    title: '风险提示',
+    links: [
+      { id: 's_sec15', label: '投资风险警示' }
     ]
   }
 ];
