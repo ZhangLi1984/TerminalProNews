@@ -4,30 +4,37 @@
 
 const MACRO_NAV_CONFIG_0331 = [
   {
-    title: '宏观概览',
+    title: '核心判断',
     links: [
-      { id: 'm_sec1', label: '全球宏观主线' },
-      { id: 'm_sec2', label: '国内政策展望' }
+      { id: 'm_sec1', label: '经济增长与周期定位' },
+      { id: 'm_sec2', label: '通胀预期与拐点' }
     ]
   },
   {
-    title: '货币政策',
+    title: '政策分析',
     links: [
-      { id: 'm_sec3', label: '美联储政策路径' },
-      { id: 'm_sec4', label: '中国货币政策' }
+      { id: 'm_sec3', label: '货币政策与流动性' },
+      { id: 'm_sec4', label: '财政政策与产业政策' }
     ]
   },
   {
-    title: '经济数据',
+    title: '资产配置',
     links: [
-      { id: 'm_sec5', label: '中国经济数据' },
-      { id: 'm_sec6', label: '海外经济数据' }
+      { id: 'm_sec5', label: '大类资产配置建议' },
+      { id: 'm_sec6', label: '黄金专题判断' }
     ]
   },
   {
-    title: '大类资产',
+    title: '行业轮动',
     links: [
-      { id: 'm_sec7', label: '资产配置建议' }
+      { id: 'm_sec7', label: '六大受益行业' }
+    ]
+  },
+  {
+    title: '风险提示',
+    links: [
+      { id: 'm_sec8', label: '宏观风险与证伪指标' },
+      { id: 'm_sec9', label: '下周关注事项' }
     ]
   }
 ];
