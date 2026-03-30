@@ -4,7 +4,7 @@
 
 const JISILU_NAV_CONFIG_0331 = [
   {
-    title: '市场情绪',
+    title: '热门话题',
     links: [
       { id: 'j_sec1', label: '热门话题 TOP10' },
       { id: 'j_sec2', label: '市场情绪观察' }
@@ -13,8 +13,7 @@ const JISILU_NAV_CONFIG_0331 = [
   {
     title: '投资方法',
     links: [
-      { id: 'j_sec3', label: '投资方法论' },
-      { id: 'j_sec4', label: '实操策略' }
+      { id: 'j_sec3', label: '投资方法论精粹' }
     ]
   },
   {
