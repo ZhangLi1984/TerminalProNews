@@ -6,8 +6,8 @@ const STOCK_NAV_CONFIG_0331 = [
   {
     title: '核心标的',
     links: [
-      { id: 's_sec1', label: 'S 级标的深度' },
-      { id: 's_sec2', label: 'A 级标的深度' }
+      { id: 's_sec1', label: 'S 级标的（3 只）' },
+      { id: 's_sec2', label: 'A 级标的（6 只）' }
     ]
   },
   {
@@ -18,10 +18,10 @@ const STOCK_NAV_CONFIG_0331 = [
     ]
   },
   {
-    title: '重点覆盖',
+    title: '行业覆盖',
     links: [
-      { id: 's_sec5', label: '科技/制造' },
-      { id: 's_sec6', label: '消费/医药' }
+      { id: 's_sec5', label: '行业分布统计' },
+      { id: 's_sec6', label: '方法论说明' }
     ]
   }
 ];
