@@ -1,5 +1,5 @@
 // ==========================================
-// 投资决策内参导航配置 - 2026-03-31
+// 投资决策内参导航 - 2026年3月31日
 // ==========================================
 
 const DECISION_NAV_CONFIG_0331 = [
@@ -11,15 +11,15 @@ const DECISION_NAV_CONFIG_0331 = [
     ]
   },
   {
-    title: '重大事件',
+    title: '重大事件推演',
     links: [
-      { id: 'sec3', label: '中东冲突→原油破百' },
+      { id: 'sec3', label: '中东冲突升级' },
       { id: 'sec4', label: '铝产业链供应冲击' },
-      { id: 'sec5', label: '茅台提价' }
+      { id: 'sec5', label: '茅台首次提价' }
     ]
   },
   {
-    title: '行业催化',
+    title: '重要新闻分类',
     links: [
       { id: 'sec6', label: '科技/半导体' },
       { id: 'sec7', label: '商业航天' },
@@ -28,23 +28,38 @@ const DECISION_NAV_CONFIG_0331 = [
     ]
   },
   {
-    title: '热点赛道',
+    title: '热点赛道追踪',
     links: [
-      { id: 'sec10', label: '赛道景气度追踪' }
+      { id: 'sec10', label: '赛道景气度' }
+    ]
+  },
+  {
+    title: '跨赛道传导分析',
+    links: [
+      { id: 'sec11', label: '地缘→能源→通胀链' },
+      { id: 'sec12', label: '铝供应→制造成本链' },
+      { id: 'sec13', label: '存储价格→AI算力链' }
+    ]
+  },
+  {
+    title: '明日关注',
+    links: [
+      { id: 'sec14', label: '宏观数据与事件' },
+      { id: 'sec15', label: '公司事件与政策' }
     ]
   },
   {
     title: '风险提示',
     links: [
-      { id: 'sec11', label: '逻辑证伪与传闻预警' },
-      { id: 'sec12', label: '地缘政治尾部风险' }
+      { id: 'sec16', label: '逻辑证伪' },
+      { id: 'sec17', label: '传闻预警' },
+      { id: 'sec18', label: '地缘尾部风险' }
     ]
   },
   {
     title: '策略总结',
     links: [
-      { id: 'sec13', label: '仓位配置建议' },
-      { id: 'sec14', label: '明日关注' }
+      { id: 'sec19', label: '核心判断与配置' }
     ]
   }
 ];
@@ -54,19 +69,25 @@ function renderDecisionNav_0331() {
   if (!container) return;
 
   let html = '';
-  DECISION_NAV_CONFIG_0331.forEach((category, idx) => {
-    html += `<div class="mb-6">
-      <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 px-3">${category.title}</h3>
-      <div class="space-y-1">`;
-    category.links.forEach(link => {
-      html += `<button onclick="scrollToSection('${link.id}'); updateActiveNav('${link.id}');"
-                class="nav-btn w-full text-left px-3 py-2 rounded-lg text-sm transition-all duration-200 flex items-center group hover:bg-slate-100"
-                data-section="${link.id}">
-        <div class="w-1.5 h-1.5 rounded-full bg-transparent mr-3 transition-colors group-hover:bg-slate-400"></div>
-        <span class="text-slate-700 group-hover:text-slate-900">${link.label}</span>
-      </button>`;
-    });
-    html += `</div></div>`;
+
+  DECISION_NAV_CONFIG_0331.forEach((group, groupIndex) => {
+    html += `
+      <div class="nav-group">
+        <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3 px-2">${group.title}</h3>
+        <div class="space-y-1">
+          ${group.links.map((link, linkIndex) => `
+            <button
+              class="nav-btn w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 flex items-center justify-between group ${linkIndex === 0 && groupIndex === 0 ? 'bg-slate-900 text-white shadow-md' : 'text-slate-700 hover:bg-slate-100'}"
+              data-section="${link.id}"
+              onclick="scrollToSection('decision', '${link.id}')"
+            >
+              <span>${link.label}</span>
+              <div class="w-1.5 h-1.5 rounded-full ${linkIndex === 0 && groupIndex === 0 ? 'bg-red-500' : 'bg-transparent'} group-hover:bg-red-400 transition-colors"></div>
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `;
   });
 
   container.innerHTML = html;
