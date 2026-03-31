@@ -183,7 +183,7 @@ function renderAllContent() {
     if (typeof renderMacroNav_0331 === 'function') renderMacroNav_0331();
     if (typeof renderBrokerNav_0331 === 'function') renderBrokerNav_0331();
     if (typeof renderStockNav_0331 === 'function') renderStockNav_0331();
-    if (typeof renderJisiluNav_0331 === 'function') renderJisiluNav_0331();
+    if (typeof renderJisiluNav_0401 === 'function') renderJisiluNav_0401();
     if (typeof renderFuturesNav_0331 === 'function') renderFuturesNav_0331();
 
     const decisionContentEl = document.getElementById('decision-content');
@@ -202,7 +202,7 @@ function renderAllContent() {
     if (stockContentEl && typeof renderStockContent_0331 === 'function') stockContentEl.innerHTML = renderStockContent_0331();
 
     const jisiluContentEl = document.getElementById('jisilu-content');
-    if (jisiluContentEl && typeof renderJisiluContent_0331 === 'function') jisiluContentEl.innerHTML = renderJisiluContent_0331();
+    if (jisiluContentEl && typeof renderJisiluContent_0401 === 'function') jisiluContentEl.innerHTML = renderJisiluContent_0401();
 
     const futuresContentEl = document.getElementById('futures-content');
     if (futuresContentEl && typeof renderFuturesContent_0331 === 'function') futuresContentEl.innerHTML = renderFuturesContent_0331();
