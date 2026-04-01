@@ -182,7 +182,7 @@ function renderAllContent() {
     if (typeof renderIndustryNav_0331 === 'function') renderIndustryNav_0331();
     if (typeof renderMacroNav_0331 === 'function') renderMacroNav_0331();
     if (typeof renderBrokerNav_0331 === 'function') renderBrokerNav_0331();
-    if (typeof renderStockNav_0331 === 'function') renderStockNav_0331();
+    if (typeof renderStockNav_0402 === 'function') renderStockNav_0402();
     if (typeof renderJisiluNav_0402 === 'function') renderJisiluNav_0402();
     if (typeof renderFuturesNav_0331 === 'function') renderFuturesNav_0331();
 
@@ -199,7 +199,7 @@ function renderAllContent() {
     if (brokerContentEl && typeof renderBrokerContent_0331 === 'function') brokerContentEl.innerHTML = renderBrokerContent_0331();
 
     const stockContentEl = document.getElementById('stock-content');
-    if (stockContentEl && typeof renderStockContent_0331 === 'function') stockContentEl.innerHTML = renderStockContent_0331();
+    if (stockContentEl && typeof renderStockContent_0402 === 'function') stockContentEl.innerHTML = renderStockContent_0402();
 
     const jisiluContentEl = document.getElementById('jisilu-content');
     if (jisiluContentEl && typeof renderJisiluContent_0402 === 'function') jisiluContentEl.innerHTML = renderJisiluContent_0402();
