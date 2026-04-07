@@ -7,20 +7,21 @@ const JISILU_NAV_CONFIG_0407 = [
     title: '热门话题',
     links: [
       { id: 'j_sec1', label: '话题 TOP10' },
-      { id: 'j_sec2', label: '关税冲击讨论' }
+      { id: 'j_sec2', label: '投资方法论' }
     ]
   },
   {
-    title: '投资方法论',
+    title: '标的与情绪',
     links: [
-      { id: 'j_sec3', label: '策略分享' }
+      { id: 'j_sec3', label: '热议标的' },
+      { id: 'j_sec4', label: '市场情绪' }
     ]
   },
   {
-    title: '市场情绪',
+    title: '风险管理',
     links: [
-      { id: 'j_sec4', label: '情绪观察' },
-      { id: 'j_sec5', label: '风险提示' }
+      { id: 'j_sec5', label: '风险提示' },
+      { id: 'j_sec6', label: '下周关注' }
     ]
   }
 ];
