@@ -6,26 +6,33 @@ const STOCK_NAV_CONFIG_0407 = [
   {
     title: 'S 级标的',
     links: [
-      { id: 's_sec1', label: '昆药集团' },
-      { id: 's_sec2', label: '东鹏饮料' },
-      { id: 's_sec3', label: '云意电气' },
-      { id: 's_sec4', label: '先导智能' },
-      { id: 's_sec5', label: '科达制造' }
+      { id: 's_sec1', label: '暂无 S 级' }
     ]
   },
   {
     title: 'A 级标的',
     links: [
-      { id: 's_sec6', label: '中联重科' },
-      { id: 's_sec7', label: '安徽合力' },
-      { id: 's_sec8', label: '绿联科技' },
-      { id: 's_sec9', label: '三一重工' }
+      { id: 's_sec2', label: '洛阳钼业' },
+      { id: 's_sec3', label: '春立医疗' },
+      { id: 's_sec4', label: '理邦仪器' },
+      { id: 's_sec5', label: '盛合晶微' }
+    ]
+  },
+  {
+    title: 'B 级标的',
+    links: [
+      { id: 's_sec6', label: '华域汽车' },
+      { id: 's_sec7', label: '三环集团' },
+      { id: 's_sec8', label: '东鹏饮料' },
+      { id: 's_sec9', label: '开特股份' },
+      { id: 's_sec10', label: '中国广核' }
     ]
   },
   {
     title: '评级汇总',
     links: [
-      { id: 's_sec10', label: '完整榜单' }
+      { id: 's_sec11', label: '完整榜单' },
+      { id: 's_sec12', label: '配置建议' }
     ]
   }
 ];
@@ -42,7 +49,7 @@ function renderStockNav_0407() {
           <button onclick="scrollToSection('${link.id}'); updateActiveNav('${link.id}');"
             data-section="${link.id}"
             class="nav-btn w-full text-left px-3 py-2 rounded-lg text-sm text-slate-700 hover:bg-slate-100 transition-all flex items-center group">
-            <div class="w-1.5 h-1.5 rounded-full mr-2.5 transition-colors ${link.id === 's_sec1' ? 'bg-red-500' : 'bg-transparent group-hover:bg-slate-300'}"></div>
+            <div class="w-1.5 h-1.5 rounded-full mr-2.5 transition-colors ${link.id === 's_sec2' ? 'bg-blue-500' : 'bg-transparent group-hover:bg-slate-300'}"></div>
             ${link.label}
           </button>
         `).join('')}
