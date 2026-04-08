@@ -6,11 +6,11 @@ const JISILU_NAV_CONFIG_0408 = [
   {
     title: '热门话题',
     links: [
-      { id: 'j_sec1', label: '可转债 (30帖)' }
-      { id: 'j_sec2', label: '其他 (27帖)' }
-      { id: 'j_sec3', label: '期货/宏观 (6帖)' }
-      { id: 'j_sec4', label: 'ETF/指数 (4帖)' }
-      { id: 'j_sec5', label: '美股/宏观 (3帖)' }
+      { id: 'j_sec1', label: '可转债 (30 帖)' },
+      { id: 'j_sec2', label: '其他 (27 帖)' },
+      { id: 'j_sec3', label: '期货/宏观 (6 帖)' },
+      { id: 'j_sec4', label: 'ETF/指数 (4 帖)' },
+      { id: 'j_sec5', label: '美股/宏观 (3 帖)' }
     ]
   },
   {
