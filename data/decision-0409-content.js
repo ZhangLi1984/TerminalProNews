@@ -271,7 +271,7 @@ function renderDecisionContent_0409() {
           </tr>
           <tr class="bg-slate-50 hover:bg-slate-100 transition-colors">
             <td class="px-4 py-3 font-bold text-slate-900">黄金</td>
-            <td class="px-4 py-3 text-sm text-slate-700">金价\$4700-4800剧烈波动</td>
+            <td class="px-4 py-3 text-sm text-slate-700">金价$4700-4800剧烈波动</td>
             <td class="px-4 py-3 text-sm text-slate-700">短期超跌反弹，但波动极大</td>
             <td class="px-4 py-3 text-sm text-slate-700">紫金矿业、山东黄金</td>
             <td class="px-4 py-3 text-center"><span class="inline-block px-2 py-0.5 bg-slate-500 text-white text-xs rounded-full font-bold">★★☆☆☆</span></td>
