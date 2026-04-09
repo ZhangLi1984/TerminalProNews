@@ -179,17 +179,33 @@ function renderAllContent() {
     // 渲染 4 月 9 日内容
     console.log('[renderAllContent] 渲染 4 月 9 日内容');
     if (typeof renderDecisionNav_0409 === 'function') renderDecisionNav_0409();
+    if (typeof renderIndustryNav_0409 === 'function') renderIndustryNav_0409();
     if (typeof renderMacroNav_0409 === 'function') renderMacroNav_0409();
+    if (typeof renderBrokerNav_0409 === 'function') renderBrokerNav_0409();
+    if (typeof renderStockNav_0409 === 'function') renderStockNav_0409();
+    if (typeof renderJisiluNav_0409 === 'function') renderJisiluNav_0409();
+    if (typeof renderFuturesNav_0409 === 'function') renderFuturesNav_0409();
 
     const decisionContentEl = document.getElementById('decision-content');
     if (decisionContentEl && typeof renderDecisionContent_0409 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0409();
+
+    const industryContentEl = document.getElementById('industry-content');
+    if (industryContentEl && typeof renderIndustryContent_0409 === 'function') industryContentEl.innerHTML = renderIndustryContent_0409();
 
     const macroContentEl = document.getElementById('macro-content');
     if (macroContentEl && typeof renderMacroContent_0409 === 'function') macroContentEl.innerHTML = renderMacroContent_0409();
 
     const brokerContentEl = document.getElementById('broker-content');
     if (brokerContentEl && typeof renderBrokerContent_0409 === 'function') brokerContentEl.innerHTML = renderBrokerContent_0409();
-    if (typeof renderBrokerNav_0409 === 'function') renderBrokerNav_0409();
+
+    const stockContentEl = document.getElementById('stock-content');
+    if (stockContentEl && typeof renderStockContent_0409 === 'function') stockContentEl.innerHTML = renderStockContent_0409();
+
+    const jisiluContentEl = document.getElementById('jisilu-content');
+    if (jisiluContentEl && typeof renderJisiluContent_0409 === 'function') jisiluContentEl.innerHTML = renderJisiluContent_0409();
+
+    const futuresContentEl = document.getElementById('futures-content');
+    if (futuresContentEl && typeof renderFuturesContent_0409 === 'function') futuresContentEl.innerHTML = renderFuturesContent_0409();
   } else
 
   if (date === '2026-04-08') {
