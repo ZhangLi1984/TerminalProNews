@@ -182,6 +182,11 @@ function renderAllContent() {
 
     const decisionContentEl = document.getElementById('decision-content');
     if (decisionContentEl && typeof renderDecisionContent_0413 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0413();
+
+    if (typeof renderMacroNav_0413 === 'function') renderMacroNav_0413();
+
+    const macroContentEl = document.getElementById('macro-content');
+    if (macroContentEl && typeof renderMacroContent_0413 === 'function') macroContentEl.innerHTML = renderMacroContent_0413();
   } else
 
   if (date === '2026-04-10') {
