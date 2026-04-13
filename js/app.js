@@ -187,6 +187,11 @@ function renderAllContent() {
 
     const macroContentEl = document.getElementById('macro-content');
     if (macroContentEl && typeof renderMacroContent_0413 === 'function') macroContentEl.innerHTML = renderMacroContent_0413();
+
+    if (typeof renderBrokerNav_0413 === 'function') renderBrokerNav_0413();
+
+    const brokerContentEl = document.getElementById('broker-content');
+    if (brokerContentEl && typeof renderBrokerContent_0413 === 'function') brokerContentEl.innerHTML = renderBrokerContent_0413();
   } else
 
   if (date === '2026-04-10') {
