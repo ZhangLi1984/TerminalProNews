@@ -183,6 +183,10 @@ function renderAllContent() {
     const decisionContentEl = document.getElementById('decision-content');
     if (decisionContentEl && typeof renderDecisionContent_0413 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0413();
 
+    if (typeof renderIndustryNav_0413 === 'function') renderIndustryNav_0413();
+    const industryContentEl = document.getElementById('industry-content');
+    if (industryContentEl && typeof renderIndustryContent_0413 === 'function') industryContentEl.innerHTML = renderIndustryContent_0413();
+
     if (typeof renderMacroNav_0413 === 'function') renderMacroNav_0413();
 
     const macroContentEl = document.getElementById('macro-content');
@@ -197,6 +201,14 @@ function renderAllContent() {
 
     const stockContentEl = document.getElementById('stock-content');
     if (stockContentEl && typeof renderStockContent_0413 === 'function') stockContentEl.innerHTML = renderStockContent_0413();
+
+    if (typeof renderJisiluNav_0413 === 'function') renderJisiluNav_0413();
+    const jisiluContentEl = document.getElementById('jisilu-content');
+    if (jisiluContentEl && typeof renderJisiluContent_0413 === 'function') jisiluContentEl.innerHTML = renderJisiluContent_0413();
+
+    if (typeof renderFuturesNav_0413 === 'function') renderFuturesNav_0413();
+    const futuresContentEl = document.getElementById('futures-content');
+    if (futuresContentEl && typeof renderFuturesContent_0413 === 'function') futuresContentEl.innerHTML = renderFuturesContent_0413();
   } else
 
   if (date === '2026-04-10') {
