@@ -183,6 +183,10 @@ function renderAllContent() {
     const decisionContentEl = document.getElementById('decision-content');
     if (decisionContentEl && typeof renderDecisionContent_0415 === 'function') decisionContentEl.innerHTML = renderDecisionContent_0415();
 
+    if (typeof renderIndustryNav_0415 === 'function') renderIndustryNav_0415();
+    const industryContentEl = document.getElementById('industry-content');
+    if (industryContentEl && typeof renderIndustryContent_0415 === 'function') industryContentEl.innerHTML = renderIndustryContent_0415();
+
     if (typeof renderMacroNav_0415 === 'function') renderMacroNav_0415();
     const macroContentEl = document.getElementById('macro-content');
     if (macroContentEl && typeof renderMacroContent_0415 === 'function') macroContentEl.innerHTML = renderMacroContent_0415();
