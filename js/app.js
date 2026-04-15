@@ -194,6 +194,10 @@ function renderAllContent() {
     if (typeof renderStockNav_0415 === 'function') renderStockNav_0415();
     const stockContentEl = document.getElementById('stock-content');
     if (stockContentEl && typeof renderStockContent_0415 === 'function') stockContentEl.innerHTML = renderStockContent_0415();
+
+    if (typeof renderJisiluNav_0415 === 'function') renderJisiluNav_0415();
+    const jisiluContentEl = document.getElementById('jisilu-content');
+    if (jisiluContentEl && typeof renderJisiluContent_0415 === 'function') jisiluContentEl.innerHTML = renderJisiluContent_0415();
   } else
 
   if (date === '2026-04-13') {
