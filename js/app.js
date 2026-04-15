@@ -190,6 +190,10 @@ function renderAllContent() {
     if (typeof renderBrokerNav_0415 === 'function') renderBrokerNav_0415();
     const brokerContentEl = document.getElementById('broker-content');
     if (brokerContentEl && typeof renderBrokerContent_0415 === 'function') brokerContentEl.innerHTML = renderBrokerContent_0415();
+
+    if (typeof renderStockNav_0415 === 'function') renderStockNav_0415();
+    const stockContentEl = document.getElementById('stock-content');
+    if (stockContentEl && typeof renderStockContent_0415 === 'function') stockContentEl.innerHTML = renderStockContent_0415();
   } else
 
   if (date === '2026-04-13') {
