@@ -186,6 +186,10 @@ function renderAllContent() {
     if (typeof renderIndustryNav_0416 === 'function') renderIndustryNav_0416();
     const industryContentEl0416 = document.getElementById('industry-content');
     if (industryContentEl0416 && typeof renderIndustryContent_0416 === 'function') industryContentEl0416.innerHTML = renderIndustryContent_0416();
+
+    if (typeof renderMacroNav_0416 === 'function') renderMacroNav_0416();
+    const macroContentEl0416 = document.getElementById('macro-content');
+    if (macroContentEl0416 && typeof renderMacroContent_0416 === 'function') macroContentEl0416.innerHTML = renderMacroContent_0416();
   } else
 
   if (date === '2026-04-15') {
