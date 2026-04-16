@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-04-15',
+  currentDate: '2026-04-16',
   clockInterval: null
 };
 
@@ -174,6 +174,19 @@ function switchDate(date) {
  */
 function renderAllContent() {
   const date = AppState.currentDate;
+
+  if (date === '2026-04-16') {
+    // 渲染 4 月 16 日内容
+    console.log('[renderAllContent] 渲染 4 月 16 日内容');
+    if (typeof renderDecisionNav_0416 === 'function') renderDecisionNav_0416();
+
+    const decisionContentEl0416 = document.getElementById('decision-content');
+    if (decisionContentEl0416 && typeof renderDecisionContent_0416 === 'function') decisionContentEl0416.innerHTML = renderDecisionContent_0416();
+
+    if (typeof renderIndustryNav_0416 === 'function') renderIndustryNav_0416();
+    const industryContentEl0416 = document.getElementById('industry-content');
+    if (industryContentEl0416 && typeof renderIndustryContent_0416 === 'function') industryContentEl0416.innerHTML = renderIndustryContent_0416();
+  } else
 
   if (date === '2026-04-15') {
     // 渲染 4 月 15 日内容
