@@ -198,6 +198,10 @@ function renderAllContent() {
     if (typeof renderStockNav_0416 === 'function') renderStockNav_0416();
     const stockContentEl0416 = document.getElementById('stock-content');
     if (stockContentEl0416 && typeof renderStockContent_0416 === 'function') stockContentEl0416.innerHTML = renderStockContent_0416();
+
+    if (typeof renderJisiluNav_0416 === 'function') renderJisiluNav_0416();
+    const jisiluContentEl0416 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0416 && typeof renderJisiluContent_0416 === 'function') jisiluContentEl0416.innerHTML = renderJisiluContent_0416();
   } else
 
   if (date === '2026-04-15') {
