@@ -1,29 +1,35 @@
-// 个股研报导航配置 - 2026年4月16日
+// ==========================================
+// 个股研报导航模块 - 2026-04-16
+// ==========================================
+
 const STOCK_NAV_CONFIG_0416 = [
   { title: '核心摘要', links: [{ id: 's_sec1', label: '今日概览' }] },
-  { title: 'S级标的', links: [
-    { id: 's_sec2', label: '宁德时代·东吴证券' },
-    { id: 's_sec3', label: '新锐股份·东吴证券' }
-  ]},
-  { title: 'A级标的', links: [
-    { id: 's_sec4', label: '金山办公·群益证券' },
-    { id: 's_sec5', label: '申通快递·群益证券' },
-    { id: 's_sec6', label: '海光信息·太平洋证券' },
-    { id: 's_sec7', label: '众鑫股份·信达证券' },
-    { id: 's_sec8', label: '新天然气·中邮证券' },
-    { id: 's_sec9', label: '神火股份·国金证券' },
-    { id: 's_sec10', label: '龙源电力·开源证券' },
-    { id: 's_sec11', label: '川恒股份·东吴证券' }
-  ]},
-  { title: '评级汇总', links: [
-    { id: 's_sec12', label: '全量100只标的清单' },
-    { id: 's_sec13', label: 'B级标的汇总' },
-    { id: 's_sec14', label: 'C级标的汇总' }
-  ]},
-  { title: '行业分析', links: [
-    { id: 's_sec15', label: '行业分布热力图' },
-    { id: 's_sec16', label: '投资风险提示' }
-  ]}
+  {
+    title: 'S级标的',
+    links: [
+      { id: 's_sec2', label: '宁德时代 (300750)' },
+      { id: 's_sec3', label: '新锐股份 (688257)' }
+    ]
+  },
+  {
+    title: 'A级标的',
+    links: [
+      { id: 's_sec4', label: '金山办公/申通快递' },
+      { id: 's_sec5', label: '海光信息/众鑫股份' },
+      { id: 's_sec6', label: '新天然气/神火股份' },
+      { id: 's_sec7', label: '龙源电力/川恒股份' }
+    ]
+  },
+  {
+    title: '评级汇总',
+    links: [
+      { id: 's_sec8', label: '完整评级汇总表' },
+      { id: 's_sec9', label: '评级分布与行业热力' }
+    ]
+  },
+  {
+    title: '风险提示',
+    links: [{ id: 's_sec10', label: '投资风险' }] }
 ];
 
 function renderStockNav_0416() {
@@ -31,18 +37,16 @@ function renderStockNav_0416() {
   if (!container) return;
   container.innerHTML = STOCK_NAV_CONFIG_0416.map(group => `
     <div>
-      <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">${group.title}</h4>
-      <div class="space-y-0.5">
+      <h6 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">${group.title}</h6>
+      <div class="space-y-1">
         ${group.links.map(link => `
           <button
-            class="nav-btn w-full text-left text-sm py-1.5 px-3 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors truncate"
-            data-section="${link.id}"
             onclick="scrollToSection('stock', '${link.id}')"
+            class="nav-btn w-full text-left text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200 text-slate-700 hover:bg-slate-100 flex items-center group"
+            data-section="${link.id}"
           >
-            <div class="flex items-center">
-              <div class="w-1 h-1 rounded-full bg-transparent mr-2 flex-shrink-0"></div>
-              <span class="truncate">${link.label}</span>
-            </div>
+            <div class="w-1.5 h-1.5 rounded-full bg-transparent mr-2.5 flex-shrink-0 transition-colors"></div>
+            <span class="truncate">${link.label}</span>
           </button>
         `).join('')}
       </div>

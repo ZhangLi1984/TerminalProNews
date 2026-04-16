@@ -1,53 +1,43 @@
 // ==========================================
-// 智研金融 Terminal Pro - 宏观研究导航 2026-04-16
+// 宏观研究导航模块 - 2026-04-16
 // ==========================================
 
 const MACRO_NAV_CONFIG_0416 = [
   {
-    title: '执行摘要',
+    title: '核心摘要',
     links: [
-      { id: 'm_sec1', label: '核心判断' }
+      { id: 'm_sec1', label: '执行摘要' },
+      { id: 'm_sec2', label: '宏观四维框架' }
     ]
   },
   {
-    title: '宏观经济指标',
+    title: '经济数据',
     links: [
-      { id: 'm_sec2', label: '经济增长 GDP/PMI/出口' },
-      { id: 'm_sec3', label: '通胀预期 CPI/PPI' },
-      { id: 'm_sec4', label: '金融条件 社融/信贷/M1-M2' }
+      { id: 'm_sec3', label: '经济增长与结构分化' },
+      { id: 'm_sec4', label: '通胀预期（PPI转正）' },
+      { id: 'm_sec5', label: '金融条件与信用传导' }
     ]
   },
   {
-    title: '研报观点交叉验证',
+    title: '研报观点',
     links: [
-      { id: 'm_sec5', label: '美伊冲突与中东局势' },
-      { id: 'm_sec6', label: '供应链重构' },
-      { id: 'm_sec7', label: '资产配置观点汇总' }
+      { id: 'm_sec6', label: '美伊冲突共识与分歧' },
+      { id: 'm_sec7', label: '供应链重构分析' },
+      { id: 'm_sec8', label: '资产配置观点汇总' }
     ]
   },
   {
-    title: '投资策略建议',
+    title: '投资策略',
     links: [
-      { id: 'm_sec8', label: '宏观四维框架' },
       { id: 'm_sec9', label: '大类资产配置矩阵' },
-      { id: 'm_sec10', label: 'AI算力与科技基建' },
-      { id: 'm_sec11', label: '能源安全与煤化工替代' },
-      { id: 'm_sec12', label: '出口结构升级与出海' },
-      { id: 'm_sec13', label: '防御性高股息' }
+      { id: 'm_sec10', label: '行业轮动与宏观映射' }
     ]
   },
   {
-    title: '风险管理',
+    title: '风险提示',
     links: [
-      { id: 'm_sec14', label: '外部风险' },
-      { id: 'm_sec15', label: '内部风险' },
-      { id: 'm_sec16', label: '证伪指标监控' }
-    ]
-  },
-  {
-    title: '一周关注',
-    links: [
-      { id: 'm_sec17', label: '关注日历' }
+      { id: 'm_sec11', label: '内外风险与证伪指标' },
+      { id: 'm_sec12', label: '一周关注日历' }
     ]
   }
 ];
@@ -55,13 +45,18 @@ const MACRO_NAV_CONFIG_0416 = [
 function renderMacroNav_0416() {
   const container = document.getElementById('macro-nav-content');
   if (!container) return;
-  container.innerHTML = MACRO_NAV_CONFIG_0416.map(section => `
-    <div class="mb-6">
-      <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">${section.title}</h3>
+  container.innerHTML = MACRO_NAV_CONFIG_0416.map(group => `
+    <div>
+      <h6 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">${group.title}</h6>
       <div class="space-y-1">
-        ${section.links.map(link => `
-          <button onclick="scrollToSection('macro', '${link.id}')" class="nav-btn w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-all" data-section="${link.id}">
-            <div class="w-1.5 h-1.5 rounded-full bg-transparent inline-block mr-2"></div>${link.label}
+        ${group.links.map(link => `
+          <button
+            onclick="scrollToSection('macro', '${link.id}')"
+            class="nav-btn w-full text-left text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200 text-slate-700 hover:bg-slate-100 flex items-center group"
+            data-section="${link.id}"
+          >
+            <div class="w-1.5 h-1.5 rounded-full bg-transparent mr-2.5 flex-shrink-0 transition-colors"></div>
+            <span class="truncate">${link.label}</span>
           </button>
         `).join('')}
       </div>

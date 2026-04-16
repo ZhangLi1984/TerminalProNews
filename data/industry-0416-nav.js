@@ -1,10 +1,11 @@
 // ==========================================
 // 行业研究内参导航模块 - 2026-04-16
+// （深度整合：全市场行业汇总 + CIO战略投资内参）
 // ==========================================
 
 const INDUSTRY_NAV_CONFIG_0416 = [
   {
-    title: 'S级核心赛道',
+    title: 'S级赛道',
     links: [
       { id: 'i_sec1', label: 'AI算力基础设施' },
       { id: 'i_sec2', label: '储能锂电与新能源' },
@@ -12,49 +13,37 @@ const INDUSTRY_NAV_CONFIG_0416 = [
     ]
   },
   {
-    title: 'A级进攻赛道',
+    title: 'A级赛道',
     links: [
       { id: 'i_sec4', label: '人形机器人' },
       { id: 'i_sec5', label: '有色金属' },
-      { id: 'i_sec6', label: '基础化工(煤化工)' },
+      { id: 'i_sec6', label: '基础化工' },
       { id: 'i_sec7', label: '工程机械' },
       { id: 'i_sec8', label: 'CXO/创新药' },
       { id: 'i_sec9', label: '券商/非银金融' },
-      { id: 'i_sec10', label: '制冷剂/MDI' }
+      { id: 'i_sec10', label: '制冷剂与MDI' }
     ]
   },
   {
-    title: '跨赛道暗线',
+    title: 'B级与暗线',
     links: [
-      { id: 'i_sec11', label: '四大二阶传导暗线' }
-    ]
-  },
-  {
-    title: '预期差与反转',
-    links: [
-      { id: 'i_sec12', label: 'CXO反转' },
-      { id: 'i_sec13', label: '纯碱反转' },
-      { id: 'i_sec14', label: '轮胎反转' }
+      { id: 'i_sec11', label: 'B级赛道汇总' },
+      { id: 'i_sec12', label: '跨赛道暗线博弈' },
+      { id: 'i_sec13', label: '预期差与困境反转' }
     ]
   },
   {
     title: '数据监测',
     links: [
-      { id: 'i_sec15', label: '大宗商品量价表' },
-      { id: 'i_sec16', label: '产业链周期估值表' }
+      { id: 'i_sec14', label: '大宗商品量价监测' },
+      { id: 'i_sec15', label: '产业链周期估值' }
     ]
   },
   {
-    title: 'CIO实战配置',
+    title: '策略建议',
     links: [
-      { id: 'i_sec17', label: '资产配置建议' },
-      { id: 'i_sec18', label: '操作节奏与风险提示' }
-    ]
-  },
-  {
-    title: 'B级跟踪赛道',
-    links: [
-      { id: 'i_sec19', label: '光伏/银行/消费/半导体/航天' }
+      { id: 'i_sec16', label: 'CIO实战配置建议' },
+      { id: 'i_sec17', label: '风险提示' }
     ]
   }
 ];
