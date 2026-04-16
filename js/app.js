@@ -188,6 +188,10 @@ function renderAllContent() {
     if (industryContentEl0416 && typeof renderIndustryContent_0416 === 'function') industryContentEl0416.innerHTML = renderIndustryContent_0416();
 
     if (typeof renderMacroNav_0416 === 'function') renderMacroNav_0416();
+    if (typeof renderBrokerNav_0416 === 'function') renderBrokerNav_0416();
+    const brokerContentEl0416 = document.getElementById('broker-content');
+    if (brokerContentEl0416 && typeof renderBrokerContent_0416 === 'function') brokerContentEl0416.innerHTML = renderBrokerContent_0416();
+
     const macroContentEl0416 = document.getElementById('macro-content');
     if (macroContentEl0416 && typeof renderMacroContent_0416 === 'function') macroContentEl0416.innerHTML = renderMacroContent_0416();
   } else
