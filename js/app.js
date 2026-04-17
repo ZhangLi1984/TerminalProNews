@@ -184,6 +184,26 @@ function renderAllContent() {
     if (typeof renderMacroNav_0417 === 'function') renderMacroNav_0417();
     const macroContentEl0417 = document.getElementById('macro-content');
     if (macroContentEl0417 && typeof renderMacroContent_0417 === 'function') macroContentEl0417.innerHTML = renderMacroContent_0417();
+
+    if (typeof renderIndustryNav_0417 === 'function') renderIndustryNav_0417();
+    const industryContentEl0417 = document.getElementById('industry-content');
+    if (industryContentEl0417 && typeof renderIndustryContent_0417 === 'function') industryContentEl0417.innerHTML = renderIndustryContent_0417();
+
+    if (typeof renderBrokerNav_0417 === 'function') renderBrokerNav_0417();
+    const brokerContentEl0417 = document.getElementById('broker-content');
+    if (brokerContentEl0417 && typeof renderBrokerContent_0417 === 'function') brokerContentEl0417.innerHTML = renderBrokerContent_0417();
+
+    if (typeof renderStockNav_0417 === 'function') renderStockNav_0417();
+    const stockContentEl0417 = document.getElementById('stock-content');
+    if (stockContentEl0417 && typeof renderStockContent_0417 === 'function') stockContentEl0417.innerHTML = renderStockContent_0417();
+
+    if (typeof renderJisiluNav_0417 === 'function') renderJisiluNav_0417();
+    const jisiluContentEl0417 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0417 && typeof renderJisiluContent_0417 === 'function') jisiluContentEl0417.innerHTML = renderJisiluContent_0417();
+
+    if (typeof renderFuturesNav_0417 === 'function') renderFuturesNav_0417();
+    const futuresContentEl0417 = document.getElementById('futures-content');
+    if (futuresContentEl0417 && typeof renderFuturesContent_0417 === 'function') futuresContentEl0417.innerHTML = renderFuturesContent_0417();
   } else
   if (date === '2026-04-16') {
     // 渲染 4 月 16 日内容
