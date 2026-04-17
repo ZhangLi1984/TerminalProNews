@@ -175,7 +175,16 @@ function switchDate(date) {
 function renderAllContent() {
   const date = AppState.currentDate;
 
-  if (date === '2026-04-17') {    console.log('[renderAllContent] 渲染 4 月 17 日内容');    if (typeof renderDecisionNav_0417 === 'function') renderDecisionNav_0417();    const decisionContentEl0417 = document.getElementById('decision-content');    if (decisionContentEl0417 && typeof renderDecisionContent_0417 === 'function') decisionContentEl0417.innerHTML = renderDecisionContent_0417();  } else
+  if (date === '2026-04-17') {
+    console.log('[renderAllContent] 渲染 4 月 17 日内容');
+    if (typeof renderDecisionNav_0417 === 'function') renderDecisionNav_0417();
+    const decisionContentEl0417 = document.getElementById('decision-content');
+    if (decisionContentEl0417 && typeof renderDecisionContent_0417 === 'function') decisionContentEl0417.innerHTML = renderDecisionContent_0417();
+
+    if (typeof renderMacroNav_0417 === 'function') renderMacroNav_0417();
+    const macroContentEl0417 = document.getElementById('macro-content');
+    if (macroContentEl0417 && typeof renderMacroContent_0417 === 'function') macroContentEl0417.innerHTML = renderMacroContent_0417();
+  } else
   if (date === '2026-04-16') {
     // 渲染 4 月 16 日内容
     console.log('[renderAllContent] 渲染 4 月 16 日内容');
