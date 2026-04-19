@@ -180,6 +180,10 @@ function renderAllContent() {
     if (typeof renderDecisionNav_0419 === 'function') renderDecisionNav_0419();
     const decisionContentEl0419 = document.getElementById('decision-content');
     if (decisionContentEl0419 && typeof renderDecisionContent_0419 === 'function') decisionContentEl0419.innerHTML = renderDecisionContent_0419();
+
+    if (typeof renderMacroNav_0419 === 'function') renderMacroNav_0419();
+    const macroContentEl0419 = document.getElementById('macro-content');
+    if (macroContentEl0419 && typeof renderMacroContent_0419 === 'function') macroContentEl0419.innerHTML = renderMacroContent_0419();
   } else
   if (date === '2026-04-17') {
     console.log('[renderAllContent] 渲染 4 月 17 日内容');
