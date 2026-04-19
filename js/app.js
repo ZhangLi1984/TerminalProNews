@@ -192,6 +192,10 @@ function renderAllContent() {
     if (typeof renderStockNav_0419 === 'function') renderStockNav_0419();
     const stockContentEl0419 = document.getElementById('stock-content');
     if (stockContentEl0419 && typeof renderStockContent_0419 === 'function') stockContentEl0419.innerHTML = renderStockContent_0419();
+
+    if (typeof renderJisiluNav_0419 === 'function') renderJisiluNav_0419();
+    const jisiluContentEl0419 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0419 && typeof renderJisiluContent_0419 === 'function') jisiluContentEl0419.innerHTML = renderJisiluContent_0419();
   } else
   if (date === '2026-04-17') {
     console.log('[renderAllContent] 渲染 4 月 17 日内容');
