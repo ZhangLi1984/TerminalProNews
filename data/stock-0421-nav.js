@@ -1,5 +1,5 @@
 // ==========================================
-// 个股研报导航模块 - 2026-04-21
+// 个股研报导航 - 2026-04-21
 // ==========================================
 const STOCK_NAV_CONFIG_0421 = [
   { title: '核心摘要', links: [
@@ -30,12 +30,10 @@ function renderStockNav_0421() {
       <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">${group.title}</h4>
       <div class="space-y-1">
         ${group.links.map(link => `
-          <button onclick="scrollToSection('stock', '${link.id}')"
-            class="nav-btn w-full text-left text-sm px-3 py-1.5 rounded-lg transition-all duration-200 text-slate-700 hover:bg-slate-100 flex items-center"
-            data-section="${link.id}"
-          >
-            <div class="w-1.5 h-1.5 rounded-full bg-transparent mr-2 flex-shrink-0"></div>
-            ${link.label}
+          <button onclick="scrollToSection('stock','${link.id}')" data-section="${link.id}"
+            class="nav-btn w-full text-left text-sm px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-all flex items-start gap-2">
+            <div class="w-1.5 h-1.5 rounded-full bg-transparent mt-1.5 flex-shrink-0"></div>
+            <span class="leading-tight">${link.label}</span>
           </button>
         `).join('')}
       </div>

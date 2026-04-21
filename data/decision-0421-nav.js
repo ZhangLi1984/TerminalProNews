@@ -28,17 +28,14 @@ function renderDecisionNav_0421() {
   if (!container) return;
 
   container.innerHTML = DECISION_NAV_CONFIG_0421.map((group, gi) => `
-    <div class="nav-group">
-      <h3 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">${group.title}</h3>
+    <div>
+      <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">${group.title}</h4>
       <div class="space-y-1">
         ${group.links.map(link => `
-          <button
-            class="nav-btn w-full text-left px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900 transition-all flex items-center group"
-            data-section="${link.id}"
-            onclick="scrollToSection('decision', '${link.id}')"
-          >
-            <div class="w-1.5 h-1.5 rounded-full bg-transparent mr-2.5 group-hover:bg-red-500 transition-colors"></div>
-            ${link.label}
+          <button onclick="scrollToSection('decision','${link.id}')" data-section="${link.id}"
+            class="nav-btn w-full text-left text-sm px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-all flex items-start gap-2">
+            <div class="w-1.5 h-1.5 rounded-full bg-transparent mt-1.5 flex-shrink-0"></div>
+            <span class="leading-tight">${link.label}</span>
           </button>
         `).join('')}
       </div>
