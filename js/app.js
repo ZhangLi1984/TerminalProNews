@@ -181,6 +181,10 @@ function renderAllContent() {
     if (typeof renderDecisionNav_0423 === 'function') renderDecisionNav_0423();
     const decisionContentEl0423 = document.getElementById('decision-content');
     if (decisionContentEl0423 && typeof renderDecisionContent_0423 === 'function') decisionContentEl0423.innerHTML = renderDecisionContent_0423();
+
+    if (typeof renderMacroNav_0423 === 'function') renderMacroNav_0423();
+    const macroContentEl0423 = document.getElementById('macro-content');
+    if (macroContentEl0423 && typeof renderMacroContent_0423 === 'function') macroContentEl0423.innerHTML = renderMacroContent_0423();
   } else
   if (date === '2026-04-22') {
     console.log('[renderAllContent] 渲染 4 月 22 日内容');
