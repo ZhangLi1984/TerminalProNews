@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-04-22',
+  currentDate: '2026-04-23',
   clockInterval: null
 };
 
@@ -176,6 +176,12 @@ function renderAllContent() {
   const date = AppState.currentDate;
 
 
+  if (date === '2026-04-23') {
+    console.log('[renderAllContent] 渲染 4 月 23 日内容');
+    if (typeof renderDecisionNav_0423 === 'function') renderDecisionNav_0423();
+    const decisionContentEl0423 = document.getElementById('decision-content');
+    if (decisionContentEl0423 && typeof renderDecisionContent_0423 === 'function') decisionContentEl0423.innerHTML = renderDecisionContent_0423();
+  } else
   if (date === '2026-04-22') {
     console.log('[renderAllContent] 渲染 4 月 22 日内容');
     if (typeof renderDecisionNav_0422 === 'function') renderDecisionNav_0422();
