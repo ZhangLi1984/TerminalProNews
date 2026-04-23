@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-04-23',
+  currentDate: '2026-04-24',
   clockInterval: null
 };
 
@@ -175,6 +175,37 @@ function switchDate(date) {
 function renderAllContent() {
   const date = AppState.currentDate;
 
+
+  if (date === '2026-04-24') {
+    console.log('[renderAllContent] 渲染 4 月 24 日内容');
+    if (typeof renderDecisionNav_0424 === 'function') renderDecisionNav_0424();
+    const decisionContentEl0424 = document.getElementById('decision-content');
+    if (decisionContentEl0424 && typeof renderDecisionContent_0424 === 'function') decisionContentEl0424.innerHTML = renderDecisionContent_0424();
+
+    if (typeof renderIndustryNav_0424 === 'function') renderIndustryNav_0424();
+    const industryContentEl0424 = document.getElementById('industry-content');
+    if (industryContentEl0424 && typeof renderIndustryContent_0424 === 'function') industryContentEl0424.innerHTML = renderIndustryContent_0424();
+
+    if (typeof renderMacroNav_0424 === 'function') renderMacroNav_0424();
+    const macroContentEl0424 = document.getElementById('macro-content');
+    if (macroContentEl0424 && typeof renderMacroContent_0424 === 'function') macroContentEl0424.innerHTML = renderMacroContent_0424();
+
+    if (typeof renderBrokerNav_0424 === 'function') renderBrokerNav_0424();
+    const brokerContentEl0424 = document.getElementById('broker-content');
+    if (brokerContentEl0424 && typeof renderBrokerContent_0424 === 'function') brokerContentEl0424.innerHTML = renderBrokerContent_0424();
+
+    if (typeof renderStockNav_0424 === 'function') renderStockNav_0424();
+    const stockContentEl0424 = document.getElementById('stock-content');
+    if (stockContentEl0424 && typeof renderStockContent_0424 === 'function') stockContentEl0424.innerHTML = renderStockContent_0424();
+
+    if (typeof renderJisiluNav_0424 === 'function') renderJisiluNav_0424();
+    const jisiluContentEl0424 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0424 && typeof renderJisiluContent_0424 === 'function') jisiluContentEl0424.innerHTML = renderJisiluContent_0424();
+
+    if (typeof renderFuturesNav_0424 === 'function') renderFuturesNav_0424();
+    const futuresContentEl0424 = document.getElementById('futures-content');
+    if (futuresContentEl0424 && typeof renderFuturesContent_0424 === 'function') futuresContentEl0424.innerHTML = renderFuturesContent_0424();
+  } else
 
   if (date === '2026-04-23') {
     console.log('[renderAllContent] 渲染 4 月 23 日内容');
