@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-04-24',
+  currentDate: '2026-04-28',
   clockInterval: null
 };
 
@@ -176,7 +176,16 @@ function renderAllContent() {
   const date = AppState.currentDate;
 
 
-  if (date === '2026-04-24') {
+  if (date === '2026-04-28') {
+    console.log('[renderAllContent] 渲染 4 月 28 日内容');
+    if (typeof renderDecisionNav_0428 === 'function') renderDecisionNav_0428();
+    const decisionContentEl0428 = document.getElementById('decision-content');
+    if (decisionContentEl0428 && typeof renderDecisionContent_0428 === 'function') decisionContentEl0428.innerHTML = renderDecisionContent_0428();
+
+    if (typeof renderIndustryNav_0428 === 'function') renderIndustryNav_0428();
+    const industryContentEl0428 = document.getElementById('industry-content');
+    if (industryContentEl0428 && typeof renderIndustryContent_0428 === 'function') industryContentEl0428.innerHTML = renderIndustryContent_0428();
+  } else if (date === '2026-04-24') {
     console.log('[renderAllContent] 渲染 4 月 24 日内容');
     if (typeof renderDecisionNav_0424 === 'function') renderDecisionNav_0424();
     const decisionContentEl0424 = document.getElementById('decision-content');
