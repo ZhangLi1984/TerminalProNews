@@ -1,55 +1,54 @@
 // ==========================================
-// 行业研究导航配置 - 2026-04-28
+// 行业研究导航配置（深度融合版）- 2026-04-28
 // ==========================================
 
 const INDUSTRY_NAV_CONFIG_0428 = [
   {
-    title: '核心观点',
+    title: '战略定调',
     links: [
-      { id: 'i_sec1', label: '今日行业观点' },
-      { id: 'i_sec2', label: '高胜率赛道' }
+      { id: 'i_sec1', label: '三大主线交汇' }
     ]
   },
   {
-    title: '景气趋势',
+    title: '核心赛道（深度融合）',
     links: [
-      { id: 'i_sec3', label: '行业景气度变化' }
+      { id: 'i_sec2', label: 'AI算力基础设施' },
+      { id: 'i_sec3', label: '国产算力自主可控' },
+      { id: 'i_sec4', label: '锂电/储能' },
+      { id: 'i_sec5', label: '半导体/电子' },
+      { id: 'i_sec6', label: '医药生物/CGT' },
+      { id: 'i_sec7', label: '人形机器人' }
     ]
   },
   {
-    title: '预期差分析',
+    title: '传统与周期',
     links: [
-      { id: 'i_sec4', label: 'CPU被低估' },
-      { id: 'i_sec5', label: '煤炭被错误定价' },
-      { id: 'i_sec6', label: '面板周期转成长' },
-      { id: 'i_sec7', label: '非银估值错配' },
-      { id: 'i_sec8', label: 'AI Deflation破裂' }
+      { id: 'i_sec8', label: '煤炭/石油/能源' },
+      { id: 'i_sec9', label: '农林牧渔（猪周期）' },
+      { id: 'i_sec10', label: '消费/白酒/大金融' },
+      { id: 'i_sec11', label: '面板LCD/房地产' }
     ]
   },
   {
-    title: '二阶思维',
+    title: '预期差与暗线',
     links: [
-      { id: 'i_sec9', label: '五条跨赛道暗线' }
-    ]
-  },
-  {
-    title: '底仓资产',
-    links: [
-      { id: 'i_sec10', label: '五大高确定性赛道' }
+      { id: 'i_sec12', label: '五大预期差分析' },
+      { id: 'i_sec13', label: '五条跨赛道暗线' }
     ]
   },
   {
     title: '数据监测',
     links: [
-      { id: 'i_sec11', label: '大宗商品量价监测' },
-      { id: 'i_sec12', label: '产业链周期估值' }
+      { id: 'i_sec14', label: '景气度变化全景' },
+      { id: 'i_sec15', label: '大宗商品量价监测' },
+      { id: 'i_sec16', label: '产业链周期估值' }
     ]
   },
   {
-    title: '风险与配置',
+    title: '配置建议',
     links: [
-      { id: 'i_sec13', label: '风险因素评估' },
-      { id: 'i_sec14', label: '配置建议总结' }
+      { id: 'i_sec17', label: '攻守兼备配置方案' },
+      { id: 'i_sec18', label: '风险矩阵' }
     ]
   }
 ];
