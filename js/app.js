@@ -193,6 +193,10 @@ function renderAllContent() {
     if (typeof renderBrokerNav_0428 === 'function') renderBrokerNav_0428();
     const brokerContentEl0428 = document.getElementById('broker-content');
     if (brokerContentEl0428 && typeof renderBrokerContent_0428 === 'function') brokerContentEl0428.innerHTML = renderBrokerContent_0428();
+
+    if (typeof renderStockNav_0428 === 'function') renderStockNav_0428();
+    const stockContentEl0428 = document.getElementById('stock-content');
+    if (stockContentEl0428 && typeof renderStockContent_0428 === 'function') stockContentEl0428.innerHTML = renderStockContent_0428();
   } else if (date === '2026-04-24') {
     console.log('[renderAllContent] 渲染 4 月 24 日内容');
     if (typeof renderDecisionNav_0424 === 'function') renderDecisionNav_0424();
