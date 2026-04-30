@@ -1,4 +1,4 @@
-function renderDecisionContent_0317() {
+// truncatedderDecisionContent_0317() {
   return `<div class="prose prose-slate max-w-none">
 
     <!-- 报告头部 -->

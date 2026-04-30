@@ -1,4 +1,4 @@
-// 券商晨报内容渲染 - 2026-03-13
+// truncated报内容渲染 - 2026-03-13
 
 function renderBrokerContent_0313() {
   return `

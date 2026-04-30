@@ -1,4 +1,4 @@
-const DECISION_NAV_CONFIG_0317 = [
+// truncatedON_NAV_CONFIG_0317 = [
   {
     title: '核心摘要',
     links: [

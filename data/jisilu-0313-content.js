@@ -1,4 +1,4 @@
-// 集思录内容渲染 - 2026-03-13
+// truncated内容渲染 - 2026-03-13
 
 function renderJisiluContent_0313() {
   return `

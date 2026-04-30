@@ -1,4 +1,4 @@
-// 集思录导航配置 - 2026-03-13
+// truncated导航配置 - 2026-03-13
 const JISILU_NAV_CONFIG_0313 = [
   {
     title: '热门话题',

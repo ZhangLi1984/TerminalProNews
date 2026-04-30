@@ -1,4 +1,4 @@
-// macro-0307-content.js
+// truncated7-content.js
 function renderMacroContent_0307() {
   return `<div class="prose prose-slate max-w-none">
     <div class="bg-emerald-50 border-l-4 border-emerald-500 p-4 my-6 rounded-r-xl">

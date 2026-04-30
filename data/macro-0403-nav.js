@@ -1,4 +1,4 @@
-const MACRO_NAV_CONFIG_0403 = [
+// truncatedNAV_CONFIG_0403 = [
   {
     title: '宏观经济',
     links: [

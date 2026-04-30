@@ -1,4 +1,4 @@
-// macro-0307-nav.js
+// truncated7-nav.js
 const MACRO_NAV_CONFIG_0307 = [
   {
     title: '宏观策略',

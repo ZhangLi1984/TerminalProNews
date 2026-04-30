@@ -1,4 +1,4 @@
-// 券商晨报导航配置 - 2026-03-13
+// truncated报导航配置 - 2026-03-13
 const BROKER_NAV_CONFIG_0313 = [
   {
     title: '核心摘要',

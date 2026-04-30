@@ -1,4 +1,4 @@
-const INDUSTRY_NAV_CONFIG_0403 = [
+// truncatedRY_NAV_CONFIG_0403 = [
   {
     title: '宏观与策略',
     links: [

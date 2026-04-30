@@ -1,4 +1,4 @@
-// macro-0308-nav.js
+// truncated8-nav.js
 // 宏观研究 - 3 月 8 日导航数据
 
 const MACRO_NAV_CONFIG_0308 = [

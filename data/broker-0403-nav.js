@@ -1,4 +1,4 @@
-const BROKER_NAV_CONFIG_0403 = [
+// truncated_NAV_CONFIG_0403 = [
   {
     title: '晨会概览',
     links: [

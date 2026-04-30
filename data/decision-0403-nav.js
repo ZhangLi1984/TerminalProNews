@@ -1,4 +1,4 @@
-const DECISION_NAV_CONFIG_0403 = [
+// truncatedON_NAV_CONFIG_0403 = [
   {
     title: '核心速读',
     links: [

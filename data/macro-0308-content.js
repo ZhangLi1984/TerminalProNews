@@ -1,4 +1,4 @@
-// macro-0308-content.js
+// truncated8-content.js
 // 宏观研究 - 3 月 8 日内容数据
 
 function renderMacroContent_0308() {
