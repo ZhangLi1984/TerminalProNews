@@ -193,6 +193,18 @@ function renderAllContent() {
     if (typeof renderJisiluNav_0430 === 'function') renderJisiluNav_0430();
     const jisiluContentEl0430 = document.getElementById('jisilu-content');
     if (jisiluContentEl0430 && typeof renderJisiluContent_0430 === 'function') jisiluContentEl0430.innerHTML = renderJisiluContent_0430();
+
+    if (typeof renderIndustryNav_0430 === 'function') renderIndustryNav_0430();
+    const industryContentEl0430 = document.getElementById('industry-content');
+    if (industryContentEl0430 && typeof renderIndustryContent_0430 === 'function') industryContentEl0430.innerHTML = renderIndustryContent_0430();
+
+    if (typeof renderBrokerNav_0430 === 'function') renderBrokerNav_0430();
+    const brokerContentEl0430 = document.getElementById('broker-content');
+    if (brokerContentEl0430 && typeof renderBrokerContent_0430 === 'function') brokerContentEl0430.innerHTML = renderBrokerContent_0430();
+
+    if (typeof renderFuturesNav_0430 === 'function') renderFuturesNav_0430();
+    const futuresContentEl0430 = document.getElementById('futures-content');
+    if (futuresContentEl0430 && typeof renderFuturesContent_0430 === 'function') futuresContentEl0430.innerHTML = renderFuturesContent_0430();
   } else if (date === '2026-04-28') {
     console.log('[renderAllContent] 渲染 4 月 28 日内容');
     if (typeof renderDecisionNav_0428 === 'function') renderDecisionNav_0428();

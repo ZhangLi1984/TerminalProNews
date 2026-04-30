@@ -6,52 +6,53 @@ const DECISION_NAV_CONFIG_0430 = [
   {
     title: '核心摘要',
     links: [
-      { id: 'sec1', label: '三条主线共振博弈' }
+      { id: 'sec1', label: '三条主线共振博弈' },
+      { id: 'sec2', label: '关键推演与操作方向' }
     ]
   },
   {
     title: '重大事件',
     links: [
-      { id: 'sec2', label: '美联储34年最大分歧' },
-      { id: 'sec3', label: '中东地缘链：原油$110+' },
-      { id: 'sec4', label: 'AI算力超级周期验证' }
+      { id: 'sec3', label: '美联储34年最大分歧' },
+      { id: 'sec4', label: '中东地缘链：原油$110+' },
+      { id: 'sec5', label: 'AI算力超级周期验证' }
     ]
   },
   {
     title: '行业催化',
     links: [
-      { id: 'sec5', label: '科技/AI/半导体' },
-      { id: 'sec6', label: '新能源' },
-      { id: 'sec7', label: '政策宏观' }
+      { id: 'sec6', label: '科技/AI/半导体' },
+      { id: 'sec7', label: '新能源' },
+      { id: 'sec8', label: '政策宏观' }
     ]
   },
   {
     title: '赛道跟踪',
     links: [
-      { id: 'sec8', label: 'AI算力链' },
-      { id: 'sec9', label: '机器人' },
-      { id: 'sec10', label: '新能源' },
-      { id: 'sec11', label: '半导体' }
+      { id: 'sec9', label: 'AI算力链' },
+      { id: 'sec10', label: '机器人' },
+      { id: 'sec11', label: '新能源' },
+      { id: 'sec12', label: '半导体' }
     ]
   },
   {
     title: '传导分析',
     links: [
-      { id: 'sec12', label: '三条跨行业传导链' }
+      { id: 'sec13', label: '三条跨行业传导链' }
     ]
   },
   {
     title: '明日关注',
     links: [
-      { id: 'sec13', label: '交易日历' }
+      { id: 'sec14', label: '交易日历' }
     ]
   },
   {
     title: '风险提示',
     links: [
-      { id: 'sec14', label: '逻辑证伪' },
-      { id: 'sec15', label: '传闻预警' },
-      { id: 'sec16', label: '仓位管理' }
+      { id: 'sec15', label: '逻辑证伪' },
+      { id: 'sec16', label: '传闻预警' },
+      { id: 'sec17', label: '仓位管理' }
     ]
   }
 ];
