@@ -181,6 +181,10 @@ function renderAllContent() {
     if (typeof renderDecisionNav_0506 === 'function') renderDecisionNav_0506();
     const decisionContentEl0506 = document.getElementById('decision-content');
     if (decisionContentEl0506 && typeof renderDecisionContent_0506 === 'function') decisionContentEl0506.innerHTML = renderDecisionContent_0506();
+
+    if (typeof renderMacroNav_0506 === 'function') renderMacroNav_0506();
+    const macroContentEl0506 = document.getElementById('macro-content');
+    if (macroContentEl0506 && typeof renderMacroContent_0506 === 'function') macroContentEl0506.innerHTML = renderMacroContent_0506();
   } else if (date === '2026-04-30') {
     console.log('[renderAllContent] 渲染 4 月 30 日内容');
     if (typeof renderDecisionNav_0430 === 'function') renderDecisionNav_0430();
