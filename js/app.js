@@ -197,6 +197,14 @@ function renderAllContent() {
     if (typeof renderJisiluNav_0507 === 'function') renderJisiluNav_0507();
     const jisiluContentEl0507 = document.getElementById('jisilu-content');
     if (jisiluContentEl0507 && typeof renderJisiluContent_0507 === 'function') jisiluContentEl0507.innerHTML = renderJisiluContent_0507();
+
+    if (typeof renderIndustryNav_0507 === 'function') renderIndustryNav_0507();
+    const industryContentEl0507 = document.getElementById('industry-content');
+    if (industryContentEl0507 && typeof renderIndustryContent_0507 === 'function') industryContentEl0507.innerHTML = renderIndustryContent_0507();
+
+    if (typeof renderFuturesNav_0507 === 'function') renderFuturesNav_0507();
+    const futuresContentEl0507 = document.getElementById('futures-content');
+    if (futuresContentEl0507 && typeof renderFuturesContent_0507 === 'function') futuresContentEl0507.innerHTML = renderFuturesContent_0507();
   } else
   if (date === '2026-05-06') {
     console.log('[renderAllContent] 渲染 5 月 6 日内容');
