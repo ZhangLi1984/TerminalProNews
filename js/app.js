@@ -185,6 +185,14 @@ function renderAllContent() {
     if (typeof renderMacroNav_0507 === 'function') renderMacroNav_0507();
     const macroContentEl0507 = document.getElementById('macro-content');
     if (macroContentEl0507 && typeof renderMacroContent_0507 === 'function') macroContentEl0507.innerHTML = renderMacroContent_0507();
+
+    if (typeof renderBrokerNav_0507 === 'function') renderBrokerNav_0507();
+    const brokerContentEl0507 = document.getElementById('broker-content');
+    if (brokerContentEl0507 && typeof renderBrokerContent_0507 === 'function') brokerContentEl0507.innerHTML = renderBrokerContent_0507();
+
+    if (typeof renderStockNav_0507 === 'function') renderStockNav_0507();
+    const stockContentEl0507 = document.getElementById('stock-content');
+    if (stockContentEl0507 && typeof renderStockContent_0507 === 'function') stockContentEl0507.innerHTML = renderStockContent_0507();
   } else
   if (date === '2026-05-06') {
     console.log('[renderAllContent] 渲染 5 月 6 日内容');
