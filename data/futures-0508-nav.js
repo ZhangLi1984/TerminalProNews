@@ -3,8 +3,8 @@
 // ==========================================
 
 const FUTURES_NAV_CONFIG_0508 = [
-  { title: '期货概览', links: [
-    { id: 'sec1', label: '今日期货市场摘要' }
+  { title: '数据状态', links: [
+    { id: 'sec1', label: '数据说明' }
   ]}
 ];
 

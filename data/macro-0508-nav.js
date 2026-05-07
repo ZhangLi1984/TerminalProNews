@@ -3,23 +3,32 @@
 // ==========================================
 
 const MACRO_NAV_CONFIG_0508 = [
-  { title: '宏观概览', links: [
-    { id: 'sec1', label: '宏观经济底色' },
-    { id: 'sec2', label: '周期定位矩阵' }
+  { title: '执行摘要', links: [
+    { id: 'sec1', label: '核心矛盾与配置方向' }
   ]},
-  { title: '关键变量', links: [
-    { id: 'sec3', label: '地缘政治与油价' },
-    { id: 'sec4', label: '美联储政策' },
-    { id: 'sec5', label: 'A股市场资金面' }
+  { title: '国内宏观', links: [
+    { id: 'sec2', label: '经济增长与周期定位' },
+    { id: 'sec3', label: '通胀与价格信号' },
+    { id: 'sec4', label: '信贷与流动性' },
+    { id: 'sec5', label: '房地产深度去库' },
+    { id: 'sec6', label: '外贸与汇率' },
+    { id: 'sec7', label: '财政与企业景气' }
   ]},
-  { title: '行业与策略', links: [
-    { id: 'sec6', label: '盈利周期分析' },
-    { id: 'sec7', label: '跨赛道暗线传导' },
-    { id: 'sec8', label: '配置策略与仓位' }
+  { title: '海外宏观', links: [
+    { id: 'sec8', label: '美联储与沃什时代' },
+    { id: 'sec9', label: '全球经济分化' },
+    { id: 'sec10', label: '霍尔木兹海峡封锁' }
   ]},
-  { title: '跟踪与风险', links: [
-    { id: 'sec9', label: '下周关键指标' },
-    { id: 'sec10', label: '尾部风险矩阵' }
+  { title: '政策跟踪', links: [
+    { id: 'sec11', label: '政治局会议定调' },
+    { id: 'sec12', label: '立法与范式切换' }
+  ]},
+  { title: '买方策略', links: [
+    { id: 'sec13', label: '资产配置方向' },
+    { id: 'sec14', label: '行业偏好' },
+    { id: 'sec15', label: '核心逻辑链' },
+    { id: 'sec16', label: '预期差分析' },
+    { id: 'sec17', label: '风险与证伪指标' }
   ]}
 ];
 

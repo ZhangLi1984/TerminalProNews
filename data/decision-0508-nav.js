@@ -3,8 +3,8 @@
 // ==========================================
 
 const DECISION_NAV_CONFIG_0508 = [
-  { title: '核心摘要', links: [
-    { id: 'sec1', label: '全局叙事' },
+  { title: '市场格局', links: [
+    { id: 'sec1', label: '全局叙事与核心矛盾' },
     { id: 'sec2', label: '操作方向与仓位' }
   ]},
   { title: '核心赛道', links: [
