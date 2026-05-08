@@ -190,6 +190,22 @@ function renderAllContent() {
     if (typeof renderMacroNav_0509 === 'function') renderMacroNav_0509();
     const macroContentEl0509 = document.getElementById('macro-content');
     if (macroContentEl0509 && typeof renderMacroContent_0509 === 'function') macroContentEl0509.innerHTML = renderMacroContent_0509();
+
+    if (typeof renderBrokerNav_0509 === 'function') renderBrokerNav_0509();
+    const brokerContentEl0509b = document.getElementById('broker-content');
+    if (brokerContentEl0509b && typeof renderBrokerContent_0509 === 'function') brokerContentEl0509b.innerHTML = renderBrokerContent_0509();
+
+    if (typeof renderStockNav_0509 === 'function') renderStockNav_0509();
+    const stockContentEl0509 = document.getElementById('stock-content');
+    if (stockContentEl0509 && typeof renderStockContent_0509 === 'function') stockContentEl0509.innerHTML = renderStockContent_0509();
+
+    if (typeof renderJisiluNav_0509 === 'function') renderJisiluNav_0509();
+    const jisiluContentEl0509 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0509 && typeof renderJisiluContent_0509 === 'function') jisiluContentEl0509.innerHTML = renderJisiluContent_0509();
+
+    if (typeof renderFuturesNav_0509 === 'function') renderFuturesNav_0509();
+    const futuresContentEl0509 = document.getElementById('futures-content');
+    if (futuresContentEl0509 && typeof renderFuturesContent_0509 === 'function') futuresContentEl0509.innerHTML = renderFuturesContent_0509();
   } else
 
   if (date === '2026-05-08') {
