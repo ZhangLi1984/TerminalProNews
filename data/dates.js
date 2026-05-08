@@ -4,7 +4,8 @@
 
 // 可用日期列表（按时间倒序，最新的在前）
 const AVAILABLE_DATES = [
-  { date: '2026-05-08', label: '2026 年 5 月 8 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-05-09', label: '2026 年 5 月 9 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-05-08', label: '2026 年 5 月 8 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-05-07', label: '2026 年 5 月 7 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-05-06', label: '2026 年 5 月 6 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-04-30', label: '2026 年 4 月 30 日', tag: 'history', tagLabel: '历史' },
@@ -51,5 +52,5 @@ const AVAILABLE_DATES = [
   { date: '2026-03-04', label: '2026 年 3 月 4 日', tag: 'history', tagLabel: '历史' }
 ];
 
-// 当前选中日期（2026-05-08 最新）
-let currentDate = '2026-05-08';
+// 当前选中日期（2026-05-09 最新）
+let currentDate = '2026-05-09';

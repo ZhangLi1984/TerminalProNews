@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-05-08',
+  currentDate: '2026-05-09',
   clockInterval: null
 };
 
@@ -176,6 +176,17 @@ function renderAllContent() {
   const date = AppState.currentDate;
 
 
+
+  if (date === '2026-05-09') {
+    console.log('[renderAllContent] 渲染 5 月 9 日内容');
+    if (typeof renderDecisionNav_0509 === 'function') renderDecisionNav_0509();
+    const decisionContentEl0509 = document.getElementById('decision-content');
+    if (decisionContentEl0509 && typeof renderDecisionContent_0509 === 'function') decisionContentEl0509.innerHTML = renderDecisionContent_0509();
+
+    if (typeof renderIndustryNav_0509 === 'function') renderIndustryNav_0509();
+    const industryContentEl0509 = document.getElementById('industry-content');
+    if (industryContentEl0509 && typeof renderIndustryContent_0509 === 'function') industryContentEl0509.innerHTML = renderIndustryContent_0509();
+  } else
 
   if (date === '2026-05-08') {
     console.log('[renderAllContent] 渲染 5 月 8 日内容');
