@@ -3,12 +3,12 @@
 // ==========================================
 
 const STOCK_NAV_CONFIG_0509 = [
-  { title: '评级分布', links: [
-    { id: 's_sec1', label: '评级总览' }
+  { title: '评级总览', links: [
+    { id: 's_sec1', label: '评级分布' }
   ]},
   { title: 'S级标的', links: [
-    { id: 's_sec2', label: '百奥赛图' },
-    { id: 's_sec3', label: '华海清科' }
+    { id: 's_sec2', label: '百奥赛图(688796)' },
+    { id: 's_sec3', label: '华海清科(688120)' }
   ]},
   { title: 'A级精选', links: [
     { id: 's_sec4', label: '巨化股份' },
@@ -22,12 +22,12 @@ const STOCK_NAV_CONFIG_0509 = [
     { id: 's_sec12', label: '鲁西化工' },
     { id: 's_sec13', label: '雅克科技' }
   ]},
-  { title: 'B/C级概况', links: [
+  { title: 'B/C级', links: [
     { id: 's_sec14', label: 'B级76只概览' },
     { id: 's_sec15', label: 'C级规避标的' }
   ]},
-  { title: '行业分布', links: [
-    { id: 's_sec16', label: '行业分布统计' }
+  { title: '行业统计', links: [
+    { id: 's_sec16', label: '行业分布' }
   ]},
   { title: '全量清单', links: [
     { id: 's_sec17', label: '100篇研报汇总' }

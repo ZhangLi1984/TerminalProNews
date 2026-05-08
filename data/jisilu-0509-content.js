@@ -6,7 +6,7 @@ function renderJisiluContent_0509() {
 
 <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>一、热门话题 TOP 10</h2>
 
-<h3 id="sec1" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题一：闻泰转债——A股最惨烈的财富毁灭？</h3>
+<h3 id="j_sec1" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题一：闻泰转债——A股最惨烈的财富毁灭？</h3>
 
 <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-amber-800 font-black mb-3 flex items-center">
@@ -32,7 +32,7 @@ function renderJisiluContent_0509() {
   <p class="text-amber-800 text-sm font-semibold">散户情绪：严重分歧——极度悲观派认为归零不可避免，乐观派认为是"巴菲特式"机会</p>
 </div>
 
-<h3 id="sec2" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题二：转债四傻——龙大、三房、闻泰、宏图谁最危险？</h3>
+<h3 id="j_sec2" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题二：转债四傻——龙大、三房、闻泰、宏图谁最危险？</h3>
 
 <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-amber-800 font-black mb-3 flex items-center">
@@ -54,7 +54,7 @@ function renderJisiluContent_0509() {
   <p class="text-amber-800 text-sm font-semibold mt-2">散户情绪：恐慌中带有博弈——多数人认为龙大/三房危险，但仍有人博弈下修</p>
 </div>
 
-<h3 id="sec3" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题三：ST股最后的盛宴——5%涨跌幅即将取消</h3>
+<h3 id="j_sec3" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题三：ST股最后的盛宴——5%涨跌幅即将取消</h3>
 
 <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-amber-800 font-black mb-3 flex items-center">
@@ -74,7 +74,7 @@ function renderJisiluContent_0509() {
   <p class="text-amber-800 text-sm font-semibold mt-2">散户情绪：亢奋——大量投资者准备在ST板块"最后盛宴"中博弈</p>
 </div>
 
-<h3 id="sec4" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题四：科技股抱团——没有科技持仓心态崩了吗？</h3>
+<h3 id="j_sec4" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题四：科技股抱团——没有科技持仓心态崩了吗？</h3>
 
 <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-amber-800 font-black mb-3 flex items-center">
@@ -94,7 +94,7 @@ function renderJisiluContent_0509() {
   <p class="text-amber-800 text-sm font-semibold mt-2">散户情绪：焦虑/纠结——价值投资者普遍心态失衡，但多数坚持不追高</p>
 </div>
 
-<h3 id="sec5" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题五：高股息+价值投资——nanfangyinan实盘记录</h3>
+<h3 id="j_sec5" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题五：高股息+价值投资——nanfangyinan实盘记录</h3>
 
 <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-amber-800 font-black mb-3 flex items-center">
@@ -114,7 +114,7 @@ function renderJisiluContent_0509() {
   <p class="text-amber-800 text-sm font-semibold mt-2">散户情绪：坚守中带有焦虑——价值投资者坚守但承受较大回撤压力</p>
 </div>
 
-<h3 id="sec6" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题六：孔曼子的多策略投资体系——年化22.8%的秘密</h3>
+<h3 id="j_sec6" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题六：孔曼子的多策略投资体系——年化22.8%的秘密</h3>
 
 <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-amber-800 font-black mb-3 flex items-center">
@@ -133,7 +133,7 @@ function renderJisiluContent_0509() {
   <p class="text-amber-800 text-sm font-semibold mt-2">散户情绪：敬佩+学习——大量投资者向孔曼子请教策略细节</p>
 </div>
 
-<h3 id="sec7" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题七：网格交易——震荡行情中的利器</h3>
+<h3 id="j_sec7" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题七：网格交易——震荡行情中的利器</h3>
 
 <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-amber-800 font-black mb-3 flex items-center">
@@ -152,7 +152,7 @@ function renderJisiluContent_0509() {
   <p class="text-amber-800 text-sm font-semibold mt-2">散户情绪：理性——认识到网格交易的适用场景和局限性</p>
 </div>
 
-<h3 id="sec8" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题八：期货贴水策略——三年国债+中证1000+铁矿石</h3>
+<h3 id="j_sec8" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题八：期货贴水策略——三年国债+中证1000+铁矿石</h3>
 
 <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-amber-800 font-black mb-3 flex items-center">
@@ -172,7 +172,7 @@ function renderJisiluContent_0509() {
   <p class="text-amber-800 text-sm font-semibold mt-2">散户情绪：谨慎关注——认可贴水策略逻辑但对期货高风险保持警惕</p>
 </div>
 
-<h3 id="sec9" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题九：纳斯达克100——踏空AI后的替代选择？</h3>
+<h3 id="j_sec9" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题九：纳斯达克100——踏空AI后的替代选择？</h3>
 
 <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-amber-800 font-black mb-3 flex items-center">
@@ -190,7 +190,7 @@ function renderJisiluContent_0509() {
   <p class="text-amber-800 text-sm font-semibold mt-2">散户情绪：犹豫——踏空焦虑与追高风险并存</p>
 </div>
 
-<h3 id="sec10" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题十：券商股满仓——冲动还是机会？</h3>
+<h3 id="j_sec10" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">话题十：券商股满仓——冲动还是机会？</h3>
 
 <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-amber-800 font-black mb-3 flex items-center">
@@ -210,7 +210,7 @@ function renderJisiluContent_0509() {
 <!-- ===== 投资方法论 ===== -->
 <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>二、投资方法论精粹</h2>
 
-<h3 id="sec11" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">六大投资策略</h3>
+<h3 id="j_sec11" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">六大投资策略</h3>
 
 <div class="space-y-4">
   <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-5 my-5 rounded-r-xl">
@@ -271,7 +271,7 @@ function renderJisiluContent_0509() {
 <!-- ===== 热议标的 ===== -->
 <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>三、热议标的清单</h2>
 
-<h3 id="sec12" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">标的清单与多空分析</h3>
+<h3 id="j_sec12" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">标的清单与多空分析</h3>
 
 <div class="space-y-4">
   <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
@@ -355,7 +355,7 @@ function renderJisiluContent_0509() {
 <!-- ===== 市场情绪 ===== -->
 <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>四、市场情绪观察</h2>
 
-<h3 id="sec13" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">情绪评分与信号</h3>
+<h3 id="j_sec13" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">情绪评分与信号</h3>
 
 <div class="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-red-800 font-black mb-3 flex items-center">
@@ -390,7 +390,7 @@ function renderJisiluContent_0509() {
 <!-- ===== 风险提示 ===== -->
 <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>五、风险提示</h2>
 
-<h3 id="sec14" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">六大风险提示</h3>
+<h3 id="j_sec14" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">六大风险提示</h3>
 
 <div class="space-y-4">
   <div class="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-500 p-5 my-5 rounded-r-xl">
@@ -451,7 +451,7 @@ function renderJisiluContent_0509() {
 <!-- ===== 下周关注 ===== -->
 <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>六、下周关注点</h2>
 
-<h3 id="sec15" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">关键时间节点</h3>
+<h3 id="j_sec15" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">关键时间节点</h3>
 
 <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-blue-800 font-black mb-3 flex items-center">

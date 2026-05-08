@@ -7,29 +7,28 @@ const INDUSTRY_NAV_CONFIG_0509 = [
     { id: 'i_sec1', label: 'AI算力产业链' },
     { id: 'i_sec2', label: '锂电/新型储能' },
     { id: 'i_sec3', label: '风电板块' },
-    { id: 'i_sec4', label: '医药创新药与CXO' }
+    { id: 'i_sec4', label: '医药创新药及CXO' }
   ]},
-  { title: '底仓资产', links: [
-    { id: 'i_sec5', label: '证券行业' },
-    { id: 'i_sec6', label: '保险行业' },
-    { id: 'i_sec7', label: '煤炭行业' }
+  { title: '攻守兼备', links: [
+    { id: 'i_sec5', label: '证券/保险' },
+    { id: 'i_sec6', label: '煤炭行业' }
   ]},
-  { title: '暗线与预期差', links: [
-    { id: 'i_sec8', label: '霍尔木兹冲突->油运->化工暗线' },
-    { id: 'i_sec9', label: '基础化工产能出清' },
-    { id: 'i_sec10', label: '军工新域新质' },
-    { id: 'i_sec11', label: '生猪养殖周期底部' },
-    { id: 'i_sec12', label: '钢铁行业利润弹性' },
-    { id: 'i_sec13', label: '乳制品原奶反转' }
+  { title: '二阶暗线博弈', links: [
+    { id: 'i_sec7', label: '油运/化工供给侧出清' },
+    { id: 'i_sec8', label: '钠电商业化' },
+    { id: 'i_sec9', label: '生猪产能去化' }
+  ]},
+  { title: '预期差方向', links: [
+    { id: 'i_sec10', label: '基础化工困境反转' },
+    { id: 'i_sec11', label: '军工新域新质' },
+    { id: 'i_sec12', label: '非共识赛道' }
   ]},
   { title: '数据监测', links: [
-    { id: 'i_sec14', label: '大宗商品量价监测表' },
-    { id: 'i_sec15', label: '产业链周期估值表' }
+    { id: 'i_sec13', label: '大宗商品量价表' },
+    { id: 'i_sec14', label: '产业链估值监测' }
   ]},
-  { title: '策略', links: [
-    { id: 'i_sec16', label: '仓位配置建议' },
-    { id: 'i_sec17', label: '交易节奏与止损纪律' },
-    { id: 'i_sec18', label: '风险预警' }
+  { title: '操作建议', links: [
+    { id: 'i_sec15', label: '仓位配置建议' }
   ]}
 ];
 
