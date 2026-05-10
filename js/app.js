@@ -190,6 +190,10 @@ function renderAllContent() {
     if (typeof renderBrokerNav_0511 === 'function') renderBrokerNav_0511();
     const brokerContentEl0511 = document.getElementById('broker-content');
     if (brokerContentEl0511 && typeof renderBrokerContent_0511 === 'function') brokerContentEl0511.innerHTML = renderBrokerContent_0511();
+
+    if (typeof renderJisiluNav_0511 === 'function') renderJisiluNav_0511();
+    const jisiluContentEl0511 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0511 && typeof renderJisiluContent_0511 === 'function') jisiluContentEl0511.innerHTML = renderJisiluContent_0511();
   } else
 
   if (date === '2026-05-09') {
