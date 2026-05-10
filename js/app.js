@@ -194,6 +194,18 @@ function renderAllContent() {
     if (typeof renderJisiluNav_0511 === 'function') renderJisiluNav_0511();
     const jisiluContentEl0511 = document.getElementById('jisilu-content');
     if (jisiluContentEl0511 && typeof renderJisiluContent_0511 === 'function') jisiluContentEl0511.innerHTML = renderJisiluContent_0511();
+
+    if (typeof renderIndustryNav_0511 === 'function') renderIndustryNav_0511();
+    const industryContentEl0511 = document.getElementById('industry-content');
+    if (industryContentEl0511 && typeof renderIndustryContent_0511 === 'function') industryContentEl0511.innerHTML = renderIndustryContent_0511();
+
+    if (typeof renderStockNav_0511 === 'function') renderStockNav_0511();
+    const stockContentEl0511 = document.getElementById('stock-content');
+    if (stockContentEl0511 && typeof renderStockContent_0511 === 'function') stockContentEl0511.innerHTML = renderStockContent_0511();
+
+    if (typeof renderFuturesNav_0511 === 'function') renderFuturesNav_0511();
+    const futuresContentEl0511 = document.getElementById('futures-content');
+    if (futuresContentEl0511 && typeof renderFuturesContent_0511 === 'function') futuresContentEl0511.innerHTML = renderFuturesContent_0511();
   } else
 
   if (date === '2026-05-09') {
