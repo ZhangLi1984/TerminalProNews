@@ -178,9 +178,27 @@ function renderAllContent() {
 
   if (date === '2026-05-12') {
     console.log('[renderAllContent] 渲染 5 月 12 日内容');
+    if (typeof renderDecisionNav_0512 === 'function') renderDecisionNav_0512();
+    const decisionContentEl0512 = document.getElementById('decision-content');
+    if (decisionContentEl0512 && typeof renderDecisionContent_0512 === 'function') decisionContentEl0512.innerHTML = renderDecisionContent_0512();
+    if (typeof renderIndustryNav_0512 === 'function') renderIndustryNav_0512();
+    const industryContentEl0512 = document.getElementById('industry-content');
+    if (industryContentEl0512 && typeof renderIndustryContent_0512 === 'function') industryContentEl0512.innerHTML = renderIndustryContent_0512();
     if (typeof renderMacroNav_0512 === 'function') renderMacroNav_0512();
     const macroContentEl0512 = document.getElementById('macro-content');
     if (macroContentEl0512 && typeof renderMacroContent_0512 === 'function') macroContentEl0512.innerHTML = renderMacroContent_0512();
+    if (typeof renderBrokerNav_0512 === 'function') renderBrokerNav_0512();
+    const brokerContentEl0512 = document.getElementById('broker-content');
+    if (brokerContentEl0512 && typeof renderBrokerContent_0512 === 'function') brokerContentEl0512.innerHTML = renderBrokerContent_0512();
+    if (typeof renderStockNav_0512 === 'function') renderStockNav_0512();
+    const stockContentEl0512 = document.getElementById('stock-content');
+    if (stockContentEl0512 && typeof renderStockContent_0512 === 'function') stockContentEl0512.innerHTML = renderStockContent_0512();
+    if (typeof renderJisiluNav_0512 === 'function') renderJisiluNav_0512();
+    const jisiluContentEl0512 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0512 && typeof renderJisiluContent_0512 === 'function') jisiluContentEl0512.innerHTML = renderJisiluContent_0512();
+    if (typeof renderFuturesNav_0512 === 'function') renderFuturesNav_0512();
+    const futuresContentEl0512 = document.getElementById('futures-content');
+    if (futuresContentEl0512 && typeof renderFuturesContent_0512 === 'function') futuresContentEl0512.innerHTML = renderFuturesContent_0512();
   } else if (date === '2026-05-11') {
     console.log('[renderAllContent] 渲染 5 月 11 日内容');
     if (typeof renderDecisionNav_0511 === 'function') renderDecisionNav_0511();
