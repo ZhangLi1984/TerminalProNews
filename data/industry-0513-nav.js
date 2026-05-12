@@ -1,43 +1,42 @@
 // 行业研究导航模块 - 2026-05-13
 const INDUSTRY_NAV_CONFIG_0513 = [
   {
-    title: '高景气赛道',
+    title: '核心赛道',
     links: [
-      { id: 'sec1', label: 'AI算力：CPU超级周期' },
-      { id: 'sec2', label: '锂电储能：涨价主升浪' },
-      { id: 'sec3', label: '非银金融：量价齐升' }
+      { id: 'sec1', label: 'AI算力基础设施' },
+      { id: 'sec2', label: '锂电新周期' },
+      { id: 'sec3', label: '非银金融（券商）' }
     ]
   },
   {
-    title: '周期反转',
+    title: '暗线与二阶博弈',
     links: [
-      { id: 'sec4', label: '风电海风：范式转换' },
-      { id: 'sec5', label: '电网设备：特高压加速' },
-      { id: 'sec6', label: '工程机械：三重共振' }
+      { id: 'sec4', label: 'AI Agent → CPU超级周期' },
+      { id: 'sec5', label: '伊朗地缘 → 化工供给冲击' },
+      { id: 'sec6', label: '锂电高景气 → 钠电产业化' },
+      { id: 'sec7', label: '风电周期反转' }
     ]
   },
   {
-    title: '供给冲击',
+    title: '预期差与困境反转',
     links: [
-      { id: 'sec7', label: '化工：蛋氨酸暴涨链' },
-      { id: 'sec8', label: '煤炭：能源安全底仓' },
-      { id: 'sec9', label: '黄金有色：牛市中段' }
+      { id: 'sec8', label: '白酒行业出清' },
+      { id: 'sec9', label: '医药生物底部确认' },
+      { id: 'sec10', label: '生猪养殖深度亏损' },
+      { id: 'sec11', label: '工程机械三重共振' }
     ]
   },
   {
-    title: '困境反转',
+    title: '数据监测',
     links: [
-      { id: 'sec10', label: '白酒：底部出清期' },
-      { id: 'sec11', label: '医药生物：底部企稳' },
-      { id: 'sec12', label: '生猪养殖：去产能阶段' }
+      { id: 'sec12', label: '大宗商品量价监测表' },
+      { id: 'sec13', label: '产业链周期与估值监测' }
     ]
   },
   {
-    title: '数据与策略',
+    title: '配置建议',
     links: [
-      { id: 'sec13', label: '大宗商品监测表' },
-      { id: 'sec14', label: '产业链周期与估值表' },
-      { id: 'sec15', label: '本期配置建议' }
+      { id: 'sec14', label: '仓位配置与动态调仓' }
     ]
   }
 ];

@@ -1,38 +1,33 @@
 // 宏观研究导航模块 - 2026-05-13
 const MACRO_NAV_CONFIG_0513 = [
   {
-    title: '宏观定调',
+    title: '执行摘要',
     links: [
-      { id: 'm_sec1', label: '周期定位：主动补库中期' },
-      { id: 'm_sec2', label: 'Q1 货币政策执行报告解读' },
-      { id: 'm_sec3', label: '通胀数据：CPI/PPI 双双回升' }
+      { id: 'm_sec1', label: '核心观点速览' }
     ]
   },
   {
-    title: '核心数据',
+    title: '经济数据',
     links: [
-      { id: 'm_sec4', label: 'GDP 与经济增长' },
-      { id: 'm_sec5', label: '进出口与外贸韧性' },
-      { id: 'm_sec6', label: '消费与社零数据' },
-      { id: 'm_sec7', label: '货币与信贷数据' },
-      { id: 'm_sec8', label: '利率与 SHIBOR' }
+      { id: 'm_sec2', label: '经济数据速览表' },
+      { id: 'm_sec3', label: '输入性通胀主导' },
+      { id: 'm_sec4', label: '中东地缘冲突演化' },
+      { id: 'm_sec5', label: '出口韧性与AI产业链' },
+      { id: 'm_sec6', label: '货币政策转向' },
+      { id: 'm_sec7', label: '地产小阳春延续' }
     ]
   },
   {
-    title: '地缘与大宗商品',
+    title: '预期差与配置',
     links: [
-      { id: 'm_sec9', label: '中东地缘格局重塑' },
-      { id: 'm_sec10', label: '大宗商品定价逻辑切换' }
+      { id: 'm_sec8', label: '预期差与博弈表' },
+      { id: 'm_sec9', label: '大类资产配置建议' }
     ]
   },
   {
-    title: '策略配置',
+    title: '风险提示',
     links: [
-      { id: 'm_sec11', label: '核心矛盾：科技 vs 消费' },
-      { id: 'm_sec12', label: '攻守兼备仓位框架' },
-      { id: 'm_sec13', label: '动态调仓触发条件' },
-      { id: 'm_sec14', label: '核心风险矩阵' },
-      { id: 'm_sec15', label: '高频跟踪指标清单' }
+      { id: 'm_sec10', label: '五大核心风险' }
     ]
   }
 ];
