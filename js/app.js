@@ -187,6 +187,12 @@ function renderAllContent() {
     if (typeof renderMacroNav_0513 === 'function') renderMacroNav_0513();
     const macroContentEl0513 = document.getElementById('macro-content');
     if (macroContentEl0513 && typeof renderMacroContent_0513 === 'function') macroContentEl0513.innerHTML = renderMacroContent_0513();
+    if (typeof renderBrokerNav_0513 === 'function') renderBrokerNav_0513();
+    const brokerContentEl0513 = document.getElementById('broker-content');
+    if (brokerContentEl0513 && typeof renderBrokerContent_0513 === 'function') brokerContentEl0513.innerHTML = renderBrokerContent_0513();
+    if (typeof renderJisiluNav_0513 === 'function') renderJisiluNav_0513();
+    const jisiluContentEl0513 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0513 && typeof renderJisiluContent_0513 === 'function') jisiluContentEl0513.innerHTML = renderJisiluContent_0513();
   } else
 
   if (date === '2026-05-12') {
