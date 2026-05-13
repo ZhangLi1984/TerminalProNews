@@ -1,9 +1,43 @@
 // 个股研报导航模块 - 2026-05-14
 const STOCK_NAV_CONFIG_0514 = [
   {
-    title: '研报概览',
+    title: '核心推荐',
     links: [
-      { id: 's_sec1', label: '今日个股研报摘要' }
+      { id: 's_sec1', label: '今日研报摘要' },
+      { id: 's_sec2', label: 'S级标的深度剖析' }
+    ]
+  },
+  {
+    title: 'S级标的',
+    links: [
+      { id: 's_sec3', label: '三美股份 (603379)' },
+      { id: 's_sec4', label: '永和股份 (605020)' },
+      { id: 's_sec5', label: '长电科技 (600584)' },
+      { id: 's_sec6', label: '时代电气 (688187)' },
+      { id: 's_sec7', label: '万辰集团 (300972)' }
+    ]
+  },
+  {
+    title: 'A级标的',
+    links: [
+      { id: 's_sec8', label: '药康生物 (688046)' },
+      { id: 's_sec9', label: '卓越新能 (688196)' },
+      { id: 's_sec10', label: '华源控股 (002787)' },
+      { id: 's_sec11', label: '华康股份 (605077)' },
+      { id: 's_sec12', label: '新泉股份 (603179)' },
+      { id: 's_sec13', label: '西麦食品 (002956)' },
+      { id: 's_sec14', label: '智微智能 (001339)' },
+      { id: 's_sec15', label: '铂科新材 (300811)' },
+      { id: 's_sec16', label: '百济神州 (688235)' },
+      { id: 's_sec17', label: '山金国际 (000975)' },
+      { id: 's_sec18', label: '新开源 (300109)' }
+    ]
+  },
+  {
+    title: '评级汇总',
+    links: [
+      { id: 's_sec19', label: '完整评级汇总表' },
+      { id: 's_sec20', label: '评级说明与免责声明' }
     ]
   }
 ];
