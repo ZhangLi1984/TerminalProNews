@@ -1,27 +1,30 @@
 // 宏观研究导航模块 - 2026-05-14
 const MACRO_NAV_CONFIG_0514 = [
   {
-    title: '宏观概览',
+    title: '核心判断',
     links: [
-      { id: 'm_sec1', label: '补库元年与通胀双轨' },
-      { id: 'm_sec2', label: '美联储：沃什时代开启' },
-      { id: 'm_sec3', label: '中国货币政策转向' }
+      { id: 'm_sec1', label: '核心宏观判断摘要' },
+      { id: 'm_sec2', label: '关键经济数据' }
     ]
   },
   {
-    title: '全球变量',
+    title: '观点汇总',
     links: [
-      { id: 'm_sec4', label: '中东地缘与能源供应链' },
-      { id: 'm_sec5', label: '中美科技关系缓和' },
-      { id: 'm_sec6', label: '全球通胀K型分化' }
+      { id: 'm_sec3', label: '通胀趋势：输入性主导' },
+      { id: 'm_sec4', label: '美国CPI与非农' },
+      { id: 'm_sec5', label: '中东地缘与大宗商品' },
+      { id: 'm_sec6', label: '货币政策与利率' },
+      { id: 'm_sec7', label: '进出口与外贸' }
     ]
   },
   {
-    title: 'A股策略',
+    title: '策略建议',
     links: [
-      { id: 'm_sec7', label: '市场情绪与流动性' },
-      { id: 'm_sec8', label: '外资观点与目标位' },
-      { id: 'm_sec9', label: '配置方向建议' }
+      { id: 'm_sec8', label: '预期差与风险提示' },
+      { id: 'm_sec9', label: '大类资产配置' },
+      { id: 'm_sec10', label: '行业轮动与宏观映射' },
+      { id: 'm_sec11', label: '操作建议' },
+      { id: 'm_sec12', label: '下周关注事项' }
     ]
   }
 ];
