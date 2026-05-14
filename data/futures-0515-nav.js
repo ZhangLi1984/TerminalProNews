@@ -1,27 +1,14 @@
-const STOCK_NAV_CONFIG_0515 = [
-  { title: '核心标的', links: [
-    { id: 'sec1', label: 'S级标的精选' },
-    { id: 'sec2', label: 'A级标的精选' },
-  ]},
-  { title: '重点覆盖', links: [
-    { id: 'sec3', label: '科技/AI算力' },
-    { id: 'sec4', label: '新能源/锂电' },
-    { id: 'sec5', label: '消费/医药' },
-    { id: 'sec6', label: '周期/资源' },
-  ]},
-  { title: '评级汇总', links: [
-    { id: 'sec7', label: '评级汇总表' },
-  ]},
-  { title: '券商金股', links: [
-    { id: 'sec8', label: '各券商金股推荐' },
+const FUTURES_NAV_CONFIG_0515 = [
+  { title: '市场概况', links: [
+    { id: 'sec1', label: '市场概况' },
   ]},
 ];
 
-function renderStockNav_0515() {
-  const container = document.getElementById('stock-nav-content');
+function renderFuturesNav_0515() {
+  const container = document.getElementById('futures-nav-content');
   if (!container) return;
   let html = '';
-  STOCK_NAV_CONFIG_0515.forEach(group => {
+  FUTURES_NAV_CONFIG_0515.forEach(group => {
     html += `<div class="mb-2">
       <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 px-3">${group.title}</h3>
       <nav class="space-y-1">`;
