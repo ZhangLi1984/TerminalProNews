@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-05-14',
+  currentDate: '2026-05-15',
   clockInterval: null
 };
 
@@ -176,6 +176,31 @@ function renderAllContent() {
   const date = AppState.currentDate;
 
 
+  if (date === '2026-05-15') {
+    console.log('[renderAllContent] 渲染 5 月 15 日内容');
+    if (typeof renderDecisionNav_0515 === 'function') renderDecisionNav_0515();
+    const decisionContentEl0515 = document.getElementById('decision-content');
+    if (decisionContentEl0515 && typeof renderDecisionContent_0515 === 'function') decisionContentEl0515.innerHTML = renderDecisionContent_0515();
+    if (typeof renderIndustryNav_0515 === 'function') renderIndustryNav_0515();
+    const industryContentEl0515 = document.getElementById('industry-content');
+    if (industryContentEl0515 && typeof renderIndustryContent_0515 === 'function') industryContentEl0515.innerHTML = renderIndustryContent_0515();
+    if (typeof renderMacroNav_0515 === 'function') renderMacroNav_0515();
+    const macroContentEl0515 = document.getElementById('macro-content');
+    if (macroContentEl0515 && typeof renderMacroContent_0515 === 'function') macroContentEl0515.innerHTML = renderMacroContent_0515();
+    if (typeof renderBrokerNav_0515 === 'function') renderBrokerNav_0515();
+    const brokerContentEl0515 = document.getElementById('broker-content');
+    if (brokerContentEl0515 && typeof renderBrokerContent_0515 === 'function') brokerContentEl0515.innerHTML = renderBrokerContent_0515();
+    if (typeof renderJisiluNav_0515 === 'function') renderJisiluNav_0515();
+    const jisiluContentEl0515 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0515 && typeof renderJisiluContent_0515 === 'function') jisiluContentEl0515.innerHTML = renderJisiluContent_0515();
+    if (typeof renderStockNav_0515 === 'function') renderStockNav_0515();
+    const stockContentEl0515 = document.getElementById('stock-content');
+    if (stockContentEl0515 && typeof renderStockContent_0515 === 'function') stockContentEl0515.innerHTML = renderStockContent_0515();
+    if (typeof renderFuturesNav_0515 === 'function') renderFuturesNav_0515();
+    const futuresContentEl0515 = document.getElementById('futures-content');
+    if (futuresContentEl0515 && typeof renderFuturesContent_0515 === 'function') futuresContentEl0515.innerHTML = renderFuturesContent_0515();
+  } else
+
   if (date === '2026-05-14') {
     console.log('[renderAllContent] 渲染 5 月 14 日内容');
     if (typeof renderDecisionNav_0514 === 'function') renderDecisionNav_0514();
@@ -200,6 +225,7 @@ function renderAllContent() {
     const futuresContentEl0514 = document.getElementById('futures-content');
     if (futuresContentEl0514 && typeof renderFuturesContent_0514 === 'function') futuresContentEl0514.innerHTML = renderFuturesContent_0514();
   } else
+
 
   if (date === '2026-05-13') {
     console.log('[renderAllContent] 渲染 5 月 13 日内容');
