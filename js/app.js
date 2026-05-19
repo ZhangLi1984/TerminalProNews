@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-05-19',
+  currentDate: '2026-05-20',
   clockInterval: null
 };
 
@@ -174,6 +174,32 @@ function switchDate(date) {
  */
 function renderAllContent() {
   const date = AppState.currentDate;
+
+
+  if (date === '2026-05-20') {
+    console.log('[renderAllContent] 渲染 5 月 20 日内容');
+    if (typeof renderDecisionNav_0520 === 'function') renderDecisionNav_0520();
+    const decisionContentEl0520 = document.getElementById('decision-content');
+    if (decisionContentEl0520 && typeof renderDecisionContent_0520 === 'function') decisionContentEl0520.innerHTML = renderDecisionContent_0520();
+    if (typeof renderIndustryNav_0520 === 'function') renderIndustryNav_0520();
+    const industryContentEl0520 = document.getElementById('industry-content');
+    if (industryContentEl0520 && typeof renderIndustryContent_0520 === 'function') industryContentEl0520.innerHTML = renderIndustryContent_0520();
+    if (typeof renderMacroNav_0520 === 'function') renderMacroNav_0520();
+    const macroContentEl0520 = document.getElementById('macro-content');
+    if (macroContentEl0520 && typeof renderMacroContent_0520 === 'function') macroContentEl0520.innerHTML = renderMacroContent_0520();
+    if (typeof renderBrokerNav_0520 === 'function') renderBrokerNav_0520();
+    const brokerContentEl0520 = document.getElementById('broker-content');
+    if (brokerContentEl0520 && typeof renderBrokerContent_0520 === 'function') brokerContentEl0520.innerHTML = renderBrokerContent_0520();
+    if (typeof renderJisiluNav_0520 === 'function') renderJisiluNav_0520();
+    const jisiluContentEl0520 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0520 && typeof renderJisiluContent_0520 === 'function') jisiluContentEl0520.innerHTML = renderJisiluContent_0520();
+    if (typeof renderStockNav_0520 === 'function') renderStockNav_0520();
+    const stockContentEl0520 = document.getElementById('stock-content');
+    if (stockContentEl0520 && typeof renderStockContent_0520 === 'function') stockContentEl0520.innerHTML = renderStockContent_0520();
+    if (typeof renderFuturesNav_0520 === 'function') renderFuturesNav_0520();
+    const futuresContentEl0520 = document.getElementById('futures-content');
+    if (futuresContentEl0520 && typeof renderFuturesContent_0520 === 'function') futuresContentEl0520.innerHTML = renderFuturesContent_0520();
+  } else
 
 
   if (date === '2026-05-19') {
