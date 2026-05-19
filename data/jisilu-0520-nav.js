@@ -1,25 +1,27 @@
+// ==========================================
+// 集思录投资洞察 - 导航配置 - 2026-05-20
+// ==========================================
+
 const JISILU_NAV_CONFIG_0520 = [
   { title: '热门话题', links: [
-    { id: 'sec1', label: '可转债"四傻"困境博弈' },
-    { id: 'sec2', label: '老登股困境与价值质疑' },
-    { id: 'sec3', label: 'AI科技牛市与踏空焦虑' },
-    { id: 'sec4', label: '低风险投资至暗时刻' },
-    { id: 'sec5', label: '北交所打新热度飙升' },
-    { id: 'sec6', label: '期权卖方策略实盘' },
-    { id: 'sec7', label: '金老师健康引发关注' },
-    { id: 'sec8', label: 'ETF申赎套利与跑赢之谜' },
-    { id: 'sec9', label: '实物分红薅羊毛' },
-    { id: 'sec10', label: '仓位管理与凯利公式' },
+    { id: 'j_sec1', label: '可转债"四傻"困境博弈' },
+    { id: 'j_sec2', label: '老登股困境与价值质疑' },
+    { id: 'j_sec3', label: 'AI科技牛市与踏空焦虑' },
+    { id: 'j_sec4', label: '低风险投资"至暗时刻"' },
+    { id: 'j_sec5', label: '北交所打新热度飙升' },
+    { id: 'j_sec6', label: '期权卖方策略实盘' },
+    { id: 'j_sec7', label: '持有封基健康关注' },
+    { id: 'j_sec8', label: 'ETF申赎套利' },
   ]},
-  { title: '投资策略', links: [
-    { id: 'sec11', label: '投资方法论精粹' },
+  { title: '投资方法论', links: [
+    { id: 'j_sec9', label: '六大投资策略精粹' },
   ]},
-  { title: '标的与情绪', links: [
-    { id: 'sec12', label: '热议标的清单' },
-    { id: 'sec13', label: '市场情绪观察' },
+  { title: '热议标的', links: [
+    { id: 'j_sec10', label: '热议标的清单' },
   ]},
-  { title: '风险与关注', links: [
-    { id: 'sec14', label: '风险提示' },
+  { title: '情绪与风控', links: [
+    { id: 'j_sec11', label: '市场情绪观察' },
+    { id: 'j_sec12', label: '五大风险提示' },
   ]},
 ];
 

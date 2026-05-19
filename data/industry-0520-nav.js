@@ -24,33 +24,34 @@ const INDUSTRY_NAV_CONFIG_0520 = [
     links: [
       { id: 'i_sec7', label: '煤化工替代' },
       { id: 'i_sec8', label: '电网设备超级周期' },
-      { id: 'i_sec9', label: '工程机械涨价' }
+      { id: 'i_sec9', label: '工程机械涨价' },
+      { id: 'i_sec10', label: '化工全球市占率' },
+      { id: 'i_sec11', label: '人形机器人量产' },
+      { id: 'i_sec12', label: '厄尔尼诺+生猪' }
     ]
   },
   {
     title: '预期差反转',
     links: [
-      { id: 'i_sec10', label: '白酒困境反转' },
-      { id: 'i_sec11', label: '生猪产能去化' },
-      { id: 'i_sec12', label: '光伏设备筑底' },
-      { id: 'i_sec13', label: '人形机器人' }
+      { id: 'i_sec13', label: '白酒困境反转' },
+      { id: 'i_sec14', label: '生猪产能去化' },
+      { id: 'i_sec15', label: '光伏设备筑底' }
     ]
   },
   {
     title: '景气延续',
     links: [
-      { id: 'i_sec14', label: '煤炭' },
-      { id: 'i_sec15', label: '银行' },
-      { id: 'i_sec16', label: '锂电' },
-      { id: 'i_sec17', label: '化工' }
+      { id: 'i_sec16', label: '煤炭' },
+      { id: 'i_sec17', label: '银行' },
+      { id: 'i_sec18', label: '锂电' }
     ]
   },
   {
     title: '监测与风控',
     links: [
-      { id: 'i_sec18', label: '大宗商品监测表' },
-      { id: 'i_sec19', label: '估值监测表' },
-      { id: 'i_sec20', label: '风险提示' }
+      { id: 'i_sec19', label: '大宗商品监测表' },
+      { id: 'i_sec20', label: '估值监测表' },
+      { id: 'i_sec21', label: '风险提示' }
     ]
   }
 ];
