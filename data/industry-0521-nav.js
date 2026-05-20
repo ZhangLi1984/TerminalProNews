@@ -1,34 +1,32 @@
 // 行业研究导航 - 2026-05-21
 const INDUSTRY_NAV_CONFIG_0521 = [
   { title: 'S级核心赛道', links: [
-    { id: 'i_sec1', label: 'AI算力基础设施 & 存储 (S+)' },
+    { id: 'i_sec1', label: 'AI算力基础设施 (S+)' },
     { id: 'i_sec2', label: '碳化硅SiC (S)' },
     { id: 'i_sec3', label: '半导体设备/材料 (S)' },
   ]},
   { title: 'A级高景气', links: [
-    { id: 'i_sec4', label: '锂电/储能产业链 (A+)' },
+    { id: 'i_sec4', label: '锂电/储能 (A+)' },
     { id: 'i_sec5', label: '工程机械 (A+)' },
     { id: 'i_sec6', label: '煤炭/煤化工 (A)' },
-    { id: 'i_sec7', label: '电力设备/电网/SST (A)' },
-    { id: 'i_sec8', label: '化工（基础化工+石化）(A-)' },
+    { id: 'i_sec7', label: '电力设备/SST (A)' },
+    { id: 'i_sec8', label: '化工 (A-)' },
     { id: 'i_sec9', label: '商业航天 (A-)' },
   ]},
-  { title: 'B/C级配置', links: [
-    { id: 'i_sec10', label: '医药（创新药+CXO）(B+)' },
+  { title: 'B/C级预期差', links: [
+    { id: 'i_sec10', label: '医药/CXO (B+)' },
     { id: 'i_sec11', label: '保险 (B+)' },
     { id: 'i_sec12', label: '券商 (B+)' },
     { id: 'i_sec13', label: '人形机器人 (B)' },
-    { id: 'i_sec14', label: '传媒/游戏/AI应用 (B)' },
+    { id: 'i_sec14', label: '传媒/游戏 (B)' },
     { id: 'i_sec15', label: '房地产 (C+)' },
     { id: 'i_sec16', label: '生猪养殖 (C+)' },
     { id: 'i_sec17', label: '白酒 (C)' },
-    { id: 'i_sec18', label: '航空运输 (C)' },
   ]},
-  { title: '暗线与监测', links: [
-    { id: 'i_sec19', label: '核心投资暗线（三条）' },
-    { id: 'i_sec20', label: '大宗商品量价监测表' },
-    { id: 'i_sec21', label: '产业链周期估值监测' },
-    { id: 'i_sec22', label: '总监级四大核心结论' },
+  { title: '数据与策略', links: [
+    { id: 'i_sec18', label: '量价监测表' },
+    { id: 'i_sec19', label: '跨赛道暗线' },
+    { id: 'i_sec20', label: '总监级研判与操作建议' },
   ]},
 ];
 
