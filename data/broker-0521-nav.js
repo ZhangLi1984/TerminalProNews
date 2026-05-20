@@ -1,26 +1,49 @@
-// 券商晨报导航 - 2026-05-21
+// ==========================================
+// 券商晨报买方汇总 - 导航配置 - 2026-05-21
+// ==========================================
+
 const BROKER_NAV_CONFIG_0521 = [
-  { title: '晨报概览', links: [
-    { id: 'b_sec1', label: '今日暂无券商晨报数据' },
+  { title: '市场总览', links: [
+    { id: 'b_sec1', label: '市场共识概览' },
+    { id: 'b_sec2', label: '各券商大盘判断' },
+    { id: 'b_sec3', label: '市场共识总结' },
+  ]},
+  { title: '行业共识推荐', links: [
+    { id: 'b_sec4', label: '行业推荐热度统计' },
+    { id: 'b_sec5', label: '半导体/芯片' },
+    { id: 'b_sec6', label: 'AI算力/算力基础设施' },
+    { id: 'b_sec7', label: '电力/公用事业' },
+    { id: 'b_sec8', label: '煤炭/能源' },
+    { id: 'b_sec9', label: '其他重点行业' },
+  ]},
+  { title: '金股组合', links: [
+    { id: 'b_sec10', label: '各券商金股汇总' },
+    { id: 'b_sec11', label: '重点个股推荐' },
+  ]},
+  { title: '策略与风控', links: [
+    { id: 'b_sec12', label: '仓位配置建议' },
+    { id: 'b_sec13', label: '核心催化跟踪' },
+    { id: 'b_sec14', label: '风险提示' },
+    { id: 'b_sec15', label: '短期交易策略' },
   ]},
 ];
 
 function renderBrokerNav_0521() {
   const container = document.getElementById('broker-nav-content');
   if (!container) return;
-  container.innerHTML = BROKER_NAV_CONFIG_0521.map((cat, ci) => `
-    <div>
-      <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 px-1">${cat.title}</h4>
-      <div class="space-y-1">
-        ${cat.links.map(link => `
-          <button onclick="scrollToSection('${link.id}', 'broker'); updateActiveNav('${link.id}')"
-            class="nav-btn w-full text-left text-sm px-3 py-2 rounded-lg transition-all duration-200 text-slate-700 hover:bg-slate-100 flex items-center group"
-            data-section="${link.id}">
-            <div class="w-1.5 h-1.5 rounded-full bg-transparent mr-2 group-hover:bg-red-500 transition-colors flex-shrink-0"></div>
-            <span class="truncate">${link.label}</span>
-          </button>
-        `).join('')}
-      </div>
-    </div>
-  `).join('');
+  let html = '';
+  BROKER_NAV_CONFIG_0521.forEach(group => {
+    html += `<div class="mb-2">
+      <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 px-3">${group.title}</h3>
+      <nav class="space-y-1">`;
+    group.links.forEach(link => {
+      html += `<a href="javascript:void(0)" onclick="updateActiveNav('${link.id}');document.getElementById('${link.id}')?.scrollIntoView({behavior:'smooth',block:'start'})"
+        class="nav-btn flex items-center w-full text-left text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200 text-slate-700 hover:bg-slate-100" data-section="${link.id}">
+        <div class="w-1.5 h-1.5 rounded-full mr-2 transition-colors duration-200 bg-transparent"></div>
+        <span class="truncate">${link.label}</span>
+      </a>`;
+    });
+    html += `</nav></div>`;
+  });
+  container.innerHTML = html;
 }
