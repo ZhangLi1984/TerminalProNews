@@ -1,16 +1,36 @@
 // 宏观研究导航 - 2026-05-21
 const MACRO_NAV_CONFIG_0521 = [
-  { title: '宏观框架', links: [
-    { id: 'm_sec1', label: 'K型分化时代宏观叙事' },
-    { id: 'm_sec2', label: 'PPI转正与周期研判' },
+  { title: '执行摘要', links: [
+    { id: 'm_sec1', label: '核心判断与预期差' },
+    { id: 'm_sec2', label: '政策定调' },
   ]},
-  { title: '策略框架', links: [
-    { id: 'm_sec3', label: '杠铃配置策略' },
-    { id: 'm_sec4', label: '仓位配置建议' },
+  { title: '经济数据全景', links: [
+    { id: 'm_sec3', label: '经济增长指标' },
+    { id: 'm_sec4', label: '需求端指标' },
+    { id: 'm_sec5', label: '通胀指标' },
+    { id: 'm_sec6', label: '金融与货币' },
   ]},
-  { title: '风险预警', links: [
-    { id: 'm_sec5', label: '一级/二级风险' },
-    { id: 'm_sec6', label: '三阶思维预警' },
+  { title: '研报观点汇总', links: [
+    { id: 'm_sec7', label: '4月经济数据解读' },
+    { id: 'm_sec8', label: '中美经贸与地缘政治' },
+    { id: 'm_sec9', label: '美联储与全球流动性' },
+    { id: 'm_sec10', label: 'AI产业宏观影响' },
+    { id: 'm_sec11', label: '国内宏观政策预期' },
+  ]},
+  { title: '交叉验证', links: [
+    { id: 'm_sec12', label: '一致性验证' },
+    { id: 'm_sec13', label: '核心预期差' },
+    { id: 'm_sec14', label: '数据预警信号' },
+  ]},
+  { title: '买方策略', links: [
+    { id: 'm_sec15', label: '资产配置建议' },
+    { id: 'm_sec16', label: '行业配置方向' },
+    { id: 'm_sec17', label: '交易策略' },
+  ]},
+  { title: '数据亮点与预警', links: [
+    { id: 'm_sec18', label: '五大数据亮点' },
+    { id: 'm_sec19', label: '七大预警信号' },
+    { id: 'm_sec20', label: '关键监测证伪指标' },
   ]},
 ];
 
