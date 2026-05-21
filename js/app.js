@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-05-21',
+  currentDate: '2026-05-22',
   clockInterval: null
 };
 
@@ -175,6 +175,13 @@ function switchDate(date) {
 function renderAllContent() {
   const date = AppState.currentDate;
 
+
+  if (date === '2026-05-22') {
+    console.log('[renderAllContent] 渲染 5 月 22 日内容');
+    if (typeof renderDecisionNav_0522 === 'function') renderDecisionNav_0522();
+    const decisionContentEl0522 = document.getElementById('decision-content');
+    if (decisionContentEl0522 && typeof renderDecisionContent_0522 === 'function') decisionContentEl0522.innerHTML = renderDecisionContent_0522();
+  } else
 
   if (date === '2026-05-21') {
     console.log('[renderAllContent] 渲染 5 月 21 日内容');
