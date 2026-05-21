@@ -181,6 +181,24 @@ function renderAllContent() {
     if (typeof renderDecisionNav_0522 === 'function') renderDecisionNav_0522();
     const decisionContentEl0522 = document.getElementById('decision-content');
     if (decisionContentEl0522 && typeof renderDecisionContent_0522 === 'function') decisionContentEl0522.innerHTML = renderDecisionContent_0522();
+    if (typeof renderIndustryNav_0522 === 'function') renderIndustryNav_0522();
+    const industryContentEl0522 = document.getElementById('industry-content');
+    if (industryContentEl0522 && typeof renderIndustryContent_0522 === 'function') industryContentEl0522.innerHTML = renderIndustryContent_0522();
+    if (typeof renderMacroNav_0522 === 'function') renderMacroNav_0522();
+    const macroContentEl0522 = document.getElementById('macro-content');
+    if (macroContentEl0522 && typeof renderMacroContent_0522 === 'function') macroContentEl0522.innerHTML = renderMacroContent_0522();
+    if (typeof renderBrokerNav_0522 === 'function') renderBrokerNav_0522();
+    const brokerContentEl0522 = document.getElementById('broker-content');
+    if (brokerContentEl0522 && typeof renderBrokerContent_0522 === 'function') brokerContentEl0522.innerHTML = renderBrokerContent_0522();
+    if (typeof renderStockNav_0522 === 'function') renderStockNav_0522();
+    const stockContentEl0522 = document.getElementById('stock-content');
+    if (stockContentEl0522 && typeof renderStockContent_0522 === 'function') stockContentEl0522.innerHTML = renderStockContent_0522();
+    if (typeof renderJisiluNav_0522 === 'function') renderJisiluNav_0522();
+    const jisiluContentEl0522 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0522 && typeof renderJisiluContent_0522 === 'function') jisiluContentEl0522.innerHTML = renderJisiluContent_0522();
+    if (typeof renderFuturesNav_0522 === 'function') renderFuturesNav_0522();
+    const futuresContentEl0522 = document.getElementById('futures-content');
+    if (futuresContentEl0522 && typeof renderFuturesContent_0522 === 'function') futuresContentEl0522.innerHTML = renderFuturesContent_0522();
   } else
 
   if (date === '2026-05-21') {
