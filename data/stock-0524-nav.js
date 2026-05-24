@@ -1,7 +1,29 @@
-const STOCK_NAV_CONFIG_0524 = [{ title: '个股研报', links: [{ id: 's_sec1', label: '暂无数据' }] }];
+const STOCK_NAV_CONFIG_0524 = [
+  { title: '核心推荐', links: [
+    { id: 's_sec1', label: '核心摘要' },
+    { id: 's_sec2', label: 'S级标的' },
+    { id: 's_sec3', label: 'A级标的' },
+  ]},
+  { title: '完整清单', links: [
+    { id: 's_sec4', label: '评级汇总表' },
+    { id: 's_sec5', label: '评级说明' },
+  ]}
+];
+
 function renderStockNav_0524() {
   const container = document.getElementById('stock-nav-content');
   if (!container) return;
-  container.innerHTML = '<div class="text-center py-12 text-slate-400"><p class="text-lg font-bold">今日暂无个股研报数据</p><p class="text-sm mt-2">数据将在可用时自动更新</p></div>';
+  container.innerHTML = STOCK_NAV_CONFIG_0524.map(group => `
+    <div class="mb-4">
+      <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">${group.title}</h4>
+      <div class="space-y-1">
+        ${group.links.map(link => `
+          <button onclick="updateActiveNav('${link.id}')" data-section="${link.id}" class="nav-btn w-full text-left px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 transition-colors flex items-center">
+            <div class="w-1.5 h-1.5 rounded-full mr-2 flex-shrink-0"></div>
+            ${link.label}
+          </button>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
 }
-function renderStockContent_0524() { return '<div class="prose prose-slate max-w-none"><div class="bg-gradient-to-r from-slate-50 to-gray-50 rounded-2xl p-12 text-center text-slate-400"><svg class="w-16 h-16 mx-auto mb-4 text-slate-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg><h2 class="text-xl font-bold mb-2">今日暂无个股研报数据</h2><p class="text-sm">数据将在可用时自动更新</p></div></div>'; }
