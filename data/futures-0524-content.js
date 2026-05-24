@@ -1,0 +1,1 @@
+function renderFuturesContent_0524() { return '<div class="prose prose-slate max-w-none"><div class="bg-gradient-to-r from-slate-50 to-gray-50 rounded-2xl p-12 text-center text-slate-400"><h2 class="text-xl font-bold mb-2">今日暂无期货市场数据</h2><p class="text-sm">数据将在可用时自动更新</p></div></div>'; }
