@@ -6,46 +6,34 @@ const INDUSTRY_NAV_CONFIG_0524 = [
     title: '核心赛道',
     links: [
       { id: 'i_sec1', label: '半导体/AI算力全产业链' },
-      { id: 'i_sec2', label: '存储产业链' },
-      { id: 'i_sec3', label: '人形机器人/智能驾驶' }
+      { id: 'i_sec2', label: '存储芯片超级周期' },
+      { id: 'i_sec3', label: '天然气发动机/数据中心发电' },
+      { id: 'i_sec4', label: '高纯四氯化硅/光纤产业链' }
     ]
   },
   {
-    title: '暗线与二阶博弈',
+    title: '周期与反转',
     links: [
-      { id: 'i_sec4', label: '天然气发动机出海' },
-      { id: 'i_sec5', label: '中东冲突->中国钢出口' },
-      { id: 'i_sec6', label: 'Rubin架构->PCB/MLCC爆发' },
-      { id: 'i_sec7', label: '光纤预制棒/四氯化硅' },
-      { id: 'i_sec8', label: '太空光伏/CPI膜' }
-    ]
-  },
-  {
-    title: '周期反转',
-    links: [
-      { id: 'i_sec9', label: '生猪养殖' },
-      { id: 'i_sec10', label: '食品饮料/大消费' },
-      { id: 'i_sec11', label: '房地产' },
-      { id: 'i_sec12', label: '家电' }
+      { id: 'i_sec5', label: '生猪养殖（左侧布局）' },
+      { id: 'i_sec6', label: '食品饮料/大消费' },
+      { id: 'i_sec7', label: '钢铁（需求结构转型）' }
     ]
   },
   {
     title: '景气延续',
     links: [
-      { id: 'i_sec13', label: '电力设备/电网' },
-      { id: 'i_sec14', label: '储能/锂电池' },
-      { id: 'i_sec15', label: '商业航天/低空经济' },
-      { id: 'i_sec16', label: '创新药/CXO' },
-      { id: 'i_sec17', label: '银行' },
-      { id: 'i_sec18', label: '快递物流' }
+      { id: 'i_sec8', label: '电力设备/电网' },
+      { id: 'i_sec9', label: '储能与锂电池' },
+      { id: 'i_sec10', label: '商业航天/低空经济' },
+      { id: 'i_sec11', label: '创新药/CXO' }
     ]
   },
   {
-    title: '监测数据',
+    title: '底仓与策略',
     links: [
-      { id: 'i_sec19', label: '大宗商品量价监测表' },
-      { id: 'i_sec20', label: '产业链周期与估值表' },
-      { id: 'i_sec21', label: '策略总结：杠铃配置' }
+      { id: 'i_sec12', label: '银行/家电/快递' },
+      { id: 'i_sec13', label: '大宗商品监测表' },
+      { id: 'i_sec14', label: '策略总结与风险提示' }
     ]
   }
 ];

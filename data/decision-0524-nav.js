@@ -3,42 +3,24 @@
 // ==========================================
 const DECISION_NAV_CONFIG_0524 = [
   {
-    title: '市场总判断',
+    title: '市场要闻',
     links: [
-      { id: 'sec1', label: '宏观十字路口' },
-      { id: 'sec2', label: '风险偏好与资金流向' }
+      { id: 'd_sec1', label: '核心要闻与政策解读' },
+      { id: 'd_sec2', label: '美伊谈判重大转折' }
     ]
   },
   {
-    title: '核心进攻方向',
+    title: '资金与盘面',
     links: [
-      { id: 'sec3', label: '半导体/AI算力全产业链' },
-      { id: 'sec4', label: '天然气发动机/发电' },
-      { id: 'sec5', label: '高纯四氯化硅/光纤' }
+      { id: 'd_sec3', label: '主力资金与板块流向' },
+      { id: 'd_sec4', label: '市场情绪与交易信号' }
     ]
   },
   {
-    title: '核心防守方向',
+    title: '今日操作',
     links: [
-      { id: 'sec6', label: '生猪养殖（左侧布局）' },
-      { id: 'sec7', label: '食品饮料/大消费' },
-      { id: 'sec8', label: '银行（红利底仓）' }
-    ]
-  },
-  {
-    title: '暗线与博弈',
-    links: [
-      { id: 'sec9', label: '中东冲突->中国钢出口' },
-      { id: 'sec10', label: 'Rubin架构->PCB/MLCC爆发' },
-      { id: 'sec11', label: '太空光伏/CPI膜国产替代' }
-    ]
-  },
-  {
-    title: '仓位与风险',
-    links: [
-      { id: 'sec12', label: '建议仓位结构' },
-      { id: 'sec13', label: '核心风险提示' },
-      { id: 'sec14', label: 'CIO总结陈词' }
+      { id: 'd_sec5', label: '核心配置方向' },
+      { id: 'd_sec6', label: '风险提示与关注事项' }
     ]
   }
 ];
@@ -46,7 +28,7 @@ const DECISION_NAV_CONFIG_0524 = [
 function renderDecisionNav_0524() {
   const container = document.getElementById('decision-nav-content');
   if (!container) return;
-  container.innerHTML = DECISION_NAV_CONFIG_0524.map((group, gi) => `
+  container.innerHTML = DECISION_NAV_CONFIG_0524.map((group) => `
     <div>
       <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">${group.title}</h3>
       <div class="space-y-1">
