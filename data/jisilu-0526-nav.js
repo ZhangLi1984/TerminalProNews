@@ -5,23 +5,26 @@ const JISILU_NAV_CONFIG_0526 = [
   {
     title: '热门话题',
     links: [
-      { id: 'j_sec1', label: '华为"韬定律"与半导体' },
-      { id: 'j_sec2', label: 'SpaceX IPO催化' },
-      { id: 'j_sec3', label: '美伊谈判与能源链' }
+      { id: 'j_sec1', label: '龙大美食违约风险' },
+      { id: 'j_sec2', label: '科技股 vs 老登股分化' },
+      { id: 'j_sec3', label: '闻泰科技/闻泰转债' },
+      { id: 'j_sec4', label: '黄金/大宗商品期权' },
+      { id: 'j_sec5', label: 'ST/重整套利' }
     ]
   },
   {
-    title: '投资方法论',
+    title: '方法论',
     links: [
-      { id: 'j_sec4', label: '半导体周期投资框架' },
-      { id: 'j_sec5', label: '困境反转策略' }
+      { id: 'j_sec6', label: '低风险策略精粹' },
+      { id: 'j_sec7', label: '资产配置框架' }
     ]
   },
   {
-    title: '市场情绪',
+    title: '市场',
     links: [
-      { id: 'j_sec6', label: '情绪观察与风险偏好' },
-      { id: 'j_sec7', label: '风险提示' }
+      { id: 'j_sec8', label: '热议标的清单' },
+      { id: 'j_sec9', label: '情绪与风险' },
+      { id: 'j_sec10', label: '争议与下周关注' }
     ]
   }
 ];
