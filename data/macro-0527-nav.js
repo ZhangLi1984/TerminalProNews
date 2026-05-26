@@ -62,7 +62,7 @@ const MACRO_NAV_CONFIG_0527 = [
 function renderMacroNav_0527() {
   const container = document.getElementById('macro-nav-content');
   if (!container) return;
-  container.innerHTML = MACRO_NAV_CONFIG_0527.map(group => `
+  container.innerHTML = MACRO_NAV_CONFIG_0527.map((group) => `
     <div>
       <h3 class="text-xs font-black text-slate-500 uppercase tracking-wider mb-3">${group.title}</h3>
       <div class="space-y-1">

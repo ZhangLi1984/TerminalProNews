@@ -24,7 +24,7 @@ function renderDecisionContent_0527() {
 
 <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>二、重大新闻详解</h2>
 
-<h3 id="d_sec1" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">2.1 华为"韬（τ）定律"：半导体范式转移的标志性事件</h3>
+<h3 id="d_sec2" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">2.1 华为"韬（τ）定律"：半导体范式转移的标志性事件</h3>
 
 <div class="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-red-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">⚡</span>事件核心：从"几何空间缩微"到"时间缩微"的范式革命</h4>
@@ -47,7 +47,7 @@ function renderDecisionContent_0527() {
   </blockquote>
 </div>
 
-<h3 id="d_sec2" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">2.2 美伊谈判破裂：地缘风险急剧升级</h3>
+<h3 id="d_sec3" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">2.2 美伊谈判破裂：地缘风险急剧升级</h3>
 
 <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-amber-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">🌍</span>地缘变量：从谈判到对峙的关键转折</h4>
@@ -65,7 +65,7 @@ function renderDecisionContent_0527() {
   </blockquote>
 </div>
 
-<h3 id="d_sec3" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">2.3 美光科技市值破万亿：存储"超级周期"确认</h3>
+<h3 id="d_sec4" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">2.3 美光科技市值破万亿：存储"超级周期"确认</h3>
 
 <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-blue-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">💎</span>存储超级周期：从"周期性商品"到"AI基础设施"</h4>
@@ -89,7 +89,7 @@ function renderDecisionContent_0527() {
 
 <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-green-600 rounded-full mr-3"></span>三、热点赛道追踪</h2>
 
-<h3 id="d_sec4" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">3.1 半导体/先进封装（热度：爆表）</h3>
+<h3 id="d_sec5" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">3.1 半导体/先进封装（热度：爆表）</h3>
 
 <div class="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-red-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">🔥</span>催化剂密集：韬定律 + 芯片赴港潮 + 长鑫业绩 + 深科技扩产</h4>
@@ -105,7 +105,7 @@ function renderDecisionContent_0527() {
   </div>
 </div>
 
-<h3 id="d_sec5" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">3.2 存储芯片（热度：极高）</h3>
+<h3 id="d_sec6" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">3.2 存储芯片（热度：极高）</h3>
 
 <div class="bg-gradient-to-r from-blue-50 to-cyan-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-blue-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">💎</span>催化剂：美光暴涨 + HBM5迭代 + 深科技扩产</h4>
@@ -120,7 +120,7 @@ function renderDecisionContent_0527() {
   </div>
 </div>
 
-<h3 id="d_sec6" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">3.3 人形机器人（热度：高）</h3>
+<h3 id="d_sec7" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">3.3 人形机器人（热度：高）</h3>
 
 <div class="bg-gradient-to-r from-purple-50 to-violet-50 border-l-4 border-purple-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-purple-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">🤖</span>催化剂：宇树科技6/1上会 + 大摩报告</h4>
@@ -128,7 +128,7 @@ function renderDecisionContent_0527() {
   <p class="text-purple-900 mt-2"><strong>关注方向：</strong>精密零部件、减速器、丝杠、传感器</p>
 </div>
 
-<h3 id="d_sec7" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">3.4 铝/有色金属（热度：高）</h3>
+<h3 id="d_sec8" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">3.4 铝/有色金属（热度：高）</h3>
 
 <div class="bg-gradient-to-r from-orange-50 to-amber-50 border-l-4 border-orange-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-orange-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">⛏️</span>催化剂：几内亚6月出口管制 + 中国铝业涨停</h4>
@@ -136,7 +136,7 @@ function renderDecisionContent_0527() {
   <p class="text-orange-900 mt-2"><strong>关注方向：</strong>中国铝业、云铝股份、神火股份、天山铝业</p>
 </div>
 
-<h3 id="d_sec8" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">3.5 商业航天（热度：中高）</h3>
+<h3 id="d_sec9" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">3.5 商业航天（热度：中高）</h3>
 
 <div class="bg-gradient-to-r from-sky-50 to-blue-50 border-l-4 border-sky-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-sky-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">🚀</span>催化剂：SpaceX IPO + 22.9亿军工合同 + 太空光伏产业化</h4>
@@ -145,7 +145,7 @@ function renderDecisionContent_0527() {
 
 <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-indigo-600 rounded-full mr-3"></span>四、跨赛道传导分析（二阶思维）</h2>
 
-<h3 id="d_sec9" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">4.1 四大传导链</h3>
+<h3 id="d_sec10" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">4.1 四大传导链</h3>
 
 <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-emerald-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">🔗</span>传导链一：韬定律 → 光通信 → AI数据中心 → 电力</h4>
@@ -181,7 +181,7 @@ function renderDecisionContent_0527() {
 
 <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-green-600 rounded-full mr-3"></span>五、明日关注与风险提示</h2>
 
-<h3 id="d_sec10" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">5.1 明日关注</h3>
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">5.1 明日关注</h3>
 
 <div class="overflow-x-auto my-6">
   <table class="min-w-full border-collapse rounded-xl overflow-hidden shadow-lg">
