@@ -1,9 +1,29 @@
 // ==========================================
-// 集思录模块 - 导航配置 (2026-05-28)
+// 集思录投资洞察 - 导航配置 (2026-05-28)
 // ==========================================
 
 const JISILU_NAV_CONFIG_0528 = [
-  { title: '市场观察', links: [{ id: 'j_sec1', label: '集思录热点' }] }
+  {
+    title: '热门话题',
+    links: [
+      { id: 'j_sec1', label: 'TOP10热门话题' },
+      { id: 'j_sec2', label: '争议与分歧' },
+    ]
+  },
+  {
+    title: '方法论与标的',
+    links: [
+      { id: 'j_sec3', label: '投资方法论精粹' },
+      { id: 'j_sec4', label: '热议标的清单' },
+    ]
+  },
+  {
+    title: '情绪与策略',
+    links: [
+      { id: 'j_sec5', label: '市场情绪观察' },
+      { id: 'j_sec6', label: '下周关注与策略建议' },
+    ]
+  },
 ];
 
 function renderJisiluNav_0528() {

@@ -4,35 +4,29 @@
 
 const DECISION_NAV_CONFIG_0528 = [
   {
-    title: '市场要闻',
+    title: '市场总览',
     links: [
-      { id: 'd_sec1', label: 'A股市场动态' },
-      { id: 'd_sec2', label: '全球市场概况' },
-      { id: 'd_sec3', label: 'IPO与资本市场' }
+      { id: 'd_sec1', label: 'A股市场核心数据' },
+      { id: 'd_sec2', label: '全球市场动态' },
+      { id: 'd_sec3', label: 'IPO与新股动态' },
     ]
   },
   {
-    title: '政策与宏观',
+    title: '政策与地缘',
     links: [
-      { id: 'd_sec4', label: '政策动向' },
-      { id: 'd_sec5', label: '宏观经济数据' }
+      { id: 'd_sec4', label: '政策要闻' },
+      { id: 'd_sec5', label: '美伊局势与油价' },
+      { id: 'd_sec6', label: '监管与制度改革' },
     ]
   },
   {
-    title: '行业热点',
+    title: '行业信号',
     links: [
-      { id: 'd_sec6', label: 'AI与半导体' },
-      { id: 'd_sec7', label: '医药与创新药' },
-      { id: 'd_sec8', label: '智能驾驶与机器人' }
+      { id: 'd_sec7', label: '科技/AI/半导体' },
+      { id: 'd_sec8', label: '消费/医药/银行' },
+      { id: 'd_sec9', label: '资金面与市场情绪' },
     ]
   },
-  {
-    title: '资金与情绪',
-    links: [
-      { id: 'd_sec9', label: '资金流向' },
-      { id: 'd_sec10', label: '市场情绪观察' }
-    ]
-  }
 ];
 
 function renderDecisionNav_0528() {

@@ -3,7 +3,29 @@
 // ==========================================
 
 const FUTURES_NAV_CONFIG_0528 = [
-  { title: '期货概览', links: [{ id: 'f_sec1', label: '行情与策略' }] }
+  {
+    title: '行情概览',
+    links: [
+      { id: 'f_sec1', label: '主要品种价格监测' },
+      { id: 'f_sec2', label: '板块涨跌排行' },
+    ]
+  },
+  {
+    title: '品种分析',
+    links: [
+      { id: 'f_sec3', label: '能源化工' },
+      { id: 'f_sec4', label: '贵金属' },
+      { id: 'f_sec5', label: '有色金属' },
+      { id: 'f_sec6', label: '农产品' },
+    ]
+  },
+  {
+    title: '策略与风险',
+    links: [
+      { id: 'f_sec7', label: '做多/做空机会' },
+      { id: 'f_sec8', label: '风险提示' },
+    ]
+  },
 ];
 
 function renderFuturesNav_0528() {

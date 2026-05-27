@@ -1,49 +1,42 @@
 // ==========================================
 // 行业研究模块 - 导航配置 (2026-05-28)
+// 深度融合：全市场行业汇总 + CIO战略投资内参
 // ==========================================
 
 const INDUSTRY_NAV_CONFIG_0528 = [
   {
-    title: '核心赛道',
+    title: '核心高胜率赛道',
     links: [
-      { id: 'i_sec1', label: 'AI算力与半导体' },
-      { id: 'i_sec2', label: '创新药与医疗器械' },
-      { id: 'i_sec3', label: '智能驾驶与自动驾驶' }
+      { id: 'i_sec1', label: 'AI算力与半导体（合并版）' },
+      { id: 'i_sec2', label: '创新药与医疗器械（合并版）' },
+      { id: 'i_sec3', label: '智能驾驶与自动驾驶（合并版）' },
     ]
   },
   {
-    title: '暗线与二阶博弈',
+    title: '跨赛道暗线与二阶博弈',
     links: [
-      { id: 'i_sec4', label: 'PCB材料设备国产替代' },
-      { id: 'i_sec5', label: '煤炭供给侧黑天鹅' },
-      { id: 'i_sec6', label: '半导体硅片困境反转' },
-      { id: 'i_sec7', label: '制冷剂量价齐升' }
+      { id: 'i_sec4', label: '暗线一：AI算力→PCB材料→设备替代' },
+      { id: 'i_sec5', label: '暗线二：煤炭供给收缩→煤化工' },
+      { id: 'i_sec6', label: '暗线三：半导体硅片触底反转' },
+      { id: 'i_sec7', label: '暗线四：制冷剂出口量价齐升' },
     ]
   },
   {
     title: '预期差与困境反转',
     links: [
-      { id: 'i_sec8', label: '生猪养殖周期反转' },
-      { id: 'i_sec9', label: '光伏产能出清' },
-      { id: 'i_sec10', label: '肉牛+原奶周期共振' }
+      { id: 'i_sec8', label: '生猪养殖：周期反转倒计时' },
+      { id: 'i_sec9', label: '光伏：产能出清深水区' },
+      { id: 'i_sec10', label: '肉牛+原奶：牧业大周期反转' },
     ]
   },
   {
-    title: '其他赛道',
+    title: '行业监测表',
     links: [
-      { id: 'i_sec11', label: '人形机器人' },
-      { id: 'i_sec12', label: '金融非银银行' },
-      { id: 'i_sec13', label: '电力设备新能源' },
-      { id: 'i_sec14', label: '大宗商品量价监测' }
+      { id: 'i_sec11', label: '大宗商品量价监测表' },
+      { id: 'i_sec12', label: '产业链周期与估值监测表' },
+      { id: 'i_sec13', label: 'CIO战略配置建议' },
     ]
   },
-  {
-    title: '配置建议',
-    links: [
-      { id: 'i_sec15', label: 'CIO战略配置建议' },
-      { id: 'i_sec16', label: '产业链估值监测表' }
-    ]
-  }
 ];
 
 function renderIndustryNav_0528() {
