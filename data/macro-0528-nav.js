@@ -3,7 +3,29 @@
 // ==========================================
 
 const MACRO_NAV_CONFIG_0528 = [
-  { title: '宏观概览', links: [{ id: 'm_sec1', label: '宏观经济数据' }] }
+  { title: '宏观概览', links: [
+    { id: 'm_sec1', label: '执行摘要' },
+    { id: 'm_sec2', label: '核心宏观判断' }
+  ]},
+  { title: '政策与流动性', links: [
+    { id: 'm_sec3', label: '货币政策分析' },
+    { id: 'm_sec4', label: '财政与产业政策' }
+  ]},
+  { title: '海外与地缘', links: [
+    { id: 'm_sec5', label: '美联储与美伊局势' }
+  ]},
+  { title: '配置建议', links: [
+    { id: 'm_sec6', label: '资产配置策略' },
+    { id: 'm_sec7', label: '行业轮动方向' }
+  ]},
+  { title: '经济数据', links: [
+    { id: 'm_sec8', label: '核心经济数据表' },
+    { id: 'm_sec9', label: '利率与流动性' }
+  ]},
+  { title: '风险与日历', links: [
+    { id: 'm_sec10', label: '宏观风险提示' },
+    { id: 'm_sec11', label: '关键跟踪日历' }
+  ]}
 ];
 
 function renderMacroNav_0528() {
