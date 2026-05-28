@@ -21,7 +21,7 @@ const JISILU_NAV_CONFIG_0528 = [
     title: '情绪与策略',
     links: [
       { id: 'j_sec5', label: '市场情绪观察' },
-      { id: 'j_sec6', label: '下周关注与策略建议' },
+      { id: 'j_sec6', label: '风险提示与策略' },
     ]
   },
 ];
