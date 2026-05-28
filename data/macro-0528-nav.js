@@ -36,17 +36,9 @@ const MACRO_NAV_CONFIG_0528 = [
     ]
   },
   {
-    title: '经济数据',
-    links: [
-      { id: 'm_sec13', label: '通胀与增长数据' },
-      { id: 'm_sec14', label: '利率与金融数据' },
-      { id: 'm_sec15', label: '财政与外汇数据' }
-    ]
-  },
-  {
     title: '重点研报',
     links: [
-      { id: 'm_sec16', label: '重点关注研报清单' }
+      { id: 'm_sec13', label: '重点关注研报清单' }
     ]
   }
 ];

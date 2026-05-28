@@ -6,24 +6,22 @@ const FUTURES_NAV_CONFIG_0528 = [
   {
     title: '行情概览',
     links: [
-      { id: 'f_sec1', label: '主要品种价格监测' },
-      { id: 'f_sec2', label: '板块涨跌排行' },
+      { id: 'f_sec1', label: '市场总览与品种监测' },
     ]
   },
   {
     title: '品种分析',
     links: [
-      { id: 'f_sec3', label: '能源化工' },
-      { id: 'f_sec4', label: '贵金属' },
-      { id: 'f_sec5', label: '有色金属' },
-      { id: 'f_sec6', label: '农产品' },
+      { id: 'f_sec2', label: '能源化工（原油/煤炭）' },
+      { id: 'f_sec3', label: '贵金属与有色' },
+      { id: 'f_sec4', label: '农产品' },
     ]
   },
   {
     title: '策略与风险',
     links: [
-      { id: 'f_sec7', label: '做多/做空机会' },
-      { id: 'f_sec8', label: '风险提示' },
+      { id: 'f_sec5', label: '做多/做空机会' },
+      { id: 'f_sec6', label: '风险提示' },
     ]
   },
 ];

@@ -21,12 +21,12 @@ function renderDecisionContent_0528() {
 
 <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-amber-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">&#x1F504;</span>逻辑一：AI算力硬件通胀链条全面激活</h4>
-  <p class="text-amber-900">英伟达CPO进入量产 + Vera Rubin平台Q3出货 → MLCC单机柜价值量暴增182%、超级电容成标配、金刚石散热规模化商用元年 → 被动元件/散热材料/PCB铜箔全线涨价 → <strong>国产替代厂商（风华高科、江海股份、四方达等）业绩确定性提升</strong></p>
+  <p class="text-amber-900">英伟达CPO进入量产 + Vera Rubin平台Q3出货 &#8594; MLCC单机柜价值量暴增182%、超级电容成标配、金刚石散热规模化商用元年 &#8594; 被动元件/散热材料/PCB铜箔全线涨价 &#8594; <strong>国产替代厂商（风华高科、江海股份、四方达等）业绩确定性提升</strong></p>
 </div>
 
 <div class="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-red-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">&#x1F310;</span>逻辑二：地缘"假停火-真冲突"循环对大宗商品的双向冲击</h4>
-  <p class="text-red-900">美伊冲突反复（美军新打击伊朗 + 特朗普强硬表态）→ 油价日内过山车（先涨1.5%至90美元后又暴跌5%）→ 黄金跌破4400美元（年内跌20%）→ 加密市场爆仓超16万人 → <strong>短期避险资产逻辑被打乱，但中期能源安全+自主可控逻辑未变</strong></p>
+  <p class="text-red-900">美伊冲突反复（美军新打击伊朗 + 特朗普强硬表态）&#8594; 油价日内过山车（先涨1.5%至90美元后又暴跌5%）&#8594; 黄金跌破4400美元（年内跌20%）&#8594; 加密市场爆仓超16万人 &#8594; <strong>短期避险资产逻辑被打乱，但中期能源安全+自主可控逻辑未变</strong></p>
 </div>
 
 <h3 id="d_sec2" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">仓位建议与操作方向</h3>
@@ -59,10 +59,10 @@ function renderDecisionContent_0528() {
 
 <p class="font-bold text-slate-800 mt-4">传导逻辑树：</p>
 <ul class="space-y-3 text-sm text-slate-800">
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>CPO量产</strong> → 光模块/光器件需求放量 → <strong>利好</strong>中际旭创（已突破1.3万亿市值）、新易盛、天孚通信</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>Vera Rubin出货</strong> → MLCC用量60万个/机柜（+30%），价值量+182% → <strong>利好</strong>风华高科（涨停）、三环集团、国瓷材料</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>AI芯片功率密度提升</strong> → 金刚石散热规模化应用元年 → <strong>利好</strong>四方达（20cm涨停）、力量钻石、黄河旋风</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>AIDC供电架构变革</strong> → 超级电容成标配 → <strong>利好</strong>江海股份（连板涨停）、北京科锐</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>CPO量产</strong> &#8594; 光模块/光器件需求放量 &#8594; <strong>利好</strong>中际旭创（已突破1.3万亿市值）、新易盛、天孚通信</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>Vera Rubin出货</strong> &#8594; MLCC用量60万个/机柜（+30%），价值量+182% &#8594; <strong>利好</strong>风华高科（涨停）、三环集团、国瓷材料</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>AI芯片功率密度提升</strong> &#8594; 金刚石散热规模化应用元年 &#8594; <strong>利好</strong>四方达（20cm涨停）、力量钻石、黄河旋风</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>AIDC供电架构变革</strong> &#8594; 超级电容成标配 &#8594; <strong>利好</strong>江海股份（连板涨停）、北京科锐</span></li>
 </ul>
 
 <p class="font-bold text-slate-800 mt-4">后续验证点：</p>
@@ -100,10 +100,10 @@ function renderDecisionContent_0528() {
 
 <p class="font-bold text-slate-800 mt-4">传导逻辑树：</p>
 <ul class="space-y-3 text-sm text-slate-800">
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>美伊冲突升级</strong> → 霍尔木兹海峡通行风险上升 → 短期利好原油/航运（但今日被打脸，市场更信"停火叙事"）</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>俄计划将石油预算门槛降至50美元/桶</strong> → 俄罗斯增加产量供应 → <strong>利空</strong>油价中长期中枢</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>油价大跌</strong> → 通胀压力缓解预期 → 美联储降息窗口打开预期 → <strong>利好</strong>成长股估值（解释了今日科技股暴涨）</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>黄金跌破4400（年内跌20%）</strong> → 短期避险逻辑失效，但全球央行购金+去美元化逻辑未变 → 回调或为中期布局窗口</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>美伊冲突升级</strong> &#8594; 霍尔木兹海峡通行风险上升 &#8594; 短期利好原油/航运（但今日被打脸，市场更信"停火叙事"）</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>俄计划将石油预算门槛降至50美元/桶</strong> &#8594; 俄罗斯增加产量供应 &#8594; <strong>利空</strong>油价中长期中枢</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>油价大跌</strong> &#8594; 通胀压力缓解预期 &#8594; 美联储降息窗口打开预期 &#8594; <strong>利好</strong>成长股估值（解释了今日科技股暴涨）</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>黄金跌破4400（年内跌20%）</strong> &#8594; 短期避险逻辑失效，但全球央行购金+去美元化逻辑未变 &#8594; 回调或为中期布局窗口</span></li>
 </ul>
 
 <p class="font-bold text-slate-800 mt-4">映射标的池：</p>
@@ -133,9 +133,9 @@ function renderDecisionContent_0528() {
 
 <p class="font-bold text-slate-800 mt-4">传导逻辑树：</p>
 <ul class="space-y-3 text-sm text-slate-800">
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>长鑫扩产</strong> → 国产DRAM设备/材料需求大增 → <strong>利好</strong>拓荆科技、华海清科、盛美上海</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>存储缺货延续至2027年</strong> → 国产替代加速 → <strong>利好</strong>兆易创新（与长鑫持股1.8%+采购关系）</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>存储三巨头万亿美元市值</strong> → 全球半导体超级周期确认 → 整个半导体产业链估值上修</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>长鑫扩产</strong> &#8594; 国产DRAM设备/材料需求大增 &#8594; <strong>利好</strong>拓荆科技、华海清科、盛美上海</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>存储缺货延续至2027年</strong> &#8594; 国产替代加速 &#8594; <strong>利好</strong>兆易创新（与长鑫持股1.8%+采购关系）</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>存储三巨头万亿美元市值</strong> &#8594; 全球半导体超级周期确认 &#8594; 整个半导体产业链估值上修</span></li>
 </ul>
 
 <p class="font-bold text-slate-800 mt-4">后续验证点：</p>
@@ -223,26 +223,26 @@ function renderDecisionContent_0528() {
 <h3 id="d_sec10" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">四大传导链条</h3>
 
 <div class="bg-gradient-to-r from-indigo-50 to-violet-50 border-l-4 border-indigo-500 p-5 my-5 rounded-r-xl">
-  <h4 class="text-indigo-800 font-bold mb-2 flex items-center"><span class="text-xl mr-2">&#x1F517;</span>传导链1：AI算力 → 被动元件 → 材料设备 → 检测</h4>
-  <p class="text-indigo-900">AI芯片功率密度提升 → 散热需求暴增 → 金刚石/铜基散热材料 → 同时MLCC用量激增 → MLCC检测设备需求 → 国产检测设备替代</p>
+  <h4 class="text-indigo-800 font-bold mb-2 flex items-center"><span class="text-xl mr-2">&#x1F517;</span>传导链1：AI算力 &#8594; 被动元件 &#8594; 材料设备 &#8594; 检测</h4>
+  <p class="text-indigo-900">AI芯片功率密度提升 &#8594; 散热需求暴增 &#8594; 金刚石/铜基散热材料 &#8594; 同时MLCC用量激增 &#8594; MLCC检测设备需求 &#8594; 国产检测设备替代</p>
   <p class="text-indigo-900 mt-2 font-semibold">二阶受益：MLCC检测设备厂商（如精测电子）、散热材料上游CVD设备厂商</p>
 </div>
 
 <div class="bg-gradient-to-r from-orange-50 to-amber-50 border-l-4 border-orange-500 p-5 my-5 rounded-r-xl">
-  <h4 class="text-orange-800 font-bold mb-2 flex items-center"><span class="text-xl mr-2">&#x1F517;</span>传导链2：美伊冲突 → 油价波动 → 通胀预期 → 美联储政策 → 全球资产重定价</h4>
-  <p class="text-orange-900">油价暴跌 → PCE通胀压力缓解 → 美联储降息窗口打开 → 美债收益率下行 → 成长股估值修复 → A股科技板块受益</p>
+  <h4 class="text-orange-800 font-bold mb-2 flex items-center"><span class="text-xl mr-2">&#x1F517;</span>传导链2：美伊冲突 &#8594; 油价波动 &#8594; 通胀预期 &#8594; 美联储政策 &#8594; 全球资产重定价</h4>
+  <p class="text-orange-900">油价暴跌 &#8594; PCE通胀压力缓解 &#8594; 美联储降息窗口打开 &#8594; 美债收益率下行 &#8594; 成长股估值修复 &#8594; A股科技板块受益</p>
   <p class="text-orange-900 mt-2 font-semibold">二阶受益：港股科技（腾讯虽创新低但估值已极具吸引力）、新兴市场ETF</p>
 </div>
 
 <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-5 my-5 rounded-r-xl">
-  <h4 class="text-emerald-800 font-bold mb-2 flex items-center"><span class="text-xl mr-2">&#x1F517;</span>传导链3：长鑫扩产 → 国产设备/材料放量 → 半导体设备国产替代加速 → 上游零部件/洁净室</h4>
-  <p class="text-emerald-900">长鑫资本开支激增 → 设备国产化率提升 → 洁净室需求扩大 → 上游耗材（抛光液、光刻胶、特气）受益</p>
+  <h4 class="text-emerald-800 font-bold mb-2 flex items-center"><span class="text-xl mr-2">&#x1F517;</span>传导链3：长鑫扩产 &#8594; 国产设备/材料放量 &#8594; 半导体设备国产替代加速 &#8594; 上游零部件/洁净室</h4>
+  <p class="text-emerald-900">长鑫资本开支激增 &#8594; 设备国产化率提升 &#8594; 洁净室需求扩大 &#8594; 上游耗材（抛光液、光刻胶、特气）受益</p>
   <p class="text-emerald-900 mt-2 font-semibold">二阶受益：南大光电（ArF光刻胶）、鼎龙股份（CMP抛光液）、中船特气（六氟化钨）</p>
 </div>
 
 <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
-  <h4 class="text-blue-800 font-bold mb-2 flex items-center"><span class="text-xl mr-2">&#x1F517;</span>传导链4：城市更新十五五规划 → 建材/建筑设备 → 智能家居/电梯</h4>
-  <p class="text-blue-900">城市更新投资放量 → 建材需求回升 → 既有建筑改造 → 电梯更新+智能家居升级</p>
+  <h4 class="text-blue-800 font-bold mb-2 flex items-center"><span class="text-xl mr-2">&#x1F517;</span>传导链4：城市更新十五五规划 &#8594; 建材/建筑设备 &#8594; 智能家居/电梯</h4>
+  <p class="text-blue-900">城市更新投资放量 &#8594; 建材需求回升 &#8594; 既有建筑改造 &#8594; 电梯更新+智能家居升级</p>
   <p class="text-blue-900 mt-2 font-semibold">二阶受益：电梯产业链、建筑信息化软件企业</p>
 </div>
 

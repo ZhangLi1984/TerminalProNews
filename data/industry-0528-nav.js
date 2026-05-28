@@ -7,34 +7,47 @@ const INDUSTRY_NAV_CONFIG_0528 = [
   {
     title: '核心高胜率赛道',
     links: [
-      { id: 'i_sec1', label: 'AI算力与半导体（合并版）' },
-      { id: 'i_sec2', label: '创新药与医疗器械（合并版）' },
-      { id: 'i_sec3', label: '智能驾驶与自动驾驶（合并版）' },
+      { id: 'i_sec1', label: 'AI算力基础设施（合并版）' },
+      { id: 'i_sec2', label: '创新药/ADC（合并版）' },
+      { id: 'i_sec3', label: '制冷剂（合并版）' },
+      { id: 'i_sec4', label: '半导体/华为韬定律（合并版）' },
     ]
   },
   {
     title: '跨赛道暗线与二阶博弈',
     links: [
-      { id: 'i_sec4', label: '暗线一：AI算力→PCB材料→设备替代' },
-      { id: 'i_sec5', label: '暗线二：煤炭供给收缩→煤化工' },
-      { id: 'i_sec6', label: '暗线三：半导体硅片触底反转' },
-      { id: 'i_sec7', label: '暗线四：制冷剂出口量价齐升' },
+      { id: 'i_sec5', label: 'AI算力→AIDC缺电→能源链' },
+      { id: 'i_sec6', label: '山西矿难→焦煤收缩→煤化工' },
+      { id: 'i_sec7', label: 'Vera Rubin→PCB→钻针替代' },
+      { id: 'i_sec8', label: 'FSD入华→智驾军备竞赛' },
+      { id: 'i_sec9', label: '硫磺中断→镍成本飙升' },
+      { id: 'i_sec10', label: '光模块→磷化铟→铟重估' },
     ]
   },
   {
     title: '预期差与困境反转',
     links: [
-      { id: 'i_sec8', label: '生猪养殖：周期反转倒计时' },
-      { id: 'i_sec9', label: '光伏：产能出清深水区' },
-      { id: 'i_sec10', label: '肉牛+原奶：牧业大周期反转' },
+      { id: 'i_sec11', label: '生猪养殖：周期底部' },
+      { id: 'i_sec12', label: '肉牛/原奶：共振反转' },
+      { id: 'i_sec13', label: 'CXO：底部修复' },
+      { id: 'i_sec14', label: '纯碱：产能出清' },
+      { id: 'i_sec15', label: '垃圾焚烧→算电协同' },
     ]
   },
   {
-    title: '行业监测表',
+    title: '确定性与景气延续',
     links: [
-      { id: 'i_sec11', label: '大宗商品量价监测表' },
-      { id: 'i_sec12', label: '产业链周期与估值监测表' },
-      { id: 'i_sec13', label: 'CIO战略配置建议' },
+      { id: 'i_sec16', label: '家电出口链' },
+      { id: 'i_sec17', label: '国货美妆/快递/啤酒' },
+    ]
+  },
+  {
+    title: '监测表与配置',
+    links: [
+      { id: 'i_sec18', label: '大宗商品量价监测表' },
+      { id: 'i_sec19', label: '产业链周期与估值监测' },
+      { id: 'i_sec20', label: 'CIO超配/标配/低配建议' },
+      { id: 'i_sec21', label: '行业配置建议与权重' },
     ]
   },
 ];
