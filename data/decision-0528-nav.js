@@ -4,27 +4,40 @@
 
 const DECISION_NAV_CONFIG_0528 = [
   {
-    title: '市场总览',
+    title: '核心摘要',
     links: [
-      { id: 'd_sec1', label: 'A股市场核心数据' },
-      { id: 'd_sec2', label: '全球市场动态' },
-      { id: 'd_sec3', label: 'IPO与新股动态' },
+      { id: 'd_sec1', label: '全局叙事与核心主线' },
+      { id: 'd_sec2', label: '仓位建议与操作方向' },
     ]
   },
   {
-    title: '政策与地缘',
+    title: '重大事件推演',
     links: [
-      { id: 'd_sec4', label: '政策要闻' },
-      { id: 'd_sec5', label: '美伊局势与油价' },
-      { id: 'd_sec6', label: '监管与制度改革' },
+      { id: 'd_sec3', label: 'AI硬件通胀链全面爆发' },
+      { id: 'd_sec4', label: '美伊冲突与能源博弈' },
+      { id: 'd_sec5', label: '长鑫IPO+存储超级周期' },
     ]
   },
   {
-    title: '行业信号',
+    title: '行业信号追踪',
     links: [
-      { id: 'd_sec7', label: '科技/AI/半导体' },
-      { id: 'd_sec8', label: '消费/医药/银行' },
-      { id: 'd_sec9', label: '资金面与市场情绪' },
+      { id: 'd_sec6', label: 'AI/半导体/算力硬件' },
+      { id: 'd_sec7', label: '新能源/储能' },
+      { id: 'd_sec8', label: '政策/宏观/金融' },
+    ]
+  },
+  {
+    title: '赛道与传导',
+    links: [
+      { id: 'd_sec9', label: '热点赛道追踪' },
+      { id: 'd_sec10', label: '跨赛道传导分析' },
+    ]
+  },
+  {
+    title: '明日关注与风控',
+    links: [
+      { id: 'd_sec11', label: '明日重要事件' },
+      { id: 'd_sec12', label: '风险提示与证伪区' },
     ]
   },
 ];
