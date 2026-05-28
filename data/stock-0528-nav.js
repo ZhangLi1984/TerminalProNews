@@ -4,17 +4,26 @@
 
 const STOCK_NAV_CONFIG_0528 = [
   {
-    title: 'S级与A级标的',
+    title: 'S 级标的',
     links: [
-      { id: 's_sec1', label: 'S级·核心推荐标的' },
-      { id: 's_sec2', label: 'A级·重点推荐标的' },
+      { id: 's_sec1', label: 'S 级·中际旭创（300308）' },
+      { id: 's_sec2', label: 'S 级·天赐材料（002709）' },
+    ]
+  },
+  {
+    title: 'A 级标的',
+    links: [
+      { id: 's_sec3', label: 'A 级·新易盛（300502）' },
+      { id: 's_sec4', label: 'A 级·大金重工（002487）' },
+      { id: 's_sec5', label: 'A 级·生益科技（600183）' },
+      { id: 's_sec6', label: 'A 级·科达利（002850）' },
     ]
   },
   {
     title: '评级汇总',
     links: [
-      { id: 's_sec3', label: '全部评级汇总表' },
-      { id: 's_sec4', label: '行业分布统计' },
+      { id: 's_sec7', label: '完整评级汇总表（40 只）' },
+      { id: 's_sec8', label: '评估维度说明' },
     ]
   },
 ];
