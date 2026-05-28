@@ -4,33 +4,51 @@
 
 const MACRO_NAV_CONFIG_0528 = [
   {
-    title: '宏观研判',
+    title: '宏观总览',
     links: [
-      { id: 'm_sec1', label: '核心宏观判断与周期定位' },
-      { id: 'm_sec2', label: '货币政策与流动性' },
+      { id: 'm_sec1', label: '核心指标速览' },
+      { id: 'm_sec2', label: '数据特征：K型分化' }
     ]
   },
   {
-    title: '财政与海外',
+    title: '核心观点',
     links: [
-      { id: 'm_sec3', label: '财政政策与产业政策' },
-      { id: 'm_sec4', label: '海外宏观与地缘政治' },
+      { id: 'm_sec3', label: '十五五开局超预期' },
+      { id: 'm_sec4', label: '美伊冲突与二次通胀' },
+      { id: 'm_sec5', label: '财政结构性转向' },
+      { id: 'm_sec6', label: 'AI产业与安全资产' },
+      { id: 'm_sec7', label: '信用周期与债市' }
     ]
   },
   {
-    title: '资产配置',
+    title: '预期差分析',
     links: [
-      { id: 'm_sec5', label: '资产配置建议（核心）' },
-      { id: 'm_sec6', label: '行业轮动与宏观映射' },
+      { id: 'm_sec8', label: '关键预期差识别' },
+      { id: 'm_sec9', label: '核心矛盾点' }
     ]
   },
   {
-    title: '风险与日历',
+    title: '买方策略',
     links: [
-      { id: 'm_sec7', label: '宏观风险提示' },
-      { id: 'm_sec8', label: '关键跟踪日历' },
+      { id: 'm_sec10', label: '资产配置方向' },
+      { id: 'm_sec11', label: '行业布局建议' },
+      { id: 'm_sec12', label: '风险提示与证伪指标' }
     ]
   },
+  {
+    title: '经济数据',
+    links: [
+      { id: 'm_sec13', label: '通胀与增长数据' },
+      { id: 'm_sec14', label: '利率与金融数据' },
+      { id: 'm_sec15', label: '财政与外汇数据' }
+    ]
+  },
+  {
+    title: '重点研报',
+    links: [
+      { id: 'm_sec16', label: '重点关注研报清单' }
+    ]
+  }
 ];
 
 function renderMacroNav_0528() {
