@@ -9,36 +9,45 @@ const JISILU_NAV_CONFIG_0531 = [
       { id: 'j_sec1', label: '闻泰转债风暴' },
       { id: 'j_sec2', label: 'AI泡沫论' },
       { id: 'j_sec3', label: '老登股vs小登股' },
+      { id: 'j_sec4', label: '国家队减持' },
+      { id: 'j_sec5', label: '北交所打新' },
+      { id: 'j_sec6', label: '长鑫科技IPO' }
     ]
   },
   {
-    title: '方法论与标的',
+    title: '方法论',
     links: [
-      { id: 'j_sec4', label: '投资方法论精粹' },
-      { id: 'j_sec5', label: '热议标的清单' },
+      { id: 'j_sec7', label: '投资方法论精粹' }
     ]
   },
   {
-    title: '情绪与策略',
+    title: '热议标的',
     links: [
-      { id: 'j_sec6', label: '市场情绪观察' },
-      { id: 'j_sec7', label: '风险提示' },
+      { id: 'j_sec8', label: '热议标的清单' }
     ]
   },
+  {
+    title: '情绪与风险',
+    links: [
+      { id: 'j_sec9', label: '市场情绪观察' },
+      { id: 'j_sec10', label: '风险提示' },
+      { id: 'j_sec11', label: '核心人物追踪' }
+    ]
+  }
 ];
 
 function renderJisiluNav_0531() {
   const container = document.getElementById('jisilu-nav-content');
   if (!container) return;
-  container.innerHTML = JISILU_NAV_CONFIG_0531.map(cat => `
-    <div class="mb-4">
-      <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 px-3">${cat.title}</div>
-      <div class="space-y-0.5">
-        ${cat.links.map(link => `
-          <button class="nav-btn w-full text-left text-sm px-3 py-2 rounded-lg transition-all flex items-center group"
-                  data-section="${link.id}" onclick="updateActiveNav('${link.id}')">
-            <div class="w-1.5 h-1.5 rounded-full bg-transparent mr-2 group-hover:bg-red-500 transition-colors"></div>
-            <span class="text-slate-700 group-hover:text-slate-900">${link.label}</span>
+  container.innerHTML = JISILU_NAV_CONFIG_0531.map(group => `
+    <div class="mb-5">
+      <h3 class="text-xs font-black text-slate-500 uppercase tracking-wider mb-2">${group.title}</h3>
+      <div class="flex flex-wrap gap-2">
+        ${group.links.map(link => `
+          <button onclick="window.scrollTo({top: document.getElementById('${link.id}').offsetTop - 100, behavior: 'smooth'}); updateActiveNav('${link.id}')"
+            class="nav-btn px-3 py-1.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 transition-all border border-slate-200"
+            data-section="${link.id}">
+            ${link.label}
           </button>
         `).join('')}
       </div>

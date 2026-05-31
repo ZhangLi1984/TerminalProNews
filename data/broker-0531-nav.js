@@ -1,43 +1,42 @@
 // ==========================================
-// 投资决策模块 - 导航配置 (2026-05-31)
+// 券商晨报模块 - 导航配置 (2026-05-31)
 // ==========================================
 
-const DECISION_NAV_CONFIG_0531 = [
+const BROKER_NAV_CONFIG_0531 = [
   {
-    title: '核心摘要',
+    title: '市场共识',
     links: [
-      { id: 'd_sec1', label: '全局叙事与核心主线' },
-      { id: 'd_sec2', label: '仓位建议与操作方向' }
+      { id: 'b_sec1', label: '整体情绪概览' },
+      { id: 'b_sec2', label: '宏观背景共识' }
     ]
   },
   {
-    title: 'AI算力链',
+    title: '行业推荐',
     links: [
-      { id: 'd_sec3', label: '英伟达业绩超预期' },
-      { id: 'd_sec4', label: '光模块与PCB材料' }
+      { id: 'b_sec3', label: '行业推荐热度排名' },
+      { id: 'b_sec4', label: '各券商核心观点' }
     ]
   },
   {
-    title: '周期与消费',
+    title: '金股组合',
     links: [
-      { id: 'd_sec5', label: '生猪养殖底部' },
-      { id: 'd_sec6', label: '焦煤供给收缩' },
-      { id: 'd_sec7', label: '消费板块筑底' }
+      { id: 'b_sec5', label: '共识金股 TOP 10' },
+      { id: 'b_sec6', label: '各券商金股汇总' }
     ]
   },
   {
-    title: '风险与展望',
+    title: '买方策略',
     links: [
-      { id: 'd_sec8', label: '风险提示' },
-      { id: 'd_sec9', label: '本周催化事件' }
+      { id: 'b_sec7', label: '预期差与二阶博弈' },
+      { id: 'b_sec8', label: '配置建议与风险' }
     ]
   }
 ];
 
-function renderDecisionNav_0531() {
-  const container = document.getElementById('decision-nav-content');
+function renderBrokerNav_0531() {
+  const container = document.getElementById('broker-nav-content');
   if (!container) return;
-  container.innerHTML = DECISION_NAV_CONFIG_0531.map(group => `
+  container.innerHTML = BROKER_NAV_CONFIG_0531.map(group => `
     <div class="mb-5">
       <h3 class="text-xs font-black text-slate-500 uppercase tracking-wider mb-2">${group.title}</h3>
       <div class="flex flex-wrap gap-2">
