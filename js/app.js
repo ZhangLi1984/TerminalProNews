@@ -181,6 +181,9 @@ function renderAllContent() {
 
   if (date === '2026-05-31') {
     console.log('[renderAllContent] 渲染 5 月 31 日内容');
+    if (typeof renderDecisionNav_0531 === 'function') renderDecisionNav_0531();
+    const decisionContentEl0531 = document.getElementById('decision-content');
+    if (decisionContentEl0531 && typeof renderDecisionContent_0531 === 'function') decisionContentEl0531.innerHTML = renderDecisionContent_0531();
     if (typeof renderMacroNav_0531 === 'function') renderMacroNav_0531();
     const macroContentEl0531 = document.getElementById('macro-content');
     if (macroContentEl0531 && typeof renderMacroContent_0531 === 'function') macroContentEl0531.innerHTML = renderMacroContent_0531();
