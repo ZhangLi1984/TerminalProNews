@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-05-31',
+  currentDate: '2026-06-01',
   clockInterval: null
 };
 
@@ -178,6 +178,13 @@ function renderAllContent() {
 
 
 
+
+  if (date === '2026-06-01') {
+    console.log('[renderAllContent] 渲染 6 月 1 日内容');
+    if (typeof renderMacroNav_0601 === 'function') renderMacroNav_0601();
+    const macroContentEl0601 = document.getElementById('macro-content');
+    if (macroContentEl0601 && typeof renderMacroContent_0601 === 'function') macroContentEl0601.innerHTML = renderMacroContent_0601();
+  } else
 
   if (date === '2026-05-31') {
     console.log('[renderAllContent] 渲染 5 月 31 日内容');
