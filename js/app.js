@@ -181,9 +181,18 @@ function renderAllContent() {
 
   if (date === '2026-06-01') {
     console.log('[renderAllContent] 渲染 6 月 1 日内容');
+    if (typeof renderDecisionNav_0601 === 'function') renderDecisionNav_0601();
+    const decisionContentEl0601 = document.getElementById('decision-content');
+    if (decisionContentEl0601 && typeof renderDecisionContent_0601 === 'function') decisionContentEl0601.innerHTML = renderDecisionContent_0601();
+    if (typeof renderIndustryNav_0601 === 'function') renderIndustryNav_0601();
+    const industryContentEl0601 = document.getElementById('industry-content');
+    if (industryContentEl0601 && typeof renderIndustryContent_0601 === 'function') industryContentEl0601.innerHTML = renderIndustryContent_0601();
     if (typeof renderMacroNav_0601 === 'function') renderMacroNav_0601();
     const macroContentEl0601 = document.getElementById('macro-content');
     if (macroContentEl0601 && typeof renderMacroContent_0601 === 'function') macroContentEl0601.innerHTML = renderMacroContent_0601();
+    if (typeof renderBrokerNav_0601 === 'function') renderBrokerNav_0601();
+    const brokerContentEl0601 = document.getElementById('broker-content');
+    if (brokerContentEl0601 && typeof renderBrokerContent_0601 === 'function') brokerContentEl0601.innerHTML = renderBrokerContent_0601();
   } else
 
   if (date === '2026-05-31') {
