@@ -179,6 +179,13 @@ function renderAllContent() {
 
 
 
+  if (date === '2026-06-02') {
+    console.log('[renderAllContent] 渲染 6 月 2 日内容');
+    if (typeof renderJisiluNav_0602 === 'function') renderJisiluNav_0602();
+    const jisiluContentEl0602 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0602 && typeof renderJisiluContent_0602 === 'function') jisiluContentEl0602.innerHTML = renderJisiluContent_0602();
+  } else
+
   if (date === '2026-06-01') {
     console.log('[renderAllContent] 渲染 6 月 1 日内容');
     if (typeof renderDecisionNav_0601 === 'function') renderDecisionNav_0601();
