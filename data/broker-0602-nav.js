@@ -12,32 +12,36 @@ const BROKER_NAV_CONFIG_0602 = [
     ]
   },
   {
-    title: '行业共识',
+    title: '行业推荐',
     links: [
-      { id: 'b_sec4', label: '行业推荐热度榜 TOP 15' },
-      { id: 'b_sec5', label: '热门赛道逻辑深度梳理' }
+      { id: 'b_sec4', label: '行业推荐热度榜' },
+      { id: 'b_sec5', label: '热门赛道逻辑' }
     ]
   },
   {
     title: '金股共识',
     links: [
-      { id: 'b_sec6', label: '多券商共同推荐个股' },
-      { id: 'b_sec7', label: '各券商金股组合' },
-      { id: 'b_sec8', label: '热门个股推荐汇总' }
+      { id: 'b_sec6', label: '多券商推荐个股' },
+      { id: 'b_sec7', label: '金股组合汇总' },
+      { id: 'b_sec8', label: '热门个股汇总' }
     ]
   },
   {
-    title: '券商摘要',
+    title: '券商观点',
     links: [
-      { id: 'b_sec9', label: '五大核心券商观点速览' }
+      { id: 'b_sec9', label: '开源证券' },
+      { id: 'b_sec10', label: '华源证券' },
+      { id: 'b_sec11', label: '东吴证券' },
+      { id: 'b_sec12', label: '中银证券' },
+      { id: 'b_sec13', label: '国信证券' }
     ]
   },
   {
-    title: '买方操作',
+    title: '操作建议',
     links: [
-      { id: 'b_sec10', label: '基于共识度的操作建议' },
-      { id: 'b_sec11', label: '风险提示' },
-      { id: 'b_sec12', label: '6月关键时间节点' }
+      { id: 'b_sec14', label: '买方操作建议' },
+      { id: 'b_sec15', label: '风险提示' },
+      { id: 'b_sec16', label: '6月关键节点' }
     ]
   }
 ];

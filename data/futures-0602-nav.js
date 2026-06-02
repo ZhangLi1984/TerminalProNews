@@ -4,9 +4,20 @@
 
 const FUTURES_NAV_CONFIG_0602 = [
   {
-    title: '今日数据',
+    title: '品种概览',
     links: [
-      { id: 'f_sec1', label: '暂无数据' }
+      { id: 'f_sec1', label: '板块行情' },
+      { id: 'f_sec2', label: '有色金属' },
+      { id: 'f_sec3', label: '能源化工' },
+      { id: 'f_sec4', label: '农产品' },
+      { id: 'f_sec5', label: '黑色金属' }
+    ]
+  },
+  {
+    title: '策略分析',
+    links: [
+      { id: 'f_sec6', label: '交易机会' },
+      { id: 'f_sec7', label: '风险提示' }
     ]
   }
 ];

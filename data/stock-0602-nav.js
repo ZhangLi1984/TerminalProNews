@@ -4,35 +4,41 @@
 
 const STOCK_NAV_CONFIG_0602 = [
   {
-    title: '核心标的',
+    title: '核心摘要',
     links: [
-      { id: 's_sec1', label: 'S级·天孚通信' },
-      { id: 's_sec2', label: 'S级·比亚迪' },
-      { id: 's_sec3', label: 'S级·绿联科技' },
-      { id: 's_sec4', label: 'S级·中控技术' }
+      { id: 's_sec1', label: '研报总览' }
     ]
   },
   {
-    title: '重点标的',
+    title: 'S级标的',
     links: [
-      { id: 'a_sec1', label: 'A级·天娱数科' },
-      { id: 'a_sec2', label: 'A级·南大光电' },
-      { id: 'a_sec3', label: 'A级·大金重工' },
-      { id: 'a_sec4', label: 'A级·联影医疗' },
-      { id: 'a_sec5', label: 'A级·泽璟制药' },
-      { id: 'a_sec6', label: 'A级·仕佳光子' },
-      { id: 'a_sec7', label: 'A级·锐捷网络' },
-      { id: 'a_sec8', label: 'A级·巨化股份' },
-      { id: 'a_sec9', label: 'A级·长江电力' },
-      { id: 'a_sec10', label: 'A级·阳光电源' },
-      { id: 'a_sec11', label: 'A级·拓荆科技' }
+      { id: 's_sec2', label: '天孚通信' },
+      { id: 's_sec3', label: '比亚迪' },
+      { id: 's_sec4', label: '绿联科技' },
+      { id: 's_sec5', label: '中控技术' }
     ]
   },
   {
-    title: '汇总数据',
+    title: 'A级标的',
     links: [
-      { id: 's_sec_summary', label: '评级汇总表' },
-      { id: 's_sec_system', label: '评级体系说明' }
+      { id: 's_sec6', label: '天娱数科/南大光电' },
+      { id: 's_sec7', label: '大金重工/联影医疗' },
+      { id: 's_sec8', label: '泽璟制药/绿联科技' },
+      { id: 's_sec9', label: '仕佳光子/锐捷网络' },
+      { id: 's_sec10', label: '巨化股份/长江电力' },
+      { id: 's_sec11', label: '阳光电源/拓荆科技' }
+    ]
+  },
+  {
+    title: '评级汇总',
+    links: [
+      { id: 's_sec12', label: '完整评级汇总表' }
+    ]
+  },
+  {
+    title: '评级体系',
+    links: [
+      { id: 's_sec13', label: '评分标准说明' }
     ]
   }
 ];
