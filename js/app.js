@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-06-02',
+  currentDate: '2026-06-03',
   clockInterval: null
 };
 
@@ -178,6 +178,31 @@ function renderAllContent() {
 
 
 
+
+  if (date === '2026-06-03') {
+    console.log('[renderAllContent] 渲染 6 月 3 日内容');
+    if (typeof renderDecisionNav_0603 === 'function') renderDecisionNav_0603();
+    const decisionContentEl0603 = document.getElementById('decision-content');
+    if (decisionContentEl0603 && typeof renderDecisionContent_0603 === 'function') decisionContentEl0603.innerHTML = renderDecisionContent_0603();
+    if (typeof renderIndustryNav_0603 === 'function') renderIndustryNav_0603();
+    const industryContentEl0603 = document.getElementById('industry-content');
+    if (industryContentEl0603 && typeof renderIndustryContent_0603 === 'function') industryContentEl0603.innerHTML = renderIndustryContent_0603();
+    if (typeof renderMacroNav_0603 === 'function') renderMacroNav_0603();
+    const macroContentEl0603 = document.getElementById('macro-content');
+    if (macroContentEl0603 && typeof renderMacroContent_0603 === 'function') macroContentEl0603.innerHTML = renderMacroContent_0603();
+    if (typeof renderBrokerNav_0603 === 'function') renderBrokerNav_0603();
+    const brokerContentEl0603 = document.getElementById('broker-content');
+    if (brokerContentEl0603 && typeof renderBrokerContent_0603 === 'function') brokerContentEl0603.innerHTML = renderBrokerContent_0603();
+    if (typeof renderStockNav_0603 === 'function') renderStockNav_0603();
+    const stockContentEl0603 = document.getElementById('stock-content');
+    if (stockContentEl0603 && typeof renderStockContent_0603 === 'function') stockContentEl0603.innerHTML = renderStockContent_0603();
+    if (typeof renderJisiluNav_0603 === 'function') renderJisiluNav_0603();
+    const jisiluContentEl0603 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0603 && typeof renderJisiluContent_0603 === 'function') jisiluContentEl0603.innerHTML = renderJisiluContent_0603();
+    if (typeof renderFuturesNav_0603 === 'function') renderFuturesNav_0603();
+    const futuresContentEl0603 = document.getElementById('futures-content');
+    if (futuresContentEl0603 && typeof renderFuturesContent_0603 === 'function') futuresContentEl0603.innerHTML = renderFuturesContent_0603();
+  } else
 
   if (date === '2026-06-02') {
     console.log('[renderAllContent] 渲染 6 月 2 日内容');
