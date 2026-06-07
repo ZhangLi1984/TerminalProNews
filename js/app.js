@@ -187,6 +187,9 @@ function renderAllContent() {
     if (typeof renderIndustryNav_0607 === 'function') renderIndustryNav_0607();
     const industryContentEl0607 = document.getElementById('industry-content');
     if (industryContentEl0607 && typeof renderIndustryContent_0607 === 'function') industryContentEl0607.innerHTML = renderIndustryContent_0607();
+    if (typeof renderMacroNav_0607 === 'function') renderMacroNav_0607();
+    const macroContentEl0607 = document.getElementById('macro-content');
+    if (macroContentEl0607 && typeof renderMacroContent_0607 === 'function') macroContentEl0607.innerHTML = renderMacroContent_0607();
   } else
 
 
