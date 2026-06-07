@@ -193,6 +193,9 @@ function renderAllContent() {
     if (typeof renderStockNav_0607 === 'function') renderStockNav_0607();
     const stockContentEl0607 = document.getElementById('stock-content');
     if (stockContentEl0607 && typeof renderStockContent_0607 === 'function') stockContentEl0607.innerHTML = renderStockContent_0607();
+    if (typeof renderJisiluNav_0607 === 'function') renderJisiluNav_0607();
+    const jisiluContentEl0607 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0607 && typeof renderJisiluContent_0607 === 'function') jisiluContentEl0607.innerHTML = renderJisiluContent_0607();
   } else
 
 
