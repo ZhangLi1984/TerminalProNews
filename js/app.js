@@ -190,6 +190,9 @@ function renderAllContent() {
     if (typeof renderMacroNav_0607 === 'function') renderMacroNav_0607();
     const macroContentEl0607 = document.getElementById('macro-content');
     if (macroContentEl0607 && typeof renderMacroContent_0607 === 'function') macroContentEl0607.innerHTML = renderMacroContent_0607();
+    if (typeof renderStockNav_0607 === 'function') renderStockNav_0607();
+    const stockContentEl0607 = document.getElementById('stock-content');
+    if (stockContentEl0607 && typeof renderStockContent_0607 === 'function') stockContentEl0607.innerHTML = renderStockContent_0607();
   } else
 
 
