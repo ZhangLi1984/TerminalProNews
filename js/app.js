@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-06-04',
+  currentDate: '2026-06-07',
   clockInterval: null
 };
 
@@ -177,6 +177,17 @@ function renderAllContent() {
 
 
 
+
+
+  if (date === '2026-06-07') {
+    console.log('[renderAllContent] 渲染 6 月 7 日内容');
+    if (typeof renderDecisionNav_0607 === 'function') renderDecisionNav_0607();
+    const decisionContentEl0607 = document.getElementById('decision-content');
+    if (decisionContentEl0607 && typeof renderDecisionContent_0607 === 'function') decisionContentEl0607.innerHTML = renderDecisionContent_0607();
+    if (typeof renderIndustryNav_0607 === 'function') renderIndustryNav_0607();
+    const industryContentEl0607 = document.getElementById('industry-content');
+    if (industryContentEl0607 && typeof renderIndustryContent_0607 === 'function') industryContentEl0607.innerHTML = renderIndustryContent_0607();
+  } else
 
 
   if (date === '2026-06-04') {
