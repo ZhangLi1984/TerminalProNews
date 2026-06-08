@@ -187,6 +187,9 @@ function renderAllContent() {
     if (typeof renderBrokerNav_0609 === 'function') renderBrokerNav_0609();
     const brokerContentEl0609 = document.getElementById('broker-content');
     if (brokerContentEl0609 && typeof renderBrokerContent_0609 === 'function') brokerContentEl0609.innerHTML = renderBrokerContent_0609();
+    if (typeof renderJisiluNav_0609 === 'function') renderJisiluNav_0609();
+    const jisiluContentEl0609 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0609 && typeof renderJisiluContent_0609 === 'function') jisiluContentEl0609.innerHTML = renderJisiluContent_0609();
   } else
 
   if (date === '2026-06-07') {
