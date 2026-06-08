@@ -8,7 +8,7 @@
 const AppState = {
   activeTab: 'decision',
   activeSection: 'sec1',
-  currentDate: '2026-06-07',
+  currentDate: '2026-06-09',
   clockInterval: null
 };
 
@@ -178,6 +178,13 @@ function renderAllContent() {
 
 
 
+
+  if (date === '2026-06-09') {
+    console.log('[renderAllContent] 渲染 6 月 9 日内容');
+    if (typeof renderBrokerNav_0609 === 'function') renderBrokerNav_0609();
+    const brokerContentEl0609 = document.getElementById('broker-content');
+    if (brokerContentEl0609 && typeof renderBrokerContent_0609 === 'function') brokerContentEl0609.innerHTML = renderBrokerContent_0609();
+  } else
 
   if (date === '2026-06-07') {
     console.log('[renderAllContent] 渲染 6 月 7 日内容');
