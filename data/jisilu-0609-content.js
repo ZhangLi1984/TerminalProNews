@@ -1,491 +1,557 @@
 // ==========================================
-// 集思录投资洞察内容渲染 - 2026年6月9日
+// 集思录投资洞察内容渲染 - 2026年6月9日（更新版）
 // ==========================================
+
 function renderJisiluContent_0609() {
   return `<div class="prose prose-slate max-w-none">
 
-    <!-- 标题头 -->
-    <div class="bg-gradient-to-br from-amber-900 to-orange-800 rounded-2xl p-8 mb-10 text-white shadow-2xl">
-      <div class="flex items-center gap-3 mb-4">
-        <span class="text-xs font-bold uppercase tracking-widest bg-orange-400 px-3 py-1 rounded-full">集思录</span>
-        <span class="text-xs text-slate-400">2026年6月9日</span>
+    <!-- 报告头部 -->
+    <div class="bg-gradient-to-r from-red-50 via-orange-50 to-amber-50 border-l-4 border-red-600 p-6 my-6 rounded-r-xl shadow-sm">
+      <div class="flex items-center mb-3">
+        <span class="text-3xl mr-3">📊</span>
+        <h2 class="text-2xl font-black text-red-900">集思录投资洞察报告</h2>
       </div>
-      <h1 class="text-3xl font-black leading-tight">集思录投资洞察报告</h1>
-      <p class="text-slate-300 mt-3 text-sm">数据来源：集思录热门讨论（探索+热门，共80帖）</p>
-      <p class="text-slate-300 text-sm">整体情绪评分：<span class="font-bold text-red-300">4.5/10（偏谨慎悲观）</span></p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-red-800">
+        <div><span class="font-semibold">报告日期:</span> 2026 年 6 月 9 日</div>
+        <div><span class="font-semibold">数据来源:</span> 集思录热门讨论（80 条帖子）</div>
+        <div><span class="font-semibold">抓取时间:</span> 2026/6/9 23:27</div>
+        <div><span class="font-semibold">情绪评分:</span> <span class="text-red-700 font-black">4.2/10 偏悲观</span></div>
+      </div>
+      <div class="mt-4 p-3 bg-red-100/60 rounded-lg text-sm text-red-900">
+        <strong>⚡ 今日核心矛盾：</strong>"双创见顶"vs"科技信仰"激烈对峙，老登股持有者集体崩溃，*ST三房退市博弈白热化，龙大转债打破刚兑信仰，低风险策略全面失效后的迷茫弥漫全场。
+      </div>
     </div>
 
-    <!-- ===== 热门话题 TOP 10 ===== -->
-    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>一、热门话题 TOP 10（详细展开）</h2>
+    <!-- 一、热门话题 TOP 10 -->
+    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
+      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>
+      一、热门话题 TOP 10
+    </h2>
 
-    <!-- 1. 中金合并投票通过 -->
-    <h3 id="j_sec1" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">1. 中金合并东兴、信达通过股东大会 — 券商整合大事件</h3>
+    <!-- 话题 1：双创见顶之争 -->
+    <div id="j_sec1" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-600 p-5 my-5 rounded-r-xl">
+      <h4 class="text-red-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🔥×5</span> TOP1 "双创"年内见顶之争
+      </h4>
+      <div class="space-y-3 text-red-900">
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">📌 讨论焦点</p>
+          <p>科创板/创业板这轮牛市是否将在2026年见顶？周期派 vs 趋势派正面交锋，多空对峙白热化</p>
+        </div>
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">💡 核心观点</p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@海阔天空yu（看空）:</strong> "A股历史上最大的牛市从2005年6月到2007年10月，历时两年四个月。创业板牛市从未超过3年，本轮从2024年2月至今已达2年4个月，时间周期接近极限。"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@halhha（看多）:</strong> "韩国+台湾股市仍在创新高，只要这俩还在创新高，A股就安全。"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@j江海人（期权对冲）:</strong> "海大观点有理有据，我在创业板3800点就开始期权买沽了，暂时还套了一些。"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@骑着单车看风景:</strong> "今天很可能又是一个大V反转，现在的科技股盘中大幅反转已然成常态了。15年也是如此，直到有一天V不起来。"</span></li>
+          </ul>
+        </div>
+        <blockquote class="border-l-4 border-red-600 bg-white/60 rounded-r-xl p-4 my-3 text-slate-700">
+          <p class="text-sm"><strong>@Joe777:</strong> "在所有人都信这宏大叙事时，开始瓦解。"</p>
+        </blockquote>
+        <p class="text-red-700 text-sm"><strong>🎭 散户情绪:</strong> 分歧极大 — 多空激烈对峙，帖子火药味浓，多人互相拉黑</p>
+      </div>
+    </div>
 
+    <!-- 话题 2：老登 vs 科技割裂 -->
+    <div id="j_sec2" class="scroll-mt-24"></div>
     <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-600 p-5 my-5 rounded-r-xl">
-      <h4 class="text-blue-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">🏛️</span>热门话题·券商合并</h4>
-      <p class="text-blue-900 mb-3">热度等级：<span class="text-lg">★★★★★</span> | 讨论焦点：合并议案全部通过，换股比例不变（东兴1:0.4376，信达1:0.6054），散户反对声音虽大但占比仅13.29%</p>
-      <p class="text-blue-900 text-sm mb-3">合并进入实质性阶段：股东会通过后进入换股和资产交割阶段，需关注后续停牌安排。A股投票数仅4亿股，散户参与度低，机构投赞成票占主导。现金选择权是否会被下修成为争议焦点。</p>
-      <div class="space-y-2 mt-4">
-        <blockquote class="border-l-4 border-blue-500 bg-blue-100 rounded-r-xl p-3 text-blue-900 text-sm">"A股投票数才接近4亿股，其中反对只有5000多万，13.29%比例，这散户占比还是少" —— torll</blockquote>
-        <blockquote class="border-l-4 border-blue-500 bg-blue-100 rounded-r-xl p-3 text-blue-900 text-sm">"中小投资者居然有86%赞成，和论坛上铺天盖地的反对声差距有点大啊，这是中金给大户打电话拉票了？所有机构这次都是中小投资者" —— kkkppp11</blockquote>
-        <blockquote class="border-l-4 border-blue-500 bg-blue-100 rounded-r-xl p-3 text-blue-900 text-sm">"散户还是太弱了" —— ydmewjaiavyq</blockquote>
-        <blockquote class="border-l-4 border-blue-500 bg-blue-100 rounded-r-xl p-3 text-blue-900 text-sm">"投票不通过的鬼故事讲完了，接下来就是下修选择权的鬼故事了，投反对的兄弟们拿好了" —— quick140</blockquote>
-      </div>
-      <p class="text-blue-900 text-sm mt-3"><strong>散户情绪：</strong>观望为主，部分焦虑等待结果 — 机构主导表决结果，散户博弈空间有限。</p>
-    </div>
-
-    <!-- 2. 五粮液财报数据调整 -->
-    <h3 id="j_sec2" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">2. 五粮液营收下调超50% — 财务洗澡引发信任危机</h3>
-
-    <div class="bg-gradient-to-r from-red-50 to-rose-50 border-l-4 border-red-600 p-5 my-5 rounded-r-xl">
-      <h4 class="text-red-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">⚠️</span>热门话题·财务风险</h4>
-      <p class="text-red-900 mb-3">热度等级：<span class="text-lg">★★★★★</span> | 讨论焦点：五粮液将2025年营收下调超50%，从"发货确认"改为"终端动销确认"</p>
-      <p class="text-red-900 text-sm mb-3">市场普遍认为是新管理层上任前的财务洗澡行为。存在虚假陈述嫌疑，有律师号召股民起诉索赔。但也有观点认为这只是会计政策变更，不构成造假。前董事长已被调查，此次调整可能是一次性出清历史问题。</p>
-      <div class="space-y-2 mt-4">
-        <blockquote class="border-l-4 border-red-500 bg-red-100 rounded-r-xl p-3 text-red-900 text-sm">"妈的，我还有130W五粮液，案件不复杂，我拉个律所团队准备起诉了" —— Lawyer王</blockquote>
-        <blockquote class="border-l-4 border-red-500 bg-red-100 rounded-r-xl p-3 text-red-900 text-sm">"如果之前的核算规则和更改后的核算规则都是公开的，那么调整一下并没有什么问题呀？说什么虚假陈述，还想立案、索赔，想多了吧" —— sunkan</blockquote>
-        <blockquote class="border-l-4 border-red-500 bg-red-100 rounded-r-xl p-3 text-red-900 text-sm">"前董事长反正进去了，废物最大利用，搞个max高压锅背背；有问题，全抛给前董事长" —— pppppp</blockquote>
-        <blockquote class="border-l-4 border-red-500 bg-red-100 rounded-r-xl p-3 text-red-900 text-sm">"会做业绩的才是好股票，涨停" —— zora88（讽刺）</blockquote>
-        <blockquote class="border-l-4 border-red-500 bg-red-100 rounded-r-xl p-3 text-red-900 text-sm">"民企肯定不会这么玩的，除了掉SAN值，把自己在投资者那里的口碑掉光外毫无意义，但对铁打的营盘流水的管理者，业绩KPI决定以后升迁的，选择不择手段粉饰也可以理解" —— 原帖作者</blockquote>
-      </div>
-      <p class="text-red-900 text-sm mt-3"><strong>散户情绪：</strong>愤怒与无奈并存，部分持有人考虑法律维权。</p>
-    </div>
-
-    <!-- 3. 新版转债详细页公测 -->
-    <h3 id="j_sec3" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">3. 新版转债详细页公测 — 用户体验争议</h3>
-
-    <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-amber-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">💻</span>热门话题·产品体验</h4>
-      <p class="text-amber-900 mb-3">热度等级：<span class="text-lg">★★★★☆</span> | 讨论焦点：新版页面字体变小、留白过多、信息密度降低</p>
-      <p class="text-amber-900 text-sm mb-3">用户集中反馈新版页面设计问题：老版一页能看完的信息现在需要多次翻页点击。官方回应正在重新调整字体、留白、色块等。建议保留新旧两版供用户选择。希望增加转债发行公告日期等新字段。</p>
-      <div class="space-y-2 mt-4">
-        <blockquote class="border-l-4 border-amber-500 bg-amber-100 rounded-r-xl p-3 text-amber-900 text-sm">"长年免费提供数据，已是非常感谢，调整版面实乃网站管理的权限，用用也都会习惯。既然还能提一下建议，冒昧说几句：1、不调整缩放的情况下，新版字体似乎变小了不少；2、留白较多，单页信息量少；3、老版有色块对比，标题项加深且有背景色，内容项也是细黑，看起来比较舒服；新版都是灰色小字体，找东西需要特别仔细" —— rourourou</blockquote>
-        <blockquote class="border-l-4 border-amber-500 bg-amber-100 rounded-r-xl p-3 text-amber-900 text-sm">"总表不要改,详细页面随便改.反正又不常看.建议恢复导出为ex表格" —— lzyll</blockquote>
-        <blockquote class="border-l-4 border-amber-500 bg-amber-100 rounded-r-xl p-3 text-amber-900 text-sm">"年龄大了念旧！习惯了老版不喜欢变化，个人还是喜欢老版" —— 封基越放越醇</blockquote>
-        <blockquote class="border-l-4 border-amber-500 bg-amber-100 rounded-r-xl p-3 text-amber-900 text-sm">"是的，谢谢你很中肯的意见，大家的反馈也是在这块比较集中，我们正在重新调整字体，留白，色块等" —— 天书（官方回复）</blockquote>
-      </div>
-      <p class="text-amber-900 text-sm mt-3"><strong>散户情绪：</strong>不满但理性提出改进建议。</p>
-    </div>
-
-    <!-- 4. 北交所打新屡遭挫折 -->
-    <h3 id="j_sec4" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">4. 北交所打新屡遭挫折 — 券商服务吐槽</h3>
-
-    <div class="bg-gradient-to-r from-red-50 to-rose-50 border-l-4 border-red-600 p-5 my-5 rounded-r-xl">
-      <h4 class="text-red-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">😤</span>热门话题·券商系统缺陷</h4>
-      <p class="text-red-900 mb-3">热度等级：<span class="text-lg">★★★★☆</span> | 讨论焦点：X银证券报盘系统慢导致多次错失北交所新股申购机会</p>
-      <p class="text-red-900 text-sm mb-3">当事人统计三次失误累计损失约5万元（碎股+顶格申购机会）。基层网点员工业务不熟悉，客服推诿责任。银行/券商基层人员专业能力普遍不如长期投资者。建议遇到问题立即更换服务商，不要反复踩坑。</p>
-      <div class="space-y-2 mt-4">
-        <blockquote class="border-l-4 border-red-500 bg-red-100 rounded-r-xl p-3 text-red-900 text-sm">"年初陪老婆在X银行线下网点办卡...第一次一户北交所没了亏了1万多；第二次一个碎骨没了又是1万多；第三次一个大肉的碎股又是两万五。三次五万块。。。抠门的阿凯，当晚气得半夜睡不着" —— eflikai</blockquote>
-        <blockquote class="border-l-4 border-red-500 bg-red-100 rounded-r-xl p-3 text-red-900 text-sm">"女人才会罗里吧嗦讲道理 这个菜盐放多了不好吃 头顶留的头发多了不好看 还希望对方改进。男的吃一次亏立马跑路 你是死是活关我吊事 有讲道理时间不如赶紧换一家新店试试看" —— zoetina52</blockquote>
-        <blockquote class="border-l-4 border-red-500 bg-red-100 rounded-r-xl p-3 text-red-900 text-sm">"其实很多客服经理，业务真不如我们这些长期摸爬滚打的客户。毕竟对他来说他只是一份工作，工资也低。我们了解业务，是因为身家性命和巨额收益" —— 拉格纳罗斯</blockquote>
-      </div>
-      <p class="text-red-900 text-sm mt-3"><strong>散户情绪：</strong>愤怒、委屈，寻求共鸣。</p>
-    </div>
-
-    <!-- 5. 低风险套利渠道被堵死 -->
-    <h3 id="j_sec5" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">5. 低风险套利渠道全面堵死 — 投资策略转型期</h3>
-
-    <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-amber-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">🔒</span>热门话题·套利终结</h4>
-      <p class="text-amber-900 mb-3">热度等级：<span class="text-lg">★★★★☆</span> | 讨论焦点：传统低风险策略失效后的投资出路</p>
-      <p class="text-amber-900 text-sm mb-3">楼主系统性梳理六大被堵死的套利渠道：A股打新改为市值配售后无风险收益消失；可转债融券配售和套利渠道基本关闭；指数LOF实时估值被禁止；港股打新对内地居民关闭；可转债整体估值处于高位，质地差的债券风险加大。ETF套利仍有空间但难度大，需要专业知识。</p>
-      <div class="space-y-2 mt-4">
-        <blockquote class="border-l-4 border-amber-500 bg-amber-100 rounded-r-xl p-3 text-amber-900 text-sm">"目前几乎所有的低风险、无风险投资渠道被彻底堵死。1、A股打新改市值配售；2、可转债融券配售关闭；3、可转债套利无路；4、指数LOF估值被禁；5、港股打新关闭；6、可转债风险加大" —— 原帖作者</blockquote>
-        <blockquote class="border-l-4 border-amber-500 bg-amber-100 rounded-r-xl p-3 text-amber-900 text-sm">"不止。5月份就有2个点左右。年化24%?我只有1个点，年化12%" —— niuniu0513关于ETF套利的讨论</blockquote>
-        <blockquote class="border-l-4 border-amber-500 bg-amber-100 rounded-r-xl p-3 text-amber-900 text-sm">"组团打新可以有效避免资金浪费" —— ydmewjaiavyq</blockquote>
-      </div>
-      <p class="text-amber-900 text-sm mt-3"><strong>散户情绪：</strong>焦虑中寻找新机会。</p>
-    </div>
-
-    <!-- 6. 个人投资实盘记录分享 -->
-    <h3 id="j_sec6" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">6. 个人投资实盘记录分享 — 真实账户操作与反思</h3>
-
-    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-blue-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">📊</span>热门话题·实盘记录</h4>
-      <p class="text-blue-900 mb-3">热度等级：<span class="text-lg">★★★☆☆</span> | 讨论焦点：多位用户持续更新真实账户操作与反思</p>
-      <p class="text-blue-900 text-sm mb-3">杂货商（蓝河谷）2026年从亏损到回本再亏损，反映市场波动剧烈；九州东坡以宏观配置为主，季度调整仓位，心态平和；追梦者雷专注可转债轮动策略，本年收益率约4-7%；ejgnejf关注大类资产配置，近期加仓黄金和有色；李小录专注高股息策略，重仓泸州老窖和美团。</p>
-      <div class="space-y-2 mt-4">
-        <blockquote class="border-l-4 border-blue-500 bg-blue-100 rounded-r-xl p-3 text-blue-900 text-sm">"6月8日暴跌，本年亏28.25万" —— 蓝河谷（杂货商）</blockquote>
-        <blockquote class="border-l-4 border-blue-500 bg-blue-100 rounded-r-xl p-3 text-blue-900 text-sm">"今天天气很凉爽，晚饭后去河边散步了两小时...单位里面的尔虞我诈、争权夺利，感觉都是不值一提的小事。还是要自己调整好心态" —— 九州东坡</blockquote>
-        <blockquote class="border-l-4 border-blue-500 bg-blue-100 rounded-r-xl p-3 text-blue-900 text-sm">"中证全指成交额2.74万亿，主力净流出1163.61亿，上涨899家，下跌4591家...有些许恐慌" —— 追梦者雷每日复盘</blockquote>
-        <blockquote class="border-l-4 border-blue-500 bg-blue-100 rounded-r-xl p-3 text-blue-900 text-sm">"现金并非无效资产，而是极端时刻的高效资产，为自己提供更多选择的机会。投资最大的秘密是不亏，避险，不犯大错" —— 追梦者雷</blockquote>
-      </div>
-      <p class="text-blue-900 text-sm mt-3"><strong>散户情绪：</strong>理性记录，接受波动。</p>
-    </div>
-
-    <!-- 7. 券商板块深度回调 -->
-    <h3 id="j_sec7" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">7. 券商板块深度回调 — 投资价值几何？</h3>
-
-    <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-amber-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">📉</span>热门话题·券商困境</h4>
-      <p class="text-amber-900 mb-3">热度等级：<span class="text-lg">★★★☆☆</span> | 讨论焦点：券商最近跌得惨，中金、东兴、信达合并调价机制成焦点</p>
-      <p class="text-amber-900 text-sm mb-3">一旦触发调价条件，董事会态度很关键：调整则补跌，不调整则冲高。行政力量推动下合并大概率成功，但短期股价承压。券商果然是"在令人失望这方面，从来都没令人失望过"。</p>
-      <div class="space-y-2 mt-4">
-        <blockquote class="border-l-4 border-amber-500 bg-amber-100 rounded-r-xl p-3 text-amber-900 text-sm">"行政力量既然能让蚂蚁在临门一脚上不了市，也一定会让这三家券商合并成功" —— fengqd</blockquote>
-        <blockquote class="border-l-4 border-amber-500 bg-amber-100 rounded-r-xl p-3 text-amber-900 text-sm">"券商果然是，在令人失望这方面，从来都没令人失望过" —— 积少成多66</blockquote>
-        <blockquote class="border-l-4 border-amber-500 bg-amber-100 rounded-r-xl p-3 text-amber-900 text-sm">"聪明，只要股东会通过，中金仍然跌甚至下修，买东兴都不一定会亏钱。真到了继续下跌或下修，说明市场极不看好合并后新中金" —— sunpeak</blockquote>
-      </div>
-      <p class="text-amber-900 text-sm mt-3"><strong>散户情绪：</strong>谨慎悲观，博弈心态。</p>
-    </div>
-
-    <!-- 8. 白酒板块分化 -->
-    <h3 id="j_sec8" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">8. 白酒板块分化 — 投资价值争论</h3>
-
-    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-blue-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">🍶</span>热门话题·白酒分歧</h4>
-      <p class="text-blue-900 mb-3">热度等级：<span class="text-lg">★★★☆☆</span> | 讨论焦点：五粮液事件后白酒板块的投资逻辑</p>
-      <p class="text-blue-900 text-sm mb-3">白酒产能出清阶段难言反转，但茅台地位稳固。除茅台外，白酒的每一次拉升都是逃跑的机会（因致癌物属性）。泸州老窖管理层优秀、数字化做得好、产品矩阵完善。茅台可能是例外，主要功能不是喝而是社会关系属性。</p>
-      <div class="space-y-2 mt-4">
-        <blockquote class="border-l-4 border-blue-500 bg-blue-100 rounded-r-xl p-3 text-blue-900 text-sm">"抛开五粮液这个事件，我对整个白酒板块是不看好的，毕竟是致癌物。茅台可能是个例外，毕竟主要功能不是喝，而是其能搞社会关系的属性。除茅台以外，白酒的每一次拉升都是逃跑的机会" —— ken666</blockquote>
-        <blockquote class="border-l-4 border-blue-500 bg-blue-100 rounded-r-xl p-3 text-blue-900 text-sm">"泸州老窖仓位升至90%...管理层优秀，数字化做的好，五码合一，开瓶率是有数的，可以根据这个来控制发货" —— 李小录2024</blockquote>
-      </div>
-      <p class="text-blue-900 text-sm mt-3"><strong>散户情绪：</strong>分歧明显，看多看空都有。</p>
-    </div>
-
-    <!-- 9. 掼蛋社交与投资心态 -->
-    <h3 id="j_sec9" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">9. 掼蛋社交与投资心态 — 生活哲学</h3>
-
-    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-emerald-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">🎮</span>热门话题·心态平衡</h4>
-      <p class="text-emerald-900 mb-3">热度等级：<span class="text-lg">★★☆☆☆</span> | 讨论焦点：生活爱好与投资哲学的关联</p>
-      <p class="text-emerald-900 text-sm mb-3">掼蛋要打好需要定位、炸点选择、残局处理三关。投资与生活需要平衡，心态调整很重要。胜负欲太强有时会影响判断。寻找工作之外的精神寄托有助于投资决策。</p>
-      <div class="space-y-2 mt-4">
-        <blockquote class="border-l-4 border-emerald-500 bg-emerald-100 rounded-r-xl p-3 text-emerald-900 text-sm">"掼蛋要打好还是非常有难度的。第一关：开局定位；第二关：炸点选择；第三：残局处理。能打好残局已经是绝顶高手了" —— sevenraul007</blockquote>
-        <blockquote class="border-l-4 border-emerald-500 bg-emerald-100 rounded-r-xl p-3 text-emerald-900 text-sm">"有时候会厌恶单位，如果不是因为碎银几两，估计大部分人都想自由自在地去生活。还是要自己调整好心态，在各种风浪中多一份清醒，多一些洒脱" —— 九州东坡</blockquote>
-      </div>
-      <p class="text-emerald-900 text-sm mt-3"><strong>散户情绪：</strong>轻松交流，寻找共鸣。</p>
-    </div>
-
-    <!-- 10. 集思录ETF筛选插件工具 -->
-    <h3 id="j_sec10" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">10. 集思录ETF筛选插件工具 — 技术赋能投资</h3>
-
-    <div class="bg-gradient-to-r from-green-50 to-lime-50 border-l-4 border-green-600 p-5 my-5 rounded-r-xl">
-      <h4 class="text-green-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">🛠️</span>热门话题·工具分享</h4>
-      <p class="text-green-900 mb-3">热度等级：<span class="text-lg">★★☆☆☆</span> | 讨论焦点：用户自发开发Chrome/Edge插件增强ETF筛选功能</p>
-      <p class="text-green-900 text-sm mb-3">插件支持按规模、费率、成交等多维度筛选。也有用户建议使用油猴脚本即可实现类似功能。体现集思录用户群体的技术创新精神和互助氛围。</p>
-      <div class="space-y-2 mt-4">
-        <blockquote class="border-l-4 border-green-500 bg-green-100 rounded-r-xl p-3 text-green-900 text-sm">"集思录的ETF数据很好，我选择ETF时基本上要看下规模和费率，还有成交，但选择时还不太方便，于是我自己写了个插件来实现自己的需求" —— 天涯想</blockquote>
-        <blockquote class="border-l-4 border-green-500 bg-green-100 rounded-r-xl p-3 text-green-900 text-sm">"油猴就能搞定 装啥插件" —— 自动化交易机器</blockquote>
-      </div>
-      <p class="text-green-900 text-sm mt-3"><strong>散户情绪：</strong>积极尝试新技术。</p>
-    </div>
-
-    <!-- ===== 投资方法论 ===== -->
-    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-green-600 rounded-full mr-3"></span>二、投资方法论精粹（实操导向）</h2>
-
-    <h3 id="j_sec11" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">策略一：多资产动态平衡策略</h3>
-
-    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-emerald-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">💡</span>投资方法论</h4>
-      <p class="text-emerald-900 mb-2"><strong>核心逻辑：</strong>以斯文森倡导的权益类为主的多资产动态平衡，放弃暴利幻想，追求稳健收益。</p>
-      <p class="text-emerald-900 text-sm"><strong>操作要点：</strong>①股票、转债、衍生品三大类资产配置；②港股、美股、B股长持为主，A股主要是门票；③可转债摊大饼持有40多支，以三低（低价格、低溢价率、低到期收益率）为主；④衍生品用于对冲风险，股指期货多头配合期权对冲。</p>
-      <p class="text-emerald-900 text-sm mt-2"><strong>风险等级：</strong>中低 | <strong>代表人物：</strong>蓝河谷（杂货商）、ejgnejf</p>
-    </div>
-
-    <h3 id="j_sec12" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">策略二：可转债轮动量化策略</h3>
-
-    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-emerald-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">💡</span>投资方法论</h4>
-      <p class="text-emerald-900 mb-2"><strong>核心逻辑：</strong>通过量化模型进行可转债轮动，克服主观择时缺陷。</p>
-      <p class="text-emerald-900 text-sm"><strong>操作要点：</strong>①从集思录可转债等权指数成分中选择标的；②根据价格、溢价率、剩余规模等因子打分排序；③定期调仓，一般持有10-20只转债；④今年5月14日开始操作至年底取得26%左右收益率；⑤当前整体估值处于高位，需注意择机。</p>
-      <p class="text-emerald-900 text-sm mt-2"><strong>风险等级：</strong>中 | <strong>代表人物：</strong>追梦者雷、2025年投资总结帖作者</p>
-    </div>
-
-    <h3 id="j_sec13" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">策略三：高股息低估值长线策略</h3>
-
-    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-emerald-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">💡</span>投资方法论</h4>
-      <p class="text-emerald-900 mb-2"><strong>核心逻辑：</strong>立足高股息策略，寻找未来的高股息公司，投资不需要接盘侠。</p>
-      <p class="text-emerald-900 text-sm"><strong>操作要点：</strong>①选股标准：高ROE（&gt;15%）、高分红（股息率&gt;5%）、低估值（PE&lt;10）；②典型标的：伊泰B股（收益80%+）、泸州老窖、中国神华；③持有周期：长期持有，靠分红收回成本；④参考标杆：张尧（陕西煤业前十大流通股东）、王文（伊泰B持有8年收益40倍）。</p>
-      <p class="text-emerald-900 text-sm mt-2"><strong>风险等级：</strong>中低 | <strong>代表人物：</strong>李小录2024、bluefire</p>
-    </div>
-
-    <h3 id="j_sec14" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">策略四：券商合并套利策略</h3>
-
-    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-emerald-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">💡</span>投资方法论</h4>
-      <p class="text-emerald-900 mb-2"><strong>核心逻辑：</strong>利用券商合并事件的现金选择权与换股比例进行套利。</p>
-      <p class="text-emerald-900 text-sm"><strong>操作要点：</strong>①中金合并东兴、信达，关注现金选择权价格；②东兴证券换股比例1:0.4376，信达证券1:0.6054；③当股价低于现金选择权时可买入保底；④注意股东大会通过后是否下修现金选择权；⑤仓位控制：不宜过重，建议10-20%。</p>
-      <p class="text-emerald-900 text-sm mt-2"><strong>风险等级：</strong>中高（存在下修风险） | <strong>代表人物：</strong>caifeng2018、积少成多66</p>
-    </div>
-
-    <h3 id="j_sec15" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">策略五：ETF套利与LOF套利</h3>
-
-    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-emerald-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">💡</span>投资方法论</h4>
-      <p class="text-emerald-900 mb-2"><strong>核心逻辑：</strong>利用ETF/LOF一级市场与二级市场价差进行套利。</p>
-      <p class="text-emerald-900 text-sm"><strong>操作要点：</strong>①监控实时溢价率，一般溢价&gt;2%可考虑套利；②T日申购T+2日卖出，需承担两天市场波动风险；③可用底仓对冲降低风险；④年化收益率可达12-24%（取决于资金量和操作频率）；⑤需要快速反应和执行能力。</p>
-      <p class="text-emerald-900 text-sm mt-2"><strong>风险等级：</strong>中 | <strong>代表人物：</strong>niuniu0513、ydmewjaiavyq</p>
-    </div>
-
-    <h3 id="j_sec16" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">策略六：稳态趋势交易+期权对冲</h3>
-
-    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-emerald-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">💡</span>投资方法论</h4>
-      <p class="text-emerald-900 mb-2"><strong>核心逻辑：</strong>趋势跟踪为主，辅以抄底和期权对冲，追求绝对收益。</p>
-      <p class="text-emerald-900 text-sm"><strong>操作要点：</strong>①主线仓位跟随趋势（如AI、红利等）；②使用期权PUT对冲下跌风险；③抄底仓位控制在20%以内；④止损纪律严格，小时周期判断进出；⑤逐步加入期权策略增强收益。</p>
-      <p class="text-emerald-900 text-sm mt-2"><strong>风险等级：</strong>中高 | <strong>代表人物：</strong>roypiggy</p>
-    </div>
-
-    <h3 id="j_sec17" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">策略七：北交所打新策略（已式微）</h3>
-
-    <div class="bg-gradient-to-r from-gray-50 to-slate-50 border-l-4 border-gray-500 p-5 my-5 rounded-r-xl">
-      <h4 class="text-gray-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">💡</span>投资方法论</h4>
-      <p class="text-gray-900 mb-2"><strong>核心逻辑：</strong>利用北交所新股上市首日涨幅获取无风险收益。</p>
-      <p class="text-gray-900 text-sm"><strong>操作要点：</strong>①需要开通科创板资格才能直接开通北交所；②顶格申购提高中签率；③关注碎股分配机制；④组团打新可提高资金效率；⑤但目前参与资金大幅增加，收益率大幅下降。</p>
-      <p class="text-gray-900 text-sm mt-2"><strong>风险等级：</strong>低（但机会窗口已关闭） | <strong>代表人物：</strong>多位用户讨论</p>
-    </div>
-
-    <!-- ===== 热议标的 ===== -->
-    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>三、热议标的清单（详细分析）</h2>
-
-    <h3 id="j_sec18" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">1. 中金公司 / 东兴证券 / 信达证券</h3>
-
-    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
-      <p class="text-sm text-slate-500 mb-2">类型：券商合并 | 讨论热度：🔥🔥极高 | 情绪倾向：谨慎观望</p>
-      <p class="text-blue-900 font-bold mb-2">看多逻辑：</p>
-      <ul class="text-blue-900 text-sm space-y-1 mb-3">
-        <li>合并议案已通过股东大会，换股比例锁定（东兴1:0.4376，信达1:0.6054）</li>
-        <li>汇金背书确定性强，行政力量推动合并大概率成功（fengqd）</li>
-        <li>若股价低于现金选择权则有套利空间</li>
-        <li>A股投票数仅4亿股，散户反对占比13.29%，机构主导通过</li>
-      </ul>
-      <p class="text-blue-900 font-bold mb-2">看空/风险点：</p>
-      <ul class="text-blue-900 text-sm space-y-1 mb-3">
-        <li>现金选择权可能被下修（quick140警示）</li>
-        <li>合并后整合风险及协同效应不确定</li>
-        <li>短期补跌压力，券商板块整体低迷</li>
-        <li>"在令人失望这方面，从来都没令人失望过"（积少成多66调侃）</li>
-      </ul>
-    </div>
-
-    <h3 id="j_sec19" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">2. 五粮液</h3>
-
-    <div class="bg-gradient-to-r from-red-50 to-rose-50 border-l-4 border-red-600 p-5 my-5 rounded-r-xl">
-      <p class="text-sm text-slate-500 mb-2">类型：白酒龙头 | 讨论热度：🔥🔥极高 | 情绪倾向：愤怒与担忧</p>
-      <p class="text-blue-900 font-bold mb-2">看多逻辑：</p>
-      <ul class="text-blue-900 text-sm space-y-1 mb-3">
-        <li>大额分红+回购注销（300亿）显示现金流充裕</li>
-        <li>估值处于历史低位，利空出尽后或有反弹机会</li>
-        <li>前董事长已被调查，此次调整可能是一次性出清历史问题（pppppp）</li>
-      </ul>
-      <p class="text-blue-900 font-bold mb-2">看空/风险点：</p>
-      <ul class="text-blue-900 text-sm space-y-1 mb-3">
-        <li>2025年营收下调超50%，从"发货确认"改为"终端动销确认"（花过水无痕分析）</li>
-        <li>存在虚假陈述嫌疑，有律师号召股民起诉索赔（Lawyer王表示"我还有130W五粮液，准备起诉"）</li>
-        <li>可能被ST处理，面临监管处罚风险</li>
-        <li>国企财务数据调整引发信任危机，机构抛售压力大</li>
-      </ul>
-    </div>
-
-    <h3 id="j_sec20" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">3. 泸州老窖</h3>
-
-    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
-      <p class="text-sm text-slate-500 mb-2">类型：白酒次高端 | 讨论热度：⭐⭐⭐中等 | 情绪倾向：谨慎乐观</p>
-      <p class="text-blue-900 font-bold mb-2">看多逻辑：</p>
-      <ul class="text-blue-900 text-sm space-y-1 mb-3">
-        <li>管理层优秀，数字化能力强，五码合一可追踪开瓶率（李小录2024）</li>
-        <li>产品矩阵完善，全国化进程中仍有增长空间</li>
-        <li>相比五粮液更受投资者青睐，仓位集中度高达90%（李小录2024）</li>
-      </ul>
-      <p class="text-blue-900 font-bold mb-2">看空/风险点：</p>
-      <ul class="text-blue-900 text-sm space-y-1 mb-3">
-        <li>高端酒竞争激烈，商务场景恢复缓慢</li>
-        <li>持仓过于集中（90%），个股风险敞口大</li>
-        <li>白酒板块整体受消费降级影响</li>
-      </ul>
-    </div>
-
-    <h3 id="j_sec21" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">4. 龙大转债</h3>
-
-    <div class="bg-gradient-to-r from-red-50 to-rose-50 border-l-4 border-red-600 p-5 my-5 rounded-r-xl">
-      <p class="text-sm text-slate-500 mb-2">类型：可转债/违约风险 | 讨论热度：🔥高 | 情绪倾向：高度警惕</p>
-      <p class="text-blue-900 font-bold mb-2">看多逻辑：</p>
-      <ul class="text-blue-900 text-sm space-y-1 mb-3">
-        <li>博弈全额兑付，期待监管层介入协调</li>
-        <li>公司经营正常但现金流紧张，仍存在兑付可能性</li>
-      </ul>
-      <p class="text-blue-900 font-bold mb-2">看空/风险点：</p>
-      <ul class="text-blue-900 text-sm space-y-1 mb-3">
-        <li><strong>7月12日摘牌兑付风险</strong>，临近到期兑付压力大</li>
-        <li>参照搜特转债、鸿达转债等已出现违约案例</li>
-        <li>监管已介入，但结果仍不确定</li>
-        <li>不要盲目博弈"刚性兑付"</li>
-      </ul>
-    </div>
-
-    <h3 id="j_sec22" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">5. 其他热议标的</h3>
-
-    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
-      <p class="text-sm text-slate-500 mb-2">涵盖：贵州茅台、美团、泡泡玛特、黄金ETF、有色金属ETF</p>
-      <p class="text-blue-900 text-sm mb-2"><strong>贵州茅台：</strong>品牌护城河深，主要功能是社交属性而非饮用，产能出清中受益，但估值仍偏高。</p>
-      <p class="text-blue-900 text-sm mb-2"><strong>美团：</strong>本地生活核心商业大幅减亏，外卖已实现盈利，估值极低，但面临阿里淘宝闪购竞争。</p>
-      <p class="text-blue-900 text-sm mb-2"><strong>泡泡玛特：</strong>IP运营能力强，海外扩张顺利，年轻人消费韧性，但估值较高且单一品类依赖。</p>
-      <p class="text-blue-900 text-sm mb-2"><strong>黄金ETF：</strong>央行持续增持，地缘政治不确定性，美元走弱预期，但美联储加息超预期构成风险。</p>
-      <p class="text-blue-900 text-sm"><strong>有色金属ETF：</strong>AI发展带来稀缺资产重估，商品涨价，业绩大增，但全球经济衰退需求下降构成风险。</p>
-    </div>
-
-    <!-- ===== 市场情绪 ===== -->
-    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-purple-600 rounded-full mr-3"></span>四、市场情绪观察</h2>
-
-    <h3 id="j_sec23" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">整体情绪评分与信号</h3>
-
-    <div class="bg-gradient-to-r from-purple-50 to-violet-50 border-l-4 border-purple-500 p-5 my-5 rounded-r-xl">
-      <p class="text-purple-900 text-lg font-black mb-4">整体情绪评分：<span class="text-red-600">4.5/10（偏谨慎悲观）</span></p>
-
-      <p class="text-purple-900 font-bold mb-2">乐观信号：</p>
-      <ul class="text-purple-900 text-sm space-y-2 mb-4">
-        <li>"终于回本，高兴"（5月8日两市成交30485亿时）—— 九州东坡</li>
-        <li>"行政力量既然能让蚂蚁在临门一脚上不了市，也一定会让这三家券商合并成功" —— fengqd（对政策托底的信心）</li>
-        <li>"2025年总市值盈130.23万，期末总资产收益率23.4%，四年累计盈117.83万" —— 蓝河谷（展示长期坚持的价值）</li>
-      </ul>
-
-      <p class="text-purple-900 font-bold mb-2">悲观/谨慎信号：</p>
-      <ul class="text-purple-900 text-sm space-y-2 mb-4">
-        <li>"满仓的我，今天慌了 2018年开始入的市"（6月8日暴跌后）—— 原帖作者</li>
-        <li>"目前几乎所有的低风险、无风险投资渠道被彻底堵死" —— 楼主总结（反映投资机会匮乏的焦虑）</li>
-        <li>"市场分化非常严重，小部分光的股票上涨，大部分其他股下跌，认同某大佬的观点，双创很可能本年崩盘" —— 蓝河谷（6月5日）</li>
-        <li>"券商果然是，在令人失望这方面，从来都没令人失望过" —— 积少成多66（对券商板块的无奈）</li>
-        <li>"6月8日暴跌，本年亏28.25万" —— 蓝河谷（最新亏损数据）</li>
-      </ul>
-
-      <div class="grid grid-cols-2 gap-4 mt-4">
-        <div class="bg-purple-100 rounded-xl p-3 text-center">
-          <p class="text-xs text-purple-600 font-bold uppercase">风险偏好</p>
-          <p class="text-purple-900 text-lg font-black">显著下降</p>
-          <p class="text-purple-700 text-xs">从积极进取转向防御保守</p>
+      <h4 class="text-blue-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🔥×5</span> TOP2 极致割裂行情：老登股 vs 科技股
+      </h4>
+      <div class="space-y-3 text-blue-900">
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">📌 讨论焦点</p>
+          <p>低估值蓝筹（银行/白酒/电力）持续暴跌，科技股（AI/半导体）持续暴涨，风格分化史无前例</p>
         </div>
-        <div class="bg-purple-100 rounded-xl p-3 text-center">
-          <p class="text-xs text-purple-600 font-bold uppercase">热点轮动</p>
-          <p class="text-purple-900 text-sm font-black">北交打新→券商→白酒→转债→黄金</p>
-          <p class="text-purple-700 text-xs">缺乏持续主线</p>
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">💡 核心观点</p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@路林:</strong> "割裂行情可以用三句话概括：市场炒作科技；国家队砸盘老登；量化追强去弱。"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@资金流分析:</strong> 量化近2万亿高度同质化，形成"抱团科技→科技翻倍→继续抱团"的正反馈循环</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@ylshxajh:</strong> "中际旭创市盈率80，业绩增速100%，三年后市盈率就变10了；茅台是个衰退行业，三年后业绩可能腰斩。"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@熊兵奇啊:</strong> "讲个笑话：截止6月3日，红利ETF今年涨幅还有9个多点，同样是拿着老登股，悲喜并不相通。"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@投降派:</strong> "受不了了，投降！加入！" — 多位集友从老登阵营转投科技</span></li>
+          </ul>
+        </div>
+        <blockquote class="border-l-4 border-blue-600 bg-white/60 rounded-r-xl p-4 my-3 text-slate-700">
+          <p class="text-sm"><strong>@原帖作者:</strong> "市盈率越低的股票最近跌得越猛，讲市梦率涨的却超猛。难道以前的价值投资者们都死光了还是叛变了？"</p>
+          <p class="text-sm mt-1"><strong>@北方小韭菜:</strong> "我是3月份入场的新人，看中他的分红，结果一言难尽。我要它的股息，它要我本金。"</p>
+        </blockquote>
+        <p class="text-blue-700 text-sm"><strong>🎭 散户情绪:</strong> 老登持有者痛苦/迷茫，科技持有者兴奋但开始恐高</p>
+      </div>
+    </div>
+
+    <!-- 话题 3：*ST三房退市博弈 -->
+    <div id="j_sec3" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-r from-purple-50 to-pink-50 border-l-4 border-purple-600 p-5 my-5 rounded-r-xl">
+      <h4 class="text-purple-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🔥×5</span> TOP3 *ST三房巷：退市博弈
+      </h4>
+      <div class="space-y-3 text-purple-900">
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">📌 讨论焦点</p>
+          <p>大股东债务违约、35亿关联方占款、可转债23亿到期压力 — 退市还是重生的生死抉择</p>
+        </div>
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">💡 实地调研（看多派 @zhangs1）</p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-2 flex-shrink-0"></span><span>瓶级PET加工费达近几年最高（约1000元/吨），行业达成3年不新增产能协议</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-2 flex-shrink-0"></span><span>化工园区+港口码头土地价值保值，苏南地区化工园区屈指可数</span></li>
+          </ul>
+        </div>
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">⚠️ 风险警示</p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@pondfish:</strong> "财务非标不解决，明年退市，后期重整概率大，但不是现在。"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@sostot:</strong> 京东3.35亿股拍卖被法院暂缓（被执行人提出异议），可能暗示有资方接触</span></li>
+          </ul>
+        </div>
+        <blockquote class="border-l-4 border-purple-600 bg-white/60 rounded-r-xl p-4 my-3 text-slate-700">
+          <p class="text-sm"><strong>@我是一个host:</strong> "三房在退市和计提面前你觉得会怎么选？我赌鬼，我已经下注了。"</p>
+        </blockquote>
+        <p class="text-purple-700 text-sm"><strong>🎭 散户情绪:</strong> 赌性高涨 — ST玩家云集，博弈氛围浓厚</p>
+      </div>
+    </div>
+
+    <!-- 话题 4：低风险渠道堵死 -->
+    <div id="j_sec4" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-r from-gray-50 to-slate-50 border-l-4 border-gray-600 p-5 my-5 rounded-r-xl">
+      <h4 class="text-gray-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🔥×4</span> TOP4 低风险投资渠道被彻底堵死
+      </h4>
+      <div class="space-y-3 text-gray-900">
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">📌 五大低风险策略逐一失效</p>
+          <ul class="space-y-1">
+            <li>❌ A股打新：改市值配售后无风险打新消亡</li>
+            <li>❌ 可转债配售套利：券商收回融券配债收益</li>
+            <li>❌ 可转债无风险套利：券商基本不提供融券</li>
+            <li>❌ 指数LOF套利：证监会禁止网站提供实时估值</li>
+            <li>❌ 港股打新：2026年6月后内地居民通道关闭</li>
+          </ul>
+        </div>
+        <blockquote class="border-l-4 border-gray-600 bg-white/60 rounded-r-xl p-4 my-3 text-slate-700">
+          <p class="text-sm"><strong>@友情英雄:</strong> "人家RB能R出两倍资金，我只能R出1.25倍。凡是没资源壁垒的无风险套利机会，基本上会在很短时间内被大资金磨没了。"</p>
+          <p class="text-sm mt-1"><strong>@jcd888:</strong> "强烈要求恢复分级基金。取消分级基金就是村里懒政。"</p>
+        </blockquote>
+        <p class="text-gray-700 text-sm"><strong>🎭 散户情绪:</strong> 沮丧/无奈 — 对政策环境怨气较大</p>
+      </div>
+    </div>
+
+    <!-- 话题 5：龙大转债违约 -->
+    <div id="j_sec5" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-700 p-5 my-5 rounded-r-xl">
+      <h4 class="text-red-900 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🔥×4</span> TOP5 龙大转债预计无法兑付
+      </h4>
+      <div class="space-y-3 text-red-900">
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">💡 核心观点</p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@huxj2015:</strong> "公司是垃圾中的垃圾，都快死了还不自救，上次下修大股东不努力流产。"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@huanhappy2017:</strong> "公司不会卡到7月7日最后交易日开股东大会吧？到时候转债跌到三四十块，下调到底必然大幅折价，逼迫大家转股。"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@Jessicay12:</strong> "龙大评级现在还是B。回售条款已经触发过，不会再重复触发。"</span></li>
+          </ul>
+        </div>
+        <blockquote class="border-l-4 border-red-700 bg-white/60 rounded-r-xl p-4 my-3 text-slate-700">
+          <p class="text-sm"><strong>@赵甲:</strong> "涨了就盈利100%，跌了也才亏100%。"</p>
+        </blockquote>
+        <p class="text-red-700 text-sm"><strong>🎭 散户情绪:</strong> 愤怒+恐慌 — 对转债"刚性兑付"信仰彻底破灭</p>
+      </div>
+    </div>
+
+    <!-- 话题 6：国家队跑路 -->
+    <div id="j_sec6" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-r from-amber-50 to-yellow-50 border-l-4 border-amber-600 p-5 my-5 rounded-r-xl">
+      <h4 class="text-amber-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🔥×4</span> TOP6 国家队在持续跑路？
+      </h4>
+      <div class="space-y-3 text-amber-900">
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">💡 核心观点</p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@绿叶菜超天才:</strong> "2026年5月1日起基金信披新规实施，上市基金不再强制披露十大持有人信息。持有人信息的披露可能变了天啦！"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-2 flex-shrink-0"></span><span>华安上证180基金案例：中央汇金持有91.93%份额，到2026Q1大幅缩减</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@shuifeng2009:</strong> "没有新资金了，一些私募也慢慢跑路了，留下公募、ETF和散户站岗。"</span></li>
+          </ul>
+        </div>
+        <p class="text-amber-700 text-sm"><strong>🎭 散户情绪:</strong> 恐慌/怀疑 — 对"平准基金"托底信心动摇</p>
+      </div>
+    </div>
+
+    <!-- 话题 7：白酒见底了吗 -->
+    <div id="j_sec7" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-r from-orange-50 to-amber-50 border-l-4 border-orange-600 p-5 my-5 rounded-r-xl">
+      <h4 class="text-orange-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🔥×4</span> TOP7 白酒到底了没有？
+      </h4>
+      <div class="space-y-3 text-orange-900">
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">💡 多空对峙</p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@wxhcome1987（看多）:</strong> "中国是人情社会，高端白酒是达成高端社交关系的媒介。你奋斗到李嘉诚级别，也得有关系。"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@isaaccao（看空）:</strong> "30以下年轻人不喝白酒，销量趋势是收缩。白酒最后会和阿胶股差不多。"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@xusm0731（数据派）:</strong> "五粮液2018年至今前复权涨277%，跑赢上证54%，之前没你们想象的难堪，之后也没你们想象的乐观。"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@贪吃蛇:</strong> "茅台还没跌呢，啥时候茅台跌了，白酒才到底了。"</span></li>
+          </ul>
+        </div>
+        <p class="text-orange-700 text-sm"><strong>🎭 散户情绪:</strong> 严重分歧 — 老登坚守者 vs 新生代质疑者</p>
+      </div>
+    </div>
+
+    <!-- 话题 8：融资余额新高 -->
+    <div id="j_sec8" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-r from-rose-50 to-pink-50 border-l-4 border-rose-600 p-5 my-5 rounded-r-xl">
+      <h4 class="text-rose-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🔥×4</span> TOP8 融资余额创历史新高
+      </h4>
+      <div class="space-y-3 text-rose-900">
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">💡 核心观点</p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-rose-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@luckzpz:</strong> 两市融资余额突破2.77万亿创历史纪录。上证超4200的交易日只有206天，25年牛市仅占1天（0.49%）</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-rose-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@树梢星:</strong> "本轮牛市融资峰值应该在4-5万亿"，目前2.87万亿还有空间</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-rose-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>见顶信号？</strong> 融资余额6月1日首次减少76.61亿元，可能本轮最大值已现</span></li>
+          </ul>
+        </div>
+        <blockquote class="border-l-4 border-rose-600 bg-white/60 rounded-r-xl p-4 my-3 text-slate-700">
+          <p class="text-sm"><strong>@hotsosa:</strong> "有钱人要弄我们韭菜的手法是超越符号世界的。"</p>
+        </blockquote>
+        <p class="text-rose-700 text-sm"><strong>🎭 散户情绪:</strong> 谨慎/警惕 — 对杠杆风险有一定认知</p>
+      </div>
+    </div>
+
+    <!-- 话题 9：闻泰诉讼 -->
+    <div id="j_sec9" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-r from-cyan-50 to-blue-50 border-l-4 border-cyan-600 p-5 my-5 rounded-r-xl">
+      <h4 class="text-cyan-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🔥×3</span> TOP9 闻泰科技：诉讼改变游戏 + 张老板增持
+      </h4>
+      <div class="space-y-3 text-cyan-900">
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">💡 核心观点</p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-cyan-500 mt-2 mr-2 flex-shrink-0"></span><span>东莞诉讼案直接改变了整个业务模式，市场解读分歧大</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-cyan-500 mt-2 mr-2 flex-shrink-0"></span><span>张老板增持50万股，"这啥操作？" — 部分集友不解</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-cyan-500 mt-2 mr-2 flex-shrink-0"></span><span>港股联动：活跃资本市场博主80-87元买入闻泰，引发合规争论</span></li>
+          </ul>
+        </div>
+        <p class="text-cyan-700 text-sm"><strong>🎭 散户情绪:</strong> 困惑/观望</p>
+      </div>
+    </div>
+
+    <!-- 话题 10：中金东兴套利 -->
+    <div id="j_sec10" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-600 p-5 my-5 rounded-r-xl">
+      <h4 class="text-emerald-800 font-black mb-3 flex items-center">
+        <span class="text-xl mr-2">🔥×3</span> TOP10 券商合并套利：中金→东兴换仓
+      </h4>
+      <div class="space-y-3 text-emerald-900">
+        <div class="bg-white/60 rounded-lg p-3">
+          <p class="font-bold mb-2">💡 核心观点</p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@topiceman:</strong> "如果没有选择权，准备长期持有中金的话，换东兴显然更划算。"</span></li>
+            <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 mr-2 flex-shrink-0"></span><span><strong>@西楼:</strong> "是的，我计算的价差将近12%。"</span></li>
+          </ul>
+        </div>
+        <p class="text-emerald-700 text-sm"><strong>🎭 散户情绪:</strong> 理性探讨 — 低风险套利思维仍是集思录核心基因</p>
+      </div>
+    </div>
+
+    <!-- 二、投资方法论精粹 -->
+    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
+      <span class="w-2 h-8 bg-amber-600 rounded-full mr-3"></span>
+      二、投资方法论精粹（实操导向）
+    </h2>
+
+    <div id="j_sec11" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200 p-5 my-5 rounded-xl">
+      <h4 class="text-amber-800 font-black mb-3">📚 1. 可转债多因子轮动策略</h4>
+      <div class="space-y-2 text-amber-900 text-sm">
+        <p><strong>核心逻辑：</strong>通过量化因子每日轮动持有最优转债组合，做"没有情感的机器人"</p>
+        <p><strong>操作要点：</strong>①每日卖出排名靠后的转债，买入排名靠前的转债 ②持仓分散20-30只 ③严格执行不掺杂主观判断</p>
+        <p><strong>风险等级：</strong><span class="px-2 py-0.5 bg-yellow-200 rounded text-yellow-900">中</span>（2026年至今回撤-6.7%，市场温度80.5度偏高）</p>
+        <p><strong>代表人物：</strong>@复利永不眠（2025年年化56.32%，当前转债轮动年化-6.70%）</p>
+      </div>
+    </div>
+
+    <div id="j_sec12" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 p-5 my-5 rounded-xl">
+      <h4 class="text-emerald-800 font-black mb-3">📚 2. 周期股抄底摊大饼策略</h4>
+      <div class="space-y-2 text-emerald-900 text-sm">
+        <p><strong>核心逻辑：</strong>在行业历史低位分散买入周期股（锂矿、造纸、化工），等待周期反转</p>
+        <p><strong>操作要点：</strong>①"抄底才是最正确的投资方式" ②在行业头部几只平均摊饼 ③"交易是弱项，增强是幻想"</p>
+        <p><strong>ST策略补充：</strong>"只要不退市，低位就要狠狠的拿住"</p>
+        <p><strong>风险等级：</strong><span class="px-2 py-0.5 bg-orange-200 rounded text-orange-900">中-高</span></p>
+        <p><strong>代表人物：</strong>@周期赌徒修养（2025年XIRR 57.9%，核心仓位：锂矿+造纸+ST）</p>
+      </div>
+    </div>
+
+    <div id="j_sec13" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 p-5 my-5 rounded-xl">
+      <h4 class="text-blue-800 font-black mb-3">📚 3. ETF动量轮动策略</h4>
+      <div class="space-y-2 text-blue-900 text-sm">
+        <p><strong>核心逻辑：</strong>根据动量信号在纳指/创成长/黄金/30年国债ETF之间切换</p>
+        <p><strong>操作要点：</strong>①跟踪多个ETF相对强弱 ②信号出现时果断切换 ③不恋战、不预测、只跟随</p>
+        <p><strong>风险等级：</strong><span class="px-2 py-0.5 bg-yellow-200 rounded text-yellow-900">中</span></p>
+        <p><strong>代表人物：</strong>@yu7788（当前总市值265万，净资产139万）</p>
+      </div>
+    </div>
+
+    <div id="j_sec14" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-br from-green-50 to-lime-50 border border-green-200 p-5 my-5 rounded-xl">
+      <h4 class="text-green-800 font-black mb-3">📚 4. 现金理财增强策略</h4>
+      <div class="space-y-2 text-green-900 text-sm">
+        <p><strong>核心逻辑：</strong>利用北交所打新+银行月底存款活动+货基日历效应，实现年化5-7%</p>
+        <p><strong>操作要点：</strong>①北交打新需500万+现金多账户 ②银行存款活动需100万+资金 ③周四001国债逆回购+周五货基日历效应</p>
+        <p><strong>风险等级：</strong><span class="px-2 py-0.5 bg-green-200 rounded text-green-900">低</span>（资金门槛高，信息壁垒大）</p>
+      </div>
+    </div>
+
+    <div id="j_sec15" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200 p-5 my-5 rounded-xl">
+      <h4 class="text-purple-800 font-black mb-3">📚 5. ST重整博弈策略</h4>
+      <div class="space-y-2 text-purple-900 text-sm">
+        <p><strong>核心逻辑：</strong>在ST股退市恐慌中低价买入，博弈重整成功/摘帽</p>
+        <p><strong>操作要点：</strong>①年报季退市潮后的三季度是最佳介入窗口 ②9-10月以重整股为重点 ③造假ST看自身位置高低，不受季节限制</p>
+        <p><strong>重要判断：</strong>"今年ST板块没有面退潮，没有面退潮，没有面退潮！"</p>
+        <p><strong>风险等级：</strong><span class="px-2 py-0.5 bg-red-200 rounded text-red-900">高</span></p>
+        <p><strong>代表人物：</strong>@我是一个host（深度参与三房巷博弈）</p>
+      </div>
+    </div>
+
+    <!-- 三、热议标的清单 -->
+    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
+      <span class="w-2 h-8 bg-green-600 rounded-full mr-3"></span>
+      三、热议标的清单（详细分析）
+    </h2>
+
+    <div id="j_sec16" class="scroll-mt-24"></div>
+    <div class="bg-white border-2 border-purple-300 p-5 my-5 rounded-xl shadow-sm">
+      <h4 class="text-purple-800 font-black mb-3 flex items-center">
+        <span class="bg-purple-600 text-white px-2 py-0.5 rounded text-xs mr-2">ST</span> *ST三房（600370）— 退市vs重整生死局
+      </h4>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+        <div class="bg-green-50 rounded-lg p-3">
+          <p class="font-bold text-green-800 mb-2">📈 看多逻辑</p>
+          <ul class="space-y-1 text-green-900">
+            <li>✅ 瓶级PET加工费近几年最高，行业3年不新增产能</li>
+            <li>✅ 化工园区+港口码头土地价值保值</li>
+            <li>✅ 市销率不到0.3，大股东是全国五百强</li>
+            <li>✅ 法拍被暂缓，可能有资方接手</li>
+          </ul>
+        </div>
+        <div class="bg-red-50 rounded-lg p-3">
+          <p class="font-bold text-red-800 mb-2">📉 风险点</p>
+          <ul class="space-y-1 text-red-900">
+            <li>❌ 短期负债76亿+担保86亿，一年内需还80多亿</li>
+            <li>❌ 35亿关联方应收款回收率不确定</li>
+            <li>❌ 财务非标不解决，明年直接退市</li>
+            <li>❌ 转债23亿到期压力巨大</li>
+          </ul>
         </div>
       </div>
+      <p class="mt-3 text-sm"><strong>讨论热度：</strong>极高 | <strong>情绪倾向：</strong><span class="text-purple-700 font-bold">分歧极大</span></p>
     </div>
 
-    <h3 id="j_sec24" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">风险偏好与轮动</h3>
-
-    <div class="bg-gradient-to-r from-purple-50 to-violet-50 border-l-4 border-purple-500 p-5 my-5 rounded-r-xl">
-      <p class="text-purple-900 text-sm mb-3"><strong>整体风险偏好：</strong>显著下降，从年初的积极进取转向防御保守。多位用户提及降杠杆、去融资，反映风险意识提升。普遍仓位在80-95%之间，但现金储备意识增强。</p>
-
-      <p class="text-purple-900 font-bold mb-2">资金流向：</p>
-      <ul class="text-purple-900 text-sm space-y-1 mb-3">
-        <li>从高估值成长股向高股息红利股转移</li>
-        <li>黄金等避险资产配置增加</li>
-        <li>可转债"四低"策略受追捧</li>
-      </ul>
-
-      <p class="text-purple-900 font-bold mb-2">热点轮动顺序：</p>
-      <ol class="text-purple-900 text-sm space-y-1 list-decimal list-inside">
-        <li><strong>年初：</strong>北交所打新（最后一波行情）</li>
-        <li><strong>2-3月：</strong>券商合并概念（中金、东兴、信达）</li>
-        <li><strong>4月：</strong>白酒板块暴雷（五粮液财报调整）</li>
-        <li><strong>5月：</strong>可转债轮动策略兴起</li>
-        <li><strong>6月初：</strong>黄金、有色短暂走强</li>
-        <li><strong>6月8日后：</strong>全面防御，现金为王</li>
-      </ol>
+    <div id="j_sec17" class="scroll-mt-24"></div>
+    <div class="bg-white border-2 border-amber-300 p-5 my-5 rounded-xl shadow-sm">
+      <h4 class="text-amber-800 font-black mb-3 flex items-center">
+        <span class="bg-amber-600 text-white px-2 py-0.5 rounded text-xs mr-2">周期</span> 山鹰国际 — 回购注销A股历史第一
+      </h4>
+      <div class="text-sm">
+        <p><strong>📈 看多逻辑：</strong>回购3-6亿用于注销，占市值3.7%-7.4%，"A股历史第一"；扣除大股东后实际注销比例更高；造纸周期反内卷起飞预期</p>
+        <p class="mt-2"><strong>📉 风险点：</strong>行业产能过剩格局未根本改变；周期反转时间不确定</p>
+        <p class="mt-2"><strong>情绪倾向：</strong><span class="text-green-700 font-bold">偏多</span></p>
+      </div>
     </div>
 
-    <!-- ===== 风险提示 ===== -->
-    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-orange-600 rounded-full mr-3"></span>五、风险提示（具体可操作）</h2>
-
-    <h3 id="j_sec25" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">六大风险预警</h3>
-
-    <div class="space-y-5">
-
-    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-600 p-5 rounded-r-xl">
-      <h4 class="text-red-800 font-black mb-2">⚠️ 风险一：券商合并现金选择权下修风险</h4>
-      <p class="text-red-900 text-sm"><strong>触发条件：</strong>中金公司董事会决定下修现金选择权价格</p>
-      <p class="text-red-900 text-sm"><strong>历史教训：</strong>参照国泰君安海通合并案例，停盘期计提5%折价，合并后首日可能计提3%+跌幅</p>
-      <p class="text-red-900 text-sm"><strong>应对建议：</strong>①仓位控制在10-15%以内；②设置止损条件单；③关注董事会公告时间窗口；④不要加杠杆博弈。</p>
+    <div id="j_sec18" class="scroll-mt-24"></div>
+    <div class="bg-white border-2 border-orange-300 p-5 my-5 rounded-xl shadow-sm">
+      <h4 class="text-orange-800 font-black mb-3 flex items-center">
+        <span class="bg-orange-600 text-white px-2 py-0.5 rounded text-xs mr-2">消费</span> 五粮液/白酒板块 — 底部探索
+      </h4>
+      <div class="text-sm">
+        <p><strong>📈 看多逻辑：</strong>股息率已达6%以上；前复权7年涨277%跑赢大盘；"人情社会"社交属性持久</p>
+        <p class="mt-2"><strong>📉 风险点：</strong>年轻人不喝白酒长期需求萎缩；连跌6年创十年新低；"茅台还没跌透"</p>
+        <p class="mt-2"><strong>情绪倾向：</strong><span class="text-red-700 font-bold">偏空，分歧加大</span></p>
+      </div>
     </div>
 
-    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-600 p-5 rounded-r-xl">
-      <h4 class="text-red-800 font-black mb-2">⚠️ 风险二：五粮液等白酒股ST风险</h4>
-      <p class="text-red-900 text-sm"><strong>触发条件：</strong>证监会认定存在虚假陈述并立案调查</p>
-      <p class="text-red-900 text-sm"><strong>历史教训：</strong>类似财务调整案例曾导致ST处理，机构抛售压力巨大</p>
-      <p class="text-red-900 text-sm"><strong>应对建议：</strong>①已有持仓者可关注公司分红回购力度能否抵消利空；②未持仓者暂时观望，等待监管结论；③警惕白酒板块连锁反应；④如有维权需求可关注集体诉讼进展。</p>
+    <div id="j_sec19" class="scroll-mt-24"></div>
+    <div class="bg-white border-2 border-red-300 p-5 my-5 rounded-xl shadow-sm">
+      <h4 class="text-red-800 font-black mb-3 flex items-center">
+        <span class="bg-red-600 text-white px-2 py-0.5 rounded text-xs mr-2">转债</span> 龙大转债 — 违约风险标的
+      </h4>
+      <div class="text-sm">
+        <p><strong>📈 看多逻辑：</strong>价格极低，博弈下修或重整</p>
+        <p class="mt-2"><strong>📉 风险点：</strong>已公告预计无法兑付；上次下修大股东不配合流产；评级降至B；6月24日股东大会是关键节点</p>
+        <p class="mt-2"><strong>情绪倾向：</strong><span class="text-red-700 font-bold">恐慌</span></p>
+      </div>
     </div>
 
-    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-600 p-5 rounded-r-xl">
-      <h4 class="text-red-800 font-black mb-2">⚠️ 风险三：可转债违约风险上升</h4>
-      <p class="text-red-900 text-sm"><strong>触发条件：</strong>发行人现金流断裂，无法按期兑付</p>
-      <p class="text-red-900 text-sm"><strong>历史教训：</strong>搜特转债、鸿达转债等已出现违约，<strong>龙大转债7月12日摘牌兑付压力大</strong></p>
-      <p class="text-red-900 text-sm"><strong>应对建议：</strong>①规避信用评级低、现金流紧张的issuer；②分散持有，单只转债不超过总仓位5%；③临期转债重点关注公司偿债能力和意愿；④不要盲目博弈"刚性兑付"。</p>
+    <div id="j_sec20" class="scroll-mt-24"></div>
+    <div class="bg-white border-2 border-cyan-300 p-5 my-5 rounded-xl shadow-sm">
+      <h4 class="text-cyan-800 font-black mb-3 flex items-center">
+        <span class="bg-cyan-600 text-white px-2 py-0.5 rounded text-xs mr-2">科技</span> 闻泰科技 — 诉讼+增持双事件
+      </h4>
+      <div class="text-sm">
+        <p><strong>📈 看多逻辑：</strong>张老板增持50万股释放信心；半导体概念+国产替代叙事</p>
+        <p class="mt-2"><strong>📉 风险点：</strong>东莞诉讼改变业务格局；估值争议大</p>
+        <p class="mt-2"><strong>情绪倾向：</strong><span class="text-gray-700 font-bold">观望</span></p>
+      </div>
     </div>
 
-    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-600 p-5 rounded-r-xl">
-      <h4 class="text-red-800 font-black mb-2">⚠️ 风险四：双创板块崩盘风险</h4>
-      <p class="text-red-900 text-sm"><strong>触发条件：</strong>流动性收紧+业绩不及预期双重打击</p>
-      <p class="text-red-900 text-sm"><strong>历史教训：</strong>2022年创业板、科创板曾出现大幅回撤</p>
-      <p class="text-red-900 text-sm"><strong>应对建议：</strong>①控制创业板、科创板仓位在30%以内；②使用期权或股指期货对冲；③优先选择有业绩支撑的标的；④设定严格的止损线。</p>
+    <div id="j_sec21" class="scroll-mt-24"></div>
+    <div class="bg-white border-2 border-emerald-300 p-5 my-5 rounded-xl shadow-sm">
+      <h4 class="text-emerald-800 font-black mb-3 flex items-center">
+        <span class="bg-emerald-600 text-white px-2 py-0.5 rounded text-xs mr-2">套利</span> 中金公司/东兴证券 — 券商合并套利
+      </h4>
+      <div class="text-sm">
+        <p><strong>📈 套利逻辑：</strong>中金换东兴可获12%价差；券商合并重组预期</p>
+        <p class="mt-2"><strong>📉 风险点：</strong>合并时间不确定；价差不一定收敛</p>
+        <p class="mt-2"><strong>情绪倾向：</strong><span class="text-green-700 font-bold">理性偏多</span></p>
+      </div>
     </div>
 
-    <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 rounded-r-xl">
-      <h4 class="text-amber-800 font-black mb-2">⚠️ 风险五：北交所打新红利消退后的策略真空</h4>
-      <p class="text-amber-900 text-sm"><strong>触发条件：</strong>参与资金持续增加导致收益率降至无吸引力水平</p>
-      <p class="text-amber-900 text-sm"><strong>历史教训：</strong>A股打新改为市值配售后，大量打新资金被迫转型，部分遭遇重大亏损</p>
-      <p class="text-amber-900 text-sm"><strong>应对建议：</strong>①提前布局新的低风险策略（如ETF套利、可转债轮动）；②不要将所有资金投入单一策略；③加强学习和研究，提升主动投资能力；④保持耐心，等待下一个确定性机会。</p>
+    <div id="j_sec22" class="scroll-mt-24"></div>
+    <div class="bg-white border-2 border-amber-300 p-5 my-5 rounded-xl shadow-sm">
+      <h4 class="text-amber-800 font-black mb-3 flex items-center">
+        <span class="bg-amber-600 text-white px-2 py-0.5 rounded text-xs mr-2">B股</span> 古井贡B — B股高股息标的
+      </h4>
+      <div class="text-sm">
+        <p><strong>📈 看多逻辑：</strong>现价54元股息率9%；即使业绩下降未来几年仍有5-6%；人民币汇率升值高位换港币买入有汇兑优势</p>
+        <p class="mt-2"><strong>📉 风险点：</strong>白酒行业整体下行；B股流动性差</p>
+        <p class="mt-2"><strong>情绪倾向：</strong>小众关注</p>
+      </div>
     </div>
 
-    <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 rounded-r-xl">
-      <h4 class="text-amber-800 font-black mb-2">⚠️ 风险六：银行/券商服务质量风险</h4>
-      <p class="text-amber-900 text-sm"><strong>触发条件：</strong>基层网点人员业务能力不足导致操作失误</p>
-      <p class="text-amber-900 text-sm"><strong>历史教训：</strong>X银证券系统问题导致多次北交所打新失败，累计损失5万+</p>
-      <p class="text-amber-900 text-sm"><strong>应对建议：</strong>①选择头部券商和银行合作；②关键业务提前测试验证；③保留沟通记录和证据；④遇到问题及时更换服务商，不要反复踩坑。</p>
-    </div>
+    <!-- 四、市场情绪观察 -->
+    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
+      <span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>
+      四、市场情绪观察
+    </h2>
 
-    </div>
-
-    <!-- ===== 下周关注点 ===== -->
-    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-green-600 rounded-full mr-3"></span>六、下周关注点</h2>
-
-    <h3 id="j_sec26" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">七大关键事件前瞻</h3>
-
-    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-600 p-5 my-5 rounded-r-xl">
-      <h4 class="text-green-800 font-black mb-3 flex items-center"><span class="text-xl mr-2">📅</span>下周关注点</h4>
-
-      <div class="space-y-3 text-green-900 text-sm">
-        <div class="bg-green-100 rounded-lg p-3">
-          <p class="font-bold mb-1">1. 中金合并后续进展</p>
-          <p class="text-xs">关注换股具体时间安排、现金选择权申报窗口期、是否会出现下修公告</p>
+    <div id="j_sec23" class="scroll-mt-24"></div>
+    <div class="bg-gradient-to-r from-red-100 to-orange-100 border-l-4 border-red-700 p-6 my-5 rounded-r-xl">
+      <h4 class="text-red-900 font-black mb-3 text-lg">📊 整体情绪评分：4.2/10（偏悲观/迷茫）</h4>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-green-50 rounded-lg p-4">
+          <p class="font-bold text-green-800 mb-2">✅ 乐观信号</p>
+          <ul class="space-y-1 text-green-900 text-sm">
+            <li>• 宽基ETF净流入280亿，国家队可能重新入场</li>
+            <li>• 瓶级PET加工费达近几年最高，行业不新增产能</li>
+            <li>• 山鹰回购3-6亿注销，A股历史第一</li>
+            <li>• 红利ETF今年涨幅还有9个多点</li>
+            <li>• 树梢星即将成立私募，优秀投资者获认可</li>
+          </ul>
         </div>
-
-        <div class="bg-green-100 rounded-lg p-3">
-          <p class="font-bold mb-1">2. 五粮液监管动向</p>
-          <p class="text-xs">深交所是否会下发问询函或监管函、证监会是否介入调查、股民集体诉讼进展情况</p>
+        <div class="bg-red-50 rounded-lg p-4">
+          <p class="font-bold text-red-800 mb-2">❌ 悲观/谨慎信号</p>
+          <ul class="space-y-1 text-red-900 text-sm">
+            <li>• "8年攒的信心，在2026年6月被摧毁"</li>
+            <li>• "是不是该离开股市了？标准小散11年5万到40万"</li>
+            <li>• "持有恒科创新药消费券商，越跌越补资金快枯竭"</li>
+            <li>• 924前精准入场的看多博主投降离场</li>
+            <li>• 融资余额减少76亿，可能本轮最大值已现</li>
+            <li>• 国家队持续跑路+新规不再披露十大持有人</li>
+          </ul>
         </div>
+      </div>
+      <div class="mt-4 p-3 bg-white/60 rounded-lg">
+        <p class="text-sm"><strong>风险偏好：</strong>显著降低（追求稳健收益，"不亏"成为首要目标）</p>
+        <p class="text-sm mt-1"><strong>热点轮动：</strong>可转债（水位过高）→ 周期股（锂矿/造纸/化工反内卷）→ ST板块（三季度机会）→ 老登股（坚守待反转）→ 科技股（恐高蔓延）</p>
+      </div>
+    </div>
 
-        <div class="bg-green-100 rounded-lg p-3">
-          <p class="font-bold mb-1">3. 龙大转债到期兑付</p>
-          <p class="text-xs"><strong>7月12日摘牌前资金到位情况</strong>、是否能全额兑付、监管层是否会介入协调</p>
+    <!-- 五、风险提示 -->
+    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
+      <span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>
+      五、风险提示（具体可操作）
+    </h2>
+
+    <div id="j_sec24" class="scroll-mt-24"></div>
+    <div class="space-y-4">
+      <div class="bg-red-50 border-l-4 border-red-700 p-4 rounded-r-xl">
+        <h4 class="text-red-800 font-black mb-2">⚠️ 1. 可转债信用风险集中爆发</h4>
+        <div class="text-sm text-red-900 space-y-1">
+          <p><strong>触发条件：</strong>经济下行+行业景气度低迷，低评级转债发行人现金流枯竭</p>
+          <p><strong>历史教训：</strong>龙大转债公告预计无法兑付；搜特转债破产清算</p>
+          <p><strong>应对建议：</strong>①远离评级B以下转债 ②提前6个月评估兑付能力 ③单只转债仓位<2% ④密切跟踪审计意见</p>
         </div>
+      </div>
 
-        <div class="bg-green-100 rounded-lg p-3">
-          <p class="font-bold mb-1">4. 美联储议息会议（6月17-18日）</p>
-          <p class="text-xs">鲍威尔讲话对全球流动性的影响、加息预期变化、美元指数走势</p>
+      <div class="bg-orange-50 border-l-4 border-orange-700 p-4 rounded-r-xl">
+        <h4 class="text-orange-800 font-black mb-2">⚠️ 2. 双创板块见顶风险</h4>
+        <div class="text-sm text-orange-900 space-y-1">
+          <p><strong>触发条件：</strong>牛市持续超3年历史规律、AI业绩增速ΔG放缓、流动性收紧</p>
+          <p><strong>历史教训：</strong>2015年创业板从4038跌至1779（跌幅56%）；2021年"宁指数"瓦解</p>
+          <p><strong>应对建议：</strong>①关注AI硬件订单增速和毛利率 ②科创50ETF单日放量长阴警惕 ③小仓位认沽期权保护 ④逐步转移至低估值板块</p>
         </div>
+      </div>
 
-        <div class="bg-green-100 rounded-lg p-3">
-          <p class="font-bold mb-1">5. 美国CPI数据公布（6月中旬）</p>
-          <p class="text-xs">是否超预期破4%、对全球资产价格的冲击</p>
+      <div class="bg-rose-50 border-l-4 border-rose-700 p-4 rounded-r-xl">
+        <h4 class="text-rose-800 font-black mb-2">⚠️ 3. 融资盘踩踏风险</h4>
+        <div class="text-sm text-rose-900 space-y-1">
+          <p><strong>触发条件：</strong>融资余额突破3万亿后突然转向，触发强制平仓链</p>
+          <p><strong>历史教训：</strong>2015年6月融资余额从2.27万亿骤降，千股跌停</p>
+          <p><strong>应对建议：</strong>①融资余额连续3日减少超50亿需警惕 ②避免追高融资热门股 ③保持至少30%现金仓位</p>
         </div>
+      </div>
 
-        <div class="bg-green-100 rounded-lg p-3">
-          <p class="font-bold mb-1">6. 国内流动性拐点确认</p>
-          <p class="text-xs">财政支出、社融数据变化、央行公开市场操作力度、对A股流动性的影响</p>
+      <div class="bg-purple-50 border-l-4 border-purple-700 p-4 rounded-r-xl">
+        <h4 class="text-purple-800 font-black mb-2">⚠️ 4. ST板块个体退市风险</h4>
+        <div class="text-sm text-purple-900 space-y-1">
+          <p><strong>触发条件：</strong>财务非标审计意见、面值连续20日低于1元、重大违法</p>
+          <p><strong>历史教训：</strong>升达林业案例（旧规下可摘帽，新规下铁定退市）</p>
+          <p><strong>应对建议：</strong>①单标的仓位<3% ②关注4月年报季 ③跟踪大股东法拍进度 ④跌破买入价30%止损</p>
         </div>
+      </div>
 
-        <div class="bg-green-100 rounded-lg p-3">
-          <p class="font-bold mb-1">7. 中报业绩预告窗口（7月开启）</p>
-          <p class="text-xs">AI板块业绩是否能延续高增长、消费板块业绩修复情况、券商合并后业绩表现</p>
+      <div class="bg-amber-50 border-l-4 border-amber-700 p-4 rounded-r-xl">
+        <h4 class="text-amber-800 font-black mb-2">⚠️ 5. 国家队退出引发的流动性真空</h4>
+        <div class="text-sm text-amber-900 space-y-1">
+          <p><strong>触发条件：</strong>汇金/证金持续减持ETF、不再披露持仓信息</p>
+          <p><strong>应对建议：</strong>①ETF持续净流出超50亿需警惕 ②减少"国家队托底"博弈心态 ③增加港股/B股配置 ④高股息+现金+短债占比≥40%</p>
         </div>
       </div>
     </div>
 
-    <div class="mt-10 p-5 bg-slate-100 rounded-xl text-center text-slate-500 text-sm">
-      <p>报告编制：集思录一键分析流水线 | 数据来源：集思录热门讨论 80 帖</p>
-      <p class="mt-1">免责声明：本报告仅为信息整理与观点提炼，不构成任何投资建议。投资有风险，入市需谨慎。</p>
+    <!-- 六、操作建议汇总 -->
+    <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center">
+      <span class="w-2 h-8 bg-indigo-600 rounded-full mr-3"></span>
+      六、操作建议汇总
+    </h2>
+
+    <div id="j_sec25" class="scroll-mt-24"></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full border border-slate-300 rounded-lg overflow-hidden text-sm">
+        <thead class="bg-slate-100">
+          <tr>
+            <th class="px-4 py-2 text-left font-bold text-slate-700">策略方向</th>
+            <th class="px-4 py-2 text-left font-bold text-slate-700">仓位建议</th>
+            <th class="px-4 py-2 text-left font-bold text-slate-700">核心标的</th>
+            <th class="px-4 py-2 text-left font-bold text-slate-700">时间窗口</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200 bg-white">
+          <tr><td class="px-4 py-2 font-semibold text-amber-700">可转债轮动</td><td class="px-4 py-2">20-30%</td><td class="px-4 py-2">多因子排名前列转债</td><td class="px-4 py-2">等水位降至70度以下再加仓</td></tr>
+          <tr class="bg-slate-50"><td class="px-4 py-2 font-semibold text-emerald-700">周期股抄底</td><td class="px-4 py-2">15-20%</td><td class="px-4 py-2">锂矿（中矿/天齐）、造纸（山鹰/太阳）</td><td class="px-4 py-2">Q3-Q4 逢低布局</td></tr>
+          <tr><td class="px-4 py-2 font-semibold text-purple-700">ST博弈</td><td class="px-4 py-2">5-10%</td><td class="px-4 py-2">三房巷（博弈重整）</td><td class="px-4 py-2">退市潮后三季度</td></tr>
+          <tr class="bg-slate-50"><td class="px-4 py-2 font-semibold text-blue-700">老登防御</td><td class="px-4 py-2">20-30%</td><td class="px-4 py-2">红利低波ETF、中国神华、长江电力</td><td class="px-4 py-2">长期持有，等待风格切换</td></tr>
+          <tr><td class="px-4 py-2 font-semibold text-green-700">现金管理</td><td class="px-4 py-2">20-30%</td><td class="px-4 py-2">货基+短债+北交打新</td><td class="px-4 py-2">随时保持流动性</td></tr>
+          <tr class="bg-slate-50"><td class="px-4 py-2 font-semibold text-cyan-700">科技股</td><td class="px-4 py-2">0-10%</td><td class="px-4 py-2">仅限ETF，不做个股</td><td class="px-4 py-2">等待回调至合理估值</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 尾部 -->
+    <div class="mt-8 p-4 bg-slate-100 rounded-xl text-xs text-slate-500">
+      <p><strong>报告生成时间：</strong>2026年6月9日 23:40 | <strong>下次更新：</strong>2026年6月10日</p>
+      <p class="mt-1"><strong>免责声明：</strong>本报告仅为集思录论坛讨论的整理与分析，不构成投资建议。市场有风险，投资需谨慎。</p>
     </div>
 
   </div>`;
