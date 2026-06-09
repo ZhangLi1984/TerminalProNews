@@ -1,43 +1,35 @@
 // ==========================================
-// 个股研报导航配置 - 2026 年 6 月 9 日
+// 个股研报导航 - 2026年6月9日
 // ==========================================
-
 const STOCK_NAV_CONFIG_0609 = [
-  {
-    title: '核心评级',
-    links: [
-      { id: 'sec1', label: 'S 级标的（1 只）' },
-      { id: 'sec2', label: 'A 级标的（4 只）' }
-    ]
-  },
-  {
-    title: '评级汇总',
-    links: [
-      { id: 'sec3', label: '完整评级汇总表' },
-      { id: 'sec4', label: '评级说明' }
-    ]
-  }
+  { title: '核心标的', links: [
+    { id: 's_sec1', label: 'S 级标的（2 只）' },
+    { id: 's_sec2', label: 'A 级标的（5 只）' },
+  ]},
+  { title: '评级汇总', links: [
+    { id: 's_sec3', label: '全量评级汇总表' },
+  ]},
+  { title: '统计与赛道', links: [
+    { id: 's_sec4', label: '评级分布统计' },
+    { id: 's_sec5', label: '重点关注赛道' },
+  ]},
 ];
 
 function renderStockNav_0609() {
   const container = document.getElementById('stock-nav-content');
   if (!container) return;
-
-  container.innerHTML = STOCK_NAV_CONFIG_0609.map(category => `
-    <div class="space-y-3">
-      <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">${category.title}</h3>
-      <nav class="space-y-1">
-        ${category.links.map(link => `
-          <button
-            onclick="scrollToSection('stock', '${link.id}')"
-            class="nav-btn w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 flex items-center group"
-            data-section="${link.id}"
-          >
-            <div class="w-1.5 h-1.5 rounded-full mr-2.5 transition-colors bg-transparent group-hover:bg-red-400"></div>
-            <span class="text-slate-700 group-hover:text-slate-900">${link.label}</span>
+  container.innerHTML = STOCK_NAV_CONFIG_0609.map(group => `
+    <div>
+      <h3 class="text-xs font-black text-slate-500 uppercase tracking-widest mb-3 px-1">${group.title}</h3>
+      <div class="space-y-1">
+        ${group.links.map(link => `
+          <button onclick="updateActiveNav('${link.id}'); document.getElementById('${link.id}').scrollIntoView({behavior:'smooth',block:'start'});"
+            class="nav-btn w-full text-left px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 transition-all flex items-center" data-section="${link.id}">
+            <div class="w-1.5 h-1.5 rounded-full bg-transparent mr-2.5 transition-colors"></div>
+            ${link.label}
           </button>
         `).join('')}
-      </nav>
+      </div>
     </div>
   `).join('');
 }
