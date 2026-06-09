@@ -181,15 +181,27 @@ function renderAllContent() {
 
   if (date === '2026-06-09') {
     console.log('[renderAllContent] 渲染 6 月 9 日内容');
-    if (typeof renderStockNav_0609 === 'function') renderStockNav_0609();
-    const stockContentEl0609 = document.getElementById('stock-content');
-    if (stockContentEl0609 && typeof renderStockContent_0609 === 'function') stockContentEl0609.innerHTML = renderStockContent_0609();
+    if (typeof renderDecisionNav_0609 === 'function') renderDecisionNav_0609();
+    const decisionContentEl0609 = document.getElementById('decision-content');
+    if (decisionContentEl0609 && typeof renderDecisionContent_0609 === 'function') decisionContentEl0609.innerHTML = renderDecisionContent_0609();
+    if (typeof renderIndustryNav_0609 === 'function') renderIndustryNav_0609();
+    const industryContentEl0609 = document.getElementById('industry-content');
+    if (industryContentEl0609 && typeof renderIndustryContent_0609 === 'function') industryContentEl0609.innerHTML = renderIndustryContent_0609();
+    if (typeof renderMacroNav_0609 === 'function') renderMacroNav_0609();
+    const macroContentEl0609 = document.getElementById('macro-content');
+    if (macroContentEl0609 && typeof renderMacroContent_0609 === 'function') macroContentEl0609.innerHTML = renderMacroContent_0609();
     if (typeof renderBrokerNav_0609 === 'function') renderBrokerNav_0609();
     const brokerContentEl0609 = document.getElementById('broker-content');
     if (brokerContentEl0609 && typeof renderBrokerContent_0609 === 'function') brokerContentEl0609.innerHTML = renderBrokerContent_0609();
+    if (typeof renderStockNav_0609 === 'function') renderStockNav_0609();
+    const stockContentEl0609 = document.getElementById('stock-content');
+    if (stockContentEl0609 && typeof renderStockContent_0609 === 'function') stockContentEl0609.innerHTML = renderStockContent_0609();
     if (typeof renderJisiluNav_0609 === 'function') renderJisiluNav_0609();
     const jisiluContentEl0609 = document.getElementById('jisilu-content');
     if (jisiluContentEl0609 && typeof renderJisiluContent_0609 === 'function') jisiluContentEl0609.innerHTML = renderJisiluContent_0609();
+    if (typeof renderFuturesNav_0609 === 'function') renderFuturesNav_0609();
+    const futuresContentEl0609 = document.getElementById('futures-content');
+    if (futuresContentEl0609 && typeof renderFuturesContent_0609 === 'function') futuresContentEl0609.innerHTML = renderFuturesContent_0609();
   } else
 
   if (date === '2026-06-07') {
