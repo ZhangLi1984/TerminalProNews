@@ -179,13 +179,14 @@ function renderAllContent() {
 
 
 
-
-
-  if (date === '2026-06-11') {
+    if (date === '2026-06-11') {
     console.log('[renderAllContent] 渲染 6 月 11 日内容');
     if (typeof renderMacroNav_0611 === 'function') renderMacroNav_0611();
     const macroContentEl0611 = document.getElementById('macro-content');
     if (macroContentEl0611 && typeof renderMacroContent_0611 === 'function') macroContentEl0611.innerHTML = renderMacroContent_0611();
+    if (typeof renderBrokerNav_0611 === 'function') renderBrokerNav_0611();
+    const brokerContentEl0611 = document.getElementById('broker-content');
+    if (brokerContentEl0611 && typeof renderBrokerContent_0611 === 'function') brokerContentEl0611.innerHTML = renderBrokerContent_0611();
   } else
 
   if (date === '2026-06-10') {
