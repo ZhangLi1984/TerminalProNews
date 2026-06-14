@@ -186,6 +186,9 @@ function renderAllContent() {
     if (typeof renderMacroNav_0614 === 'function') renderMacroNav_0614();
     const macroContentEl0614 = document.getElementById('macro-content');
     if (macroContentEl0614 && typeof renderMacroContent_0614 === 'function') macroContentEl0614.innerHTML = renderMacroContent_0614();
+    if (typeof renderJisiluNav_0614 === 'function') renderJisiluNav_0614();
+    const jisiluContentEl0614 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0614 && typeof renderJisiluContent_0614 === 'function') jisiluContentEl0614.innerHTML = renderJisiluContent_0614();
   } else
 
     if (date === '2026-06-12') {
