@@ -292,18 +292,12 @@
 <!-- ==================== 数据模块：6 月 14 日（最新） ==================== -->
 <script src="./data/decision-0614-nav.js"></script>
 <script src="./data/decision-0614-content.js"></script>
-<script src="./data/industry-0614-nav.js"></script>
-<script src="./data/industry-0614-content.js"></script>
 <script src="./data/macro-0614-nav.js"></script>
 <script src="./data/macro-0614-content.js"></script>
-<script src="./data/broker-0614-nav.js"></script>
-<script src="./data/broker-0614-content.js"></script>
-<script src="./data/stock-0614-nav.js"></script>
-<script src="./data/stock-0614-content.js"></script>
 <script src="./data/jisilu-0614-nav.js"></script>
 <script src="./data/jisilu-0614-content.js"></script>
-<script src="./data/futures-0614-nav.js"></script>
-<script src="./data/futures-0614-content.js"></script>
+<script src="./data/stock-0614-nav.js"></script>
+<script src="./data/stock-0614-content.js"></script>
 
 <!-- ==================== 数据模块：6 月 12 日 ==================== -->
 <script src="./data/stock-0612-nav.js"></script>
