@@ -180,6 +180,9 @@ function renderAllContent() {
 
   if (date === '2026-06-14') {
     console.log('[renderAllContent] 渲染 6 月 14 日内容');
+    if (typeof renderDecisionNav_0614 === 'function') renderDecisionNav_0614();
+    const decisionContentEl0614 = document.getElementById('decision-content');
+    if (decisionContentEl0614 && typeof renderDecisionContent_0614 === 'function') decisionContentEl0614.innerHTML = renderDecisionContent_0614();
     if (typeof renderMacroNav_0614 === 'function') renderMacroNav_0614();
     const macroContentEl0614 = document.getElementById('macro-content');
     if (macroContentEl0614 && typeof renderMacroContent_0614 === 'function') macroContentEl0614.innerHTML = renderMacroContent_0614();
@@ -190,6 +193,9 @@ function renderAllContent() {
     if (typeof renderStockNav_0612 === 'function') renderStockNav_0612();
     const stockContentEl0612 = document.getElementById('stock-content');
     if (stockContentEl0612 && typeof renderStockContent_0612 === 'function') stockContentEl0612.innerHTML = renderStockContent_0612();
+    if (typeof renderJisiluNav_0612 === 'function') renderJisiluNav_0612();
+    const jisiluContentEl0612 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0612 && typeof renderJisiluContent_0612 === 'function') jisiluContentEl0612.innerHTML = renderJisiluContent_0612();
   } else
 
     if (date === '2026-06-11') {
