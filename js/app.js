@@ -4,7 +4,7 @@
 
 const AppState = {
   currentTab: 'decision',
-  currentDate: '2026-06-14',
+  currentDate: '2026-06-15',
   dateDropdownOpen: false,
   activeSection: null
 };
@@ -129,7 +129,12 @@ function renderAllContent() {
 
 
 
-  if (date === '2026-06-14') {
+  if (date === '2026-06-15') {
+    console.log('[renderAllContent] 渲染 6 月 15 日内容');
+    if (typeof renderStockNav_0615 === 'function') renderStockNav_0615();
+    const stockContentEl0615 = document.getElementById('stock-content');
+    if (stockContentEl0615 && typeof renderStockContent_0615 === 'function') stockContentEl0615.innerHTML = renderStockContent_0615();
+  } else if (date === '2026-06-14') {
     console.log('[renderAllContent] 渲染 6 月 14 日内容');
     if (typeof renderDecisionNav_0614 === 'function') renderDecisionNav_0614();
     const decisionContentEl0614 = document.getElementById('decision-content');
