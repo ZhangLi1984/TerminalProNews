@@ -131,18 +131,27 @@ function renderAllContent() {
 
   if (date === '2026-06-15') {
     console.log('[renderAllContent] 渲染 6 月 15 日内容');
-    if (typeof renderBrokerNav_0615 === 'function') renderBrokerNav_0615();
-    const brokerContentEl0615 = document.getElementById('broker-content');
-    if (brokerContentEl0615 && typeof renderBrokerContent_0615 === 'function') brokerContentEl0615.innerHTML = renderBrokerContent_0615();
+    if (typeof renderDecisionNav_0615 === 'function') renderDecisionNav_0615();
+    const decisionContentEl0615 = document.getElementById('decision-content');
+    if (decisionContentEl0615 && typeof renderDecisionContent_0615 === 'function') decisionContentEl0615.innerHTML = renderDecisionContent_0615();
+    if (typeof renderIndustryNav_0615 === 'function') renderIndustryNav_0615();
+    const industryContentEl0615 = document.getElementById('industry-content');
+    if (industryContentEl0615 && typeof renderIndustryContent_0615 === 'function') industryContentEl0615.innerHTML = renderIndustryContent_0615();
     if (typeof renderMacroNav_0615 === 'function') renderMacroNav_0615();
     const macroContentEl0615 = document.getElementById('macro-content');
     if (macroContentEl0615 && typeof renderMacroContent_0615 === 'function') macroContentEl0615.innerHTML = renderMacroContent_0615();
+    if (typeof renderBrokerNav_0615 === 'function') renderBrokerNav_0615();
+    const brokerContentEl0615 = document.getElementById('broker-content');
+    if (brokerContentEl0615 && typeof renderBrokerContent_0615 === 'function') brokerContentEl0615.innerHTML = renderBrokerContent_0615();
     if (typeof renderStockNav_0615 === 'function') renderStockNav_0615();
     const stockContentEl0615 = document.getElementById('stock-content');
     if (stockContentEl0615 && typeof renderStockContent_0615 === 'function') stockContentEl0615.innerHTML = renderStockContent_0615();
     if (typeof renderJisiluNav_0615 === 'function') renderJisiluNav_0615();
     const jisiluContentEl0615 = document.getElementById('jisilu-content');
     if (jisiluContentEl0615 && typeof renderJisiluContent_0615 === 'function') jisiluContentEl0615.innerHTML = renderJisiluContent_0615();
+    if (typeof renderFuturesNav_0615 === 'function') renderFuturesNav_0615();
+    const futuresContentEl0615 = document.getElementById('futures-content');
+    if (futuresContentEl0615 && typeof renderFuturesContent_0615 === 'function') futuresContentEl0615.innerHTML = renderFuturesContent_0615();
   } else if (date === '2026-06-14') {
     console.log('[renderAllContent] 渲染 6 月 14 日内容');
     if (typeof renderDecisionNav_0614 === 'function') renderDecisionNav_0614();
