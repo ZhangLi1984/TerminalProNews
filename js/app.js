@@ -131,6 +131,9 @@ function renderAllContent() {
 
   if (date === '2026-06-15') {
     console.log('[renderAllContent] 渲染 6 月 15 日内容');
+    if (typeof renderBrokerNav_0615 === 'function') renderBrokerNav_0615();
+    const brokerContentEl0615 = document.getElementById('broker-content');
+    if (brokerContentEl0615 && typeof renderBrokerContent_0615 === 'function') brokerContentEl0615.innerHTML = renderBrokerContent_0615();
     if (typeof renderMacroNav_0615 === 'function') renderMacroNav_0615();
     const macroContentEl0615 = document.getElementById('macro-content');
     if (macroContentEl0615 && typeof renderMacroContent_0615 === 'function') macroContentEl0615.innerHTML = renderMacroContent_0615();
