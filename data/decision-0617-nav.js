@@ -2,14 +2,14 @@ const DECISION_NAV_CONFIG_0617 = [
   { title: '核心摘要', links: [{ id: 'sec1', label: '全局叙事' }] },
   { title: '重大事件', links: [
     { id: 'sec2', label: '美伊协议' },
-    { id: 'sec3', label: 'SpaceX上市' },
-    { id: 'sec4', label: 'DeepSeek融资' }
+    { id: 'sec3', label: '金融开放新政' },
+    { id: 'sec4', label: '微软AI转向' }
   ]},
   { title: '行业催化', links: [
-    { id: 'sec5', label: '电子元件' },
-    { id: 'sec6', label: '功率半导体' },
-    { id: 'sec7', label: '小金属' },
-    { id: 'sec8', label: '宏观政策' }
+    { id: 'sec5', label: '科技/AI/半导体' },
+    { id: 'sec6', label: '金融/宏观政策' },
+    { id: 'sec7', label: '新能源/汽车' },
+    { id: 'sec8', label: '医药/消费' }
   ]},
   { title: '风险提示', links: [{ id: 'sec9', label: '避雷针' }] }
 ];

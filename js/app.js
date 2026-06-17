@@ -4,7 +4,7 @@
 
 const AppState = {
   currentTab: 'decision',
-  currentDate: '2026-06-16',
+  currentDate: '2026-06-17',
   dateDropdownOpen: false,
   activeSection: null
 };
