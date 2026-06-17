@@ -10,7 +10,7 @@ function renderDecisionContent_0617() {
 
     <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>二、重大事件：深度推理与沙盘推演</h2>
 
-    <h3 id="sec2" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">事件一：美伊签署谅解备忘录，霍尔木兹海峡即将重开</h3>
+    <h3 id="sec3" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">事件一：美伊签署谅解备忘录，霍尔木兹海峡即将重开</h3>
     <ul class="list-none space-y-3 my-6">
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>事件穿透</strong>：美伊将于6月19日正式签署和平协议，伊朗获准恢复石油出口，制裁豁免涵盖银行/运输/保险，霍尔木兹海峡19日前全面开放且通行免费。</span></li>
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>信号判断</strong>：<strong>超预期</strong>。市场此前仅预期有限度的制裁放松，但实际达成协议包括完整的制裁豁免和航道免费开放，供应恢复速度远超预期。</span></li>
@@ -19,7 +19,7 @@ function renderDecisionContent_0617() {
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>映射标的</strong>：利空——中国石油、中国海油、广汇能源、恒力石化；利好——南方航空、中国国航、顺丰控股、塑料加工企业。</span></li>
     </ul>
 
-    <h3 id="sec3" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">事件二：陆家嘴论坛金融开放六大新政发布</h3>
+    <h3 id="sec4" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">事件二：陆家嘴论坛金融开放六大新政发布</h3>
     <ul class="list-none space-y-3 my-6">
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>事件穿透</strong>：央行行长潘功胜在2026陆家嘴论坛宣布六项重磅政策：①完善短端利率调控机制（利率走廊收窄至50bp）；②创设境外央行回购工具（FIMA RMB Repo）；③上海自贸区开展离岸人民币外汇交易试点（授权工农中建交中信6家银行）；④研究设立特定情景非银流动性支持工具；⑤出台《上海国际金融中心发展离岸金融行动方案》；⑥银行间市场数据报告库挂牌。</span></li>
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>信号判断</strong>：<strong>符合预期但力度超预期</strong>。市场早已预期金融开放，但此次政策组合拳的系统性和可操作性超出想象，尤其是"特定情景下向非银机构提供紧急流动性"这一工具，实质上是为资本市场建立了"最后贷款人"机制。</span></li>
@@ -28,7 +28,7 @@ function renderDecisionContent_0617() {
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>映射标的</strong>：直接受益——工商银行、农业银行、中国银行、建设银行、交通银行、中信银行（离岸交易资格）；间接受益——中信证券、华泰证券、中金公司（跨境业务龙头）、中国平安/中国人寿（险资配置便利化）。</span></li>
     </ul>
 
-    <h3 id="sec4" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">事件三：微软取消30亿美元甲骨文云协议，AI交易遭遇重创</h3>
+    <h3 id="sec5" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">事件三：微软取消30亿美元甲骨文云协议，AI交易遭遇重创</h3>
     <ul class="list-none space-y-3 my-6">
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>事件穿透</strong>：微软宣布取消与甲骨文的30亿美元云容量租赁协议，同时考虑将Copilot改为"按使用量计费"并采用DeepSeek V4等开源模型以解决"AI太贵"问题。当日费城半导体指数大跌5.71%，英伟达跌超2%，英特尔跌超8%，光通信概念股集体崩盘（应用光电跌超10%）。</span></li>
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>信号判断</strong>：<strong>不及预期中的结构性冲击</strong>。市场原本预期AI资本开支将持续高增长，但微软的动作揭示了一个被忽视的事实：当前AI基础设施的ROI（投资回报率）不足以支撑高昂的云租赁成本。这不是AI需求的消失，而是商业模式的调整。</span></li>
@@ -39,26 +39,26 @@ function renderDecisionContent_0617() {
 
     <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>三、重要新闻：行业催化与资金博弈</h2>
 
-    <h3 id="sec5" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【科技/AI/半导体】</h3>
+    <h3 id="sec6" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【科技/AI/半导体】</h3>
     <ul class="list-none space-y-3 my-6">
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>智能眼镜出货量暴增130%</strong>：IDC数据显示2026年Q1全球智能眼镜出货356.6万台，同比增130.1%，全年预计突破2368.7万台。谷歌联合三星推出AI智能眼镜，苹果切入200-500美元价格带，国内VITURE/雷鸟/科大讯飞密集发布新品。<strong>传导</strong>：上游光学元件（歌尔股份增资歌尔光学10亿元、蓝特光学定增10.55亿元用于AR光学产业化）、AI芯片（卓胜微/翱捷科技/寒武纪机构预测未来3年净利增速超100%）、整机代工（立讯精密、亿纬锂能）全链条受益。</span></li>
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>覆铜板再涨价</strong>：建滔积层板因铜价和玻璃布上涨，对FR-4/PP提价15%。<strong>传导</strong>：上游玻纤布企业受益（南亚新材股价突破400元创历史新高，一季度营收增92%、净利增610%），但下游PCB厂商成本承压。</span></li>
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>科创板第五套标准扩围</strong>：吴清宣布将科创板第五套上市标准适用范围扩大至人工智能大模型行业。<strong>传导</strong>：利好尚未盈利但研发投入大的AI大模型企业（科大讯飞、云从科技、商汤-W），加速AI产业资本化进程。</span></li>
     </ul>
 
-    <h3 id="sec6" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【金融/宏观政策】</h3>
+    <h3 id="sec7" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【金融/宏观政策】</h3>
     <ul class="list-none space-y-3 my-6">
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>潘功胜六大金融新政</strong>：已在"重大事件"部分详述。补充要点：证监会同步推动ETF投顾业务、研究人民币外汇期货试点、液化天然气期货期权上市。</span></li>
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>吴清最新表态</strong>：新"国九条"以来社保/保险等净买入A股1.3万亿元，目前A股科技板块市值占比超30%，千亿市值科技企业占比达45%。<strong>信号</strong>：监管层通过引入长线资金稳定市场的策略见效，科技股已成为A股核心资产。</span></li>
     </ul>
 
-    <h3 id="sec7" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【新能源/汽车】</h3>
+    <h3 id="sec8" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【新能源/汽车】</h3>
     <ul class="list-none space-y-3 my-6">
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>蔚来李斌表态</strong>：做好行业全年销量跌20%的准备，但蔚来要逆势增长40%。<strong>解读</strong>：新能源车行业内卷加剧，头部企业开始打"预期管理"牌，实际销量数据将成为检验估值的试金石。</span></li>
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>零跑汽车67.44亿定增遭证监会"四连问"</strong>：监管层对新能源车融资收紧，防止过度圈钱。<strong>传导</strong>：二三线车企融资难度加大，行业整合加速。</span></li>
     </ul>
 
-    <h3 id="sec8" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【医药/消费】</h3>
+    <h3 id="sec9" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【医药/消费】</h3>
     <ul class="list-none space-y-3 my-6">
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>创新药估值回调</strong>：尽管基本面改善（多款国产创新药获批），但板块估值仍处于历史低位。<strong>博弈点</strong>：机构持仓处于低位，一旦业绩兑现可能引发补涨行情。</span></li>
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>白酒连跌5年</strong>：山西汾酒、泸州老窖等股价连跌5年，但机构关注度依然高（山西汾酒33家机构评级）。<strong>信号</strong>：白酒行业处于"底部企稳"阶段，核心城市二手房成交活跃预示商务消费有望复苏，底仓配置价值显现。</span></li>
@@ -73,7 +73,7 @@ function renderDecisionContent_0617() {
       <p>3. <strong>"地产链反转"逻辑仍在验证</strong>：尽管政策频出，但万科A、绿地控股等地产股股价连跌5-7年，销售数据虽边际改善但库存去化压力仍大。东吴证券提到的"核心城市企稳"尚未扩散到全国。</p>
     </blockquote>
 
-    <h3 id="sec9" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">传闻预警</h3>
+    <h3 id="sec10" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">传闻预警</h3>
     <ul class="list-none space-y-3 my-6">
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>SpaceX散户配股寥寥</strong>：尽管SpaceX上市后市值站上2.5万亿美元（涨超19%），但散户获配股票极少，面临"持股还是卖出"的艰难抉择。需警惕上市初期的抛压。</span></li>
       <li class="py-2 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>多家A股公司提示风险</strong>：昨夜今晨有26家A股公司发布风险提示公告，包括胜宏科技（董事长桃色新闻致市值蒸发235亿）、元道通信（财务造假被查）等，需规避问题个股。</span></li>
