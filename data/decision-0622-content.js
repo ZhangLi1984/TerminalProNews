@@ -5,23 +5,23 @@ function renderDecisionContent_0622() {
 
 <h3 id="sec1" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">核心主线</h3>
 
-<p class="text-slate-700 leading-relaxed">今日资金围绕 <strong>"美伊协议阶段性进展"</strong> 与 <strong>"AI算力产业链持续高景气"</strong> 双主线博弈。A股市场成交活跃，沪指涨1.78%，三市成交额创历史第二高。科技成长板块继续主导市场情绪，券商与保险板块爆发带动指数上行。同时，三部门发布15条稳外资新政，显示政策层面对吸引外资的重视程度持续提升。</p>
+<p class="text-slate-700 leading-relaxed">今日资金围绕<strong>"地缘缓和+AI材料通胀"</strong>双主线博弈。伊朗-美国达成首轮谈判5项要点协议，霍尔木兹海峡重新开放预期升温，国际油价单日暴跌3-4%，WTI跌破74美元；与此同时，AI算力链条向上游材料端的通胀传导全面爆发，MLCC、光纤、氧化锆、靶材等材料价格持续攀升。</p>
 
-<h3 id="sec2" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">关键推演与操作方向</h3>
+<h3 id="sec2" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">关键推演</h3>
 
 <div class="space-y-4">
   <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
     <h4 class="text-blue-800 font-black mb-3 flex items-center">
-      <span class="text-xl mr-2">📊</span>推演一：美伊协议→地缘风险降温→油价震荡下行
+      <span class="text-xl mr-2">📊</span>第一条传导链：伊美协议→霍尔木兹海峡开放→原油供应恢复
     </h4>
-    <p class="text-blue-900">伊朗发布首轮谈判达成的协议五大要点，万斯称已建立协调机制防止中东局势升级。短期看，霍尔木兹海峡通航问题趋于缓和，原油价格承压下行概率较大。但需注意协议执行层面仍存在不确定性，伊朗军方此前"关海"言论反复显示内部强硬派仍有掣肘。油价下行将带动全球通胀预期回落，对成长股估值形成支撑。</p>
+    <p class="text-blue-900">油价下跌带动全球通胀预期降温，美联储加息压力缓解，成长股估值修复。A股创业板指大涨2.52%创历史新高，北向资金净流入超百亿。</p>
   </div>
 
   <div class="bg-gradient-to-r from-purple-50 to-pink-50 border-l-4 border-purple-500 p-5 my-5 rounded-r-xl">
     <h4 class="text-purple-800 font-black mb-3 flex items-center">
-      <span class="text-xl mr-2">⚡</span>推演二：AI算力需求旺盛→上游材料供不应求
+      <span class="text-xl mr-2">⚡</span>第二条传导链：AI大模型调用量激增→数据中心建设加速→上游材料需求爆发
     </h4>
-    <p class="text-purple-900">算力金属狂潮延续，中船特气因期间累计涨幅388.77%停牌核查，反映市场对AI算力上游材料的高度关注。锡、钽、铟等小金属供需缺口仍在扩大，六氟化钨、磷化铟衬底等核心材料价格持续上涨。具备矿产资源或长单锁价能力的企业将获得超额收益，而中游封测厂商则面临成本传导压力。</p>
+    <p class="text-purple-900">上周全球AI大模型总调用量达46.7万亿Token，800G/1.6T光模块需求爆发，上游MLCC/光纤/靶材供不应求，三环集团/长飞光纤/博云新材等受益。</p>
   </div>
 
   <div class="bg-slate-50 border-l-4 border-slate-500 p-5 my-5 rounded-r-xl">
@@ -29,123 +29,125 @@ function renderDecisionContent_0622() {
       <span class="text-xl mr-2">🎯</span>操作方向
     </h4>
     <ul class="list-none space-y-2 text-slate-700">
-      <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>整体仓位：</strong>维持中高仓位（7-8成），利用市场震荡逢低吸纳优质标的。</span></li>
-      <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>进攻方向：</strong>AI算力硬件链（光通信、半导体设备、存储芯片）、小金属（锡、钽、铟、锑）、高端装备制造。</span></li>
-      <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>防守方向：</strong>红利资产（煤炭、电力、城商行）逢低配置，对冲科技波动。</span></li>
+      <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>整体仓位：</strong>维持中高仓位（7-8成），地缘缓和降低尾部风险。</span></li>
+      <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>进攻方向：</strong>AI上游材料（MLCC、光纤、靶材）、半导体设备、人形机器人。</span></li>
+      <li class="flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>防守方向：</strong>高股息红利板块短期回调后可逢低吸纳，大金融板块今日爆发后需观察持续性。</span></li>
     </ul>
   </div>
 </div>
 
 <h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>二、重大事件：深度推理与沙盘推演</h2>
 
-<h3 id="sec3" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">事件一：美伊达成阶段性协议，地缘风险边际降温</h3>
+<h3 id="sec3" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">事件一：伊美日内瓦谈判达成5项要点协议</h3>
 
 <div class="bg-orange-50 border-l-4 border-orange-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-orange-800 font-black mb-3 flex items-center">
     <span class="text-xl mr-2">🌍</span>事件穿透
   </h4>
-  <p class="text-orange-900">伊朗外交部宣布伊美达成协议文件，并发布首轮谈判达成的协议五大要点。美国副总统万斯表示已建立协调机制以防止中东局势进一步升级。国际油价应声走低，美股三大指数小幅上涨。</p>
+  <p class="text-orange-900">当地时间6月22日，伊朗谈判代表团发布首轮谈判达成的五大要点：黎巴嫩停火机制建立、霍尔木兹海峡沟通热线设立、三个工作组成立、解冻伊朗资产、美国签发60天伊朗石油制裁豁免。</p>
 </div>
 
-<p class="text-slate-700"><strong>信号判断：</strong><span class="font-bold text-green-600">符合预期，缓和趋势明确</span>。市场对全面停战的预期已部分反映在资产价格中。后续需关注协议执行层面的具体进展，尤其是霍尔木兹海峡实际通航船只数量的变化。</p>
+<p class="text-slate-700"><strong>信号判断：</strong><span class="font-bold text-green-600">超预期</span>。市场原本预期谈判将陷入僵局，但实际进展远超预期，尤其是美国财政部已签发60天石油销售豁免，意味着伊朗可立即通过央行官方机制接收石油款项。</p>
 
 <h4 class="text-lg font-bold text-slate-800 mt-6 mb-3">传导逻辑树</h4>
 <ul class="list-none space-y-2">
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>直接利好：</strong>全球航运保险费率下调；中东地缘风险溢价消退→新兴市场风险偏好修复。</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>间接利空：</strong>原油供应恢复预期→油价下行→油服企业订单减少；黄金避险需求减弱→金价回调。</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>结构性机会：</strong>若协议执行顺利，硫磺等战略物资供应恢复正常，前期涨价链条可能反转，需警惕相关个股高位回调风险。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span>霍尔木兹海峡重新开放 → 原油日均供应量增加150-200万桶 → 国际油价大跌3-4% → WTI跌破74美元，布伦特跌破78美元。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>全球通胀预期降温 → 美联储6月加息概率从90%降至70%以下 → 成长股估值压力缓解 → A股创业板指涨2.52%创新高，港股科技股反弹。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span>中东地缘风险溢价消退 → 黄金避险需求下降 → 高盛/花旗纷纷下调黄金目标价至4900美元。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>伊朗资产解冻 → 全球流动性边际改善 → 新兴市场资金回流预期 → 北向资金今日净流入超百亿。</span></li>
 </ul>
 
 <h4 class="text-lg font-bold text-slate-800 mt-6 mb-3">后续验证点</h4>
 <ul class="list-none space-y-2">
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>未来两周霍尔木兹海峡实际通航船只数量变化。</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>国际原油库存变化及OPEC产量政策调整。</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>美国对伊朗制裁解除的具体时间表。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>6月23日伊朗总统访问巴基斯坦后的地区表态。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>6月27日OPEC+会议是否调整减产政策。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>美联储6月FOMC会议纪要中对通胀的表述。</span></li>
 </ul>
 
 <h4 class="text-lg font-bold text-slate-800 mt-6 mb-3">映射标的</h4>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+  <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+    <h5 class="text-red-800 font-bold mb-2">利空</h5>
+    <p class="text-red-900 text-sm">中国海油（油价下跌）、黄金股（山东黄金/中金黄金）。</p>
+  </div>
   <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-    <h5 class="text-green-800 font-bold mb-2">利空出尽/反弹</h5>
-    <p class="text-green-900 text-sm">中国石化、中国石油（成本端受益）、山东黄金、中金黄金（金价回调后长期配置价值显现）。</p>
-  </div>
-  <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
-    <h5 class="text-blue-800 font-bold mb-2">受益通航恢复</h5>
-    <p class="text-blue-900 text-sm">中远海能、招商轮船（油运运力释放）。</p>
+    <h5 class="text-green-800 font-bold mb-2">利好</h5>
+    <p class="text-green-900 text-sm">航空股（燃油成本下降，中国国航/南方航空）、化工下游（恒力石化/荣盛石化）。</p>
   </div>
 </div>
 
-<h3 id="sec4" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">事件二：三部门发布15条稳外资新政，金融开放持续推进</h3>
-
-<div class="bg-blue-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
-  <h4 class="text-blue-800 font-black mb-3 flex items-center">
-    <span class="text-xl mr-2">🏛️</span>事件穿透
-  </h4>
-  <p class="text-blue-900">商务部等三部门联合发布《关于进一步扩大高水平对外开放 稳定外商投资的若干措施》，共15条具体政策。李强总理在辽宁大连调研时强调要大力发展高端装备制造业，加快建设现代化产业体系。这些举措显示政策层面对于吸引外资和产业升级的高度重视。</p>
-</div>
-
-<p class="text-slate-700"><strong>信号判断：</strong><span class="font-bold text-green-600">符合预期且略超预期</span>。这是国家层面"稳外资、稳预期"战略的延续，结合此前陆家嘴论坛释放的金融开放信号，政策底与市场底形成共振。</p>
-
-<h4 class="text-lg font-bold text-slate-800 mt-6 mb-3">传导逻辑树</h4>
-<ul class="list-none space-y-2">
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>直接利好：</strong>外资准入负面清单进一步缩减→跨境资本流动便利化→外资配置A股门槛降低。</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>间接催化：</strong>高端装备制造业获得政策倾斜→研发投入增加→技术突破加速→产业链升级。</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>板块轮动：</strong>从纯题材炒作向有真实订单、有产能落地的细分龙头集中。</span></li>
-</ul>
-
-<h4 class="text-lg font-bold text-slate-800 mt-6 mb-3">后续验证点</h4>
-<ul class="list-none space-y-2">
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>外资实际流入数据及持股比例变化。</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>高端装备制造领域重大技术突破新闻。</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>稳外资新政落地后的实际效果评估。</span></li>
-</ul>
-
-<h4 class="text-lg font-bold text-slate-800 mt-6 mb-3">映射标的</h4>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
-  <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
-    <h5 class="text-purple-800 font-bold mb-2">核心受益</h5>
-    <p class="text-purple-900 text-sm">中信证券、中金公司（跨境业务优势）、汇川技术（高端装备）。</p>
-  </div>
-  <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
-    <h5 class="text-blue-800 font-bold mb-2">制造业升级</h5>
-    <p class="text-blue-900 text-sm">海天精工、科德数控、埃斯顿（数控机床与机器人）。</p>
-  </div>
-</div>
-
-<h3 id="sec5" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">事件三：AI算力产业链持续高景气，概念股表现分化</h3>
+<h3 id="sec4" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">事件二：智谱市值突破1万亿港元，AI算力通胀向材料端传导</h3>
 
 <div class="bg-red-50 border-l-4 border-red-500 p-5 my-5 rounded-r-xl">
   <h4 class="text-red-800 font-black mb-3 flex items-center">
     <span class="text-xl mr-2">💰</span>事件穿透
   </h4>
-  <p class="text-red-900">中船特气因5月11日至6月22日期间累计涨幅388.77%停牌核查，反映市场对AI算力上游材料的高度关注。同时，长川科技预计上半年净利润同比增长110.76%-134.18%，显示行业基本面强劲。十大券商策略普遍认为科技板块在大涨之后仍有空间，但需谨慎追高。</p>
+  <p class="text-red-900">港股AI大模型龙头智谱控股盘中总市值突破1万亿港元，年内暴涨超2000%，成为中国首个万亿港元市值的纯AI公司。与此同时，上周全球AI大模型总调用量达46.7万亿Token，AI服务器带动上游MLCC、光纤、靶材等材料需求爆发。</p>
 </div>
 
-<p class="text-slate-700"><strong>信号判断：</strong><span class="font-bold text-red-600">行情进入分化期</span>。纯题材炒作阶段已过，市场开始关注真实业绩兑现。具备核心技术、真实订单的企业将继续走强，而蹭概念的公司将面临证伪风险。</p>
+<p class="text-slate-700"><strong>信号判断：</strong><span class="font-bold text-yellow-600">符合预期但结构分化加剧</span>。智谱市值破万亿标志着AI赛道从"概念炒作"进入"业绩兑现"阶段，但今日A股AI主线出现明显高低切换，资金从高位CPO个股流向低位材料股。</p>
 
 <h4 class="text-lg font-bold text-slate-800 mt-6 mb-3">传导逻辑树</h4>
 <ul class="list-none space-y-2">
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>上游确认：</strong>拥有矿山资源或核心技术的企业利润暴增→云南锗业、锡业股份、长川科技。</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>中游承压：</strong>没有议价权的中小厂商被迫停产或亏损→行业集中度提升。</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>下游传导：</strong>AI服务器厂商将成本转嫁给云服务商→云服务价格上涨。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span>AI大模型调用量激增（46.7万亿Token/周）→ 数据中心建设加速 → 英伟达Vera Rubin平台采用全面液冷技术 → 800G/1.6T光模块需求爆发 → 中信建投预计2026年800G需求继续翻倍。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>上游光纤光缆供不应求 → 长飞光纤涨停，成为湖北首家市值破3000亿上市公司 → 光纤预制棒/高纯四氯化硅紧缺 → 东方钽业/翔鹭钨业涨停。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>AI服务器出货量激增 → MLCC用量大幅提升 → 车规级/服务器级MLCC缺货 → 国信证券研报指出MLCC渗透率迅速提升 → 三环集团赴港IPO（全球第七大MLCC厂商）。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>先进制程扩产 → 靶材消耗量是传统工艺3-5倍 → 国产靶材加速导入头部晶圆厂 → 华特气体/广钢气体大涨。</span></li>
 </ul>
 
 <h4 class="text-lg font-bold text-slate-800 mt-6 mb-3">后续验证点</h4>
 <ul class="list-none space-y-2">
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>中报季各公司业绩兑现情况。</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>LME锡库存变化（目前逼近历史低谷）。</span></li>
-  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>海外芯片巨头（英伟达、博通）业绩指引。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>7月17-20日世界人工智能大会（WAIC）上各厂商发布的最新大模型进展。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>三环集团港股IPO发行结果及募资规模。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>中船特气停牌核查后复牌表现（今年已涨870%）。</span></li>
 </ul>
 
 <h4 class="text-lg font-bold text-slate-800 mt-6 mb-3">映射标的</h4>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
   <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-    <h5 class="text-green-800 font-bold mb-2">强推荐</h5>
-    <p class="text-green-900 text-sm">云南锗业、锡业股份、长川科技、洛阳钼业。</p>
+    <h5 class="text-green-800 font-bold mb-2">直接受益</h5>
+    <p class="text-green-900 text-sm">长飞光纤（光纤龙头）、华特气体（电子特气）、广钢气体（电子大宗气体）、博云新材（硬质合金棒材）。</p>
   </div>
   <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
-    <h5 class="text-blue-800 font-bold mb-2">谨慎乐观</h5>
-    <p class="text-blue-900 text-sm">中际旭创（光模块龙头）、沪电股份（AI PCB）。</p>
+    <h5 class="text-blue-800 font-bold mb-2">间接受益</h5>
+    <p class="text-blue-900 text-sm">中信建投（看好半导体设备）、新易盛/中际旭创（光模块）。</p>
+  </div>
+</div>
+
+<h3 id="sec5" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">事件三：三部门发布15条稳外资新政</h3>
+
+<div class="bg-blue-50 border-l-4 border-blue-500 p-5 my-5 rounded-r-xl">
+  <h4 class="text-blue-800 font-black mb-3 flex items-center">
+    <span class="text-xl mr-2">🏛️</span>事件穿透
+  </h4>
+  <p class="text-blue-900">商务部、国家发展改革委、财政部联合印发《利用外资固稳促优行动方案》，从扩大市场准入、提升投资便利度等五方面提出15条新举措，包括支持外资机构开展基金投顾业务、扩大生物技术开放试点、优化数据跨境流动管理等。</p>
+</div>
+
+<p class="text-slate-700"><strong>信号判断：</strong><span class="font-bold text-yellow-600">符合预期但有结构性亮点</span>。虽然1-5月实际利用外资同比下降8.6%，但降幅较去年同期收窄4.6个百分点，且2025年有8000多家外资企业增加对华投资。新政重点回应了医药、金融、数据跨境等外资核心关切。</p>
+
+<h4 class="text-lg font-bold text-slate-800 mt-6 mb-3">传导逻辑树</h4>
+<ul class="list-none space-y-2">
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span>金融业开放：支持外资开展国债期货风险管理、基金投顾业务 → 吸引更多长线外资流入A股 → 今日北向资金净流入超百亿。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span>医药领域：生物制品分段生产+化学药品跨境分段生产研究 → 跨国药企在华投资加速 → 科济药业恺力美（实体瘤CAR-T）获批上市。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span>数据跨境：制定工业/电信/汽车/医药等行业重要数据识别目录 → 降低外企合规成本 → 特斯拉/苹果等加大在华研发投入。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 mr-3 flex-shrink-0"></span><span>服务业扩容：稳步扩大职业技能培训/职业院校/高水平大学开放 → 吸引外资设立地区总部/研发中心 → 上海/北京功能性机构集聚。</span></li>
+</ul>
+
+<h4 class="text-lg font-bold text-slate-800 mt-6 mb-3">后续验证点</h4>
+<ul class="list-none space-y-2">
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>下半年电信/互联网/教育/文化/医疗等领域有序扩大开放的具体时间表。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>自由贸易试验区数据出境负面清单的制定进展。</span></li>
+</ul>
+
+<h4 class="text-lg font-bold text-slate-800 mt-6 mb-3">映射标的</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+  <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+    <h5 class="text-purple-800 font-bold mb-2">券商</h5>
+    <p class="text-purple-900 text-sm">中信建投（今日涨停）、东方财富（涨12.74%）。</p>
+  </div>
+  <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+    <h5 class="text-blue-800 font-bold mb-2">创新药</h5>
+    <p class="text-blue-900 text-sm">科济药业-B（港股）、药明康德（若海外订单恢复）。</p>
   </div>
 </div>
 
@@ -153,88 +155,219 @@ function renderDecisionContent_0622() {
 
 <h3 id="sec6" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【科技/AI/半导体】</h3>
 
-<blockquote class="border-l-4 border-red-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
-  <p><strong>事件：</strong>中船特气停牌核查；长川科技预增超110%；算力金属概念股持续活跃。</p>
-  <p class="mt-2"><strong>影响：</strong>科技股内部出现明显分化，有真实业绩支撑的公司受到资金青睐，纯概念股面临监管关注。市场风格从"炒概念"向"看业绩"转变。</p>
-  <p class="mt-2"><strong>策略：</strong>坚守光通信、半导体设备、存储芯片等高景气细分且有业绩支撑的标的，警惕纯题材炒作股在中报季证伪。</p>
-</blockquote>
+<ul class="list-none space-y-3">
+  <li class="py-2 border-b border-slate-100 last:border-0">
+    <p class="text-slate-700"><strong>微信AI助手"小微"小范围灰度上线：</strong>腾讯在AI应用层迈出关键一步，结合微信支付生态，AI+消费场景落地可期。<strong>利好：</strong>腾讯控股（港股）、微盟集团（AI全链路覆盖）。</p>
+  </li>
+  <li class="py-2 border-b border-slate-100 last:border-0">
+    <p class="text-slate-700"><strong>华为乾崑辅助驾驶权益升级调价：</strong>"智驾兜底"模式可能成为行业标配，智能驾驶渗透率提升加速。<strong>利好：</strong>德赛西威/华阳集团（智能座舱）。</p>
+  </li>
+  <li class="py-2 border-b border-slate-100 last:border-0">
+    <p class="text-slate-700"><strong>闪迪披露3D闪存堆叠专利：</strong>揭示"存储-算力一体化"趋势，先进制程靶材消耗量倍增。<strong>利好：</strong>江波龙/佰维存储（存储模组）。</p>
+  </li>
+  <li class="py-2 border-b border-slate-100 last:border-0">
+    <p class="text-slate-700"><strong>英特尔任命陈立武为新CEO：</strong>老牌芯片巨头改革预期升温，钻石散热材料在芯片封装上的潜力被看好。<strong>利好：</strong>黄河旋风/四方达（金刚石材料）。</p>
+  </li>
+</ul>
 
-<h3 id="sec7" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【高端装备制造】</h3>
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【新能源/锂电】</h3>
 
-<blockquote class="border-l-4 border-green-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
-  <p><strong>事件：</strong>李强总理调研辽宁大连时强调大力发展高端装备制造业；我国拟制定标准推动人形机器人走进更多场景。</p>
-  <p class="mt-2"><strong>影响：</strong>政策层面对于高端装备制造的重视程度持续提升，数控机床、工业机器人、航空航天等领域有望获得更多政策支持。</p>
-  <p class="mt-2"><strong>策略：</strong>关注具有自主核心技术、进口替代空间大的高端装备制造龙头，如海天精工、科德数控、埃斯顿等。</p>
-</blockquote>
+<ul class="list-none space-y-3">
+  <li class="py-2 border-b border-slate-100 last:border-0">
+    <p class="text-slate-700"><strong>宁德时代联席董事长潘健：港股平台助力巩固全球龙头地位：</strong>暗示可能启动H股上市或二次上市。<strong>利好：</strong>宁德时代。</p>
+  </li>
+  <li class="py-2 border-b border-slate-100 last:border-0">
+    <p class="text-slate-700"><strong>中科电气终止百亿负极材料项目：</strong>经审慎评估后决定停止，反映负极材料产能过剩问题仍未解决。<strong>利空：</strong>负极材料二线厂商（尚太/璞泰来）。</p>
+  </li>
+  <li class="py-2 border-b border-slate-100 last:border-0">
+    <p class="text-slate-700"><strong>鹏辉能源产品结构优化，储能业务焕发新机：</strong>东吴证券看好其Q2盈利韧性。<strong>利好：</strong>鹏辉能源。</p>
+  </li>
+</ul>
 
-<h3 id="sec8" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【宏观/政策】</h3>
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【政策宏观】</h3>
 
-<blockquote class="border-l-4 border-blue-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
-  <p><strong>事件：</strong>三部门发布15条稳外资新政；商务部将10家美国实体列入出口管制管控名单；美联储前主席格林斯潘辞世享年100岁。</p>
-  <p class="mt-2"><strong>影响：</strong>政策面持续偏暖，流动性宽松预期未改。中美经贸关系在博弈中寻找平衡，出口管制体现战略自主性。</p>
-  <p class="mt-2"><strong>策略：</strong>把握政策驱动的"稳外资+"应用场景，如跨境金融服务、高端制造合资合作等。</p>
-</blockquote>
+<ul class="list-none space-y-3">
+  <li class="py-2 border-b border-slate-100 last:border-0">
+    <p class="text-slate-700"><strong>李强总理调研大连船舶重工/一重大连核电石化：</strong>强调大力发展高端装备制造业，加快核电技术应用。<strong>利好：</strong>中国船舶/一重集团（相关概念股）。</p>
+  </li>
+  <li class="py-2 border-b border-slate-100 last:border-0">
+    <p class="text-slate-700"><strong>1-5月证券交易印花税1262亿元，同比增长88.8%：</strong>反映资本市场活跃度大幅提升，与A股成交量创历史第二大量相呼应。</p>
+  </li>
+  <li class="py-2 border-b border-slate-100 last:border-0">
+    <p class="text-slate-700"><strong>LPR连续13个月按兵不动：</strong>货币政策蓄力调控框架改革，贷款利率锚有望更加多元。<strong>中性偏多：</strong>银行净息差压力暂缓。</p>
+  </li>
+</ul>
 
-<h3 id="sec9" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【医药生物】</h3>
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">【医药生物】</h3>
 
-<blockquote class="border-l-4 border-purple-500 bg-slate-50 rounded-r-xl p-4 my-4 text-slate-700">
-  <p><strong>事件：</strong>医药板块整体表现平稳，创新药企持续获得资金支持。</p>
-  <p class="mt-2"><strong>影响：</strong>医药行业内部结构分化加剧，资金抛弃缺乏创新管线的传统企业，拥抱具备自主原研能力的创新药企。</p>
-  <p class="mt-2"><strong>策略：</strong>回避集采压力大、创新转型慢的仿制药企，重点关注ADC药物、细胞治疗、高端器械等前沿领域。</p>
-</blockquote>
+<ul class="list-none space-y-3">
+  <li class="py-2 border-b border-slate-100 last:border-0">
+    <p class="text-slate-700"><strong>五款新药同日放行，实体瘤CAR-T/双抗ADC迎全球首创：</strong>从受理到获批仅6个月，审批效率大幅提升。<strong>利好：</strong>创新药CXO板块（药明康德/康龙化成）。</p>
+  </li>
+  <li class="py-2 border-b border-slate-100 last:border-0">
+    <p class="text-slate-700"><strong>口服减重药即将在华申报上市：</strong>赛道竞争加剧，GLP-1产业链持续关注。<strong>利好：</strong>诺泰生物/圣诺生物。</p>
+  </li>
+</ul>
 
-<h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>四、风险提示与证伪区 (避雷针)</h2>
+<h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>四、热点赛道追踪</h2>
 
-<h3 id="sec10" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">逻辑证伪与传闻预警</h3>
+<h3 id="sec7" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">AI算力链（核心主线）</h3>
 
-<div class="space-y-4">
-  <div class="bg-red-50 border-l-4 border-red-500 p-5 my-5 rounded-r-xl">
-    <h4 class="text-red-800 font-black mb-3 flex items-center">
-      <span class="text-xl mr-2">❌</span>逻辑证伪
-    </h4>
-    <ul class="list-none space-y-3">
-      <li class="py-2 border-b border-red-100 last:border-0">
-        <p class="text-red-900"><strong>"美伊全面和解带来油价暴跌"：</strong>已被伊朗军方反复"关海"言征信伪。现实是协议执行充满变数，油价在70-80美元区间震荡的概率更大，单边下跌空间有限。</p>
-      </li>
-      <li class="py-2">
-        <p class="text-red-900"><strong>"AI算力行情仅靠流动性推动"：</strong>已被中报预告证伪。电子、通信行业盈利增速上修，说明本轮科技牛有坚实基本面支撑，并非纯估值扩张。</p>
-      </li>
-    </ul>
+<p class="text-slate-700 mb-4"><strong>当前阶段：</strong>从GPU/服务器硬件向材料端扩散</p>
+
+<div class="space-y-3">
+  <div class="bg-gradient-to-r from-cyan-50 to-blue-50 border-l-4 border-cyan-500 p-4 my-3 rounded-r-xl">
+    <p class="text-cyan-900"><strong>光模块：</strong>中信建投预计2026年800G需求继续翻倍，1.6T量产在即。<strong>关注：</strong>中际旭创/新易盛/天孚通信。</p>
   </div>
-
-  <div class="bg-amber-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
-    <h4 class="text-amber-800 font-black mb-3 flex items-center">
-      <span class="text-xl mr-2">⚠️</span>传闻预警
-    </h4>
-    <ul class="list-none space-y-3">
-      <li class="py-2 border-b border-amber-100 last:border-0">
-        <p class="text-amber-900"><strong>"六氟化钨海外断供"：</strong>中巨芯发布公告澄清，其高纯六氟化钨尚未签署任何具有法律约束力的长期大额订单。此前股价累计涨幅180%，存在借利好出货风险，投资者需警惕高位接盘。</p>
-      </li>
-      <li class="py-2 border-b border-amber-100 last:border-0">
-        <p class="text-amber-900"><strong>"寒武纪向互联网大厂大量供货"：</strong>公司明确否认，强调与英伟达合作仅限于边缘计算控制器，不涉及芯片设计核心技术。此类"小作文"意在拉高出货，需谨慎对待。</p>
-      </li>
-      <li class="py-2">
-        <p class="text-amber-900"><strong>"美联储9月提前加息"：</strong>虽然沃什态度鹰派，但油价回落将压低美国通胀，市场对加息的预期可能过度。需等待7月非农数据和CPI进一步验证。</p>
-      </li>
-    </ul>
+  <div class="bg-gradient-to-r from-indigo-50 to-purple-50 border-l-4 border-indigo-500 p-4 my-3 rounded-r-xl">
+    <p class="text-indigo-900"><strong>MLCC：</strong>国信证券指出AI服务器带动MLCC量价齐升，车规级产品渗透率提升。<strong>关注：</strong>三环集团（拟港股IPO）、风华高科。</p>
+  </div>
+  <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-4 my-3 rounded-r-xl">
+    <p class="text-emerald-900"><strong>光纤光缆：</strong>长飞光纤涨停创3000亿市值，海外AIDC和DCI建设重构成长逻辑。<strong>关注：</strong>亨通光电/中天科技。</p>
+  </div>
+  <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-4 my-3 rounded-r-xl">
+    <p class="text-amber-900"><strong>电子特气/靶材：</strong>先进制程靶材消耗量是传统工艺3-5倍，国产替代加速。<strong>关注：</strong>华特气体/广钢气体/江丰电子。</p>
   </div>
 </div>
 
-<h3 id="sec11" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">操作纪律</h3>
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">人形机器人（emerging主线）</h3>
+
+<p class="text-slate-700 mb-4"><strong>催化剂：</strong>5月出口2173台创新高，优必选U1预售4000台</p>
+<ul class="list-none space-y-2">
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>外销+内需双驱：</strong>马斯克Optimus进展+国内政策支持。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>核心部件：</strong>减速器（绿的谐波）、伺服电机（汇川技术）、传感器（柯力传感）。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>具身智能：</strong>如祺出行发布具身智能数据平台，酷哇科技拟赴港IPO（年收破10亿）。</span></li>
+</ul>
+
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">半导体设备（稳健主线）</h3>
+
+<p class="text-slate-700 mb-4"><strong>逻辑：</strong>头部半导体设备公司继续受益于强劲的逻辑与存储需求</p>
+<ul class="list-none space-y-2">
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>测试机：</strong>长川科技预计上半年净利超9亿（数字测试机放量）。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>刻蚀/薄膜沉积：</strong>中微公司/拓荆科技完成46亿定增。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>风险提示：</strong>韩监管机构对三星/SK海力士杠杆ETF过热表示担忧，可能出台限制措施。</span></li>
+</ul>
+
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">培育钻石（题材炒作）</h3>
+
+<p class="text-slate-700 mb-4"><strong>现象：</strong>惠丰钻石涨29.99%，东方碳素涨24.79%，板块狂飙</p>
+<ul class="list-none space-y-2">
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>逻辑：</strong>AI散热需求+珠宝消费双重驱动。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span><span><strong>风险：</strong>纯粹题材炒作，基本面支撑不足，注意追高风险。</span></li>
+</ul>
+
+<h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>五、跨赛道传导分析（二阶思维）</h2>
+
+<h3 id="sec8" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">传导一：油价下跌 → 航空/化工下游利润修复</h3>
+
+<div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 p-5 my-5 rounded-r-xl">
+  <p class="text-green-900"><strong>逻辑链：</strong>伊美协议→霍尔木兹开放→原油供应增加→油价跌3-4%→航空公司燃油成本下降（占成本30-40%）→中国国航/南方航空Q3盈利预期上调。<br/>
+  <strong>二阶效应：</strong>油价下跌同时降低化工下游企业原料成本，恒力石化/荣盛石化等炼化一体化企业价差扩大。</p>
+</div>
+
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">传导二：金价下跌 → 央行购金节奏放缓 → 黄金股估值承压</h3>
+
+<div class="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-500 p-5 my-5 rounded-r-xl">
+  <p class="text-yellow-900"><strong>逻辑链：</strong>地缘风险缓和→避险需求下降→高盛/花旗下调黄金目标价至4900美元→全球央行购金意愿虽创纪录但边际减弱→山东黄金/中金黄金股价回调。<br/>
+  <strong>二阶效应：</strong>黄金下跌释放流动性，资金可能转向成长股，进一步强化今日创业板大涨格局。</p>
+</div>
+
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">传导三：AI算力通胀 → 电力需求激增 → 电网设备/SST受益</h3>
+
+<div class="bg-gradient-to-r from-cyan-50 to-blue-50 border-l-4 border-cyan-500 p-5 my-5 rounded-r-xl">
+  <p class="text-cyan-900"><strong>逻辑链：</strong>AI大模型调用量激增→数据中心耗电量飙升→AIDC电源硬通胀→SST（固态变压器）价值量倍增×机柜功率提升→思源电气/许继电气等配电自动化龙头受益。<br/>
+  <strong>二阶效应：</strong>雪佛龙牵手微软，天然气从油田"直供"数据中心，开创"算力-能源"一体化新模式，国内华润微/华润电力等可能跟进。</p>
+</div>
+
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">传导四：稳外资新政 → 医药审批加速 → CXO订单回暖</h3>
+
+<div class="bg-gradient-to-r from-purple-50 to-pink-50 border-l-4 border-purple-500 p-5 my-5 rounded-r-xl">
+  <p class="text-purple-900"><strong>逻辑链：</strong>15条新政包含生物制品分段生产+化学药品跨境分段生产→跨国药企在华研发生产便利化→科济药业CAR-T获批仅是开始→药明康德/康龙化成海外订单可能恢复。<br/>
+  <strong>二阶效应：</strong>医药板块长期被压制估值可能迎来修复窗口，尤其是创新药产业链。</p>
+</div>
+
+<h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>六、明日关注</h2>
+
+<h3 id="sec9" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">重要日程</h3>
+
+<ul class="list-none space-y-2">
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span><strong>6月23日：</strong>伊朗总统访问巴基斯坦，关注地区安全表态。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span><strong>6月25-27日：</strong>2026无人机应用及防控大会暨第七届中国国际无人机博览会（北京）。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span><strong>6月27日：</strong>OPEC+会议（可能讨论减产政策调整）。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span><strong>7月2-4日：</strong>2026上海国际具身智能产业博览会。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span><strong>7月17-20日：</strong>世界人工智能大会（WAIC，上海）。</span></li>
+</ul>
+
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">重点关注公告</h3>
+
+<ul class="list-none space-y-2">
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span><strong>中船特气：</strong>停牌核查完成后复牌表现（今年已涨870%）。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span><strong>长飞光纤：</strong>涨停后能否持续，能否站稳3000亿市值。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span><strong>智谱控股：</strong>港股走势对A股AI板块的情绪指引。</span></li>
+</ul>
+
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">数据发布</h3>
+
+<ul class="list-none space-y-2">
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>欧元区6月消费者信心指数初值-17.7（优于预期-17.5）。</span></li>
+  <li class="py-1.5 border-b border-slate-100 last:border-0 flex items-start"><span class="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></span><span>加拿大5月通胀率升至2023年以来最高。</span></li>
+</ul>
+
+<h2 class="text-2xl font-black text-slate-900 mt-10 mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>七、风险提示与证伪区</h2>
+
+<h3 id="sec10" class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">逻辑证伪</h3>
+
+<div class="bg-red-50 border-l-4 border-red-500 p-5 my-5 rounded-r-xl">
+  <h4 class="text-red-800 font-black mb-3 flex items-center">
+    <span class="text-xl mr-2">❌</span>逻辑证伪
+  </h4>
+  <ul class="list-none space-y-3">
+    <li class="py-2 border-b border-red-100 last:border-0">
+      <p class="text-red-900"><strong>"AI永远涨"逻辑面临考验：</strong>今日A股AI主线出现明显高低切换，资金从高位CPO（中际旭创/新易盛）流向低位材料股（长飞光纤/华特气体），说明市场开始警惕估值泡沫。若下周WAIC大会没有超预期的新品发布，可能出现获利回吐。</p>
+    </li>
+    <li class="py-2 border-b border-red-100 last:border-0">
+      <p class="text-red-900"><strong>"油价必然上涨"的地缘叙事被打破：</strong>伊美协议快速达成表明地缘政治存在超预期缓和可能，此前基于"中东冲突常态化"的多油策略需要重新评估。</p>
+    </li>
+    <li class="py-2">
+      <p class="text-red-900"><strong>黄金"避险之王"地位动摇：</strong>在地缘缓和+美联储可能降息的背景下，金价反而大跌，说明驱动金价的核心逻辑已从"避险"转向"实际利率"，高盛/花旗双双下调目标价值得警惕。</p>
+    </li>
+  </ul>
+</div>
+
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">传闻预警</h3>
+
+<div class="bg-amber-50 border-l-4 border-amber-500 p-5 my-5 rounded-r-xl">
+  <h4 class="text-amber-800 font-black mb-3 flex items-center">
+    <span class="text-xl mr-2">⚠️</span>传闻预警
+  </h4>
+  <ul class="list-none space-y-3">
+    <li class="py-2 border-b border-amber-100 last:border-0">
+      <p class="text-amber-900"><strong>宁德时代H股上市传闻：</strong>联席董事长潘健提及"港股平台"，市场猜测可能启动H股IPO或二次上市。若属实，将对A股形成分流压力，但长期有利于全球化布局。</p>
+    </li>
+    <li class="py-2 border-b border-amber-100 last:border-0">
+      <p class="text-amber-900"><strong>半导体设备国产化率见顶论：</strong>韩监管机构拟限制三星/SK海力士杠杆ETF，若实施可能影响韩国资本开支，进而影响国内半导体设备商订单（北方华创/中微公司）。</p>
+    </li>
+    <li class="py-2">
+      <p class="text-amber-900"><strong>"融房超贷"借道闲鱼疯狂揽客：</strong>零首付买房还能倒拿30-50万的违规操作重现，监管层可能再次收紧房地产信贷政策，对地产链构成潜在利空。</p>
+    </li>
+  </ul>
+</div>
+
+<h3 class="text-xl font-black text-slate-900 mt-8 mb-4 pb-2 border-b border-slate-200">避雷针</h3>
 
 <div class="bg-slate-50 border-l-4 border-slate-500 p-5 my-5 rounded-r-xl">
   <ul class="list-none space-y-3">
     <li class="py-2 border-b border-slate-200 last:border-0 flex items-start">
       <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span>
-      <span class="text-slate-700">对于短期涨幅超过100%且无实质订单支撑的个股（如部分六氟化钨概念股），坚决止盈离场。</span>
+      <span class="text-slate-700"><strong>高估值题材股：</strong>培育钻石板块（惠丰钻石/东方碳素）今日暴涨但缺乏基本面支撑，谨防一日游行情。</span>
     </li>
     <li class="py-2 border-b border-slate-200 last:border-0 flex items-start">
       <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span>
-      <span class="text-slate-700">对于控股股东高比例质押、解禁压力大的次新股，规避参与。</span>
+      <span class="text-slate-700"><strong>黄金股：</strong>地缘缓和+央行购金边际减弱，短期回避山东黄金/中金黄金等。</span>
     </li>
     <li class="py-2 flex items-start">
       <span class="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 mr-3 flex-shrink-0"></span>
-      <span class="text-slate-700">密切关注人民币汇率变动，若离岸人民币快速贬值，可能引发外资阶段性流出。</span>
+      <span class="text-slate-700"><strong>油气上游：</strong>油价大跌直接利空中国海油/中国石油勘探板块。</span>
     </li>
   </ul>
 </div>
