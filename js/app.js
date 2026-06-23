@@ -162,6 +162,18 @@ function renderAllContent() {
     if (typeof renderMacroNav_0623 === 'function') renderMacroNav_0623();
     const macroContentEl0623 = document.getElementById('macro-content');
     if (macroContentEl0623 && typeof renderMacroContent_0623 === 'function') macroContentEl0623.innerHTML = renderMacroContent_0623();
+    if (typeof renderBrokerNav_0623 === 'function') renderBrokerNav_0623();
+    const brokerContentEl0623 = document.getElementById('broker-content');
+    if (brokerContentEl0623 && typeof renderBrokerContent_0623 === 'function') brokerContentEl0623.innerHTML = renderBrokerContent_0623();
+    if (typeof renderStockNav_0623 === 'function') renderStockNav_0623();
+    const stockContentEl0623 = document.getElementById('stock-content');
+    if (stockContentEl0623 && typeof renderStockContent_0623 === 'function') stockContentEl0623.innerHTML = renderStockContent_0623();
+    if (typeof renderJisiluNav_0623 === 'function') renderJisiluNav_0623();
+    const jisiluContentEl0623 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0623 && typeof renderJisiluContent_0623 === 'function') jisiluContentEl0623.innerHTML = renderJisiluContent_0623();
+    if (typeof renderFuturesNav_0623 === 'function') renderFuturesNav_0623();
+    const futuresContentEl0623 = document.getElementById('futures-content');
+    if (futuresContentEl0623 && typeof renderFuturesContent_0623 === 'function') futuresContentEl0623.innerHTML = renderFuturesContent_0623();
   } else if (date === '2026-06-22') {
     console.log('[renderAllContent] 渲染 6 月 22 日内容');
     if (typeof renderDecisionNav_0622 === 'function') renderDecisionNav_0622();
