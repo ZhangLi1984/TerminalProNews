@@ -4,7 +4,7 @@
 
 const AppState = {
   currentTab: 'decision',
-  currentDate: '2026-06-23',
+  currentDate: '2026-06-24',
   dateDropdownOpen: false,
   activeSection: null
 };
@@ -151,7 +151,30 @@ function startClock() {
 function renderAllContent() {
   const date = AppState.currentDate;
 
-  if (date === '2026-06-23') {
+  if (date === '2026-06-24') {
+    console.log('[renderAllContent] 渲染 6 月 24 日内容');
+    if (typeof renderDecisionNav_0624 === 'function') renderDecisionNav_0624();
+    const decisionContentEl0624 = document.getElementById('decision-content');
+    if (decisionContentEl0624 && typeof renderDecisionContent_0624 === 'function') decisionContentEl0624.innerHTML = renderDecisionContent_0624();
+    if (typeof renderIndustryNav_0624 === 'function') renderIndustryNav_0624();
+    const industryContentEl0624 = document.getElementById('industry-content');
+    if (industryContentEl0624 && typeof renderIndustryContent_0624 === 'function') industryContentEl0624.innerHTML = renderIndustryContent_0624();
+    if (typeof renderMacroNav_0624 === 'function') renderMacroNav_0624();
+    const macroContentEl0624 = document.getElementById('macro-content');
+    if (macroContentEl0624 && typeof renderMacroContent_0624 === 'function') macroContentEl0624.innerHTML = renderMacroContent_0624();
+    if (typeof renderBrokerNav_0624 === 'function') renderBrokerNav_0624();
+    const brokerContentEl0624 = document.getElementById('broker-content');
+    if (brokerContentEl0624 && typeof renderBrokerContent_0624 === 'function') brokerContentEl0624.innerHTML = renderBrokerContent_0624();
+    if (typeof renderStockNav_0624 === 'function') renderStockNav_0624();
+    const stockContentEl0624 = document.getElementById('stock-content');
+    if (stockContentEl0624 && typeof renderStockContent_0624 === 'function') stockContentEl0624.innerHTML = renderStockContent_0624();
+    if (typeof renderJisiluNav_0624 === 'function') renderJisiluNav_0624();
+    const jisiluContentEl0624 = document.getElementById('jisilu-content');
+    if (jisiluContentEl0624 && typeof renderJisiluContent_0624 === 'function') jisiluContentEl0624.innerHTML = renderJisiluContent_0624();
+    if (typeof renderFuturesNav_0624 === 'function') renderFuturesNav_0624();
+    const futuresContentEl0624 = document.getElementById('futures-content');
+    if (futuresContentEl0624 && typeof renderFuturesContent_0624 === 'function') futuresContentEl0624.innerHTML = renderFuturesContent_0624();
+  } else if (date === '2026-06-23') {
     console.log('[renderAllContent] 渲染 6 月 23 日内容');
     if (typeof renderDecisionNav_0623 === 'function') renderDecisionNav_0623();
     const decisionContentEl0623 = document.getElementById('decision-content');
