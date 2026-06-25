@@ -59,7 +59,6 @@ function renderDecisionContent_0625() {
 
       <div class="mt-4 pt-4 border-t border-slate-200">
         <p class="text-sm text-slate-600"><strong>投资建议：</strong>重点关注存储芯片设计（兆易创新、北京君正）、模组（江波龙、德明利）、设备（北方华创、中微公司）三条主线。</p>
-        <p class="text-sm text-slate-600 mt-2"><strong>后续验证点：</strong>美光财报电话会细节；长鑫科技IPO进展；长江存储扩产节奏</p>
       </div>
     </div>
 
@@ -87,7 +86,6 @@ function renderDecisionContent_0625() {
 
       <div class="mt-4 pt-4 border-t border-slate-200">
         <p class="text-sm text-slate-600"><strong>投资建议：</strong>关注与SK海力士有业务往来的A股供应商，以及全球半导体估值重估带来的配置机会。</p>
-        <p class="text-sm text-slate-600 mt-2"><strong>后续验证点：</strong>SK海力士ADR发行价格；美国投资者认购热情；其他韩国科技公司是否效仿</p>
       </div>
     </div>
 
@@ -115,7 +113,6 @@ function renderDecisionContent_0625() {
 
       <div class="mt-4 pt-4 border-t border-slate-200">
         <p class="text-sm text-slate-600"><strong>投资建议：</strong>短期规避黄金股，中长期可在3500-3800美元区间分批布局。A股关注黄金加工企业受益于成本下降的企业。</p>
-        <p class="text-sm text-slate-600 mt-2"><strong>后续验证点：</strong>美联储PCE物价指数；央行购金数据；黄金ETF持仓变化</p>
       </div>
     </div>
 
@@ -144,7 +141,6 @@ function renderDecisionContent_0625() {
 
       <div class="mt-4 pt-4 border-t border-slate-200">
         <p class="text-sm text-slate-600"><strong>投资建议：</strong>从纯算力向应用端扩散，关注液冷（三花智控、申菱环境）、PCB（沪电股份、深南电路）、散热材料（方大炭素）等细分龙头。</p>
-        <p class="text-sm text-slate-600 mt-2"><strong>后续验证点：</strong>英伟达新品发布节奏；云厂商CAPEX指引；AI应用商业化进展</p>
       </div>
     </div>
 

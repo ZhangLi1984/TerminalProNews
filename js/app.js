@@ -156,6 +156,15 @@ function renderAllContent() {
     if (typeof renderDecisionNav_0625 === 'function') renderDecisionNav_0625();
     const decisionContentEl0625 = document.getElementById('decision-content');
     if (decisionContentEl0625 && typeof renderDecisionContent_0625 === 'function') decisionContentEl0625.innerHTML = renderDecisionContent_0625();
+    if (typeof renderIndustryNav_0625 === 'function') renderIndustryNav_0625();
+    const industryContentEl0625 = document.getElementById('industry-content');
+    if (industryContentEl0625 && typeof renderIndustryContent_0625 === 'function') industryContentEl0625.innerHTML = renderIndustryContent_0625();
+    if (typeof renderMacroNav_0625 === 'function') renderMacroNav_0625();
+    const macroContentEl0625 = document.getElementById('macro-content');
+    if (macroContentEl0625 && typeof renderMacroContent_0625 === 'function') macroContentEl0625.innerHTML = renderMacroContent_0625();
+    if (typeof renderBrokerNav_0625 === 'function') renderBrokerNav_0625();
+    const brokerContentEl0625 = document.getElementById('broker-content');
+    if (brokerContentEl0625 && typeof renderBrokerContent_0625 === 'function') brokerContentEl0625.innerHTML = renderBrokerContent_0625();
     if (typeof renderStockNav_0625 === 'function') renderStockNav_0625();
     const stockContentEl0625 = document.getElementById('stock-content');
     if (stockContentEl0625 && typeof renderStockContent_0625 === 'function') stockContentEl0625.innerHTML = renderStockContent_0625();
