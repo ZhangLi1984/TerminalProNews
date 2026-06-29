@@ -4,7 +4,7 @@
 
 const AppState = {
   currentTab: 'decision',
-  currentDate: '2026-06-28',
+  currentDate: '2026-06-29',
   dateDropdownOpen: false,
   activeSection: null
 };
@@ -151,7 +151,12 @@ function startClock() {
 function renderAllContent() {
   const date = AppState.currentDate;
 
-  if (date === '2026-06-28') {
+  if (date === '2026-06-29') {
+    console.log('[renderAllContent] 渲染 6 月 29 日内容');
+    if (typeof renderDecisionNav_0629 === 'function') renderDecisionNav_0629();
+    const decisionContentEl0629 = document.getElementById('decision-content');
+    if (decisionContentEl0629 && typeof renderDecisionContent_0629 === 'function') decisionContentEl0629.innerHTML = renderDecisionContent_0629();
+  } else if (date === '2026-06-28') {
     console.log('[renderAllContent] 渲染 6 月 28 日内容');
     if (typeof renderDecisionNav_0628 === 'function') renderDecisionNav_0628();
     const decisionContentEl0628 = document.getElementById('decision-content');
