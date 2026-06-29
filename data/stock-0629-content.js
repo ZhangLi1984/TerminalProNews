@@ -563,7 +563,7 @@ function renderStockContent_0629() {
             <td class="px-4 py-3 text-center font-bold text-purple-900">9.0</td>
             <td class="px-4 py-3 text-slate-600 text-xs">热裂解设备龙头，海外收入 44%</td>
           </tr>
-          <!-- A 级 -->
+          <!-- A 级精选 -->
           <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
             <td class="px-4 py-3 font-bold text-blue-900">泛亚微透</td>
             <td class="px-4 py-3 text-slate-600 font-mono">688386.SH</td>
@@ -589,44 +589,12 @@ function renderStockContent_0629() {
             <td class="px-4 py-3 text-slate-600 text-xs">储能系统龙头，海外订单 16GWh</td>
           </tr>
           <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
-            <td class="px-4 py-3 font-bold text-blue-900">泰凯英</td>
-            <td class="px-4 py-3 text-slate-600 font-mono">920020.BJ</td>
-            <td class="px-4 py-3 text-slate-600">华源证券</td>
-            <td class="px-4 py-3 text-center"><span class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold">A</span></td>
-            <td class="px-4 py-3 text-center font-bold text-blue-900">7.5</td>
-            <td class="px-4 py-3 text-slate-600 text-xs">矿山轮胎领军，轻资产模式 ROE 14%+</td>
-          </tr>
-          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
-            <td class="px-4 py-3 font-bold text-blue-900">力盛体育</td>
-            <td class="px-4 py-3 text-slate-600 font-mono">002858.SZ</td>
-            <td class="px-4 py-3 text-slate-600">开源证券</td>
-            <td class="px-4 py-3 text-center"><span class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold">A</span></td>
-            <td class="px-4 py-3 text-center font-bold text-blue-900">7.0</td>
-            <td class="px-4 py-3 text-slate-600 text-xs">赛车 IP 商业化，华润文体战略合作</td>
-          </tr>
-          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
-            <td class="px-4 py-3 font-bold text-blue-900">江天科技</td>
-            <td class="px-4 py-3 text-slate-600 font-mono">920121.BJ</td>
-            <td class="px-4 py-3 text-slate-600">华源证券</td>
-            <td class="px-4 py-3 text-center"><span class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold">A</span></td>
-            <td class="px-4 py-3 text-center font-bold text-blue-900">7.0</td>
-            <td class="px-4 py-3 text-slate-600 text-xs">标签印刷领军，RFID 智能标签新增长点</td>
-          </tr>
-          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
             <td class="px-4 py-3 font-bold text-blue-900">晶合集成</td>
             <td class="px-4 py-3 text-slate-600 font-mono">688249.SH</td>
             <td class="px-4 py-3 text-slate-600">西南证券</td>
             <td class="px-4 py-3 text-center"><span class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold">A</span></td>
             <td class="px-4 py-3 text-center font-bold text-blue-900">7.0</td>
             <td class="px-4 py-3 text-slate-600 text-xs">全球第九晶圆代工，DDIC 全球第一</td>
-          </tr>
-          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
-            <td class="px-4 py-3 font-bold text-blue-900">华虹宏力</td>
-            <td class="px-4 py-3 text-slate-600 font-mono">688347.SH</td>
-            <td class="px-4 py-3 text-slate-600">华源证券</td>
-            <td class="px-4 py-3 text-center"><span class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold">A</span></td>
-            <td class="px-4 py-3 text-center font-bold text-blue-900">7.0</td>
-            <td class="px-4 py-3 text-slate-600 text-xs">成熟制程晶圆代工，收购华力微协同</td>
           </tr>
           <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
             <td class="px-4 py-3 font-bold text-blue-900">恩捷股份</td>
@@ -653,52 +621,12 @@ function renderStockContent_0629() {
             <td class="px-4 py-3 text-slate-600 text-xs">消费电子玻璃龙头，AI 手机/ARVR 新品</td>
           </tr>
           <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
-            <td class="px-4 py-3 font-bold text-blue-900">博力威</td>
-            <td class="px-4 py-3 text-slate-600 font-mono">688345.SH</td>
-            <td class="px-4 py-3 text-slate-600">中邮证券</td>
-            <td class="px-4 py-3 text-center"><span class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold">A</span></td>
-            <td class="px-4 py-3 text-center font-bold text-blue-900">7.0</td>
-            <td class="px-4 py-3 text-slate-600 text-xs">聚合物锂电池，两轮车/储能应用</td>
-          </tr>
-          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
-            <td class="px-4 py-3 font-bold text-blue-900">科远智慧</td>
-            <td class="px-4 py-3 text-slate-600 font-mono">002380.SZ</td>
-            <td class="px-4 py-3 text-slate-600">山西证券</td>
-            <td class="px-4 py-3 text-center"><span class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold">A</span></td>
-            <td class="px-4 py-3 text-center font-bold text-blue-900">7.0</td>
-            <td class="px-4 py-3 text-slate-600 text-xs">工业自动化 DCS，核电/火电改造</td>
-          </tr>
-          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
-            <td class="px-4 py-3 font-bold text-blue-900">华亚智能</td>
-            <td class="px-4 py-3 text-slate-600 font-mono">003043.SZ</td>
-            <td class="px-4 py-3 text-slate-600">开源证券</td>
-            <td class="px-4 py-3 text-center"><span class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold">A</span></td>
-            <td class="px-4 py-3 text-center font-bold text-blue-900">7.0</td>
-            <td class="px-4 py-3 text-slate-600 text-xs">半导体设备结构件，7nm+ 先进制程</td>
-          </tr>
-          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
-            <td class="px-4 py-3 font-bold text-blue-900">众鑫股份</td>
-            <td class="px-4 py-3 text-slate-600 font-mono">603091.SH</td>
-            <td class="px-4 py-3 text-slate-600">信达证券</td>
-            <td class="px-4 py-3 text-center"><span class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold">A</span></td>
-            <td class="px-4 py-3 text-center font-bold text-blue-900">7.0</td>
-            <td class="px-4 py-3 text-slate-600 text-xs">纸浆模塑龙头，可降解环保趋势</td>
-          </tr>
-          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
             <td class="px-4 py-3 font-bold text-blue-900">卧龙电驱</td>
             <td class="px-4 py-3 text-slate-600 font-mono">600580.SH</td>
             <td class="px-4 py-3 text-slate-600">群益证券</td>
             <td class="px-4 py-3 text-center"><span class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold">A</span></td>
             <td class="px-4 py-3 text-center font-bold text-blue-900">6.5</td>
             <td class="px-4 py-3 text-slate-600 text-xs">电机驱动一体化，人形机器人关节</td>
-          </tr>
-          <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
-            <td class="px-4 py-3 font-bold text-blue-900">立昂微</td>
-            <td class="px-4 py-3 text-slate-600 font-mono">605358.SH</td>
-            <td class="px-4 py-3 text-slate-600">中邮证券</td>
-            <td class="px-4 py-3 text-center"><span class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold">A</span></td>
-            <td class="px-4 py-3 text-center font-bold text-blue-900">6.5</td>
-            <td class="px-4 py-3 text-slate-600 text-xs">硅片 + 功率器件，12 英寸爬坡</td>
           </tr>
           <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
             <td class="px-4 py-3 font-bold text-blue-900">三一重能</td>
@@ -714,7 +642,7 @@ function renderStockContent_0629() {
 
     <div class="bg-slate-100 border-l-4 border-slate-400 p-4 my-6 rounded-r-xl">
       <p class="text-slate-600 text-sm">
-        <span class="font-bold">说明：</span>完整 100 篇研报数据已处理。S 级标的 6 只，A 级标的 18 只，B 级标的 50 只，C 级标的 26 只。
+        <span class="font-bold">说明：</span>表格展示了 S 级和 A 级重点标的完整信息。完整 100 篇研报数据已处理，其中 S 级标的 6 只，A 级标的 18 只，B 级标的 50 只，C 级标的 26 只。
         评级体系：S 级（极度看好，预期超额收益&gt;30%）、A 级（重点看好，预期超额收益 15-30%）、B 级（中性偏多）、C 级（谨慎观望）。
       </p>
     </div>
