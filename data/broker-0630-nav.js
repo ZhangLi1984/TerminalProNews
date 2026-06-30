@@ -1,20 +1,18 @@
-const DECISION_NAV_CONFIG_0630 = [
-  { title: '核心摘要', links: [{ id: 'sec1', label: '全局叙事速读' }] },
-  { title: '重大事件推演', links: [
-    { id: 'sec2', label: '寒武纪与半导体涨价' },
-    { id: 'sec3', label: '工业互联网政策' }
-  ]},
-  { title: '重要新闻催化', links: [{ id: 'sec4', label: '行业资金博弈' }] },
-  { title: '风险提示', links: [{ id: 'sec5', label: '证伪区避雷' }] }
+const BROKER_NAV_CONFIG_0630 = [
+  { title: '核心摘要', links: [{ id: 'sec1', label: '3分钟速读' }] },
+  { title: '宏观策略', links: [{ id: 'sec2', label: '券商观点汇总' }] },
+  { title: '热门行业', links: [{ id: 'sec3', label: '推荐榜TOP5' }] },
+  { title: '金股组合', links: [{ id: 'sec4', label: '券商金股TOP10' }] },
+  { title: '风险提示', links: [{ id: 'sec5', label: '分歧与风险' }] }
 ];
 
-function renderDecisionNav_0630() {
-  const container = document.getElementById('decision-nav-content');
+function renderBrokerNav_0630() {
+  const container = document.getElementById('broker-nav-content');
   if (!container) return;
 
   container.innerHTML = `
     <nav class="space-y-6">
-      ${DECISION_NAV_CONFIG_0630.map(section => `
+      ${BROKER_NAV_CONFIG_0630.map(section => `
         <div>
           <h3 class="text-sm font-black text-slate-900 uppercase tracking-wider mb-3 px-4">${section.title}</h3>
           <ul class="space-y-1">
