@@ -171,7 +171,7 @@ function renderDateList(filter = '') {
 
     return `
       <div class="flex items-center justify-between px-4 py-3 cursor-pointer transition-colors ${bgClass}"
-           onclick="switchDate('${item.date}')">
+           onclick="selectDate('${item.date}')">
         <div class="flex items-center space-x-3">
           <span class="text-sm font-bold ${isSelected ? 'text-slate-900' : 'text-slate-700'}">${item.label}</span>
           <span class="text-[10px] px-1.5 py-0.5 rounded font-black uppercase tracking-wider ${tagClass}">${item.tagLabel}</span>
@@ -207,7 +207,45 @@ function toggleDateDropdown() {
  * 过滤日期列表
  */
 function filterDateList(value) {
-  renderDateList(value);
+  const listEl = document.getElementById('date-list');
+  const noResultsEl = document.getElementById('date-no-results');
+  const clearBtn = document.getElementById('date-search-clear');
+  if (!listEl) return;
+
+  const filter = (value || '').trim();
+  const filtered = AVAILABLE_DATES.filter(item => {
+    if (!filter) return true;
+    const f = filter.toLowerCase();
+    return item.date.toLowerCase().includes(f)
+      || item.label.toLowerCase().includes(f)
+      || item.date.slice(5).replace('-', '').includes(f)
+      || item.date.slice(8).includes(f);
+  });
+
+  if (filtered.length === 0) {
+    listEl.innerHTML = '';
+    if (noResultsEl) noResultsEl.classList.remove('hidden');
+    return;
+  }
+
+  if (noResultsEl) noResultsEl.classList.add('hidden');
+  if (clearBtn) clearBtn.classList.toggle('hidden', !filter);
+
+  const currentDisplayDate = (typeof AppState !== 'undefined') ? AppState.currentDate : '2026-07-02';
+
+  listEl.innerHTML = filtered.map(item => {
+    const isSelected = item.date === currentDisplayDate;
+    const bgClass = isSelected ? 'bg-red-50 hover:bg-red-100' : 'hover:bg-slate-50';
+    return `
+      <div class="date-item px-4 py-3 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-50 last:border-0 ${bgClass}"
+           onclick="selectDate('${item.date}')">
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-medium text-slate-700">${item.label}</span>
+          ${item.tag === 'latest' ? '<span class="text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded-full font-bold">最新</span>' : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
 }
 
 /**

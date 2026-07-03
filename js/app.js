@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   initTabs();
   initDateDropdown();
+  setupDateDropdownListener();
   renderAllContent();
   startClock();
 });
@@ -63,6 +64,15 @@ function switchTab(tabName) {
   const targetDoc = document.getElementById(tabName + '-doc');
   if (targetDoc) {
     targetDoc.classList.remove('hidden');
+  }
+
+  // 切换侧边栏导航
+  document.querySelectorAll('[id$="-nav-content"]').forEach(nav => {
+    nav.classList.add('hidden');
+  });
+  const targetNav = document.getElementById(tabName + '-nav-content');
+  if (targetNav) {
+    targetNav.classList.remove('hidden');
   }
 }
 
@@ -378,17 +388,30 @@ function renderAllContent() {
     if (typeof renderFuturesNav_0621 === 'function') renderFuturesNav_0621();
     const futuresContentEl0621 = document.getElementById('futures-content');
     if (futuresContentEl0621 && typeof renderFuturesContent_0621 === 'function') futuresContentEl0621.innerHTML = renderFuturesContent_0621();
-  } else if (date === '2026-06-17') {
-    console.log('[renderAllContent] 渲染 6 月 17 日内容');
-    if (typeof renderDecisionNav_0617 === 'function') renderDecisionNav_0617();
-    const decisionContentEl0617 = document.getElementById('decision-content');
-    if (decisionContentEl0617 && typeof renderDecisionContent_0617 === 'function') decisionContentEl0617.innerHTML = renderDecisionContent_0617();
-    if (typeof renderIndustryNav_0617 === 'function') renderIndustryNav_0617();
-    const industryContentEl0617 = document.getElementById('industry-content');
-    if (industryContentEl0617 && typeof renderIndustryContent_0617 === 'function') industryContentEl0617.innerHTML = renderIndustryContent_0617();
-    if (typeof renderMacroNav_0617 === 'function') renderMacroNav_0617();
-    const macroContentEl0617 = document.getElementById('macro-content');
-    if (macroContentEl0617 && typeof renderMacroContent_0617 === 'function') macroContentEl0617.innerHTML = renderMacroContent_0617();
-    if (typeof renderBrokerNav_0617 === 'function') renderBrokerNav_0617();
-    const brokerContentEl0617 = document.getElementById('broker-content');
-    if (brokerContentEl0617 && typeof renderBrokerContent_0617 === 'function') brokerContentEl0617.innerHTML = renderBrokerContent_0617();
+  } else {
+    console.log('[renderAllContent] 渲染 ' + date + ' 内容（通用）');
+    // 通用渲染：尝试调用对应日期的渲染函数
+    const dateSuffix = date.replace('2026-', '').replace('-', '');
+    const navRenderers = ['Decision', 'Industry', 'Macro', 'Broker', 'Stock', 'Jisilu', 'Futures'];
+    navRenderers.forEach(name => {
+      const navFn = 'render' + name + 'Nav_' + dateSuffix;
+      const contentFn = 'render' + name + 'Content_' + dateSuffix;
+      const navEl = document.getElementById(name.toLowerCase().replace('stock','stock').replace('jisilu','jisilu').replace('futures','futures').replace('macro','macro').replace('broker','broker').replace('industry','industry').replace('decision','decision') + '-nav-content');
+      const contentEl = document.getElementById(name.toLowerCase().replace('stock','stock').replace('jisilu','jisilu').replace('futures','futures').replace('macro','macro').replace('broker','broker').replace('industry','industry').replace('decision','decision') + '-content');
+      // 简化映射
+    });
+
+    // 直接尝试各模块
+    const tabMap = { decision: 'decision', industry: 'industry', macro: 'macro', broker: 'broker', stock: 'stock', jisilu: 'jisilu', futures: 'futures' };
+    Object.entries(tabMap).forEach(([key, elPrefix]) => {
+      const capKey = key.charAt(0).toUpperCase() + key.slice(1);
+      const navFnName = 'render' + capKey + 'Nav_' + dateSuffix;
+      const contentFnName = 'render' + capKey + 'Content_' + dateSuffix;
+      if (typeof window[navFnName] === 'function') window[navFnName]();
+      const contentEl = document.getElementById(elPrefix + '-content');
+      if (contentEl && typeof window[contentFnName] === 'function') {
+        contentEl.innerHTML = window[contentFnName]();
+      }
+    });
+  }
+}
