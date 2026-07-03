@@ -5,38 +5,30 @@
 const AppState = {
   currentTab: 'decision',
   currentDate: '2026-07-02',
-  dateDropdownOpen: false,
-  activeSection: null
+  loadedDates: new Set(),      // 已完整加载的日期后缀
+  loadingDates: new Set()      // 正在加载中的日期后缀
 };
+
+const TABS = ['decision', 'industry', 'macro', 'broker', 'stock', 'jisilu', 'futures'];
+const TAB_LABELS = { decision: '决策内参', industry: '行业汇总', macro: '宏观', broker: '券商', stock: '个股', jisilu: '集思录', futures: '期货' };
+
+// 缓存破坏版本号 - 每次更新代码时递增
+const APP_VERSION = '2';
 
 // 初始化
 document.addEventListener('DOMContentLoaded', function() {
-  const currentDate = getCurrentDate();
-  if (currentDate) {
-    AppState.currentDate = currentDate;
-  }
-
-  // 确保日期选择器按钮显示正确的日期
-  const dateDisplay = document.getElementById('current-date-display');
-  if (dateDisplay) {
-    dateDisplay.textContent = AppState.currentDate;
-  }
-
   initTabs();
   initDateDropdown();
   setupDateDropdownListener();
+  // 首次加载：0702 数据已通过 HTML script 标签加载，直接标记
+  AppState.loadedDates.add('0702');
   renderAllContent();
   startClock();
 });
 
-function getCurrentDate() {
-  return AppState.currentDate;
-}
-
-// Tab 切换
+// ==================== Tab 切换 ====================
 function initTabs() {
-  const tabBtns = document.querySelectorAll('.tab-btn');
-  tabBtns.forEach(btn => {
+  document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => switchTab(btn.dataset.tab));
   });
 }
@@ -47,371 +39,227 @@ function switchTab(tabName) {
   // 更新按钮样式
   document.querySelectorAll('.tab-btn').forEach(btn => {
     if (btn.dataset.tab === tabName) {
-      btn.classList.add('bg-red-600', 'text-white', 'shadow-sm');
-      btn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
+      btn.className = 'tab-btn active px-4 py-1.5 rounded-lg text-xs font-bold bg-red-600 text-white shadow-sm';
     } else {
-      btn.classList.remove('bg-red-600', 'text-white', 'shadow-sm');
-      btn.classList.add('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
+      btn.className = 'tab-btn px-4 py-1.5 rounded-lg text-xs font-bold text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition-colors';
     }
   });
 
-  // 隐藏所有文档
-  document.querySelectorAll('[id$="-doc"]').forEach(doc => {
-    doc.classList.add('hidden');
+  // 切换文档面板
+  TABS.forEach(t => {
+    const doc = document.getElementById(t + '-doc');
+    const nav = document.getElementById(t + '-nav-content');
+    if (doc) doc.classList.toggle('hidden', t !== tabName);
+    if (nav) nav.classList.toggle('hidden', t !== tabName);
   });
 
-  // 显示选中的文档
-  const targetDoc = document.getElementById(tabName + '-doc');
-  if (targetDoc) {
-    targetDoc.classList.remove('hidden');
-  }
-
-  // 切换侧边栏导航
-  document.querySelectorAll('[id$="-nav-content"]').forEach(nav => {
-    nav.classList.add('hidden');
-  });
-  const targetNav = document.getElementById(tabName + '-nav-content');
-  if (targetNav) {
-    targetNav.classList.remove('hidden');
-  }
+  // 滚动到顶部
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// 日期下拉菜单
+// ==================== 日期选择器 ====================
 function initDateDropdown() {
-  const dateList = document.getElementById('date-list');
-  if (dateList && typeof AVAILABLE_DATES !== 'undefined') {
-    renderDateList(dateList);
-  }
+  renderDateDropdownList();
 }
 
-function renderDateList(container) {
-  if (!container || !AVAILABLE_DATES) return;
+function renderDateDropdownList(filter) {
+  const listEl = document.getElementById('date-list');
+  const noResultsEl = document.getElementById('date-no-results');
+  const clearBtn = document.getElementById('date-search-clear');
+  if (!listEl || typeof AVAILABLE_DATES === 'undefined') return;
 
-  container.innerHTML = AVAILABLE_DATES.map(item => `
-    <div class="date-item px-4 py-3 cursor-pointer hover:bg-slate-50 transition-colors border-b border-slate-50 last:border-0 ${item.date === AppState.currentDate ? 'bg-red-50 hover:bg-red-100' : ''}"
-         onclick="selectDate('${item.date}')">
-      <div class="flex items-center justify-between">
-        <span class="text-sm font-medium text-slate-700">${item.label}</span>
-        ${item.tag === 'latest' ? '<span class="text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded-full font-bold">最新</span>' : ''}
-      </div>
-    </div>
-  `).join('');
+  const f = (filter || '').trim().toLowerCase();
+  const filtered = f
+    ? AVAILABLE_DATES.filter(item => item.date.toLowerCase().includes(f) || item.label.toLowerCase().includes(f))
+    : AVAILABLE_DATES;
+
+  if (filtered.length === 0) {
+    listEl.innerHTML = '';
+    if (noResultsEl) noResultsEl.classList.remove('hidden');
+    return;
+  }
+  if (noResultsEl) noResultsEl.classList.add('hidden');
+  if (clearBtn) clearBtn.classList.toggle('hidden', !f);
+
+  listEl.innerHTML = filtered.map(item => {
+    const isActive = item.date === AppState.currentDate;
+    const bg = isActive ? 'bg-red-50 border-l-2 border-l-red-500' : 'hover:bg-slate-50 border-l-2 border-l-transparent';
+    const tag = item.tag === 'latest'
+      ? '<span class="text-[10px] bg-red-100 text-red-600 px-1.5 py-0.5 rounded-full font-bold">最新</span>'
+      : '<span class="text-[10px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded-full">历史</span>';
+    return '<div class="flex items-center justify-between px-4 py-2.5 cursor-pointer transition-all ' + bg + '" onclick="selectDate(\'' + item.date + '\')">' +
+      '<span class="text-sm font-medium text-slate-700">' + item.label + '</span>' + tag + '</div>';
+  }).join('');
 }
 
 function toggleDateDropdown() {
   const dropdown = document.getElementById('date-dropdown');
-  if (dropdown) {
-    dropdown.classList.toggle('hidden');
-    AppState.dateDropdownOpen = !AppState.dateDropdownOpen;
+  if (!dropdown) return;
+  const isOpen = !dropdown.classList.contains('hidden');
+  dropdown.classList.toggle('hidden');
+  if (!isOpen) {
+    const input = document.getElementById('date-search-input');
+    if (input) { input.value = ''; input.focus(); }
+    renderDateDropdownList();
   }
 }
 
+function filterDateList(value) {
+  renderDateDropdownList(value);
+}
+
+function clearDateSearch() {
+  const input = document.getElementById('date-search-input');
+  if (input) { input.value = ''; renderDateDropdownList(); input.focus(); }
+}
+
+function setupDateDropdownListener() {
+  document.addEventListener('click', function(e) {
+    const dropdown = document.getElementById('date-dropdown');
+    const btn = document.getElementById('date-selector-btn');
+    if (dropdown && !dropdown.classList.contains('hidden') && !dropdown.contains(e.target) && btn && !btn.contains(e.target)) {
+      dropdown.classList.add('hidden');
+    }
+  });
+}
+
 function selectDate(date) {
+  if (date === AppState.currentDate && AppState.loadedDates.has(date.replace('2026-', '').replace('-', ''))) {
+    // 同一日期且已加载，只关闭下拉
+    const dropdown = document.getElementById('date-dropdown');
+    if (dropdown) dropdown.classList.add('hidden');
+    return;
+  }
+
   AppState.currentDate = date;
 
   // 更新日期显示
   const dateDisplay = document.getElementById('current-date-display');
-  if (dateDisplay) {
-    dateDisplay.textContent = date;
-  }
+  if (dateDisplay) dateDisplay.textContent = date;
 
-  // 关闭下拉菜单
+  // 关闭下拉
   const dropdown = document.getElementById('date-dropdown');
-  if (dropdown) {
-    dropdown.classList.add('hidden');
-    AppState.dateDropdownOpen = false;
-  }
+  if (dropdown) dropdown.classList.add('hidden');
 
-  // 重新渲染日期列表（高亮选中项）
-  const dateList = document.getElementById('date-list');
-  if (dateList) {
-    renderDateList(dateList);
-  }
+  // 重新渲染日期列表高亮
+  renderDateDropdownList();
 
-  // 重新渲染所有内容
-  renderAllContent();
+  // 动态加载数据 + 渲染内容
+  loadAndRender(date);
 }
 
-// 滚动到指定章节
-function scrollToSection(sectionId) {
-  const element = document.getElementById(sectionId);
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-}
+// ==================== 动态加载历史数据 ====================
+function loadAndRender(date) {
+  const suffix = date.replace('2026-', '').replace('-', '');
 
-// 时钟
-function startClock() {
-  const clockEl = document.getElementById('clock');
-  if (!clockEl) return;
-
-  function updateClock() {
-    const now = new Date();
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
-    clockEl.textContent = `${hours}:${minutes}:${seconds}`;
+  // 已加载完成，直接渲染
+  if (AppState.loadedDates.has(suffix)) {
+    renderAllContent();
+    return;
   }
 
-  updateClock();
-  setInterval(updateClock, 1000);
-}
+  // 正在加载中，避免重复
+  if (AppState.loadingDates.has(suffix)) return;
+  AppState.loadingDates.add(suffix);
 
-// 渲染所有内容
-function renderAllContent() {
-  const date = AppState.currentDate;
+  // 显示加载状态
+  TABS.forEach(tab => {
+    const contentEl = document.getElementById(tab + '-content');
+    if (contentEl) {
+      contentEl.innerHTML = '<div class="loading-state"><div class="loading-spinner"></div><p>正在加载 ' + date + ' 数据...</p></div>';
+    }
+  });
 
-  if (date === '2026-07-02') {
-    console.log('[renderAllContent] 渲染 7 月 2 日内容');
-    if (typeof renderDecisionNav_0702 === 'function') renderDecisionNav_0702();
-    const decisionContentEl0702 = document.getElementById('decision-content');
-    if (decisionContentEl0702 && typeof renderDecisionContent_0702 === 'function') decisionContentEl0702.innerHTML = renderDecisionContent_0702();
-    if (typeof renderIndustryNav_0702 === 'function') renderIndustryNav_0702();
-    const industryContentEl0702 = document.getElementById('industry-content');
-    if (industryContentEl0702 && typeof renderIndustryContent_0702 === 'function') industryContentEl0702.innerHTML = renderIndustryContent_0702();
-    if (typeof renderMacroNav_0702 === 'function') renderMacroNav_0702();
-    const macroContentEl0702 = document.getElementById('macro-content');
-    if (macroContentEl0702 && typeof renderMacroContent_0702 === 'function') macroContentEl0702.innerHTML = renderMacroContent_0702();
-    if (typeof renderBrokerNav_0702 === 'function') renderBrokerNav_0702();
-    const brokerContentEl0702 = document.getElementById('broker-content');
-    if (brokerContentEl0702 && typeof renderBrokerContent_0702 === 'function') brokerContentEl0702.innerHTML = renderBrokerContent_0702();
-    if (typeof renderStockNav_0702 === 'function') renderStockNav_0702();
-    const stockContentEl0702 = document.getElementById('stock-content');
-    if (stockContentEl0702 && typeof renderStockContent_0702 === 'function') stockContentEl0702.innerHTML = renderStockContent_0702();
-    if (typeof renderJisiluNav_0702 === 'function') renderJisiluNav_0702();
-    const jisiluContentEl0702 = document.getElementById('jisilu-content');
-    if (jisiluContentEl0702 && typeof renderJisiluContent_0702 === 'function') jisiluContentEl0702.innerHTML = renderJisiluContent_0702();
-    if (typeof renderFuturesNav_0702 === 'function') renderFuturesNav_0702();
-    const futuresContentEl0702 = document.getElementById('futures-content');
-    if (futuresContentEl0702 && typeof renderFuturesContent_0702 === 'function') futuresContentEl0702.innerHTML = renderFuturesContent_0702();
-  } else if (date === '2026-07-01') {
-    console.log('[renderAllContent] 渲染 7 月 1 日内容');
-    if (typeof renderDecisionNav_0701 === 'function') renderDecisionNav_0701();
-    const decisionContentEl0701 = document.getElementById('decision-content');
-    if (decisionContentEl0701 && typeof renderDecisionContent_0701 === 'function') decisionContentEl0701.innerHTML = renderDecisionContent_0701();
-    if (typeof renderIndustryNav_0701 === 'function') renderIndustryNav_0701();
-    const industryContentEl0701 = document.getElementById('industry-content');
-    if (industryContentEl0701 && typeof renderIndustryContent_0701 === 'function') industryContentEl0701.innerHTML = renderIndustryContent_0701();
-    if (typeof renderMacroNav_0701 === 'function') renderMacroNav_0701();
-    const macroContentEl0701 = document.getElementById('macro-content');
-    if (macroContentEl0701 && typeof renderMacroContent_0701 === 'function') macroContentEl0701.innerHTML = renderMacroContent_0701();
-    if (typeof renderBrokerNav_0701 === 'function') renderBrokerNav_0701();
-    const brokerContentEl0701 = document.getElementById('broker-content');
-    if (brokerContentEl0701 && typeof renderBrokerContent_0701 === 'function') brokerContentEl0701.innerHTML = renderBrokerContent_0701();
-    if (typeof renderStockNav_0701 === 'function') renderStockNav_0701();
-    const stockContentEl0701 = document.getElementById('stock-content');
-    if (stockContentEl0701 && typeof renderStockContent_0701 === 'function') stockContentEl0701.innerHTML = renderStockContent_0701();
-    if (typeof renderJisiluNav_0701 === 'function') renderJisiluNav_0701();
-    const jisiluContentEl0701 = document.getElementById('jisilu-content');
-    if (jisiluContentEl0701 && typeof renderJisiluContent_0701 === 'function') jisiluContentEl0701.innerHTML = renderJisiluContent_0701();
-    if (typeof renderFuturesNav_0701 === 'function') renderFuturesNav_0701();
-    const futuresContentEl0701 = document.getElementById('futures-content');
-    if (futuresContentEl0701 && typeof renderFuturesContent_0701 === 'function') futuresContentEl0701.innerHTML = renderFuturesContent_0701();
-  } else if (date === '2026-06-30') {
-    console.log('[renderAllContent] 渲染 6 月 30 日内容');
-    if (typeof renderDecisionNav_0630 === 'function') renderDecisionNav_0630();
-    const decisionContentEl0630 = document.getElementById('decision-content');
-    if (decisionContentEl0630 && typeof renderDecisionContent_0630 === 'function') decisionContentEl0630.innerHTML = renderDecisionContent_0630();
-    if (typeof renderIndustryNav_0630 === 'function') renderIndustryNav_0630();
-    const industryContentEl0630 = document.getElementById('industry-content');
-    if (industryContentEl0630 && typeof renderIndustryContent_0630 === 'function') industryContentEl0630.innerHTML = renderIndustryContent_0630();
-    if (typeof renderMacroNav_0630 === 'function') renderMacroNav_0630();
-    const macroContentEl0630 = document.getElementById('macro-content');
-    if (macroContentEl0630 && typeof renderMacroContent_0630 === 'function') macroContentEl0630.innerHTML = renderMacroContent_0630();
-    if (typeof renderBrokerNav_0630 === 'function') renderBrokerNav_0630();
-    const brokerContentEl0630 = document.getElementById('broker-content');
-    if (brokerContentEl0630 && typeof renderBrokerContent_0630 === 'function') brokerContentEl0630.innerHTML = renderBrokerContent_0630();
-    if (typeof renderStockNav_0630 === 'function') renderStockNav_0630();
-    const stockContentEl0630 = document.getElementById('stock-content');
-    if (stockContentEl0630 && typeof renderStockContent_0630 === 'function') stockContentEl0630.innerHTML = renderStockContent_0630();
-    if (typeof renderJisiluNav_0630 === 'function') renderJisiluNav_0630();
-    const jisiluContentEl0630 = document.getElementById('jisilu-content');
-    if (jisiluContentEl0630 && typeof renderJisiluContent_0630 === 'function') jisiluContentEl0630.innerHTML = renderJisiluContent_0630();
-    if (typeof renderFuturesNav_0630 === 'function') renderFuturesNav_0630();
-    const futuresContentEl0630 = document.getElementById('futures-content');
-    if (futuresContentEl0630 && typeof renderFuturesContent_0630 === 'function') futuresContentEl0630.innerHTML = renderFuturesContent_0630();
-  } else if (date === '2026-06-29') {
-    console.log('[renderAllContent] 渲染 6 月 29 日内容');
-    if (typeof renderDecisionNav_0629 === 'function') renderDecisionNav_0629();
-    const decisionContentEl0629 = document.getElementById('decision-content');
-    if (decisionContentEl0629 && typeof renderDecisionContent_0629 === 'function') decisionContentEl0629.innerHTML = renderDecisionContent_0629();
-    if (typeof renderIndustryNav_0629 === 'function') renderIndustryNav_0629();
-    const industryContentEl0629 = document.getElementById('industry-content');
-    if (industryContentEl0629 && typeof renderIndustryContent_0629 === 'function') industryContentEl0629.innerHTML = renderIndustryContent_0629();
-    if (typeof renderMacroNav_0629 === 'function') renderMacroNav_0629();
-    const macroContentEl0629 = document.getElementById('macro-content');
-    if (macroContentEl0629 && typeof renderMacroContent_0629 === 'function') macroContentEl0629.innerHTML = renderMacroContent_0629();
-    if (typeof renderBrokerNav_0629 === 'function') renderBrokerNav_0629();
-    const brokerContentEl0629 = document.getElementById('broker-content');
-    if (brokerContentEl0629 && typeof renderBrokerContent_0629 === 'function') brokerContentEl0629.innerHTML = renderBrokerContent_0629();
-    if (typeof renderStockNav_0629 === 'function') renderStockNav_0629();
-    const stockContentEl0629 = document.getElementById('stock-content');
-    if (stockContentEl0629 && typeof renderStockContent_0629 === 'function') stockContentEl0629.innerHTML = renderStockContent_0629();
-    if (typeof renderJisiluNav_0629 === 'function') renderJisiluNav_0629();
-    const jisiluContentEl0629 = document.getElementById('jisilu-content');
-    if (jisiluContentEl0629 && typeof renderJisiluContent_0629 === 'function') jisiluContentEl0629.innerHTML = renderJisiluContent_0629();
-    if (typeof renderFuturesNav_0629 === 'function') renderFuturesNav_0629();
-    const futuresContentEl0629 = document.getElementById('futures-content');
-    if (futuresContentEl0629 && typeof renderFuturesContent_0629 === 'function') futuresContentEl0629.innerHTML = renderFuturesContent_0629();
-  } else if (date === '2026-06-28') {
-    console.log('[renderAllContent] 渲染 6 月 28 日内容');
-    if (typeof renderDecisionNav_0628 === 'function') renderDecisionNav_0628();
-    const decisionContentEl0628 = document.getElementById('decision-content');
-    if (decisionContentEl0628 && typeof renderDecisionContent_0628 === 'function') decisionContentEl0628.innerHTML = renderDecisionContent_0628();
-    if (typeof renderIndustryNav_0628 === 'function') renderIndustryNav_0628();
-    const industryContentEl0628 = document.getElementById('industry-content');
-    if (industryContentEl0628 && typeof renderIndustryContent_0628 === 'function') industryContentEl0628.innerHTML = renderIndustryContent_0628();
-    if (typeof renderMacroNav_0628 === 'function') renderMacroNav_0628();
-    const macroContentEl0628 = document.getElementById('macro-content');
-    if (macroContentEl0628 && typeof renderMacroContent_0628 === 'function') macroContentEl0628.innerHTML = renderMacroContent_0628();
-    if (typeof renderBrokerNav_0628 === 'function') renderBrokerNav_0628();
-    const brokerContentEl0628 = document.getElementById('broker-content');
-    if (brokerContentEl0628 && typeof renderBrokerContent_0628 === 'function') brokerContentEl0628.innerHTML = renderBrokerContent_0628();
-    if (typeof renderStockNav_0628 === 'function') renderStockNav_0628();
-    const stockContentEl0628 = document.getElementById('stock-content');
-    if (stockContentEl0628 && typeof renderStockContent_0628 === 'function') stockContentEl0628.innerHTML = renderStockContent_0628();
-    if (typeof renderJisiluNav_0628 === 'function') renderJisiluNav_0628();
-    const jisiluContentEl0628 = document.getElementById('jisilu-content');
-    if (jisiluContentEl0628 && typeof renderJisiluContent_0628 === 'function') jisiluContentEl0628.innerHTML = renderJisiluContent_0628();
-    if (typeof renderFuturesNav_0628 === 'function') renderFuturesNav_0628();
-    const futuresContentEl0628 = document.getElementById('futures-content');
-    if (futuresContentEl0628 && typeof renderFuturesContent_0628 === 'function') futuresContentEl0628.innerHTML = renderFuturesContent_0628();
-  } else if (date === '2026-06-25') {
-    console.log('[renderAllContent] 渲染 6 月 25 日内容');
-    if (typeof renderDecisionNav_0625 === 'function') renderDecisionNav_0625();
-    const decisionContentEl0625 = document.getElementById('decision-content');
-    if (decisionContentEl0625 && typeof renderDecisionContent_0625 === 'function') decisionContentEl0625.innerHTML = renderDecisionContent_0625();
-    if (typeof renderIndustryNav_0625 === 'function') renderIndustryNav_0625();
-    const industryContentEl0625 = document.getElementById('industry-content');
-    if (industryContentEl0625 && typeof renderIndustryContent_0625 === 'function') industryContentEl0625.innerHTML = renderIndustryContent_0625();
-    if (typeof renderMacroNav_0625 === 'function') renderMacroNav_0625();
-    const macroContentEl0625 = document.getElementById('macro-content');
-    if (macroContentEl0625 && typeof renderMacroContent_0625 === 'function') macroContentEl0625.innerHTML = renderMacroContent_0625();
-    if (typeof renderBrokerNav_0625 === 'function') renderBrokerNav_0625();
-    const brokerContentEl0625 = document.getElementById('broker-content');
-    if (brokerContentEl0625 && typeof renderBrokerContent_0625 === 'function') brokerContentEl0625.innerHTML = renderBrokerContent_0625();
-    if (typeof renderStockNav_0625 === 'function') renderStockNav_0625();
-    const stockContentEl0625 = document.getElementById('stock-content');
-    if (stockContentEl0625 && typeof renderStockContent_0625 === 'function') stockContentEl0625.innerHTML = renderStockContent_0625();
-    if (typeof renderJisiluNav_0625 === 'function') renderJisiluNav_0625();
-    const jisiluContentEl0625 = document.getElementById('jisilu-content');
-    if (jisiluContentEl0625 && typeof renderJisiluContent_0625 === 'function') jisiluContentEl0625.innerHTML = renderJisiluContent_0625();
-  } else if (date === '2026-06-24') {
-    console.log('[renderAllContent] 渲染 6 月 24 日内容');
-    if (typeof renderDecisionNav_0624 === 'function') renderDecisionNav_0624();
-    const decisionContentEl0624 = document.getElementById('decision-content');
-    if (decisionContentEl0624 && typeof renderDecisionContent_0624 === 'function') decisionContentEl0624.innerHTML = renderDecisionContent_0624();
-    if (typeof renderIndustryNav_0624 === 'function') renderIndustryNav_0624();
-    const industryContentEl0624 = document.getElementById('industry-content');
-    if (industryContentEl0624 && typeof renderIndustryContent_0624 === 'function') industryContentEl0624.innerHTML = renderIndustryContent_0624();
-    if (typeof renderMacroNav_0624 === 'function') renderMacroNav_0624();
-    const macroContentEl0624 = document.getElementById('macro-content');
-    if (macroContentEl0624 && typeof renderMacroContent_0624 === 'function') macroContentEl0624.innerHTML = renderMacroContent_0624();
-    if (typeof renderBrokerNav_0624 === 'function') renderBrokerNav_0624();
-    const brokerContentEl0624 = document.getElementById('broker-content');
-    if (brokerContentEl0624 && typeof renderBrokerContent_0624 === 'function') brokerContentEl0624.innerHTML = renderBrokerContent_0624();
-    if (typeof renderStockNav_0624 === 'function') renderStockNav_0624();
-    const stockContentEl0624 = document.getElementById('stock-content');
-    if (stockContentEl0624 && typeof renderStockContent_0624 === 'function') stockContentEl0624.innerHTML = renderStockContent_0624();
-    if (typeof renderJisiluNav_0624 === 'function') renderJisiluNav_0624();
-    const jisiluContentEl0624 = document.getElementById('jisilu-content');
-    if (jisiluContentEl0624 && typeof renderJisiluContent_0624 === 'function') jisiluContentEl0624.innerHTML = renderJisiluContent_0624();
-    if (typeof renderFuturesNav_0624 === 'function') renderFuturesNav_0624();
-    const futuresContentEl0624 = document.getElementById('futures-content');
-    if (futuresContentEl0624 && typeof renderFuturesContent_0624 === 'function') futuresContentEl0624.innerHTML = renderFuturesContent_0624();
-  } else if (date === '2026-06-23') {
-    console.log('[renderAllContent] 渲染 6 月 23 日内容');
-    if (typeof renderDecisionNav_0623 === 'function') renderDecisionNav_0623();
-    const decisionContentEl0623 = document.getElementById('decision-content');
-    if (decisionContentEl0623 && typeof renderDecisionContent_0623 === 'function') decisionContentEl0623.innerHTML = renderDecisionContent_0623();
-    if (typeof renderIndustryNav_0623 === 'function') renderIndustryNav_0623();
-    const industryContentEl0623 = document.getElementById('industry-content');
-    if (industryContentEl0623 && typeof renderIndustryContent_0623 === 'function') industryContentEl0623.innerHTML = renderIndustryContent_0623();
-    if (typeof renderMacroNav_0623 === 'function') renderMacroNav_0623();
-    const macroContentEl0623 = document.getElementById('macro-content');
-    if (macroContentEl0623 && typeof renderMacroContent_0623 === 'function') macroContentEl0623.innerHTML = renderMacroContent_0623();
-    if (typeof renderBrokerNav_0623 === 'function') renderBrokerNav_0623();
-    const brokerContentEl0623 = document.getElementById('broker-content');
-    if (brokerContentEl0623 && typeof renderBrokerContent_0623 === 'function') brokerContentEl0623.innerHTML = renderBrokerContent_0623();
-    if (typeof renderStockNav_0623 === 'function') renderStockNav_0623();
-    const stockContentEl0623 = document.getElementById('stock-content');
-    if (stockContentEl0623 && typeof renderStockContent_0623 === 'function') stockContentEl0623.innerHTML = renderStockContent_0623();
-    if (typeof renderJisiluNav_0623 === 'function') renderJisiluNav_0623();
-    const jisiluContentEl0623 = document.getElementById('jisilu-content');
-    if (jisiluContentEl0623 && typeof renderJisiluContent_0623 === 'function') jisiluContentEl0623.innerHTML = renderJisiluContent_0623();
-    if (typeof renderFuturesNav_0623 === 'function') renderFuturesNav_0623();
-    const futuresContentEl0623 = document.getElementById('futures-content');
-    if (futuresContentEl0623 && typeof renderFuturesContent_0623 === 'function') futuresContentEl0623.innerHTML = renderFuturesContent_0623();
-  } else if (date === '2026-06-22') {
-    console.log('[renderAllContent] 渲染 6 月 22 日内容');
-    if (typeof renderDecisionNav_0622 === 'function') renderDecisionNav_0622();
-    const decisionContentEl0622 = document.getElementById('decision-content');
-    if (decisionContentEl0622 && typeof renderDecisionContent_0622 === 'function') decisionContentEl0622.innerHTML = renderDecisionContent_0622();
-    if (typeof renderIndustryNav_0622 === 'function') renderIndustryNav_0622();
-    const industryContentEl0622 = document.getElementById('industry-content');
-    if (industryContentEl0622 && typeof renderIndustryContent_0622 === 'function') industryContentEl0622.innerHTML = renderIndustryContent_0622();
-    if (typeof renderMacroNav_0622 === 'function') renderMacroNav_0622();
-    const macroContentEl0622 = document.getElementById('macro-content');
-    if (macroContentEl0622 && typeof renderMacroContent_0622 === 'function') macroContentEl0622.innerHTML = renderMacroContent_0622();
-    if (typeof renderBrokerNav_0622 === 'function') renderBrokerNav_0622();
-    const brokerContentEl0622 = document.getElementById('broker-content');
-    if (brokerContentEl0622 && typeof renderBrokerContent_0622 === 'function') brokerContentEl0622.innerHTML = renderBrokerContent_0622();
-    if (typeof renderStockNav_0622 === 'function') renderStockNav_0622();
-    const stockContentEl0622 = document.getElementById('stock-content');
-    if (stockContentEl0622 && typeof renderStockContent_0622 === 'function') stockContentEl0622.innerHTML = renderStockContent_0622();
-    if (typeof renderJisiluNav_0622 === 'function') renderJisiluNav_0622();
-    const jisiluContentEl0622 = document.getElementById('jisilu-content');
-    if (jisiluContentEl0622 && typeof renderJisiluContent_0622 === 'function') jisiluContentEl0622.innerHTML = renderJisiluContent_0622();
-    if (typeof renderFuturesNav_0622 === 'function') renderFuturesNav_0622();
-    const futuresContentEl0622 = document.getElementById('futures-content');
-    if (futuresContentEl0622 && typeof renderFuturesContent_0622 === 'function') futuresContentEl0622.innerHTML = renderFuturesContent_0622();
-  } else if (date === '2026-06-21') {
-    console.log('[renderAllContent] 渲染 6 月 21 日内容');
-    if (typeof renderDecisionNav_0621 === 'function') renderDecisionNav_0621();
-    const decisionContentEl0621 = document.getElementById('decision-content');
-    if (decisionContentEl0621 && typeof renderDecisionContent_0621 === 'function') decisionContentEl0621.innerHTML = renderDecisionContent_0621();
-    if (typeof renderIndustryNav_0621 === 'function') renderIndustryNav_0621();
-    const industryContentEl0621 = document.getElementById('industry-content');
-    if (industryContentEl0621 && typeof renderIndustryContent_0621 === 'function') industryContentEl0621.innerHTML = renderIndustryContent_0621();
-    if (typeof renderMacroNav_0621 === 'function') renderMacroNav_0621();
-    const macroContentEl0621 = document.getElementById('macro-content');
-    if (macroContentEl0621 && typeof renderMacroContent_0621 === 'function') macroContentEl0621.innerHTML = renderMacroContent_0621();
-    if (typeof renderBrokerNav_0621 === 'function') renderBrokerNav_0621();
-    const brokerContentEl0621 = document.getElementById('broker-content');
-    if (brokerContentEl0621 && typeof renderBrokerContent_0621 === 'function') brokerContentEl0621.innerHTML = renderBrokerContent_0621();
-    if (typeof renderStockNav_0621 === 'function') renderStockNav_0621();
-    const stockContentEl0621 = document.getElementById('stock-content');
-    if (stockContentEl0621 && typeof renderStockContent_0621 === 'function') stockContentEl0621.innerHTML = renderStockContent_0621();
-    if (typeof renderJisiluNav_0621 === 'function') renderJisiluNav_0621();
-    const jisiluContentEl0621 = document.getElementById('jisilu-content');
-    if (jisiluContentEl0621 && typeof renderJisiluContent_0621 === 'function') jisiluContentEl0621.innerHTML = renderJisiluContent_0621();
-    if (typeof renderFuturesNav_0621 === 'function') renderFuturesNav_0621();
-    const futuresContentEl0621 = document.getElementById('futures-content');
-    if (futuresContentEl0621 && typeof renderFuturesContent_0621 === 'function') futuresContentEl0621.innerHTML = renderFuturesContent_0621();
-  } else {
-    console.log('[renderAllContent] 渲染 ' + date + ' 内容（通用）');
-    // 通用渲染：尝试调用对应日期的渲染函数
-    const dateSuffix = date.replace('2026-', '').replace('-', '');
-    const navRenderers = ['Decision', 'Industry', 'Macro', 'Broker', 'Stock', 'Jisilu', 'Futures'];
-    navRenderers.forEach(name => {
-      const navFn = 'render' + name + 'Nav_' + dateSuffix;
-      const contentFn = 'render' + name + 'Content_' + dateSuffix;
-      const navEl = document.getElementById(name.toLowerCase().replace('stock','stock').replace('jisilu','jisilu').replace('futures','futures').replace('macro','macro').replace('broker','broker').replace('industry','industry').replace('decision','decision') + '-nav-content');
-      const contentEl = document.getElementById(name.toLowerCase().replace('stock','stock').replace('jisilu','jisilu').replace('futures','futures').replace('macro','macro').replace('broker','broker').replace('industry','industry').replace('decision','decision') + '-content');
-      // 简化映射
+  let loaded = 0;
+  let total = TABS.length * 2; // nav + content for each module
+  let successCount = 0;
+
+  TABS.forEach(mod => {
+    [mod + '-' + suffix + '-nav.js', mod + '-' + suffix + '-content.js'].forEach(file => {
+      const script = document.createElement('script');
+      script.src = './data/' + file + '?v=' + APP_VERSION;
+      script.onload = function() {
+        loaded++;
+        successCount++;
+        if (loaded === total) finishLoading(suffix, successCount > 0);
+      };
+      script.onerror = function() {
+        loaded++;
+        if (loaded === total) finishLoading(suffix, successCount > 0);
+      };
+      document.body.appendChild(script);
     });
+  });
+}
 
-    // 直接尝试各模块
-    const tabMap = { decision: 'decision', industry: 'industry', macro: 'macro', broker: 'broker', stock: 'stock', jisilu: 'jisilu', futures: 'futures' };
-    Object.entries(tabMap).forEach(([key, elPrefix]) => {
-      const capKey = key.charAt(0).toUpperCase() + key.slice(1);
-      const navFnName = 'render' + capKey + 'Nav_' + dateSuffix;
-      const contentFnName = 'render' + capKey + 'Content_' + dateSuffix;
-      if (typeof window[navFnName] === 'function') window[navFnName]();
-      const contentEl = document.getElementById(elPrefix + '-content');
-      if (contentEl && typeof window[contentFnName] === 'function') {
-        contentEl.innerHTML = window[contentFnName]();
+function finishLoading(suffix, hasAnyData) {
+  AppState.loadingDates.delete(suffix);
+
+  if (hasAnyData) {
+    AppState.loadedDates.add(suffix);
+    renderAllContent();
+  } else {
+    // 该日期完全无数据
+    TABS.forEach(tab => {
+      const contentEl = document.getElementById(tab + '-content');
+      if (contentEl) {
+        contentEl.innerHTML = '<div class="no-data"><svg class="mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:48px;height:48px"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><p class="mt-3 text-sm font-medium">该日期暂无数据</p></div>';
       }
     });
   }
+}
+
+// ==================== 渲染所有内容 ====================
+function renderAllContent() {
+  const date = AppState.currentDate;
+  const suffix = date.replace('2026-', '').replace('-', '');
+
+  TABS.forEach(tab => {
+    const capTab = tab.charAt(0).toUpperCase() + tab.slice(1);
+    const navFn = 'render' + capTab + 'Nav_' + suffix;
+    const contentFn = 'render' + capTab + 'Content_' + suffix;
+
+    // 渲染侧边导航
+    if (typeof window[navFn] === 'function') {
+      try { window[navFn](); } catch(e) { console.warn('Nav error:', tab, e); }
+    } else {
+      // 无导航数据，清空
+      const navEl = document.getElementById(tab + '-nav-content');
+      if (navEl) navEl.innerHTML = '<div class="text-xs text-slate-400 px-4 py-2">暂无导航</div>';
+    }
+
+    // 渲染内容
+    const contentEl = document.getElementById(tab + '-content');
+    if (contentEl) {
+      if (typeof window[contentFn] === 'function') {
+        try {
+          contentEl.innerHTML = window[contentFn]();
+          // 添加淡入动画
+          contentEl.style.opacity = '0';
+          requestAnimationFrame(() => {
+            contentEl.style.transition = 'opacity 0.3s ease';
+            contentEl.style.opacity = '1';
+          });
+        } catch(e) {
+          console.warn('Content error:', tab, e);
+          contentEl.innerHTML = '<div class="no-data"><p class="text-sm">内容渲染出错</p></div>';
+        }
+      } else {
+        contentEl.innerHTML = '<div class="no-data"><p class="text-sm">' + (TAB_LABELS[tab] || tab) + ' 暂无该日期数据</p></div>';
+      }
+    }
+  });
+}
+
+// ==================== 时钟 ====================
+function startClock() {
+  const clockEl = document.getElementById('clock');
+  if (!clockEl) return;
+  function update() {
+    const now = new Date();
+    clockEl.textContent = [now.getHours(), now.getMinutes(), now.getSeconds()]
+      .map(n => String(n).padStart(2, '0')).join(':');
+  }
+  update();
+  setInterval(update, 1000);
 }
