@@ -69,7 +69,6 @@ const AVAILABLE_DATES = [
   { date: '2026-03-27', label: '2026 年 3 月 27 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-26', label: '2026 年 3 月 26 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-25', label: '2026 年 3 月 25 日', tag: 'history', tagLabel: '历史' },
-  { date: '2026-03-24', label: '2026 年 3 月 24 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-23', label: '2026 年 3 月 23 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-22', label: '2026 年 3 月 22 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-03-20', label: '2026 年 3 月 20 日', tag: 'history', tagLabel: '历史' },

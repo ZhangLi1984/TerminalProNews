@@ -1,44 +1,97 @@
 const DECISION_NAV_CONFIG_0702 = [
   {
-    title: '核心摘要',
-    links: [
-      { id: 'sec1', label: '全局叙事与资金推演' }
+    "title": "核心摘要",
+    "links": [
+      {
+        "id": "sec2",
+        "label": "一、核心摘要与全局叙事（3分钟速读）"
+      },
+      {
+        "id": "sec3",
+        "label": "一、核心摘要与全局叙事（3分钟速读）"
+      }
     ]
   },
   {
-    title: '重大事件',
-    links: [
-      { id: 'sec2', label: 'Meta 卖算力引发 AI 硬件崩盘' },
-      { id: 'sec3', label: '非农爆冷与美联储预期降温' }
+    "title": "重大事件",
+    "links": [
+      {
+        "id": "sec4",
+        "label": "二、重大事件：深度推理与沙盘推演"
+      },
+      {
+        "id": "sec5",
+        "label": "二、重大事件：深度推理与沙盘推演"
+      }
     ]
   },
   {
-    title: '行业催化',
-    links: [
-      { id: 'sec4', label: 'MLCC 涨价潮全面爆发' },
-      { id: 'sec5', label: '先进封装与功率器件涨价' },
-      { id: 'sec6', label: '人形机器人量产加速' },
-      { id: 'sec7', label: '创新药 BD 交易火爆' },
-      { id: 'sec8', label: '有色金属与贵金属走强' },
-      { id: 'sec9', label: '业绩预增精选' }
+    "title": "重要新闻",
+    "links": [
+      {
+        "id": "sec6",
+        "label": "三、重要新闻分类"
+      },
+      {
+        "id": "sec7",
+        "label": "三、重要新闻分类"
+      }
     ]
   },
   {
-    title: '跨赛道传导',
-    links: [
-      { id: 'sec10', label: '三大传导链分析' }
+    "title": "热点赛道",
+    "links": [
+      {
+        "id": "sec8",
+        "label": "四、热点赛道追踪"
+      },
+      {
+        "id": "sec9",
+        "label": "四、热点赛道追踪"
+      },
+      {
+        "id": "sec10",
+        "label": "五、跨赛道传导分析"
+      },
+      {
+        "id": "sec11",
+        "label": "五、跨赛道传导分析"
+      }
     ]
   },
   {
-    title: '明日关注',
-    links: [
-      { id: 'sec11', label: '7 月 3 日关键事件' }
+    "title": "明日关注",
+    "links": [
+      {
+        "id": "sec12",
+        "label": "六、明日（7月3日）关注"
+      },
+      {
+        "id": "sec13",
+        "label": "六、明日（7月3日）关注"
+      }
     ]
   },
   {
-    title: '风险提示',
-    links: [
-      { id: 'sec12', label: '逻辑证伪与避雷区' }
+    "title": "风险提示",
+    "links": [
+      {
+        "id": "sec14",
+        "label": "七、风险提示与证伪区（避雷针）"
+      },
+      {
+        "id": "sec15",
+        "label": "七、风险提示与证伪区（避雷针）"
+      }
+    ]
+  },
+  {
+    "title": "其他",
+    "links": [
+      {
+        "id": "sec1",
+        "label": "2026-07-02 投资决策内参 | "
+      }
     ]
   }
 ];
