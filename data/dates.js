@@ -71,5 +71,5 @@ const AVAILABLE_DATES = [
   { date: '2026-03-30', label: '2026 年 3 月 30 日', tag: 'history', tagLabel: '历史' },
 ];
 
-// 当前选中日期（2026-07-06 最新）
-let currentDate = '2026-07-06';
+// 当前选中日期（2026-07-07 最新）
+let currentDate = '2026-07-07';
