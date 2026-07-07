@@ -7,52 +7,60 @@ const DECISION_NAV_CONFIG_0707 = [
     ]
   },
   {
-    "title": "重大新闻详解",
+    "title": "重大事件详解",
     "links": [
-      { "id": "sec3", "label": "三星Q2利润飙升18倍" },
-      { "id": "sec4", "label": "英伟达Kyber延期风波" },
-      { "id": "sec5", "label": "A股沪指失守4000点" }
+      { "id": "sec3", "label": "三星利润暴增18倍却暴跌" },
+      { "id": "sec4", "label": "A股失守4000点" },
+      { "id": "sec5", "label": "英伟达Kyber延期反转" }
     ]
   },
   {
-    "title": "重要新闻分类",
+    "title": "行业新闻追踪",
     "links": [
       { "id": "sec6", "label": "半导体/AI芯片" },
-      { "id": "sec7", "label": "算力硬件/光通信" },
-      { "id": "sec8", "label": "券商/金融" },
-      { "id": "sec9", "label": "商业航天" },
-      { "id": "sec10", "label": "黄金/贵金属" },
-      { "id": "sec11", "label": "人形机器人" },
-      { "id": "sec12", "label": "其他重要业绩" }
+      { "id": "sec7", "label": "算力硬件/PCB" },
+      { "id": "sec8", "label": "游戏板块" },
+      { "id": "sec9", "label": "锂矿/新能源" },
+      { "id": "sec10", "label": "宏观/政策" },
+      { "id": "sec11", "label": "美股/海外" }
     ]
   },
   {
-    "title": "热点赛道追踪",
+    "title": "业绩亮点",
     "links": [
-      { "id": "sec13", "label": "ASIC定制芯片" },
-      { "id": "sec14", "label": "算力硬件" },
-      { "id": "sec15", "label": "商业航天" }
+      { "id": "sec12", "label": "H1业绩爆发公司一览" }
     ]
   },
   {
-    "title": "跨赛道传导分析",
+    "title": "热点赛道",
     "links": [
-      { "id": "sec16", "label": "三星→ASIC替代加速" },
-      { "id": "sec17", "label": "华为→先进封装重估" },
-      { "id": "sec18", "label": "央行增持→避险重估" }
+      { "id": "sec13", "label": "AI/算力：从GPU到全栈" },
+      { "id": "sec14", "label": "半导体设备：全球景气" },
+      { "id": "sec15", "label": "人形机器人" },
+      { "id": "sec16", "label": "商业航天" },
+      { "id": "sec17", "label": "折叠屏iPhone" }
+    ]
+  },
+  {
+    "title": "跨赛道传导",
+    "links": [
+      { "id": "sec18", "label": "三星→存储→ASIC" },
+      { "id": "sec19", "label": "A股4000→K型分化" },
+      { "id": "sec20", "label": "华为→先进封装" },
+      { "id": "sec21", "label": "锂矿战略重估" }
     ]
   },
   {
     "title": "本周关注",
     "links": [
-      { "id": "sec19", "label": "关键事件日历" }
+      { "id": "sec22", "label": "关键事件日历" }
     ]
   },
   {
     "title": "风险提示",
     "links": [
-      { "id": "sec20", "label": "存储周期见顶二阶效应" },
-      { "id": "sec21", "label": "大基金减持/美联储/地缘/流动性" }
+      { "id": "sec23", "label": "逻辑证伪与传闻预警" },
+      { "id": "sec24", "label": "地缘/宏观风险" }
     ]
   }
 ];
