@@ -4,7 +4,8 @@
 
 // 可用日期列表（按时间倒序，最新的在前）
 const AVAILABLE_DATES = [
-  { date: '2026-07-06', label: '2026 年 7 月 6 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-07-07', label: '2026 年 7 月 7 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-07-06', label: '2026 年 7 月 6 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-07-05', label: '2026 年 7 月 5 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-07-02', label: '2026 年 7 月 2 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-07-01', label: '2026 年 7 月 1 日', tag: 'history', tagLabel: '历史' },

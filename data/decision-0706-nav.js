@@ -10,7 +10,7 @@ const DECISION_NAV_CONFIG_0706 = [
   {
     "title": "重大事件详解",
     "links": [
-      { "id": "sec4", "label": "华为韬定律V2发布" },
+      { "id": "sec4", "label": "华为韬定律V2" },
       { "id": "sec5", "label": "英伟达Kyber延迟" },
       { "id": "sec6", "label": "存储芯片超级周期" }
     ]
@@ -37,12 +37,12 @@ const DECISION_NAV_CONFIG_0706 = [
     ]
   },
   {
-    "title": "二阶传导分析",
+    "title": "跨赛道传导分析",
     "links": [
-      { "id": "sec18", "label": "韬定律→先进封装链" },
+      { "id": "sec18", "label": "韬定律→先进封装" },
       { "id": "sec19", "label": "Kyber→PCB/光纤" },
-      { "id": "sec20", "label": "碳酸锂储备→战略重估" },
-      { "id": "sec21", "label": "油价回落→全球再平衡" },
+      { "id": "sec20", "label": "碳酸锂→战略金属" },
+      { "id": "sec21", "label": "油价→通胀→资产再平衡" },
       { "id": "sec22", "label": "存储涨价→消费电子" }
     ]
   },
@@ -56,8 +56,7 @@ const DECISION_NAV_CONFIG_0706 = [
     "title": "风险提示",
     "links": [
       { "id": "sec24", "label": "逻辑证伪风险" },
-      { "id": "sec25", "label": "传闻预警" },
-      { "id": "sec26", "label": "证伪信号与拥挤度" }
+      { "id": "sec25", "label": "拥挤度警示" }
     ]
   }
 ];
@@ -65,24 +64,13 @@ const DECISION_NAV_CONFIG_0706 = [
 function renderDecisionNav_0706() {
   const container = document.getElementById('decision-nav-content');
   if (!container) return;
-
   let html = '';
   DECISION_NAV_CONFIG_0706.forEach(section => {
-    html += `
-      <div class="mb-6">
-        <h3 class="text-sm font-bold text-slate-900 mb-3 px-3">${section.title}</h3>
-        <ul class="space-y-1">
-          ${section.links.map(link => `
-            <li>
-              <a href="#${link.id}" class="block px-3 py-2 text-sm text-slate-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors" data-section="${link.id}">
-                ${link.label}
-              </a>
-            </li>
-          `).join('')}
-        </ul>
-      </div>
-    `;
+    html += '<div class="mb-6"><h3 class="text-sm font-bold text-slate-900 mb-3 px-3">' + section.title + '</h3><ul class="space-y-1">';
+    section.links.forEach(link => {
+      html += '<li><a href="#' + link.id + '" class="block px-3 py-2 text-sm text-slate-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors" data-section="' + link.id + '">' + link.label + '</a></li>';
+    });
+    html += '</ul></div>';
   });
-
   container.innerHTML = html;
 }

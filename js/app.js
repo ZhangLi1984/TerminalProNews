@@ -4,7 +4,7 @@
 
 const AppState = {
   currentTab: 'decision',
-  currentDate: '2026-07-06',
+  currentDate: '2026-07-07',
   loadedDates: new Set(),      // 已完整加载的日期后缀
   loadingDates: new Set()      // 正在加载中的日期后缀
 };
@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
   initTabs();
   initDateDropdown();
   setupDateDropdownListener();
-  // 首次加载：0706 决策模块 + 0705 全模块 + 0702 完整数据已通过 HTML script 标签加载
+  // 首次加载：0707 决策模块 + 0706 决策+集思录 + 0705 全模块 + 0702 完整数据已通过 HTML script 标签加载
+  AppState.loadedDates.add('0707');
   AppState.loadedDates.add('0706');
   AppState.loadedDates.add('0705');
   AppState.loadedDates.add('0702');
