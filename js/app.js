@@ -4,7 +4,8 @@
 
 const AppState = {
   currentTab: 'decision',
-  currentDate: '2026-07-07',
+  // 当前日期的唯一真值来源是 dates.js 的 AVAILABLE_DATES[0]，此处仅作 AVAILABLE_DATES 缺失时的兜底
+  currentDate: (typeof AVAILABLE_DATES !== 'undefined' && AVAILABLE_DATES[0]) ? AVAILABLE_DATES[0].date : '2026-07-07',
   loadedDates: new Set(),      // 已完整加载的日期后缀
   loadingDates: new Set()      // 正在加载中的日期后缀
 };
@@ -20,12 +21,17 @@ document.addEventListener('DOMContentLoaded', function() {
   initTabs();
   initDateDropdown();
   setupDateDropdownListener();
-  // 首次加载：0707 决策模块 + 0706 决策+集思录 + 0705 全模块 + 0702 完整数据已通过 HTML script 标签加载
-  AppState.loadedDates.add('0707');
-  AppState.loadedDates.add('0706');
-  AppState.loadedDates.add('0705');
-  AppState.loadedDates.add('0702');
-  renderAllContent();
+
+  // 单一真值：当前日期取自 AVAILABLE_DATES[0]，最新一天的数据脚本由 loadAndRender 动态注入，
+  // 无需再在 index.html 手工挂载每天的 <script>，也无需在此硬编码 loadedDates。
+  const latest = (typeof AVAILABLE_DATES !== 'undefined' && AVAILABLE_DATES[0])
+    ? AVAILABLE_DATES[0].date
+    : AppState.currentDate;
+  AppState.currentDate = latest;
+  const dateDisplay = document.getElementById('current-date-display');
+  if (dateDisplay) dateDisplay.textContent = latest;
+
+  loadAndRender(latest);
   startClock();
 });
 
