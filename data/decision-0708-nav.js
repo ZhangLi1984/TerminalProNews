@@ -2,64 +2,52 @@ const DECISION_NAV_CONFIG_0708 = [
   {
     "title": "核心摘要",
     "links": [
-      { "id": "sec1", "label": "核心主线与操作方向" },
-      { "id": "sec2", "label": "市场全景速览" }
+      { "id": "sec1", "label": "全局叙事与核心主线" },
+      { "id": "sec2", "label": "关键推演与操作方向" }
     ]
   },
   {
     "title": "重大事件详解",
     "links": [
-      { "id": "sec3", "label": "芯片股全球反攻：三星暴涨韩国救场" },
-      { "id": "sec4", "label": "A股V型反转：科技领涨4000点攻防" },
-      { "id": "sec5", "label": "美伊冲突骤然升级：油价跳涨" },
-      { "id": "sec6", "label": "GPT-5.6本周四发布：AI催化再升级" }
+      { "id": "sec3", "label": "AI定价逻辑切换" },
+      { "id": "sec4", "label": "美伊冲突升级" },
+      { "id": "sec5", "label": "港股科技与南向资金" }
     ]
   },
   {
     "title": "行业新闻追踪",
     "links": [
-      { "id": "sec7", "label": "半导体/AI芯片：国产算力突围" },
-      { "id": "sec8", "label": "算力硬件：云计算+昇腾共振" },
-      { "id": "sec9", "label": "创新药：恒瑞+中生双催化" },
-      { "id": "sec10", "label": "港股科技：阿里暴涨10%+" },
-      { "id": "sec11", "label": "锂矿/新能源：价格回暖与分化" },
-      { "id": "sec12", "label": "宏观/政策" }
+      { "id": "sec6", "label": "云计算/AI应用" },
+      { "id": "sec7", "label": "国产算力/华为昇腾" },
+      { "id": "sec8", "label": "半导体/存储/HBM" },
+      { "id": "sec9", "label": "新能源车/储能" },
+      { "id": "sec10", "label": "创新药/医药" },
+      { "id": "sec11", "label": "券商/金融" },
+      { "id": "sec12", "label": "化工/资源品" }
     ]
   },
   {
-    "title": "业绩亮点",
+    "title": "热点赛道追踪",
     "links": [
-      { "id": "sec13", "label": "H1业绩爆发公司一览" }
+      { "id": "sec13", "label": "AI/云计算/国产算力" },
+      { "id": "sec14", "label": "半导体/存储" },
+      { "id": "sec15", "label": "港股科技" },
+      { "id": "sec16", "label": "油气/煤炭/黄金" },
+      { "id": "sec17", "label": "新能源车/储能" },
+      { "id": "sec18", "label": "机器人/具身智能" },
+      { "id": "sec19", "label": "创新药/CXO" }
     ]
   },
   {
-    "title": "热点赛道",
+    "title": "明日关注",
     "links": [
-      { "id": "sec14", "label": "国产算力Plan B" },
-      { "id": "sec15", "label": "折叠屏iPhone量产" },
-      { "id": "sec16", "label": "AI软件应用爆发" },
-      { "id": "sec17", "label": "旅游强国建设" }
-    ]
-  },
-  {
-    "title": "跨赛道传导",
-    "links": [
-      { "id": "sec18", "label": "芯片暴跌→反攻→结构分化" },
-      { "id": "sec19", "label": "美伊冲突→油价→A股传导" },
-      { "id": "sec20", "label": "GPT-5.6→AI全产业链" }
-    ]
-  },
-  {
-    "title": "本周关注",
-    "links": [
-      { "id": "sec21", "label": "关键事件日历" }
+      { "id": "sec20", "label": "关键事件与催化" }
     ]
   },
   {
     "title": "风险提示",
     "links": [
-      { "id": "sec22", "label": "地缘/宏观风险预警" },
-      { "id": "sec23", "label": "板块分化与逻辑证伪" }
+      { "id": "sec21", "label": "逻辑证伪与避雷针" }
     ]
   }
 ];
