@@ -1,75 +1,149 @@
 // ==========================================
-// 主应用逻辑
+// 主应用逻辑（数据驱动 · 无需为新日期改动本文件）
 // ==========================================
+// 数据契约（两种，同时支持）：
+//   v2（推荐，新报告用）：data/{mod}-{MMDD}-content.js 内调用
+//        registerReport('decision', '0720', { title, subtitle, markdown: `...` })
+//      —— 正文写 Markdown 原文，侧边目录由标题自动生成，无需 nav 文件。
+//   v1（历史文件，只读兼容）：全局函数 render{Cap}Content_{MMDD}() / render{Cap}Nav_{MMDD}()
+// ==========================================
+
+const TABS = ['decision', 'industry', 'macro', 'broker', 'stock', 'jisilu', 'futures'];
+const TAB_LABELS = {
+  decision: '决策内参', industry: '行业汇总', macro: '宏观',
+  broker: '券商', stock: '个股', jisilu: '集思录', futures: '期货'
+};
+const APP_VERSION = '3';
 
 const AppState = {
   currentTab: 'decision',
-  // 当前日期的唯一真值来源是 dates.js 的 AVAILABLE_DATES[0]，此处仅作 AVAILABLE_DATES 缺失时的兜底
-  currentDate: (typeof AVAILABLE_DATES !== 'undefined' && AVAILABLE_DATES[0]) ? AVAILABLE_DATES[0].date : '2026-07-07',
-  loadedDates: new Set(),      // 已完整加载的日期后缀
-  loadingDates: new Set()      // 正在加载中的日期后缀
+  // 当前日期唯一真值 = dates.js 的 AVAILABLE_DATES[0]
+  currentDate: (typeof AVAILABLE_DATES !== 'undefined' && AVAILABLE_DATES[0]) ? AVAILABLE_DATES[0].date : '',
+  loadedDates: new Set(),
+  loadingDates: new Set(),
+  available: {},          // { tab: true } 当前日期哪些模块有数据
+  searchTerm: ''
 };
 
-const TABS = ['decision', 'industry', 'macro', 'broker', 'stock', 'jisilu', 'futures'];
-const TAB_LABELS = { decision: '决策内参', industry: '行业汇总', macro: '宏观', broker: '券商', stock: '个股', jisilu: '集思录', futures: '期货' };
+// ==================== v2 数据契约 ====================
+const ReportStore = Object.create(null);
 
-// 缓存破坏版本号 - 每次更新代码时递增
-const APP_VERSION = '2';
+function registerReport(mod, suffix, payload) {
+  ReportStore[mod + '-' + suffix] = payload || {};
+}
+window.registerReport = registerReport;
 
-// 初始化
-document.addEventListener('DOMContentLoaded', function() {
+function dateSuffix(date) {
+  return String(date).slice(5).replace('-', '');   // 2026-07-20 -> 0720
+}
+
+// ==================== 初始化 ====================
+document.addEventListener('DOMContentLoaded', function () {
+  initTheme();
   initTabs();
   initDateDropdown();
-  setupDateDropdownListener();
-
-  // 单一真值：当前日期取自 AVAILABLE_DATES[0]，最新一天的数据脚本由 loadAndRender 动态注入，
-  // 无需再在 index.html 手工挂载每天的 <script>，也无需在此硬编码 loadedDates。
-  const latest = (typeof AVAILABLE_DATES !== 'undefined' && AVAILABLE_DATES[0])
-    ? AVAILABLE_DATES[0].date
-    : AppState.currentDate;
-  AppState.currentDate = latest;
-  const dateDisplay = document.getElementById('current-date-display');
-  if (dateDisplay) dateDisplay.textContent = latest;
-
-  loadAndRender(latest);
+  initGlobalListeners();
+  initSearch();
+  initScrollUi();
   startClock();
+
+  const latest = (typeof AVAILABLE_DATES !== 'undefined' && AVAILABLE_DATES[0])
+    ? AVAILABLE_DATES[0].date : AppState.currentDate;
+
+  if (!latest) {
+    document.getElementById('decision-content').innerHTML = emptyState('缺少 data/dates.js，无法确定当前日期');
+    return;
+  }
+
+  // 支持 #tab=stock&date=2026-07-19 深链
+  const hash = parseHash();
+  AppState.currentDate = hash.date && dateExists(hash.date) ? hash.date : latest;
+  if (hash.tab && TABS.indexOf(hash.tab) !== -1) AppState.currentTab = hash.tab;
+
+  setDateDisplay(AppState.currentDate);
+  switchTab(AppState.currentTab, true);
+  loadAndRender(AppState.currentDate);
 });
 
-// ==================== Tab 切换 ====================
-function initTabs() {
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+function parseHash() {
+  const h = (location.hash || '').replace(/^#/, '');
+  const out = {};
+  h.split('&').forEach(function (kv) {
+    const p = kv.split('=');
+    if (p.length === 2) out[p[0]] = p[1];
+  });
+  return out;
+}
+
+function dateExists(d) {
+  return typeof AVAILABLE_DATES !== 'undefined' && AVAILABLE_DATES.some(function (x) { return x.date === d; });
+}
+
+function setDateDisplay(date) {
+  const el = document.getElementById('current-date-display');
+  if (el) el.textContent = date;
+  const meta = (typeof AVAILABLE_DATES !== 'undefined')
+    ? AVAILABLE_DATES.find(function (x) { return x.date === date; }) : null;
+  const badge = document.getElementById('date-badge');
+  if (badge) {
+    const isLatest = meta && meta.tag === 'latest';
+    badge.textContent = isLatest ? '最新' : '历史';
+    badge.className = 'date-badge ' + (isLatest ? 'is-latest' : 'is-history');
+  }
+}
+
+// ==================== 主题 ====================
+function initTheme() {
+  const saved = localStorage.getItem('zy-theme');
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  applyTheme(saved || (prefersDark ? 'dark' : 'light'));
+  const btn = document.getElementById('theme-toggle');
+  if (btn) btn.addEventListener('click', function () {
+    applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark');
   });
 }
 
-function switchTab(tabName) {
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  localStorage.setItem('zy-theme', theme);
+  const btn = document.getElementById('theme-toggle');
+  if (btn) btn.setAttribute('aria-label', theme === 'dark' ? '切换到浅色' : '切换到深色');
+}
+
+// ==================== Tab ====================
+function initTabs() {
+  document.querySelectorAll('.tab-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () { switchTab(btn.dataset.tab); });
+  });
+}
+
+function switchTab(tabName, skipScroll) {
   AppState.currentTab = tabName;
 
-  // 更新按钮样式
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    if (btn.dataset.tab === tabName) {
-      btn.className = 'tab-btn active px-4 py-1.5 rounded-lg text-xs font-bold bg-red-600 text-white shadow-sm';
-    } else {
-      btn.className = 'tab-btn px-4 py-1.5 rounded-lg text-xs font-bold text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition-colors';
-    }
+  document.querySelectorAll('.tab-btn').forEach(function (btn) {
+    btn.classList.toggle('is-active', btn.dataset.tab === tabName);
   });
-
-  // 切换文档面板
-  TABS.forEach(t => {
+  TABS.forEach(function (t) {
     const doc = document.getElementById(t + '-doc');
     const nav = document.getElementById(t + '-nav-content');
     if (doc) doc.classList.toggle('hidden', t !== tabName);
     if (nav) nav.classList.toggle('hidden', t !== tabName);
   });
 
-  // 滚动到顶部
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  syncHash();
+  closeDrawer();
+  if (!skipScroll) window.scrollTo({ top: 0, behavior: 'smooth' });
+  updateScrollSpy();
+  updateProgress();
 }
 
-// ==================== 日期选择器 ====================
-function initDateDropdown() {
-  renderDateDropdownList();
+function syncHash() {
+  const next = '#tab=' + AppState.currentTab + '&date=' + AppState.currentDate;
+  if (location.hash !== next) history.replaceState(null, '', next);
 }
+
+// ==================== 日期选择 ====================
+function initDateDropdown() { renderDateDropdownList(); }
 
 function renderDateDropdownList(filter) {
   const listEl = document.getElementById('date-list');
@@ -79,184 +153,420 @@ function renderDateDropdownList(filter) {
 
   const f = (filter || '').trim().toLowerCase();
   const filtered = f
-    ? AVAILABLE_DATES.filter(item => item.date.toLowerCase().includes(f) || item.label.toLowerCase().includes(f))
+    ? AVAILABLE_DATES.filter(function (it) {
+        return it.date.toLowerCase().indexOf(f) !== -1 || (it.label || '').toLowerCase().indexOf(f) !== -1;
+      })
     : AVAILABLE_DATES;
 
-  if (filtered.length === 0) {
+  if (clearBtn) clearBtn.classList.toggle('hidden', !f);
+  if (!filtered.length) {
     listEl.innerHTML = '';
     if (noResultsEl) noResultsEl.classList.remove('hidden');
     return;
   }
   if (noResultsEl) noResultsEl.classList.add('hidden');
-  if (clearBtn) clearBtn.classList.toggle('hidden', !f);
 
-  listEl.innerHTML = filtered.map(item => {
-    const isActive = item.date === AppState.currentDate;
-    const bg = isActive ? 'bg-red-50 border-l-2 border-l-red-500' : 'hover:bg-slate-50 border-l-2 border-l-transparent';
+  // 按月分组，方便翻找历史
+  let html = '';
+  let currentMonth = '';
+  filtered.forEach(function (item) {
+    const month = item.date.slice(0, 7);
+    if (month !== currentMonth) {
+      currentMonth = month;
+      html += '<div class="date-month">' + month.replace('-', ' 年 ') + ' 月</div>';
+    }
+    const active = item.date === AppState.currentDate ? ' is-active' : '';
     const tag = item.tag === 'latest'
-      ? '<span class="text-[10px] bg-red-100 text-red-600 px-1.5 py-0.5 rounded-full font-bold">最新</span>'
-      : '<span class="text-[10px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded-full">历史</span>';
-    return '<div class="flex items-center justify-between px-4 py-2.5 cursor-pointer transition-all ' + bg + '" onclick="selectDate(\'' + item.date + '\')">' +
-      '<span class="text-sm font-medium text-slate-700">' + item.label + '</span>' + tag + '</div>';
-  }).join('');
+      ? '<span class="date-tag latest">最新</span>'
+      : '<span class="date-tag history">历史</span>';
+    html += '<button class="date-item' + active + '" onclick="selectDate(\'' + item.date + '\')">' +
+      '<span class="date-label">' + item.label + '</span>' + tag + '</button>';
+  });
+  listEl.innerHTML = html;
 }
 
 function toggleDateDropdown() {
   const dropdown = document.getElementById('date-dropdown');
   if (!dropdown) return;
-  const isOpen = !dropdown.classList.contains('hidden');
+  const willOpen = dropdown.classList.contains('hidden');
   dropdown.classList.toggle('hidden');
-  if (!isOpen) {
+  if (willOpen) {
     const input = document.getElementById('date-search-input');
     if (input) { input.value = ''; input.focus(); }
     renderDateDropdownList();
   }
 }
 
-function filterDateList(value) {
-  renderDateDropdownList(value);
-}
+function filterDateList(value) { renderDateDropdownList(value); }
 
 function clearDateSearch() {
   const input = document.getElementById('date-search-input');
   if (input) { input.value = ''; renderDateDropdownList(); input.focus(); }
 }
 
-function setupDateDropdownListener() {
-  document.addEventListener('click', function(e) {
-    const dropdown = document.getElementById('date-dropdown');
-    const btn = document.getElementById('date-selector-btn');
-    if (dropdown && !dropdown.classList.contains('hidden') && !dropdown.contains(e.target) && btn && !btn.contains(e.target)) {
-      dropdown.classList.add('hidden');
-    }
-  });
-}
-
 function selectDate(date) {
-  if (date === AppState.currentDate && AppState.loadedDates.has(date.replace('2026-', '').replace('-', ''))) {
-    // 同一日期且已加载，只关闭下拉
-    const dropdown = document.getElementById('date-dropdown');
-    if (dropdown) dropdown.classList.add('hidden');
-    return;
-  }
-
-  AppState.currentDate = date;
-
-  // 更新日期显示
-  const dateDisplay = document.getElementById('current-date-display');
-  if (dateDisplay) dateDisplay.textContent = date;
-
-  // 关闭下拉
   const dropdown = document.getElementById('date-dropdown');
   if (dropdown) dropdown.classList.add('hidden');
+  if (date === AppState.currentDate && AppState.loadedDates.has(dateSuffix(date))) return;
 
-  // 重新渲染日期列表高亮
+  AppState.currentDate = date;
+  setDateDisplay(date);
   renderDateDropdownList();
-
-  // 动态加载数据 + 渲染内容
+  syncHash();
   loadAndRender(date);
 }
 
-// ==================== 动态加载历史数据 ====================
+// 上/下一个日期（键盘 [ ]）
+function stepDate(delta) {
+  if (typeof AVAILABLE_DATES === 'undefined') return;
+  const idx = AVAILABLE_DATES.findIndex(function (x) { return x.date === AppState.currentDate; });
+  const next = AVAILABLE_DATES[idx + delta];
+  if (next) selectDate(next.date);
+}
+
+// ==================== 加载数据 ====================
 function loadAndRender(date) {
-  const suffix = date.replace('2026-', '').replace('-', '');
+  const suffix = dateSuffix(date);
 
-  // 已加载完成，直接渲染
-  if (AppState.loadedDates.has(suffix)) {
-    renderAllContent();
-    return;
-  }
-
-  // 正在加载中，避免重复
+  if (AppState.loadedDates.has(suffix)) { renderAllContent(); return; }
   if (AppState.loadingDates.has(suffix)) return;
   AppState.loadingDates.add(suffix);
 
-  // 显示加载状态
-  TABS.forEach(tab => {
-    const contentEl = document.getElementById(tab + '-content');
-    if (contentEl) {
-      contentEl.innerHTML = '<div class="loading-state"><div class="loading-spinner"></div><p>正在加载 ' + date + ' 数据...</p></div>';
-    }
+  TABS.forEach(function (tab) {
+    const el = document.getElementById(tab + '-content');
+    if (el) el.innerHTML = '<div class="state-box"><div class="loading-spinner"></div><p>正在加载 ' + date + ' 数据…</p></div>';
   });
 
-  let loaded = 0;
-  let total = TABS.length * 2; // nav + content for each module
-  let successCount = 0;
+  // 每个模块尝试加载 content（v2 / v1）与 nav（仅 v1 需要）
+  const files = [];
+  TABS.forEach(function (mod) {
+    files.push(mod + '-' + suffix + '-content.js');
+    files.push(mod + '-' + suffix + '-nav.js');
+  });
 
-  TABS.forEach(mod => {
-    [mod + '-' + suffix + '-nav.js', mod + '-' + suffix + '-content.js'].forEach(file => {
-      const script = document.createElement('script');
-      script.src = './data/' + file + '?v=' + APP_VERSION;
-      script.onload = function() {
-        loaded++;
-        successCount++;
-        if (loaded === total) finishLoading(suffix, successCount > 0);
-      };
-      script.onerror = function() {
-        loaded++;
-        if (loaded === total) finishLoading(suffix, successCount > 0);
-      };
-      document.body.appendChild(script);
-    });
+  let pending = files.length;
+  files.forEach(function (file) {
+    const script = document.createElement('script');
+    script.src = './data/' + file + '?v=' + APP_VERSION;
+    script.async = false;
+    script.onload = script.onerror = function () {
+      if (--pending === 0) finishLoading(suffix);
+    };
+    document.body.appendChild(script);
   });
 }
 
-function finishLoading(suffix, hasAnyData) {
+function finishLoading(suffix) {
   AppState.loadingDates.delete(suffix);
-
-  if (hasAnyData) {
-    AppState.loadedDates.add(suffix);
-    renderAllContent();
-  } else {
-    // 该日期完全无数据
-    TABS.forEach(tab => {
-      const contentEl = document.getElementById(tab + '-content');
-      if (contentEl) {
-        contentEl.innerHTML = '<div class="no-data"><svg class="mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:48px;height:48px"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><p class="mt-3 text-sm font-medium">该日期暂无数据</p></div>';
-      }
-    });
-  }
+  AppState.loadedDates.add(suffix);
+  renderAllContent();
 }
 
-// ==================== 渲染所有内容 ====================
+// ==================== 渲染 ====================
+function getReportHtml(tab, suffix) {
+  const entry = ReportStore[tab + '-' + suffix];
+  if (entry) {
+    if (entry.markdown) {
+      const res = MD.render(entry.markdown);
+      return { html: res.html, toc: MD.buildToc(res.toc), meta: entry };
+    }
+    if (entry.html) return { html: entry.html, toc: '', meta: entry };
+  }
+  // v1 兼容
+  const cap = tab.charAt(0).toUpperCase() + tab.slice(1);
+  const fn = window['render' + cap + 'Content_' + suffix];
+  if (typeof fn === 'function') {
+    try { return cleanLegacy(fn()); }
+    catch (e) { console.warn('legacy content error', tab, e); }
+  }
+  return null;
+}
+
+// 历史 JS 里残留的 Markdown 记号（首行 "# 标题"、孤立的 </ul>、*斜体*）在这里兜底清理
+function cleanLegacy(html) {
+  let title = null;
+  html = html.replace(/<p[^>]*>\s*#{1,3}\s*([^<]+?)<\/p>/, function (m, t) {
+    if (title) return m;
+    title = t.trim();
+    return '';
+  });
+  html = html
+    .replace(/<p[^>]*>\s*<\/ul>\s*<\/p>/g, '')
+    .replace(/<p[^>]*>\s*<\/ol>\s*<\/p>/g, '')
+    .replace(/<p([^>]*)>\s*<\/ul>/g, '<p$1>')
+    .replace(/(^|>)\s*\*([^*<>]{2,80})\*\s*(<|$)/g, '$1<em>$2</em>$3');
+  return { html: html, toc: null, meta: title ? { title: title } : null, legacy: true };
+}
+
 function renderAllContent() {
-  const date = AppState.currentDate;
-  const suffix = date.replace('2026-', '').replace('-', '');
+  const suffix = dateSuffix(AppState.currentDate);
+  AppState.available = {};
 
-  TABS.forEach(tab => {
-    const capTab = tab.charAt(0).toUpperCase() + tab.slice(1);
-    const navFn = 'render' + capTab + 'Nav_' + suffix;
-    const contentFn = 'render' + capTab + 'Content_' + suffix;
+  TABS.forEach(function (tab) {
+    const contentEl = document.getElementById(tab + '-content');
+    const navEl = document.getElementById(tab + '-nav-content');
+    const res = getReportHtml(tab, suffix);
 
-    // 渲染侧边导航
-    if (typeof window[navFn] === 'function') {
-      try { window[navFn](); } catch(e) { console.warn('Nav error:', tab, e); }
-    } else {
-      // 无导航数据，清空
-      const navEl = document.getElementById(tab + '-nav-content');
-      if (navEl) navEl.innerHTML = '<div class="text-xs text-slate-400 px-4 py-2">暂无导航</div>';
+    if (!res) {
+      if (contentEl) contentEl.innerHTML = emptyState((TAB_LABELS[tab] || tab) + '·该日期暂无数据');
+      if (navEl) navEl.innerHTML = '<div class="toc-empty">暂无目录</div>';
+      return;
     }
 
-    // 渲染内容
-    const contentEl = document.getElementById(tab + '-content');
+    AppState.available[tab] = true;
+
+    // 文档头（v2 才有元信息）
+    let header = '';
+    if (res.meta && (res.meta.title || res.meta.subtitle)) {
+      header = '<div class="doc-header">' +
+        (res.meta.title ? '<h1 class="doc-title">' + MD.escapeHtml(res.meta.title) + '</h1>' : '') +
+        '<div class="doc-meta">' +
+        '<span class="doc-chip">' + AppState.currentDate + '</span>' +
+        (res.meta.source ? '<span class="doc-chip">' + MD.escapeHtml(res.meta.source) + '</span>' : '') +
+        (res.meta.subtitle ? '<span class="doc-sub">' + MD.escapeHtml(res.meta.subtitle) + '</span>' : '') +
+        '</div></div>';
+    }
+
     if (contentEl) {
-      if (typeof window[contentFn] === 'function') {
-        try {
-          contentEl.innerHTML = window[contentFn]();
-          // 添加淡入动画
-          contentEl.style.opacity = '0';
-          requestAnimationFrame(() => {
-            contentEl.style.transition = 'opacity 0.3s ease';
-            contentEl.style.opacity = '1';
-          });
-        } catch(e) {
-          console.warn('Content error:', tab, e);
-          contentEl.innerHTML = '<div class="no-data"><p class="text-sm">内容渲染出错</p></div>';
-        }
+      contentEl.className = 'doc-body' + (res.legacy ? ' legacy-content prose' : ' md-content');
+      contentEl.innerHTML = header + res.html;
+      contentEl.classList.remove('fade-in');
+      void contentEl.offsetWidth;
+      contentEl.classList.add('fade-in');
+    }
+
+    // 侧边目录
+    if (navEl) {
+      if (res.toc) {
+        navEl.innerHTML = res.toc || '<div class="toc-empty">本篇无小节标题</div>';
       } else {
-        contentEl.innerHTML = '<div class="no-data"><p class="text-sm">' + (TAB_LABELS[tab] || tab) + ' 暂无该日期数据</p></div>';
+        const cap = tab.charAt(0).toUpperCase() + tab.slice(1);
+        const navFn = window['render' + cap + 'Nav_' + suffix];
+        if (typeof navFn === 'function') {
+          try { navFn(); } catch (e) { navEl.innerHTML = '<div class="toc-empty">目录渲染失败</div>'; }
+        } else {
+          navEl.innerHTML = buildTocFromDom(contentEl) || '<div class="toc-empty">暂无目录</div>';
+        }
       }
     }
+  });
+
+  updateTabBadges();
+  bindTocLinks();
+  applySearchHighlight();
+  updateScrollSpy();
+  updateProgress();
+}
+
+// 历史 HTML 内容没有 nav 时，从 DOM 里的 h2/h3 反推目录
+function buildTocFromDom(root) {
+  if (!root) return '';
+  const items = [];
+  root.querySelectorAll('h2, h3').forEach(function (h, idx) {
+    if (!h.id) h.id = 'auto-sec-' + idx;
+    items.push({ id: h.id, label: h.textContent.trim(), level: h.tagName === 'H2' ? 2 : 3 });
+  });
+  return MD.buildToc(items);
+}
+
+function emptyState(text) {
+  return '<div class="state-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">' +
+    '<rect x="3" y="4" width="18" height="16" rx="2"/><line x1="8" y1="10" x2="16" y2="10"/>' +
+    '<line x1="8" y1="14" x2="13" y2="14"/></svg><p>' + MD.escapeHtml(text) + '</p></div>';
+}
+
+function updateTabBadges() {
+  document.querySelectorAll('.tab-btn').forEach(function (btn) {
+    btn.classList.toggle('is-empty', !AppState.available[btn.dataset.tab]);
+  });
+}
+
+// ==================== 目录跳转 + 滚动高亮 ====================
+function bindTocLinks() {
+  document.querySelectorAll('.nav-sidebar a[href^="#"], .md-anchor').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      const id = a.getAttribute('href').slice(1);
+      const target = document.getElementById(id);
+      if (!target) return;
+      e.preventDefault();
+      const y = target.getBoundingClientRect().top + window.pageYOffset - 84;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      closeDrawer();
+    });
+  });
+}
+
+let spyTicking = false;
+function initScrollUi() {
+  window.addEventListener('scroll', function () {
+    if (spyTicking) return;
+    spyTicking = true;
+    requestAnimationFrame(function () {
+      updateScrollSpy();
+      updateProgress();
+      spyTicking = false;
+    });
+  }, { passive: true });
+
+  const top = document.getElementById('back-to-top');
+  if (top) top.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  const menuBtn = document.getElementById('menu-toggle');
+  if (menuBtn) menuBtn.addEventListener('click', toggleDrawer);
+  const backdrop = document.getElementById('drawer-backdrop');
+  if (backdrop) backdrop.addEventListener('click', closeDrawer);
+
+  const printBtn = document.getElementById('print-btn');
+  if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
+}
+
+function updateProgress() {
+  const bar = document.getElementById('progress-bar');
+  const doc = document.getElementById(AppState.currentTab + '-doc');
+  if (!bar || !doc) return;
+  const total = doc.offsetHeight - window.innerHeight + doc.offsetTop;
+  const pct = total > 0 ? Math.min(100, Math.max(0, (window.pageYOffset - doc.offsetTop) / total * 100)) : 0;
+  bar.style.width = pct + '%';
+
+  const top = document.getElementById('back-to-top');
+  if (top) top.classList.toggle('show', window.pageYOffset > 600);
+}
+
+function updateScrollSpy() {
+  const nav = document.getElementById(AppState.currentTab + '-nav-content');
+  const doc = document.getElementById(AppState.currentTab + '-doc');
+  if (!nav || !doc || doc.classList.contains('hidden')) return;
+
+  const heads = doc.querySelectorAll('h2[id], h3[id]');
+  let activeId = null;
+  for (let i = 0; i < heads.length; i++) {
+    if (heads[i].getBoundingClientRect().top <= 120) activeId = heads[i].id;
+    else break;
+  }
+  nav.querySelectorAll('a[data-target], a[href^="#"]').forEach(function (a) {
+    const id = a.dataset.target || a.getAttribute('href').slice(1);
+    const on = id === activeId;
+    a.classList.toggle('is-current', on);
+    if (on) {
+      const box = nav.closest('.nav-card');
+      if (box && (a.offsetTop < box.scrollTop || a.offsetTop > box.scrollTop + box.clientHeight - 40)) {
+        box.scrollTop = a.offsetTop - box.clientHeight / 2;
+      }
+    }
+  });
+}
+
+// ==================== 全文搜索（当前报告内高亮） ====================
+function initSearch() {
+  const input = document.getElementById('doc-search');
+  if (!input) return;
+  let timer = null;
+  input.addEventListener('input', function () {
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      AppState.searchTerm = input.value.trim();
+      applySearchHighlight();
+    }, 180);
+  });
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { input.value = ''; AppState.searchTerm = ''; applySearchHighlight(); input.blur(); }
+    if (e.key === 'Enter') jumpToNextHit();
+  });
+}
+
+let hitIndex = -1;
+function applySearchHighlight() {
+  const doc = document.getElementById(AppState.currentTab + '-doc');
+  const countEl = document.getElementById('search-count');
+  if (!doc) return;
+
+  doc.querySelectorAll('mark.search-hit').forEach(function (m) {
+    m.replaceWith(document.createTextNode(m.textContent));
+  });
+  doc.normalize();
+  hitIndex = -1;
+
+  const term = AppState.searchTerm;
+  if (!term || term.length < 2) { if (countEl) countEl.textContent = ''; return; }
+
+  const walker = document.createTreeWalker(doc, NodeFilter.SHOW_TEXT, {
+    acceptNode: function (node) {
+      if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+      const p = node.parentElement;
+      if (!p || /SCRIPT|STYLE|MARK/.test(p.tagName)) return NodeFilter.FILTER_REJECT;
+      return node.nodeValue.indexOf(term) !== -1 ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+    }
+  });
+  const targets = [];
+  let n;
+  while ((n = walker.nextNode())) targets.push(n);
+
+  let count = 0;
+  targets.forEach(function (node) {
+    const parts = node.nodeValue.split(term);
+    const frag = document.createDocumentFragment();
+    parts.forEach(function (part, i) {
+      if (i > 0) {
+        const mk = document.createElement('mark');
+        mk.className = 'search-hit';
+        mk.textContent = term;
+        frag.appendChild(mk);
+        count++;
+      }
+      if (part) frag.appendChild(document.createTextNode(part));
+    });
+    node.parentNode.replaceChild(frag, node);
+  });
+  if (countEl) countEl.textContent = count ? count + ' 处' : '无结果';
+}
+
+function jumpToNextHit() {
+  const doc = document.getElementById(AppState.currentTab + '-doc');
+  if (!doc) return;
+  const hits = doc.querySelectorAll('mark.search-hit');
+  if (!hits.length) return;
+  hits.forEach(function (h) { h.classList.remove('is-focus'); });
+  hitIndex = (hitIndex + 1) % hits.length;
+  const el = hits[hitIndex];
+  el.classList.add('is-focus');
+  window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - 140, behavior: 'smooth' });
+}
+
+// ==================== 抽屉（移动端目录） ====================
+function toggleDrawer() {
+  document.body.classList.toggle('drawer-open');
+}
+function closeDrawer() {
+  document.body.classList.remove('drawer-open');
+}
+
+// ==================== 全局监听 ====================
+function initGlobalListeners() {
+  document.addEventListener('click', function (e) {
+    const dropdown = document.getElementById('date-dropdown');
+    const btn = document.getElementById('date-selector-btn');
+    if (dropdown && !dropdown.classList.contains('hidden') &&
+        !dropdown.contains(e.target) && btn && !btn.contains(e.target)) {
+      dropdown.classList.add('hidden');
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    const tag = (e.target.tagName || '').toLowerCase();
+    if (tag === 'input' || tag === 'textarea') return;
+
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      const s = document.getElementById('doc-search');
+      if (s) s.focus();
+      return;
+    }
+    if (e.key === '[') { stepDate(1); return; }   // 更早一天
+    if (e.key === ']') { stepDate(-1); return; }  // 更晚一天
+    const idx = TABS.indexOf(AppState.currentTab);
+    if (e.key === 'ArrowLeft' && idx > 0) switchTab(TABS[idx - 1]);
+    if (e.key === 'ArrowRight' && idx < TABS.length - 1) switchTab(TABS[idx + 1]);
+    if (/^[1-7]$/.test(e.key)) switchTab(TABS[+e.key - 1]);
   });
 }
 
@@ -267,7 +577,7 @@ function startClock() {
   function update() {
     const now = new Date();
     clockEl.textContent = [now.getHours(), now.getMinutes(), now.getSeconds()]
-      .map(n => String(n).padStart(2, '0')).join(':');
+      .map(function (n) { return String(n).padStart(2, '0'); }).join(':');
   }
   update();
   setInterval(update, 1000);

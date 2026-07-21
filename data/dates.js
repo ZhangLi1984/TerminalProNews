@@ -1,10 +1,12 @@
 // ==========================================
-// 日期配置与数据管理
+// 日期配置（唯一真值：AVAILABLE_DATES[0] 即站点当前日期）
+// 由 scripts/build_web_modules.js 维护
 // ==========================================
 
-// 可用日期列表（按时间倒序，最新的在前）
 const AVAILABLE_DATES = [
-  { date: '2026-07-19', label: '2026 年 7 月 19 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-07-21', label: '2026 年 7 月 21 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-07-19', label: '2026 年 7 月 19 日', tag: 'history', tagLabel: '历史' },
+  { date: '2026-07-16', label: '2026 年 7 月 16 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-07-09', label: '2026 年 7 月 9 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-07-08', label: '2026 年 7 月 8 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-07-07', label: '2026 年 7 月 7 日', tag: 'history', tagLabel: '历史' },

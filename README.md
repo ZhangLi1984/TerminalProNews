@@ -1,169 +1,118 @@
-# 智研金融 Terminal Pro - 模块化项目结构
+# 智研金融 Terminal Pro — 研报展示网页
 
-## 项目说明
+数据驱动的静态站点。**每天发布只做两件事：生成当天的模块 JS + 把日期放进 `data/dates.js` 第一位。**
+index.html / app.js / styles.css 都不需要为新日期改动。
 
-这是一个基于原生 HTML/CSS/JavaScript 和 Tailwind CSS 的金融行业研报展示平台。项目采用模块化设计，方便后续内容拓展和维护。
+---
 
-## 目录结构
+## 一、目录结构
 
 ```
-modules/
-├── index.html              # 主入口文件
-├── css/
-│   └── styles.css         # 自定义样式（动画、滚动条等）
-└── js/
-    ├── utils.js           # 工具函数库（图标、辅助函数）
-    ├── components.js      # 通用 UI 组件库
-    ├── decision-nav.js    # 投资决策内参 - 导航配置
-    ├── decision-content.js # 投资决策内参 - 内容渲染
-    ├── industry-nav.js    # 行业汇总 - 导航配置
-    ├── industry-content.js # 行业汇总 - 内容渲染
-    └── app.js             # 主应用入口（状态管理、初始化）
+index.html          页面骨架（静态，日期无关，不要为新日期加 <script>）
+css/styles.css      设计令牌 + 全部样式（改配色只改 :root / [data-theme="dark"]）
+js/markdown.js      轻量 Markdown 渲染器（零依赖）
+js/app.js           主逻辑：日期加载、Tab、目录、搜索、主题
+js/_deprecated/     早期手写组件库，已无引用，仅留档
+data/dates.js       日期列表；AVAILABLE_DATES[0] = 站点当前日期（唯一真值）
+data/{模块}-{MMDD}-content.js   每天每模块一个文件
 ```
 
-## 模块说明
+模块共 7 个：`decision` 决策内参 / `industry` 行业汇总 / `macro` 宏观 / `broker` 券商 /
+`stock` 个股 / `jisilu` 集思录 / `futures` 期货。
 
-### 1. 工具函数 (utils.js)
-- **Icons**: SVG 图标映射表，包含所有用到的图标
-- **createIcon()**: 创建 SVG 图标元素
-- **createElement()**: 创建 HTML 元素
-- **joinHTML()**: 数组转 HTML 字符串
-- **scrollToElement()**: 平滑滚动到指定元素
-- **formatTime()**: 格式化时间
-- **updateClock()**: 更新时钟显示
+---
 
-### 2. UI 组件库 (components.js)
-可复用的 UI 组件，所有组件都返回 HTML 字符串：
+## 二、数据契约
 
-| 组件名 | 说明 | 参数 |
-|--------|------|------|
-| `InteractiveCard` | 交互卡片，带悬停效果 | children, className, onClick |
-| `SectionHeader` | 章节标题，带图标 | title, icon |
-| `DateSeparator` | 日期分割线 | date, isLatest |
-| `PolicyCard` | 政策卡片 | category, title, stocks |
-| `NewsItem` | 新闻条目 | text, impact, focus, isNegative, isNeutral |
-| `TimelineItem` | 时间线条目 | time, event, level |
-| `LogicFlowCard` | 逻辑流程卡片 | title, steps, result, color |
-| `TrackCard` | 赛道追踪卡片 | title, logic, stocks, children |
-| `SecondaryPlayCard` | 二阶博弈卡片 | event, result, logic, cognitive, stocks |
-| `TableRow` | 表格行（估值监测） | name, change, trend, phase, val, stocks |
-| `TableRow2` | 表格行（大宗商品） | name, price, trend, isUp, isDown, desc, stocks |
+### v2（当前，推荐）—— 正文写 Markdown
 
-### 3. 文档模块
-
-#### 投资决策内参 (decision-*.js)
-- `decision-nav.js`: 导航配置（全局视野、S 级推演、A 级事件等）
-- `decision-content.js`: 内容渲染函数
-  - `renderCoreSummary()`: 核心摘要
-  - `renderSMajorEvents()`: S 级重大事件
-  - `renderANews()`: A 级重要新闻
-  - `renderHotTracks()`: 热点赛道追踪
-  - `renderCrossTrackAnalysis()`: 跨赛道分析
-  - `renderRiskControl()`: 风控与日程
-
-#### 行业汇总 (industry-*.js)
-- `industry-nav.js`: 导航配置（确信推荐、深度挖掘、数据追踪）
-- `industry-content.js`: 内容渲染函数
-  - `renderHighWinRateTracks()`: 高胜率赛道
-  - `renderCoreAssets()`: 底仓资产
-  - `renderSecondaryPlays()`: 二阶博弈
-  - `renderContrarianPlays()`: 困境反转
-  - `renderCommoditiesTable()`: 大宗商品表格
-  - `renderValuationTable()`: 估值监测表格
-  - `renderDivergencePoints()`: 分歧点说明
-  - `renderSummary()`: 配置总结
-
-### 4. 主应用 (app.js)
-- **AppState**: 应用状态管理
-- **updateActiveNav()**: 更新活动导航项
-- **switchTab()**: 切换文档 Tab
-- **initTabs()**: 初始化 Tab 事件
-- **initClock()**: 初始化时钟
-- **initScrollSpy()**: 初始化滚动监听
-- **initApp()**: 应用入口
-
-## 拓展指南
-
-### 添加新的文档类型
-
-1. 创建导航配置文件 `js/newdoc-nav.js`:
-```javascript
-const NEWDOC_NAV_CONFIG = [
-  { title: '分组标题', links: [{ id: 'sec1', label: '章节名' }] }
-];
-
-function renderNewdocNav() {
-  const container = document.getElementById('newdoc-nav-content');
-  if (!container) return;
-  container.innerHTML = NEWDOC_NAV_CONFIG.map(...).join('');
-}
+```js
+// data/decision-0720-content.js
+registerReport('decision', '0720', {
+  title: '2026-07-20 投资决策内参 | 全局新闻深度推演',
+  subtitle: '投资决策内参',
+  date: '2026-07-20',
+  markdown: `## 一、核心摘要
+- **核心主线**：……
+`
+});
 ```
 
-2. 创建内容渲染文件 `js/newdoc-content.js`:
-```javascript
-function renderNewdocContent() {
-  return `
-    ${DateSeparator({ date: '2026-03-04', isLatest: true })}
-    <div class="space-y-3 mb-8 text-center">...</div>
-    <div class="space-y-10">
-      ${renderSection1()}
-      ${renderSection2()}
-    </div>
-  `;
-}
-```
+- **不需要 nav 文件**：侧边目录由 `##` / `###` 标题自动生成。
+- **不需要写 HTML / Tailwind 类**：排版全由 `css/styles.css` 统一负责，明暗主题都已适配。
+- 文件由 `scripts/build_web_modules.js` 从当天的报告 Markdown 自动编译，**不要手工编辑**。
 
-3. 在 `index.html` 中添加新的文档容器和脚本引用
+### v1（历史文件，只读兼容）
 
-4. 在 `app.js` 中添加渲染函数和 Tab 切换逻辑
+老文件定义全局函数 `render{Cap}Content_{MMDD}()` / `render{Cap}Nav_{MMDD}()`，
+返回内联 Tailwind 类的 HTML。app.js 仍然认，`css/styles.css` 里有一层
+「历史内容兼容层」负责把它们的观感对齐并适配暗色。**新报告不要再用这种格式。**
 
-### 添加新的 UI 组件
+---
 
-在 `js/components.js` 中添加新组件函数：
+## 三、支持的 Markdown 写法
 
-```javascript
-function NewComponent({ prop1, prop2, children }) {
-  return InteractiveCard({
-    className: 'custom-class',
-    children: `
-      <div class="...">${prop1}</div>
-      <div class="...">${prop2}</div>
-      ${children}
-    `
-  });
-}
-```
+标准 GFM（标题 / 列表（可嵌套）/ 有序列表 / 表格（支持对齐）/ 引用 / 代码 / 链接 / 加粗）之外，另有两项增强：
 
-### 添加新的图标
+**1. 涨跌自动着色**（A 股习惯：红涨绿跌）
+`+14.35%` → 红；`-10.78%` → 绿；「涨停/净流入/超预期」「跌停/净流出/不及预期」同理。
 
-在 `js/utils.js` 的 `Icons` 对象中添加 SVG 路径：
+**2. 提示块 callout**
 
-```javascript
-const Icons = {
-  // ...现有图标
-  NewIcon: '<path d="..." />'  // 只需添加路径数据
-};
-```
+````markdown
+::: cio 半导体·预期差
+市场一致预期 2026 年供给过剩，但我们认为 HBM 挤出效应被低估。
+- 证伪指标：月度出货
+:::
+````
 
-## 技术特点
+可用类型：`cio`（CIO 洞察）、`tip`、`info`、`risk`、`bull` 利好、`bear` 利空、
+`hot` 热门话题、`target` 交易机会、`s` S 级标的、`a` A 级标的、`quote` 观点摘录。
+`:::` 后的第一行是标题，省略则用类型默认名。
 
-- **零依赖**: 仅使用 Tailwind CDN，无需构建工具
-- **模块化**: 每个功能独立成文件，便于维护
-- **组件化**: 可复用的 UI 组件，提高开发效率
-- **响应式**: 完美支持桌面和移动端
-- **高性能**: 原生 JS，无框架开销
+标题后可写 `{#自定义锚点}` 固定 id，一般不需要。
 
-## 使用方法
+---
 
-直接用浏览器打开 `modules/index.html` 即可预览。
+## 四、发布流程
 
-如需本地开发，可使用任意 HTTP 服务器：
 ```bash
-# Python 3
-python -m http.server 8000
+# 1. 从当天的 .md 报告编译出模块（自动更新 dates.js）
+node scripts/build_web_modules.js 2026-07-20 --prune
 
-# Node.js (需安装 http-server)
-npx http-server -p 8000
+# 2. 自检（模块是否生成、JS 是否可解析、dates.js 是否正确）
+node scripts/build_web_modules.js --verify 2026-07-20
+
+# 3. 推送
+git -C modules add -A
+git -C modules commit -m "2026-07-20 update: decision+industry+macro+..."
+git -C modules push --force-with-lease origin main
 ```
 
-然后访问 `http://localhost:8000/modules/index.html`
+常用参数：`--only decision,macro` 只跑部分模块、`--dry-run` 预览、`--prune` 清理 100 天前的旧数据。
+
+---
+
+## 五、页面功能
+
+| 功能 | 说明 |
+|---|---|
+| 日期切换 | 顶栏日期按钮，按月分组、可搜索；数据按需动态注入，不预加载 |
+| 侧边目录 | 自动生成，滚动高亮当前小节；窄屏折叠为抽屉（左上角 ☰） |
+| 全文搜索 | 顶栏搜索框（`⌘K`），高亮当前报告命中处，回车逐个跳转 |
+| 明/暗主题 | 跟随系统，可手动切换并记忆；历史内容也已适配 |
+| 阅读进度 | 顶栏底部进度条 + 右下角回到顶部 |
+| 键盘 | `←/→` 或 `1–7` 切模块，`[` / `]` 切日期，`⌘K` 搜索，`Esc` 清空 |
+| 深链 | `#tab=stock&date=2026-07-16` 可直接定位 |
+| 打印 | 顶栏打印按钮，导出时自动去掉导航与背景 |
+| 空模块提示 | 当天没有数据的 Tab 会置灰并标点 |
+
+---
+
+## 六、改动须知
+
+- **配色/字号**：只改 `css/styles.css` 顶部的 `:root` 与 `[data-theme="dark"]` 变量。
+- **加模块**：在 `index.html` 补一组 `{mod}-doc` / `{mod}-content` / `{mod}-nav-content` 容器，
+  在 `js/app.js` 的 `TABS`、`TAB_LABELS` 与 `scripts/build_web_modules.js` 的 `MODULES` 各加一项。
+- **禁止**：在 `app.js` 里写 `if (date === '...')` 分支；为新日期手工往 `index.html` 加 `<script>`；
+  手工同步多处日期（当前日期只由 `data/dates.js` 的第一项决定）。
