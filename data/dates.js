@@ -4,7 +4,8 @@
 // ==========================================
 
 const AVAILABLE_DATES = [
-  { date: '2026-08-10', label: '2026 年 8 月 10 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-08-11', label: '2026 年 8 月 11 日', tag: 'latest', tagLabel: '最新' },
+  { date: '2026-08-10', label: '2026 年 8 月 10 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-08-09', label: '2026 年 8 月 9 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-08-06', label: '2026 年 8 月 6 日', tag: 'history', tagLabel: '历史' },
   { date: '2026-08-05', label: '2026 年 8 月 5 日', tag: 'history', tagLabel: '历史' },
